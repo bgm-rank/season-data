@@ -1,7 +1,8 @@
+mod core;
 mod services;
 
 use anyhow::{Context, Result};
-use services::mal::{MalClient, Season};
+use services::bgmtv::{BgmtvClient, SearchFilter, SearchRequest, SortOrder};
 use tracing::info;
 
 #[tokio::main]
@@ -15,46 +16,35 @@ async fn main() -> Result<()> {
         )
         .init();
 
-    let client_id = std::env::var("MYANIMELIST_CLIENT_ID")
-        .context("MYANIMELIST_CLIENT_ID must be set in .env")?;
+    let token = std::env::var("BGM_TOKEN").context("BGM_TOKEN must be set in .env")?;
+    let client = BgmtvClient::new(token);
 
-    let client = MalClient::new(client_id);
+    // 搜索 NSFW 动画测试 token 认证
+    // 2026年冬季番：2025-12-01 ~ 2026-03-31
+    let keyword = "アンドロイドは経験人数に入りますか？？";
+    let filter = SearchFilter::anime()
+        .air_date_range("2025-12-01", "2026-03-31")
+        .include_nsfw();
+    let request = SearchRequest::new(keyword)
+        .with_sort(SortOrder::Rank)
+        .with_filter(filter);
 
-    // 获取 2026 年冬季新番（包含 NSFW）
-    info!("正在获取 2026 年冬季新番（nsfw=true）...");
-    let anime_list = client
-        .get_all_seasonal_anime(2026, Season::Winter, true)
-        .await?;
+    info!(keyword = keyword, "搜索 bangumi.tv...");
 
-    info!(count = anime_list.len(), "获取新番完成");
+    let result = client.search_subjects(&request, Some(10), None).await?;
 
-    // 搜索特定动画
-    let search = "android";
-    info!(keyword = search, "搜索动画");
-    for anime in &anime_list {
-        if anime.title.to_lowercase().contains(search) {
-            info!(id = anime.id, title = %anime.title, rating = ?anime.rating, "找到匹配");
-        }
-    }
+    info!(total = result.total, "搜索结果数量");
 
-    // 显示所有 r+ 评级
-    info!("=== r+ 评级的动画 ===");
-    for anime in &anime_list {
-        if anime.rating.as_deref() == Some("r+") {
-            info!(id = anime.id, title = %anime.title, "r+ 评级");
-        }
-    }
-
-    info!("=== rating 统计 ===");
-    let mut rating_count: std::collections::HashMap<String, u32> = std::collections::HashMap::new();
-    for anime in &anime_list {
-        let rating = anime.rating.clone().unwrap_or("-".to_string());
-        *rating_count.entry(rating).or_default() += 1;
-    }
-    let mut ratings: Vec<_> = rating_count.iter().collect();
-    ratings.sort_by(|a, b| b.1.cmp(a.1));
-    for (r, c) in ratings {
-        info!(rating = r, count = c, "统计");
+    for subject in &result.data {
+        info!(
+            id = subject.id,
+            name = ?subject.name,
+            name_cn = ?subject.name_cn,
+            date = ?subject.date,
+            rank = ?subject.rating.as_ref().and_then(|r| r.rank),
+            score = ?subject.rating.as_ref().and_then(|r| r.score),
+            "找到条目"
+        );
     }
 
     Ok(())
