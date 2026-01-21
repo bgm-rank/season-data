@@ -1,40 +1,51 @@
 mod services;
 
+use anyhow::{Context, Result};
 use services::mal::{MalClient, Season};
+use tracing::info;
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
+async fn main() -> Result<()> {
     dotenvy::dotenv().ok();
 
-    let client_id =
-        std::env::var("MYANIMELIST_CLIENT_ID").expect("MYANIMELIST_CLIENT_ID must be set in .env");
+    tracing_subscriber::fmt()
+        .with_env_filter(
+            tracing_subscriber::EnvFilter::from_default_env()
+                .add_directive(tracing::Level::INFO.into()),
+        )
+        .init();
+
+    let client_id = std::env::var("MYANIMELIST_CLIENT_ID")
+        .context("MYANIMELIST_CLIENT_ID must be set in .env")?;
 
     let client = MalClient::new(client_id);
 
     // 获取 2026 年冬季新番（包含 NSFW）
-    println!("正在获取 2026 年冬季新番（nsfw=true）...");
-    let anime_list = client.get_all_seasonal_anime(2026, Season::Winter, true).await?;
+    info!("正在获取 2026 年冬季新番（nsfw=true）...");
+    let anime_list = client
+        .get_all_seasonal_anime(2026, Season::Winter, true)
+        .await?;
 
-    println!("共获取到 {} 部新番:\n", anime_list.len());
+    info!(count = anime_list.len(), "获取新番完成");
 
     // 搜索特定动画
     let search = "android";
-    println!("搜索 '{}':", search);
+    info!(keyword = search, "搜索动画");
     for anime in &anime_list {
         if anime.title.to_lowercase().contains(search) {
-            println!("  找到: [{}] {} | rating: {:?}", anime.id, anime.title, anime.rating);
+            info!(id = anime.id, title = %anime.title, rating = ?anime.rating, "找到匹配");
         }
     }
 
     // 显示所有 r+ 评级
-    println!("\n=== r+ 评级的动画 ===");
+    info!("=== r+ 评级的动画 ===");
     for anime in &anime_list {
         if anime.rating.as_deref() == Some("r+") {
-            println!("  [{}] {}", anime.id, anime.title);
+            info!(id = anime.id, title = %anime.title, "r+ 评级");
         }
     }
 
-    println!("\n=== rating 统计 ===");
+    info!("=== rating 统计 ===");
     let mut rating_count: std::collections::HashMap<String, u32> = std::collections::HashMap::new();
     for anime in &anime_list {
         let rating = anime.rating.clone().unwrap_or("-".to_string());
@@ -43,7 +54,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut ratings: Vec<_> = rating_count.iter().collect();
     ratings.sort_by(|a, b| b.1.cmp(a.1));
     for (r, c) in ratings {
-        println!("  {}: {}", r, c);
+        info!(rating = r, count = c, "统计");
     }
 
     Ok(())
