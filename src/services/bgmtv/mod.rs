@@ -176,10 +176,6 @@ pub struct SearchFilter {
 }
 
 impl SearchFilter {
-    pub fn new() -> Self {
-        Self::default()
-    }
-
     pub fn with_type(subject_type: SubjectType) -> Self {
         Self {
             subject_type: Some(vec![subject_type as u8]),
@@ -235,11 +231,6 @@ impl SearchRequest {
             sort: SortOrder::default(),
             filter: None,
         }
-    }
-
-    pub fn with_sort(mut self, sort: SortOrder) -> Self {
-        self.sort = sort;
-        self
     }
 
     pub fn with_filter(mut self, filter: SearchFilter) -> Self {
@@ -313,29 +304,30 @@ impl BgmtvClient {
         Ok(result)
     }
 
-    /// 搜索动画条目（便捷方法）
-    pub async fn search_anime(
-        &self,
-        keyword: &str,
-        limit: Option<u32>,
-        offset: Option<u32>,
-    ) -> Result<PagedSubject, BgmtvError> {
-        let request = SearchRequest::new(keyword).with_filter(SearchFilter::anime());
-        self.search_subjects(&request, limit, offset).await
-    }
-
-    /// 搜索指定季度的动画
-    pub async fn search_seasonal_anime(
+    /// 按关键词搜索动画（包含 NSFW，限制日期范围）
+    pub async fn search_anime_by_keyword(
         &self,
         keyword: &str,
         start_date: &str,
         end_date: &str,
-        limit: Option<u32>,
-        offset: Option<u32>,
-    ) -> Result<PagedSubject, BgmtvError> {
-        let filter = SearchFilter::anime().air_date_range(start_date, end_date);
+    ) -> Result<Vec<Subject>, BgmtvError> {
+        let filter = SearchFilter::anime()
+            .air_date_range(start_date, end_date)
+            .include_nsfw();
         let request = SearchRequest::new(keyword).with_filter(filter);
-        self.search_subjects(&request, limit, offset).await
+        let result = self.search_subjects(&request, Some(10), None).await?;
+        Ok(result.data)
+    }
+
+    /// 按关键词搜索动画（包含 NSFW，不限制日期）
+    pub async fn search_anime_by_keyword_no_date(
+        &self,
+        keyword: &str,
+    ) -> Result<Vec<Subject>, BgmtvError> {
+        let filter = SearchFilter::anime().include_nsfw();
+        let request = SearchRequest::new(keyword).with_filter(filter);
+        let result = self.search_subjects(&request, Some(10), None).await?;
+        Ok(result.data)
     }
 }
 
@@ -373,15 +365,13 @@ mod tests {
 
     #[test]
     fn test_search_request_serialization() {
-        let request = SearchRequest::new("葬送的芙莉莲")
-            .with_sort(SortOrder::Rank)
-            .with_filter(SearchFilter::anime());
+        let request = SearchRequest::new("葬送的芙莉莲").with_filter(SearchFilter::anime());
 
         let json = serde_json::to_string(&request).unwrap();
         let parsed: serde_json::Value = serde_json::from_str(&json).unwrap();
 
         assert_eq!(parsed["keyword"], "葬送的芙莉莲");
-        assert_eq!(parsed["sort"], "rank");
+        assert_eq!(parsed["sort"], "match");
         assert_eq!(parsed["filter"]["type"], serde_json::json!([2]));
     }
 

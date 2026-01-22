@@ -2,7 +2,10 @@ mod core;
 mod services;
 
 use anyhow::{Context, Result};
-use services::bgmtv::{BgmtvClient, SearchFilter, SearchRequest, SortOrder};
+use core::SeasonProcessor;
+use services::bgmtv::BgmtvClient;
+use services::mal::{MalClient, Season};
+use std::path::PathBuf;
 use tracing::info;
 
 #[tokio::main]
@@ -16,36 +19,29 @@ async fn main() -> Result<()> {
         )
         .init();
 
-    let token = std::env::var("BGM_TOKEN").context("BGM_TOKEN must be set in .env")?;
-    let client = BgmtvClient::new(token);
+    let bgm_token = std::env::var("BGM_TOKEN").context("BGM_TOKEN must be set in .env")?;
+    let mal_client_id =
+        std::env::var("MAL_CLIENT_ID").context("MAL_CLIENT_ID must be set in .env")?;
 
-    // 搜索 NSFW 动画测试 token 认证
-    // 2026年冬季番：2025-12-01 ~ 2026-03-31
-    let keyword = "アンドロイドは経験人数に入りますか？？";
-    let filter = SearchFilter::anime()
-        .air_date_range("2025-12-01", "2026-03-31")
-        .include_nsfw();
-    let request = SearchRequest::new(keyword)
-        .with_sort(SortOrder::Rank)
-        .with_filter(filter);
+    let bgm_client = BgmtvClient::new(bgm_token);
+    let mal_client = MalClient::new(mal_client_id);
 
-    info!(keyword = keyword, "搜索 bangumi.tv...");
+    let processor = SeasonProcessor::new(mal_client, bgm_client);
 
-    let result = client.search_subjects(&request, Some(10), None).await?;
+    // 处理 2026 年冬季
+    let year = 2026;
+    let season = Season::Winter;
+    let output_path = PathBuf::from(format!("release/{}-{}-mal.json", year, season));
 
-    info!(total = result.total, "搜索结果数量");
+    info!(year = year, season = %season, "开始处理季度番组");
 
-    for subject in &result.data {
-        info!(
-            id = subject.id,
-            name = ?subject.name,
-            name_cn = ?subject.name_cn,
-            date = ?subject.date,
-            rank = ?subject.rating.as_ref().and_then(|r| r.rank),
-            score = ?subject.rating.as_ref().and_then(|r| r.score),
-            "找到条目"
-        );
-    }
+    let result = processor.process(year, season, &output_path).await?;
+
+    info!(
+        total = result.items.len(),
+        confirmed = result.items.iter().filter(|i| i.confirmed).count(),
+        "处理完成"
+    );
 
     Ok(())
 }
