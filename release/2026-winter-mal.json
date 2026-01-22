@@ -1,6 +1,6 @@
 {
   "season": "2026-winter",
-  "update_time": "2026-01-22T15:41:15+08:00",
+  "update_time": "2026-01-22T16:49:44+08:00",
   "items": [
     {
       "status": "match",
@@ -312,24 +312,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 443446,
-          "bgm_name": "地獄楽 第二期",
-          "bgm_name_cn": "地狱乐 第二季"
-        },
-        {
-          "bgm_id": 555772,
-          "bgm_name": "地獄先生ぬ～べ～ 第2クール",
-          "bgm_name_cn": "地狱老师 第2部分"
-        },
-        {
-          "bgm_id": 526979,
-          "bgm_name": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～",
-          "bgm_name_cn": "地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 443446,
+      "bgm_name": "地獄楽 第二期",
+      "bgm_name_cn": "地狱乐 第二季",
       "mal": {
         "id": 55825,
         "title": "Jigokuraku 2nd Season",
@@ -505,29 +491,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 555772,
-          "bgm_name": "地獄先生ぬ～べ～ 第2クール",
-          "bgm_name_cn": "地狱老师 第2部分"
-        },
-        {
-          "bgm_id": 443446,
-          "bgm_name": "地獄楽 第二期",
-          "bgm_name_cn": "地狱乐 第二季"
-        },
-        {
-          "bgm_id": 526979,
-          "bgm_name": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～",
-          "bgm_name_cn": "地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～"
-        },
-        {
-          "bgm_id": 609708,
-          "bgm_name": "Transformers: Earthspark Season 4",
-          "bgm_name_cn": "变形金刚:地球火种 第四季"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 555772,
+      "bgm_name": "地獄先生ぬ～べ～ 第2クール",
+      "bgm_name_cn": "地狱老师 第2部分",
       "mal": {
         "id": 61608,
         "title": "Jigoku Sensei Nube (2025) Part 2",
@@ -1176,29 +1143,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 273843,
-          "bgm_name": "BEASTARS",
-          "bgm_name_cn": "动物狂想曲"
-        },
-        {
-          "bgm_id": 297224,
-          "bgm_name": "BEASTARS 2nd Season",
-          "bgm_name_cn": "动物狂想曲 第二季"
-        },
-        {
-          "bgm_id": 341139,
-          "bgm_name": "BEASTARS FINAL SEASON Part1",
-          "bgm_name_cn": "动物狂想曲 最终季 第一部分"
-        },
-        {
-          "bgm_id": 485990,
-          "bgm_name": "BEASTARS FINAL SEASON Part2",
-          "bgm_name_cn": "动物狂想曲 最终季 第二部分"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 485990,
+      "bgm_name": "BEASTARS FINAL SEASON Part2",
+      "bgm_name_cn": "动物狂想曲 最终季 第二部分",
       "mal": {
         "id": 61114,
         "title": "Beastars Final Season Part 2",
@@ -1286,19 +1234,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 591584,
-          "bgm_name": "カードファイト!! ヴァンガード Divinez 幻真星戦編",
-          "bgm_name_cn": "卡片战斗先导者 Divinez 幻真星战篇"
-        },
-        {
-          "bgm_id": 621233,
-          "bgm_name": "カードファイト!! ヴァンガード 15周年記念PV",
-          "bgm_name_cn": "卡片战斗先导者 15周年纪念PV"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 591584,
+      "bgm_name": "カードファイト!! ヴァンガード Divinez 幻真星戦編",
+      "bgm_name_cn": "卡片战斗先导者 Divinez 幻真星战篇",
       "mal": {
         "id": 62649,
         "title": "Cardfight!! Vanguard: Divinez Genma Seisen-hen",

@@ -246,7 +246,9 @@ impl DsClient {
         );
 
         // 解析 {"id": 123} 或 {"id": null}
-        let result: MatchResult = serde_json::from_str(content)
+        // LLM 有时会返回 markdown 代码块包裹的 JSON
+        let json_content = extract_json(content);
+        let result: MatchResult = serde_json::from_str(json_content)
             .map_err(|e| DsError::Api(format!("Invalid JSON: {} - {}", content, e)))?;
 
         Ok(result.id)
@@ -257,6 +259,30 @@ impl DsClient {
 #[derive(Debug, Deserialize)]
 struct MatchResult {
     id: Option<u64>,
+}
+
+/// 从 LLM 响应中提取 JSON 内容
+///
+/// 处理以下情况：
+/// - 纯 JSON: `{"id": 123}`
+/// - markdown 代码块: `\`\`\`json\n{"id": 123}\n\`\`\``
+/// - 带语言标记或不带: `\`\`\`\n{"id": 123}\n\`\`\``
+fn extract_json(content: &str) -> &str {
+    let trimmed = content.trim();
+
+    // 检查是否被 markdown 代码块包裹
+    if trimmed.starts_with("```") {
+        // 找到第一个换行符后的内容
+        if let Some(start) = trimmed.find('\n') {
+            let after_start = &trimmed[start + 1..];
+            // 找到结束的 ```
+            if let Some(end) = after_start.rfind("```") {
+                return after_start[..end].trim();
+            }
+        }
+    }
+
+    trimmed
 }
 
 #[cfg(test)]
@@ -380,5 +406,31 @@ mod tests {
     fn test_system_prompt_is_compact() {
         // 确保系统提示足够精简（中文 UTF-8 约 3 字节/字）
         assert!(MATCH_SYSTEM_PROMPT.len() < 150);
+    }
+
+    #[test]
+    fn test_extract_json_plain() {
+        assert_eq!(extract_json(r#"{"id": 123}"#), r#"{"id": 123}"#);
+        assert_eq!(extract_json(r#"  {"id": null}  "#), r#"{"id": null}"#);
+    }
+
+    #[test]
+    fn test_extract_json_markdown_with_lang() {
+        let input = "```json\n{\"id\": 443446}\n```";
+        assert_eq!(extract_json(input), r#"{"id": 443446}"#);
+    }
+
+    #[test]
+    fn test_extract_json_markdown_without_lang() {
+        let input = "```\n{\"id\": 123}\n```";
+        assert_eq!(extract_json(input), r#"{"id": 123}"#);
+    }
+
+    #[test]
+    fn test_extract_json_markdown_multiline() {
+        let input = "```json\n{\n  \"id\": 443446\n}\n```";
+        let extracted = extract_json(input);
+        let result: MatchResult = serde_json::from_str(extracted).unwrap();
+        assert_eq!(result.id, Some(443446));
     }
 }
