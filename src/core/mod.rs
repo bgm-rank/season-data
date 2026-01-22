@@ -1,4 +1,5 @@
 use crate::services::bgmtv::BgmtvClient;
+use crate::services::ds::DsClient;
 use crate::services::mal::{AnimeNode, MalClient, Season};
 use chrono::Local;
 use serde::{Deserialize, Serialize};
@@ -17,6 +18,28 @@ pub enum CoreError {
     Io(#[from] std::io::Error),
     #[error("JSON error: {0}")]
     Json(#[from] serde_json::Error),
+}
+
+/// 确认状态
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, Default)]
+#[serde(rename_all = "lowercase")]
+pub enum ConfirmStatus {
+    /// 未确认
+    #[default]
+    Unconfirmed,
+    /// 精确匹配（日文标题完全一致）
+    Match,
+    /// 模型确认（LLM 判断匹配）
+    Model,
+    /// 人工确认
+    Human,
+}
+
+impl ConfirmStatus {
+    /// 是否已确认（非 Unconfirmed）
+    pub fn is_confirmed(&self) -> bool {
+        !matches!(self, ConfirmStatus::Unconfirmed)
+    }
 }
 
 /// 转换后的 rating 类型
@@ -111,7 +134,7 @@ pub struct BgmCandidate {
 /// 季度条目
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SeasonItem {
-    pub confirmed: bool,
+    pub status: ConfirmStatus,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub bgm_id: Option<u64>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -177,7 +200,7 @@ impl SeasonData {
     pub fn confirmed_mal_ids(&self) -> std::collections::HashSet<u64> {
         self.items
             .iter()
-            .filter(|item| item.confirmed)
+            .filter(|item| item.status.is_confirmed())
             .map(|item| item.mal.id)
             .collect()
     }
@@ -201,6 +224,7 @@ pub fn season_date_range(year: u32, season: Season) -> (String, String) {
 pub struct SeasonProcessor {
     mal_client: MalClient,
     bgm_client: BgmtvClient,
+    ds_client: Option<DsClient>,
 }
 
 impl SeasonProcessor {
@@ -208,7 +232,14 @@ impl SeasonProcessor {
         Self {
             mal_client,
             bgm_client,
+            ds_client: None,
         }
+    }
+
+    /// 设置 DeepSeek 客户端（用于模型匹配验证）
+    pub fn with_ds_client(mut self, ds_client: DsClient) -> Self {
+        self.ds_client = Some(ds_client);
+        self
     }
 
     /// 处理季度数据
@@ -320,33 +351,94 @@ impl SeasonProcessor {
                     "完全匹配"
                 );
                 SeasonItem {
-                    confirmed: true,
+                    status: ConfirmStatus::Match,
                     bgm_id: Some(matched.bgm_id),
                     bgm_name: Some(matched.bgm_name.clone()),
                     bgm_name_cn: matched.bgm_name_cn.clone(),
                     candidates: vec![],
                     mal: mal_info,
                 }
-            } else {
-                if candidates.is_empty() {
-                    warn!(
+            } else if !candidates.is_empty() {
+                // 使用 LLM 验证匹配
+                let model_match = if let Some(ref ds) = self.ds_client {
+                    let candidate_tuples: Vec<_> = candidates
+                        .iter()
+                        .map(|c| {
+                            (
+                                c.bgm_id,
+                                c.bgm_name.as_str(),
+                                c.bgm_name_cn.as_deref(),
+                            )
+                        })
+                        .collect();
+
+                    match ds
+                        .match_anime(
+                            &mal_info.title,
+                            mal_info.title_ja.as_deref(),
+                            &candidate_tuples,
+                        )
+                        .await
+                    {
+                        Ok(Some(bgm_id)) => {
+                            candidates.iter().find(|c| c.bgm_id == bgm_id).cloned()
+                        }
+                        Ok(None) => None,
+                        Err(e) => {
+                            warn!(
+                                mal_id = mal_info.id,
+                                error = %e,
+                                "LLM 匹配失败"
+                            );
+                            None
+                        }
+                    }
+                } else {
+                    None
+                };
+
+                if let Some(matched) = model_match {
+                    info!(
                         mal_id = mal_info.id,
-                        title = %mal_info.title,
-                        "未找到匹配"
+                        bgm_id = matched.bgm_id,
+                        name = %matched.bgm_name,
+                        "模型匹配"
                     );
+                    SeasonItem {
+                        status: ConfirmStatus::Model,
+                        bgm_id: Some(matched.bgm_id),
+                        bgm_name: Some(matched.bgm_name),
+                        bgm_name_cn: matched.bgm_name_cn,
+                        candidates: vec![],
+                        mal: mal_info,
+                    }
                 } else {
                     debug!(
                         mal_id = mal_info.id,
                         candidates_count = candidates.len(),
-                        "未完全匹配，保留候选"
+                        "未匹配，保留候选"
                     );
+                    SeasonItem {
+                        status: ConfirmStatus::Unconfirmed,
+                        bgm_id: None,
+                        bgm_name: None,
+                        bgm_name_cn: None,
+                        candidates,
+                        mal: mal_info,
+                    }
                 }
+            } else {
+                warn!(
+                    mal_id = mal_info.id,
+                    title = %mal_info.title,
+                    "未找到匹配"
+                );
                 SeasonItem {
-                    confirmed: false,
+                    status: ConfirmStatus::Unconfirmed,
                     bgm_id: None,
                     bgm_name: None,
                     bgm_name_cn: None,
-                    candidates,
+                    candidates: vec![],
                     mal: mal_info,
                 }
             };
@@ -355,11 +447,31 @@ impl SeasonProcessor {
         }
 
         // 统计结果
-        let confirmed_count = data.items.iter().filter(|i| i.confirmed).count();
-        let unconfirmed_count = data.items.len() - confirmed_count;
+        let match_count = data
+            .items
+            .iter()
+            .filter(|i| i.status == ConfirmStatus::Match)
+            .count();
+        let model_count = data
+            .items
+            .iter()
+            .filter(|i| i.status == ConfirmStatus::Model)
+            .count();
+        let human_count = data
+            .items
+            .iter()
+            .filter(|i| i.status == ConfirmStatus::Human)
+            .count();
+        let unconfirmed_count = data
+            .items
+            .iter()
+            .filter(|i| i.status == ConfirmStatus::Unconfirmed)
+            .count();
         info!(
             total = data.items.len(),
-            confirmed = confirmed_count,
+            match_confirmed = match_count,
+            model_confirmed = model_count,
+            human_confirmed = human_count,
             unconfirmed = unconfirmed_count,
             "处理完成"
         );
@@ -427,6 +539,32 @@ mod tests {
     }
 
     #[test]
+    fn test_confirm_status() {
+        assert!(!ConfirmStatus::Unconfirmed.is_confirmed());
+        assert!(ConfirmStatus::Match.is_confirmed());
+        assert!(ConfirmStatus::Model.is_confirmed());
+        assert!(ConfirmStatus::Human.is_confirmed());
+
+        // 序列化测试
+        assert_eq!(
+            serde_json::to_string(&ConfirmStatus::Unconfirmed).unwrap(),
+            "\"unconfirmed\""
+        );
+        assert_eq!(
+            serde_json::to_string(&ConfirmStatus::Match).unwrap(),
+            "\"match\""
+        );
+        assert_eq!(
+            serde_json::to_string(&ConfirmStatus::Model).unwrap(),
+            "\"model\""
+        );
+        assert_eq!(
+            serde_json::to_string(&ConfirmStatus::Human).unwrap(),
+            "\"human\""
+        );
+    }
+
+    #[test]
     fn test_season_data_serialization() {
         let mut data = SeasonData {
             season: "2026-winter".to_string(),
@@ -435,7 +573,7 @@ mod tests {
         };
 
         data.items.push(SeasonItem {
-            confirmed: true,
+            status: ConfirmStatus::Match,
             bgm_id: Some(400602),
             bgm_name: Some("葬送のフリーレン 第2期".to_string()),
             bgm_name_cn: Some("葬送的芙莉莲 第二季".to_string()),
@@ -452,13 +590,14 @@ mod tests {
         let json = serde_json::to_string_pretty(&data).unwrap();
         assert!(json.contains("\"season\": \"2026-winter\""));
         assert!(json.contains("\"bgm_id\": 400602"));
-        assert!(json.contains("\"confirmed\": true"));
+        assert!(json.contains("\"status\": \"match\""));
 
         // 反序列化测试
         let parsed: SeasonData = serde_json::from_str(&json).unwrap();
         assert_eq!(parsed.season, "2026-winter");
         assert_eq!(parsed.items.len(), 1);
         assert_eq!(parsed.items[0].bgm_id, Some(400602));
+        assert_eq!(parsed.items[0].status, ConfirmStatus::Match);
     }
 
     #[test]

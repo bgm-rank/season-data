@@ -1,9 +1,9 @@
 {
   "season": "2026-winter",
-  "update_time": "2026-01-22T14:37:00+08:00",
+  "update_time": "2026-01-22T15:41:15+08:00",
   "items": [
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 443831,
       "bgm_name": "Fate/strange Fake",
       "bgm_name_cn": "Fate/strange Fake",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 530110,
       "bgm_name": "MFゴースト 3rd Season",
       "bgm_name_cn": "极速车魂 第三季",
@@ -29,14 +29,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 587454,
-          "bgm_name": "わたしが恋人になれるわけないじゃん、ムリムリ!（※ムリじゃなかった!?）〜ネクストシャイン！〜",
-          "bgm_name_cn": "我们不可能成为恋人！绝对不行。 (※似乎可行？) 〜再次闪耀！〜"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 587454,
+      "bgm_name": "わたしが恋人になれるわけないじゃん、ムリムリ!（※ムリじゃなかった!?）〜ネクストシャイン！〜",
+      "bgm_name_cn": "我们不可能成为恋人！绝对不行。 (※似乎可行？) 〜再次闪耀！〜",
       "mal": {
         "id": 62543,
         "title": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!?) (TV Special)",
@@ -46,14 +42,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 611089,
-          "bgm_name": "プリズム輪舞曲",
-          "bgm_name_cn": "棱镜恋曲"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 611089,
+      "bgm_name": "プリズム輪舞曲",
+      "bgm_name_cn": "棱镜恋曲",
       "mal": {
         "id": 63019,
         "title": "Prism Rondo",
@@ -63,7 +55,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 515759,
       "bgm_name": "葬送のフリーレン 第2期",
       "bgm_name_cn": "葬送的芙莉莲 第二季",
@@ -76,7 +68,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 522414,
       "bgm_name": "カヤちゃんはコワくない",
       "bgm_name_cn": "神八小妹不可怕",
@@ -89,7 +81,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 525946,
       "bgm_name": "透明男と人間女～そのうち夫婦になるふたり～",
       "bgm_name_cn": "透明男与人类女～不久成为夫妇的二人～",
@@ -102,7 +94,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 543589,
       "bgm_name": "ALL YOU NEED IS KILL",
       "bgm_name_cn": "杀戮轮回",
@@ -115,14 +107,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 548195,
-          "bgm_name": "どうせ、恋してしまうんだ。 第2期",
-          "bgm_name_cn": "终究、与你相恋。 第二季"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 548195,
+      "bgm_name": "どうせ、恋してしまうんだ。 第2期",
+      "bgm_name_cn": "终究、与你相恋。 第二季",
       "mal": {
         "id": 61325,
         "title": "Douse, Koishite Shimaunda. 2nd Season",
@@ -132,7 +120,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 520642,
       "bgm_name": "エリスの聖杯",
       "bgm_name_cn": "厄里斯的圣杯",
@@ -145,14 +133,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 558296,
-          "bgm_name": "アンドロイドは経験人数に入りますか？？",
-          "bgm_name_cn": "和机器人啪啪啪能算在经验次数里吗？？"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 558296,
+      "bgm_name": "アンドロイドは経験人数に入りますか？？",
+      "bgm_name_cn": "和机器人啪啪啪能算在经验次数里吗？？",
       "mal": {
         "id": 61694,
         "title": "Android wa Keiken Ninzuu ni Hairimasu ka??",
@@ -162,7 +146,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 494564,
       "bgm_name": "花ざかりの君たちへ",
       "bgm_name_cn": "花样少年少女",
@@ -175,7 +159,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 486763,
       "bgm_name": "姫様“拷問”の時間です 第2期",
       "bgm_name_cn": "公主大人“拷问”的时间到了 第二季",
@@ -188,14 +172,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 472741,
-          "bgm_name": "呪術廻戦 死滅回游 前編",
-          "bgm_name_cn": "咒术回战 死灭回游 前篇"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 472741,
+      "bgm_name": "呪術廻戦 死滅回游 前編",
+      "bgm_name_cn": "咒术回战 死灭回游 前篇",
       "mal": {
         "id": 57658,
         "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
@@ -205,7 +185,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 517057,
       "bgm_name": "【推しの子】 第3期",
       "bgm_name_cn": "【我推的孩子】 第三季",
@@ -218,7 +198,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 544106,
       "bgm_name": "転生したらドラゴンの卵だった",
       "bgm_name_cn": "转生之后的我变成了龙蛋",
@@ -231,7 +211,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 564175,
       "bgm_name": "鎧真伝サムライトルーパー",
       "bgm_name_cn": "铠真传 武士军团",
@@ -244,7 +224,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 544372,
       "bgm_name": "勇者のクズ",
       "bgm_name_cn": "勇者之屑",
@@ -257,7 +237,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 565416,
       "bgm_name": "魔王の娘は優しすぎる!!",
       "bgm_name_cn": "魔王的女儿太温柔了！！",
@@ -270,7 +250,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 528434,
       "bgm_name": "シャンピニオンの魔女",
       "bgm_name_cn": "蘑菇魔女",
@@ -283,7 +263,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 525565,
       "bgm_name": "正反対な君と僕",
       "bgm_name_cn": "相反的你和我",
@@ -296,7 +276,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 486054,
       "bgm_name": "魔都精兵のスレイブ2",
       "bgm_name_cn": "魔都精兵的奴隶 第二季",
@@ -309,7 +289,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "mal": {
         "id": 61942,
         "title": "Vigilante: Boku no Hero Academia Illegals 2nd Season",
@@ -319,7 +299,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 510753,
       "bgm_name": "死亡遊戯で飯を食う。",
       "bgm_name_cn": "靠死亡游戏混饭吃。",
@@ -332,7 +312,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 443446,
@@ -359,7 +339,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 445905,
       "bgm_name": "勇者刑に処す 懲罰勇者9004隊刑務記録",
       "bgm_name_cn": "判处勇者刑 惩罚勇者9004队刑务纪录",
@@ -372,7 +352,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 502876,
       "bgm_name": "炎炎ノ消防隊 参ノ章 第2クール",
       "bgm_name_cn": "炎炎消防队 叁之章 第2部分",
@@ -385,7 +365,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 426100,
       "bgm_name": "TRIGUN STARGAZE",
       "bgm_name_cn": "枪神 观星之人",
@@ -398,7 +378,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 544109,
       "bgm_name": "真夜中ハートチューン",
       "bgm_name_cn": "午夜的倾心旋律",
@@ -411,7 +391,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 443106,
       "bgm_name": "ゴールデンカムイ 最終章",
       "bgm_name_cn": "黄金神威 最终章",
@@ -424,7 +404,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 493016,
       "bgm_name": "違国日記",
       "bgm_name_cn": "异国日记",
@@ -437,7 +417,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 43263,
@@ -499,7 +479,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 557531,
       "bgm_name": "うるわしの宵の月",
       "bgm_name_cn": "皎洁迎宵之月",
@@ -512,14 +492,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 548558,
-          "bgm_name": "青のミブロ -芹沢暗殺編-",
-          "bgm_name_cn": "青之壬生浪 -芹泽暗杀篇-"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 548558,
+      "bgm_name": "青のミブロ -芹沢暗殺編-",
+      "bgm_name_cn": "青之壬生浪 -芹泽暗杀篇-",
       "mal": {
         "id": 61333,
         "title": "Ao no Miburo: Serizawa Ansatsu-hen",
@@ -529,7 +505,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 555772,
@@ -561,14 +537,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 498791,
-          "bgm_name": "多聞くん今どっち！？",
-          "bgm_name_cn": "现在多闻君是哪一面！？"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 498791,
+      "bgm_name": "多聞くん今どっち！？",
+      "bgm_name_cn": "现在多闻君是哪一面！？",
       "mal": {
         "id": 59047,
         "title": "Tamon-kun Ima Docchi!?",
@@ -578,19 +550,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 567362,
-          "bgm_name": "最推しの義兄を愛でるため、長生きします！",
-          "bgm_name_cn": "为了我最爱的义兄，我要长命百岁！"
-        },
-        {
-          "bgm_id": 544106,
-          "bgm_name": "転生したらドラゴンの卵だった",
-          "bgm_name_cn": "转生之后的我变成了龙蛋"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 567362,
+      "bgm_name": "最推しの義兄を愛でるため、長生きします！",
+      "bgm_name_cn": "为了我最爱的义兄，我要长命百岁！",
       "mal": {
         "id": 61969,
         "title": "Saioshi no Gikei wo Mederu Tame, Nagaiki shimasu!",
@@ -600,7 +563,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 615739,
       "bgm_name": "闇芝居 十六期",
       "bgm_name_cn": "暗芝居 第十六季",
@@ -613,7 +576,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 534674,
       "bgm_name": "魔術師クノンは見えている",
       "bgm_name_cn": "魔术师库诺看得见一切",
@@ -626,7 +589,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 554013,
       "bgm_name": "お気楽領主の楽しい領地防衛～生産系魔術で名もなき村を最強の城塞都市に～",
       "bgm_name_cn": "安逸领主的愉快领地防卫～以生产系魔术将无名小村打造成最强要塞都市～",
@@ -639,7 +602,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 526979,
       "bgm_name": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～",
       "bgm_name_cn": "地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～",
@@ -652,7 +615,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 541336,
       "bgm_name": "勇者パーティを追い出された器用貧乏",
       "bgm_name_cn": "泛而不精的我被逐出了勇者队伍",
@@ -665,7 +628,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 525816,
       "bgm_name": "勇者パーティーにかわいい子がいたので、告白してみた。",
       "bgm_name_cn": "身为魔族的我想向勇者小队的可爱女孩告白。",
@@ -678,7 +641,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 517561,
       "bgm_name": "穏やか貴族の休暇のすすめ。",
       "bgm_name_cn": "优雅贵族的休假指南。",
@@ -691,7 +654,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 495531,
       "bgm_name": "ダーウィン事変",
       "bgm_name_cn": "达尔文事变",
@@ -704,7 +667,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 549654,
       "bgm_name": "幼馴染とはラブコメにならない",
       "bgm_name_cn": "和青梅竹马之间不会有恋爱喜剧",
@@ -717,14 +680,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 583313,
-          "bgm_name": "イチゴ哀歌〜雑で生イキな妹と割り切れない兄〜",
-          "bgm_name_cn": "草莓哀歌"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 583313,
+      "bgm_name": "イチゴ哀歌〜雑で生イキな妹と割り切れない兄〜",
+      "bgm_name_cn": "草莓哀歌",
       "mal": {
         "id": 62897,
         "title": "Ichigo Aika: Zatsu de Namaiki na Imouto to Warikirenai Ani",
@@ -734,7 +693,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 562430,
       "bgm_name": "綺麗にしてもらえますか。",
       "bgm_name_cn": "能帮我弄干净吗？",
@@ -747,7 +706,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 522370,
       "bgm_name": "異世界の沙汰は社畜次第",
       "bgm_name_cn": "异世界的安泰全看社畜",
@@ -760,7 +719,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 555445,
       "bgm_name": "「お前ごときが魔王に勝てると思うな」と勇者パーティを追放されたので、王都で気ままに暮らしたい",
       "bgm_name_cn": "「凭你也想讨伐魔王？」被勇者小队逐出队伍，只好在王都自在过活",
@@ -773,7 +732,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 540031,
       "bgm_name": "火喰鳥 羽州ぼろ鳶組",
       "bgm_name_cn": "火喰鸟 羽州褴褛鸢组",
@@ -786,7 +745,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 584833,
       "bgm_name": "北斗の拳 拳王軍ザコたちの挽歌",
       "bgm_name_cn": "北斗神拳 拳王军杂兵们的挽歌",
@@ -799,7 +758,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 597809,
       "bgm_name": "ハイスクール！奇面組",
       "bgm_name_cn": "高校奇面组",
@@ -812,7 +771,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 523141,
       "bgm_name": "アルネの事件簿",
       "bgm_name_cn": "阿尔涅的事件簿",
@@ -825,7 +784,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 583728,
       "bgm_name": "人外教室の人間嫌い教師",
       "bgm_name_cn": "非人学生与厌世教师",
@@ -838,7 +797,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 556874,
       "bgm_name": "29歳独身中堅冒険者の日常",
       "bgm_name_cn": "29岁单身冒险家的日常",
@@ -851,7 +810,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 543772,
       "bgm_name": "デッドアカウント",
       "bgm_name_cn": "死亡账号",
@@ -864,7 +823,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 568174,
       "bgm_name": "悪役令嬢は隣国の王太子に溺愛される",
       "bgm_name_cn": "被邻国王子溺爱的反派女主",
@@ -877,7 +836,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 565444,
       "bgm_name": "拷問バイトくんの日常",
       "bgm_name_cn": "打工仔的拷问日常",
@@ -890,7 +849,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 531724,
       "bgm_name": "貴族転生 ～恵まれた生まれから最強の力を得る～",
       "bgm_name_cn": "贵族转生 ～得天眷顾一出生就获得最强力量～",
@@ -903,7 +862,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 549506,
       "bgm_name": "有兽焉 第五季",
       "bgm_name_cn": "有兽焉 第五季",
@@ -916,7 +875,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 554013,
@@ -938,7 +897,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 515595,
@@ -990,7 +949,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 619136,
       "bgm_name": "能登半島復興応援企画",
       "bgm_name_cn": "",
@@ -1003,24 +962,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 617238,
-          "bgm_name": "ファントム・アルケミア ～シルヴィアのドキドキ搾精都市計画～",
-          "bgm_name_cn": "魅影炼金 ~西尔维娅的心跳都市计划~"
-        },
-        {
-          "bgm_id": 591584,
-          "bgm_name": "カードファイト!! ヴァンガード Divinez 幻真星戦編",
-          "bgm_name_cn": "卡片战斗先导者 Divinez 幻真星战篇"
-        },
-        {
-          "bgm_id": 621233,
-          "bgm_name": "カードファイト!! ヴァンガード 15周年記念PV",
-          "bgm_name_cn": "卡片战斗先导者 15周年纪念PV"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 617238,
+      "bgm_name": "ファントム・アルケミア ～シルヴィアのドキドキ搾精都市計画～",
+      "bgm_name_cn": "魅影炼金 ~西尔维娅的心跳都市计划~",
       "mal": {
         "id": 63232,
         "title": "Phantom Alchemia: Silvia no Dokidoki Sakusei Toshi Keikaku",
@@ -1030,7 +975,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 600080,
       "bgm_name": "聖光閃姫ポニーセレス",
       "bgm_name_cn": "闪光圣姬马尾天星",
@@ -1043,24 +988,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 423036,
-          "bgm_name": "中国奇谭 第二季",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 556874,
-          "bgm_name": "29歳独身中堅冒険者の日常",
-          "bgm_name_cn": "29岁单身冒险家的日常"
-        },
-        {
-          "bgm_id": 618954,
-          "bgm_name": "なまいき妹はスキだらけ！～強がりなメ○ガキ妹とざこイキ中出し交尾～",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "model",
+      "bgm_id": 423036,
+      "bgm_name": "中国奇谭 第二季",
+      "bgm_name_cn": "",
       "mal": {
         "id": 60569,
         "title": "Zhongguo Qi Tan 2",
@@ -1070,14 +1001,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 615309,
-          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "model",
+      "bgm_id": 615309,
+      "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+      "bgm_name_cn": "",
       "mal": {
         "id": 63159,
         "title": "Anal Mania Otaku to Ananii Daisuki na Ojou-sama",
@@ -1087,7 +1014,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 611768,
       "bgm_name": "映画ひみつのアイプリ まんかいバズリウムライブ！",
       "bgm_name_cn": "电影秘密的偶像公主",
@@ -1100,7 +1027,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 615797,
       "bgm_name": "蛇と蜘蛛",
       "bgm_name_cn": "",
@@ -1113,7 +1040,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 618661,
       "bgm_name": "ゲルぴよ",
       "bgm_name_cn": "",
@@ -1126,7 +1053,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 620404,
       "bgm_name": "ブラックジャックやねん",
       "bgm_name_cn": "",
@@ -1139,24 +1066,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 616830,
-          "bgm_name": "秘密結社 鷹の爪XX",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 576343,
-          "bgm_name": "ほっぺちゃん ～サン王国と黒ほっぺ団の秘密～",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 611768,
-          "bgm_name": "映画ひみつのアイプリ まんかいバズリウムライブ！",
-          "bgm_name_cn": "电影秘密的偶像公主"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 616830,
+      "bgm_name": "秘密結社 鷹の爪XX",
+      "bgm_name_cn": "",
       "mal": {
         "id": 63200,
         "title": "Himitsukessha Taka no Tsume XX",
@@ -1166,7 +1079,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 614681,
       "bgm_name": "신비아파트 10주년 극장판: 한 번 더, 소환",
       "bgm_name_cn": "神秘公寓10周年剧场版：再度召唤",
@@ -1179,7 +1092,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 562099,
@@ -1211,7 +1124,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 493777,
       "bgm_name": "深空彼岸",
       "bgm_name_cn": "深空彼岸",
@@ -1224,19 +1137,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 522253,
-          "bgm_name": "메탈카드봇",
-          "bgm_name_cn": "炫卡斗士"
-        },
-        {
-          "bgm_id": 533622,
-          "bgm_name": "로보트 군단과 메카3",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "model",
+      "bgm_id": 522253,
+      "bgm_name": "메탈카드봇",
+      "bgm_name_cn": "炫卡斗士",
       "mal": {
         "id": 63142,
         "title": "Metal Cardbot W",
@@ -1246,7 +1150,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 576343,
       "bgm_name": "ほっぺちゃん ～サン王国と黒ほっぺ団の秘密～",
       "bgm_name_cn": "",
@@ -1259,7 +1163,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 540453,
       "bgm_name": "Duel Masters LOST ～忘却の太陽～",
       "bgm_name_cn": "决斗大师 LOST ～忘却的太阳～",
@@ -1272,7 +1176,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 273843,
@@ -1304,44 +1208,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 580762,
-          "bgm_name": "＃神奈川に住んでるエルフ",
-          "bgm_name_cn": "住在神奈川的精灵"
-        },
-        {
-          "bgm_id": 339726,
-          "bgm_name": "御神记",
-          "bgm_name_cn": "御神记"
-        },
-        {
-          "bgm_id": 491587,
-          "bgm_name": "傲世丹神",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 516414,
-          "bgm_name": "百炼成神3",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 522414,
-          "bgm_name": "カヤちゃんはコワくない",
-          "bgm_name_cn": "神八小妹不可怕"
-        },
-        {
-          "bgm_id": 555772,
-          "bgm_name": "地獄先生ぬ～べ～ 第2クール",
-          "bgm_name_cn": "地狱老师 第2部分"
-        },
-        {
-          "bgm_id": 513361,
-          "bgm_name": "DARK MOON -黒の月: 月の祭壇-",
-          "bgm_name_cn": "DARK MOON -黑之月: 月之祭坛-"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 580762,
+      "bgm_name": "＃神奈川に住んでるエルフ",
+      "bgm_name_cn": "住在神奈川的精灵",
       "mal": {
         "id": 62521,
         "title": "#Kanagawa ni Sunderu Elf",
@@ -1351,49 +1221,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 583746,
-          "bgm_name": "劇場版 暗殺教室 みんなの時間",
-          "bgm_name_cn": "剧场版 暗杀教室 大家的时间"
-        },
-        {
-          "bgm_id": 515595,
-          "bgm_name": "劇場版 転生したらスライムだった件 蒼海の涙編",
-          "bgm_name_cn": "剧场版 关于我转生变成史莱姆这档事 苍海之泪篇"
-        },
-        {
-          "bgm_id": 515869,
-          "bgm_name": "劇場版 僕の心のヤバイやつ",
-          "bgm_name_cn": "剧场版 我心里危险的东西"
-        },
-        {
-          "bgm_id": 578766,
-          "bgm_name": "新劇場版 銀魂 -吉原大炎上-",
-          "bgm_name_cn": "新剧场版 银魂 -吉原大炎上-"
-        },
-        {
-          "bgm_id": 614681,
-          "bgm_name": "신비아파트 10주년 극장판: 한 번 더, 소환",
-          "bgm_name_cn": "神秘公寓10周年剧场版：再度召唤"
-        },
-        {
-          "bgm_id": 586102,
-          "bgm_name": "銀河特急 ミルキー☆サブウェイ 各駅停車劇場行き",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 555683,
-          "bgm_name": "アイドリッシュセブン First BEAT! 劇場総集編 後編",
-          "bgm_name_cn": "IDOLiSH7-偶像星愿- 剧场总集篇 后篇"
-        },
-        {
-          "bgm_id": 549654,
-          "bgm_name": "幼馴染とはラブコメにならない",
-          "bgm_name_cn": "和青梅竹马之间不会有恋爱喜剧"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 583746,
+      "bgm_name": "劇場版 暗殺教室 みんなの時間",
+      "bgm_name_cn": "剧场版 暗杀教室 大家的时间",
       "mal": {
         "id": 62421,
         "title": "Ansatsu Kyoushitsu Movie: Minna no Jikan",
@@ -1403,14 +1234,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 507819,
-          "bgm_name": "一人之下 第6季",
-          "bgm_name_cn": "一人之下 第六季"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 507819,
+      "bgm_name": "一人之下 第6季",
+      "bgm_name_cn": "一人之下 第六季",
       "mal": {
         "id": 62246,
         "title": "Yi Ren Zhi Xia 6",
@@ -1420,24 +1247,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 526979,
-          "bgm_name": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～",
-          "bgm_name_cn": "地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～"
-        },
-        {
-          "bgm_id": 522370,
-          "bgm_name": "異世界の沙汰は社畜次第",
-          "bgm_name_cn": "异世界的安泰全看社畜"
-        },
-        {
-          "bgm_id": 493016,
-          "bgm_name": "違国日記",
-          "bgm_name_cn": "异国日记"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 493016,
+      "bgm_name": "違国日記",
+      "bgm_name_cn": "异国日记",
       "mal": {
         "id": 56906,
         "title": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta (TV Special)",
@@ -1447,19 +1260,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 541814,
-          "bgm_name": "アイアイドルマスター ミリオンライブ！～いつか、真ん中で～",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 618795,
-          "bgm_name": "学園アイドルマスター Story of Re;IRIS",
-          "bgm_name_cn": "学园偶像大师 Story of Re;IRIS"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 541814,
+      "bgm_name": "アイアイドルマスター ミリオンライブ！～いつか、真ん中で～",
+      "bgm_name_cn": "",
       "mal": {
         "id": 61156,
         "title": "The iDOLM@STER Million Live! Itsuka, Mannaka de",
@@ -1469,14 +1273,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 521431,
-          "bgm_name": "成何体统 第二季",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "model",
+      "bgm_id": 521431,
+      "bgm_name": "成何体统 第二季",
+      "bgm_name_cn": "",
       "mal": {
         "id": 60191,
         "title": "Cheng He Titong 2nd Season",
@@ -1486,7 +1286,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 591584,
@@ -1508,24 +1308,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 515869,
-          "bgm_name": "劇場版 僕の心のヤバイやつ",
-          "bgm_name_cn": "剧场版 我心里危险的东西"
-        },
-        {
-          "bgm_id": 567417,
-          "bgm_name": "ヴィジランテ -僕のヒーローアカデミア ILLEGALS- 第2期",
-          "bgm_name_cn": "正义使者 -我的英雄学院之非法英雄- 第二季"
-        },
-        {
-          "bgm_id": 525565,
-          "bgm_name": "正反対な君と僕",
-          "bgm_name_cn": "相反的你和我"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 515869,
+      "bgm_name": "劇場版 僕の心のヤバイやつ",
+      "bgm_name_cn": "剧场版 我心里危险的东西",
       "mal": {
         "id": 59985,
         "title": "Boku no Kokoro no Yabai Yatsu Movie",
@@ -1535,7 +1321,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 567684,
       "bgm_name": "迷宮のしおり",
       "bgm_name_cn": "迷宫的栞",
@@ -1548,49 +1334,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 586102,
-          "bgm_name": "銀河特急 ミルキー☆サブウェイ 各駅停車劇場行き",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 578766,
-          "bgm_name": "新劇場版 銀魂 -吉原大炎上-",
-          "bgm_name_cn": "新剧场版 银魂 -吉原大炎上-"
-        },
-        {
-          "bgm_id": 515595,
-          "bgm_name": "劇場版 転生したらスライムだった件 蒼海の涙編",
-          "bgm_name_cn": "剧场版 关于我转生变成史莱姆这档事 苍海之泪篇"
-        },
-        {
-          "bgm_id": 515869,
-          "bgm_name": "劇場版 僕の心のヤバイやつ",
-          "bgm_name_cn": "剧场版 我心里危险的东西"
-        },
-        {
-          "bgm_id": 583746,
-          "bgm_name": "劇場版 暗殺教室 みんなの時間",
-          "bgm_name_cn": "剧场版 暗杀教室 大家的时间"
-        },
-        {
-          "bgm_id": 555683,
-          "bgm_name": "アイドリッシュセブン First BEAT! 劇場総集編 後編",
-          "bgm_name_cn": "IDOLiSH7-偶像星愿- 剧场总集篇 后篇"
-        },
-        {
-          "bgm_id": 614681,
-          "bgm_name": "신비아파트 10주년 극장판: 한 번 더, 소환",
-          "bgm_name_cn": "神秘公寓10周年剧场版：再度召唤"
-        },
-        {
-          "bgm_id": 549654,
-          "bgm_name": "幼馴染とはラブコメにならない",
-          "bgm_name_cn": "和青梅竹马之间不会有恋爱喜剧"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 586102,
+      "bgm_name": "銀河特急 ミルキー☆サブウェイ 各駅停車劇場行き",
+      "bgm_name_cn": "",
       "mal": {
         "id": 62518,
         "title": "Ginga Tokkyuu Milky☆Subway Movie: Kakueki Teisha Gekijou Yuki",
@@ -1600,7 +1347,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 243430,
       "bgm_name": "機動戦士ガンダム 閃光のハサウェイ キルケーの魔女",
       "bgm_name_cn": "机动战士高达 闪光的哈萨维 喀耳刻的魔女",
@@ -1613,7 +1360,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 615327,
@@ -1645,7 +1392,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 424288,
       "bgm_name": "테러맨",
       "bgm_name_cn": "极限拯救",
@@ -1658,7 +1405,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 491656,
       "bgm_name": "花緑青が明ける日に",
       "bgm_name_cn": "花绿青绽放的黎明",
@@ -1671,7 +1418,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 604826,
       "bgm_name": "超かぐや姫！",
       "bgm_name_cn": "超时空辉夜姬！",
@@ -1684,7 +1431,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 550937,
       "bgm_name": "クスノキの番人",
       "bgm_name_cn": "祈念守护人",
@@ -1697,7 +1444,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 548818,
       "bgm_name": "メダリスト 第2期",
       "bgm_name_cn": "金牌得主 第二季",
@@ -1710,7 +1457,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 601763,
       "bgm_name": "お前はまだグンマを知らない～令和版～",
       "bgm_name_cn": "你还是不懂群马～令和版～",
@@ -1723,7 +1470,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 576669,
       "bgm_name": "パリに咲くエトワール",
       "bgm_name_cn": "绽放的巴黎之星",
@@ -1736,14 +1483,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 526975,
-          "bgm_name": "择天记3D",
-          "bgm_name_cn": "择天记"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 526975,
+      "bgm_name": "择天记3D",
+      "bgm_name_cn": "择天记",
       "mal": {
         "id": 61562,
         "title": "Ze Tian Ji (2026)",
@@ -1753,7 +1496,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 551918,
       "bgm_name": "スティール・ボール・ラン ジョジョの奇妙な冒険",
       "bgm_name_cn": "飙马野郎 JOJO的奇妙冒险",
@@ -1766,24 +1509,10 @@
       }
     },
     {
-      "confirmed": false,
-      "candidates": [
-        {
-          "bgm_id": 612879,
-          "bgm_name": "もう一度、してみたい。",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 619326,
-          "bgm_name": "もし、これから生まれるのなら",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 554013,
-          "bgm_name": "お気楽領主の楽しい領地防衛～生産系魔術で名もなき村を最強の城塞都市に～",
-          "bgm_name_cn": "安逸领主的愉快领地防卫～以生产系魔术将无名小村打造成最强要塞都市～"
-        }
-      ],
+      "status": "model",
+      "bgm_id": 612879,
+      "bgm_name": "もう一度、してみたい。",
+      "bgm_name_cn": "",
       "mal": {
         "id": 63074,
         "title": "Mou Ichido, Shitemitai.",
@@ -1793,7 +1522,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 610628,
       "bgm_name": "剣鬼バルゴ",
       "bgm_name_cn": "",
@@ -1806,7 +1535,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 610629,
       "bgm_name": "L'amour fou de l'automate",
       "bgm_name_cn": "",
@@ -1819,7 +1548,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 583519,
       "bgm_name": "映画ドラえもん 新・のび太の海底鬼岩城",
       "bgm_name_cn": "哆啦A梦：新・大雄的海底鬼岩城",
@@ -1832,7 +1561,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 456169,
       "bgm_name": "驭灵师",
       "bgm_name_cn": "驭灵师",
@@ -1845,7 +1574,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 524128,
       "bgm_name": "天穂のサクナヒメ ココロワ稲作日誌",
       "bgm_name_cn": "天穗之咲稻姬 心轮的稻作日记",
@@ -1858,7 +1587,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 611077,
       "bgm_name": "名探偵プリキュア！",
       "bgm_name_cn": "名侦探光之美少女！",
@@ -1871,7 +1600,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 491775,
       "bgm_name": "大主宰 年番2",
       "bgm_name_cn": "",
@@ -1884,7 +1613,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 593806,
       "bgm_name": "制服は着たままで",
       "bgm_name_cn": "",
@@ -1897,7 +1626,7 @@
       }
     },
     {
-      "confirmed": false,
+      "status": "unconfirmed",
       "candidates": [
         {
           "bgm_id": 583519,
@@ -1919,7 +1648,7 @@
       }
     },
     {
-      "confirmed": true,
+      "status": "match",
       "bgm_id": 515595,
       "bgm_name": "劇場版 転生したらスライムだった件 蒼海の涙編",
       "bgm_name_cn": "剧场版 关于我转生变成史莱姆这档事 苍海之泪篇",

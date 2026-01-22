@@ -4,6 +4,7 @@ mod services;
 use anyhow::{Context, Result};
 use core::SeasonProcessor;
 use services::bgmtv::BgmtvClient;
+use services::ds::DsClient;
 use services::mal::{MalClient, Season};
 use std::path::PathBuf;
 use tracing::info;
@@ -22,11 +23,18 @@ async fn main() -> Result<()> {
     let bgm_token = std::env::var("BGM_TOKEN").context("BGM_TOKEN must be set in .env")?;
     let mal_client_id =
         std::env::var("MAL_CLIENT_ID").context("MAL_CLIENT_ID must be set in .env")?;
+    let ds_api_key = std::env::var("DS_API_KEY").ok();
 
     let bgm_client = BgmtvClient::new(bgm_token);
     let mal_client = MalClient::new(mal_client_id);
 
-    let processor = SeasonProcessor::new(mal_client, bgm_client);
+    let mut processor = SeasonProcessor::new(mal_client, bgm_client);
+    if let Some(api_key) = ds_api_key {
+        info!("DeepSeek 客户端已启用");
+        processor = processor.with_ds_client(DsClient::new(api_key));
+    } else {
+        info!("DeepSeek 客户端未配置，跳过模型匹配");
+    }
 
     // 处理 2026 年冬季
     let year = 2026;
@@ -39,7 +47,7 @@ async fn main() -> Result<()> {
 
     info!(
         total = result.items.len(),
-        confirmed = result.items.iter().filter(|i| i.confirmed).count(),
+        confirmed = result.items.iter().filter(|i| i.status.is_confirmed()).count(),
         "处理完成"
     );
 
