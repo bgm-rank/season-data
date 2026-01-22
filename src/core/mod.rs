@@ -102,25 +102,25 @@ impl MalInfo {
 /// Bangumi 候选条目
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct BgmCandidate {
-    pub id: u64,
-    pub name: String,
+    pub bgm_id: u64,
+    pub bgm_name: String,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub name_cn: Option<String>,
+    pub bgm_name_cn: Option<String>,
 }
 
 /// 季度条目
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SeasonItem {
+    pub confirmed: bool,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub bgm_id: Option<u64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub bgm_name: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub bgm_name_cn: Option<String>,
-    pub confirmed: bool,
-    pub mal: MalInfo,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub candidates: Vec<BgmCandidate>,
+    pub mal: MalInfo,
 }
 
 /// 季度数据
@@ -301,31 +301,31 @@ impl SeasonProcessor {
             let candidates: Vec<_> = results
                 .iter()
                 .map(|s| BgmCandidate {
-                    id: s.id,
-                    name: s.name.clone().unwrap_or_default(),
-                    name_cn: s.name_cn.clone(),
+                    bgm_id: s.id,
+                    bgm_name: s.name.clone().unwrap_or_default(),
+                    bgm_name_cn: s.name_cn.clone(),
                 })
                 .collect();
 
             // 严格匹配：日文标题完全相等
             let exact_match = candidates
                 .iter()
-                .find(|c| Some(c.name.as_str()) == mal_info.title_ja.as_deref());
+                .find(|c| Some(c.bgm_name.as_str()) == mal_info.title_ja.as_deref());
 
             let item = if let Some(matched) = exact_match {
                 info!(
                     mal_id = mal_info.id,
-                    bgm_id = matched.id,
-                    name = %matched.name,
+                    bgm_id = matched.bgm_id,
+                    name = %matched.bgm_name,
                     "完全匹配"
                 );
                 SeasonItem {
-                    bgm_id: Some(matched.id),
-                    bgm_name: Some(matched.name.clone()),
-                    bgm_name_cn: matched.name_cn.clone(),
                     confirmed: true,
-                    mal: mal_info,
+                    bgm_id: Some(matched.bgm_id),
+                    bgm_name: Some(matched.bgm_name.clone()),
+                    bgm_name_cn: matched.bgm_name_cn.clone(),
                     candidates: vec![],
+                    mal: mal_info,
                 }
             } else {
                 if candidates.is_empty() {
@@ -342,12 +342,12 @@ impl SeasonProcessor {
                     );
                 }
                 SeasonItem {
+                    confirmed: false,
                     bgm_id: None,
                     bgm_name: None,
                     bgm_name_cn: None,
-                    confirmed: false,
-                    mal: mal_info,
                     candidates,
+                    mal: mal_info,
                 }
             };
 
@@ -435,10 +435,11 @@ mod tests {
         };
 
         data.items.push(SeasonItem {
+            confirmed: true,
             bgm_id: Some(400602),
             bgm_name: Some("葬送のフリーレン 第2期".to_string()),
             bgm_name_cn: Some("葬送的芙莉莲 第二季".to_string()),
-            confirmed: true,
+            candidates: vec![],
             mal: MalInfo {
                 id: 59978,
                 title: "Sousou no Frieren 2nd Season".to_string(),
@@ -446,7 +447,6 @@ mod tests {
                 media_type: MediaType::Tv,
                 rating: Rating::General,
             },
-            candidates: vec![],
         });
 
         let json = serde_json::to_string_pretty(&data).unwrap();

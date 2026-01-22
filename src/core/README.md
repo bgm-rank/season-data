@@ -18,35 +18,31 @@
   "update_time": "2026-01-22T10:36:29+08:00",
   "items": [
     {
+      "confirmed": true,
       "bgm_id": 400602,
       "bgm_name": "葬送のフリーレン 第2期",
       "bgm_name_cn": "葬送的芙莉莲 第二季",
-      "confirmed": true,
       "mal": {
         "id": 59978,
         "title": "Sousou no Frieren 2nd Season",
         "title_ja": "葬送のフリーレン 第2期",
         "media_type": "tv",
         "rating": "general"
-      },
-      "candidates": []
+      }
     },
     {
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
       "confirmed": false,
+      "candidates": [
+        { "bgm_id": 500001, "bgm_name": "おそ松さん 第4期", "bgm_name_cn": "阿松 第四季" },
+        { "bgm_id": 500002, "bgm_name": "おそ松さん", "bgm_name_cn": "阿松" }
+      ],
       "mal": {
         "id": 12345,
         "title": "Osomatsu-san 4",
         "title_ja": "おそ松さん 4期",
         "media_type": "tv",
         "rating": "general"
-      },
-      "candidates": [
-        { "bgm_id": 500001, "bgm_name": "おそ松さん 第4期", "bgm_name_cn": "阿松 第四季" },
-        { "bgm_id": 500002, "bgm_name": "おそ松さん", "bgm_name_cn": "阿松" }
-      ]
+      }
     }
   ]
 }
