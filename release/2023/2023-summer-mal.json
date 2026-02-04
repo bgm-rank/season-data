@@ -1,0 +1,4061 @@
+{
+  "season": "2023-summer",
+  "update_time": "2026-02-04T16:33:30+08:00",
+  "items": [
+    {
+      "status": "model",
+      "bgm_id": 312658,
+      "bgm_name": "雾山五行 犀川幻紫林",
+      "bgm_name_cn": "雾山五行 犀川幻紫林",
+      "mal": {
+        "id": 50407,
+        "title": "Wu Shan Wu Xing: Xichuan Huan Zi Lin",
+        "title_ja": "雾山五行·犀川幻紫林",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 440072,
+      "bgm_name": "万圣街 第四季",
+      "bgm_name_cn": "万圣街 第四季",
+      "mal": {
+        "id": 53859,
+        "title": "Wan Sheng Jie 4",
+        "title_ja": "万圣街4",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 445681,
+      "bgm_name": "凡人修仙传 星海飞驰篇 序章",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55993,
+        "title": "Fanren Xiu Xian Zhuan: Xinghai Feichi Prologue",
+        "title_ja": "凡人修仙传 星海飞驰 序章",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 405213,
+      "bgm_name": "永生之十年之约",
+      "bgm_name_cn": "永生 第二季",
+      "mal": {
+        "id": 55684,
+        "title": "Yong Sheng: Shi Nian Zhi Yue",
+        "title_ja": "永生之十年之约",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 369304,
+      "bgm_name": "呪術廻戦 懐玉・玉折／渋谷事変",
+      "bgm_name_cn": "咒术回战 怀玉･玉折 / 涩谷事变",
+      "mal": {
+        "id": 56243,
+        "title": "Jujutsu Kaisen 2nd Season Recaps",
+        "title_ja": "呪術廻戦",
+        "media_type": "tv_special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 375512,
+      "bgm_name": "ケンガンアシュラ Season2",
+      "bgm_name_cn": "拳愿阿修罗 Season2",
+      "mal": {
+        "id": 51369,
+        "title": "Kengan Ashura Season 2",
+        "title_ja": "ケンガンアシュラ Season2",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 434882,
+          "bgm_name": "《崩坏：星穹铁道》动画短片",
+          "bgm_name_cn": "《崩坏：星穹铁道》动画短片"
+        },
+        {
+          "bgm_id": 484010,
+          "bgm_name": "【崩坏：星穹铁道 HoYoFair】银河大奖赛动画CM",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 555159,
+          "bgm_name": "《崩坏：星穹铁道》二周年特别动画：「不虚此行」",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 534503,
+          "bgm_name": "星旅一瞬 / CM",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 476441,
+          "bgm_name": "钟表小子系列动画",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 223149,
+          "bgm_name": "崩坏星河",
+          "bgm_name_cn": "崩坏星河"
+        },
+        {
+          "bgm_id": 292580,
+          "bgm_name": "崩坏3 希儿",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 292935,
+          "bgm_name": "崩坏3 布洛妮娅",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 309773,
+          "bgm_name": "崩坏3 罪人挽歌",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 366296,
+          "bgm_name": "崩坏3 阿波卡利斯如是说",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 56471,
+        "title": "Benghuai: Xing Qiong Tiedao - Xuanhuang",
+        "title_ja": "《崩坏：星穹铁道》：「玄黄」",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 441233,
+      "bgm_name": "トニカクカワイイ 女子高編",
+      "bgm_name_cn": "总之就是非常可爱 女子高中篇",
+      "mal": {
+        "id": 55651,
+        "title": "Tonikaku Kawaii: Joshikou-hen",
+        "title_ja": "トニカクカワイイ 女子高編",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 345827,
+      "bgm_name": "修罗武神",
+      "bgm_name_cn": "修罗武神",
+      "mal": {
+        "id": 49742,
+        "title": "Xiuluo Wushen",
+        "title_ja": "修罗武神",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 426531,
+      "bgm_name": "もののがたり 第二章",
+      "bgm_name_cn": "物之古物奇谭 第二章",
+      "mal": {
+        "id": 54883,
+        "title": "Mononogatari 2nd Season",
+        "title_ja": "もののがたり 第二章",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 450605,
+      "bgm_name": "MIGNON",
+      "bgm_name_cn": "闵勇",
+      "mal": {
+        "id": 49430,
+        "title": "Mignon",
+        "title_ja": "MIGNON 민용",
+        "media_type": "ona",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 386195,
+      "bgm_name": "特別編 響け！ユーフォニアム～アンサンブルコンテスト～",
+      "bgm_name_cn": "特别篇 吹响吧！上低音号～合奏比赛～",
+      "mal": {
+        "id": 51995,
+        "title": "Hibike! Euphonium: Ensemble Contest-hen",
+        "title_ja": "『響け！ユーフォニアム』アンサンブルコンテスト編",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 358557,
+      "bgm_name": "第一序列",
+      "bgm_name_cn": "第一序列",
+      "mal": {
+        "id": 55733,
+        "title": "Di Yi Xulie",
+        "title_ja": "第一序列",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 345762,
+      "bgm_name": "恶魔法则",
+      "bgm_name_cn": "恶魔法则",
+      "mal": {
+        "id": 51287,
+        "title": "Emo Faze",
+        "title_ja": "恶魔法则",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 412916,
+      "bgm_name": "BLEACH 千年血戦篇-訣別譚-",
+      "bgm_name_cn": "死神 千年血战篇-诀别谭-",
+      "mal": {
+        "id": 56442,
+        "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan Recap",
+        "title_ja": "BLEACH 千年血戦篇-訣別譚-",
+        "media_type": "tv_special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 437694,
+      "bgm_name": "ツンデロシリーズ",
+      "bgm_name_cn": "傲娇好色系列",
+      "mal": {
+        "id": 55524,
+        "title": "Tsundero Series",
+        "title_ja": "ツンデロシリーズ",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 405210,
+      "bgm_name": "镇魂街 第三季",
+      "bgm_name_cn": "镇魂街 风花雪月篇",
+      "mal": {
+        "id": 55790,
+        "title": "Zhen Hun Jie 3rd Season",
+        "title_ja": "镇魂街 第三季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 422699,
+      "bgm_name": "映画 プリキュアオールスターズF",
+      "bgm_name_cn": "电影 光之美少女 All Stars F",
+      "mal": {
+        "id": 54650,
+        "title": "Precure All Stars Movie F",
+        "title_ja": "映画プリキュアオールスターズF",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 345802,
+      "bgm_name": "仙逆",
+      "bgm_name_cn": "仙逆",
+      "mal": {
+        "id": 55809,
+        "title": "Xian Ni",
+        "title_ja": "仙逆",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 437502,
+      "bgm_name": "おでかけ子ザメ",
+      "bgm_name_cn": "小鲨鱼去郊游",
+      "mal": {
+        "id": 55463,
+        "title": "Odekake Kozame",
+        "title_ja": "おでかけ子ザメ",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 427071,
+      "bgm_name": "スケベエルフ探訪記",
+      "bgm_name_cn": "好色精灵探访记",
+      "mal": {
+        "id": 54912,
+        "title": "Sukebe Elf Tanbouki",
+        "title_ja": "スケベエルフ探訪記",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 453060,
+      "bgm_name": "仙武传 第二季",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56717,
+        "title": "Xianwu Zhuan 2nd Season",
+        "title_ja": "仙武传 第二季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 358570,
+      "bgm_name": "风灵玉秀 第二章",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55692,
+        "title": "Feng Ling Yu Xiu 2nd Season",
+        "title_ja": "风灵玉秀 第二章",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 438302,
+      "bgm_name": "この恋に気づいて THE ANIMATION",
+      "bgm_name_cn": "这份恋情望你察觉",
+      "mal": {
+        "id": 55547,
+        "title": "Kono Koi ni Kizuite The Animation",
+        "title_ja": "この恋に気づいて THE ANIMATION",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 411278,
+      "bgm_name": "SAND LAND",
+      "bgm_name_cn": "沙漠大冒险",
+      "mal": {
+        "id": 53882,
+        "title": "Sand Land",
+        "title_ja": "SAND LAND",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 395657,
+      "bgm_name": "逆天邪神",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55745,
+        "title": "Nitian Xie Shen",
+        "title_ja": "逆天邪神",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 429921,
+      "bgm_name": "神澜奇域无双珠 天魔篇",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55740,
+        "title": "Shen Lan Qi Yu Wushuang Zhu: Tianmo Pian",
+        "title_ja": "神澜奇域无双珠 天魔篇",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 373931,
+          "bgm_name": "バンドリ！ガールズバンドパーティ！5th Anniversary Animation -CiRCLE THANKS PARTY！-",
+          "bgm_name_cn": "BanG Dream! 少女乐团派对！5周年纪念动画 -CiRCLE THANKS PARTY!-"
+        },
+        {
+          "bgm_id": 186515,
+          "bgm_name": "BanG Dream!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 279219,
+          "bgm_name": "BanG Dream! FILM LIVE",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 540449,
+          "bgm_name": "元祖！バンドリちゃん",
+          "bgm_name_cn": "元祖！BanG Dream Chan"
+        },
+        {
+          "bgm_id": 583729,
+          "bgm_name": "BanG Dream! ゆめ∞みた",
+          "bgm_name_cn": "BanG Dream! YUME∞MITA"
+        },
+        {
+          "bgm_id": 256466,
+          "bgm_name": "マウスバンド アニメCM feat.貞本義行＆ライデンフィルム",
+          "bgm_name_cn": "MOUSE乐队 动画CM feat.贞本义行＆LIDENFILMS"
+        },
+        {
+          "bgm_id": 431767,
+          "bgm_name": "ガールズバンドクライ",
+          "bgm_name_cn": "GIRLS BAND CRY"
+        },
+        {
+          "bgm_id": 587772,
+          "bgm_name": "ガールズバンドクライ 新作映画",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 3241,
+          "bgm_name": "ダンス イン ザ ヴァンパイアバンド",
+          "bgm_name_cn": "吸血鬼同盟"
+        },
+        {
+          "bgm_id": 116349,
+          "bgm_name": "おっぱい学園マーチングバンド部！",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 54959,
+        "title": "BanG Dream! It's MyGO!!!!!",
+        "title_ja": "バンドリ！It's MyGO!!!!!",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 432404,
+          "bgm_name": "Fate/Grand Order Memorial Movie 2023",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 53127,
+        "title": "Fate/strange Fake: Whispers of Dawn",
+        "title_ja": "Fate/strange Fake -Whispers of Dawn-",
+        "media_type": "tv_special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 390794,
+      "bgm_name": "ダークギャザリング",
+      "bgm_name_cn": "黑暗集会",
+      "mal": {
+        "id": 52505,
+        "title": "Dark Gathering",
+        "title_ja": "ダークギャザリング",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 426815,
+      "bgm_name": "文豪ストレイドッグス 第5シーズン",
+      "bgm_name_cn": "文豪野犬 第五季",
+      "mal": {
+        "id": 54898,
+        "title": "Bungou Stray Dogs 5th Season",
+        "title_ja": "文豪ストレイドッグス",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 456724,
+          "bgm_name": "異世界転移ち〇ぽ 動画版",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 54856,
+        "title": "Horimiya: Piece",
+        "title_ja": "ホリミヤ -piece-",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 412916,
+      "bgm_name": "BLEACH 千年血戦篇-訣別譚-",
+      "bgm_name_cn": "死神 千年血战篇-诀别谭-",
+      "mal": {
+        "id": 53998,
+        "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
+        "title_ja": "BLEACH 千年血戦篇-訣別譚-",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 369304,
+      "bgm_name": "呪術廻戦 懐玉・玉折／渋谷事変",
+      "bgm_name_cn": "咒术回战 怀玉･玉折 / 涩谷事变",
+      "mal": {
+        "id": 51009,
+        "title": "Jujutsu Kaisen 2nd Season",
+        "title_ja": "呪術廻戦 懐玉・玉折／渋谷事変",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 373247,
+      "bgm_name": "無職転生Ⅱ ～異世界行ったら本気だす～",
+      "bgm_name_cn": "无职转生 第二季 ～到了异世界就拿出真本事～",
+      "mal": {
+        "id": 55818,
+        "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz",
+        "title_ja": "無職転生Ⅱ ～異世界行ったら本気だす～ 第0話「守護術師フィッツ」",
+        "media_type": "tv_special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 338372,
+      "bgm_name": "おそ松さん～魂のたこ焼きパーティーと伝説のお泊り会～",
+      "bgm_name_cn": "阿松～魂之章鱼烧派对与传说的留宿～",
+      "mal": {
+        "id": 49120,
+        "title": "Osomatsu-san: Tamashii no Takoyaki Party to Densetsu no Otomarikai",
+        "title_ja": "おそ松さん~魂のたこ焼きパーティーと伝説のお泊り会~",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 377125,
+      "bgm_name": "わたしの幸せな結婚",
+      "bgm_name_cn": "我的幸福婚姻",
+      "mal": {
+        "id": 51552,
+        "title": "Watashi no Shiawase na Kekkon",
+        "title_ja": "わたしの幸せな結婚",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 341311,
+      "bgm_name": "时光代理人 第二季",
+      "bgm_name_cn": "时光代理人 第二季",
+      "mal": {
+        "id": 49413,
+        "title": "Shiguang Dailiren II",
+        "title_ja": "时光代理人II",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 425591,
+      "bgm_name": "アンデッドガール・マーダーファルス",
+      "bgm_name_cn": "不死少女 杀人笑剧",
+      "mal": {
+        "id": 54790,
+        "title": "Undead Girl Murder Farce",
+        "title_ja": "アンデッドガール・マーダーファルス",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 373247,
+      "bgm_name": "無職転生Ⅱ ～異世界行ったら本気だす～",
+      "bgm_name_cn": "无职转生 第二季 ～到了异世界就拿出真本事～",
+      "mal": {
+        "id": 51179,
+        "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+        "title_ja": "無職転生 II ～異世界行ったら本気だす～",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 414461,
+      "bgm_name": "ゾン100～ゾンビになるまでにしたい100のこと～",
+      "bgm_name_cn": "僵尸百分百～在成为僵尸前要做的100件事～",
+      "mal": {
+        "id": 54112,
+        "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+        "title_ja": "ゾン100～ゾンビになるまでにしたい100のこと～",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 379517,
+      "bgm_name": "真阳武神",
+      "bgm_name_cn": "真阳武神",
+      "mal": {
+        "id": 55693,
+        "title": "Zhen Yang Wushen",
+        "title_ja": "真阳武神",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 410418,
+      "bgm_name": "しん次元! クレヨンしんちゃん THE MOVIE 超能力大決戦 〜とべとべ手巻き寿司〜",
+      "bgm_name_cn": "蜡笔小新：新次元！超能力大决战",
+      "mal": {
+        "id": 53810,
+        "title": "Crayon Shin-chan Movie 31: Chounouryoku Daikessen - Tobe Tobe Temakizushi",
+        "title_ja": "しん次元! クレヨンしんちゃんTHE MOVIE 超能力大決戦 ~とべとべ手巻き寿司~",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 403732,
+      "bgm_name": "盖世帝尊",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55694,
+        "title": "Gaishi Dizun",
+        "title_ja": "盖世帝尊",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 397534,
+      "bgm_name": "长安三万里",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 54945,
+        "title": "Chang An San Wan Li",
+        "title_ja": "长安三万里",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 410843,
+      "bgm_name": "ChroNoiR Episode.0",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56111,
+        "title": "ChroNoiR Episode.0",
+        "title_ja": "ChroNoiR Episode.0",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 425969,
+      "bgm_name": "シャドウバースＦ セブンシャドウズ編",
+      "bgm_name_cn": "影之诗F 七影篇",
+      "mal": {
+        "id": 54854,
+        "title": "Shadowverse Flame: Seven Shadows-hen",
+        "title_ja": "シャドウバースF セブンシャドウズ編",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 432482,
+      "bgm_name": "奥さまの回復術 THE ANIMATION",
+      "bgm_name_cn": "太太的恢复术 THE ANIMATION",
+      "mal": {
+        "id": 55145,
+        "title": "Okusama no Kaifuku Jutsu The Animation",
+        "title_ja": "奥さまの回復術 THE ANIMATION",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 453482,
+      "bgm_name": "洪荒灵尊",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56578,
+        "title": "Honghuang Ling Zun",
+        "title_ja": "洪荒灵尊",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 400602,
+      "bgm_name": "葬送のフリーレン",
+      "bgm_name_cn": "葬送的芙莉莲",
+      "mal": {
+        "id": 56830,
+        "title": "Journey to Bloom",
+        "title_ja": "Journey to Bloom",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 407308,
+      "bgm_name": "是王者啊？第2季 云中不完全剿匪日记",
+      "bgm_name_cn": "是王者啊？ 第二季",
+      "mal": {
+        "id": 56774,
+        "title": "Wangzhe Da Shixiong",
+        "title_ja": "王者大师兄",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 466714,
+          "bgm_name": "真面目な水泳部員が顧問の先生にメス堕ちしちゃいました。 The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459321,
+          "bgm_name": "女子プロレス会場で見つけた俺好みの美少女レスラー 俺の妄想大爆発エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459322,
+          "bgm_name": "第2試合のゴングが鳴る 美少女レスラーをまた発見 俺の妄想大爆発 エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 59138,
+        "title": "Mash Burnedead-tachi to School Life",
+        "title_ja": "マッシュ・バーンデッドたちと寮生活[スクールライフ]",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 345823,
+      "bgm_name": "魔装传说",
+      "bgm_name_cn": "魔装传说",
+      "mal": {
+        "id": 56342,
+        "title": "Mo Zhuang Chuanshuo",
+        "title_ja": "魔装传说",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 444141,
+      "bgm_name": "九辰风云录",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55864,
+        "title": "Jiu Chen Fengyun Lu",
+        "title_ja": "九辰风云录",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 376433,
+      "bgm_name": "政宗くんのリベンジR",
+      "bgm_name_cn": "政宗君的复仇R",
+      "mal": {
+        "id": 51498,
+        "title": "Masamune-kun no Revenge R",
+        "title_ja": "政宗くんのリベンジR",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 315262,
+      "bgm_name": "有药2",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 48964,
+        "title": "You Yao 2",
+        "title_ja": "有药2",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 425937,
+      "bgm_name": "終末のワルキューレⅡ 後編",
+      "bgm_name_cn": "终末的女武神Ⅱ 后篇",
+      "mal": {
+        "id": 55454,
+        "title": "Shuumatsu no Walküre II Part 2",
+        "title_ja": "終末のワルキューレII 後編",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 349319,
+      "bgm_name": "死神坊ちゃんと黒メイド 第2期",
+      "bgm_name_cn": "死神少爷与黑女仆 第二季",
+      "mal": {
+        "id": 49858,
+        "title": "Shinigami Bocchan to Kuro Maid 2nd Season",
+        "title_ja": "死神坊ちゃんと黒メイド",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 425916,
+      "bgm_name": "シュガーアップル・フェアリーテイル 第2クール",
+      "bgm_name_cn": "银砂糖师与黑妖精 第2部分",
+      "mal": {
+        "id": 54842,
+        "title": "Sugar Apple Fairy Tale Part 2",
+        "title_ja": "シュガーアップル・フェアリーテイル",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 369784,
+      "bgm_name": "Helck",
+      "bgm_name_cn": "勇者赫鲁库",
+      "mal": {
+        "id": 51020,
+        "title": "Helck",
+        "title_ja": "ヘルク",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 387822,
+      "bgm_name": "白聖女と黒牧師",
+      "bgm_name_cn": "白圣女与黑牧师",
+      "mal": {
+        "id": 52082,
+        "title": "Shiro Seijo to Kuro Bokushi",
+        "title_ja": "白聖女と黒牧師",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 450927,
+      "bgm_name": "武映三千道 第二季",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56439,
+        "title": "Wu Ying Sanqian Dao 2nd Season",
+        "title_ja": "武映三千道 第二季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 427233,
+      "bgm_name": "五等分の花嫁∽",
+      "bgm_name_cn": "五等分的新娘∽",
+      "mal": {
+        "id": 54915,
+        "title": "5-toubun no Hanayome∽",
+        "title_ja": "五等分の花嫁∽",
+        "media_type": "tv_special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 340167,
+      "bgm_name": "アリスとテレスのまぼろし工場",
+      "bgm_name_cn": "爱丽丝和特蕾丝的幻影工厂",
+      "mal": {
+        "id": 49303,
+        "title": "Alice to Therese no Maboroshi Koujou",
+        "title_ja": "アリスとテレスのまぼろし工場",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 375541,
+      "bgm_name": "範馬刃牙 2期",
+      "bgm_name_cn": "范马刃牙 第二季",
+      "mal": {
+        "id": 51318,
+        "title": "Hanma Baki: Son of Ogre 2nd Season",
+        "title_ja": "範馬刃牙 SON OF OGRE",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 477740,
+          "bgm_name": "ロ〇ビッチをオナホとして使ってい ると生意気メス〇キに戻ったので、 また「わからせ」た.。",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 285522,
+          "bgm_name": "きゃろる＆ちゅーずでい",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 10649,
+          "bgm_name": "ルー＝ガルー",
+          "bgm_name_cn": "应避忌的狼"
+        },
+        {
+          "bgm_id": 206737,
+          "bgm_name": "夜明け告げるルーのうた",
+          "bgm_name_cn": "宣告黎明的露之歌"
+        },
+        {
+          "bgm_id": 73825,
+          "bgm_name": "BLAZBLUE ALTER MEMORY",
+          "bgm_name_cn": "苍翼默示录 Alter Memory"
+        },
+        {
+          "bgm_id": 98053,
+          "bgm_name": "るんは風の中",
+          "bgm_name_cn": "风中之露"
+        },
+        {
+          "bgm_id": 9779,
+          "bgm_name": "べるぜバブ",
+          "bgm_name_cn": "恶魔奶爸"
+        },
+        {
+          "bgm_id": 10765,
+          "bgm_name": "べるぜバブ 拾った赤ちゃんは大魔王!?",
+          "bgm_name_cn": "恶魔奶爸 OAD"
+        },
+        {
+          "bgm_id": 18624,
+          "bgm_name": "輪るピングドラム",
+          "bgm_name_cn": "回转企鹅罐"
+        },
+        {
+          "bgm_id": 29649,
+          "bgm_name": "アルヴ・レズル -機械仕掛けの妖精たち-",
+          "bgm_name_cn": "Arve Rezzle 机器化的妖精们"
+        }
+      ],
+      "mal": {
+        "id": 50613,
+        "title": "Rurouni Kenshin: Meiji Kenkaku Romantan (2023)",
+        "title_ja": "るろうに剣心 -明治剣客浪漫譚-",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 395236,
+      "bgm_name": "十方剑圣",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55829,
+        "title": "Shi Fang Jian Sheng",
+        "title_ja": "十方剑圣",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 228715,
+      "bgm_name": "君たちはどう生きるか",
+      "bgm_name_cn": "你想活出怎样的人生",
+      "mal": {
+        "id": 36699,
+        "title": "Kimitachi wa Dou Ikiru ka",
+        "title_ja": "君たちはどう生きるか",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 384672,
+      "bgm_name": "デキる猫は今日も憂鬱",
+      "bgm_name_cn": "能干的猫今天也忧郁",
+      "mal": {
+        "id": 51916,
+        "title": "Dekiru Neko wa Kyou mo Yuuutsu",
+        "title_ja": "デキる猫は今日も憂鬱",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 405227,
+      "bgm_name": "小绿和小蓝Ⅱ 魔王篇",
+      "bgm_name_cn": "小绿和小蓝 第二季 魔王篇",
+      "mal": {
+        "id": 56695,
+        "title": "Xiao Lu He Xiao Lan III: Mo Wang Pian",
+        "title_ja": "小绿和小蓝Ⅲ 魔王篇",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 405266,
+      "bgm_name": "怪兽小馆",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55738,
+        "title": "Guaishou Xiao Guan",
+        "title_ja": "怪兽小馆",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 345829,
+      "bgm_name": "堕玄师",
+      "bgm_name_cn": "堕玄师",
+      "mal": {
+        "id": 51291,
+        "title": "Duo Xuan Shi",
+        "title_ja": "堕玄师",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 405227,
+      "bgm_name": "小绿和小蓝Ⅱ 魔王篇",
+      "bgm_name_cn": "小绿和小蓝 第二季 魔王篇",
+      "mal": {
+        "id": 53448,
+        "title": "Xiao Lu He Xiao Lan II: Mo Wang Pian",
+        "title_ja": "小绿和小蓝Ⅱ 魔王篇",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 427071,
+      "bgm_name": "スケベエルフ探訪記",
+      "bgm_name_cn": "好色精灵探访记",
+      "mal": {
+        "id": 56558,
+        "title": "Eldraine no Mori: Twin Fates",
+        "title_ja": "『エルドレインの森』アニメトレーラー フルver. “Twin Fates”",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 448621,
+      "bgm_name": "独步万古",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56716,
+        "title": "Dubu Wangu",
+        "title_ja": "独步万古",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 390896,
+      "bgm_name": "锦衣神匠",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56579,
+        "title": "Jinyi Shen Jiang",
+        "title_ja": "锦衣神匠",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 438655,
+          "bgm_name": "Teenage Euthanasia Season 2",
+          "bgm_name_cn": "少年安乐死 第二季"
+        },
+        {
+          "bgm_id": 385730,
+          "bgm_name": "雪域少年",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 425604,
+          "bgm_name": "永久少年 Eternal Boys NEXT STAGE",
+          "bgm_name_cn": "永久少年 Eternal Boys NEXT STAGE"
+        },
+        {
+          "bgm_id": 402656,
+          "bgm_name": "青春ブタ野郎はおでかけシスターの夢を見ない",
+          "bgm_name_cn": "青春猪头少年不会梦到娇怜外出妹"
+        },
+        {
+          "bgm_id": 408351,
+          "bgm_name": "夢見る男子は現実主義者",
+          "bgm_name_cn": "满怀美梦的少年是现实主义者"
+        },
+        {
+          "bgm_id": 228715,
+          "bgm_name": "君たちはどう生きるか",
+          "bgm_name_cn": "你想活出怎样的人生"
+        },
+        {
+          "bgm_id": 445780,
+          "bgm_name": "魔法少女ノーブル・ローズ THE ANIMATION",
+          "bgm_name_cn": "魔法少女诺布尔・劳斯 THE ANIMATION"
+        },
+        {
+          "bgm_id": 448015,
+          "bgm_name": "美少女無罪♡パイレーツ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 379605,
+          "bgm_name": "劇場版 美少女戦士セーラームーンCosmos 前編",
+          "bgm_name_cn": "剧场版 美少女战士Cosmos 前篇"
+        },
+        {
+          "bgm_id": 415728,
+          "bgm_name": "劇場版 美少女戦士セーラームーンCosmos 後編",
+          "bgm_name_cn": "剧场版 美少女战士Cosmos 后篇"
+        }
+      ],
+      "mal": {
+        "id": 51727,
+        "title": "Anhe Zhuan",
+        "title_ja": "少年歌行外传：暗河传",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 401301,
+      "bgm_name": "SYNDUALITY Noir",
+      "bgm_name_cn": "奇异贤伴 黑色天使",
+      "mal": {
+        "id": 55939,
+        "title": "Synduality: Kagaku Kouza",
+        "title_ja": "シンデュアリティ科学講座",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 362006,
+          "bgm_name": "七つの魔剣が支配する",
+          "bgm_name_cn": "七魔剑支配天下"
+        },
+        {
+          "bgm_id": 415182,
+          "bgm_name": "好きな子がめがねを忘れた",
+          "bgm_name_cn": "喜欢的人忘记戴眼镜了"
+        },
+        {
+          "bgm_id": 459322,
+          "bgm_name": "第2試合のゴングが鳴る 美少女レスラーをまた発見 俺の妄想大爆発 エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 466714,
+          "bgm_name": "真面目な水泳部員が顧問の先生にメス堕ちしちゃいました。 The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 477469,
+          "bgm_name": "巨乳高性能ラブドールが捨てられていたので健太くんは持って帰ってセックスした",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 480419,
+          "bgm_name": "親戚の子とお泊まりだから",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 406736,
+          "bgm_name": "冒険者になりたいと都に出て行った娘がSランクになってた",
+          "bgm_name_cn": "因想当冒险者而前往大都市的女儿已经升到了S级"
+        },
+        {
+          "bgm_id": 459320,
+          "bgm_name": "陸上競技会で見かけた 萌えロリブルマ美少女 俺の妄想爆発 乳首責め・おもちゃ責めで 華奢な身体が連続絶頂 何度イっても逃がさない あぁーして…",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 464243,
+          "bgm_name": "メスガキの誘惑に勝てる訳ないだろ!!～妻が連れてきた娘は理想の女の子でした～ モーションアニメ",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 56702,
+        "title": "Gamera VS Kozamera",
+        "title_ja": "ガメラVS子ザメラ",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 3029,
+          "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+          "bgm_name_cn": "剧场版 精灵宝可梦 超世代 梦幻与波导的勇者 路卡利欧"
+        },
+        {
+          "bgm_id": 19561,
+          "bgm_name": "劇場版ポケットモンスター ベストウイッシュ ビクティニと白き英雄 レシラム",
+          "bgm_name_cn": "剧场版 精灵宝可梦 超级愿望 比克提尼与白英雄 莱希拉姆"
+        },
+        {
+          "bgm_id": 19618,
+          "bgm_name": "劇場版ポケットモンスター ベストウイッシュ ビクティニと黒き英雄 ゼクロム",
+          "bgm_name_cn": "剧场版 精灵宝可梦 超级愿望 比克提尼与黑英雄 捷克罗姆"
+        },
+        {
+          "bgm_id": 90368,
+          "bgm_name": "ポケモン・ザ・ムービーXY 破壊の繭とディアンシー",
+          "bgm_name_cn": "剧场版 精灵宝可梦XY 破坏之茧与蒂安希"
+        },
+        {
+          "bgm_id": 99255,
+          "bgm_name": "ポケモン不思議のダンジョン 出動ポケモン救助隊ガンバルズ",
+          "bgm_name_cn": "精灵宝可梦不可思议的迷宫--救助队出动！"
+        },
+        {
+          "bgm_id": 99953,
+          "bgm_name": "ポケモン不思議のダンジョン 時の探検隊・闇の探検隊",
+          "bgm_name_cn": "精灵宝可梦不可思议的迷宫 时之探险队・暗之探险队"
+        },
+        {
+          "bgm_id": 99955,
+          "bgm_name": "ポケモン不思議のダンジョン 空の探検隊 時と闇をめぐる最後の冒険",
+          "bgm_name_cn": "精灵宝可梦不可思议的迷宫 空之探险队 围绕时与暗 最后的冒险"
+        },
+        {
+          "bgm_id": 99956,
+          "bgm_name": "ポケモンレンジャー 光の軌跡",
+          "bgm_name_cn": "精灵宝可梦护林员—光之轨迹特别篇"
+        },
+        {
+          "bgm_id": 103707,
+          "bgm_name": "ポケモン3Dアドベンチャー ミュウを探せ!",
+          "bgm_name_cn": "宝可梦3D大冒险 寻找梦幻！"
+        },
+        {
+          "bgm_id": 103708,
+          "bgm_name": "ポケモン3Dアドベンチャー2 ピカチュウの海底大冒険",
+          "bgm_name_cn": "精灵宝可梦 3D冒险2 皮卡丘的海底大冒险"
+        }
+      ],
+      "mal": {
+        "id": 56861,
+        "title": "Pokemon Yuenchi",
+        "title_ja": "ポケモンゆうえんち",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 401301,
+      "bgm_name": "SYNDUALITY Noir",
+      "bgm_name_cn": "奇异贤伴 黑色天使",
+      "mal": {
+        "id": 53026,
+        "title": "Synduality: Noir",
+        "title_ja": "SYNDUALITY Noir",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 376106,
+      "bgm_name": "Lv1魔王とワンルーム勇者",
+      "bgm_name_cn": "LV1魔王与独居废勇者",
+      "mal": {
+        "id": 51458,
+        "title": "Lv1 Maou to One Room Yuusha",
+        "title_ja": "Lv1魔王とワンルーム勇者",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 416019,
+      "bgm_name": "てんぷる",
+      "bgm_name_cn": "庙不可言",
+      "mal": {
+        "id": 54275,
+        "title": "Temple",
+        "title_ja": "てんぷる",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 347942,
+      "bgm_name": "おかしな転生",
+      "bgm_name_cn": "甜点转生",
+      "mal": {
+        "id": 52611,
+        "title": "Okashi na Tensei",
+        "title_ja": "おかしな転生",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 428418,
+      "bgm_name": "スパイ教室 2nd season",
+      "bgm_name_cn": "间谍教室 第二季",
+      "mal": {
+        "id": 54947,
+        "title": "Spy Kyoushitsu 2nd Season",
+        "title_ja": "スパイ教室",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 520643,
+          "bgm_name": "ブレイド&バスタード",
+          "bgm_name_cn": "BLADE&BASTARD"
+        },
+        {
+          "bgm_id": 174138,
+          "bgm_name": "ロクでなし魔術講師と禁忌教典",
+          "bgm_name_cn": "不正经的魔术讲师与禁忌教典"
+        }
+      ],
+      "mal": {
+        "id": 54141,
+        "title": "Bastard!! Ankoku no Hakaishin: Jigoku no Chinkonka-hen",
+        "title_ja": "BASTARD!! -暗黒の破壊神- 地獄の鎮魂歌編",
+        "media_type": "ona",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 340167,
+          "bgm_name": "アリスとテレスのまぼろし工場",
+          "bgm_name_cn": "爱丽丝和特蕾丝的幻影工厂"
+        },
+        {
+          "bgm_id": 312658,
+          "bgm_name": "雾山五行 犀川幻紫林",
+          "bgm_name_cn": "雾山五行 犀川幻紫林"
+        },
+        {
+          "bgm_id": 448366,
+          "bgm_name": "Disenchantment Season 5",
+          "bgm_name_cn": "幻灭 第五季"
+        },
+        {
+          "bgm_id": 554022,
+          "bgm_name": "Ninjago:Dragons Rising Season 1",
+          "bgm_name_cn": "乐高幻影忍者：神龙崛起 第一季"
+        },
+        {
+          "bgm_id": 408351,
+          "bgm_name": "夢見る男子は現実主義者",
+          "bgm_name_cn": "满怀美梦的少年是现实主义者"
+        }
+      ],
+      "mal": {
+        "id": 52214,
+        "title": "Genjitsu no Yohane: Sunshine in the Mirror",
+        "title_ja": "幻日のヨハネ -SUNSHINE in the MIRROR-",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 455911,
+      "bgm_name": "瓦洛兰小镇",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56771,
+        "title": "Waluolan Xiao Zhen",
+        "title_ja": "瓦洛兰小镇",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 406307,
+      "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。",
+      "bgm_name_cn": "身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力。",
+      "mal": {
+        "id": 53438,
+        "title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+        "title_ja": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 401783,
+      "bgm_name": "彼女、お借りします 第3期",
+      "bgm_name_cn": "租借女友 第三季",
+      "mal": {
+        "id": 53050,
+        "title": "Kanojo, Okarishimasu 3rd Season",
+        "title_ja": "彼女、お借りします",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 415182,
+      "bgm_name": "好きな子がめがねを忘れた",
+      "bgm_name_cn": "喜欢的人忘记戴眼镜了",
+      "mal": {
+        "id": 54234,
+        "title": "Suki na Ko ga Megane wo Wasureta",
+        "title_ja": "好きな子がめがねを忘れた",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 403741,
+      "bgm_name": "聖者無双～サラリーマン、異世界で生き残るために歩む道～",
+      "bgm_name_cn": "圣者无双～上班族的异世界生存之道～",
+      "mal": {
+        "id": 53263,
+        "title": "Seija Musou: Salaryman, Isekai de Ikinokoru Tame ni Ayumu Michi",
+        "title_ja": "聖者無双",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "mal": {
+        "id": 57238,
+        "title": "Dreamfaireez",
+        "title_ja": "Dreamfaireez",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 403225,
+      "bgm_name": "はたらく魔王さま！！ 2nd Season",
+      "bgm_name_cn": "打工吧！！魔王大人 第二季",
+      "mal": {
+        "id": 53200,
+        "title": "Hataraku Maou-sama!! 2nd Season",
+        "title_ja": "はたらく魔王さま！！",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 405198,
+      "bgm_name": "うちの会社の小さい先輩の話",
+      "bgm_name_cn": "公司的小小前辈",
+      "mal": {
+        "id": 53379,
+        "title": "Uchi no Kaisha no Chiisai Senpai no Hanashi",
+        "title_ja": "うちの会社の小さい先輩の話",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 406160,
+      "bgm_name": "百姓貴族",
+      "bgm_name_cn": "百姓贵族",
+      "mal": {
+        "id": 53426,
+        "title": "Hyakushou Kizoku",
+        "title_ja": "百姓貴族",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 421743,
+      "bgm_name": "1LDK＋J系 いきなり同居？密着！？初エッチ！！？",
+      "bgm_name_cn": "1LDK＋JK 突然间展开同居？极度贴近！？初体验！！？",
+      "mal": {
+        "id": 55003,
+        "title": "1LDK + JK Ikinari Doukyo? Micchaku!? Hatsu Ecchi!!?",
+        "title_ja": "1LDK＋J系 いきなり同居？密着！？初エッチ！！？",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 442910,
+      "bgm_name": "区区不才，在下野怪 第二季",
+      "bgm_name_cn": "区区不才，在下野怪 第二季",
+      "mal": {
+        "id": 55762,
+        "title": "Ququ Bucai, Zaixia Yeguai 2nd Season",
+        "title_ja": "区区不才，在下野怪 第二季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 448528,
+      "bgm_name": "HYPERSONIC Music Club",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56164,
+        "title": "Hypersonic Music Club",
+        "title_ja": "HYPERSONIC music club",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 414461,
+      "bgm_name": "ゾン100～ゾンビになるまでにしたい100のこと～",
+      "bgm_name_cn": "僵尸百分百～在成为僵尸前要做的100件事～",
+      "mal": {
+        "id": 56605,
+        "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto Recap",
+        "title_ja": "ゾン100総集編～グンマーに着くまでに復習したい100のこと～",
+        "media_type": "tv_special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 377649,
+      "bgm_name": "劇場版シティーハンター 天使の涙",
+      "bgm_name_cn": "剧场版 城市猎人 天使之泪",
+      "mal": {
+        "id": 51585,
+        "title": "City Hunter Movie: Tenshi no Namida",
+        "title_ja": "劇場版シティーハンター 天使の涙 (エンジェルダスト)",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 449186,
+          "bgm_name": "ギーツエクストラ ギーツあにめ あなざーぐらんぷり",
+          "bgm_name_cn": "极狐外传 极狐动画 异类大奖赛"
+        },
+        {
+          "bgm_id": 442846,
+          "bgm_name": "本屋で見かけた押しアイドル 俺の妄想爆発 輪姦を脳内保管イってる途中も激ヤバピストン連続絶頂オモチャ・触手何でもあり 何度イっても逃がさない あぁーして…",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459319,
+          "bgm_name": "アイドル撮影会で見かけた推しアイドル 俺の妄想爆発乳首責め・二穴責めで大量膣内出し連続絶頂 何度イっても逃がさない あぁーして、こぉーして超気持ちイイ件",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459320,
+          "bgm_name": "陸上競技会で見かけた 萌えロリブルマ美少女 俺の妄想爆発 乳首責め・おもちゃ責めで 華奢な身体が連続絶頂 何度イっても逃がさない あぁーして…",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 55920,
+        "title": "Ahiru-kun no Chiisana Bouken",
+        "title_ja": "アヒルくんの小さな冒険",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 358769,
+      "bgm_name": "无脑魔女",
+      "bgm_name_cn": "无脑魔女",
+      "mal": {
+        "id": 55731,
+        "title": "Wu Nao Monu",
+        "title_ja": "无脑魔女",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 419426,
+      "bgm_name": "バイオハザード：デスアイランド",
+      "bgm_name_cn": "生化危机 死亡岛",
+      "mal": {
+        "id": 54398,
+        "title": "Biohazard: Death Island",
+        "title_ja": "バイオハザード：デスアイランド",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 349222,
+      "bgm_name": "アズールレーン Queen’s Orders",
+      "bgm_name_cn": "碧蓝航线 女王号令",
+      "mal": {
+        "id": 49793,
+        "title": "Azur Lane: Queen's Orders",
+        "title_ja": "アズールレーン Queen's Orders",
+        "media_type": "ova",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 411244,
+          "bgm_name": "劇場版 Collar×Malice -deep cover- 後編",
+          "bgm_name_cn": "剧场版 Collar×Malice -deep cover- 后篇"
+        },
+        {
+          "bgm_id": 459531,
+          "bgm_name": "機甲英雄劇場版 我與我等於無限大",
+          "bgm_name_cn": "机甲英雄剧场版 我与我等于无限大"
+        },
+        {
+          "bgm_id": 377649,
+          "bgm_name": "劇場版シティーハンター 天使の涙",
+          "bgm_name_cn": "剧场版 城市猎人 天使之泪"
+        },
+        {
+          "bgm_id": 379605,
+          "bgm_name": "劇場版 美少女戦士セーラームーンCosmos 前編",
+          "bgm_name_cn": "剧场版 美少女战士Cosmos 前篇"
+        },
+        {
+          "bgm_id": 415728,
+          "bgm_name": "劇場版 美少女戦士セーラームーンCosmos 後編",
+          "bgm_name_cn": "剧场版 美少女战士Cosmos 后篇"
+        },
+        {
+          "bgm_id": 525435,
+          "bgm_name": "극장판 그 여름",
+          "bgm_name_cn": "那个夏天：剧场版"
+        },
+        {
+          "bgm_id": 331759,
+          "bgm_name": "映画 ブラッククローバー 魔法帝の剣",
+          "bgm_name_cn": "电影 黑色五叶草 魔法帝之剑"
+        },
+        {
+          "bgm_id": 457497,
+          "bgm_name": "もっふんといっしょ",
+          "bgm_name_cn": "与莫芬一起"
+        }
+      ],
+      "mal": {
+        "id": 58159,
+        "title": "Spy x Family Movie: Code: White Manner Movie",
+        "title_ja": "『劇場版 SPY×FAMILY CODE: White』映画マナー講座",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 475491,
+      "bgm_name": "カビゴンとカラカラ",
+      "bgm_name_cn": "卡比兽与卡拉卡拉",
+      "mal": {
+        "id": 59622,
+        "title": "Kabigon to Nani Shite Kutsurogu?",
+        "title_ja": "カビゴンと何してくつろぐ？",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 449459,
+      "bgm_name": "放課後のブレス",
+      "bgm_name_cn": "帕底亚的课后时光",
+      "mal": {
+        "id": 56218,
+        "title": "Houkago no Breath",
+        "title_ja": "放課後のブレス",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 450671,
+      "bgm_name": "Azur Lane 5th Anniversary Music Video - Ain't Backing Down",
+      "bgm_name_cn": "《碧蓝航线》国际服五周年纪念音乐动画MV - Ain't Backing Down",
+      "mal": {
+        "id": 57398,
+        "title": "Azur Lane 5th Anniversary: The Best Gift From Enterprise",
+        "title_ja": "Azur Lane 5th Anniversary - The Best Gift from Enterprise",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 405198,
+      "bgm_name": "うちの会社の小さい先輩の話",
+      "bgm_name_cn": "公司的小小前辈",
+      "mal": {
+        "id": 56376,
+        "title": "Uchi no Kaisha no Chiisai Senpai no Hanashi Mini Anime",
+        "title_ja": "うちの会社の小さい先輩の話ミニアニメ",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 3760,
+          "bgm_name": "BUS GAMER",
+          "bgm_name_cn": "玩命游戏"
+        },
+        {
+          "bgm_id": 195816,
+          "bgm_name": "ゲーマーズ!",
+          "bgm_name_cn": "GAMERS电玩咖"
+        },
+        {
+          "bgm_id": 144592,
+          "bgm_name": "Pixels",
+          "bgm_name_cn": "像素入侵"
+        },
+        {
+          "bgm_id": 526979,
+          "bgm_name": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～",
+          "bgm_name_cn": "地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～"
+        }
+      ],
+      "mal": {
+        "id": 53627,
+        "title": "Gamera: Rebirth",
+        "title_ja": "GAMERA -Rebirth-",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 404643,
+      "bgm_name": "夫婦交歓～戻れない夜～",
+      "bgm_name_cn": "夫妻交欢～回不去的夜晚～",
+      "mal": {
+        "id": 55616,
+        "title": "Fuufu Koukan: Modorenai Yoru",
+        "title_ja": "夫婦交歓 ~戻れない夜~",
+        "media_type": "ona",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 432608,
+      "bgm_name": "種付おじさんとNTR人妻セックス The Animation",
+      "bgm_name_cn": "配种大叔和NTR人妻做爱 The Animation",
+      "mal": {
+        "id": 55161,
+        "title": "Tanetsuke Ojisan to NTR Hitozuma Sex The Animation",
+        "title_ja": "種付おじさんとNTR人妻セックス The Animation",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 432751,
+      "bgm_name": "闇芝居 第11期",
+      "bgm_name_cn": "暗芝居 第十一季",
+      "mal": {
+        "id": 55166,
+        "title": "Yami Shibai 11",
+        "title_ja": "闇芝居 十一期",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 409350,
+      "bgm_name": "火の鳥 エデンの宙",
+      "bgm_name_cn": "火之鸟 伊甸之宙",
+      "mal": {
+        "id": 53720,
+        "title": "Hi no Tori: Eden no Sora",
+        "title_ja": "火の鳥 エデンの宙",
+        "media_type": "ona",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 451644,
+      "bgm_name": "TVアニメ『彼女、お借りします』×TVアニメ『てんぷる』コラボミニアニメ",
+      "bgm_name_cn": "租借女友 x 庙不可言 联动迷你动画",
+      "mal": {
+        "id": 56172,
+        "title": "Temple x Kanojo, Okarishimasu",
+        "title_ja": "てんぷる×彼女お借りします",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 402835,
+      "bgm_name": "カードファイト!! ヴァンガード will+Dress Season3",
+      "bgm_name_cn": "卡片战斗先导者 will+Dress 第三季",
+      "mal": {
+        "id": 52079,
+        "title": "Cardfight!! Vanguard: will+Dress Season 3",
+        "title_ja": "カードファイト!! ヴァンガード will+Dress Season3",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 437732,
+      "bgm_name": "SLEEPLESS Nocturne The Animation",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55526,
+        "title": "Sleepless Nocturne The Animation",
+        "title_ja": "SLEEPLESS Nocturne The Animation",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 437925,
+      "bgm_name": "忘星のヴァリシア 第一章：劫火",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55640,
+        "title": "Bousei no Volicia",
+        "title_ja": "忘星のヴァリシア",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 432606,
+      "bgm_name": "種付おじさんとパパっ子JD催眠生活 The Animation",
+      "bgm_name_cn": "配种大叔和父控JD催眠生活 The Animation",
+      "mal": {
+        "id": 55162,
+        "title": "Tanetsuke Ojisan to Papakko JD Saimin Seikatsu The Animation",
+        "title_ja": "種付おじさんとパパっ子JD催眠生活 The Animation",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 420047,
+      "bgm_name": "境界戦機 極鋼ノ装鬼",
+      "bgm_name_cn": "境界战机：极钢装鬼",
+      "mal": {
+        "id": 54495,
+        "title": "Kyoukai Senki: Kyokkou no Souki",
+        "title_ja": "境界戦機 極鋼ノ装鬼",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 466331,
+      "bgm_name": "『シャングリラ・フロンティア』ミニアニメ",
+      "bgm_name_cn": "香格里拉边境 迷你动画",
+      "mal": {
+        "id": 56791,
+        "title": "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su Mini Anime",
+        "title_ja": "シャングリラ・フロンティア ミニアニメ",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 403225,
+      "bgm_name": "はたらく魔王さま！！ 2nd Season",
+      "bgm_name_cn": "打工吧！！魔王大人 第二季",
+      "mal": {
+        "id": 55878,
+        "title": "Hataraku Maou-sama!! Recap",
+        "title_ja": "はたらく魔王さま！！",
+        "media_type": "special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 333979,
+      "bgm_name": "ライアー・ライアー",
+      "bgm_name_cn": "谎言游戏",
+      "mal": {
+        "id": 48633,
+        "title": "Liar Liar",
+        "title_ja": "ライアー・ライアー",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 380582,
+      "bgm_name": "レベル1だけどユニークスキルで最強です",
+      "bgm_name_cn": "虽然1级但以固有技能却是最强的",
+      "mal": {
+        "id": 51764,
+        "title": "Level 1 dakedo Unique Skill de Saikyou desu",
+        "title_ja": "レベル1だけどユニークスキルで最強です",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 350523,
+      "bgm_name": "英雄教室",
+      "bgm_name_cn": "英雄教室",
+      "mal": {
+        "id": 49894,
+        "title": "Eiyuu Kyoushitsu",
+        "title_ja": "英雄教室",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 392973,
+      "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う",
+      "bgm_name_cn": "转生成自动贩卖机的我今天也在迷宫徘徊",
+      "mal": {
+        "id": 52619,
+        "title": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
+        "title_ja": "自動販売機に生まれ変わった俺は迷宮を彷徨う",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 362006,
+      "bgm_name": "七つの魔剣が支配する",
+      "bgm_name_cn": "七魔剑支配天下",
+      "mal": {
+        "id": 50582,
+        "title": "Nanatsu no Maken ga Shihai suru",
+        "title_ja": "七つの魔剣が支配する",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 408351,
+      "bgm_name": "夢見る男子は現実主義者",
+      "bgm_name_cn": "满怀美梦的少年是现实主义者",
+      "mal": {
+        "id": 53632,
+        "title": "Yumemiru Danshi wa Genjitsushugisha",
+        "title_ja": "夢見る男子は現実主義者",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 400215,
+      "bgm_name": "実は俺、最強でした？",
+      "bgm_name_cn": "其实，我是最强的？",
+      "mal": {
+        "id": 52969,
+        "title": "Jitsu wa Ore, Saikyou deshita?",
+        "title_ja": "実は俺、最強でした?",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 446249,
+      "bgm_name": "七つの大罪 怨嗟のエジンバラ 後編",
+      "bgm_name_cn": "七大罪 怨嗟的爱丁堡 后篇",
+      "mal": {
+        "id": 53911,
+        "title": "Nanatsu no Taizai: Ensa no Edinburgh Part 2",
+        "title_ja": "七つの大罪 怨嗟のエジンバラ 後編",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 405273,
+      "bgm_name": "四格勇者",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55578,
+        "title": "Si Ge Yongzhe",
+        "title_ja": "四格勇者",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 410203,
+      "bgm_name": "AIの遺電子",
+      "bgm_name_cn": "AI电子基因",
+      "mal": {
+        "id": 53787,
+        "title": "AI no Idenshi",
+        "title_ja": "AIの遺電子",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 425236,
+      "bgm_name": "ライザのアトリエ 〜常闇の女王と秘密の隠れ家〜",
+      "bgm_name_cn": "莱莎的炼金工房 ～常暗女王与秘密藏身处～",
+      "mal": {
+        "id": 54760,
+        "title": "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
+        "title_ja": "ライザのアトリエ ~常闇の女王と秘密の隠れ家~",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 406171,
+      "bgm_name": "AYAKA ‐あやか‐",
+      "bgm_name_cn": "AYAKA ‐绫岛奇谭‐",
+      "mal": {
+        "id": 53428,
+        "title": "Ayaka",
+        "title_ja": "AYAKA ‐あやか‐",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 459322,
+          "bgm_name": "第2試合のゴングが鳴る 美少女レスラーをまた発見 俺の妄想大爆発 エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459321,
+          "bgm_name": "女子プロレス会場で見つけた俺好みの美少女レスラー 俺の妄想大爆発エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 56758,
+        "title": "Mattari Kaisetsu: Boushoku no Berserk",
+        "title_ja": "《まったり解説》暴食のベルセルク",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 406307,
+      "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。",
+      "bgm_name_cn": "身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力。",
+      "mal": {
+        "id": 55957,
+        "title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu. Mini",
+        "title_ja": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。ミニ",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 415182,
+      "bgm_name": "好きな子がめがねを忘れた",
+      "bgm_name_cn": "喜欢的人忘记戴眼镜了",
+      "mal": {
+        "id": 56213,
+        "title": "Suki na Ko ga Megane wo Wasureta Short Episode",
+        "title_ja": "好きな子がめがねを忘れた ショートアニメ",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 401783,
+      "bgm_name": "彼女、お借りします 第3期",
+      "bgm_name_cn": "租借女友 第三季",
+      "mal": {
+        "id": 56740,
+        "title": "Kanojo, Okarishimasu Petit 3rd Season",
+        "title_ja": "彼女, お借りします ぷち 3",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 228715,
+          "bgm_name": "君たちはどう生きるか",
+          "bgm_name_cn": "你想活出怎样的人生"
+        },
+        {
+          "bgm_id": 282413,
+          "bgm_name": "Spider-Man: Across the Spider-Verse",
+          "bgm_name_cn": "蜘蛛侠：纵横宇宙"
+        },
+        {
+          "bgm_id": 311673,
+          "bgm_name": "镖人",
+          "bgm_name_cn": "镖人"
+        },
+        {
+          "bgm_id": 312658,
+          "bgm_name": "雾山五行 犀川幻紫林",
+          "bgm_name_cn": "雾山五行 犀川幻紫林"
+        },
+        {
+          "bgm_id": 315262,
+          "bgm_name": "有药2",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 321083,
+          "bgm_name": "The Metalverse",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 326525,
+          "bgm_name": "Skull Island",
+          "bgm_name_cn": "骷髅岛"
+        },
+        {
+          "bgm_id": 331759,
+          "bgm_name": "映画 ブラッククローバー 魔法帝の剣",
+          "bgm_name_cn": "电影 黑色五叶草 魔法帝之剑"
+        },
+        {
+          "bgm_id": 333979,
+          "bgm_name": "ライアー・ライアー",
+          "bgm_name_cn": "谎言游戏"
+        },
+        {
+          "bgm_id": 336935,
+          "bgm_name": "The Monkey King",
+          "bgm_name_cn": "美猴王"
+        }
+      ],
+      "mal": {
+        "id": 57434,
+        "title": "Tensei shitara Slime Datta Ken Movie: Guren no Kizuna-hen Specials",
+        "title_ja": "",
+        "media_type": "special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 424509,
+      "bgm_name": "いきものさん",
+      "bgm_name_cn": "生物友伴",
+      "mal": {
+        "id": 54847,
+        "title": "Ikimono-san",
+        "title_ja": "いきものさん",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 453861,
+          "bgm_name": "精灵梦叶罗丽 第10季",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 458922,
+          "bgm_name": "ムチムチ精液搾り性活～逆バニー編～",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 427071,
+          "bgm_name": "スケベエルフ探訪記",
+          "bgm_name_cn": "好色精灵探访记"
+        }
+      ],
+      "mal": {
+        "id": 56178,
+        "title": "Celia-sensei no Wakuwaku Magical Kyoushitsu Season 2",
+        "title_ja": "精霊幻想記』セリア先生のわくわくまじかる教室season2",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 445780,
+      "bgm_name": "魔法少女ノーブル・ローズ THE ANIMATION",
+      "bgm_name_cn": "魔法少女诺布尔・劳斯 THE ANIMATION",
+      "mal": {
+        "id": 55512,
+        "title": "Mahou Shoujo Noble Rose The Animation",
+        "title_ja": "魔法少女ノーブルローズ THE ANIMATION",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 418289,
+      "bgm_name": "GAMERA -Rebirth-",
+      "bgm_name_cn": "大怪兽加美拉：重生",
+      "mal": {
+        "id": 56562,
+        "title": "Daikaijuu Gamenya Shuurai",
+        "title_ja": "大怪獣ガメニャ襲来",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 410928,
+      "bgm_name": "私の推しは悪役令嬢。",
+      "bgm_name_cn": "我的推是坏人大小姐。",
+      "mal": {
+        "id": 56552,
+        "title": "Watashi no Oshi wa Akuyaku Reijou. Mini Anime",
+        "title_ja": "私の推しは悪役令嬢。レイとクレアに一問一答 〜異世界で聞いてみた〜",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 445452,
+      "bgm_name": "純情デカメロン",
+      "bgm_name_cn": "纯情十日谈",
+      "mal": {
+        "id": 55902,
+        "title": "Junjou Decamelon",
+        "title_ja": "純情デカメロン",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 442793,
+      "bgm_name": "ナイトテール",
+      "bgm_name_cn": "魇骑夜谈",
+      "mal": {
+        "id": 55849,
+        "title": "Night Tail",
+        "title_ja": "ナイトテール",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 415182,
+          "bgm_name": "好きな子がめがねを忘れた",
+          "bgm_name_cn": "喜欢的人忘记戴眼镜了"
+        },
+        {
+          "bgm_id": 463764,
+          "bgm_name": "未熟なわたしを棄てないで。",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 466714,
+          "bgm_name": "真面目な水泳部員が顧問の先生にメス堕ちしちゃいました。 The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 377125,
+          "bgm_name": "わたしの幸せな結婚",
+          "bgm_name_cn": "我的幸福婚姻"
+        },
+        {
+          "bgm_id": 461129,
+          "bgm_name": "俺と対照的な人生を歩む身近な二人の弱みを握りW変身ヒロインに好きなだけ種付け中出しする日々 モーションコミック版",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 444747,
+          "bgm_name": "キンバリー魔法学校のゆかいな日常",
+          "bgm_name_cn": "金伯利魔法学校的愉快日常"
+        },
+        {
+          "bgm_id": 456720,
+          "bgm_name": "早川君の不幸で幸せな一日 The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 466716,
+          "bgm_name": "同級生の幼馴染にエロ同人みたいなことする。 The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 623039,
+          "bgm_name": "彼女の姉とのイケない関係～先っぽまでって約束なのに… The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459318,
+          "bgm_name": "プールで見かけたスク水美少女 俺の妄想爆発 華奢な身体の乳首 オ○ンコ 弄り放題 連続絶頂 オモチャ・触手何でもあり 何度イっても逃がさない…",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 56105,
+        "title": "Nanashi Kaidan 2nd Season",
+        "title_ja": "ななし怪談 第2作",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 431977,
+      "bgm_name": "くノ一○○伝 紫陽花",
+      "bgm_name_cn": "女忍凌辱传 紫阳花",
+      "mal": {
+        "id": 55146,
+        "title": "Kunoichi Ryoujokuden Ajisai",
+        "title_ja": "くノ一陵辱伝 紫陽花",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 454895,
+          "bgm_name": "バブみいべいびい～オギャリ催♥せラピーで赤ちゃんになぁれ～ The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 444748,
+          "bgm_name": "\"あやかい島\"へようこそ！ミタマンの綾ヵ島観光案内",
+          "bgm_name_cn": "AYAKA「欢迎来到绫之岛」迷你动画"
+        },
+        {
+          "bgm_id": 518465,
+          "bgm_name": "短編プチロマンス『公園へ行こう act.3 瀬川萌絵』 ～変質者に襲われている少女を救った男の末路～",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 518468,
+          "bgm_name": "短編プチロマンス『公園へ行こう act.4』 ～誘惑モード突入少女のペースにまんまとハマった男の末路～",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 449462,
+          "bgm_name": "Pokémon Path to The Peak 頂へのきずな",
+          "bgm_name_cn": "宝可梦：巅峰之路"
+        },
+        {
+          "bgm_id": 369784,
+          "bgm_name": "Helck",
+          "bgm_name_cn": "勇者赫鲁库"
+        }
+      ],
+      "mal": {
+        "id": 56106,
+        "title": "Bear Bear Bear Kuma Punch!! Daiundoukai-hen",
+        "title_ja": "べあべあべあくまーぱーんち！！大運動会編",
+        "media_type": "special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 431978,
+      "bgm_name": "so_low",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55548,
+        "title": "So_low",
+        "title_ja": "so_low",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 228715,
+          "bgm_name": "君たちはどう生きるか",
+          "bgm_name_cn": "你想活出怎样的人生"
+        },
+        {
+          "bgm_id": 282413,
+          "bgm_name": "Spider-Man: Across the Spider-Verse",
+          "bgm_name_cn": "蜘蛛侠：纵横宇宙"
+        },
+        {
+          "bgm_id": 311673,
+          "bgm_name": "镖人",
+          "bgm_name_cn": "镖人"
+        },
+        {
+          "bgm_id": 312658,
+          "bgm_name": "雾山五行 犀川幻紫林",
+          "bgm_name_cn": "雾山五行 犀川幻紫林"
+        },
+        {
+          "bgm_id": 315262,
+          "bgm_name": "有药2",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 321083,
+          "bgm_name": "The Metalverse",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 326525,
+          "bgm_name": "Skull Island",
+          "bgm_name_cn": "骷髅岛"
+        },
+        {
+          "bgm_id": 331759,
+          "bgm_name": "映画 ブラッククローバー 魔法帝の剣",
+          "bgm_name_cn": "电影 黑色五叶草 魔法帝之剑"
+        },
+        {
+          "bgm_id": 333979,
+          "bgm_name": "ライアー・ライアー",
+          "bgm_name_cn": "谎言游戏"
+        },
+        {
+          "bgm_id": 336935,
+          "bgm_name": "The Monkey King",
+          "bgm_name_cn": "美猴王"
+        }
+      ],
+      "mal": {
+        "id": 51304,
+        "title": "FLCL: Grunge",
+        "title_ja": "",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 541549,
+      "bgm_name": "런닝맨: 리벤져스",
+      "bgm_name_cn": "Running Man－复仇者之战",
+      "mal": {
+        "id": 56261,
+        "title": "Running Man: Revengers",
+        "title_ja": "런닝맨: 리벤져스",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 452045,
+      "bgm_name": "小美人鱼之大海怪传说",
+      "bgm_name_cn": "小美人鱼之大海怪传说",
+      "mal": {
+        "id": 56799,
+        "title": "Xiao Meirenyu: Dahai Guai Chuanshuo",
+        "title_ja": "小美人鱼之大海怪传说",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 459531,
+      "bgm_name": "機甲英雄劇場版 我與我等於無限大",
+      "bgm_name_cn": "机甲英雄剧场版 我与我等于无限大",
+      "mal": {
+        "id": 56144,
+        "title": "Jijia Yingxiong Movie: Wo Yu Wo Dengyu Wuxian Da",
+        "title_ja": "機甲英雄劇場版 我與我等於無限大",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 571607,
+      "bgm_name": "バトルスピリッツ15周年記念ショートアニメ",
+      "bgm_name_cn": "战斗之魂15周年纪念短片动画",
+      "mal": {
+        "id": 58373,
+        "title": "Battle Spirits: 15-shuunen Kinen Short Anime",
+        "title_ja": "バトスピ15周年記念ショートアニメ",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 452047,
+          "bgm_name": "功夫王之萌虎上山",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 518465,
+          "bgm_name": "短編プチロマンス『公園へ行こう act.3 瀬川萌絵』 ～変質者に襲われている少女を救った男の末路～",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 56320,
+        "title": "Meng Shu Da Maoxian",
+        "title_ja": "萌鼠大冒险",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 438253,
+      "bgm_name": "百变马丁：怪兽大作战",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56336,
+        "title": "Bai Bian Mading: Guaishou Da Zuozhan",
+        "title_ja": "百变马丁：怪兽大作战",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 432606,
+          "bgm_name": "種付おじさんとパパっ子JD催眠生活 The Animation",
+          "bgm_name_cn": "配种大叔和父控JD催眠生活 The Animation"
+        },
+        {
+          "bgm_id": 432608,
+          "bgm_name": "種付おじさんとNTR人妻セックス The Animation",
+          "bgm_name_cn": "配种大叔和NTR人妻做爱 The Animation"
+        },
+        {
+          "bgm_id": 347942,
+          "bgm_name": "おかしな転生",
+          "bgm_name_cn": "甜点转生"
+        }
+      ],
+      "mal": {
+        "id": 62835,
+        "title": "Oyaji no Asobi",
+        "title_ja": "おやじの遊び",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "mal": {
+        "id": 62458,
+        "title": "Sigantamheomdae Dinoman 2nd Season",
+        "title_ja": "공룡탐험대 다이노맨2",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 345864,
+      "bgm_name": "给我来个小狐狸",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 57078,
+        "title": "Gei wo Lai ge Xiao Huli",
+        "title_ja": "给我来个小狐狸",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 80913,
+          "bgm_name": "凹凸世界",
+          "bgm_name_cn": "凹凸世界"
+        },
+        {
+          "bgm_id": 207866,
+          "bgm_name": "凹凸世界 第二季",
+          "bgm_name_cn": "凹凸世界 第二季"
+        },
+        {
+          "bgm_id": 237991,
+          "bgm_name": "凹凸世界 第三季·上",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 284641,
+          "bgm_name": "凹凸世界 第三季·下",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 309092,
+          "bgm_name": "凹凸世界 第四季",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 331100,
+          "bgm_name": "凹凸世界 番外篇",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 474880,
+          "bgm_name": "凹凸世界 特别篇 天陨终曲",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 501950,
+          "bgm_name": "凹凸世界REBORN 先行集",
+          "bgm_name_cn": "凹凸世界·新生 先行集"
+        },
+        {
+          "bgm_id": 607337,
+          "bgm_name": "凹凸世界·Reborn",
+          "bgm_name_cn": "凹凸世界·新生"
+        },
+        {
+          "bgm_id": 400551,
+          "bgm_name": "でこぼこ魔女の親子事情",
+          "bgm_name_cn": "凹凸魔女的母女故事"
+        }
+      ],
+      "mal": {
+        "id": 58632,
+        "title": "AOTU Xueyuan 3rd Season",
+        "title_ja": "凹凸学园 第三季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 449789,
+      "bgm_name": "贝肯熊：火星任务",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56798,
+        "title": "Bei Ken Xiong: Huoxing Renwu",
+        "title_ja": "贝肯熊：火星任务",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 450924,
+      "bgm_name": "神奇图书馆",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56560,
+        "title": "Shenqi Tushu Guan",
+        "title_ja": "神奇图书馆",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 136775,
+          "bgm_name": "DC Showcase: The Spectre",
+          "bgm_name_cn": "DC展台：幽灵"
+        },
+        {
+          "bgm_id": 320839,
+          "bgm_name": "虚構推理 Season2",
+          "bgm_name_cn": "虚构推理 第二季"
+        }
+      ],
+      "mal": {
+        "id": 56382,
+        "title": "Specter From the Abyssal Zone",
+        "title_ja": "SPECTER FROM THE ABYSSAL ZONE",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 432463,
+      "bgm_name": "茶啊二中",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56334,
+        "title": "Cha A Er Zhong Movie",
+        "title_ja": "茶啊二中",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 525435,
+          "bgm_name": "극장판 그 여름",
+          "bgm_name_cn": "那个夏天：剧场版"
+        }
+      ],
+      "mal": {
+        "id": 56262,
+        "title": "Super Wings the Movie: Maximum Speed",
+        "title_ja": "극장판 슈퍼윙스: 맥시멈 스피드",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 454781,
+      "bgm_name": "霸王龙雷奇",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 60515,
+        "title": "Bawang Long Lei Qi",
+        "title_ja": "霸王龙雷奇",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 380582,
+      "bgm_name": "レベル1だけどユニークスキルで最強です",
+      "bgm_name_cn": "虽然1级但以固有技能却是最强的",
+      "mal": {
+        "id": 58474,
+        "title": "Still Explaining Here.",
+        "title_ja": "Still Explaining here.",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 501538,
+          "bgm_name": "사랑의 하츄핑",
+          "bgm_name_cn": "奇妙萌可大电影"
+        },
+        {
+          "bgm_id": 558020,
+          "bgm_name": "캐치! 티니핑",
+          "bgm_name_cn": "奇妙萌可"
+        },
+        {
+          "bgm_id": 544645,
+          "bgm_name": "뾰족뾰족 포크가족",
+          "bgm_name_cn": "尖尖帕克家族"
+        },
+        {
+          "bgm_id": 551283,
+          "bgm_name": "요정핑크",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 110778,
+          "bgm_name": "69ピンクライダース",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 59739,
+        "title": "Pinkfong Cinema Concert 3: Gingerbread Man-eul Jab-ala",
+        "title_ja": "핑크퐁 시네마 콘서트 3: 진저브레드맨을 잡아라",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 466716,
+      "bgm_name": "同級生の幼馴染にエロ同人みたいなことする。 The Motion Anime",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 60221,
+        "title": "Elemon",
+        "title_ja": "エレモン",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 205217,
+      "bgm_name": "애슬론 또봇",
+      "bgm_name_cn": "托宝兄弟之阿斯龙",
+      "mal": {
+        "id": 62450,
+        "title": "Tobot: Daedosiui Yeongungdeul Part 2",
+        "title_ja": "또봇 : 대도시의 영웅들 파트 2",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 367159,
+          "bgm_name": "스페이스 간담 V",
+          "bgm_name_cn": "太空高达V"
+        },
+        {
+          "bgm_id": 548005,
+          "bgm_name": "이얍! 스페이스 정글",
+          "bgm_name_cn": "来自奇星的小伙伴"
+        },
+        {
+          "bgm_id": 286478,
+          "bgm_name": "UNBELIEVABLE SPACE LOVE",
+          "bgm_name_cn": "星际幻爱"
+        }
+      ],
+      "mal": {
+        "id": 56574,
+        "title": "Space Donguibogam 2",
+        "title_ja": "스페이스 동의보감 2",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 436597,
+      "bgm_name": "喜羊羊与灰太狼之遨游神秘洋",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 60709,
+        "title": "Xi Yangyang Yu Hui Tailang: Aoyou Shenmi Yang",
+        "title_ja": "喜羊羊与灰太狼之遨游神秘洋",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 395658,
+          "bgm_name": "大主宰",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 425986,
+          "bgm_name": "大奥",
+          "bgm_name_cn": "大奥"
+        },
+        {
+          "bgm_id": 452770,
+          "bgm_name": "大裂缝",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 403631,
+          "bgm_name": "お嬢と番犬くん",
+          "bgm_name_cn": "大小姐和看门犬"
+        },
+        {
+          "bgm_id": 418289,
+          "bgm_name": "GAMERA -Rebirth-",
+          "bgm_name_cn": "大怪兽加美拉：重生"
+        },
+        {
+          "bgm_id": 438253,
+          "bgm_name": "百变马丁：怪兽大作战",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 449729,
+          "bgm_name": "神兽魔王大作战",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459321,
+          "bgm_name": "女子プロレス会場で見つけた俺好みの美少女レスラー 俺の妄想大爆発エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459531,
+          "bgm_name": "機甲英雄劇場版 我與我等於無限大",
+          "bgm_name_cn": "机甲英雄剧场版 我与我等于无限大"
+        },
+        {
+          "bgm_id": 410418,
+          "bgm_name": "しん次元! クレヨンしんちゃん THE MOVIE 超能力大決戦 〜とべとべ手巻き寿司〜",
+          "bgm_name_cn": "蜡笔小新：新次元！超能力大决战"
+        }
+      ],
+      "mal": {
+        "id": 58585,
+        "title": "Da Xia Ba Xingqiu",
+        "title_ja": "大下巴星球",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 452047,
+      "bgm_name": "功夫王之萌虎上山",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56797,
+        "title": "Kung Fu Wang: Meng Hu Shangshan",
+        "title_ja": "功夫王之萌虎上山",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 434572,
+      "bgm_name": "欢乐丛林之外星人大冒险",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56322,
+        "title": "Huanle Conglin: Wai Xīng Renda Maoxian",
+        "title_ja": "欢乐丛林之外星人大冒险",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 503184,
+      "bgm_name": "奶龙爆笑嘉年华",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 60823,
+        "title": "Nai Long Baoxiao Jianianhua",
+        "title_ja": "奶龙爆笑嘉年华",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 446500,
+          "bgm_name": "Invincible: Atom Eve",
+          "bgm_name_cn": "无敌少侠：原子伊芙"
+        },
+        {
+          "bgm_id": 358769,
+          "bgm_name": "无脑魔女",
+          "bgm_name_cn": "无脑魔女"
+        },
+        {
+          "bgm_id": 373247,
+          "bgm_name": "無職転生Ⅱ ～異世界行ったら本気だす～",
+          "bgm_name_cn": "无职转生 第二季 ～到了异世界就拿出真本事～"
+        },
+        {
+          "bgm_id": 403741,
+          "bgm_name": "聖者無双～サラリーマン、異世界で生き残るために歩む道～",
+          "bgm_name_cn": "圣者无双～上班族的异世界生存之道～"
+        },
+        {
+          "bgm_id": 345761,
+          "bgm_name": "狐妖小红娘 无暮篇",
+          "bgm_name_cn": "狐妖小红娘11 无暮篇"
+        },
+        {
+          "bgm_id": 429921,
+          "bgm_name": "神澜奇域无双珠 天魔篇",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 448015,
+          "bgm_name": "美少女無罪♡パイレーツ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459531,
+          "bgm_name": "機甲英雄劇場版 我與我等於無限大",
+          "bgm_name_cn": "机甲英雄剧场版 我与我等于无限大"
+        },
+        {
+          "bgm_id": 522345,
+          "bgm_name": "トイ・トイ・トイレット!ーHなおもちゃと無口な肉便器ー",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 457389,
+          "bgm_name": "The Siren",
+          "bgm_name_cn": "无伊可靠"
+        }
+      ],
+      "mal": {
+        "id": 59152,
+        "title": "Wudi Lu Zhandui 3rd Season",
+        "title_ja": "无敌鹿战队 第3季",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 406736,
+          "bgm_name": "冒険者になりたいと都に出て行った娘がSランクになってた",
+          "bgm_name_cn": "因想当冒险者而前往大都市的女儿已经升到了S级"
+        },
+        {
+          "bgm_id": 414461,
+          "bgm_name": "ゾン100～ゾンビになるまでにしたい100のこと～",
+          "bgm_name_cn": "僵尸百分百～在成为僵尸前要做的100件事～"
+        },
+        {
+          "bgm_id": 466850,
+          "bgm_name": "堕ちたお嬢様 モーションコミック版",
+          "bgm_name_cn": "墮落大小姐"
+        },
+        {
+          "bgm_id": 442844,
+          "bgm_name": "街で見かけた可愛い子に催眠かけてドスケベおねだり女に魔改造。 ラブホに連れ込み即ハメKO。 心で拒否しても残念、逆らえない。 あーしてこぉーして超気持ち良い件。",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 442846,
+          "bgm_name": "本屋で見かけた押しアイドル 俺の妄想爆発 輪姦を脳内保管イってる途中も激ヤバピストン連続絶頂オモチャ・触手何でもあり 何度イっても逃がさない あぁーして…",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 446728,
+          "bgm_name": "キミに会えた！",
+          "bgm_name_cn": "终于遇到你啦！"
+        },
+        {
+          "bgm_id": 459318,
+          "bgm_name": "プールで見かけたスク水美少女 俺の妄想爆発 華奢な身体の乳首 オ○ンコ 弄り放題 連続絶頂 オモチャ・触手何でもあり 何度イっても逃がさない…",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 505554,
+          "bgm_name": "自転車で来た!! モーションコミック版",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 522352,
+          "bgm_name": "ムショ出た瞬間終わったわ-異常性癖哀歌-",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 392973,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う",
+          "bgm_name_cn": "转生成自动贩卖机的我今天也在迷宫徘徊"
+        }
+      ],
+      "mal": {
+        "id": 59418,
+        "title": "Time Slip Shima Kousaku Episode 0",
+        "title_ja": "タイムスリップ島耕作",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 437944,
+      "bgm_name": "棉花糖和云朵妈妈1宝贝芯计划",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56333,
+        "title": "Mianhua Tang He Yunduo Mama: Baobei Xin Jihua",
+        "title_ja": "棉花糖和云朵妈妈1宝贝芯计划",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 402216,
+          "bgm_name": "湖池屋SDGs劇場 サスとテナ シーズン2",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 406800,
+          "bgm_name": "湖池屋SDGs劇場 サスとテナ シーズン3",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 402212,
+          "bgm_name": "湖池屋SDGs劇場 サスとテナ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 67965,
+          "bgm_name": "查干湖小精灵",
+          "bgm_name_cn": "查干湖小精灵"
+        },
+        {
+          "bgm_id": 242780,
+          "bgm_name": "姜子牙之尚湖传说",
+          "bgm_name_cn": "姜子牙之尚湖传说"
+        },
+        {
+          "bgm_id": 113676,
+          "bgm_name": "世界名作童話 白鳥の湖",
+          "bgm_name_cn": "世界名作童话 天鹅湖"
+        },
+        {
+          "bgm_id": 422662,
+          "bgm_name": "乐高好朋友之心湖城的故事",
+          "bgm_name_cn": "乐高好朋友之心湖城的故事"
+        },
+        {
+          "bgm_id": 116138,
+          "bgm_name": "Tintin et le lac aux requins",
+          "bgm_name_cn": "丁丁在鲨鱼湖"
+        },
+        {
+          "bgm_id": 544222,
+          "bgm_name": "ハローキティのふしぎなみずうみ",
+          "bgm_name_cn": "凯蒂猫 奇幻湖"
+        },
+        {
+          "bgm_id": 421302,
+          "bgm_name": "世博总动员",
+          "bgm_name_cn": "世博总动员"
+        }
+      ],
+      "mal": {
+        "id": 62559,
+        "title": "Koikeya SDGs Gekijou Suss to Tina Season 4",
+        "title_ja": "湖池屋SDGs劇場 サスとテナ シーズン４",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 411244,
+      "bgm_name": "劇場版 Collar×Malice -deep cover- 後編",
+      "bgm_name_cn": "剧场版 Collar×Malice -deep cover- 后篇",
+      "mal": {
+        "id": 62267,
+        "title": "Color Leon",
+        "title_ja": "カラーレオン",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 446294,
+      "bgm_name": "潜艇总动员：环游地球80天",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56318,
+        "title": "Qian Ting Zong Dong Yuan: Huan You Diqiu 80 Tian",
+        "title_ja": "潜艇总动员：环游地球80天",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 385730,
+      "bgm_name": "雪域少年",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56372,
+        "title": "Xue Yu Shaonian",
+        "title_ja": "雪域少年",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 434794,
+      "bgm_name": "风火战纪",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55746,
+        "title": "Feng Huo Zhan Ji",
+        "title_ja": "风火战纪",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 449824,
+      "bgm_name": "巴啦啦小魔仙之星缘蝶启1",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56674,
+        "title": "Balala Xiao Mo Xian: Xing Yuan Die Qi 1",
+        "title_ja": "巴啦啦小魔仙之星緣蝶啓1",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 400215,
+          "bgm_name": "実は俺、最強でした？",
+          "bgm_name_cn": "其实，我是最强的？"
+        },
+        {
+          "bgm_id": 228715,
+          "bgm_name": "君たちはどう生きるか",
+          "bgm_name_cn": "你想活出怎样的人生"
+        },
+        {
+          "bgm_id": 384672,
+          "bgm_name": "デキる猫は今日も憂鬱",
+          "bgm_name_cn": "能干的猫今天也忧郁"
+        },
+        {
+          "bgm_id": 402656,
+          "bgm_name": "青春ブタ野郎はおでかけシスターの夢を見ない",
+          "bgm_name_cn": "青春猪头少年不会梦到娇怜外出妹"
+        },
+        {
+          "bgm_id": 408351,
+          "bgm_name": "夢見る男子は現実主義者",
+          "bgm_name_cn": "满怀美梦的少年是现实主义者"
+        },
+        {
+          "bgm_id": 392973,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う",
+          "bgm_name_cn": "转生成自动贩卖机的我今天也在迷宫徘徊"
+        },
+        {
+          "bgm_id": 466812,
+          "bgm_name": "おいでませ♪サキュバスシェアハウス The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 406307,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。",
+          "bgm_name_cn": "身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力。"
+        },
+        {
+          "bgm_id": 477469,
+          "bgm_name": "巨乳高性能ラブドールが捨てられていたので健太くんは持って帰ってセックスした",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 464243,
+          "bgm_name": "メスガキの誘惑に勝てる訳ないだろ!!～妻が連れてきた娘は理想の女の子でした～ モーションアニメ",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 57186,
+        "title": "Heart Cocktail Colorful: Natsu-hen",
+        "title_ja": "ハートカクテル カラフル 夏編",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 515300,
+      "bgm_name": "シルバニアファミリー フレアのゴー・フォー・ドリーム！",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 55948,
+        "title": "Sylvanian Families: Freya no Go for Dream!",
+        "title_ja": "シルバニアファミリー フレアのゴー・フォー・ドリーム！",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 441806,
+      "bgm_name": "龙时代",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56041,
+        "title": "Long Shidai",
+        "title_ja": "龙时代",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 345829,
+      "bgm_name": "堕玄师",
+      "bgm_name_cn": "堕玄师",
+      "mal": {
+        "id": 55856,
+        "title": "Duo Xuan Shi: Qian Qing Pian",
+        "title_ja": "堕玄师 前情篇",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 445264,
+      "bgm_name": "我是哪吒2之英雄归来",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56795,
+        "title": "Wo Shi Na Zha 2: Yingxiong Guilai",
+        "title_ja": "我是哪吒2之英雄归来",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 549170,
+          "bgm_name": "팡팡 다이노",
+          "bgm_name_cn": "嘭嘭迪诺"
+        }
+      ],
+      "mal": {
+        "id": 57117,
+        "title": "Dinoster: Gonglyongsuhodae",
+        "title_ja": "다이노스터: 공룡수호대",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 406736,
+      "bgm_name": "冒険者になりたいと都に出て行った娘がSランクになってた",
+      "bgm_name_cn": "因想当冒险者而前往大都市的女儿已经升到了S级",
+      "mal": {
+        "id": 56993,
+        "title": "Nandemo Bakukai! Koyori-chan",
+        "title_ja": "なんでも爆解！こよりチャン",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 407308,
+      "bgm_name": "是王者啊？第2季 云中不完全剿匪日记",
+      "bgm_name_cn": "是王者啊？ 第二季",
+      "mal": {
+        "id": 56040,
+        "title": "Shi Wangzhe A? 2nd Season",
+        "title_ja": "是王者啊? 第2季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 358641,
+      "bgm_name": "异空战歌",
+      "bgm_name_cn": "异空战歌",
+      "mal": {
+        "id": 56246,
+        "title": "Yi Kong Zhan Ge",
+        "title_ja": "异空战歌",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 395284,
+      "bgm_name": "西行纪 年播剧集",
+      "bgm_name_cn": "西行纪年番",
+      "mal": {
+        "id": 56157,
+        "title": "Xi Xing Ji: Nian Fan",
+        "title_ja": "西行纪 年番",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 173943,
+      "bgm_name": "ソニックスパーク！",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 59008,
+        "title": "Sonic & Friends",
+        "title_ja": "ソニック&フレンズ",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 434960,
+      "bgm_name": "万界至尊 第二季",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56773,
+        "title": "Wan Jie Zhizun 2nd Season",
+        "title_ja": "万界至尊 第二季",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "mal": {
+        "id": 56916,
+        "title": "Rainbow Bubblegem",
+        "title_ja": "레인보우 버블젬",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 537971,
+          "bgm_name": "The Canterville Ghost",
+          "bgm_name_cn": "坎特维尔的幽灵"
+        }
+      ],
+      "mal": {
+        "id": 56589,
+        "title": "Youan Xiao Jing de Gui",
+        "title_ja": "幽暗小徑的鬼",
+        "media_type": "movie",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 459321,
+          "bgm_name": "女子プロレス会場で見つけた俺好みの美少女レスラー 俺の妄想大爆発エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459322,
+          "bgm_name": "第2試合のゴングが鳴る 美少女レスラーをまた発見 俺の妄想大爆発 エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 60616,
+        "title": "Matcha Pokemon \"Chades\" no Kimyou na Monogatari",
+        "title_ja": "まっちゃポケモン「チャデス」の奇妙な物語",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 433675,
+          "bgm_name": "슈퍼 시크릿",
+          "bgm_name_cn": "超级秘密"
+        },
+        {
+          "bgm_id": 533627,
+          "bgm_name": "슈퍼특급 마징가7",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 39025,
+          "bgm_name": "날아라 슈퍼보드",
+          "bgm_name_cn": "百变孙悟空"
+        },
+        {
+          "bgm_id": 132572,
+          "bgm_name": "출동!슈퍼윙스",
+          "bgm_name_cn": "超级飞侠"
+        },
+        {
+          "bgm_id": 303852,
+          "bgm_name": "레드슈즈",
+          "bgm_name_cn": "红鞋子和七个小矮人"
+        },
+        {
+          "bgm_id": 433673,
+          "bgm_name": "유미의 세포들 더 무비",
+          "bgm_name_cn": "柔美的细胞君大电影"
+        }
+      ],
+      "mal": {
+        "id": 56572,
+        "title": "Supertrons",
+        "title_ja": "슈퍼트론",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 228715,
+          "bgm_name": "君たちはどう生きるか",
+          "bgm_name_cn": "你想活出怎样的人生"
+        },
+        {
+          "bgm_id": 282413,
+          "bgm_name": "Spider-Man: Across the Spider-Verse",
+          "bgm_name_cn": "蜘蛛侠：纵横宇宙"
+        },
+        {
+          "bgm_id": 311673,
+          "bgm_name": "镖人",
+          "bgm_name_cn": "镖人"
+        },
+        {
+          "bgm_id": 312658,
+          "bgm_name": "雾山五行 犀川幻紫林",
+          "bgm_name_cn": "雾山五行 犀川幻紫林"
+        },
+        {
+          "bgm_id": 315262,
+          "bgm_name": "有药2",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 321083,
+          "bgm_name": "The Metalverse",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 326525,
+          "bgm_name": "Skull Island",
+          "bgm_name_cn": "骷髅岛"
+        },
+        {
+          "bgm_id": 331759,
+          "bgm_name": "映画 ブラッククローバー 魔法帝の剣",
+          "bgm_name_cn": "电影 黑色五叶草 魔法帝之剑"
+        },
+        {
+          "bgm_id": 333979,
+          "bgm_name": "ライアー・ライアー",
+          "bgm_name_cn": "谎言游戏"
+        },
+        {
+          "bgm_id": 336935,
+          "bgm_name": "The Monkey King",
+          "bgm_name_cn": "美猴王"
+        }
+      ],
+      "mal": {
+        "id": 56629,
+        "title": "Dead or Arrive 2: Dance of Auto",
+        "title_ja": "",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 437925,
+      "bgm_name": "忘星のヴァリシア 第一章：劫火",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 57439,
+        "title": "Huo Feng Zhong Tian",
+        "title_ja": "火凤重天",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 436681,
+      "bgm_name": "如果历史是一群喵 宋辽金夏篇",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56576,
+        "title": "Ruguo Lishi Shi Yiqun Miao 10th Season",
+        "title_ja": "如果历史是一群喵 宋辽金夏篇",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 406736,
+          "bgm_name": "冒険者になりたいと都に出て行った娘がSランクになってた",
+          "bgm_name_cn": "因想当冒险者而前往大都市的女儿已经升到了S级"
+        },
+        {
+          "bgm_id": 414461,
+          "bgm_name": "ゾン100～ゾンビになるまでにしたい100のこと～",
+          "bgm_name_cn": "僵尸百分百～在成为僵尸前要做的100件事～"
+        },
+        {
+          "bgm_id": 466850,
+          "bgm_name": "堕ちたお嬢様 モーションコミック版",
+          "bgm_name_cn": "墮落大小姐"
+        },
+        {
+          "bgm_id": 442844,
+          "bgm_name": "街で見かけた可愛い子に催眠かけてドスケベおねだり女に魔改造。 ラブホに連れ込み即ハメKO。 心で拒否しても残念、逆らえない。 あーしてこぉーして超気持ち良い件。",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 442846,
+          "bgm_name": "本屋で見かけた押しアイドル 俺の妄想爆発 輪姦を脳内保管イってる途中も激ヤバピストン連続絶頂オモチャ・触手何でもあり 何度イっても逃がさない あぁーして…",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 446728,
+          "bgm_name": "キミに会えた！",
+          "bgm_name_cn": "终于遇到你啦！"
+        },
+        {
+          "bgm_id": 459318,
+          "bgm_name": "プールで見かけたスク水美少女 俺の妄想爆発 華奢な身体の乳首 オ○ンコ 弄り放題 連続絶頂 オモチャ・触手何でもあり 何度イっても逃がさない…",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 505554,
+          "bgm_name": "自転車で来た!! モーションコミック版",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 522352,
+          "bgm_name": "ムショ出た瞬間終わったわ-異常性癖哀歌-",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 392973,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う",
+          "bgm_name_cn": "转生成自动贩卖机的我今天也在迷宫徘徊"
+        }
+      ],
+      "mal": {
+        "id": 56942,
+        "title": "Time Slip Shima Kousaku",
+        "title_ja": "タイムスリップ島耕作",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 368802,
+          "bgm_name": "Futurama Season 11 on Hulu",
+          "bgm_name_cn": "飞出个未来 第11季(Hulu版)"
+        },
+        {
+          "bgm_id": 434951,
+          "bgm_name": "超级飞侠：乐迪加速",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 56315,
+        "title": "Fei Xiang Yueqiu",
+        "title_ja": "飞向月球",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 393658,
+      "bgm_name": "超级英雄美猴王：齐天儿",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56319,
+        "title": "Chaoji Yingxiong Mei Hou Wang: Qi Tianer",
+        "title_ja": "超级英雄美猴王：齐天儿",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 380582,
+          "bgm_name": "レベル1だけどユニークスキルで最強です",
+          "bgm_name_cn": "虽然1级但以固有技能却是最强的"
+        },
+        {
+          "bgm_id": 480419,
+          "bgm_name": "親戚の子とお泊まりだから",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 373247,
+          "bgm_name": "無職転生Ⅱ ～異世界行ったら本気だす～",
+          "bgm_name_cn": "无职转生 第二季 ～到了异世界就拿出真本事～"
+        },
+        {
+          "bgm_id": 461129,
+          "bgm_name": "俺と対照的な人生を歩む身近な二人の弱みを握りW変身ヒロインに好きなだけ種付け中出しする日々 モーションコミック版",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459321,
+          "bgm_name": "女子プロレス会場で見つけた俺好みの美少女レスラー 俺の妄想大爆発エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 459322,
+          "bgm_name": "第2試合のゴングが鳴る 美少女レスラーをまた発見 俺の妄想大爆発 エリョナで責め上げマットに沈んだ身体を存分に犯しつくしてやる!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 464243,
+          "bgm_name": "メスガキの誘惑に勝てる訳ないだろ!!～妻が連れてきた娘は理想の女の子でした～ モーションアニメ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 403741,
+          "bgm_name": "聖者無双～サラリーマン、異世界で生き残るために歩む道～",
+          "bgm_name_cn": "圣者无双～上班族的异世界生存之道～"
+        },
+        {
+          "bgm_id": 522352,
+          "bgm_name": "ムショ出た瞬間終わったわ-異常性癖哀歌-",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 466850,
+          "bgm_name": "堕ちたお嬢様 モーションコミック版",
+          "bgm_name_cn": "墮落大小姐"
+        }
+      ],
+      "mal": {
+        "id": 59167,
+        "title": "Dame da yo",
+        "title_ja": "ダメだよ",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 401970,
+      "bgm_name": "幼女社長R",
+      "bgm_name_cn": "幼女社长R",
+      "mal": {
+        "id": 53079,
+        "title": "Youjo Shachou R",
+        "title_ja": "幼女社長 R",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 441806,
+          "bgm_name": "龙时代",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 503184,
+          "bgm_name": "奶龙爆笑嘉年华",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 552118,
+          "bgm_name": "Dragons: The Nine Realms Season 6",
+          "bgm_name_cn": "驯龙高手：九大王国 第六季"
+        },
+        {
+          "bgm_id": 552119,
+          "bgm_name": "Dragons: The Nine Realms Season 7",
+          "bgm_name_cn": "驯龙高手：九大王国 第七季"
+        }
+      ],
+      "mal": {
+        "id": 56559,
+        "title": "Longzhu Xun Youji",
+        "title_ja": "龙珠寻游记",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 449186,
+      "bgm_name": "ギーツエクストラ ギーツあにめ あなざーぐらんぷり",
+      "bgm_name_cn": "极狐外传 极狐动画 异类大奖赛",
+      "mal": {
+        "id": 56206,
+        "title": "Geats Extra: Geats Anime - Another Grand Prix",
+        "title_ja": "ギーツエクストラ ギーツあにめ あなざーぐらんぷり",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 432937,
+      "bgm_name": "雪王驾到",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56486,
+        "title": "Xue Wang Jiadao",
+        "title_ja": "雪王驾到",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 447924,
+      "bgm_name": "KOKO",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56371,
+        "title": "Koko",
+        "title_ja": "KOKO",
+        "media_type": "ona",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 553418,
+          "bgm_name": "뽀롱뽀롱 뽀로로 시즌1",
+          "bgm_name_cn": "小企鹅Pororo 第一季"
+        }
+      ],
+      "mal": {
+        "id": 56909,
+        "title": "Porong Porong Pororo 8",
+        "title_ja": "뽀롱뽀롱 뽀로로 8",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 549170,
+          "bgm_name": "팡팡 다이노",
+          "bgm_name_cn": "嘭嘭迪诺"
+        }
+      ],
+      "mal": {
+        "id": 56481,
+        "title": "Dino Powers 2",
+        "title_ja": "다이노파워즈 2",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 615232,
+      "bgm_name": "신비아파트 특별판: 조선퇴마실록",
+      "bgm_name_cn": "神秘公寓特别篇：朝鲜退魔实录",
+      "mal": {
+        "id": 56293,
+        "title": "Sinbi Apartment: Joseontoemasillog",
+        "title_ja": "신비아파트 특별판: 조선퇴마실록",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 443024,
+      "bgm_name": "王牌二哈",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 56373,
+        "title": "Wangpai Erha",
+        "title_ja": "王牌二哈",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    }
+  ]
+}

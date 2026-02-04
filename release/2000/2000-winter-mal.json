@@ -1,0 +1,678 @@
+{
+  "season": "2000-winter",
+  "update_time": "2026-02-03T16:26:38+08:00",
+  "items": [
+    {
+      "status": "model",
+      "bgm_id": 3134,
+      "bgm_name": "デジモンアドベンチャー ぼくらのウォーゲーム!",
+      "bgm_name_cn": "数码宝贝大冒险 我们的战争游戏!",
+      "mal": {
+        "id": 2397,
+        "title": "Digimon Adventure: Bokura no War Game!",
+        "title_ja": "デジモンアドベンチャー ぼくらのウォーゲーム！",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 2979,
+      "bgm_name": "勇者王ガオガイガーFINAL",
+      "bgm_name_cn": "勇者王GaoGaiGar Final",
+      "mal": {
+        "id": 1382,
+        "title": "Yuusha-Ou GaoGaiGar Final",
+        "title_ja": "勇者王ガオガイガーFINAL",
+        "media_type": "ova",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 63024,
+      "bgm_name": "脅迫 ～終わらない明日～ THE ANIMATION",
+      "bgm_name_cn": "胁迫 ～没有终结的明日～ THE ANIMATION",
+      "mal": {
+        "id": 2327,
+        "title": "Kyouhaku: Owaranai Ashita",
+        "title_ja": "脅迫～終わらない明日～",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 77627,
+      "bgm_name": "鬼点睛",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 3427,
+        "title": "Oni-Tensei",
+        "title_ja": "鬼点睛",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 3134,
+          "bgm_name": "デジモンアドベンチャー ぼくらのウォーゲーム!",
+          "bgm_name_cn": "数码宝贝大冒险 我们的战争游戏!"
+        }
+      ],
+      "mal": {
+        "id": 3254,
+        "title": "Luv Wave",
+        "title_ja": "ラヴ ウェーブ",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 37021,
+      "bgm_name": "六門天外モンコレナイト",
+      "bgm_name_cn": "六门天外Mon Colle Knight",
+      "mal": {
+        "id": 4962,
+        "title": "Rokumon Tengai Mon Colle Knights",
+        "title_ja": "六門天外モンコレナイト",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 85771,
+      "bgm_name": "OH!スーパーミルクチャン",
+      "bgm_name_cn": "哦! 超级小奶糖",
+      "mal": {
+        "id": 1769,
+        "title": "Oh! Super Milk-chan",
+        "title_ja": "OH! スーパーミルクチャン",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 227563,
+      "bgm_name": "ブラック・ジャック 空からきた子ども",
+      "bgm_name_cn": "怪医黑杰克 从天而降的孩子",
+      "mal": {
+        "id": 6246,
+        "title": "Black Jack: Sora kara Kita Kodomo",
+        "title_ja": "ブラック・ジャック 空からきた子ども",
+        "media_type": "ova",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 464,
+          "bgm_name": "ドラえもん のび太の太陽王伝説",
+          "bgm_name_cn": "哆啦A梦：大雄的太阳王传说"
+        },
+        {
+          "bgm_id": 68967,
+          "bgm_name": "ザ☆ドラえもんズ ドキドキ機関車大爆走!",
+          "bgm_name_cn": "哆啦A梦七小子与火车大暴走"
+        }
+      ],
+      "mal": {
+        "id": 2649,
+        "title": "Doraemon: Obaachan no Omoide",
+        "title_ja": "ドラえもん おばあちゃんの思い出",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 21048,
+      "bgm_name": "アンジェリーク 〜白い翼のメモワール〜",
+      "bgm_name_cn": "安琪莉可 纯白翅膀回忆录",
+      "mal": {
+        "id": 2536,
+        "title": "Angelique: Shiroi Tsubasa no Memoire",
+        "title_ja": "アンジェリーク　～白い翼のメモワール～",
+        "media_type": "ova",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 534666,
+      "bgm_name": "Love Struck",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 12361,
+        "title": "Track City",
+        "title_ja": "트랙시티",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 290696,
+          "bgm_name": "ぽぷらっくす",
+          "bgm_name_cn": "白杨挠痒"
+        },
+        {
+          "bgm_id": 216593,
+          "bgm_name": "レズ忍 くのいち色技忍法帳 前編",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 494111,
+          "bgm_name": "催○巨チンに抗えない!(モーションアニメ版)女を即支配する力でクラスのメスどもを完全オナホにしたったw",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 6849,
+          "bgm_name": "ぽてまよ",
+          "bgm_name_cn": "蛋黄酱萝莉"
+        },
+        {
+          "bgm_id": 28114,
+          "bgm_name": "ポコニャン！",
+          "bgm_name_cn": "叮当猫"
+        },
+        {
+          "bgm_id": 74934,
+          "bgm_name": "ぽっぷるメイル プロモーションビデオ",
+          "bgm_name_cn": "美少女剑士梅儿 宣传PV"
+        },
+        {
+          "bgm_id": 109624,
+          "bgm_name": "ほえろブンブン",
+          "bgm_name_cn": "怒吼吧，小狗！"
+        },
+        {
+          "bgm_id": 113392,
+          "bgm_name": "ホクロ兄弟 フルスロットル!!!!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 188953,
+          "bgm_name": "ほえろブンブン",
+          "bgm_name_cn": "怒吼吧，小狗！"
+        },
+        {
+          "bgm_id": 225298,
+          "bgm_name": "ぽちはな",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 40078,
+        "title": "Popolocrois Monogatari Pilot",
+        "title_ja": "ポロクロイス物語 パイロットフィルム",
+        "media_type": "special",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 316272,
+      "bgm_name": "ジャングル大帝 / 本能寺の変",
+      "bgm_name_cn": "森林大帝 / 本能寺之变",
+      "mal": {
+        "id": 18533,
+        "title": "Jungle Taitei (2000)",
+        "title_ja": "ジャングル大帝",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 82130,
+      "bgm_name": "Natural",
+      "bgm_name_cn": "Natural",
+      "mal": {
+        "id": 3370,
+        "title": "Natural: Another",
+        "title_ja": "ナチュラル Another",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 68967,
+      "bgm_name": "ザ☆ドラえもんズ ドキドキ機関車大爆走!",
+      "bgm_name_cn": "哆啦A梦七小子与火车大暴走",
+      "mal": {
+        "id": 2633,
+        "title": "The☆Doraemons: Dokidoki Kikansha Daibakusou!",
+        "title_ja": "ザ☆ドラえもんズ ドキドキ機関車大爆走！",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 73716,
+      "bgm_name": "ニャニがニャンだー ニャンダーかめん",
+      "bgm_name_cn": "蒙面猫侠",
+      "mal": {
+        "id": 9810,
+        "title": "Nyani ga Nyandaa Nyandaa Kamen",
+        "title_ja": "ニャニがニャンだー ニャンダーかめん",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 14876,
+      "bgm_name": "おジャ魔女どれみ♯",
+      "bgm_name_cn": "小魔女DoReMi ♯",
+      "mal": {
+        "id": 351,
+        "title": "Ojamajo Doremi Sharp",
+        "title_ja": "おジャ魔女どれみ＃",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 37487,
+      "bgm_name": "女神候補生",
+      "bgm_name_cn": "女神候补生",
+      "mal": {
+        "id": 888,
+        "title": "Megami Kouhosei",
+        "title_ja": "女神候補生",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 4047,
+      "bgm_name": "風まかせ月影蘭",
+      "bgm_name_cn": "随风舞月影兰",
+      "mal": {
+        "id": 606,
+        "title": "Kazemakase Tsukikage Ran",
+        "title_ja": "風まかせ月影蘭",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 1869,
+      "bgm_name": "ONE PIECE the movie",
+      "bgm_name_cn": "航海王：黄金岛大冒险",
+      "mal": {
+        "id": 459,
+        "title": "One Piece Movie 01",
+        "title_ja": "ONE PIECE",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 3769,
+      "bgm_name": "ブギーポップは笑わない Boogiepop Phantom",
+      "bgm_name_cn": "幻影死神",
+      "mal": {
+        "id": 369,
+        "title": "Boogiepop wa Warawanai",
+        "title_ja": "ブギーポップは笑わない Boogiepop Phantom",
+        "media_type": "tv",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 473,
+          "bgm_name": "映画ドラえもん のび太の恐竜2006",
+          "bgm_name_cn": "哆啦A梦：大雄的恐龙2006"
+        },
+        {
+          "bgm_id": 475,
+          "bgm_name": "映画ドラえもん のび太の新魔界大冒険 〜7人の魔法使い〜",
+          "bgm_name_cn": "哆啦A梦：大雄的奇幻大冒险"
+        },
+        {
+          "bgm_id": 4558,
+          "bgm_name": "映画ドラえもん のび太の人魚大海戦",
+          "bgm_name_cn": "哆啦A梦：大雄的人鱼大海战"
+        },
+        {
+          "bgm_id": 55467,
+          "bgm_name": "映画ドラえもん のび太のひみつ道具博物館",
+          "bgm_name_cn": "哆啦A梦：大雄的秘密道具博物馆"
+        },
+        {
+          "bgm_id": 108093,
+          "bgm_name": "映画ドラえもん のび太の宇宙英雄記",
+          "bgm_name_cn": "哆啦A梦：大雄的宇宙英雄记"
+        },
+        {
+          "bgm_id": 187132,
+          "bgm_name": "映画ドラえもん のび太の南極カチコチ大冒険",
+          "bgm_name_cn": "哆啦A梦：大雄的南极冰冰凉大冒险"
+        },
+        {
+          "bgm_id": 217072,
+          "bgm_name": "映画ドラえもん のび太の宝島",
+          "bgm_name_cn": "哆啦A梦：大雄的金银岛"
+        },
+        {
+          "bgm_id": 263808,
+          "bgm_name": "映画ドラえもん のび太の月面探査記",
+          "bgm_name_cn": "哆啦A梦：大雄的月球探险记"
+        },
+        {
+          "bgm_id": 285759,
+          "bgm_name": "映画ドラえもん のび太の新恐竜",
+          "bgm_name_cn": "哆啦A梦：大雄的新恐龙"
+        },
+        {
+          "bgm_id": 325571,
+          "bgm_name": "映画ドラえもん のび太の宇宙小戦争2021",
+          "bgm_name_cn": "哆啦A梦：大雄的宇宙小战争 2021"
+        }
+      ],
+      "mal": {
+        "id": 7045,
+        "title": "Doraemon Movie 21: Nobita no Taiyou Ou Densetsu",
+        "title_ja": "映画 ドラえもん のび太の太陽王伝説",
+        "media_type": "movie",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 55020,
+      "bgm_name": "からくりの君",
+      "bgm_name_cn": "傀儡公主",
+      "mal": {
+        "id": 1658,
+        "title": "Karakuri no Kimi",
+        "title_ja": "からくりの君",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 115955,
+      "bgm_name": "ポピーザぱフォーマー",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 6560,
+        "title": "Popee the Performer",
+        "title_ja": "POPEE the ぱフォーマー",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 40074,
+      "bgm_name": "マシュランボー",
+      "bgm_name_cn": "爆裂战士",
+      "mal": {
+        "id": 1137,
+        "title": "Mushrambo",
+        "title_ja": "マシュランボー",
+        "media_type": "tv",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "mal": {
+        "id": 44588,
+        "title": "The Gregory Gallery Tour Special",
+        "title_ja": "グレゴリーホラーショー",
+        "media_type": "special",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 88750,
+      "bgm_name": "マイアミ☆ガンズ",
+      "bgm_name_cn": "风云爆弹娘",
+      "mal": {
+        "id": 783,
+        "title": "Miami Guns",
+        "title_ja": "マイアミ☆ガンズ",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 316266,
+          "bgm_name": "それいけ! アンパンマン おうたとてあそび たのしいね",
+          "bgm_name_cn": ""
+        }
+      ],
+      "mal": {
+        "id": 39038,
+        "title": "Anon Sentai Ranger 5",
+        "title_ja": "アノン戦隊レンジャー5",
+        "media_type": "ona",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 104562,
+          "bgm_name": "藤子不二雄Aの夢魔子",
+          "bgm_name_cn": "藤子不二雄A的梦魔子"
+        }
+      ],
+      "mal": {
+        "id": 3463,
+        "title": "A.LI.CE",
+        "title_ja": "Ａ・ＬＩ・ＣＥ",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 489691,
+      "bgm_name": "サンゴの海と王子",
+      "bgm_name_cn": "珊瑚海与王子",
+      "mal": {
+        "id": 10077,
+        "title": "Sango no Umi to Ouji",
+        "title_ja": "サンゴの海と王子",
+        "media_type": "ova",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 3019,
+          "bgm_name": "ポケットモンスター",
+          "bgm_name_cn": "精灵宝可梦"
+        },
+        {
+          "bgm_id": 292522,
+          "bgm_name": "ポケットモンスター",
+          "bgm_name_cn": "宝可梦 旅途"
+        },
+        {
+          "bgm_id": 411247,
+          "bgm_name": "ポケットモンスター",
+          "bgm_name_cn": "宝可梦 地平线"
+        },
+        {
+          "bgm_id": 3020,
+          "bgm_name": "ポケットモンスター アドバンスジェネレーション",
+          "bgm_name_cn": "精灵宝可梦 超世代"
+        },
+        {
+          "bgm_id": 3021,
+          "bgm_name": "ポケットモンスター ダイヤモンド&パール",
+          "bgm_name_cn": "精灵宝可梦 钻石&珍珠"
+        },
+        {
+          "bgm_id": 8401,
+          "bgm_name": "ポケットモンスター ベストウイッシュ",
+          "bgm_name_cn": "精灵宝可梦 超级愿望"
+        },
+        {
+          "bgm_id": 27883,
+          "bgm_name": "ポケットモンスター ミュウツー! 我ハココニ在リ",
+          "bgm_name_cn": "精灵宝可梦：超梦！我就在这里"
+        },
+        {
+          "bgm_id": 27886,
+          "bgm_name": "ポケットモンスタークリスタル ライコウ雷の伝説",
+          "bgm_name_cn": "精灵宝可梦 水晶：雷公 雷的传说"
+        },
+        {
+          "bgm_id": 40081,
+          "bgm_name": "ポケットモンスター ベストウイッシュ シーズン2",
+          "bgm_name_cn": "精灵宝可梦 超级愿望 第2季"
+        },
+        {
+          "bgm_id": 61429,
+          "bgm_name": "ポケットモンスター ベストウイッシュ シーズン2 エピソードN",
+          "bgm_name_cn": "精灵宝可梦 超级愿望 第2季 N之章"
+        }
+      ],
+      "mal": {
+        "id": 6385,
+        "title": "Pokemon: Yadoking no Ichinichi",
+        "title_ja": "ポケットモンスター ヤドキングのいちにち",
+        "media_type": "special",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 92911,
+      "bgm_name": "淫夢～生贄の宴～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 4379,
+        "title": "Inmu: Ikenie no Utage",
+        "title_ja": "淫夢~生贄の宴~",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 81864,
+      "bgm_name": "回春",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 3912,
+        "title": "Rejuvenation",
+        "title_ja": "回春",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 93341,
+      "bgm_name": "緊縛の館 ～略奪～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2894,
+        "title": "Kinbaku no Yakata: Ryakudatsu",
+        "title_ja": "緊縛の館 〜略奪〜",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 87616,
+      "bgm_name": "ファーストKiss☆物語 ～Kissからはじまる物語～",
+      "bgm_name_cn": "初吻物语",
+      "mal": {
+        "id": 725,
+        "title": "First Kiss Monogatari",
+        "title_ja": "ファーストＫｉｓｓ☆物語",
+        "media_type": "ova",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 13342,
+      "bgm_name": "下級生",
+      "bgm_name_cn": "下级生",
+      "mal": {
+        "id": 36528,
+        "title": "Kakyuusei (TV): Hajimemashite Tina!",
+        "title_ja": "下級生はじめまして ティナ!",
+        "media_type": "special",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 26511,
+      "bgm_name": "The New Adventures of Ocean Girl",
+      "bgm_name_cn": "海的女儿新历险记",
+      "mal": {
+        "id": 61547,
+        "title": "Umi no Triton (2000)",
+        "title_ja": "海のトリトン",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 316266,
+      "bgm_name": "それいけ! アンパンマン おうたとてあそび たのしいね",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 21975,
+        "title": "Sore Ike! Anpanman: Outa to Teasobi Tanoshii ne",
+        "title_ja": "それいけ! アンパンマン おうたとてあそび たのしいね",
+        "media_type": "ova",
+        "rating": "kids"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 316272,
+      "bgm_name": "ジャングル大帝 / 本能寺の変",
+      "bgm_name_cn": "森林大帝 / 本能寺之变",
+      "mal": {
+        "id": 42399,
+        "title": "Honnouji no Hen",
+        "title_ja": "本能寺の変",
+        "media_type": "movie",
+        "rating": "general"
+      }
+    }
+  ]
+}
