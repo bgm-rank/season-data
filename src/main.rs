@@ -37,19 +37,26 @@ async fn main() -> Result<()> {
     }
 
     // 处理 2026 年冬季
-    let year = 2026;
-    let season = Season::Winter;
-    let output_path = PathBuf::from(format!("release/{}-{}-mal.json", year, season));
+    for year in 2020..=2025 {
+        for &season in vec![Season::Winter, Season::Spring, Season::Summer, Season::Fall].iter() {
+            let output_path =
+                PathBuf::from(format!("release/{}/{}-{}-mal.json", year, year, season));
 
-    info!(year = year, season = %season, "开始处理季度番组");
+            info!(year = year, season = %season, "开始处理季度番组");
 
-    let result = processor.process(year, season, &output_path).await?;
+            let result = processor.process(year, season, &output_path).await?;
 
-    info!(
-        total = result.items.len(),
-        confirmed = result.items.iter().filter(|i| i.status.is_confirmed()).count(),
-        "处理完成"
-    );
+            info!(
+                total = result.items.len(),
+                confirmed = result
+                    .items
+                    .iter()
+                    .filter(|i| i.status.is_confirmed())
+                    .count(),
+                "处理完成"
+            );
+        }
+    }
 
     Ok(())
 }

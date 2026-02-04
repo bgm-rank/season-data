@@ -1,9 +1,13 @@
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
+use std::time::Duration;
 use thiserror::Error;
+use tracing::warn;
 
 const BASE_URL: &str = "https://api.bgm.tv";
 const USER_AGENT: &str = "bgm-rank/season-data (https://github.com/bgm-rank/season-data)";
+const MAX_RETRIES: u32 = 3;
+const RETRY_DELAY_MS: u64 = 1000;
 
 #[derive(Error, Debug)]
 pub enum BgmtvError {
@@ -261,7 +265,7 @@ impl BgmtvClient {
         }
     }
 
-    /// 搜索条目
+    /// 搜索条目（带重试逻辑）
     ///
     /// POST /v0/search/subjects
     pub async fn search_subjects(
@@ -280,28 +284,58 @@ impl BgmtvClient {
             query_params.push(("offset", offset.to_string()));
         }
 
-        let mut req = self
-            .client
-            .post(&url)
-            .header("User-Agent", USER_AGENT)
-            .header("Content-Type", "application/json")
-            .query(&query_params)
-            .json(request);
+        let mut last_error = None;
+        for attempt in 1..=MAX_RETRIES {
+            let mut req = self
+                .client
+                .post(&url)
+                .header("User-Agent", USER_AGENT)
+                .header("Content-Type", "application/json")
+                .query(&query_params)
+                .json(request);
 
-        if let Some(token) = &self.access_token {
-            req = req.header("Authorization", format!("Bearer {}", token));
+            if let Some(token) = &self.access_token {
+                req = req.header("Authorization", format!("Bearer {}", token));
+            }
+
+            match req.send().await {
+                Ok(response) => {
+                    if !response.status().is_success() {
+                        let status = response.status();
+                        let text = response.text().await.unwrap_or_default();
+                        return Err(BgmtvError::Api(format!("{}: {}", status, text)));
+                    }
+
+                    match response.json::<PagedSubject>().await {
+                        Ok(result) => return Ok(result),
+                        Err(e) => {
+                            last_error = Some(BgmtvError::Request(e));
+                            if attempt < MAX_RETRIES {
+                                warn!(
+                                    attempt = attempt,
+                                    max_retries = MAX_RETRIES,
+                                    "JSON 解析失败，重试中"
+                                );
+                                tokio::time::sleep(Duration::from_millis(RETRY_DELAY_MS)).await;
+                            }
+                        }
+                    }
+                }
+                Err(e) => {
+                    last_error = Some(BgmtvError::Request(e));
+                    if attempt < MAX_RETRIES {
+                        warn!(
+                            attempt = attempt,
+                            max_retries = MAX_RETRIES,
+                            "HTTP 请求失败，重试中"
+                        );
+                        tokio::time::sleep(Duration::from_millis(RETRY_DELAY_MS)).await;
+                    }
+                }
+            }
         }
 
-        let response = req.send().await?;
-
-        if !response.status().is_success() {
-            let status = response.status();
-            let text = response.text().await.unwrap_or_default();
-            return Err(BgmtvError::Api(format!("{}: {}", status, text)));
-        }
-
-        let result = response.json::<PagedSubject>().await?;
-        Ok(result)
+        Err(last_error.unwrap())
     }
 
     /// 按关键词搜索动画（包含 NSFW，限制日期范围）

@@ -33,12 +33,14 @@ pub enum ConfirmStatus {
     Model,
     /// 人工确认
     Human,
+    /// 查询出错（API 调用失败）
+    Error,
 }
 
 impl ConfirmStatus {
-    /// 是否已确认（非 Unconfirmed）
+    /// 是否已确认（非 Unconfirmed 且非 Error）
     pub fn is_confirmed(&self) -> bool {
-        !matches!(self, ConfirmStatus::Unconfirmed)
+        !matches!(self, ConfirmStatus::Unconfirmed | ConfirmStatus::Error)
     }
 }
 
@@ -314,17 +316,58 @@ impl SeasonProcessor {
             debug!(keyword = search_keyword, mal_id = mal_info.id, "搜索 Bangumi");
 
             // 先限制日期搜索
-            let results = self
+            let results = match self
                 .bgm_client
                 .search_anime_by_keyword(search_keyword, &start_date, &end_date)
-                .await?;
+                .await
+            {
+                Ok(r) => r,
+                Err(e) => {
+                    warn!(
+                        mal_id = mal_info.id,
+                        title = %mal_info.title,
+                        error = %e,
+                        "Bangumi API 搜索失败"
+                    );
+                    data.items.push(SeasonItem {
+                        status: ConfirmStatus::Error,
+                        bgm_id: None,
+                        bgm_name: None,
+                        bgm_name_cn: None,
+                        candidates: vec![],
+                        mal: mal_info,
+                    });
+                    continue;
+                }
+            };
 
             // 如果没有结果，不限制日期再搜一次
             let results = if results.is_empty() {
                 debug!(keyword = search_keyword, "限制日期搜索无结果，回退到无限制搜索");
-                self.bgm_client
+                match self
+                    .bgm_client
                     .search_anime_by_keyword_no_date(search_keyword)
-                    .await?
+                    .await
+                {
+                    Ok(r) => r,
+                    Err(e) => {
+                        warn!(
+                            mal_id = mal_info.id,
+                            title = %mal_info.title,
+                            error = %e,
+                            "Bangumi API 搜索失败（无日期限制）"
+                        );
+                        data.items.push(SeasonItem {
+                            status: ConfirmStatus::Error,
+                            bgm_id: None,
+                            bgm_name: None,
+                            bgm_name_cn: None,
+                            candidates: vec![],
+                            mal: mal_info,
+                        });
+                        continue;
+                    }
+                }
             } else {
                 results
             };
@@ -467,12 +510,18 @@ impl SeasonProcessor {
             .iter()
             .filter(|i| i.status == ConfirmStatus::Unconfirmed)
             .count();
+        let error_count = data
+            .items
+            .iter()
+            .filter(|i| i.status == ConfirmStatus::Error)
+            .count();
         info!(
             total = data.items.len(),
             match_confirmed = match_count,
             model_confirmed = model_count,
             human_confirmed = human_count,
             unconfirmed = unconfirmed_count,
+            error = error_count,
             "处理完成"
         );
 
@@ -544,6 +593,7 @@ mod tests {
         assert!(ConfirmStatus::Match.is_confirmed());
         assert!(ConfirmStatus::Model.is_confirmed());
         assert!(ConfirmStatus::Human.is_confirmed());
+        assert!(!ConfirmStatus::Error.is_confirmed());
 
         // 序列化测试
         assert_eq!(
@@ -561,6 +611,10 @@ mod tests {
         assert_eq!(
             serde_json::to_string(&ConfirmStatus::Human).unwrap(),
             "\"human\""
+        );
+        assert_eq!(
+            serde_json::to_string(&ConfirmStatus::Error).unwrap(),
+            "\"error\""
         );
     }
 
