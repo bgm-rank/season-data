@@ -35,10 +35,12 @@ pub enum ConfirmStatus {
     Human,
     /// 查询出错（API 调用失败）
     Error,
+    /// 跳过（special/tv_special/music/pv 类型不需要匹配）
+    Skip,
 }
 
 impl ConfirmStatus {
-    /// 是否已确认（非 Unconfirmed 且非 Error）
+    /// 是否已确认（增量更新时跳过）
     pub fn is_confirmed(&self) -> bool {
         !matches!(self, ConfirmStatus::Unconfirmed | ConfirmStatus::Error)
     }
@@ -75,10 +77,12 @@ pub enum MediaType {
     Special,
     #[serde(rename = "tv_special")]
     TvSpecial,
+    Music,
+    Pv,
 }
 
 impl MediaType {
-    /// 从 MAL media_type 字符串转换，返回 None 表示应该跳过
+    /// 从 MAL media_type 字符串转换，返回 None 表示未知类型
     pub fn from_mal(media_type: Option<&str>) -> Option<Self> {
         match media_type {
             Some("tv") => Some(MediaType::Tv),
@@ -87,9 +91,18 @@ impl MediaType {
             Some("movie") => Some(MediaType::Movie),
             Some("special") => Some(MediaType::Special),
             Some("tv_special") => Some(MediaType::TvSpecial),
-            // music, pv 等类型跳过
+            Some("music") => Some(MediaType::Music),
+            Some("pv") => Some(MediaType::Pv),
             _ => None,
         }
+    }
+
+    /// 是否应该标记为 skip（不需要匹配 Bangumi）
+    pub fn should_skip(&self) -> bool {
+        matches!(
+            self,
+            MediaType::Special | MediaType::TvSpecial | MediaType::Music | MediaType::Pv
+        )
     }
 }
 
@@ -287,16 +300,16 @@ impl SeasonProcessor {
                 continue;
             }
 
-            // 转换 MAL 数据，跳过 music/pv
+            // 转换 MAL 数据
             let mal_info = match MalInfo::from_anime_node(&anime) {
                 Some(info) => info,
                 None => {
-                    debug!(id = anime.id, title = %anime.title, "跳过非动画类型");
+                    debug!(id = anime.id, title = %anime.title, "跳过未知类型");
                     continue;
                 }
             };
 
-            // 如果已经确认，保留原有数据
+            // 如果已经确认（包括 skip），保留原有数据
             if confirmed_ids.contains(&mal_info.id) {
                 if let Some(ref existing_data) = existing {
                     if let Some(item) = existing_data
@@ -309,6 +322,25 @@ impl SeasonProcessor {
                         continue;
                     }
                 }
+            }
+
+            // 如果是 special/tv_special/music/pv 类型，标记为 skip
+            if mal_info.media_type.should_skip() {
+                debug!(
+                    mal_id = mal_info.id,
+                    title = %mal_info.title,
+                    media_type = ?mal_info.media_type,
+                    "标记为 skip"
+                );
+                data.items.push(SeasonItem {
+                    status: ConfirmStatus::Skip,
+                    bgm_id: None,
+                    bgm_name: None,
+                    bgm_name_cn: None,
+                    candidates: vec![],
+                    mal: mal_info,
+                });
+                continue;
             }
 
             // 使用日文标题搜索 Bangumi
@@ -515,6 +547,11 @@ impl SeasonProcessor {
             .iter()
             .filter(|i| i.status == ConfirmStatus::Error)
             .count();
+        let skip_count = data
+            .items
+            .iter()
+            .filter(|i| i.status == ConfirmStatus::Skip)
+            .count();
         info!(
             total = data.items.len(),
             match_confirmed = match_count,
@@ -522,6 +559,7 @@ impl SeasonProcessor {
             human_confirmed = human_count,
             unconfirmed = unconfirmed_count,
             error = error_count,
+            skip = skip_count,
             "处理完成"
         );
 
@@ -562,10 +600,25 @@ mod tests {
             MediaType::from_mal(Some("tv_special")),
             Some(MediaType::TvSpecial)
         );
-        // 应该跳过的类型
-        assert_eq!(MediaType::from_mal(Some("music")), None);
-        assert_eq!(MediaType::from_mal(Some("pv")), None);
+        assert_eq!(MediaType::from_mal(Some("music")), Some(MediaType::Music));
+        assert_eq!(MediaType::from_mal(Some("pv")), Some(MediaType::Pv));
+        // 未知类型返回 None
+        assert_eq!(MediaType::from_mal(Some("unknown")), None);
         assert_eq!(MediaType::from_mal(None), None);
+    }
+
+    #[test]
+    fn test_media_type_should_skip() {
+        // 不需要跳过的类型
+        assert!(!MediaType::Tv.should_skip());
+        assert!(!MediaType::Ova.should_skip());
+        assert!(!MediaType::Ona.should_skip());
+        assert!(!MediaType::Movie.should_skip());
+        // 需要跳过的类型
+        assert!(MediaType::Special.should_skip());
+        assert!(MediaType::TvSpecial.should_skip());
+        assert!(MediaType::Music.should_skip());
+        assert!(MediaType::Pv.should_skip());
     }
 
     #[test]
@@ -594,6 +647,7 @@ mod tests {
         assert!(ConfirmStatus::Model.is_confirmed());
         assert!(ConfirmStatus::Human.is_confirmed());
         assert!(!ConfirmStatus::Error.is_confirmed());
+        assert!(ConfirmStatus::Skip.is_confirmed()); // skip 也算已确认，增量更新时跳过
 
         // 序列化测试
         assert_eq!(
@@ -615,6 +669,10 @@ mod tests {
         assert_eq!(
             serde_json::to_string(&ConfirmStatus::Error).unwrap(),
             "\"error\""
+        );
+        assert_eq!(
+            serde_json::to_string(&ConfirmStatus::Skip).unwrap(),
+            "\"skip\""
         );
     }
 
@@ -689,7 +747,7 @@ mod tests {
     }
 
     #[test]
-    fn test_skip_music_and_pv() {
+    fn test_music_and_pv_should_skip() {
         use crate::services::mal::AnimeNode;
 
         let music_node = AnimeNode {
@@ -710,7 +768,9 @@ mod tests {
             rating: None,
         };
 
-        assert!(MalInfo::from_anime_node(&music_node).is_none());
+        let info = MalInfo::from_anime_node(&music_node).unwrap();
+        assert_eq!(info.media_type, MediaType::Music);
+        assert!(info.media_type.should_skip());
 
         let pv_node = AnimeNode {
             id: 2,
@@ -730,6 +790,31 @@ mod tests {
             rating: None,
         };
 
-        assert!(MalInfo::from_anime_node(&pv_node).is_none());
+        let info = MalInfo::from_anime_node(&pv_node).unwrap();
+        assert_eq!(info.media_type, MediaType::Pv);
+        assert!(info.media_type.should_skip());
+
+        // special 和 tv_special 也应该跳过
+        let special_node = AnimeNode {
+            id: 3,
+            title: "Some Special".to_string(),
+            main_picture: None,
+            alternative_titles: None,
+            start_date: None,
+            end_date: None,
+            synopsis: None,
+            media_type: Some("special".to_string()),
+            status: None,
+            num_episodes: None,
+            start_season: None,
+            broadcast: None,
+            source: None,
+            studios: vec![],
+            rating: None,
+        };
+
+        let info = MalInfo::from_anime_node(&special_node).unwrap();
+        assert_eq!(info.media_type, MediaType::Special);
+        assert!(info.media_type.should_skip());
     }
 }

@@ -69,9 +69,9 @@
 
 ### media_type
 
-保留：`tv`, `ova`, `ona`, `movie`, `special`, `tv_special`
+保留：`tv`, `ova`, `ona`, `movie`
 
-丢弃（不处理）：`music`, `pv`
+丢弃（不处理）：`special`, `tv_special`, `music`, `pv`
 
 ### rating
 
