@@ -221,29 +221,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 494044,
-          "bgm_name": "映画 おでかけ子ザメ とかいのおともだち",
-          "bgm_name_cn": "电影 小鲨鱼去郊游"
-        },
-        {
-          "bgm_id": 553872,
-          "bgm_name": "映画キミとアイドルプリキュア♪ お待たせ！キミに届けるキラッキライブ！",
-          "bgm_name_cn": "剧场版 Idol光之美少女你与我♪ 久等了！为你献上闪耀舞台！"
-        },
-        {
-          "bgm_id": 565401,
-          "bgm_name": "映栄杉さん家はお侍",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 575899,
-          "bgm_name": "「Fate/Grand Order」10th Anniversary Movie",
-          "bgm_name_cn": "「Fate/Grand Order」十周年纪念映像"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 528635,
+      "bgm_name": "クレヨンしんちゃん 超華麗!灼熱のカスカベダンサーズ",
+      "bgm_name_cn": "蜡笔小新：超华丽！灼热的春日部舞者",
       "mal": {
         "id": 60862,
         "title": "Crayon Shin-chan Movie 33: Chou Karei! Shakunetsu no Kasukabe Dancers",
@@ -894,7 +875,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 398951,
@@ -950,7 +931,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 505782,
@@ -1072,7 +1053,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 496135,
@@ -1102,7 +1083,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 501844,
@@ -1605,44 +1586,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 526159,
-          "bgm_name": "LUPIN THE IIIRD THE MOVIE 不死身の血族",
-          "bgm_name_cn": "电影 鲁邦三世 不死身的血族"
-        },
-        {
-          "bgm_id": 467930,
-          "bgm_name": "青春ブタ野郎はサンタクロースの夢を見ない",
-          "bgm_name_cn": "青春猪头少年不会梦到圣诞服女郎"
-        },
-        {
-          "bgm_id": 587155,
-          "bgm_name": "不倫勇者 ～その不倫が、世界を救う。～ The Motion Anime",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 562605,
-          "bgm_name": "我不在的明天",
-          "bgm_name_cn": "我不在的明天"
-        },
-        {
-          "bgm_id": 576103,
-          "bgm_name": "信息素说我们不可能 动态漫",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 524707,
-          "bgm_name": "わたしが恋人になれるわけないじゃん、ムリムリ！（※ムリじゃなかった!?）",
-          "bgm_name_cn": "我们不可能成为恋人！绝对不行。 (※似乎可行？)"
-        },
-        {
-          "bgm_id": 565472,
-          "bgm_name": "Fate/Grand Order 藤丸立香はわからない Season3",
-          "bgm_name_cn": "Fate/Grand Order 藤丸立香想不明白 第3季"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 533335,
+      "bgm_name": "不思議の国でアリスと -Dive in Wonderland-",
+      "bgm_name_cn": "与爱丽丝梦游仙境 -Dive in Wonderland-",
       "mal": {
         "id": 60778,
         "title": "Fushigi no Kuni de Alice to: Dive in Wonderland",
@@ -1665,7 +1612,10 @@
       }
     },
     {
-      "status": "skip",
+      "status": "human",
+      "bgm_id": 537894,
+      "bgm_name": "人妻の唇は缶チューハイの味がして",
+      "bgm_name_cn": "人妻之唇烧酒之味",
       "mal": {
         "id": 62349,
         "title": "Hitozuma no Kuchibiru wa Kan Chuuhai no Aji ga Shite: Kooriyama Yui Sonogo...",
@@ -1828,7 +1778,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 205217,
@@ -1860,7 +1810,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 260677,
@@ -1890,7 +1840,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 13809,
@@ -1952,7 +1902,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 345824,
@@ -2105,7 +2055,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 525435,
@@ -2215,7 +2165,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 467930,
@@ -2271,34 +2221,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 561787,
-          "bgm_name": "ちびゴジラの逆襲 シリーズ最新作",
-          "bgm_name_cn": "小哥斯拉的逆袭 系列最新作"
-        },
-        {
-          "bgm_id": 569138,
-          "bgm_name": "ちいかわ 新シリーズ",
-          "bgm_name_cn": "吉伊卡哇 新系列"
-        },
-        {
-          "bgm_id": 580872,
-          "bgm_name": "チェンソーマン 総集篇",
-          "bgm_name_cn": "链锯人 总集篇"
-        },
-        {
-          "bgm_id": 470660,
-          "bgm_name": "劇場版 チェンソーマン レゼ篇",
-          "bgm_name_cn": "剧场版 链锯人 蕾塞篇"
-        },
-        {
-          "bgm_id": 514353,
-          "bgm_name": "小林さんちのメイドラゴン さみしがりやの竜",
-          "bgm_name_cn": "小林家的龙女仆 怕寂寞的龙"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 561787,
+      "bgm_name": "ちびゴジラの逆襲 シリーズ最新作",
+      "bgm_name_cn": "小哥斯拉的逆袭 系列最新作",
       "mal": {
         "id": 61765,
         "title": "Chibi Godzilla no Gyakushuu 3rd Season",
@@ -2386,7 +2312,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 561922,
@@ -2486,7 +2412,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 407237,
@@ -2578,7 +2504,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 258915,
@@ -2615,19 +2541,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 559674,
-          "bgm_name": "学校では教えてくれない大切なこと 整理整頓編",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 576265,
-          "bgm_name": "学校では教えてくれない大切なこと 時間の使い方編",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "human",
+      "bgm_id": 559674,
+      "bgm_name": "学校では教えてくれない大切なこと 整理整頓編",
+      "bgm_name_cn": "",
       "mal": {
         "id": 61731,
         "title": "Gakkou de wa Oshiete Kurenai Taisetsu na Koto",
@@ -2637,7 +2554,10 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "human",
+      "bgm_id": 559967,
+      "bgm_name": "特装合体ロボ ジョブレイバー",
+      "bgm_name_cn": "特装作业勇者",
       "mal": {
         "id": 62046,
         "title": "Tomica Heroes Jobraver: Tokusou Gattai Robo (TV)",
@@ -2660,7 +2580,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 62073,
         "title": "Honda Bike x Kuromi",
@@ -2813,7 +2733,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 542125,
@@ -2835,7 +2755,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 505782,
@@ -2877,7 +2797,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 514353,

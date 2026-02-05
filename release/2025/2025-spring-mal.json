@@ -16,14 +16,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 534678,
-          "bgm_name": "黒ギャルアラカルト",
-          "bgm_name_cn": "黑辣妹杂烩"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 502875,
+      "bgm_name": "黒執事 -緑の魔女編-",
+      "bgm_name_cn": "黑执事 -绿之魔女篇-",
       "mal": {
         "id": 59228,
         "title": "Kuroshitsuji: Midori no Majo-hen",
@@ -85,7 +81,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 520284,
@@ -588,7 +584,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 521593,
@@ -945,7 +941,10 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "human",
+      "bgm_id": 529995,
+      "bgm_name": "ヴィジランテ -僕のヒーローアカデミア ILLEGALS-",
+      "bgm_name_cn": "正义使者 -我的英雄学院之非法英雄-",
       "mal": {
         "id": 60593,
         "title": "Vigilante: Boku no Hero Academia Illegals",
@@ -968,44 +967,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 554228,
-          "bgm_name": "宝可梦生态一日记",
-          "bgm_name_cn": "宝可梦生态一日记"
-        },
-        {
-          "bgm_id": 564509,
-          "bgm_name": "『さうのあっ！』2巻発売記念 アニメPV",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 554553,
-          "bgm_name": "【#ホロアース】アニメPV「さあ、あなたのもう ひとつのセカイへ」",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 514997,
-          "bgm_name": "ゴリラの神から加護された令嬢は王立騎士団で可愛がられる",
-          "bgm_name_cn": "受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱"
-        },
-        {
-          "bgm_id": 520672,
-          "bgm_name": "完璧すぎて可愛げがないと婚約破棄された聖女は隣国に売られる",
-          "bgm_name_cn": "圣女因太过完美不够可爱而被废除婚约并卖到邻国"
-        },
-        {
-          "bgm_id": 484402,
-          "bgm_name": "一瞬で治療していたのに役立たずと追放された天才治癒師、闇ヒーラーとして楽しく生きる",
-          "bgm_name_cn": "瞬间治疗却被视为无用而被流放的天才治疗师，以暗黑治疗师的身份幸福地生活着"
-        },
-        {
-          "bgm_id": 440173,
-          "bgm_name": "鲲吞天下之掌门归来",
-          "bgm_name_cn": "鲲吞天下之掌门归来"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 437593,
+      "bgm_name": "ざつ旅-That's Journey-",
+      "bgm_name_cn": "随兴旅-That's Journey-",
       "mal": {
         "id": 55514,
         "title": "Zatsu Tabi: That's Journey",
@@ -1489,59 +1454,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 45339,
-          "bgm_name": "華ヤカ哉、我ガ一族 キネトグラフ",
-          "bgm_name_cn": "华丽一族"
-        },
-        {
-          "bgm_id": 73452,
-          "bgm_name": "華星夜曲",
-          "bgm_name_cn": "华星夜曲"
-        },
-        {
-          "bgm_id": 74430,
-          "bgm_name": "華・奴隷",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 809,
-          "bgm_name": "桃華月憚",
-          "bgm_name_cn": "桃华月惮"
-        },
-        {
-          "bgm_id": 1934,
-          "bgm_name": "中華一番!",
-          "bgm_name_cn": "中华小当家"
-        },
-        {
-          "bgm_id": 289672,
-          "bgm_name": "天華百剣 ～めいじ館へようこそ！～",
-          "bgm_name_cn": "天华百剑 ～欢迎来到铭治馆！～"
-        },
-        {
-          "bgm_id": 378159,
-          "bgm_name": "聖華女学院公認竿おじさん",
-          "bgm_name_cn": "圣华女学院公认竿叔叔"
-        },
-        {
-          "bgm_id": 18623,
-          "bgm_name": "薄桜鬼 雪華録",
-          "bgm_name_cn": "薄樱鬼 雪华录"
-        },
-        {
-          "bgm_id": 20930,
-          "bgm_name": "サクラ大戦 轟華絢爛",
-          "bgm_name_cn": "樱花大战 轰华绚烂"
-        },
-        {
-          "bgm_id": 41013,
-          "bgm_name": "幻想万華鏡 華鳥風月",
-          "bgm_name_cn": "幻想万华镜 华鸟风月"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 441888,
+      "bgm_name": "華Doll*-Reinterpretation of Flowering-",
+      "bgm_name_cn": "华Doll*-Reinterpretation of Flowering-",
       "mal": {
         "id": 55710,
         "title": "Hana-Doll*: Reinterpretation of Flowering",
@@ -1681,7 +1597,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 529240,
@@ -1756,7 +1672,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 562129,
@@ -1913,7 +1829,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 63276,
@@ -1973,7 +1889,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 61774,
         "title": "BT21 The Journey",
@@ -1996,7 +1912,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 95300,
@@ -2123,7 +2039,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 281359,
@@ -2185,7 +2101,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 205217,
@@ -2230,7 +2146,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 61958,
         "title": "Dr.B-Pang",
@@ -2240,7 +2156,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 531159,
@@ -2410,19 +2326,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 565271,
-          "bgm_name": "Express Photo",
-          "bgm_name_cn": "极速吗喽"
-        },
-        {
-          "bgm_id": 497110,
-          "bgm_name": "ニンジャバットマン対ヤクザリーグ",
-          "bgm_name_cn": "忍者蝙蝠侠对极道联盟"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 544188,
+      "bgm_name": "极限城市",
+      "bgm_name_cn": "",
       "mal": {
         "id": 61303,
         "title": "Jixian Chengshi",
@@ -2653,7 +2560,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 611704,
@@ -2706,7 +2613,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 61899,
         "title": "Sazan Gakyuu",
@@ -2768,7 +2675,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 60689,
         "title": "Rainbow Bubblegem 2: Secret",
@@ -2804,7 +2711,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 2877,
@@ -2879,7 +2786,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 514353,
@@ -2935,7 +2842,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 180211,

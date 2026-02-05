@@ -68,7 +68,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 528310,
@@ -124,54 +124,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 536157,
-          "bgm_name": "天都异录",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 488177,
-          "bgm_name": "天久鷹央の推理カルテ",
-          "bgm_name_cn": "天久鹰央的推理病历表"
-        },
-        {
-          "bgm_id": 530756,
-          "bgm_name": "光影天炎战甲",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 458978,
-          "bgm_name": "少年歌行 血染天启篇",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 530751,
-          "bgm_name": "凡人修仙传 虚天战纪",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 542046,
-          "bgm_name": "​完美世界剧场版 九劫焚天​",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 435075,
-          "bgm_name": "画江湖之不良人柒：九幽玄天",
-          "bgm_name_cn": "画江湖之不良人第七季：九幽玄天"
-        },
-        {
-          "bgm_id": 536370,
-          "bgm_name": "Night of the Zoopocalypse",
-          "bgm_name_cn": "动物园天启夜"
-        },
-        {
-          "bgm_id": 504666,
-          "bgm_name": "Hypergalactic",
-          "bgm_name_cn": "超星系"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 522287,
+      "bgm_name": "天官赐福 全新动画短片",
+      "bgm_name_cn": "",
       "mal": {
         "id": 60988,
         "title": "Tian Guan Cifu Short Film",
@@ -305,39 +261,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 526368,
-          "bgm_name": "なんでやねん",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 536271,
-          "bgm_name": "カイリューとゆうびんやさん",
-          "bgm_name_cn": "快龙与小邮递员"
-        },
-        {
-          "bgm_id": 504591,
-          "bgm_name": "サラリーマンが異世界に行ったら四天王になった話",
-          "bgm_name_cn": "上班族去了异世界后成了四天王"
-        },
-        {
-          "bgm_id": 497909,
-          "bgm_name": "外れスキル《木の実マスター》 ～スキルの実（食べたら死ぬ）を無限に食べられるようになった件について～",
-          "bgm_name_cn": "最弱技能《果实大师》 ～关于能无限食用技能果实（吃了就会死）这件事～"
-        },
-        {
-          "bgm_id": 531879,
-          "bgm_name": "オトナをナメてる援●●●に強力媚●を盛ったら●●●●●！！ 絶倫巨根セックスに悶絶アクメでイキ狂う ガン突きし放題の中出し専用●み袋に堕とす！ The Motion Anime",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 564694,
-          "bgm_name": "I乳の元アイドルがとっても優しい保健室の先生だったら…",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "human",
+      "bgm_id": 495633,
+      "bgm_name": "やたらやらしい深見くん",
+      "bgm_name_cn": "过分色气的深见君",
       "mal": {
         "id": 58888,
         "title": "Yatara Yarashii Fukami-kun",
@@ -483,7 +410,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 505776,
@@ -583,34 +510,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 510788,
-          "bgm_name": "映画 イナズマイレブン総集編 伝説のキックオフ",
-          "bgm_name_cn": "电影 闪电十一人总集篇 传说的开球"
-        },
-        {
-          "bgm_id": 515392,
-          "bgm_name": "映画 先輩はおとこのこ あめのち晴れ",
-          "bgm_name_cn": "电影 前辈是男孩子 雨过天晴"
-        },
-        {
-          "bgm_id": 515422,
-          "bgm_name": "映画ドラえもん のび太の絵世界物語",
-          "bgm_name_cn": "哆啦A梦：大雄的绘画奇遇记"
-        },
-        {
-          "bgm_id": 521150,
-          "bgm_name": "映画しまじろう『しまじろうと ゆうきのうた』",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 529199,
-          "bgm_name": "映画おしりたんてい スター・アンド・ムーン",
-          "bgm_name_cn": "电影屁屁侦探 星星与月亮"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 523821,
+      "bgm_name": "映画 ヒプノシスマイク -Division Rap Battle-",
+      "bgm_name_cn": "电影 催眠麦克风",
       "mal": {
         "id": 60273,
         "title": "Hypnosis Mic: Division Rap Battle Movie",
@@ -685,19 +588,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 507115,
-          "bgm_name": "怪獣8号 第1期総集編",
-          "bgm_name_cn": "怪兽8号 第一季总集篇"
-        },
-        {
-          "bgm_id": 505488,
-          "bgm_name": "劇場版 モノノ怪 火鼠",
-          "bgm_name_cn": "剧场版 物怪 火鼠"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 507115,
+      "bgm_name": "怪獣8号 第1期総集編",
+      "bgm_name_cn": "怪兽8号 第一季总集篇",
       "mal": {
         "id": 59489,
         "title": "Kaijuu 8-gou Movie",
@@ -1183,59 +1077,7 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 358667,
-          "bgm_name": "捕星司·源起",
-          "bgm_name_cn": "捕星司·源起"
-        },
-        {
-          "bgm_id": 37303,
-          "bgm_name": "伏 鉄砲娘の捕物帳",
-          "bgm_name_cn": "伏 铁炮娘的捕物帐"
-        },
-        {
-          "bgm_id": 89420,
-          "bgm_name": "佐武と市捕物控",
-          "bgm_name_cn": "佐武与市捕物控"
-        },
-        {
-          "bgm_id": 90795,
-          "bgm_name": "ワンピース時代劇 年末特別企画! 麦わらのルフィ親分捕物帖",
-          "bgm_name_cn": "航海王：路飞捕头传"
-        },
-        {
-          "bgm_id": 345869,
-          "bgm_name": "敖敖待捕",
-          "bgm_name_cn": "敖敖待捕"
-        },
-        {
-          "bgm_id": 412083,
-          "bgm_name": "大江戸捕物帳ねずみ小僧",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 471472,
-          "bgm_name": "トリコ バーバリアンアイビーを捕獲せよ!",
-          "bgm_name_cn": "美食的俘虏 捕获野蛮常春藤！"
-        },
-        {
-          "bgm_id": 472384,
-          "bgm_name": "佐武と市捕物控 パイロットフィルム",
-          "bgm_name_cn": "佐武与市捕物控 Pilot Film"
-        },
-        {
-          "bgm_id": 533832,
-          "bgm_name": "団子兵衛捕物帖 開けーごまの巻",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 62277,
-          "bgm_name": "Ran→Sem～白濁デルモ妻のミイラ捕り～",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "skip",
       "mal": {
         "id": 60848,
         "title": "Buzhuo Ni de She Nian Hao Yun",
@@ -1258,39 +1100,7 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 471793,
-          "bgm_name": "君のことが大大大大大好きな100人の彼女 第2期",
-          "bgm_name_cn": "超超超超超喜欢你的100个女朋友 第二季"
-        },
-        {
-          "bgm_id": 525599,
-          "bgm_name": "知らないこと知りたいの？ THE ANIMATION",
-          "bgm_name_cn": "探索欢爱新境界？"
-        },
-        {
-          "bgm_id": 501023,
-          "bgm_name": "クラスの大嫌いな女子と結婚することになった。",
-          "bgm_name_cn": "我和班上最讨厌的女生结婚了。"
-        },
-        {
-          "bgm_id": 504710,
-          "bgm_name": "この会社に好きな人がいます",
-          "bgm_name_cn": "这公司有我喜欢的人"
-        },
-        {
-          "bgm_id": 472661,
-          "bgm_name": "日本へようこそエルフさん。",
-          "bgm_name_cn": "欢迎来到日本，精灵小姐。"
-        },
-        {
-          "bgm_id": 536425,
-          "bgm_name": "【ぶいすぽっ！】オリジナル曲『すうぃーとサプライズ』【兎咲ミミ / 白波らむね / 紡木こかげ / 千燈ゆうひ】",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "skip",
       "mal": {
         "id": 60729,
         "title": "Koi no Yu♨️Talk",
@@ -1489,24 +1299,7 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 456163,
-          "bgm_name": "火凤燎原 贰",
-          "bgm_name_cn": "火凤燎原 第二季"
-        },
-        {
-          "bgm_id": 405303,
-          "bgm_name": "向火而生之探火篇",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 505488,
-          "bgm_name": "劇場版 モノノ怪 火鼠",
-          "bgm_name_cn": "剧场版 物怪 火鼠"
-        }
-      ],
+      "status": "skip",
       "mal": {
         "id": 34683,
         "title": "Hizukuri",
@@ -1607,59 +1400,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 24589,
-          "bgm_name": "マジック・ツリーハウス",
-          "bgm_name_cn": "神奇树屋"
-        },
-        {
-          "bgm_id": 513310,
-          "bgm_name": "マジック・サマービーチ",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 4663,
-          "bgm_name": "クイズマジックアカデミー ～オリジナルアニメーション～",
-          "bgm_name_cn": "问答魔法学院"
-        },
-        {
-          "bgm_id": 27088,
-          "bgm_name": "ブラックマジック M-66",
-          "bgm_name_cn": "黑色魔法 M-66"
-        },
-        {
-          "bgm_id": 193445,
-          "bgm_name": "ナイツ＆マジック",
-          "bgm_name_cn": "骑士&魔法"
-        },
-        {
-          "bgm_id": 311138,
-          "bgm_name": "コボちゃんスペシャル 約束のマジックディ",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 19426,
-          "bgm_name": "まじかるカナン",
-          "bgm_name_cn": "魔法少女加奈"
-        },
-        {
-          "bgm_id": 25608,
-          "bgm_name": "マジカノ",
-          "bgm_name_cn": "魔法彼女"
-        },
-        {
-          "bgm_id": 42869,
-          "bgm_name": "マジでオタクなイングリッシュ!りぼんちゃん 〜英語で戦う魔法少女〜",
-          "bgm_name_cn": "御宅英文！魔法少女小缎带"
-        },
-        {
-          "bgm_id": 47161,
-          "bgm_name": "まじかるすいーとプリズム・ナナ",
-          "bgm_name_cn": "魔幻组曲棱镜娜娜"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 503268,
+      "bgm_name": "マジック・メイカー ～異世界魔法の作り方～",
+      "bgm_name_cn": "魔法制造者 ～异世界魔法的制作方法～",
       "mal": {
         "id": 59265,
         "title": "Magic Maker: Isekai Mahou no Tsukurikata",
@@ -1845,7 +1589,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 508393,
@@ -1872,7 +1616,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 613378,
@@ -1976,19 +1720,7 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 439214,
-          "bgm_name": "엄마의 땅: 그리샤와 숲의 주인",
-          "bgm_name_cn": "红熊传奇"
-        },
-        {
-          "bgm_id": 548004,
-          "bgm_name": "안녕 자두야 명작동화: 효녀자두 & 엄지공주",
-          "bgm_name_cn": ""
-        }
-      ],
+      "status": "skip",
       "mal": {
         "id": 62178,
         "title": "Eomma Katuri (TV) 6th Season",
@@ -2011,7 +1743,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 259065,
@@ -2142,7 +1874,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 484952,
@@ -2204,7 +1936,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 473300,
@@ -2269,7 +2001,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 483865,
@@ -2452,19 +2184,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 526368,
-          "bgm_name": "なんでやねん",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 536271,
-          "bgm_name": "カイリューとゆうびんやさん",
-          "bgm_name_cn": "快龙与小邮递员"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 496945,
+      "bgm_name": "やくならマグカップも 劇場版",
+      "bgm_name_cn": "如果烧陶的话也做个马克杯吧 剧场版",
       "mal": {
         "id": 58954,
         "title": "Yaku nara Mug Cup mo Movie",
@@ -2526,7 +2249,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 553418,
@@ -2582,7 +2305,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 37291,
@@ -2836,7 +2559,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 6849,
