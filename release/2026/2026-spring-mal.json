@@ -1,6 +1,6 @@
 {
   "season": "2026-spring",
-  "update_time": "2026-02-04T15:01:14+08:00",
+  "update_time": "2026-02-05T11:17:21+08:00",
   "items": [
     {
       "status": "match",
@@ -30,13 +30,13 @@
     },
     {
       "status": "match",
-      "bgm_id": 581284,
-      "bgm_name": "キルアオ",
-      "bgm_name_cn": "杀手青春",
+      "bgm_id": 493804,
+      "bgm_name": "クジマ歌えば家ほろろ",
+      "bgm_name_cn": "库兹马唱歌的话家里哆啰啰",
       "mal": {
-        "id": 62391,
-        "title": "Kill Ao",
-        "title_ja": "キルアオ",
+        "id": 58832,
+        "title": "Kujima Utaeba Ie Hororo",
+        "title_ja": "クジマ歌えば家ほろろ",
         "media_type": "tv",
         "rating": "general"
       }
@@ -55,14 +55,23 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 571555,
-      "bgm_name": "スノウボールアース",
-      "bgm_name_cn": "冻结地球",
+      "status": "unconfirmed",
+      "candidates": [
+        {
+          "bgm_id": 623063,
+          "bgm_name": "それいけ！アンパンマン パンタンと約束の星",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 469104,
+          "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
+          "bgm_name_cn": "小书痴的下克上 〜为了成为图书管理员而不择手段〜 第四季"
+        }
+      ],
       "mal": {
-        "id": 62068,
-        "title": "Snowball Earth",
-        "title_ja": "スノウボールアース",
+        "id": 62964,
+        "title": "Mata Korosarete Shimatta no desu ne, Tantei-sama",
+        "title_ja": "また殺されてしまったのですね、探偵様",
         "media_type": "tv",
         "rating": "general"
       }
@@ -94,36 +103,27 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 623063,
-          "bgm_name": "それいけ！アンパンマン パンタンと約束の星",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 469104,
-          "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
-          "bgm_name_cn": "小书痴的下克上 〜为了成为图书管理员而不择手段〜 第四季"
-        }
-      ],
+      "status": "match",
+      "bgm_id": 571555,
+      "bgm_name": "スノウボールアース",
+      "bgm_name_cn": "冻结地球",
       "mal": {
-        "id": 62964,
-        "title": "Mata Korosarete Shimatta no desu ne, Tantei-sama",
-        "title_ja": "また殺されてしまったのですね、探偵様",
+        "id": 62068,
+        "title": "Snowball Earth",
+        "title_ja": "スノウボールアース",
         "media_type": "tv",
         "rating": "general"
       }
     },
     {
       "status": "match",
-      "bgm_id": 493804,
-      "bgm_name": "クジマ歌えば家ほろろ",
-      "bgm_name_cn": "库兹马唱歌的话家里哆啰啰",
+      "bgm_id": 581284,
+      "bgm_name": "キルアオ",
+      "bgm_name_cn": "杀手青春",
       "mal": {
-        "id": 58832,
-        "title": "Kujima Utaeba Ie Hororo",
-        "title_ja": "クジマ歌えば家ほろろ",
+        "id": 62391,
+        "title": "Kill Ao",
+        "title_ja": "キルアオ",
         "media_type": "tv",
         "rating": "general"
       }
@@ -259,19 +259,6 @@
     },
     {
       "status": "match",
-      "bgm_id": 529694,
-      "bgm_name": "百姓貴族 3rd Season",
-      "bgm_name_cn": "百姓贵族 第三季",
-      "mal": {
-        "id": 63153,
-        "title": "Hyakushou Kizoku 3rd Season Specials",
-        "title_ja": "百姓貴族 3rd Season",
-        "media_type": "special",
-        "rating": "general"
-      }
-    },
-    {
-      "status": "match",
       "bgm_id": 621553,
       "bgm_name": "ラブはギャルから始まる運命",
       "bgm_name_cn": "",
@@ -297,6 +284,29 @@
       }
     },
     {
+      "status": "model",
+      "bgm_id": 621602,
+      "bgm_name": "インゴクダンチ",
+      "bgm_name_cn": "淫狱团地",
+      "mal": {
+        "id": 63310,
+        "title": "Ingoku Danchi",
+        "title_ja": "淫獄団地",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "skip",
+      "mal": {
+        "id": 63153,
+        "title": "Hyakushou Kizoku 3rd Season Specials",
+        "title_ja": "百姓貴族 3rd Season",
+        "media_type": "special",
+        "rating": "general"
+      }
+    },
+    {
       "status": "unconfirmed",
       "candidates": [
         {
@@ -311,19 +321,6 @@
         "title_ja": "小３アシベ QQゴマちゃん",
         "media_type": "tv",
         "rating": "general"
-      }
-    },
-    {
-      "status": "match",
-      "bgm_id": 621554,
-      "bgm_name": "痴魅悶凌",
-      "bgm_name_cn": "",
-      "mal": {
-        "id": 63394,
-        "title": "Chimimonryou",
-        "title_ja": "痴魅悶凌",
-        "media_type": "ova",
-        "rating": "r18"
       }
     },
     {
@@ -353,10 +350,20 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 558296,
-      "bgm_name": "アンドロイドは経験人数に入りますか？？",
-      "bgm_name_cn": "和机器人啪啪啪能算在经验次数里吗？？",
+      "status": "match",
+      "bgm_id": 621554,
+      "bgm_name": "痴魅悶凌",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 63394,
+        "title": "Chimimonryou",
+        "title_ja": "痴魅悶凌",
+        "media_type": "ova",
+        "rating": "r18"
+      }
+    },
+    {
+      "status": "skip",
       "mal": {
         "id": 63330,
         "title": "Android wa Keiken Ninzuu ni Hairimasu ka?? Special",
@@ -461,19 +468,6 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 516543,
-      "bgm_name": "姫騎士は蛮族の嫁",
-      "bgm_name_cn": "姬骑士是蛮族的新娘",
-      "mal": {
-        "id": 63376,
-        "title": "Megami \"Isekai Tensei Nani ni Naritai desu ka\" Ore \"Yuusha no Rokkotsu de\"",
-        "title_ja": "女神「異世界転生何になりたいですか」俺「勇者の肋骨で」",
-        "media_type": "tv",
-        "rating": "general"
-      }
-    },
-    {
       "status": "unconfirmed",
       "candidates": [
         {
@@ -486,6 +480,19 @@
         "id": 62981,
         "title": "Kami no Shizuku",
         "title_ja": "神の雫",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 516543,
+      "bgm_name": "姫騎士は蛮族の嫁",
+      "bgm_name_cn": "姬骑士是蛮族的新娘",
+      "mal": {
+        "id": 63376,
+        "title": "Megami \"Isekai Tensei Nani ni Naritai desu ka\" Ore \"Yuusha no Rokkotsu de\"",
+        "title_ja": "女神「異世界転生何になりたいですか」俺「勇者の肋骨で」",
         "media_type": "tv",
         "rating": "general"
       }
@@ -517,19 +524,6 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 568572,
-      "bgm_name": "黄泉のツガイ",
-      "bgm_name_cn": "黄泉的使者",
-      "mal": {
-        "id": 62001,
-        "title": "Yomi no Tsugai",
-        "title_ja": "黄泉のツガイ",
-        "media_type": "tv",
-        "rating": "general"
-      }
-    },
-    {
       "status": "model",
       "bgm_id": 501729,
       "bgm_name": "劇場版 魔法科高校の劣等生 四葉継承編",
@@ -539,6 +533,19 @@
         "title": "Mahouka Koukou no Rettousei Movie: Yotsuba Keishou-hen",
         "title_ja": "魔法科高校の劣等生 四葉継承編",
         "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 568572,
+      "bgm_name": "黄泉のツガイ",
+      "bgm_name_cn": "黄泉的使者",
+      "mal": {
+        "id": 62001,
+        "title": "Yomi no Tsugai",
+        "title_ja": "黄泉のツガイ",
+        "media_type": "tv",
         "rating": "general"
       }
     },
@@ -560,7 +567,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 150955,

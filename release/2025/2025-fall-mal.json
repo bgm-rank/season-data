@@ -42,59 +42,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 470660,
-          "bgm_name": "劇場版 チェンソーマン レゼ篇",
-          "bgm_name_cn": "剧场版 链锯人 蕾塞篇"
-        },
-        {
-          "bgm_id": 512792,
-          "bgm_name": "劇場版総集編 ガールズバンドクライ 青春狂走曲",
-          "bgm_name_cn": "剧场版总集篇 GIRLS BAND CRY 青春狂走曲"
-        },
-        {
-          "bgm_id": 512793,
-          "bgm_name": "劇場版総集編 ガールズバンドクライ なぁ、未来。",
-          "bgm_name_cn": "剧场版总集篇 GIRLS BAND CRY 呐、未来。"
-        },
-        {
-          "bgm_id": 465185,
-          "bgm_name": "The SpongeBob Movie: Search for SquarePants",
-          "bgm_name_cn": "海绵宝宝：深海大冒险"
-        },
-        {
-          "bgm_id": 582014,
-          "bgm_name": "劇場版 呪術廻戦『渋谷事変 特別編集版』×『死滅回游 先行上映』",
-          "bgm_name_cn": "剧场版 咒术回战《涩谷事变 特别剪辑版》×《死灭回游 先行上映》"
-        },
-        {
-          "bgm_id": 553872,
-          "bgm_name": "映画キミとアイドルプリキュア♪ お待たせ！キミに届けるキラッキライブ！",
-          "bgm_name_cn": "剧场版 Idol光之美少女你与我♪ 久等了！为你献上闪耀舞台！"
-        },
-        {
-          "bgm_id": 544188,
-          "bgm_name": "极限城市",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 605445,
-          "bgm_name": "1分钟动画剧场第三季",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 534907,
-          "bgm_name": "アイドリッシュセブン First BEAT! 劇場総集編 前編",
-          "bgm_name_cn": "IDOLiSH7-偶像星愿- 剧场总集篇 前篇"
-        },
-        {
-          "bgm_id": 555683,
-          "bgm_name": "アイドリッシュセブン First BEAT! 劇場総集編 後編",
-          "bgm_name_cn": "IDOLiSH7-偶像星愿- 剧场总集篇 后篇"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 353181,
+      "bgm_name": "ゾンビランドサガ ゆめぎんがパラダイス",
+      "bgm_name_cn": "佐贺偶像是传奇 梦想银河乐园",
       "mal": {
         "id": 50159,
         "title": "Zombieland Saga Movie: Yumeginga Paradise",
@@ -104,14 +55,7 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 492722,
-          "bgm_name": "かくりよの宿飯 弐",
-          "bgm_name_cn": "妖怪旅馆营业中 贰"
-        }
-      ],
+      "status": "skip",
       "mal": {
         "id": 61903,
         "title": "Kaguya-sama wa Kokurasetai: Otona e no Kaidan",
@@ -329,7 +273,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 47011,
@@ -495,14 +439,10 @@
       }
     },
     {
-      "status": "unconfirmed",
-      "candidates": [
-        {
-          "bgm_id": 590856,
-          "bgm_name": "ギヴン OAD",
-          "bgm_name_cn": "GIVEN OAD"
-        }
-      ],
+      "status": "human",
+      "bgm_id": 590856,
+      "bgm_name": "ギヴン OAD",
+      "bgm_name_cn": "GIVEN OAD",
       "mal": {
         "id": 62634,
         "title": "Given: 10th Mix",
@@ -577,7 +517,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 576283,
@@ -747,7 +687,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 47011,
@@ -939,10 +879,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 506120,
-      "bgm_name": "アンデッドアンラック Winter編",
-      "bgm_name_cn": "不死不幸 冬季篇",
+      "status": "skip",
       "mal": {
         "id": 59435,
         "title": "Undead Unluck: Winter-hen",
@@ -1290,10 +1227,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 611042,
-      "bgm_name": "まだ見ぬ明日",
-      "bgm_name_cn": "",
+      "status": "skip",
       "mal": {
         "id": 63046,
         "title": "Nukitashi the Animation Specials",
@@ -1513,7 +1447,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 513348,

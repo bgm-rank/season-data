@@ -33,7 +33,16 @@ release/
 }
 ```
 
-`status`: `match` | `model` | `unconfirmed` | `error`
+`status`: `match` | `model` | `human` | `unconfirmed` | `error` | `skip`
+
+| status | 含义 |
+| ------ | ------ |
+| match | 完全匹配 |
+| model | 大模型校对 |
+| human | 人工校对 |
+| unconfirmed | 未校对 |
+| error | API请求错误 |
+| skip | 跳过（bangumi没有对应条目/tv_special/special/pv/music） |
 
 ## 压缩格式 (`all-seasons.json`)
 
@@ -48,7 +57,7 @@ release/
 | rating | r |
 | general | gnr |
 
-`id` 为 `bgm_id`。跳过 `status` 为 `unconfirmed` 或 `error` 的条目。
+`id` 为 `bgm_id`。跳过 `status` 为 `unconfirmed` 或 `error` 或 `skip` 的条目。
 
 ## 生成
 

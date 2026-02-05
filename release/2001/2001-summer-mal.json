@@ -46,10 +46,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 18253,
-      "bgm_name": "世界名作劇場・完結版 家なき子レミ",
-      "bgm_name_cn": "世界名著剧场・完结版 无家可归的孩子蕾米",
+      "status": "skip",
       "mal": {
         "id": 25087,
         "title": "Ie Naki Ko Remy Specials (2001)",
@@ -128,10 +125,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 84989,
-      "bgm_name": "ルパン三世 アルカトラズコネクション",
-      "bgm_name_cn": "鲁邦三世 通往恶魔岛",
+      "status": "skip",
       "mal": {
         "id": 1413,
         "title": "Lupin III: Alcatraz Connection",
@@ -141,10 +135,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 205299,
-      "bgm_name": "Di Gi Charat なつやすみスペシャル",
-      "bgm_name_cn": "Di Gi Charat 暑假特别篇",
+      "status": "skip",
       "mal": {
         "id": 1756,
         "title": "Di Gi Charat Natsuyasumi Special",
@@ -154,10 +145,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 445941,
-      "bgm_name": "星界の戦旗 特別編",
-      "bgm_name_cn": "星界的战旗 特别篇",
+      "status": "skip",
       "mal": {
         "id": 399,
         "title": "Seikai no Senki Special",
@@ -180,10 +168,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 20431,
-      "bgm_name": "学校の怪談",
-      "bgm_name_cn": "学校怪谈",
+      "status": "skip",
       "mal": {
         "id": 30825,
         "title": "Gakkou no Kaidan: Kubinashi Rider!! Shi no Noroi",
@@ -346,10 +331,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 493,
-      "bgm_name": "HELLSING OVA",
-      "bgm_name_cn": "皇家国教骑士团 OVA",
+      "status": "skip",
       "mal": {
         "id": 7728,
         "title": "Hellsing: Psalm of the Darkness",
@@ -625,7 +607,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 18253,
@@ -1125,7 +1107,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 210226,
@@ -1282,7 +1264,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 20667,
         "title": "Zeonic Front: Kidou Senshi Gundam 0079 - Zeon no Hifun",
@@ -1380,7 +1362,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "mal": {
         "id": 53509,
         "title": "Yuki Terai in Virtual Hawaii Specials",
@@ -1403,10 +1385,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 8298,
-      "bgm_name": "ジーンシャフト",
-      "bgm_name_cn": "基因攻防战",
+      "status": "skip",
       "mal": {
         "id": 56864,
         "title": "Geneshaft Pilot Film",
@@ -1455,10 +1434,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 10403,
-      "bgm_name": "学園戦記ムリョウ",
-      "bgm_name_cn": "学园战记无量",
+      "status": "skip",
       "mal": {
         "id": 34892,
         "title": "Gakuen Senki Muryou Recap",
@@ -1481,7 +1457,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 18253,

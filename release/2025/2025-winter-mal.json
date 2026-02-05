@@ -181,10 +181,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 443168,
-      "bgm_name": "cocoon ～ある夏の少女たちより～",
-      "bgm_name_cn": "cocoon ～来自夏日的少女～",
+      "status": "skip",
       "mal": {
         "id": 55779,
         "title": "Cocoon: Aru Natsu no Shoujo-tachi yori",
@@ -207,10 +204,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 532061,
-      "bgm_name": "猫になりたい田万川くん",
-      "bgm_name_cn": "想变成猫的田万川君",
+      "status": "skip",
       "mal": {
         "id": 60662,
         "title": "Neko ni Naritai Tamagawa-kun",
@@ -353,7 +347,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 623021,
@@ -401,10 +395,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 533327,
-      "bgm_name": "アルドノア・ゼロ（Re+）",
-      "bgm_name_cn": "ALDNOAH.ZERO（Re+）",
+      "status": "skip",
       "mal": {
         "id": 59843,
         "title": "Aldnoah.Zero: Ame no Danshou - The Penultimate Truth",
@@ -950,7 +941,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 529199,
@@ -1000,10 +991,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 506873,
-      "bgm_name": "Fate/Grand Order 藤丸立香はわからない Season2",
-      "bgm_name_cn": "Fate/Grand Order 藤丸立香想不明白 第2季",
+      "status": "skip",
       "mal": {
         "id": 61167,
         "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai Season 2 Specials",
@@ -1377,10 +1365,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 511126,
-      "bgm_name": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。",
-      "bgm_name_cn": "脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。",
+      "status": "skip",
       "mal": {
         "id": 61224,
         "title": "A-Rank Party wo Ridatsu shita Ore wa, Moto Oshiego-tachi to Meikyuu Shinbu wo Mezasu.: Party Tokushuu! Clover",
@@ -1429,10 +1414,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 491915,
-      "bgm_name": "もめんたりー・リリィ",
-      "bgm_name_cn": "刹那之花",
+      "status": "skip",
       "mal": {
         "id": 61334,
         "title": "Momentary Lily: Tsuzuiteiku Kappou, Kappou!",
@@ -1700,10 +1682,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 528439,
-      "bgm_name": "ツインズひなひま",
-      "bgm_name_cn": "双胞胎阳奈妃莉",
+      "status": "skip",
       "mal": {
         "id": 60521,
         "title": "Twins Hinahima",
@@ -1817,10 +1796,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 507115,
-      "bgm_name": "怪獣8号 第1期総集編",
-      "bgm_name_cn": "怪兽8号 第一季总集篇",
+      "status": "skip",
       "mal": {
         "id": 59490,
         "title": "Kaijuu 8-gou: Hoshina no Kyuujitsu",
@@ -2065,7 +2041,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 24241,
@@ -2707,7 +2683,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 528310,

@@ -92,10 +92,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 18049,
-      "bgm_name": "タッチ CROSS ROAD〜風のゆくえ〜",
-      "bgm_name_cn": "棒球英豪 风之速",
+      "status": "skip",
       "mal": {
         "id": 1539,
         "title": "Touch: Cross Road - Kaze no Yukue",
@@ -105,7 +102,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 546191,
@@ -173,7 +170,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 211293,
@@ -235,7 +232,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 74285,
@@ -252,10 +249,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 316623,
-      "bgm_name": "世界名作劇場・完結版 トム・ソーヤーの冒険",
-      "bgm_name_cn": "世界名作剧场·完结版 汤姆索亚历险记",
+      "status": "skip",
       "mal": {
         "id": 25069,
         "title": "Tom Sawyer no Bouken Specials",
@@ -265,10 +259,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 316540,
-      "bgm_name": "世界名作劇場・完結版 母をたずねて三千里",
-      "bgm_name_cn": "世界名作剧场·完结版 寻母三千里",
+      "status": "skip",
       "mal": {
         "id": 23585,
         "title": "Haha wo Tazunete Sanzenri Specials",
@@ -278,10 +269,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 316372,
-      "bgm_name": "世界名作劇場・完結版 ペリーヌ物語",
-      "bgm_name_cn": "世界名作剧场·完结版 佩琳物语",
+      "status": "skip",
       "mal": {
         "id": 16460,
         "title": "Perrine Monogatari Specials",
@@ -291,10 +279,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 316545,
-      "bgm_name": "世界名作劇場・完結版 ピーターパンの冒険",
-      "bgm_name_cn": "世界名作剧场·完结版 彼得潘的冒险",
+      "status": "skip",
       "mal": {
         "id": 23739,
         "title": "Peter Pan no Bouken Specials",
@@ -378,7 +363,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 90799,
@@ -577,10 +562,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 38965,
-      "bgm_name": "HAND MAID メイ",
-      "bgm_name_cn": "袖珍女侍小梅",
+      "status": "skip",
       "mal": {
         "id": 2217,
         "title": "Hand Maid May: Akiramemasen",
@@ -813,10 +795,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 316543,
-      "bgm_name": "世界名作劇場・完結版 南の虹のルーシー",
-      "bgm_name_cn": "世界名作剧场·完结版 可爱的露西",
+      "status": "skip",
       "mal": {
         "id": 25071,
         "title": "Minami no Niji no Lucy Specials",

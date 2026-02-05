@@ -85,10 +85,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 34515,
-      "bgm_name": "星界の断章 誕生",
-      "bgm_name_cn": "星界的断章 诞生",
+      "status": "skip",
       "mal": {
         "id": 1124,
         "title": "Seikai no Danshou: Tanjou",
@@ -98,10 +95,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 84988,
-      "bgm_name": "ルパン三世 1$マネーウォーズ",
-      "bgm_name_cn": "鲁邦三世 一美元的战争",
+      "status": "skip",
       "mal": {
         "id": 1422,
         "title": "Lupin III: $1 Money Wars",
@@ -111,10 +105,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 205280,
-      "bgm_name": "Di Gi Charat サマースペシャル2000",
-      "bgm_name_cn": "Di Gi Charat 夏季特别篇2000",
+      "status": "skip",
       "mal": {
         "id": 1754,
         "title": "Di Gi Charat Summer Special 2000",
@@ -124,7 +115,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 30163,

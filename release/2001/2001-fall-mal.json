@@ -81,10 +81,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 2904,
-      "bgm_name": "i-wish you were here-",
-      "bgm_name_cn": "愿你在此",
+      "status": "skip",
       "mal": {
         "id": 10036,
         "title": "Boku no Chikyuu wo Mamotte: Kiniro no Toki Nagarete",
@@ -605,10 +602,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 322771,
-      "bgm_name": "ユンカース・カム・ヒア パイロットフィルム",
-      "bgm_name_cn": "祈愿物语 样片",
+      "status": "skip",
       "mal": {
         "id": 42228,
         "title": "Junkers Come Here Pilot Film",
@@ -911,10 +905,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 44679,
-      "bgm_name": "神雕俠侶I：古墓奇緣",
-      "bgm_name_cn": "神雕侠侣I：古墓奇缘",
+      "status": "skip",
       "mal": {
         "id": 1156,
         "title": "I: Wish You Were Here",
@@ -937,10 +928,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 2141,
-      "bgm_name": "まほろまてぃっく",
-      "bgm_name_cn": "魔力女管家",
+      "status": "skip",
       "mal": {
         "id": 632,
         "title": "Mahoromatic End Year Special",
@@ -1116,10 +1104,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 49977,
-      "bgm_name": "短編 あずまんが大王 THE ANIMATION",
-      "bgm_name_cn": "短篇 阿滋漫画大王 THE ANIMATION",
+      "status": "skip",
       "mal": {
         "id": 659,
         "title": "Azumanga Daiou: Gekijou Tanpen",
@@ -1181,10 +1166,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 27886,
-      "bgm_name": "ポケットモンスタークリスタル ライコウ雷の伝説",
-      "bgm_name_cn": "精灵宝可梦 水晶：雷公 雷的传说",
+      "status": "skip",
       "mal": {
         "id": 1525,
         "title": "Pokemon Crystal: Raikou Ikazuchi no Densetsu",
@@ -1233,10 +1215,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 11727,
-      "bgm_name": "ココロ図書館",
-      "bgm_name_cn": "可可露图书馆",
+      "status": "skip",
       "mal": {
         "id": 6975,
         "title": "Koro no Dai Sanpo",
@@ -1758,7 +1737,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 67983,

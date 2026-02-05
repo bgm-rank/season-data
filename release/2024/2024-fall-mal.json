@@ -86,10 +86,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 518519,
-      "bgm_name": "ONE PIECE FAN LETTER",
-      "bgm_name_cn": "航海王：粉丝来信",
+      "status": "skip",
       "mal": {
         "id": 60022,
         "title": "One Piece Fan Letter",
@@ -560,10 +557,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 448879,
-      "bgm_name": "デリコズ・ナーサリー",
-      "bgm_name_cn": "德里科的托儿所",
+      "status": "skip",
       "mal": {
         "id": 60084,
         "title": "Delico's Nursery: Ikuji Nisshi",
@@ -896,10 +890,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 522359,
-      "bgm_name": "機動戦士ガンダム ALC ENCOUNTER",
-      "bgm_name_cn": "机动战士高达 ALC ENCOUNTER",
+      "status": "skip",
       "mal": {
         "id": 60478,
         "title": "Kidou Senshi Gundam: ALC Encounter",
@@ -909,10 +900,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 404480,
-      "bgm_name": "ラブライブ！スーパースター!! 3期",
-      "bgm_name_cn": "Love Live! Superstar!! 第三季",
+      "status": "skip",
       "mal": {
         "id": 60644,
         "title": "Love Live! Superstar!! 3rd Season (TV Special)",
@@ -1000,10 +988,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 492352,
-      "bgm_name": "五等分の花嫁＊",
-      "bgm_name_cn": "五等分的新娘＊",
+      "status": "skip",
       "mal": {
         "id": 58755,
         "title": "5-toubun no Hanayome*",
@@ -1117,10 +1102,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 516311,
-      "bgm_name": "Re:ゼロから始める休憩時間 3rd season",
-      "bgm_name_cn": "Re：从零开始的休息时间3",
+      "status": "skip",
       "mal": {
         "id": 60012,
         "title": "Re:Zero kara Hajimeru Break Time 3rd Season",
@@ -1825,10 +1807,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 132412,
-      "bgm_name": "Leisure",
-      "bgm_name_cn": "闲暇",
+      "status": "skip",
       "mal": {
         "id": 60063,
         "title": "Fairy Tail: 100-nen Quest - Kanwa - Lucy's Diary",
@@ -2919,10 +2898,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 413786,
-      "bgm_name": "逃走中 グレートミッション",
-      "bgm_name_cn": "逃走中 GREAT MISSION",
+      "status": "skip",
       "mal": {
         "id": 60284,
         "title": "Tousouchuu: Great Mission - Maika to Rabbi no Souryoku Shuzai - Tsuki Sekaiichi no Tousousha wa Dare da!",
@@ -3061,7 +3037,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 558762,
@@ -3225,7 +3201,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 482920,
@@ -3410,7 +3386,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 205296,

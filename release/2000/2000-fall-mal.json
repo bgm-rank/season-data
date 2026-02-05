@@ -94,10 +94,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 205296,
-      "bgm_name": "Di Gi Charat クリスマススペシャル",
-      "bgm_name_cn": "Di Gi Charat 圣诞特别篇",
+      "status": "skip",
       "mal": {
         "id": 1757,
         "title": "Di Gi Charat Christmas Special",
@@ -120,10 +117,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 492583,
-      "bgm_name": "ダイナミックスーパーロボット総進撃!!",
-      "bgm_name_cn": "Dynamic超级机器人总进击",
+      "status": "skip",
       "mal": {
         "id": 12885,
         "title": "Dynamic Super Robots Soushingekki",
@@ -146,10 +140,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 37023,
-      "bgm_name": "手塚治虫が消えた?! 20世紀最後の怪事件",
-      "bgm_name_cn": "手冢治虫消失了?! 二十世纪最后之怪事件",
+      "status": "skip",
       "mal": {
         "id": 4941,
         "title": "Tezuka Osamu ga Kieta?! 20-seiki Saigo no Kaijiken",
@@ -238,10 +229,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 2121,
-      "bgm_name": "ラブひな",
-      "bgm_name_cn": "纯情房东俏房客",
+      "status": "skip",
       "mal": {
         "id": 191,
         "title": "Love Hina Christmas Special: Silent Eve",
@@ -251,10 +239,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 316214,
-      "bgm_name": "世界名作劇場・完結版 フランダースの犬",
-      "bgm_name_cn": "世界名作剧场·完结版 弗兰德斯的狗",
+      "status": "skip",
       "mal": {
         "id": 24679,
         "title": "Flanders no Inu Specials",
@@ -329,10 +314,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 27883,
-      "bgm_name": "ポケットモンスター ミュウツー! 我ハココニ在リ",
-      "bgm_name_cn": "精灵宝可梦：超梦！我就在这里",
+      "status": "skip",
       "mal": {
         "id": 1709,
         "title": "Pokemon: Mewtwo! Ware wa Koko ni Ari",
@@ -342,10 +324,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 90799,
-      "bgm_name": "ONE PIECE ルフィ落下! 秘境・海のヘソの大冒険",
-      "bgm_name_cn": "航海王：海肚脐大冒险",
+      "status": "skip",
       "mal": {
         "id": 1094,
         "title": "One Piece: Umi no Heso no Daibouken-hen",
@@ -470,7 +449,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 37488,
@@ -487,10 +466,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 316213,
-      "bgm_name": "世界名作劇場・完結版 あらいぐまラスカル",
-      "bgm_name_cn": "世界名作剧场·完结版 小浣熊",
+      "status": "skip",
       "mal": {
         "id": 25089,
         "title": "Araiguma Rascal Specials",
@@ -679,10 +655,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 113066,
-      "bgm_name": "Biohazard 4D-Executer",
-      "bgm_name_cn": "生化危机4D：执行者",
+      "status": "skip",
       "mal": {
         "id": 5624,
         "title": "Biohazard 4D-Executer",
@@ -692,10 +665,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 5997,
-      "bgm_name": "トップをねらえ! 劇場版",
-      "bgm_name_cn": "飞跃巅峰！剧场版",
+      "status": "skip",
       "mal": {
         "id": 7248,
         "title": "Top wo Nerae! Gunbuster Specials",
@@ -728,10 +698,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 20431,
-      "bgm_name": "学校の怪談",
-      "bgm_name_cn": "学校怪谈",
+      "status": "skip",
       "mal": {
         "id": 22055,
         "title": "Gakkou no Kaidan Recaps",
@@ -972,7 +939,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 418854,
@@ -1034,7 +1001,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 309831,

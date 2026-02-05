@@ -462,7 +462,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 281305,
@@ -588,10 +588,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 310194,
-      "bgm_name": "Re:ゼロから始める休憩時間 2nd Season",
-      "bgm_name_cn": "Re：从零开始的休息时间2",
+      "status": "skip",
       "mal": {
         "id": 42364,
         "title": "Re:Zero kara Hajimeru Break Time 2nd Season",
@@ -601,10 +598,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 292238,
-      "bgm_name": "ソードアート・オンライン アリシゼーション War of Underworld -THE LAST SEASON-",
-      "bgm_name_cn": "刀剑神域 爱丽丝篇 异界战争 -终章-",
+      "status": "skip",
       "mal": {
         "id": 41341,
         "title": "Sword Art Online: Alicization - War of Underworld Recap",
@@ -627,7 +621,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 339266,
@@ -922,7 +916,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 488184,
@@ -1036,10 +1030,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 295615,
-      "bgm_name": "りばあす",
-      "bgm_name_cn": "Rebirth",
+      "status": "skip",
       "mal": {
         "id": 42797,
         "title": "Rebirth: Virtual to no Souguu",
@@ -1132,7 +1123,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 315805,
@@ -1375,10 +1366,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 220445,
-      "bgm_name": "22/7",
-      "bgm_name_cn": "",
+      "status": "skip",
       "mal": {
         "id": 40924,
         "title": "22/7: 8+3=?",
@@ -1440,10 +1428,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 291821,
-      "bgm_name": "群れなせ！シートン学園",
-      "bgm_name_cn": "群聚一堂！西顿学园",
+      "status": "skip",
       "mal": {
         "id": 41008,
         "title": "Murenase! Seton Gakuen Special",
@@ -1466,10 +1451,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 293648,
-      "bgm_name": "ド級編隊エグゼロス",
-      "bgm_name_cn": "弩级战队HXEROS",
+      "status": "skip",
       "mal": {
         "id": 42685,
         "title": "Dokyuu Hentai HxEros: HxEros Report",
@@ -1739,10 +1721,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 285441,
-      "bgm_name": "ARP Backstage Pass",
-      "bgm_name_cn": "",
+      "status": "skip",
       "mal": {
         "id": 41568,
         "title": "ARP Backstage Pass: Paradise",
@@ -2992,10 +2971,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 241185,
-      "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
-      "bgm_name_cn": "宝石幻想 光芒重现",
+      "status": "skip",
       "mal": {
         "id": 52066,
         "title": "Recola",

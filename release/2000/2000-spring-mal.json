@@ -91,10 +91,7 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 445940,
-      "bgm_name": "星界の紋章 特別編",
-      "bgm_name_cn": "星界的纹章 特别篇",
+      "status": "skip",
       "mal": {
         "id": 1381,
         "title": "Seikai no Monshou Special",
@@ -391,7 +388,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 161686,
@@ -551,7 +548,7 @@
       }
     },
     {
-      "status": "unconfirmed",
+      "status": "skip",
       "candidates": [
         {
           "bgm_id": 88731,
@@ -626,10 +623,7 @@
       }
     },
     {
-      "status": "match",
-      "bgm_id": 104254,
-      "bgm_name": "ギブリーズ",
-      "bgm_name_cn": "吉卜力工作室特别短片",
+      "status": "skip",
       "mal": {
         "id": 2617,
         "title": "Ghiblies",

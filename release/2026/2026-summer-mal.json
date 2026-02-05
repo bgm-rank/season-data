@@ -1,6 +1,6 @@
 {
   "season": "2026-summer",
-  "update_time": "2026-02-04T15:02:38+08:00",
+  "update_time": "2026-02-05T11:17:46+08:00",
   "items": [
     {
       "status": "match",
@@ -11,32 +11,6 @@
         "id": 63316,
         "title": "Dogulwang",
         "title_ja": "도굴왕",
-        "media_type": "tv",
-        "rating": "general"
-      }
-    },
-    {
-      "status": "match",
-      "bgm_id": 622206,
-      "bgm_name": "ヤニねこ",
-      "bgm_name_cn": "尼古喵喵",
-      "mal": {
-        "id": 63403,
-        "title": "Yani Neko",
-        "title_ja": "ヤニねこ",
-        "media_type": "tv",
-        "rating": "general"
-      }
-    },
-    {
-      "status": "match",
-      "bgm_id": 622633,
-      "bgm_name": "ワールド イズ ダンシング",
-      "bgm_name_cn": "",
-      "mal": {
-        "id": 63347,
-        "title": "World Is Dancing",
-        "title_ja": "ワールド イズ ダンシング",
         "media_type": "tv",
         "rating": "general"
       }
@@ -56,26 +30,13 @@
     },
     {
       "status": "match",
-      "bgm_id": 530729,
-      "bgm_name": "魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance",
-      "bgm_name_cn": "魔法少女奈叶 EXCEEDS Gun Blaze Vengeance",
+      "bgm_id": 622206,
+      "bgm_name": "ヤニねこ",
+      "bgm_name_cn": "尼古喵喵",
       "mal": {
-        "id": 60637,
-        "title": "Mahou Shoujo Lyrical Nanoha EXCEEDS: Gun Blaze Vengeance",
-        "title_ja": "魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance",
-        "media_type": "tv",
-        "rating": "general"
-      }
-    },
-    {
-      "status": "match",
-      "bgm_id": 538760,
-      "bgm_name": "猫と竜",
-      "bgm_name_cn": "猫与龙",
-      "mal": {
-        "id": 61048,
-        "title": "Neko to Ryuu",
-        "title_ja": "猫と竜",
+        "id": 63403,
+        "title": "Yani Neko",
+        "title_ja": "ヤニねこ",
         "media_type": "tv",
         "rating": "general"
       }
@@ -95,13 +56,39 @@
     },
     {
       "status": "match",
-      "bgm_id": 545917,
-      "bgm_name": "これ描いて死ね",
-      "bgm_name_cn": "描绘直至生命尽头",
+      "bgm_id": 622633,
+      "bgm_name": "ワールド イズ ダンシング",
+      "bgm_name_cn": "",
       "mal": {
-        "id": 61280,
-        "title": "Kore Kaite Shine",
-        "title_ja": "これ描いて死ね",
+        "id": 63347,
+        "title": "World Is Dancing",
+        "title_ja": "ワールド イズ ダンシング",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 530729,
+      "bgm_name": "魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance",
+      "bgm_name_cn": "魔法少女奈叶 EXCEEDS Gun Blaze Vengeance",
+      "mal": {
+        "id": 60637,
+        "title": "Mahou Shoujo Lyrical Nanoha EXCEEDS: Gun Blaze Vengeance",
+        "title_ja": "魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "model",
+      "bgm_id": 583729,
+      "bgm_name": "BanG Dream! ゆめ∞みた",
+      "bgm_name_cn": "BanG Dream! YUME∞MITA",
+      "mal": {
+        "id": 62430,
+        "title": "BanG Dream! Yume∞Mita",
+        "title_ja": "バンドリ！ ゆめ∞みた",
         "media_type": "tv",
         "rating": "general"
       }
@@ -116,6 +103,32 @@
         "title": "Kimi to Hanabi to Yakusoku to",
         "title_ja": "君と花火と約束と",
         "media_type": "movie",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 625215,
+      "bgm_name": "サンダー3",
+      "bgm_name_cn": "雷霆三人行",
+      "mal": {
+        "id": 63418,
+        "title": "Thunder 3",
+        "title_ja": "サンダー3",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
+      "status": "match",
+      "bgm_id": 545917,
+      "bgm_name": "これ描いて死ね",
+      "bgm_name_cn": "描绘直至生命尽头",
+      "mal": {
+        "id": 61280,
+        "title": "Kore Kaite Shine",
+        "title_ja": "これ描いて死ね",
+        "media_type": "tv",
         "rating": "general"
       }
     },
@@ -146,27 +159,14 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 583729,
-      "bgm_name": "BanG Dream! ゆめ∞みた",
-      "bgm_name_cn": "BanG Dream! YUME∞MITA",
-      "mal": {
-        "id": 62430,
-        "title": "BanG Dream! Yume∞Mita",
-        "title_ja": "バンドリ！ ゆめ∞みた",
-        "media_type": "tv",
-        "rating": "general"
-      }
-    },
-    {
       "status": "match",
-      "bgm_id": 529723,
-      "bgm_name": "株式会社マジルミエ 第2期",
-      "bgm_name_cn": "魔法光源股份有限公司 第二季",
+      "bgm_id": 538760,
+      "bgm_name": "猫と竜",
+      "bgm_name_cn": "猫与龙",
       "mal": {
-        "id": 60552,
-        "title": "Kabushikigaisha Magi-Lumière 2nd Season",
-        "title_ja": "株式会社マジルミエ 第2期",
+        "id": 61048,
+        "title": "Neko to Ryuu",
+        "title_ja": "猫と竜",
         "media_type": "tv",
         "rating": "general"
       }
@@ -289,6 +289,19 @@
       }
     },
     {
+      "status": "model",
+      "bgm_id": 501963,
+      "bgm_name": "無職転生Ⅲ ～異世界行ったら本気だす～",
+      "bgm_name_cn": "无职转生 第三季 ～到了异世界就拿出真本事～",
+      "mal": {
+        "id": 59193,
+        "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "title_ja": "無職転生 III ～異世界行ったら本気だす～",
+        "media_type": "tv",
+        "rating": "general"
+      }
+    },
+    {
       "status": "match",
       "bgm_id": 571784,
       "bgm_name": "スーパーの裏でヤニ吸うふたり",
@@ -328,14 +341,14 @@
       }
     },
     {
-      "status": "model",
-      "bgm_id": 501963,
-      "bgm_name": "無職転生Ⅲ ～異世界行ったら本気だす～",
-      "bgm_name_cn": "无职转生 第三季 ～到了异世界就拿出真本事～",
+      "status": "match",
+      "bgm_id": 529723,
+      "bgm_name": "株式会社マジルミエ 第2期",
+      "bgm_name_cn": "魔法光源股份有限公司 第二季",
       "mal": {
-        "id": 59193,
-        "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "title_ja": "無職転生 III ～異世界行ったら本気だす～",
+        "id": 60552,
+        "title": "Kabushikigaisha Magi-Lumière 2nd Season",
+        "title_ja": "株式会社マジルミエ 第2期",
         "media_type": "tv",
         "rating": "general"
       }
