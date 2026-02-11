@@ -122,7 +122,7 @@ def _save(year: int, season: str, items: list[dict[str, Any]]) -> Path:
     output = {
         "season": f"{year}-{season}",
         "update_time": datetime.now(tz).isoformat(timespec="seconds"),
-        "items": items,
+        "items": sorted(items, key=lambda x: x["id"]),
     }
 
     RELEASE_DIR.mkdir(parents=True, exist_ok=True)
@@ -146,6 +146,25 @@ def fetch_and_save(year: int, season: str, client_id: str) -> Path:
     out_path = _save(year, season, items)
     logger.info("已保存到 {}", out_path)
     return out_path
+
+
+def sort_all() -> int:
+    """对 release/mal/ 下所有 JSON 文件的 items 按 id 排序。"""
+    files = sorted(RELEASE_DIR.glob("*.json"))
+    count = 0
+    for f in files:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        items = data.get("items", [])
+        sorted_items = sorted(items, key=lambda x: x["id"])
+        if items != sorted_items:
+            data["items"] = sorted_items
+            f.write_text(
+                json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            count += 1
+            logger.info("已排序: {}", f.name)
+    logger.info("完成: 共处理 {} 个文件, 其中 {} 个需要排序", len(files), count)
+    return count
 
 
 def fetch_range(

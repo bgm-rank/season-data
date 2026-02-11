@@ -6,7 +6,7 @@ import sys
 
 from dotenv import load_dotenv
 
-from .client import fetch_and_save, fetch_range
+from .client import fetch_and_save, fetch_range, sort_all
 
 SEASONS = ["winter", "spring", "summer", "fall"]
 
@@ -35,6 +35,8 @@ def main() -> None:
     range_parser.add_argument("end_year", type=int)
     range_parser.add_argument("end_season", choices=SEASONS)
 
+    sub.add_parser("sort", help="对已有 JSON 文件按 id 排序")
+
     args = parser.parse_args()
 
     if args.command == "fetch":
@@ -49,6 +51,8 @@ def main() -> None:
             _get_client_id(),
         )
         print(f"共保存 {len(paths)} 个文件")
+    elif args.command == "sort":
+        sort_all()
     else:
         parser.print_help()
 
