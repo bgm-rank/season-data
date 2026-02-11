@@ -16,6 +16,19 @@ RETRY_DELAY = 1.0
 # 动漫匹配系统提示（固定以最大化缓存命中）
 MATCH_SYSTEM_PROMPT = '匹配MAL动漫与Bangumi候选。续作必须季数一致（2nd/第2期/II等）。输出JSON：{"id":数字或null}'
 
+# 搜索关键词提取系统提示
+SUGGEST_SYSTEM_PROMPT = (
+    "从MAL动画标题提取用于Bangumi(日本动画数据库)搜索的关键词。只返回JSON。\n"
+    "规则:\n"
+    '1.JA标题含韩文(한글)或全中文→{"skip":true}\n'
+    "2.否则从JA标题提取关键词:去掉劇場版/映画前缀、续集标记(第N期/Season)、副标题(～xx～/-xx-/『』)，"
+    '保留最具辨识度的日文部分→{"keywords":["关键词"]}\n'
+    "例:\n"
+    'JA:新劇場版 銀魂 -吉原大炎上-→{"keywords":["銀魂 吉原大炎上"]}\n'
+    'JA:프린세스 캐치! 티니핑→{"skip":true}\n'
+    'JA:劇場版『ゾンビランドサガ ゆめぎんがパラダイス』→{"keywords":["ゾンビランドサガ"]}'
+)
+
 
 @dataclass
 class Message:
@@ -254,3 +267,42 @@ class OpenRouterClient:
             raise RuntimeError(f"Invalid JSON: {content} - {e}") from e
 
         return result.get("id")
+
+    def suggest_search(
+        self,
+        mal_title_ja: str,
+        media_type: str,
+    ) -> dict[str, Any]:
+        """让 LLM 提取搜索关键词或判断是否跳过。
+
+        返回:
+            {"keywords": ["关键词1", ...]} — 建议的搜索关键词
+            {"skip": true} — 非日本动画，建议跳过
+        """
+        user_input = f"JA: {mal_title_ja}\nType: {media_type}"
+
+        request = ChatRequest(
+            messages=[
+                Message.system(SUGGEST_SYSTEM_PROMPT),
+                Message.user(user_input),
+            ],
+            model=self.model,
+        ).with_max_tokens(64)
+
+        response = self.chat(request)
+        content = response.content()
+        if content is None:
+            return {"keywords": []}
+
+        logger.debug(
+            "suggest search: input={}, output={}, tokens={}",
+            user_input,
+            content,
+            response.usage.total_tokens,
+        )
+
+        json_str = extract_json(content)
+        try:
+            return json.loads(json_str)
+        except json.JSONDecodeError:
+            return {"keywords": []}

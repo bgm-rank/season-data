@@ -3,6 +3,9 @@ CLAUDE.md
 .gemini/
 .cursor/
 
+# state 文件（工作状态，不提交）
+state/
+
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,python,pycharm,visualstudiocode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,python,pycharm,visualstudiocode,visualstudio
 
