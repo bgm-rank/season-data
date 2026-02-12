@@ -131,6 +131,21 @@ def _now_iso() -> str:
     return datetime.now(tz).isoformat(timespec="seconds")
 
 
+# manual 目录的状态别名：手动编辑时简写 → human_skip
+_MANUAL_STATUS_ALIASES: dict[str, str] = {
+    "s": "human_skip",
+    "skip": "human_skip",
+}
+
+
+def _normalize_manual_statuses(data: dict[str, Any]) -> None:
+    """归一化 manual 目录中的状态别名（原地修改）。"""
+    for item in data.get("items", []):
+        status = item.get("status", "")
+        if status in _MANUAL_STATUS_ALIASES:
+            item["status"] = _MANUAL_STATUS_ALIASES[status]
+
+
 class SeasonProcessor:
     def __init__(
         self,
@@ -424,7 +439,11 @@ class SeasonProcessor:
         for si in items:
             if not si.status.is_confirmed():
                 continue
-            if si.status in (ConfirmStatus.SKIP, ConfirmStatus.MODEL_SKIP):
+            if si.status in (
+                ConfirmStatus.SKIP,
+                ConfirmStatus.MODEL_SKIP,
+                ConfirmStatus.HUMAN_SKIP,
+            ):
                 continue
             if si.bgm_id is None:
                 continue
@@ -541,6 +560,8 @@ class SeasonProcessor:
             return []
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
+        if category == "manual":
+            _normalize_manual_statuses(data)
         state = StateData.from_dict(data)
         return state.items
 

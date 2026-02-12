@@ -13,6 +13,7 @@ class ConfirmStatus(Enum):
     MODEL = "model"
     MODEL_SKIP = "model_skip"
     HUMAN = "human"
+    HUMAN_SKIP = "human_skip"
     ERROR = "error"
     SKIP = "skip"
 
@@ -22,6 +23,7 @@ class ConfirmStatus(Enum):
             ConfirmStatus.MODEL,
             ConfirmStatus.MODEL_SKIP,
             ConfirmStatus.HUMAN,
+            ConfirmStatus.HUMAN_SKIP,
             ConfirmStatus.SKIP,
         )
 
