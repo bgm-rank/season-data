@@ -1,6 +1,6 @@
 {
   "season": "2026-winter",
-  "update_time": "2026-02-12T15:38:23+08:00",
+  "update_time": "2026-02-12T16:09:53+08:00",
   "items": [
     {
       "mal_id": 38716,
@@ -3011,6 +3011,57 @@
           "bgm_id": 608049,
           "bgm_name": "盗妖行",
           "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 63096,
+      "status": "match",
+      "bgm_id": 548189,
+      "bgm_name": "有栖川煉ってホントは女なんだよね。",
+      "bgm_name_cn": "有栖川炼原来是女孩子啊。",
+      "mal": {
+        "id": 63096,
+        "title": "Arisugawa Ren tte Honto wa Onna Nanda yo ne.",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "有栖川煉ってホントは女なんだよね。"
+      },
+      "candidates": [
+        {
+          "bgm_id": 548189,
+          "bgm_name": "有栖川煉ってホントは女なんだよね。",
+          "bgm_name_cn": "有栖川炼原来是女孩子啊。"
+        },
+        {
+          "bgm_id": 549506,
+          "bgm_name": "有兽焉 第五季",
+          "bgm_name_cn": "有兽焉 第五季"
+        },
+        {
+          "bgm_id": 449362,
+          "bgm_name": "开局就有王者账号",
+          "bgm_name_cn": "开局就有王者账号"
+        },
+        {
+          "bgm_id": 569761,
+          "bgm_name": "熊出没·年年有熊",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 545972,
+          "bgm_name": "喜羊羊与灰太狼之古古怪界有古怪",
+          "bgm_name_cn": "喜羊羊与灰太狼之古古怪界有古怪"
+        },
+        {
+          "bgm_id": 624695,
+          "bgm_name": "喜羊羊与灰太狼之古古怪界有古怪番外篇",
+          "bgm_name_cn": "喜羊羊与灰太狼之古古怪界有古怪番外篇"
+        },
+        {
+          "bgm_id": 549654,
+          "bgm_name": "幼馴染とはラブコメにならない",
+          "bgm_name_cn": "和青梅竹马之间不会有恋爱喜剧"
         }
       ]
     }

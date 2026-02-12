@@ -1,6 +1,6 @@
 {
   "season": "2026-winter",
-  "update_time": "2026-02-12T15:38:23+08:00",
+  "update_time": "2026-02-12T16:09:53+08:00",
   "items": [
     {
       "mal_id": 56906,
@@ -349,6 +349,25 @@
         "rating": "general",
         "title_ja": "生活の"
       }
+    },
+    {
+      "mal_id": 63426,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 63426,
+        "title": "Xiong Chumo: Xiongxiong Bang Bang Tuan 4",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "熊熊帮帮团4"
+      },
+      "candidates": [
+        {
+          "bgm_id": 569761,
+          "bgm_name": "熊出没·年年有熊",
+          "bgm_name_cn": ""
+        }
+      ]
     }
   ]
 }
