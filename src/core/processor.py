@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
+from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -10,6 +11,7 @@ from typing import Any
 from loguru import logger
 
 from services.bgmtv import BgmtvClient, Subject
+from services.mal import MalClient
 from services.openrouter import OpenRouterClient
 
 from .models import (
@@ -26,6 +28,9 @@ from .season import is_new_anime, season_date_range
 
 # 项目根目录
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+
+# State 子目录（按置信度分类）
+_STATE_CATEGORIES = ("skip", "match", "model", "manual")
 
 # CJK 数字字符集
 _CJK_NUMS = "一二三四五六七八九十百"
@@ -62,6 +67,14 @@ _SUFFIX_PATTERNS: list[re.Pattern[str]] = [
     # 罗马数字后缀
     re.compile(r"\s+[IVX]+$"),
 ]
+
+
+@dataclass
+class Override:
+    """override 配置。"""
+
+    add: list[int]
+    skip: list[int]
 
 
 def _normalize_title(s: str) -> str:
@@ -123,9 +136,11 @@ class SeasonProcessor:
         self,
         bgmtv_client: BgmtvClient,
         openrouter_client: OpenRouterClient | None = None,
+        mal_client: MalClient | None = None,
     ) -> None:
         self.bgmtv = bgmtv_client
         self.openrouter = openrouter_client
+        self.mal_client = mal_client
 
     def process(self, year: int, season: str) -> None:
         """处理单个季度的新番匹配。"""
@@ -144,25 +159,61 @@ class SeasonProcessor:
             len(mal_items) - len(new_items),
         )
 
-        # 3. 加载已有 state
-        old_state = self._load_state(year, season)
-        old_items_by_mal_id: dict[int, StateItem] = {}
-        if old_state:
-            old_items_by_mal_id = {item.mal_id: item for item in old_state.items}
-            confirmed_ids = old_state.confirmed_mal_ids()
+        # 3. 加载 override，获取额外 MAL 数据
+        override = self._load_override(year, season)
+        override_skip_ids = set(override.skip)
+        existing_mal_ids = {item["id"] for item in new_items}
+
+        for mal_id in override.add:
+            if mal_id in existing_mal_ids:
+                logger.debug("[override] MAL {} 已在列表中，跳过", mal_id)
+                continue
+            if self.mal_client is None:
+                logger.warning(
+                    "[override] 需要 MalClient 获取 MAL {}，但未配置", mal_id
+                )
+                continue
+            try:
+                raw = self.mal_client.get_anime(mal_id)
+                new_items.append(raw)
+                existing_mal_ids.add(mal_id)
+                logger.info("[override] 补番 MAL {} -> {}", mal_id, raw.get("title"))
+            except Exception as e:
+                logger.error("[override] 获取 MAL {} 失败: {}", mal_id, e)
+
+        if override.add or override.skip:
             logger.info(
-                "已有 state: {} 条, 已确认: {}",
-                len(old_state.items),
-                len(confirmed_ids),
+                "[override] add: {}, skip: {}", len(override.add), len(override.skip)
             )
 
-        # 4. 遍历新番处理
+        # 4. 加载已有 state（合并 4 个目录）
+        old_items_by_mal_id = self._load_all_states(year, season)
+        if old_items_by_mal_id:
+            confirmed_count = sum(
+                1 for item in old_items_by_mal_id.values() if item.status.is_confirmed()
+            )
+            logger.info(
+                "已有 state: {} 条, 已确认: {}",
+                len(old_items_by_mal_id),
+                confirmed_count,
+            )
+
+        # 5. 遍历新番处理
         start_date, end_date = season_date_range(year, season)
         state_items: list[StateItem] = []
         stats: dict[str, int] = {}
 
         for raw in new_items:
             mal_id = raw["id"]
+
+            # override skip
+            if mal_id in override_skip_ids:
+                mal_info = MalInfo.from_raw(raw)
+                logger.info("[override skip] {} (MAL {})", raw.get("title"), mal_id)
+                item = StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP, mal=mal_info)
+                state_items.append(item)
+                stats["skip"] = stats.get("skip", 0) + 1
+                continue
 
             # 已确认条目直接复用，补充缺失的 mal 字段
             old_item = old_items_by_mal_id.get(mal_id)
@@ -178,18 +229,13 @@ class SeasonProcessor:
             state_items.append(item)
             stats[item.status.value] = stats.get(item.status.value, 0) + 1
 
-        # 5. 保存 state
-        state = StateData(
-            season=season_key,
-            update_time=_now_iso(),
-            items=state_items,
-        )
-        self._save_state(year, season, state)
+        # 6. 按状态分组保存到 4 个目录
+        self._save_states(year, season, state_items)
 
-        # 6. 生成 release
-        self._generate_release(year, season, state, mal_items)
+        # 7. 生成 release
+        self._generate_release(year, season, state_items)
 
-        # 7. 打印统计
+        # 8. 打印统计
         logger.info("处理完成 {}: {}", season_key, stats)
 
     def _process_item(
@@ -235,19 +281,19 @@ class SeasonProcessor:
                     search_keyword, media_type_str
                 )
                 if suggestion.get("skip"):
-                    logger.info("[skip] {} (LLM 判断非日本动画)", title)
-                    return StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP, mal=mal_info)
-                for kw in suggestion.get("keywords", []):
-                    logger.debug(
-                        "[fallback] LLM 建议关键词: {} -> {}", title, kw
+                    logger.info("[model_skip] {} (LLM 判断非日本动画)", title)
+                    return StateItem(
+                        mal_id=mal_id,
+                        status=ConfirmStatus.MODEL_SKIP,
+                        mal=mal_info,
                     )
+                for kw in suggestion.get("keywords", []):
+                    logger.debug("[fallback] LLM 建议关键词: {} -> {}", title, kw)
                     retry_subjects = self.bgmtv.search_anime_by_keyword(
                         kw, start_date, end_date
                     )
                     if not retry_subjects:
-                        retry_subjects = (
-                            self.bgmtv.search_anime_by_keyword_no_date(kw)
-                        )
+                        retry_subjects = self.bgmtv.search_anime_by_keyword_no_date(kw)
                     if retry_subjects:
                         result = self._try_match(
                             mal_id, title, title_ja, retry_subjects, mal_info
@@ -259,9 +305,7 @@ class SeasonProcessor:
 
         # 全部失败 → unconfirmed
         candidates = self._subjects_to_candidates(subjects)
-        logger.warning(
-            "[unconfirmed] {} 保留 {} 个候选", title, len(candidates)
-        )
+        logger.warning("[unconfirmed] {} 保留 {} 个候选", title, len(candidates))
         return StateItem(
             mal_id=mal_id,
             status=ConfirmStatus.UNCONFIRMED,
@@ -371,33 +415,29 @@ class SeasonProcessor:
         self,
         year: int,
         season: str,
-        state: StateData,
-        mal_items: list[dict[str, Any]],
+        items: list[StateItem],
     ) -> None:
-        """从 state 生成 release 文件。"""
-        mal_by_id = {item["id"]: item for item in mal_items}
+        """从 state items 生成 release 文件。"""
+        season_key = f"{year}-{season}"
         release_items: list[ReleaseItem] = []
 
-        for si in state.items:
+        for si in items:
             if not si.status.is_confirmed():
                 continue
-            if si.status == ConfirmStatus.SKIP:
+            if si.status in (ConfirmStatus.SKIP, ConfirmStatus.MODEL_SKIP):
                 continue
             if si.bgm_id is None:
                 continue
-
-            raw = mal_by_id.get(si.mal_id)
-            if raw is None:
-                logger.warning("MAL ID {} 在原始数据中未找到，跳过", si.mal_id)
+            if si.mal is None:
+                logger.warning("MAL ID {} 缺少 mal 信息，跳过", si.mal_id)
                 continue
 
-            mal_info = MalInfo.from_raw(raw)
             release_items.append(
                 ReleaseItem(
                     bgm_id=si.bgm_id,
                     bgm_name=si.bgm_name,
                     bgm_name_cn=si.bgm_name_cn,
-                    mal=mal_info,
+                    mal=si.mal,
                 )
             )
 
@@ -405,8 +445,8 @@ class SeasonProcessor:
         release_items.sort(key=lambda x: x.bgm_id)
 
         release = ReleaseData(
-            season=state.season,
-            update_time=state.update_time,
+            season=season_key,
+            update_time=_now_iso(),
             items=release_items,
         )
 
@@ -419,14 +459,17 @@ class SeasonProcessor:
         logger.info("release 文件已保存: {} ({} 条)", release_path, len(release_items))
 
     def complete_state(self, year: int, season: str) -> None:
-        """自动补全 state：手动填写的 bgm_id 补全名称，更新状态，重新生成 release。"""
-        state = self._load_state(year, season)
-        if state is None:
-            logger.error("state 文件不存在: {}-{}", year, season)
+        """自动补全 state：手动填写的 bgm_id 补全名称，更新状态，重新生成 release。
+
+        只加载 state/manual/，处理后保存回 state/manual/，然后加载全部 state 生成 release。
+        """
+        manual_items = self._load_category_state(year, season, "manual")
+        if not manual_items:
+            logger.error("state/manual/ 文件不存在或为空: {}-{}", year, season)
             return
 
         updated = 0
-        for item in state.items:
+        for item in manual_items:
             if item.bgm_id is None:
                 continue
             if item.bgm_name is not None:
@@ -455,59 +498,119 @@ class SeasonProcessor:
             # unconfirmed + 已填 bgm_id → human
             if item.status == ConfirmStatus.UNCONFIRMED:
                 item.status = ConfirmStatus.HUMAN
-                logger.info(
-                    "[complete] mal:{} 状态 unconfirmed -> human", item.mal_id
-                )
+                logger.info("[complete] mal:{} 状态 unconfirmed -> human", item.mal_id)
 
             updated += 1
 
         if updated > 0:
-            state.update_time = _now_iso()
-            self._save_state(year, season, state)
+            self._save_category_state(year, season, "manual", manual_items)
             logger.info("补全完成，更新 {} 条", updated)
         else:
             logger.info("无需补全")
 
-        # 重新生成 release
-        mal_items = self._load_mal_data(year, season)
-        self._generate_release(year, season, state, mal_items)
+        # 重新生成 release（加载全部 4 个目录）
+        all_items = list(self._load_all_states(year, season).values())
+        self._generate_release(year, season, all_items)
 
     def generate_release_from_state(self, year: int, season: str) -> None:
-        """从已有 state 重新生成 release（用于人工校对后更新）。"""
-        state = self._load_state(year, season)
-        if state is None:
+        """从已有 state 重新生成 release（加载全部 4 个目录）。"""
+        all_items = self._load_all_states(year, season)
+        if not all_items:
             logger.error("state 文件不存在: {}-{}", year, season)
             return
 
-        mal_items = self._load_mal_data(year, season)
-        self._generate_release(year, season, state, mal_items)
+        self._generate_release(year, season, list(all_items.values()))
+
+    # ---- State 读写 ----
+
+    def _load_all_states(self, year: int, season: str) -> dict[int, StateItem]:
+        """加载所有 state：合并 4 个目录的数据，按 mal_id 索引。"""
+        result: dict[int, StateItem] = {}
+        for category in _STATE_CATEGORIES:
+            items = self._load_category_state(year, season, category)
+            for item in items:
+                result[item.mal_id] = item
+        return result
+
+    def _load_category_state(
+        self, year: int, season: str, category: str
+    ) -> list[StateItem]:
+        """加载单个目录的 state 文件。"""
+        path = ROOT_DIR / "state" / category / f"{year}-{season}.json"
+        if not path.exists():
+            return []
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        state = StateData.from_dict(data)
+        return state.items
+
+    def _save_states(self, year: int, season: str, items: list[StateItem]) -> None:
+        """按状态分组保存到 4 个目录。"""
+        season_key = f"{year}-{season}"
+        update_time = _now_iso()
+
+        # 按 category 分组
+        groups: dict[str, list[StateItem]] = {cat: [] for cat in _STATE_CATEGORIES}
+        for item in items:
+            category = item.status.status_to_category()
+            groups[category].append(item)
+
+        for category, group_items in groups.items():
+            state = StateData(
+                season=season_key,
+                update_time=update_time,
+                items=group_items,
+            )
+            path = ROOT_DIR / "state" / category / f"{year}-{season}.json"
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(state.to_dict(), f, ensure_ascii=False, indent=2)
+                f.write("\n")
+            logger.info(
+                "state/{} 已保存: {} ({} 条)", category, path.name, len(group_items)
+            )
+
+    def _save_category_state(
+        self, year: int, season: str, category: str, items: list[StateItem]
+    ) -> None:
+        """保存单个目录的 state 文件。"""
+        season_key = f"{year}-{season}"
+        state = StateData(
+            season=season_key,
+            update_time=_now_iso(),
+            items=items,
+        )
+        path = ROOT_DIR / "state" / category / f"{year}-{season}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(state.to_dict(), f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        logger.info("state/{} 已保存: {} ({} 条)", category, path.name, len(items))
+
+    # ---- Override ----
+
+    def _load_override(self, year: int, season: str) -> Override:
+        """读取 state/override/{year}-{season}.json。"""
+        path = ROOT_DIR / "state" / "override" / f"{year}-{season}.json"
+        if not path.exists():
+            return Override(add=[], skip=[])
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        return Override(
+            add=data.get("add", []),
+            skip=data.get("skip", []),
+        )
+
+    # ---- MAL 数据 ----
 
     def _load_mal_data(self, year: int, season: str) -> list[dict[str, Any]]:
-        """从 release/mal/ 加载 MAL 原始数据。"""
-        path = ROOT_DIR / "release" / "mal" / f"{year}-{season}.json"
+        """从 data/mal/ 加载 MAL 原始数据。"""
+        path = ROOT_DIR / "data" / "mal" / f"{year}-{season}.json"
         if not path.exists():
             raise FileNotFoundError(f"MAL 数据文件不存在: {path}")
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
         return data.get("items", [])
-
-    def _load_state(self, year: int, season: str) -> StateData | None:
-        """加载已有 state 文件。"""
-        path = ROOT_DIR / "state" / f"{year}-{season}.json"
-        if not path.exists():
-            return None
-        with open(path, encoding="utf-8") as f:
-            data = json.load(f)
-        return StateData.from_dict(data)
-
-    def _save_state(self, year: int, season: str, state: StateData) -> None:
-        """保存 state 文件。"""
-        path = ROOT_DIR / "state" / f"{year}-{season}.json"
-        path.parent.mkdir(parents=True, exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(state.to_dict(), f, ensure_ascii=False, indent=2)
-            f.write("\n")
-        logger.info("state 文件已保存: {} ({} 条)", path, len(state.items))
 
     @staticmethod
     def _subjects_to_candidates(subjects: list[Subject]) -> list[BgmCandidate]:

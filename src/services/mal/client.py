@@ -19,7 +19,7 @@ FIELDS = (
 SEASON_VALUES = ("winter", "spring", "summer", "fall")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
-RELEASE_DIR = PROJECT_ROOT / "release" / "mal"
+RELEASE_DIR = PROJECT_ROOT / "data" / "mal"
 
 MAX_RETRIES = 3
 RETRY_DELAY = 5.0
@@ -62,6 +62,14 @@ class MalClient:
             return resp
         resp.raise_for_status()
         return resp  # unreachable, but keeps mypy happy
+
+    def get_anime(self, anime_id: int) -> dict[str, Any]:
+        """获取单条动漫数据。"""
+        url = f"{BASE_URL}/anime/{anime_id}"
+        params: dict[str, str | int] = {"fields": FIELDS}
+        resp = self._get(url, params)
+        result: dict[str, Any] = resp.json()
+        return result
 
     def get_seasonal_anime(
         self,
@@ -117,7 +125,7 @@ class MalClient:
 
 
 def _save(year: int, season: str, items: list[dict[str, Any]]) -> Path:
-    """将获取到的新番数据保存到 release/mal/{year}-{season}.json。"""
+    """将获取到的新番数据保存到 data/mal/{year}-{season}.json。"""
     tz = timezone(timedelta(hours=8))
     output = {
         "season": f"{year}-{season}",

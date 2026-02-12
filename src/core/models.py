@@ -11,6 +11,7 @@ class ConfirmStatus(Enum):
     UNCONFIRMED = "unconfirmed"
     MATCH = "match"
     MODEL = "model"
+    MODEL_SKIP = "model_skip"
     HUMAN = "human"
     ERROR = "error"
     SKIP = "skip"
@@ -19,9 +20,20 @@ class ConfirmStatus(Enum):
         return self in (
             ConfirmStatus.MATCH,
             ConfirmStatus.MODEL,
+            ConfirmStatus.MODEL_SKIP,
             ConfirmStatus.HUMAN,
             ConfirmStatus.SKIP,
         )
+
+    def status_to_category(self) -> str:
+        """返回状态对应的 state 子目录名。"""
+        if self == ConfirmStatus.SKIP:
+            return "skip"
+        if self == ConfirmStatus.MATCH:
+            return "match"
+        if self in (ConfirmStatus.MODEL, ConfirmStatus.MODEL_SKIP):
+            return "model"
+        return "manual"
 
 
 class Rating(Enum):
