@@ -1,6 +1,6 @@
 {
   "season": "2026-winter",
-  "update_time": "2026-02-11T21:39:49+08:00",
+  "update_time": "2026-02-11T21:47:24+08:00",
   "items": [
     {
       "bgm_id": 243430,
@@ -312,6 +312,18 @@
         "media_type": "tv",
         "rating": "general",
         "title_ja": "死亡遊戯で飯を食う。"
+      }
+    },
+    {
+      "bgm_id": 513361,
+      "bgm_name": "DARK MOON -黒の月: 月の祭壇-",
+      "bgm_name_cn": "DARK MOON -黑之月: 月之祭坛-",
+      "mal": {
+        "id": 59853,
+        "title": "Dark Moon: Tsuki no Saidan",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "DARK MOON　-黒の月: 月の祭壇-"
       }
     },
     {
@@ -783,6 +795,18 @@
       }
     },
     {
+      "bgm_id": 552670,
+      "bgm_name": "えんとつ町のプペル 〜約束の時計台〜",
+      "bgm_name_cn": "烟囱小镇的普佩尔 〜约定的钟楼〜",
+      "mal": {
+        "id": 61492,
+        "title": "Entotsu Machi no Poupelle: Yakusoku no Tokei-dai",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "映画 えんとつ町のプペル ～約束の時計台～"
+      }
+    },
+    {
       "bgm_id": 554013,
       "bgm_name": "お気楽領主の楽しい領地防衛～生産系魔術で名もなき村を最強の城塞都市に～",
       "bgm_name_cn": "安逸领主的愉快领地防卫～以生产系魔术将无名小村打造成最强要塞都市～",
@@ -996,6 +1020,18 @@
         "media_type": "movie",
         "rating": "general",
         "title_ja": "パリに咲くエトワール"
+      }
+    },
+    {
+      "bgm_id": 578766,
+      "bgm_name": "新劇場版 銀魂 -吉原大炎上-",
+      "bgm_name_cn": "新剧场版 银魂 -吉原大炎上-",
+      "mal": {
+        "id": 62277,
+        "title": "Gintama Movie 3: Yoshiwara Daienjou",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "新劇場版 銀魂 -吉原大炎上-"
       }
     },
     {

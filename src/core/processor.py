@@ -211,15 +211,23 @@ class SeasonProcessor:
         except ValueError:
             pass
 
-        # 搜索 Bangumi
+        # 搜索 + 匹配
         search_keyword = title_ja or title
         logger.info("[search] {} -> keyword={}", title, search_keyword)
 
         try:
             subjects = self._search_bgm(search_keyword, start_date, end_date)
+        except Exception as e:
+            logger.error("[error] {} BGM 搜索失败: {}", title, e)
+            return StateItem(mal_id=mal_id, status=ConfirmStatus.ERROR)
 
-            # 基础搜索无结果时，用 LLM 提取关键词重试
-            if not subjects and self.openrouter and search_keyword:
+        result = self._try_match(mal_id, title, title_ja, subjects)
+        if result:
+            return result
+
+        # 首轮搜索+匹配失败，用 LLM 提取关键词做最后尝试
+        if self.openrouter:
+            try:
                 suggestion = self.openrouter.suggest_search(
                     search_keyword, media_type_str
                 )
@@ -227,22 +235,46 @@ class SeasonProcessor:
                     logger.info("[skip] {} (LLM 判断非日本动画)", title)
                     return StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP)
                 for kw in suggestion.get("keywords", []):
-                    logger.debug("[fallback] LLM 建议关键词: {} -> {}", title, kw)
-                    subjects = self.bgmtv.search_anime_by_keyword(
+                    logger.debug(
+                        "[fallback] LLM 建议关键词: {} -> {}", title, kw
+                    )
+                    retry_subjects = self.bgmtv.search_anime_by_keyword(
                         kw, start_date, end_date
                     )
-                    if subjects:
-                        break
-                    subjects = self.bgmtv.search_anime_by_keyword_no_date(kw)
-                    if subjects:
-                        break
-        except Exception as e:
-            logger.error("[error] {} BGM 搜索失败: {}", title, e)
-            return StateItem(mal_id=mal_id, status=ConfirmStatus.ERROR)
+                    if not retry_subjects:
+                        retry_subjects = (
+                            self.bgmtv.search_anime_by_keyword_no_date(kw)
+                        )
+                    if retry_subjects:
+                        result = self._try_match(
+                            mal_id, title, title_ja, retry_subjects
+                        )
+                        if result:
+                            return result
+            except Exception as e:
+                logger.error("[error] {} LLM suggest 失败: {}", title, e)
 
+        # 全部失败 → unconfirmed
+        candidates = self._subjects_to_candidates(subjects)
+        logger.warning(
+            "[unconfirmed] {} 保留 {} 个候选", title, len(candidates)
+        )
+        return StateItem(
+            mal_id=mal_id,
+            status=ConfirmStatus.UNCONFIRMED,
+            candidates=candidates,
+        )
+
+    def _try_match(
+        self,
+        mal_id: int,
+        title: str,
+        title_ja: str | None,
+        subjects: list[Subject],
+    ) -> StateItem | None:
+        """尝试从搜索结果中匹配，成功返回 StateItem，失败返回 None。"""
         if not subjects:
-            logger.warning("[unconfirmed] {} 无候选", title)
-            return StateItem(mal_id=mal_id, status=ConfirmStatus.UNCONFIRMED)
+            return None
 
         candidates = self._subjects_to_candidates(subjects)
 
@@ -289,19 +321,8 @@ class SeasonProcessor:
                         )
             except Exception as e:
                 logger.error("[error] {} LLM 匹配失败: {}", title, e)
-                return StateItem(
-                    mal_id=mal_id,
-                    status=ConfirmStatus.ERROR,
-                    candidates=candidates,
-                )
 
-        # 无匹配
-        logger.warning("[unconfirmed] {} 保留 {} 个候选", title, len(candidates))
-        return StateItem(
-            mal_id=mal_id,
-            status=ConfirmStatus.UNCONFIRMED,
-            candidates=candidates,
-        )
+        return None
 
     def _search_bgm(
         self,

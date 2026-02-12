@@ -1,6 +1,6 @@
 {
   "season": "2025-fall",
-  "update_time": "2026-02-11T21:38:48+08:00",
+  "update_time": "2026-02-11T21:49:39+08:00",
   "items": [
     {
       "bgm_id": 219760,
@@ -99,6 +99,18 @@
       }
     },
     {
+      "bgm_id": 353181,
+      "bgm_name": "ゾンビランドサガ ゆめぎんがパラダイス",
+      "bgm_name_cn": "佐贺偶像是传奇 梦想银河乐园",
+      "mal": {
+        "id": 50159,
+        "title": "Zombieland Saga Movie: Yumeginga Paradise",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "劇場版『ゾンビランドサガ ゆめぎんがパラダイス』"
+      }
+    },
+    {
       "bgm_id": 395217,
       "bgm_name": "三线轮洄",
       "bgm_name_cn": "三线轮洄",
@@ -120,6 +132,18 @@
         "media_type": "ona",
         "rating": "general",
         "title_ja": "仙剑奇侠传叁"
+      }
+    },
+    {
+      "bgm_id": 402216,
+      "bgm_name": "湖池屋SDGs劇場 サスとテナ シーズン2",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 62561,
+        "title": "Koikeya SDGs Gekijou Suss to Tina Season 6",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "湖池屋SDGs劇場 サスとテナ シーズン６"
       }
     },
     {
@@ -1128,6 +1152,18 @@
         "media_type": "tv",
         "rating": "general",
         "title_ja": "キングダム 第6シリーズ"
+      }
+    },
+    {
+      "bgm_id": 554518,
+      "bgm_name": "アイカツ！×プリパラ THE MOVIE -出会いのキセキ！-",
+      "bgm_name_cn": "偶像活动×美妙天堂 电影",
+      "mal": {
+        "id": 61558,
+        "title": "Aikatsu! x PriPara the Movie: Deai no Kiseki!",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "アイカツ！×プリパラ THE MOVIE -出会いのキセキ！-"
       }
     },
     {
