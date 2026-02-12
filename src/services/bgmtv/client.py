@@ -173,6 +173,34 @@ class BgmtvClient:
 
         raise last_error  # type: ignore[misc]
 
+    def get_subject(self, subject_id: int) -> Subject:
+        """按 ID 获取条目详情（带重试逻辑）。"""
+        url = f"{BASE_URL}/v0/subjects/{subject_id}"
+
+        last_error: Exception | None = None
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                resp = self.client.get(url)
+                if not resp.is_success:
+                    raise httpx.HTTPStatusError(
+                        f"{resp.status_code}: {resp.text}",
+                        request=resp.request,
+                        response=resp,
+                    )
+                return Subject.from_dict(resp.json())
+            except Exception as e:
+                last_error = e
+                if attempt < MAX_RETRIES:
+                    logger.warning(
+                        "请求失败 ({}), 第 {}/{} 次重试...",
+                        e,
+                        attempt,
+                        MAX_RETRIES,
+                    )
+                    time.sleep(RETRY_DELAY)
+
+        raise last_error  # type: ignore[misc]
+
     def search_anime_by_keyword(
         self,
         keyword: str,

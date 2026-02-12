@@ -164,9 +164,11 @@ class SeasonProcessor:
         for raw in new_items:
             mal_id = raw["id"]
 
-            # 已确认条目直接复用
+            # 已确认条目直接复用，补充缺失的 mal 字段
             old_item = old_items_by_mal_id.get(mal_id)
             if old_item and old_item.status.is_confirmed():
+                if old_item.mal is None:
+                    old_item.mal = MalInfo.from_raw(raw)
                 state_items.append(old_item)
                 stats[old_item.status.value] = stats.get(old_item.status.value, 0) + 1
                 continue
@@ -201,13 +203,14 @@ class SeasonProcessor:
         title = raw["title"]
         title_ja = raw.get("alternative_titles", {}).get("ja")
         media_type_str = raw.get("media_type", "tv")
+        mal_info = MalInfo.from_raw(raw)
 
         # 检查是否应跳过
         try:
             media_type = MediaType.from_mal(media_type_str)
             if media_type.should_skip():
                 logger.debug("[skip] {} ({})", title, media_type_str)
-                return StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP)
+                return StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP, mal=mal_info)
         except ValueError:
             pass
 
@@ -219,9 +222,9 @@ class SeasonProcessor:
             subjects = self._search_bgm(search_keyword, start_date, end_date)
         except Exception as e:
             logger.error("[error] {} BGM 搜索失败: {}", title, e)
-            return StateItem(mal_id=mal_id, status=ConfirmStatus.ERROR)
+            return StateItem(mal_id=mal_id, status=ConfirmStatus.ERROR, mal=mal_info)
 
-        result = self._try_match(mal_id, title, title_ja, subjects)
+        result = self._try_match(mal_id, title, title_ja, subjects, mal_info)
         if result:
             return result
 
@@ -233,7 +236,7 @@ class SeasonProcessor:
                 )
                 if suggestion.get("skip"):
                     logger.info("[skip] {} (LLM 判断非日本动画)", title)
-                    return StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP)
+                    return StateItem(mal_id=mal_id, status=ConfirmStatus.SKIP, mal=mal_info)
                 for kw in suggestion.get("keywords", []):
                     logger.debug(
                         "[fallback] LLM 建议关键词: {} -> {}", title, kw
@@ -247,7 +250,7 @@ class SeasonProcessor:
                         )
                     if retry_subjects:
                         result = self._try_match(
-                            mal_id, title, title_ja, retry_subjects
+                            mal_id, title, title_ja, retry_subjects, mal_info
                         )
                         if result:
                             return result
@@ -262,6 +265,7 @@ class SeasonProcessor:
         return StateItem(
             mal_id=mal_id,
             status=ConfirmStatus.UNCONFIRMED,
+            mal=mal_info,
             candidates=candidates,
         )
 
@@ -271,6 +275,7 @@ class SeasonProcessor:
         title: str,
         title_ja: str | None,
         subjects: list[Subject],
+        mal_info: MalInfo,
     ) -> StateItem | None:
         """尝试从搜索结果中匹配，成功返回 StateItem，失败返回 None。"""
         if not subjects:
@@ -290,6 +295,7 @@ class SeasonProcessor:
                         bgm_id=subj.id,
                         bgm_name=subj.name,
                         bgm_name_cn=subj.name_cn,
+                        mal=mal_info,
                         candidates=candidates,
                     )
 
@@ -317,6 +323,7 @@ class SeasonProcessor:
                             bgm_id=matched_subj.id,
                             bgm_name=matched_subj.name,
                             bgm_name_cn=matched_subj.name_cn,
+                            mal=mal_info,
                             candidates=candidates,
                         )
             except Exception as e:
@@ -410,6 +417,60 @@ class SeasonProcessor:
             f.write("\n")
 
         logger.info("release 文件已保存: {} ({} 条)", release_path, len(release_items))
+
+    def complete_state(self, year: int, season: str) -> None:
+        """自动补全 state：手动填写的 bgm_id 补全名称，更新状态，重新生成 release。"""
+        state = self._load_state(year, season)
+        if state is None:
+            logger.error("state 文件不存在: {}-{}", year, season)
+            return
+
+        updated = 0
+        for item in state.items:
+            if item.bgm_id is None:
+                continue
+            if item.bgm_name is not None:
+                continue
+
+            # 有 bgm_id 但缺 bgm_name → 调用 API 补全
+            try:
+                subject = self.bgmtv.get_subject(item.bgm_id)
+                item.bgm_name = subject.name
+                item.bgm_name_cn = subject.name_cn
+                logger.info(
+                    "[complete] mal:{} -> bgm:{} {}",
+                    item.mal_id,
+                    subject.id,
+                    subject.name,
+                )
+            except Exception as e:
+                logger.error(
+                    "[complete] mal:{} bgm:{} 获取失败: {}",
+                    item.mal_id,
+                    item.bgm_id,
+                    e,
+                )
+                continue
+
+            # unconfirmed + 已填 bgm_id → human
+            if item.status == ConfirmStatus.UNCONFIRMED:
+                item.status = ConfirmStatus.HUMAN
+                logger.info(
+                    "[complete] mal:{} 状态 unconfirmed -> human", item.mal_id
+                )
+
+            updated += 1
+
+        if updated > 0:
+            state.update_time = _now_iso()
+            self._save_state(year, season, state)
+            logger.info("补全完成，更新 {} 条", updated)
+        else:
+            logger.info("无需补全")
+
+        # 重新生成 release
+        mal_items = self._load_mal_data(year, season)
+        self._generate_release(year, season, state, mal_items)
 
     def generate_release_from_state(self, year: int, season: str) -> None:
         """从已有 state 重新生成 release（用于人工校对后更新）。"""

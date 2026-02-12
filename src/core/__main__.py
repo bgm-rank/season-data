@@ -12,10 +12,14 @@ from .processor import SeasonProcessor
 from .season import SEASON_VALUES
 
 
+COMMANDS = ("run", "release", "complete")
+
+
 def _usage() -> None:
     print("Usage:")
     print("  python -m core run <year> <season>      处理季度新番")
     print("  python -m core release <year> <season>   从 state 重新生成 release")
+    print("  python -m core complete <year> <season>  补全 bgm_id 名称并重新生成 release")
     print()
     print(f"  season: {', '.join(SEASON_VALUES)}")
     sys.exit(1)
@@ -27,7 +31,7 @@ def _parse_args() -> tuple[str, int, str]:
         _usage()
 
     command = args[0]
-    if command not in ("run", "release"):
+    if command not in COMMANDS:
         _usage()
 
     try:
@@ -64,6 +68,8 @@ def main() -> None:
                 processor.process(year, season)
             elif command == "release":
                 processor.generate_release_from_state(year, season)
+            elif command == "complete":
+                processor.complete_state(year, season)
         finally:
             if openrouter:
                 openrouter.close()

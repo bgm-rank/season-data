@@ -87,6 +87,16 @@ class MalInfo:
             rating=Rating.from_mal(raw.get("rating")).value,
         )
 
+    @staticmethod
+    def from_dict(data: dict[str, Any]) -> MalInfo:
+        return MalInfo(
+            id=data["id"],
+            title=data["title"],
+            title_ja=data.get("title_ja"),
+            media_type=data["media_type"],
+            rating=data["rating"],
+        )
+
     def to_dict(self) -> dict[str, Any]:
         d: dict[str, Any] = {
             "id": self.id,
@@ -133,6 +143,7 @@ class StateItem:
     bgm_id: int | None = None
     bgm_name: str | None = None
     bgm_name_cn: str | None = None
+    mal: MalInfo | None = None
     candidates: list[BgmCandidate] | None = None
 
     @staticmethod
@@ -140,12 +151,16 @@ class StateItem:
         candidates = None
         if "candidates" in data:
             candidates = [BgmCandidate.from_dict(c) for c in data["candidates"]]
+        mal = None
+        if "mal" in data:
+            mal = MalInfo.from_dict(data["mal"])
         return StateItem(
             mal_id=data["mal_id"],
             status=ConfirmStatus(data["status"]),
             bgm_id=data.get("bgm_id"),
             bgm_name=data.get("bgm_name"),
             bgm_name_cn=data.get("bgm_name_cn"),
+            mal=mal,
             candidates=candidates,
         )
 
@@ -153,13 +168,14 @@ class StateItem:
         d: dict[str, Any] = {
             "mal_id": self.mal_id,
             "status": self.status.value,
+            "bgm_id": self.bgm_id,
         }
-        if self.bgm_id is not None:
-            d["bgm_id"] = self.bgm_id
         if self.bgm_name is not None:
             d["bgm_name"] = self.bgm_name
         if self.bgm_name_cn is not None:
             d["bgm_name_cn"] = self.bgm_name_cn
+        if self.mal is not None:
+            d["mal"] = self.mal.to_dict()
         if self.candidates is not None:
             d["candidates"] = [c.to_dict() for c in self.candidates]
         return d
