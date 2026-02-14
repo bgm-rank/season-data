@@ -1,6 +1,6 @@
 {
   "season": "2025-fall",
-  "update_time": "2026-02-12T16:08:24+08:00",
+  "update_time": "2026-02-14T10:48:32+08:00",
   "items": [
     {
       "mal_id": 41912,
@@ -4136,6 +4136,37 @@
           "bgm_id": 524195,
           "bgm_name": "信じていた仲間達にダンジョン奥地で殺されかけたがギフト『無限ガチャ』でレベル9999の仲間達を手に入れて元パーティーメンバーと世界に復讐＆『ざまぁ！』します！",
           "bgm_name_cn": "差点在迷宫深处被信任的伙伴杀掉，但靠着天赐技能「无限扭蛋」获得等级9999的伙伴，我要向前队友和世界展开复仇&「给他们好看！」"
+        }
+      ]
+    },
+    {
+      "mal_id": 61303,
+      "status": "match",
+      "bgm_id": 544188,
+      "bgm_name": "极限城市",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 61303,
+        "title": "Jixian Chengshi",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "极限城市"
+      },
+      "candidates": [
+        {
+          "bgm_id": 544188,
+          "bgm_name": "极限城市",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 529006,
+          "bgm_name": "不器用な先輩。",
+          "bgm_name_cn": "笨拙之极的前辈。"
+        },
+        {
+          "bgm_id": 539341,
+          "bgm_name": "忍者と極道",
+          "bgm_name_cn": "忍者与极道"
         }
       ]
     }
