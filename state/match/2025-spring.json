@@ -1,6 +1,6 @@
 {
   "season": "2025-spring",
-  "update_time": "2026-02-14T10:44:45+08:00",
+  "update_time": "2026-02-14T11:07:50+08:00",
   "items": [
     {
       "mal_id": 38903,
@@ -4296,6 +4296,42 @@
           "bgm_id": 555669,
           "bgm_name": "A Horny Money World ~伝説の夜~",
           "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 58888,
+      "status": "match",
+      "bgm_id": 495633,
+      "bgm_name": "やたらやらしい深見くん",
+      "bgm_name_cn": "过分色气的深见君",
+      "mal": {
+        "id": 58888,
+        "title": "Yatara Yarashii Fukami-kun",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "やたらやらしい深見くん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 495633,
+          "bgm_name": "やたらやらしい深見くん",
+          "bgm_name_cn": "过分色气的深见君"
+        },
+        {
+          "bgm_id": 514353,
+          "bgm_name": "小林さんちのメイドラゴン さみしがりやの竜",
+          "bgm_name_cn": "小林家的龙女仆 怕寂寞的龙"
+        },
+        {
+          "bgm_id": 496945,
+          "bgm_name": "やくならマグカップも 劇場版",
+          "bgm_name_cn": "如果烧陶的话也做个马克杯吧 剧场版"
+        },
+        {
+          "bgm_id": 564930,
+          "bgm_name": "Google Playで超無双？！転生したらAndroidユーザーだった",
+          "bgm_name_cn": "在 Google Play 上开超无双？！转生成为 Android 用户"
         }
       ]
     }
