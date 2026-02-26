@@ -1,6 +1,6 @@
 {
   "season": "2025-spring",
-  "update_time": "2026-02-26T14:51:55+08:00",
+  "update_time": "2026-02-14T11:07:50+08:00",
   "items": [
     {
       "mal_id": 53205,
@@ -1259,6 +1259,37 @@
           "bgm_id": 561161,
           "bgm_name": "とらぶるだいあり〜7 ムービー版",
           "bgm_name_cn": "出包日记~7 动画版"
+        }
+      ]
+    },
+    {
+      "mal_id": 58954,
+      "status": "model",
+      "bgm_id": 496945,
+      "bgm_name": "やくならマグカップも 劇場版",
+      "bgm_name_cn": "如果烧陶的话也做个马克杯吧 剧场版",
+      "mal": {
+        "id": 58954,
+        "title": "Yaku nara Mug Cup mo Movie",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "やくならマグカップも"
+      },
+      "candidates": [
+        {
+          "bgm_id": 496945,
+          "bgm_name": "やくならマグカップも 劇場版",
+          "bgm_name_cn": "如果烧陶的话也做个马克杯吧 剧场版"
+        },
+        {
+          "bgm_id": 495633,
+          "bgm_name": "やたらやらしい深見くん",
+          "bgm_name_cn": "过分色气的深见君"
+        },
+        {
+          "bgm_id": 514353,
+          "bgm_name": "小林さんちのメイドラゴン さみしがりやの竜",
+          "bgm_name_cn": "小林家的龙女仆 怕寂寞的龙"
         }
       ]
     }

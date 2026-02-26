@@ -1,6 +1,6 @@
 {
   "season": "2025-winter",
-  "update_time": "2026-02-26T14:49:19+08:00",
+  "update_time": "2026-02-14T11:08:16+08:00",
   "items": [
     {
       "bgm_id": 132572,
@@ -264,6 +264,18 @@
         "media_type": "tv",
         "rating": "general",
         "title_ja": "沖縄で好きになった子が方言すぎてツラすぎる"
+      }
+    },
+    {
+      "bgm_id": 444279,
+      "bgm_name": "神探小五",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 60931,
+        "title": "Shentan Xiao Wu",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "神探小五"
       }
     },
     {
@@ -1659,6 +1671,18 @@
       }
     },
     {
+      "bgm_id": 549288,
+      "bgm_name": "島津製作所 創業150周年記念アニメーション",
+      "bgm_name_cn": "岛津制作所 创业150周年纪念动画",
+      "mal": {
+        "id": 61431,
+        "title": "Shimazu Seisakusho Sougyou 150-shuunen Kinen Animation",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "島津製作所 創業150周年記念アニメーション"
+      }
+    },
+    {
       "bgm_id": 549375,
       "bgm_name": "ノモの国",
       "bgm_name_cn": "",
@@ -1752,6 +1776,18 @@
         "media_type": "ona",
         "rating": "kids",
         "title_ja": "ねえねえ あのね"
+      }
+    },
+    {
+      "bgm_id": 621369,
+      "bgm_name": "Wylde Pak Season 1",
+      "bgm_name_cn": "沃德朴一家 第一季",
+      "mal": {
+        "id": 60934,
+        "title": "Wo Fu Kuaile Yijia",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "沃福快乐一家"
       }
     }
   ]

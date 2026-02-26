@@ -1,6 +1,6 @@
 {
   "season": "2025-spring",
-  "update_time": "2026-02-26T14:51:55+08:00",
+  "update_time": "2026-02-14T11:07:50+08:00",
   "items": [
     {
       "mal_id": 38903,
@@ -378,6 +378,11 @@
           "bgm_id": 554228,
           "bgm_name": "宝可梦生态一日记",
           "bgm_name_cn": "宝可梦生态一日记"
+        },
+        {
+          "bgm_id": 621369,
+          "bgm_name": "Wylde Pak Season 1",
+          "bgm_name_cn": "沃德朴一家 第一季"
         }
       ]
     },
@@ -806,7 +811,7 @@
         {
           "bgm_id": 561266,
           "bgm_name": "Amélie et la métaphysique des tubes",
-          "bgm_name_cn": "你好，爱美丽"
+          "bgm_name_cn": "阿梅莉的形而上学"
         }
       ]
     },
@@ -1828,11 +1833,6 @@
           "bgm_name_cn": "《偶像大师 百万现场 剧场时光》8周年特别PV"
         },
         {
-          "bgm_id": 630131,
-          "bgm_name": "アイドルマスター ミリオンライブ！総集編",
-          "bgm_name_cn": "偶像大师 百万现场！总集篇"
-        },
-        {
           "bgm_id": 473413,
           "bgm_name": "ヤマトよ永遠に REBEL3199 第三章 群青のアステロイド",
           "bgm_name_cn": "永远的大和号 REBEL3199 第三章 群青的星形线"
@@ -1841,6 +1841,11 @@
           "bgm_id": 507542,
           "bgm_name": "Plankton: The Movie",
           "bgm_name_cn": "痞老板大电影"
+        },
+        {
+          "bgm_id": 515422,
+          "bgm_name": "映画ドラえもん のび太の絵世界物語",
+          "bgm_name_cn": "哆啦A梦：大雄的绘画奇遇记"
         }
       ]
     },
@@ -2097,7 +2102,7 @@
         {
           "bgm_id": 561266,
           "bgm_name": "Amélie et la métaphysique des tubes",
-          "bgm_name_cn": "你好，爱美丽"
+          "bgm_name_cn": "阿梅莉的形而上学"
         },
         {
           "bgm_id": 555830,
@@ -3926,6 +3931,11 @@
           "bgm_name_cn": "岛津制作所 创业150周年纪念动画"
         },
         {
+          "bgm_id": 621369,
+          "bgm_name": "Wylde Pak Season 1",
+          "bgm_name_cn": "沃德朴一家 第一季"
+        },
+        {
           "bgm_id": 507115,
           "bgm_name": "怪獣8号 第1期総集編",
           "bgm_name_cn": "怪兽8号 第一季总集篇"
@@ -4286,6 +4296,42 @@
           "bgm_id": 555669,
           "bgm_name": "A Horny Money World ~伝説の夜~",
           "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 58888,
+      "status": "match",
+      "bgm_id": 495633,
+      "bgm_name": "やたらやらしい深見くん",
+      "bgm_name_cn": "过分色气的深见君",
+      "mal": {
+        "id": 58888,
+        "title": "Yatara Yarashii Fukami-kun",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "やたらやらしい深見くん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 495633,
+          "bgm_name": "やたらやらしい深見くん",
+          "bgm_name_cn": "过分色气的深见君"
+        },
+        {
+          "bgm_id": 514353,
+          "bgm_name": "小林さんちのメイドラゴン さみしがりやの竜",
+          "bgm_name_cn": "小林家的龙女仆 怕寂寞的龙"
+        },
+        {
+          "bgm_id": 496945,
+          "bgm_name": "やくならマグカップも 劇場版",
+          "bgm_name_cn": "如果烧陶的话也做个马克杯吧 剧场版"
+        },
+        {
+          "bgm_id": 564930,
+          "bgm_name": "Google Playで超無双？！転生したらAndroidユーザーだった",
+          "bgm_name_cn": "在 Google Play 上开超无双？！转生成为 Android 用户"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "season": "2025-spring",
-  "update_time": "2026-02-26T14:51:55+08:00",
+  "update_time": "2026-02-14T11:09:07+08:00",
   "items": [
     {
       "bgm_id": 87616,
@@ -552,6 +552,30 @@
         "media_type": "tv",
         "rating": "r18",
         "title_ja": "かくして！マキナさん!!"
+      }
+    },
+    {
+      "bgm_id": 495633,
+      "bgm_name": "やたらやらしい深見くん",
+      "bgm_name_cn": "过分色气的深见君",
+      "mal": {
+        "id": 58888,
+        "title": "Yatara Yarashii Fukami-kun",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "やたらやらしい深見くん"
+      }
+    },
+    {
+      "bgm_id": 496945,
+      "bgm_name": "やくならマグカップも 劇場版",
+      "bgm_name_cn": "如果烧陶的话也做个马克杯吧 剧场版",
+      "mal": {
+        "id": 58954,
+        "title": "Yaku nara Mug Cup mo Movie",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "やくならマグカップも"
       }
     },
     {
@@ -1623,6 +1647,18 @@
       }
     },
     {
+      "bgm_id": 550423,
+      "bgm_name": "勘違いの放送主〜ラジオマイスター〜",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 61411,
+        "title": "Kanchigai no Atelier Meister Mini Anime",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "『勘違いの工房主』ミニアニメ"
+      }
+    },
+    {
       "bgm_id": 550457,
       "bgm_name": "ユーチューニャー 3期アニメシリーズ",
       "bgm_name_cn": "YouTu喵 第三季动画剧集",
@@ -1872,6 +1908,18 @@
         "media_type": "ona",
         "rating": "kids",
         "title_ja": "龅牙的快乐生活"
+      }
+    },
+    {
+      "bgm_id": 576283,
+      "bgm_name": "おジャ魔女カーニバル‼︎ ゆる旅篇",
+      "bgm_name_cn": "小魔女DoReMi嘉年华!! 悠闲之旅篇",
+      "mal": {
+        "id": 62494,
+        "title": "Ojamajo Carnival!!: Yuru Tabi-hen",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "おジャ魔女カーニバル!!～ゆる旅篇～"
       }
     },
     {

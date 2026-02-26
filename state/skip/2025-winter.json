@@ -1,6 +1,6 @@
 {
   "season": "2025-winter",
-  "update_time": "2026-02-26T14:49:19+08:00",
+  "update_time": "2026-02-14T11:07:07+08:00",
   "items": [
     {
       "mal_id": 55779,
@@ -12,6 +12,30 @@
         "media_type": "tv_special",
         "rating": "general",
         "title_ja": "cocoon ～ある夏の少女たちより～"
+      }
+    },
+    {
+      "mal_id": 58888,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58888,
+        "title": "Yatara Yarashii Fukami-kun",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "やたらやらしい深見くん"
+      }
+    },
+    {
+      "mal_id": 58954,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58954,
+        "title": "Yaku nara Mug Cup mo Movie",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "やくならマグカップも"
       }
     },
     {
@@ -960,6 +984,18 @@
         "media_type": "tv_special",
         "rating": "kids",
         "title_ja": "시간탐험대 다이노맨 동요송"
+      }
+    },
+    {
+      "mal_id": 62494,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 62494,
+        "title": "Ojamajo Carnival!!: Yuru Tabi-hen",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "おジャ魔女カーニバル!!～ゆる旅篇～"
       }
     },
     {

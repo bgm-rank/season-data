@@ -1,6 +1,6 @@
 {
   "season": "2025-winter",
-  "update_time": "2026-02-26T14:49:19+08:00",
+  "update_time": "2026-02-14T11:07:07+08:00",
   "items": [
     {
       "mal_id": 49363,
@@ -744,15 +744,59 @@
     },
     {
       "mal_id": 60934,
-      "status": "model_skip",
-      "bgm_id": null,
+      "status": "model",
+      "bgm_id": 621369,
+      "bgm_name": "Wylde Pak Season 1",
+      "bgm_name_cn": "沃德朴一家 第一季",
       "mal": {
         "id": 60934,
         "title": "Wo Fu Kuaile Yijia",
         "media_type": "ona",
         "rating": "kids",
         "title_ja": "沃福快乐一家"
-      }
+      },
+      "candidates": [
+        {
+          "bgm_id": 473300,
+          "bgm_name": "沃玛的生活",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 109609,
+          "bgm_name": "Watership Down",
+          "bgm_name_cn": "沃特希普荒原"
+        },
+        {
+          "bgm_id": 276751,
+          "bgm_name": "Watership Down",
+          "bgm_name_cn": "沃特希普荒原"
+        },
+        {
+          "bgm_id": 621369,
+          "bgm_name": "Wylde Pak Season 1",
+          "bgm_name_cn": "沃德朴一家 第一季"
+        },
+        {
+          "bgm_id": 148630,
+          "bgm_name": "Where's Waldo",
+          "bgm_name_cn": "聪明的沃里"
+        },
+        {
+          "bgm_id": 280524,
+          "bgm_name": "Про Сидорова Вову",
+          "bgm_name_cn": "辛德洛夫·沃瓦"
+        },
+        {
+          "bgm_id": 211280,
+          "bgm_name": "Шерлок Холмс и доктор Ватсон: Убийство лорда Уотербрука",
+          "bgm_name_cn": "福尔摩斯与华生医生：沃特布鲁克勋爵谋杀案"
+        },
+        {
+          "bgm_id": 356475,
+          "bgm_name": "Vivo",
+          "bgm_name_cn": "蜜熊的音乐奇旅"
+        }
+      ]
     },
     {
       "mal_id": 60984,
@@ -924,12 +968,12 @@
         {
           "bgm_id": 120177,
           "bgm_name": "ピカチュウとポケモンおんがくたい",
-          "bgm_name_cn": "皮卡丘与宝可梦乐队"
+          "bgm_name_cn": "皮卡丘与精灵宝可梦乐队"
         },
         {
           "bgm_id": 3030,
           "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ポケモンレンジャーと蒼海の王子 マナフィ",
-          "bgm_name_cn": "剧场版宝可梦 超世代: 宝可梦巡护员与苍海的王子 玛纳霏"
+          "bgm_name_cn": "剧场版 精灵宝可梦 超世代 宝可梦巡护员与苍海的王子 玛纳霏"
         },
         {
           "bgm_id": 512359,
@@ -949,12 +993,12 @@
         {
           "bgm_id": 90368,
           "bgm_name": "ポケモン・ザ・ムービーXY 破壊の繭とディアンシー",
-          "bgm_name_cn": "剧场版宝可梦XY: 破坏之茧与蒂安希"
+          "bgm_name_cn": "剧场版 精灵宝可梦XY 破坏之茧与蒂安希"
         },
         {
           "bgm_id": 140307,
           "bgm_name": "ポケモン・ザ・ムービーXY＆Z ボルケニオンと機巧のマギアナ",
-          "bgm_name_cn": "剧场版宝可梦XY&Z: 波尔凯尼恩与机巧的玛机雅娜"
+          "bgm_name_cn": "剧场版 精灵宝可梦XY&Z 波尔凯尼恩与机巧的玛机雅娜"
         },
         {
           "bgm_id": 451295,
@@ -964,7 +1008,7 @@
         {
           "bgm_id": 99955,
           "bgm_name": "ポケモン不思議のダンジョン 空の探検隊 時と闇をめぐる最後の冒険",
-          "bgm_name_cn": "宝可梦 不可思议的迷宫: 空之探险队 围绕时与暗 最后的冒险"
+          "bgm_name_cn": "精灵宝可梦不可思议的迷宫 空之探险队 围绕时与暗 最后的冒险"
         },
         {
           "bgm_id": 366805,
@@ -1276,6 +1320,11 @@
           "bgm_name_cn": ""
         },
         {
+          "bgm_id": 581698,
+          "bgm_name": "注文の多い料理店 OVA",
+          "bgm_name_cn": ""
+        },
+        {
           "bgm_id": 333853,
           "bgm_name": "異世界食堂2",
           "bgm_name_cn": "异世界食堂 第二季"
@@ -1283,12 +1332,7 @@
         {
           "bgm_id": 114040,
           "bgm_name": "注文の多い料理店",
-          "bgm_name_cn": "要求很多的餐厅"
-        },
-        {
-          "bgm_id": 581698,
-          "bgm_name": "注文の多い料理店",
-          "bgm_name_cn": "要求很多的餐厅"
+          "bgm_name_cn": "要求特别多的餐厅"
         },
         {
           "bgm_id": 252321,

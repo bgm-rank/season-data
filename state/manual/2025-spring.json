@@ -1,34 +1,10 @@
 {
   "season": "2025-spring",
-  "update_time": "2026-02-26T14:51:55+08:00",
+  "update_time": "2026-02-14T11:09:01+08:00",
   "items": [
     {
-      "mal_id": 61303,
-      "status": "unconfirmed",
-      "bgm_id": null,
-      "mal": {
-        "id": 61303,
-        "title": "Jixian Chengshi",
-        "media_type": "movie",
-        "rating": "general",
-        "title_ja": "极限城市"
-      },
-      "candidates": [
-        {
-          "bgm_id": 565271,
-          "bgm_name": "Express Photo",
-          "bgm_name_cn": "极速吗喽"
-        },
-        {
-          "bgm_id": 497110,
-          "bgm_name": "ニンジャバットマン対ヤクザリーグ",
-          "bgm_name_cn": "忍者蝙蝠侠对极道联盟"
-        }
-      ]
-    },
-    {
       "mal_id": 61379,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61379,
@@ -57,8 +33,10 @@
     },
     {
       "mal_id": 61411,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 550423,
+      "bgm_name": "勘違いの放送主〜ラジオマイスター〜",
+      "bgm_name_cn": "",
       "mal": {
         "id": 61411,
         "title": "Kanchigai no Atelier Meister Mini Anime",
@@ -76,7 +54,7 @@
     },
     {
       "mal_id": 61491,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61491,
@@ -95,7 +73,7 @@
     },
     {
       "mal_id": 61667,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61667,
@@ -159,7 +137,7 @@
     },
     {
       "mal_id": 61772,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61772,
@@ -223,7 +201,7 @@
     },
     {
       "mal_id": 61774,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61774,
@@ -287,7 +265,7 @@
     },
     {
       "mal_id": 61876,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61876,
@@ -316,7 +294,7 @@
     },
     {
       "mal_id": 61899,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61899,
@@ -329,7 +307,7 @@
     },
     {
       "mal_id": 62060,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 62060,
@@ -373,7 +351,7 @@
     },
     {
       "mal_id": 62345,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 62345,
@@ -397,7 +375,7 @@
     },
     {
       "mal_id": 62777,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 62777,
@@ -456,6 +434,62 @@
           "bgm_id": 110239,
           "bgm_name": "昭和元禄落語心中 与太郎放浪編",
           "bgm_name_cn": "昭和元禄落语心中 OAD"
+        }
+      ]
+    },
+    {
+      "mal_id": 62494,
+      "status": "human",
+      "bgm_id": 576283,
+      "bgm_name": "おジャ魔女カーニバル‼︎ ゆる旅篇",
+      "bgm_name_cn": "小魔女DoReMi嘉年华!! 悠闲之旅篇",
+      "mal": {
+        "id": 62494,
+        "title": "Ojamajo Carnival!!: Yuru Tabi-hen",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "おジャ魔女カーニバル!!～ゆる旅篇～"
+      },
+      "candidates": [
+        {
+          "bgm_id": 623015,
+          "bgm_name": "ApaMotion えっちなお願いしていいですか？～真面目な私にいっぱいして！～ The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 529240,
+          "bgm_name": "おしりたんてい 第9シリーズ",
+          "bgm_name_cn": "屁屁侦探 第九季"
+        },
+        {
+          "bgm_id": 544082,
+          "bgm_name": "おいでよ魔法少女村（不法占拠）",
+          "bgm_name_cn": "来啊魔法少女村（非法占据）"
+        },
+        {
+          "bgm_id": 566726,
+          "bgm_name": "おねだり生徒 ～教え子たちとのハーレム教育実習～ The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 529199,
+          "bgm_name": "映画おしりたんてい スター・アンド・ムーン",
+          "bgm_name_cn": "电影屁屁侦探 星星与月亮"
+        },
+        {
+          "bgm_id": 533910,
+          "bgm_name": "亜人がお好きなんですね♡",
+          "bgm_name_cn": "您喜欢亚人对吧"
+        },
+        {
+          "bgm_id": 565401,
+          "bgm_name": "映栄杉さん家はお侍",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 561933,
+          "bgm_name": "宝可梦奇遇沙滩节",
+          "bgm_name_cn": ""
         }
       ]
     }

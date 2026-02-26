@@ -1,10 +1,10 @@
 {
   "season": "2025-winter",
-  "update_time": "2026-02-26T14:49:19+08:00",
+  "update_time": "2026-02-14T11:08:02+08:00",
   "items": [
     {
       "mal_id": 34683,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 34683,
@@ -32,76 +32,8 @@
       ]
     },
     {
-      "mal_id": 58888,
-      "status": "unconfirmed",
-      "bgm_id": null,
-      "mal": {
-        "id": 58888,
-        "title": "Yatara Yarashii Fukami-kun",
-        "media_type": "ona",
-        "rating": "r18",
-        "title_ja": "やたらやらしい深見くん"
-      },
-      "candidates": [
-        {
-          "bgm_id": 526368,
-          "bgm_name": "なんでやねん",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 536271,
-          "bgm_name": "カイリューとゆうびんやさん",
-          "bgm_name_cn": "快龙与小邮递员"
-        },
-        {
-          "bgm_id": 504591,
-          "bgm_name": "サラリーマンが異世界に行ったら四天王になった話",
-          "bgm_name_cn": "上班族去了异世界后成了四天王"
-        },
-        {
-          "bgm_id": 497909,
-          "bgm_name": "外れスキル《木の実マスター》 ～スキルの実（食べたら死ぬ）を無限に食べられるようになった件について～",
-          "bgm_name_cn": "最弱技能《果实大师》 ～关于能无限食用技能果实（吃了就会死）这件事～"
-        },
-        {
-          "bgm_id": 531879,
-          "bgm_name": "オトナをナメてる援●●●に強力媚●を盛ったら●●●●●！！ 絶倫巨根セックスに悶絶アクメでイキ狂う ガン突きし放題の中出し専用●み袋に堕とす！ The Motion Anime",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 564694,
-          "bgm_name": "I乳の元アイドルがとっても優しい保健室の先生だったら…",
-          "bgm_name_cn": ""
-        }
-      ]
-    },
-    {
-      "mal_id": 58954,
-      "status": "unconfirmed",
-      "bgm_id": null,
-      "mal": {
-        "id": 58954,
-        "title": "Yaku nara Mug Cup mo Movie",
-        "media_type": "movie",
-        "rating": "general",
-        "title_ja": "やくならマグカップも"
-      },
-      "candidates": [
-        {
-          "bgm_id": 526368,
-          "bgm_name": "なんでやねん",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 536271,
-          "bgm_name": "カイリューとゆうびんやさん",
-          "bgm_name_cn": "快龙与小邮递员"
-        }
-      ]
-    },
-    {
       "mal_id": 60729,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60729,
@@ -145,7 +77,7 @@
     },
     {
       "mal_id": 60735,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60735,
@@ -169,7 +101,7 @@
     },
     {
       "mal_id": 60891,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60891,
@@ -190,11 +122,6 @@
           "bgm_name_cn": "想星的大天使 Myth of Emotions"
         },
         {
-          "bgm_id": 630627,
-          "bgm_name": "快乐小郑星 第二季",
-          "bgm_name_cn": "快乐小郑星 第二部"
-        },
-        {
           "bgm_id": 549995,
           "bgm_name": "The Patrick Star Show Season 4",
           "bgm_name_cn": "派大星秀 第四季"
@@ -203,8 +130,10 @@
     },
     {
       "mal_id": 60931,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 444279,
+      "bgm_name": "神探小五",
+      "bgm_name_cn": "",
       "mal": {
         "id": 60931,
         "title": "Shentan Xiao Wu",
@@ -296,7 +225,7 @@
     },
     {
       "mal_id": 61381,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61381,
@@ -359,27 +288,8 @@
       ]
     },
     {
-      "mal_id": 61431,
-      "status": "unconfirmed",
-      "bgm_id": null,
-      "mal": {
-        "id": 61431,
-        "title": "Shimazu Seisakusho Sougyou 150-shuunen Kinen Animation",
-        "media_type": "ona",
-        "rating": "kids",
-        "title_ja": "島津製作所 創業150周年記念アニメーション"
-      },
-      "candidates": [
-        {
-          "bgm_id": 628198,
-          "bgm_name": "木头岛的故事",
-          "bgm_name_cn": "木头岛的故事"
-        }
-      ]
-    },
-    {
       "mal_id": 62013,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 62013,
@@ -438,60 +348,6 @@
           "bgm_id": 51212,
           "bgm_name": "うぽって!! OAD",
           "bgm_name_cn": "枪械少女 OAD"
-        }
-      ]
-    },
-    {
-      "mal_id": 62494,
-      "status": "unconfirmed",
-      "bgm_id": null,
-      "mal": {
-        "id": 62494,
-        "title": "Ojamajo Carnival!!: Yuru Tabi-hen",
-        "media_type": "ona",
-        "rating": "kids",
-        "title_ja": "おジャ魔女カーニバル!!～ゆる旅篇～"
-      },
-      "candidates": [
-        {
-          "bgm_id": 613378,
-          "bgm_name": "アルプスの老人 ハイジのおじいさん",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 325767,
-          "bgm_name": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
-          "bgm_name_cn": "感谢对战。 ～大小姐才不玩格斗游戏～"
-        },
-        {
-          "bgm_id": 473497,
-          "bgm_name": "悪役令嬢転生おじさん",
-          "bgm_name_cn": "中年上班族转生恶役"
-        },
-        {
-          "bgm_id": 534326,
-          "bgm_name": "悪役令嬢転生おじさんミニ",
-          "bgm_name_cn": "大叔转生恶役大小姐 迷你动画"
-        },
-        {
-          "bgm_id": 535945,
-          "bgm_name": "パパ活あやちゃんと種付けおじさん The Motion Anime",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 512260,
-          "bgm_name": "おにちちハーレム",
-          "bgm_name_cn": "鬼乳后宫"
-        },
-        {
-          "bgm_id": 529199,
-          "bgm_name": "映画おしりたんてい スター・アンド・ムーン",
-          "bgm_name_cn": "电影屁屁侦探 星星与月亮"
-        },
-        {
-          "bgm_id": 533910,
-          "bgm_name": "亜人がお好きなんですね♡",
-          "bgm_name_cn": "您喜欢亚人对吧"
         }
       ]
     }

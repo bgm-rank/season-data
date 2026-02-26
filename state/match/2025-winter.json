@@ -1,6 +1,6 @@
 {
   "season": "2025-winter",
-  "update_time": "2026-02-26T14:49:19+08:00",
+  "update_time": "2026-02-14T11:07:07+08:00",
   "items": [
     {
       "mal_id": 51119,
@@ -145,14 +145,14 @@
           "bgm_name_cn": "虽然我是注定没落的贵族，闲来无事只好来深究魔法"
         },
         {
+          "bgm_id": 377130,
+          "bgm_name": "とんがり帽子のアトリエ",
+          "bgm_name_cn": "尖帽子的魔法工房"
+        },
+        {
           "bgm_id": 558424,
           "bgm_name": "Pohádky po babicce",
           "bgm_name_cn": "奶奶身后事"
-        },
-        {
-          "bgm_id": 474999,
-          "bgm_name": "魔神創造伝ワタル",
-          "bgm_name_cn": "魔神创造传"
         }
       ]
     },
@@ -403,14 +403,14 @@
           "bgm_name_cn": "虽然我是注定没落的贵族，闲来无事只好来深究魔法"
         },
         {
+          "bgm_id": 377130,
+          "bgm_name": "とんがり帽子のアトリエ",
+          "bgm_name_cn": "尖帽子的魔法工房"
+        },
+        {
           "bgm_id": 558424,
           "bgm_name": "Pohádky po babicce",
           "bgm_name_cn": "奶奶身后事"
-        },
-        {
-          "bgm_id": 474999,
-          "bgm_name": "魔神創造伝ワタル",
-          "bgm_name_cn": "魔神创造传"
         }
       ]
     },
@@ -2442,11 +2442,6 @@
           "bgm_name_cn": "电影屁屁侦探 星星与月亮"
         },
         {
-          "bgm_id": 630131,
-          "bgm_name": "アイドルマスター ミリオンライブ！総集編",
-          "bgm_name_cn": "偶像大师 百万现场！总集篇"
-        },
-        {
           "bgm_id": 526104,
           "bgm_name": "キミとアイドルプリキュア♪",
           "bgm_name_cn": "Idol光之美少女你与我♪"
@@ -2747,11 +2742,6 @@
           "bgm_id": 536097,
           "bgm_name": "圆梦星球",
           "bgm_name_cn": "圆梦星球"
-        },
-        {
-          "bgm_id": 630627,
-          "bgm_name": "快乐小郑星 第二季",
-          "bgm_name_cn": "快乐小郑星 第二部"
         },
         {
           "bgm_id": 611704,
@@ -3275,11 +3265,6 @@
           "bgm_name_cn": "想星的大天使 Myth of Emotions"
         },
         {
-          "bgm_id": 630627,
-          "bgm_name": "快乐小郑星 第二季",
-          "bgm_name_cn": "快乐小郑星 第二部"
-        },
-        {
           "bgm_id": 549995,
           "bgm_name": "The Patrick Star Show Season 4",
           "bgm_name_cn": "派大星秀 第四季"
@@ -3776,6 +3761,72 @@
           "bgm_id": 511126,
           "bgm_name": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。",
           "bgm_name_cn": "脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。"
+        }
+      ]
+    },
+    {
+      "mal_id": 61431,
+      "status": "match",
+      "bgm_id": 549288,
+      "bgm_name": "島津製作所 創業150周年記念アニメーション",
+      "bgm_name_cn": "岛津制作所 创业150周年纪念动画",
+      "mal": {
+        "id": 61431,
+        "title": "Shimazu Seisakusho Sougyou 150-shuunen Kinen Animation",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "島津製作所 創業150周年記念アニメーション"
+      },
+      "candidates": [
+        {
+          "bgm_id": 549288,
+          "bgm_name": "島津製作所 創業150周年記念アニメーション",
+          "bgm_name_cn": "岛津制作所 创业150周年纪念动画"
+        },
+        {
+          "bgm_id": 209663,
+          "bgm_name": "島耕作のアジア立志伝",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 4406,
+          "bgm_name": "ロードス島戦記",
+          "bgm_name_cn": "罗德斯岛战记"
+        },
+        {
+          "bgm_id": 13971,
+          "bgm_name": "ロードス島戦記-英雄騎士伝-",
+          "bgm_name_cn": "罗德斯岛战记-英雄骑士传-"
+        },
+        {
+          "bgm_id": 38941,
+          "bgm_name": "宝島",
+          "bgm_name_cn": "金银岛"
+        },
+        {
+          "bgm_id": 113635,
+          "bgm_name": "浦島太郎",
+          "bgm_name_cn": "浦岛太郎"
+        },
+        {
+          "bgm_id": 120902,
+          "bgm_name": "受胎島",
+          "bgm_name_cn": "受胎岛"
+        },
+        {
+          "bgm_id": 158426,
+          "bgm_name": "悪魔島のプリンス 三つ目がとおる",
+          "bgm_name_cn": "恶魔岛的王子 三眼神童"
+        },
+        {
+          "bgm_id": 194952,
+          "bgm_name": "彼岸島X",
+          "bgm_name_cn": "彼岸岛X"
+        },
+        {
+          "bgm_id": 258918,
+          "bgm_name": "浦島太郎",
+          "bgm_name_cn": "浦岛太郎"
         }
       ]
     },
