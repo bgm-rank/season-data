@@ -4,7 +4,6 @@ import json
 import re
 import unicodedata
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -123,12 +122,6 @@ def alternative_keywords(title: str) -> list[str]:
             break
 
     return results
-
-
-def _now_iso() -> str:
-    """返回当前时间的 ISO 8601 格式（带时区）。"""
-    tz = timezone(timedelta(hours=8))
-    return datetime.now(tz).isoformat(timespec="seconds")
 
 
 # manual 目录的状态别名：手动编辑时简写 → human_skip
@@ -465,7 +458,6 @@ class SeasonProcessor:
 
         release = ReleaseData(
             season=season_key,
-            update_time=_now_iso(),
             items=release_items,
         )
 
@@ -568,7 +560,6 @@ class SeasonProcessor:
     def _save_states(self, year: int, season: str, items: list[StateItem]) -> None:
         """按状态分组保存到 4 个目录。"""
         season_key = f"{year}-{season}"
-        update_time = _now_iso()
 
         # 按 category 分组
         groups: dict[str, list[StateItem]] = {cat: [] for cat in _STATE_CATEGORIES}
@@ -579,7 +570,6 @@ class SeasonProcessor:
         for category, group_items in groups.items():
             state = StateData(
                 season=season_key,
-                update_time=update_time,
                 items=group_items,
             )
             path = ROOT_DIR / "state" / category / f"{year}-{season}.json"
@@ -598,7 +588,6 @@ class SeasonProcessor:
         season_key = f"{year}-{season}"
         state = StateData(
             season=season_key,
-            update_time=_now_iso(),
             items=items,
         )
         path = ROOT_DIR / "state" / category / f"{year}-{season}.json"

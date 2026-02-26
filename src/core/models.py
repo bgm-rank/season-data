@@ -200,7 +200,6 @@ class StateData:
     """状态文件顶层结构。"""
 
     season: str
-    update_time: str
     items: list[StateItem]
 
     def confirmed_mal_ids(self) -> set[int]:
@@ -210,14 +209,12 @@ class StateData:
     def from_dict(data: dict[str, Any]) -> StateData:
         return StateData(
             season=data["season"],
-            update_time=data["update_time"],
             items=[StateItem.from_dict(i) for i in data.get("items", [])],
         )
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "season": self.season,
-            "update_time": self.update_time,
             "items": [i.to_dict() for i in self.items],
         }
 
@@ -246,12 +243,10 @@ class ReleaseData:
     """发布文件顶层结构。"""
 
     season: str
-    update_time: str
     items: list[ReleaseItem]
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "season": self.season,
-            "update_time": self.update_time,
             "items": [i.to_dict() for i in self.items],
         }

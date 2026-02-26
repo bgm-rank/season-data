@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import time
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -126,10 +125,8 @@ class MalClient:
 
 def _save(year: int, season: str, items: list[dict[str, Any]]) -> Path:
     """将获取到的新番数据保存到 data/mal/{year}-{season}.json。"""
-    tz = timezone(timedelta(hours=8))
     output = {
         "season": f"{year}-{season}",
-        "update_time": datetime.now(tz).isoformat(timespec="seconds"),
         "items": sorted(items, key=lambda x: x["id"]),
     }
 
