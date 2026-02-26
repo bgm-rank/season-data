@@ -228,6 +228,52 @@ class SeasonProcessor:
             if old_item and old_item.status.is_confirmed():
                 if old_item.mal is None:
                     old_item.mal = MalInfo.from_raw(raw)
+                # human 状态：bgm_name 始终从 bgm_id 重新拉取，确保二次修正 bgm_id 后名称同步
+                if old_item.status == ConfirmStatus.HUMAN and old_item.bgm_id is not None:
+                    try:
+                        subject = self.bgmtv.get_subject(old_item.bgm_id)
+                        old_item.bgm_name = subject.name
+                        old_item.bgm_name_cn = subject.name_cn
+                        logger.debug(
+                            "[human] mal:{} bgm:{} 名称已同步: {}",
+                            mal_id,
+                            subject.id,
+                            subject.name,
+                        )
+                    except Exception as e:
+                        logger.error(
+                            "[human] mal:{} bgm:{} 获取失败: {}",
+                            mal_id,
+                            old_item.bgm_id,
+                            e,
+                        )
+                state_items.append(old_item)
+                stats[old_item.status.value] = stats.get(old_item.status.value, 0) + 1
+                continue
+
+            # 未确认但已手填 bgm_id → 自动补全名称并升级为 human
+            if old_item and old_item.bgm_id is not None:
+                if old_item.mal is None:
+                    old_item.mal = MalInfo.from_raw(raw)
+                if old_item.bgm_name is None:
+                    try:
+                        subject = self.bgmtv.get_subject(old_item.bgm_id)
+                        old_item.bgm_name = subject.name
+                        old_item.bgm_name_cn = subject.name_cn
+                        logger.info(
+                            "[auto-complete] mal:{} -> bgm:{} {}",
+                            mal_id,
+                            subject.id,
+                            subject.name,
+                        )
+                    except Exception as e:
+                        logger.error(
+                            "[auto-complete] mal:{} bgm:{} 获取失败: {}",
+                            mal_id,
+                            old_item.bgm_id,
+                            e,
+                        )
+                old_item.status = ConfirmStatus.HUMAN
                 state_items.append(old_item)
                 stats[old_item.status.value] = stats.get(old_item.status.value, 0) + 1
                 continue
