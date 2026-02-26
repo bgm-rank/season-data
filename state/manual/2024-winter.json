@@ -1,10 +1,9 @@
 {
   "season": "2024-winter",
-  "update_time": "2026-02-26T14:37:40+08:00",
   "items": [
     {
       "mal_id": 57593,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 57593,
@@ -68,7 +67,7 @@
     },
     {
       "mal_id": 57782,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 57782,
@@ -87,7 +86,7 @@
     },
     {
       "mal_id": 57881,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 57881,
@@ -141,7 +140,7 @@
     },
     {
       "mal_id": 58062,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58062,
@@ -175,7 +174,7 @@
     },
     {
       "mal_id": 58477,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58477,
@@ -209,8 +208,10 @@
     },
     {
       "mal_id": 58535,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 486238,
+      "bgm_name": "おジャ魔女どれみ新作映像",
+      "bgm_name_cn": "小魔女DoReMi新作映像",
       "mal": {
         "id": 58535,
         "title": "Ojamajo Carnival!!",
@@ -273,7 +274,7 @@
     },
     {
       "mal_id": 58649,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58649,
@@ -337,7 +338,7 @@
     },
     {
       "mal_id": 58800,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58800,
@@ -361,7 +362,7 @@
     },
     {
       "mal_id": 59149,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59149,
@@ -400,7 +401,7 @@
     },
     {
       "mal_id": 59640,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59640,
@@ -444,7 +445,7 @@
     },
     {
       "mal_id": 59859,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59859,
@@ -463,7 +464,7 @@
     },
     {
       "mal_id": 60770,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60770,
@@ -517,7 +518,7 @@
     },
     {
       "mal_id": 60805,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60805,
@@ -536,7 +537,7 @@
     },
     {
       "mal_id": 60927,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60927,
@@ -600,7 +601,7 @@
     },
     {
       "mal_id": 62266,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 62266,

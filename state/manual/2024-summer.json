@@ -1,10 +1,9 @@
 {
   "season": "2024-summer",
-  "update_time": "2026-02-26T14:43:20+08:00",
   "items": [
     {
       "mal_id": 52080,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 52080,
@@ -23,7 +22,7 @@
     },
     {
       "mal_id": 59379,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59379,
@@ -42,7 +41,7 @@
     },
     {
       "mal_id": 59612,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59612,
@@ -61,7 +60,7 @@
     },
     {
       "mal_id": 59616,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59616,
@@ -74,7 +73,7 @@
     },
     {
       "mal_id": 59649,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59649,
@@ -108,7 +107,7 @@
     },
     {
       "mal_id": 59714,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59714,
@@ -172,7 +171,7 @@
     },
     {
       "mal_id": 59718,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59718,
@@ -191,7 +190,7 @@
     },
     {
       "mal_id": 59754,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59754,
@@ -204,8 +203,10 @@
     },
     {
       "mal_id": 59790,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 512169,
+      "bgm_name": "超ショートアニメ",
+      "bgm_name_cn": "",
       "mal": {
         "id": 59790,
         "title": "Osomatsu-san Shinsaku Short Anime",
@@ -253,7 +254,7 @@
     },
     {
       "mal_id": 59876,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59876,
@@ -272,7 +273,7 @@
     },
     {
       "mal_id": 59968,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59968,
@@ -311,7 +312,7 @@
     },
     {
       "mal_id": 60102,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60102,
@@ -375,7 +376,7 @@
     },
     {
       "mal_id": 60363,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60363,
@@ -404,7 +405,7 @@
     },
     {
       "mal_id": 60465,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60465,
@@ -468,7 +469,7 @@
     },
     {
       "mal_id": 61221,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61221,
