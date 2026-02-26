@@ -1,0 +1,990 @@
+{
+  "season": "2010-spring",
+  "update_time": "2026-02-26T11:21:17+08:00",
+  "items": [
+    {
+      "bgm_id": 1851,
+      "bgm_name": "Angel Beats!",
+      "bgm_name_cn": "天使的心跳！",
+      "mal": {
+        "id": 6547,
+        "title": "Angel Beats!",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "Angel Beats!（エンジェルビーツ!）"
+      }
+    },
+    {
+      "bgm_id": 2462,
+      "bgm_name": "ONE PIECE FILM STRONG WORLD",
+      "bgm_name_cn": "航海王：强者天下",
+      "mal": {
+        "id": 8740,
+        "title": "One Piece Film: Strong World Episode 0",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "ワンピース　フィルム　ストロングワールド　エピソードゼロ"
+      }
+    },
+    {
+      "bgm_id": 2464,
+      "bgm_name": "荒川アンダー ザ ブリッジ",
+      "bgm_name_cn": "荒川爆笑团",
+      "mal": {
+        "id": 7647,
+        "title": "Arakawa Under the Bridge",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "荒川アンダー ザ ブリッジ"
+      }
+    },
+    {
+      "bgm_id": 3183,
+      "bgm_name": "劇場版“文学少女”",
+      "bgm_name_cn": "文学少女 剧场版",
+      "mal": {
+        "id": 6408,
+        "title": "\"Bungaku Shoujo\" Movie",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "劇場版“文学少女”"
+      }
+    },
+    {
+      "bgm_id": 3628,
+      "bgm_name": "名探偵コナン 天空の難破船",
+      "bgm_name_cn": "名侦探柯南 天空的遇难船",
+      "mal": {
+        "id": 6467,
+        "title": "Meitantei Conan Movie 14: Tenkuu no Lost Ship",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "名探偵コナン 天空の難破船"
+      }
+    },
+    {
+      "bgm_id": 3774,
+      "bgm_name": "けいおん！！",
+      "bgm_name_cn": "轻音少女 第二季",
+      "mal": {
+        "id": 7791,
+        "title": "K-On!!",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "けいおん!!"
+      }
+    },
+    {
+      "bgm_id": 4019,
+      "bgm_name": "四畳半神話大系",
+      "bgm_name_cn": "四叠半神话大系",
+      "mal": {
+        "id": 7785,
+        "title": "Yojouhan Shinwa Taikei",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "四畳半神話大系"
+      }
+    },
+    {
+      "bgm_id": 4020,
+      "bgm_name": "GIANT KILLING",
+      "bgm_name_cn": "逆转监督",
+      "mal": {
+        "id": 7661,
+        "title": "Giant Killing",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ジャイアントキリング"
+      }
+    },
+    {
+      "bgm_id": 4077,
+      "bgm_name": "おおきく振りかぶって～夏の大会編～",
+      "bgm_name_cn": "王牌投手 振臂高挥～夏日大会篇～",
+      "mal": {
+        "id": 7720,
+        "title": "Ookiku Furikabutte: Natsu no Taikai-hen",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "おおきく振りかぶって　〜夏の大会編〜"
+      }
+    },
+    {
+      "bgm_id": 4079,
+      "bgm_name": "裏切りは僕の名前を知っている",
+      "bgm_name_cn": "无法逃离的背叛",
+      "mal": {
+        "id": 7058,
+        "title": "Uragiri wa Boku no Namae wo Shitteiru",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "裏切りは僕の名前を知っている"
+      }
+    },
+    {
+      "bgm_id": 4255,
+      "bgm_name": "WORKING!!",
+      "bgm_name_cn": "迷糊餐厅",
+      "mal": {
+        "id": 6956,
+        "title": "Working!!",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "WORKING [ワーキング]!!"
+      }
+    },
+    {
+      "bgm_id": 4281,
+      "bgm_name": "一騎当千 XTREME XECUTOR",
+      "bgm_name_cn": "一骑当千 XTREME XECUTOR",
+      "mal": {
+        "id": 7580,
+        "title": "Ikkitousen: Xtreme Xecutor",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "一騎当千 Xtreme Xecutor"
+      }
+    },
+    {
+      "bgm_id": 4283,
+      "bgm_name": "RAINBOW 二舎六房の七人",
+      "bgm_name_cn": "RAINBOW 少年犯之七人",
+      "mal": {
+        "id": 6114,
+        "title": "Rainbow: Nisha Rokubou no Shichinin",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "RAINBOW 二舎六房の七人"
+      }
+    },
+    {
+      "bgm_id": 4284,
+      "bgm_name": "kiss×sis",
+      "bgm_name_cn": "亲吻姐姐",
+      "mal": {
+        "id": 7593,
+        "title": "Kiss x Sis (TV)",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "キスシス"
+      }
+    },
+    {
+      "bgm_id": 4285,
+      "bgm_name": "閃光のナイトレイド",
+      "bgm_name_cn": "闪光的夜袭",
+      "mal": {
+        "id": 6973,
+        "title": "Senkou no Night Raid",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "閃光のナイトレイド"
+      }
+    },
+    {
+      "bgm_id": 4290,
+      "bgm_name": "B型H系",
+      "bgm_name_cn": "B型H系",
+      "mal": {
+        "id": 7817,
+        "title": "B-gata H-kei",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "B型H系"
+      }
+    },
+    {
+      "bgm_id": 4291,
+      "bgm_name": "いちばんうしろの大魔王",
+      "bgm_name_cn": "最后大魔王",
+      "mal": {
+        "id": 7088,
+        "title": "Ichiban Ushiro no Daimaou",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "いちばんうしろの大魔王"
+      }
+    },
+    {
+      "bgm_id": 4292,
+      "bgm_name": "迷い猫オーバーラン！",
+      "bgm_name_cn": "迷途猫OVER RUN",
+      "mal": {
+        "id": 7590,
+        "title": "Mayoi Neko Overrun!",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "迷い猫オーバーラン!"
+      }
+    },
+    {
+      "bgm_id": 4293,
+      "bgm_name": "メジャー 第6シリーズ",
+      "bgm_name_cn": "棒球大联盟 第六季",
+      "mal": {
+        "id": 7655,
+        "title": "Major S6",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "メジャー 第6シリーズ"
+      }
+    },
+    {
+      "bgm_id": 4294,
+      "bgm_name": "SDガンダム三国伝 Brave Battle Warriors",
+      "bgm_name_cn": "SD高达三国传",
+      "mal": {
+        "id": 8287,
+        "title": "SD Gundam Sangokuden Brave Battle Warriors",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "SDガンダム三国伝 Brave Battle Warriors"
+      }
+    },
+    {
+      "bgm_id": 4312,
+      "bgm_name": "HEROMAN",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 4334,
+        "title": "Heroman",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ヒーローマン"
+      }
+    },
+    {
+      "bgm_id": 4313,
+      "bgm_name": "会長はメイド様!",
+      "bgm_name_cn": "会长是女仆大人！",
+      "mal": {
+        "id": 7054,
+        "title": "Kaichou wa Maid-sama!",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "会長はメイド様!"
+      }
+    },
+    {
+      "bgm_id": 4314,
+      "bgm_name": "リングにかけろ1 影道編",
+      "bgm_name_cn": "拳王创世纪1 影道篇",
+      "mal": {
+        "id": 7793,
+        "title": "Ring ni Kakero 1: Shadow-hen",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "リングにかけろ1 影道編"
+      }
+    },
+    {
+      "bgm_id": 4315,
+      "bgm_name": "薄桜鬼",
+      "bgm_name_cn": "薄樱鬼",
+      "mal": {
+        "id": 6895,
+        "title": "Hakuouki",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "薄桜鬼"
+      }
+    },
+    {
+      "bgm_id": 4328,
+      "bgm_name": "さらい屋 五葉",
+      "bgm_name_cn": "江户盗贼团五叶",
+      "mal": {
+        "id": 7588,
+        "title": "Saraiya Goyou",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "さらい屋 五葉"
+      }
+    },
+    {
+      "bgm_id": 4473,
+      "bgm_name": "GA 芸術科アートデザインクラス OVA",
+      "bgm_name_cn": "GA 艺术科美术设计班 OVA",
+      "mal": {
+        "id": 6959,
+        "title": "GA: Geijutsuka Art Design Class - Aozora ga Kakitai",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "GA 芸術科アートデザインクラス 青空が描きたい"
+      }
+    },
+    {
+      "bgm_id": 4475,
+      "bgm_name": "劇場版 銀魂 新訳紅桜篇",
+      "bgm_name_cn": "银魂剧场版 新译红樱篇",
+      "mal": {
+        "id": 7472,
+        "title": "Gintama Movie 1: Shinyaku Benizakura-hen",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "劇場版 銀魂 新訳紅桜篇"
+      }
+    },
+    {
+      "bgm_id": 4530,
+      "bgm_name": "ひめチェン! おとぎちっくアイドル リルぷりっ",
+      "bgm_name_cn": "变身！偶像公主",
+      "mal": {
+        "id": 8206,
+        "title": "Hime Chen! Otogi Chikku Idol Lilpri",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ひめチェン! おとぎちっくアイドル リルぷりっ"
+      }
+    },
+    {
+      "bgm_id": 4541,
+      "bgm_name": "ジュエルペット てぃんくる☆",
+      "bgm_name_cn": "宝石宠物 Tinkle☆",
+      "mal": {
+        "id": 8217,
+        "title": "Jewelpet Twinkle☆",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ジュエルペット てぃんくる☆"
+      }
+    },
+    {
+      "bgm_id": 4557,
+      "bgm_name": "マリー＆ガリー ver.2.0",
+      "bgm_name_cn": "玛丽与伽利 ver 2.0",
+      "mal": {
+        "id": 8409,
+        "title": "Marie & Gali ver. 2.0",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "マリー＆ガリー ver.2.0"
+      }
+    },
+    {
+      "bgm_id": 4614,
+      "bgm_name": "我叫MT 第三季",
+      "bgm_name_cn": "我叫MT 第三季",
+      "mal": {
+        "id": 44521,
+        "title": "Wo Jiao MT 3rd Season",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "我叫MT第三季"
+      }
+    },
+    {
+      "bgm_id": 4859,
+      "bgm_name": "×××HOLiC・籠",
+      "bgm_name_cn": "×××HOLiC 笼",
+      "mal": {
+        "id": 6864,
+        "title": "xxxHOLiC Rou",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "xxxHOLiC 籠"
+      }
+    },
+    {
+      "bgm_id": 5498,
+      "bgm_name": "ブレイク ブレイド 第一章 覚醒ノ刻",
+      "bgm_name_cn": "破刃之剑 第一章 觉醒之刻",
+      "mal": {
+        "id": 6772,
+        "title": "Break Blade Movie 1: Kakusei no Toki",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "ブレイク ブレイド 覚醒ノ刻"
+      }
+    },
+    {
+      "bgm_id": 5499,
+      "bgm_name": "ブレイク ブレイド 第二章 訣別ノ路",
+      "bgm_name_cn": "破刃之剑 第二章 诀别之路",
+      "mal": {
+        "id": 8514,
+        "title": "Break Blade Movie 2: Ketsubetsu no Michi",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "ブレイクブレイド 訣別ノ路"
+      }
+    },
+    {
+      "bgm_id": 5832,
+      "bgm_name": "銀幕ヘタリア Axis Powers Paint it, White（白くぬれ!）",
+      "bgm_name_cn": "黑塔利亚剧场版",
+      "mal": {
+        "id": 7337,
+        "title": "Hetalia Axis Powers Movie: Paint it, White",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "銀幕ヘタリア Axis Powers Paint it, White (白くぬれ！)"
+      }
+    },
+    {
+      "bgm_id": 5875,
+      "bgm_name": "超蛙战士之初露锋芒",
+      "bgm_name_cn": "超蛙战士之初露锋芒",
+      "mal": {
+        "id": 35691,
+        "title": "Chao Wa Zhanshi",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "超蛙战士"
+      }
+    },
+    {
+      "bgm_id": 6591,
+      "bgm_name": "恋する暴君",
+      "bgm_name_cn": "恋爱暴君",
+      "mal": {
+        "id": 8634,
+        "title": "Koisuru Boukun",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "恋する暴君"
+      }
+    },
+    {
+      "bgm_id": 6812,
+      "bgm_name": "“文学少女”メモワールI-夢見る少女の前奏曲（プレリュード）-",
+      "bgm_name_cn": "文学少女 做梦少女的前奏曲",
+      "mal": {
+        "id": 8481,
+        "title": "\"Bungaku Shoujo\" Memoire",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "“文学少女”メモワール"
+      }
+    },
+    {
+      "bgm_id": 7383,
+      "bgm_name": "絶対可憐チルドレン～愛多憎生！奪われた未来？～",
+      "bgm_name_cn": "绝对可怜children OVA",
+      "mal": {
+        "id": 9127,
+        "title": "Zettai Karen Children: Gentei Kaikin!! OVA Chou Sakidori Special!!",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "絶対可憐チルドレン 限定解禁!! OVA超先取りスペシャル!!"
+      }
+    },
+    {
+      "bgm_id": 8372,
+      "bgm_name": "チーズスイートホーム OAD",
+      "bgm_name_cn": "甜甜私房猫 OAD",
+      "mal": {
+        "id": 7972,
+        "title": "Chi's Sweet Home: Chi to Kocchi, Deau.",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "チーズスイートホーム チーとコッチ, 出会う."
+      }
+    },
+    {
+      "bgm_id": 8465,
+      "bgm_name": "プランゼット",
+      "bgm_name_cn": "Z计划",
+      "mal": {
+        "id": 8297,
+        "title": "Planzet",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "プランゼット"
+      }
+    },
+    {
+      "bgm_id": 8637,
+      "bgm_name": "今日、恋をはじめます",
+      "bgm_name_cn": "今天开始恋爱吧",
+      "mal": {
+        "id": 8560,
+        "title": "Kyou, Koi wo Hajimemasu",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "今日、恋をはじめます"
+      }
+    },
+    {
+      "bgm_id": 8999,
+      "bgm_name": "クレヨンしんちゃん 超時空!嵐を呼ぶオラの花嫁",
+      "bgm_name_cn": "蜡笔小新：我的超时空新娘",
+      "mal": {
+        "id": 8369,
+        "title": "Crayon Shin-chan Movie 18: Chou Jikuu! Arashi wo Yobu Ora no Hanayome",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "クレヨンしんちゃん 超時空！嵐を呼ぶオラの花嫁"
+      }
+    },
+    {
+      "bgm_id": 9432,
+      "bgm_name": "ヒピラくん",
+      "bgm_name_cn": "嘻皮拉君",
+      "mal": {
+        "id": 22983,
+        "title": "Hipira-kun ONA",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "ヒピラくん"
+      }
+    },
+    {
+      "bgm_id": 10782,
+      "bgm_name": "TRIGUN Badlands Rumble",
+      "bgm_name_cn": "枪神 Badlands Rumble",
+      "mal": {
+        "id": 4106,
+        "title": "Trigun: Badlands Rumble",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "トライガン"
+      }
+    },
+    {
+      "bgm_id": 19017,
+      "bgm_name": "黑猫警长",
+      "bgm_name_cn": "黑猫警长",
+      "mal": {
+        "id": 42329,
+        "title": "Hei Mao Jing Zhang (2010)",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "黑猫警长"
+      }
+    },
+    {
+      "bgm_id": 19708,
+      "bgm_name": "YEBISUセレブリティーズ",
+      "bgm_name_cn": "情定惠比壽",
+      "mal": {
+        "id": 9232,
+        "title": "Yebisu Celebrities 1st",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "YEBISUセレブリティーズ1st"
+      }
+    },
+    {
+      "bgm_id": 24354,
+      "bgm_name": "최강합체 믹스마스터",
+      "bgm_name_cn": "磁星骑士",
+      "mal": {
+        "id": 31246,
+        "title": "Choegang Habche: Mix Master",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "최강 합체 믹스마스터"
+      }
+    },
+    {
+      "bgm_id": 26404,
+      "bgm_name": "プリンセスナイト☆カチュア",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 8987,
+        "title": "Princess Knight☆Catue",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "プリンセスナイト☆カチュア"
+      }
+    },
+    {
+      "bgm_id": 28961,
+      "bgm_name": "メタルファイト ベイブレード 爆",
+      "bgm_name_cn": "战斗陀螺 金属对决 爆",
+      "mal": {
+        "id": 8410,
+        "title": "Metal Fight Beyblade: Baku",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "メタルファイト ベイブレード～爆～"
+      }
+    },
+    {
+      "bgm_id": 34136,
+      "bgm_name": "小胖妞",
+      "bgm_name_cn": "小胖妞",
+      "mal": {
+        "id": 44542,
+        "title": "Xiao Pang Niu",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "小胖妞"
+      }
+    },
+    {
+      "bgm_id": 35937,
+      "bgm_name": "あい☆きゃん",
+      "bgm_name_cn": "我☆能行",
+      "mal": {
+        "id": 8654,
+        "title": "I☆Can",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "あい☆きゃん"
+      }
+    },
+    {
+      "bgm_id": 38118,
+      "bgm_name": "名探偵コナン KID in TRAP ISLAND",
+      "bgm_name_cn": "名侦探柯南 怪盗基德孤岛决战",
+      "mal": {
+        "id": 8609,
+        "title": "Meitantei Conan OVA 10: Kid in Trap Island",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "名探偵コナン ～KID in TRAP ISLAND～"
+      }
+    },
+    {
+      "bgm_id": 38127,
+      "bgm_name": "名探偵コナン MAGIC FILE4 大阪お好み焼きオデッセイ",
+      "bgm_name_cn": "名侦探柯南 MAGIC FILE 4 ～通往大阪什锦煎饼的艰辛之路～",
+      "mal": {
+        "id": 8331,
+        "title": "Meitantei Conan Magic File 4: Osaka Okonomiyaki Odyssey",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "名探偵コナンMAGIC FILE 4 ～大阪お好み焼きオデッセイ～"
+      }
+    },
+    {
+      "bgm_id": 45919,
+      "bgm_name": "魔法少女イスカ",
+      "bgm_name_cn": "魔法少女伊斯卡",
+      "mal": {
+        "id": 8653,
+        "title": "Mahou Shoujo Isuka",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "魔法少女イスカ"
+      }
+    },
+    {
+      "bgm_id": 49817,
+      "bgm_name": "お嬢様はHがお好き～THE ANIMATION～",
+      "bgm_name_cn": "大小姐喜欢H",
+      "mal": {
+        "id": 8291,
+        "title": "Ojousama wa H ga Osuki: The Animation",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "お嬢様はHがお好き～THE ANIMATION～"
+      }
+    },
+    {
+      "bgm_id": 50160,
+      "bgm_name": "ふくびき! トライアングル～美晴アフター～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 8110,
+        "title": "Fukubiki! Triangle: Miharu After",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "ふくびき！トライアングル～美晴アフター～"
+      }
+    },
+    {
+      "bgm_id": 62481,
+      "bgm_name": "Last Waltz～白濁まみれの夏合宿～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 8111,
+        "title": "Last Waltz: Hakudaku Mamire no Natsu Gasshuku",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "Last Waltz～白濁まみれの夏合宿～"
+      }
+    },
+    {
+      "bgm_id": 62482,
+      "bgm_name": "RIN×SEN～白濁女教師と野郎ども～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 7969,
+        "title": "Rin x Sen: Hakudaku Onna Kyoushi to Yaroudomo",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "RIN×SEN～白濁女教師と野郎ども～"
+      }
+    },
+    {
+      "bgm_id": 70294,
+      "bgm_name": "レイZERO",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 9006,
+        "title": "Rei Zero",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "レイZERO"
+      }
+    },
+    {
+      "bgm_id": 70305,
+      "bgm_name": "Newmanoid CAM～キャム＝キャスティン～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 8651,
+        "title": "Newmanoid Cam: Cam Castin",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "Newmanoid CAM ～キャム＝キャスティン～"
+      }
+    },
+    {
+      "bgm_id": 70306,
+      "bgm_name": "学園催眠隷奴",
+      "bgm_name_cn": "学园催眠奴隶",
+      "mal": {
+        "id": 8293,
+        "title": "Gakuen Saimin Reido",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "学園催眠隷奴"
+      }
+    },
+    {
+      "bgm_id": 72906,
+      "bgm_name": "スーパーストリートファイターIV OVA",
+      "bgm_name_cn": "超级街头霸王4 OVA",
+      "mal": {
+        "id": 8026,
+        "title": "Super Street Fighter IV",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "スーパーストリートファイターIV"
+      }
+    },
+    {
+      "bgm_id": 73820,
+      "bgm_name": "刺痛我",
+      "bgm_name_cn": "刺痛我",
+      "mal": {
+        "id": 38729,
+        "title": "Piercing I",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "刺痛我"
+      }
+    },
+    {
+      "bgm_id": 75177,
+      "bgm_name": "聖徒会長ヒカル",
+      "bgm_name_cn": "圣徒会长光",
+      "mal": {
+        "id": 8292,
+        "title": "Seitokaichou Hikaru",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "聖徒会長ヒカル"
+      }
+    },
+    {
+      "bgm_id": 81854,
+      "bgm_name": "淫夢学園",
+      "bgm_name_cn": "淫梦学园",
+      "mal": {
+        "id": 8290,
+        "title": "Inmu Gakuen: Inmu ni Torawareta Bijin Shimai",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "淫夢学園 「淫夢に囚われた美人姉妹」"
+      }
+    },
+    {
+      "bgm_id": 92414,
+      "bgm_name": "ケツ犬",
+      "bgm_name_cn": "臀犬",
+      "mal": {
+        "id": 8353,
+        "title": "Ketsuinu",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ケツ犬"
+      }
+    },
+    {
+      "bgm_id": 103845,
+      "bgm_name": "アルバイトしよっ!!",
+      "bgm_name_cn": "来打工吧!!",
+      "mal": {
+        "id": 8652,
+        "title": "Arbeit Shiyo!!",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "アルバイトしよっ!!"
+      }
+    },
+    {
+      "bgm_id": 112248,
+      "bgm_name": "グリード",
+      "bgm_name_cn": "GREED",
+      "mal": {
+        "id": 52858,
+        "title": "Greedy Steady",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "Greedy Steady"
+      }
+    },
+    {
+      "bgm_id": 112509,
+      "bgm_name": "ロボと少女（仮）",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 11661,
+        "title": "Robo to Shoujo (Kari)",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "ロボと少女（仮）"
+      }
+    },
+    {
+      "bgm_id": 118335,
+      "bgm_name": "進撃の巨人 Season 2",
+      "bgm_name_cn": "进击的巨人 第二季",
+      "mal": {
+        "id": 8957,
+        "title": "Susume! Gachimuchi Sankyoudai",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "進め！ガチムチ３兄弟"
+      }
+    },
+    {
+      "bgm_id": 130100,
+      "bgm_name": "大奇和童话镇",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 46258,
+        "title": "Daqi He Tonghua Zhen",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "大奇和童话镇"
+      }
+    },
+    {
+      "bgm_id": 184732,
+      "bgm_name": "ジュノー",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 9525,
+        "title": "Junod",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "ジュノー"
+      }
+    },
+    {
+      "bgm_id": 204862,
+      "bgm_name": "はなかっぱ",
+      "bgm_name_cn": "花样河童",
+      "mal": {
+        "id": 8336,
+        "title": "Hanakappa",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "はなかっぱ"
+      }
+    },
+    {
+      "bgm_id": 205216,
+      "bgm_name": "변신자동차 또봇",
+      "bgm_name_cn": "托宝兄弟",
+      "mal": {
+        "id": 48217,
+        "title": "Byeonsinjadongcha Tobot",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "변신자동차 또봇"
+      }
+    },
+    {
+      "bgm_id": 211560,
+      "bgm_name": "極上!!めちゃモテ委員長 セカンドコレクション",
+      "bgm_name_cn": "极上！！超人气委员长 第二季",
+      "mal": {
+        "id": 8538,
+        "title": "Gokujou!! Mecha Mote Iinchou Second Collection",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "極上!!めちゃモテ委員長 セカンドコレクション"
+      }
+    },
+    {
+      "bgm_id": 212152,
+      "bgm_name": "しまじろう ヘソカ",
+      "bgm_name_cn": "巧虎 HE SO KA",
+      "mal": {
+        "id": 18939,
+        "title": "Shimajirou Hesoka",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "しまじろう ヘソカ"
+      }
+    },
+    {
+      "bgm_id": 293619,
+      "bgm_name": "デュエル・マスターズ クロスショック",
+      "bgm_name_cn": "决斗大师Cross Shock",
+      "mal": {
+        "id": 10528,
+        "title": "Duel Masters Cross Shock",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "デュエル・マスターズ クロスショック"
+      }
+    },
+    {
+      "bgm_id": 334120,
+      "bgm_name": "ペンギンの問題 Max",
+      "bgm_name_cn": "企鹅的问题 Max",
+      "mal": {
+        "id": 10855,
+        "title": "Penguin no Mondai Max",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ペンギンの問題 Max"
+      }
+    },
+    {
+      "bgm_id": 361307,
+      "bgm_name": "犹太女孩在上海",
+      "bgm_name_cn": "犹太女孩在上海",
+      "mal": {
+        "id": 21129,
+        "title": "Youtai Nuhai Zai Shanghai",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "犹太女孩在上海"
+      }
+    },
+    {
+      "bgm_id": 402219,
+      "bgm_name": "Peeping Life -The Perfect Extension-",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 16371,
+        "title": "Peeping Life: The Perfect Emotion",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "Peeping Life（ピーピング・ライフ）-The Perfect Emotion-"
+      }
+    },
+    {
+      "bgm_id": 579319,
+      "bgm_name": "神戸と私",
+      "bgm_name_cn": "神户与我",
+      "mal": {
+        "id": 8925,
+        "title": "Kobe to Watashi",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "神戸と私"
+      }
+    }
+  ]
+}

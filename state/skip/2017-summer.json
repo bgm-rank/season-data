@@ -1,0 +1,906 @@
+{
+  "season": "2017-summer",
+  "update_time": "2026-02-26T12:56:16+08:00",
+  "items": [
+    {
+      "mal_id": 34644,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 34644,
+        "title": "Brave Witches: Petersburg Daisenryaku",
+        "media_type": "special",
+        "rating": "r18",
+        "title_ja": "第501統合戦闘航空団 ブレイブウィッチーズ ペテルブルグ大戦略"
+      }
+    },
+    {
+      "mal_id": 34777,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 34777,
+        "title": "91 Days: Toki no Asase/Subete no Kinou/Ashita, Mata Ashita",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "91Days Day13「時の浅瀬／すべての昨日／明日、また明日」"
+      }
+    },
+    {
+      "mal_id": 35202,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35202,
+        "title": "Hand Shakers: Go ago Go",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ハンドシェイカー Go ago Go"
+      }
+    },
+    {
+      "mal_id": 35247,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35247,
+        "title": "Owarimonogatari 2nd Season",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "終物語"
+      }
+    },
+    {
+      "mal_id": 35266,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35266,
+        "title": "Higanjima X: Aniki",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "彼岸島Ｘ「兄貴」"
+      }
+    },
+    {
+      "mal_id": 35285,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35285,
+        "title": "A-Channel: Nabe wo Tabeyou",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "Aチャンネル 鍋を食べよう"
+      }
+    },
+    {
+      "mal_id": 35363,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35363,
+        "title": "Kobayashi-san Chi no Maid Dragon: Valentine, Soshite Onsen! - Amari Kitai Shinaide Kudasai",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "小林さんちのメイドラゴン バレンタイン, そして温泉! (あまり期待しないでください)"
+      }
+    },
+    {
+      "mal_id": 35416,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35416,
+        "title": "Kabuki-bu!: Oogiri \"Chiyocolate-gassen\"",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "カブキブ！ 大喜利「ちよこれいと合戦」"
+      }
+    },
+    {
+      "mal_id": 35658,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35658,
+        "title": "Kuroko no Basket: Last Game NG-shuu",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "黒子のバスケ LAST GAME NG集"
+      }
+    },
+    {
+      "mal_id": 35840,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35840,
+        "title": "Hataraku Saibou CM",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "はたらく細胞"
+      }
+    },
+    {
+      "mal_id": 35935,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35935,
+        "title": "Koto no Shidai",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "ことの次第"
+      }
+    },
+    {
+      "mal_id": 35958,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35958,
+        "title": "Tori vs. Buta: Buttobi Pizza Battle",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "トリvsブタ ぶっとびピザバトル"
+      }
+    },
+    {
+      "mal_id": 35974,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 35974,
+        "title": "Swan",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Swan"
+      }
+    },
+    {
+      "mal_id": 36050,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36050,
+        "title": "Ikezu",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "いけず"
+      }
+    },
+    {
+      "mal_id": 36061,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36061,
+        "title": "I'm Coming",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "I'm Coming"
+      }
+    },
+    {
+      "mal_id": 36118,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36118,
+        "title": "Onagawa Chuu Baske Bu: 5-nin no Natsu",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "女川中バスケ部 5人の夏"
+      }
+    },
+    {
+      "mal_id": 36125,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36125,
+        "title": "Uchiage Hanabi",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "打上花火"
+      }
+    },
+    {
+      "mal_id": 36136,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36136,
+        "title": "Crystal Clear",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "CRYSTAL CLEAR"
+      }
+    },
+    {
+      "mal_id": 36155,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36155,
+        "title": "Bibury",
+        "media_type": "pv",
+        "rating": "kids",
+        "title_ja": "バイブリー"
+      }
+    },
+    {
+      "mal_id": 36162,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36162,
+        "title": "Sou: Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?-hen",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "爽「打ち上げ花火、下から見るか？横から見るか？篇」"
+      }
+    },
+    {
+      "mal_id": 36173,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36173,
+        "title": "Suna no Wakusei feat. Hatsune Miku",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "砂の惑星 feat.初音ミク"
+      }
+    },
+    {
+      "mal_id": 36191,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36191,
+        "title": "Boku wa Sonzai Shiteinakatta",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "僕は存在していなかった"
+      }
+    },
+    {
+      "mal_id": 36215,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36215,
+        "title": "One Piece: Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "ワンピース エピソードオブ東の海[イーストブルー] ~ルフィと4人の仲間の大冒険~"
+      }
+    },
+    {
+      "mal_id": 36221,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36221,
+        "title": "Plus Kouji",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "プラス糀"
+      }
+    },
+    {
+      "mal_id": 36223,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36223,
+        "title": "New My Tear CL Series",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "ＮｅｗマイティアＣＬシリーズ"
+      }
+    },
+    {
+      "mal_id": 36258,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36258,
+        "title": "Ohedo Julia-Night",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "大江戸ジュリアナイト"
+      }
+    },
+    {
+      "mal_id": 36275,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36275,
+        "title": "Natsume Yuujinchou Roku Specials",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "夏目友人帳 陸 特別編"
+      }
+    },
+    {
+      "mal_id": 36289,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36289,
+        "title": "Daybreak Interlude",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "DAYBREAK INTERLUDE"
+      }
+    },
+    {
+      "mal_id": 36339,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36339,
+        "title": "Nissin no Donbei x Kemono Friends",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "日清のどん兵衛 × けものフレンズ"
+      }
+    },
+    {
+      "mal_id": 36404,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36404,
+        "title": "Attakai, Fuyu Canada",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "あったかい、冬カナダ"
+      }
+    },
+    {
+      "mal_id": 36439,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36439,
+        "title": "Sword Art Online Movie: Ordinal Scale - Sword Art Offline",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "劇場版 ソードアート・オンライン -オーディナル・スケール- おふらいん"
+      }
+    },
+    {
+      "mal_id": 36451,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36451,
+        "title": "Still",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "Still"
+      }
+    },
+    {
+      "mal_id": 36473,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36473,
+        "title": "Love Live! Sunshine!! Recap",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "ラブライブ! サンシャイン!! TVアニメ2期放送直前特番~私たち, 輝きたい!!~"
+      }
+    },
+    {
+      "mal_id": 36485,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36485,
+        "title": "Princess Principal Picture Drama",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "プリンセス・プリンシパル ピクチャードラマ"
+      }
+    },
+    {
+      "mal_id": 36506,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36506,
+        "title": "Fuwafuwa Hour: Pui Pui & Muu Muu",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "ふわふわアワー PuiPui&MuuMuu"
+      }
+    },
+    {
+      "mal_id": 36539,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36539,
+        "title": "Tsuki ga Kirei Special",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "月がきれい"
+      }
+    },
+    {
+      "mal_id": 36553,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36553,
+        "title": "Yinhun x He Wei Dao",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "银魂 X 合味道"
+      }
+    },
+    {
+      "mal_id": 36577,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36577,
+        "title": "Dungeon Meshi PVs",
+        "media_type": "pv",
+        "rating": "kids",
+        "title_ja": "ダンジョン飯"
+      }
+    },
+    {
+      "mal_id": 36729,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36729,
+        "title": "Fate/Apocrypha Recaps",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "Fate/Apocrypha"
+      }
+    },
+    {
+      "mal_id": 36763,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36763,
+        "title": "Himawari",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "himawari"
+      }
+    },
+    {
+      "mal_id": 36796,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36796,
+        "title": "Owarimonogatari 2nd Season Recaps",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "終わりに向かう物語; 阿良々木暦ノ物語"
+      }
+    },
+    {
+      "mal_id": 37067,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 37067,
+        "title": "Yume no Tochuu de",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "夢の途中で"
+      }
+    },
+    {
+      "mal_id": 37215,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 37215,
+        "title": "The iDOLM@STER Cinderella Girls: 5th Live Tour Serendipity Parade!!! Manner Movie",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "5thライブツアーマナー映像"
+      }
+    },
+    {
+      "mal_id": 37266,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 37266,
+        "title": "Ano Ko Secret",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "あの娘シークレット"
+      }
+    },
+    {
+      "mal_id": 37541,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 37541,
+        "title": "Kimi no Iru Basho",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "君のいる場所"
+      }
+    },
+    {
+      "mal_id": 37720,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 37720,
+        "title": "Dandy Hitsuji Shitsuji",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "ダンディーひつじ執事"
+      }
+    },
+    {
+      "mal_id": 38854,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 38854,
+        "title": "Magic-kyun! First Live: Hoshinomori Summer Festa 2017 Encore Animation",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "Magic-kyun! First Live 星ノ森サマーフェスタ2017 アンコールアニメーションムービー"
+      }
+    },
+    {
+      "mal_id": 38968,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 38968,
+        "title": "Love in Ruins feat. Sinéad Harnett",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Love In Ruins"
+      }
+    },
+    {
+      "mal_id": 39163,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39163,
+        "title": "Nonsense Bungaku",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "ナンセンス文学"
+      }
+    },
+    {
+      "mal_id": 39172,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39172,
+        "title": "Kaisei",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "快晴"
+      }
+    },
+    {
+      "mal_id": 39216,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39216,
+        "title": "Casablanca",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Casablanca"
+      }
+    },
+    {
+      "mal_id": 39275,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39275,
+        "title": "Royal Memories",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Royal Memories"
+      }
+    },
+    {
+      "mal_id": 39313,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39313,
+        "title": "Deep Blue Town e Oide yo",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "DEEP BLUE TOWNへおいでよ"
+      }
+    },
+    {
+      "mal_id": 39314,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39314,
+        "title": "Deep Blue Song",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "DEEP BLUE SONG"
+      }
+    },
+    {
+      "mal_id": 39396,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39396,
+        "title": "Deep Blue Song (September 2017)",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Deep Blue Song"
+      }
+    },
+    {
+      "mal_id": 39694,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39694,
+        "title": "Pocari Sweat x Fuji Rock Festival '17",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "ポカリスエット × FUJI ROCK FESTIVAL’17"
+      }
+    },
+    {
+      "mal_id": 41054,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 41054,
+        "title": "High & Low: G-Sword (Special)",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "HiGH&LOW g-sword"
+      }
+    },
+    {
+      "mal_id": 41246,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 41246,
+        "title": "Delusion Girl",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "Delusion Girl"
+      }
+    },
+    {
+      "mal_id": 41500,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 41500,
+        "title": "Cobalt Memories",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "コバルトメモリーズ"
+      }
+    },
+    {
+      "mal_id": 42776,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 42776,
+        "title": "Re:Zero kara Hajimeru Isekai Seikatsu - Memory Snow Announcement",
+        "media_type": "pv",
+        "rating": "general",
+        "title_ja": "『Re:ゼロから始める異世界生活』アニメ新作エピソード制作決定PV"
+      }
+    },
+    {
+      "mal_id": 48283,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 48283,
+        "title": "Annyeong Jadoo: Seoyugi Eojjeoda Yeong-ung",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "안녕 자두야: 서유기 어쩌다 영웅"
+      }
+    },
+    {
+      "mal_id": 48967,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 48967,
+        "title": "Mad Love",
+        "media_type": "music",
+        "rating": "r18",
+        "title_ja": "Mad Love"
+      }
+    },
+    {
+      "mal_id": 52516,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 52516,
+        "title": "Jakusha no Sengen",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "弱者の宣言"
+      }
+    },
+    {
+      "mal_id": 53277,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 53277,
+        "title": "Sang-Nom",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "상놈"
+      }
+    },
+    {
+      "mal_id": 54525,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 54525,
+        "title": "Nabiya feat. ZION.T",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "나비야"
+      }
+    },
+    {
+      "mal_id": 55159,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 55159,
+        "title": "Daylight",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Daylight"
+      }
+    },
+    {
+      "mal_id": 55497,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 55497,
+        "title": "Kimi ga Ikite Nakute Yokatta",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "君が生きてなくてよかった"
+      }
+    },
+    {
+      "mal_id": 55990,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 55990,
+        "title": "Fine",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Fine"
+      }
+    },
+    {
+      "mal_id": 56652,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 56652,
+        "title": "Summertime (2017)",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "summertime"
+      }
+    },
+    {
+      "mal_id": 57300,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 57300,
+        "title": "Toushitsu Seigen Diet Yattemita",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "糖質制限ダイエットやってみた"
+      }
+    },
+    {
+      "mal_id": 58067,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58067,
+        "title": "Spookiz Songs",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Spookiz Songs"
+      }
+    },
+    {
+      "mal_id": 58293,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58293,
+        "title": "Night Safari",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Night Safari"
+      }
+    },
+    {
+      "mal_id": 58304,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58304,
+        "title": "Undaraka Udasupon",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "うんだらか うだすぽん"
+      }
+    },
+    {
+      "mal_id": 58972,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58972,
+        "title": "Manga de Wakaru! Fate/Grand Order Tankoubon CMs",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "『マンガで分かる！ Fate/Grand Order』単行本発売記念TVCM"
+      }
+    },
+    {
+      "mal_id": 59934,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 59934,
+        "title": "FNS 27-Jikan TV: Nihon no Rekishi Anime",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "FNS27時間テレビ にほんのれきし アニメ"
+      }
+    }
+  ]
+}

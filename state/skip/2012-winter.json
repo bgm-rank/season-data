@@ -1,0 +1,894 @@
+{
+  "season": "2012-winter",
+  "update_time": "2026-02-26T11:39:43+08:00",
+  "items": [
+    {
+      "mal_id": 10469,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 10469,
+        "title": "Sayonara Zetsubou Sensei Special",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "さよなら絶望先生"
+      }
+    },
+    {
+      "mal_id": 10638,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 10638,
+        "title": "Denpa Onna to Seishun Otoko: Mayonaka no Taiyou",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "電波女と青春男 真夜中の太陽"
+      }
+    },
+    {
+      "mal_id": 10863,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 10863,
+        "title": "Steins;Gate: Oukoubakko no Poriomania",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "シュタインズ ゲート 横行跋扈のポリオマニア"
+      }
+    },
+    {
+      "mal_id": 12321,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12321,
+        "title": "Thermae Romae",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "テルマエ・ロマエ"
+      }
+    },
+    {
+      "mal_id": 12419,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12419,
+        "title": "Guilty Crown: Kiseki - Reassortment",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "ギルティクラウン 軌跡： Reassortment"
+      }
+    },
+    {
+      "mal_id": 12503,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12503,
+        "title": "Mirai Nikki (TV): Ura Mirai Nikki",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "未来日記 裏未来日記"
+      }
+    },
+    {
+      "mal_id": 12637,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12637,
+        "title": "Mogyutto \"Love\" de Sekkinchuu!",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "もぎゅっと\"love\"で接近中！"
+      }
+    },
+    {
+      "mal_id": 12683,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12683,
+        "title": "Yumeyume",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "ゆめゆめ"
+      }
+    },
+    {
+      "mal_id": 12699,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12699,
+        "title": "Tales of Gekijou",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "ているず おぶ 劇場"
+      }
+    },
+    {
+      "mal_id": 12823,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12823,
+        "title": "Shakugan no Shana-tan III (Final): Final Destruction",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "灼眼のシャナたん　ふぁいなるですとらくしょん"
+      }
+    },
+    {
+      "mal_id": 12921,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 12921,
+        "title": "Morita-san wa Mukuchi. Specials",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "森田さんは無口。"
+      }
+    },
+    {
+      "mal_id": 13169,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13169,
+        "title": "Buta",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "BUTA"
+      }
+    },
+    {
+      "mal_id": 13171,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13171,
+        "title": "Wasurenagumo",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "わすれなぐも"
+      }
+    },
+    {
+      "mal_id": 13173,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13173,
+        "title": "Pukapuka Juju",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "ぷかぷかジュジュ"
+      }
+    },
+    {
+      "mal_id": 13175,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13175,
+        "title": "Shiranpuri (Special)",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "しらんぷり"
+      }
+    },
+    {
+      "mal_id": 13183,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13183,
+        "title": "Fate/Zero Remix",
+        "media_type": "tv_special",
+        "rating": "general",
+        "title_ja": "フェイト/ゼロ Remix"
+      }
+    },
+    {
+      "mal_id": 13195,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13195,
+        "title": "Misenai Namida wa, Kitto Itsuka",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "ミセナイナミダハ、きっといつか"
+      }
+    },
+    {
+      "mal_id": 13247,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13247,
+        "title": "Lupin III: Lupin Ikka Seizoroi",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ルパン三世 ルパン一家勢揃い"
+      }
+    },
+    {
+      "mal_id": 13249,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13249,
+        "title": "Lupin VIII",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ルパン8世"
+      }
+    },
+    {
+      "mal_id": 13253,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13253,
+        "title": "Blossom",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "BLOSSOM"
+      }
+    },
+    {
+      "mal_id": 13255,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13255,
+        "title": "Haru wa Kuru",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "春は来る"
+      }
+    },
+    {
+      "mal_id": 13263,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13263,
+        "title": "Fate/Zero: Onegai! Einzbern Soudanshitsu",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "お願い!アインツベルン相談室"
+      }
+    },
+    {
+      "mal_id": 13281,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13281,
+        "title": "FlashBack",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "FlashBack"
+      }
+    },
+    {
+      "mal_id": 13357,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13357,
+        "title": "High School DxD Specials",
+        "media_type": "special",
+        "rating": "r18",
+        "title_ja": "ハイスクールD×Dスペシャル"
+      }
+    },
+    {
+      "mal_id": 13429,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13429,
+        "title": "Sakasama no Patema: Beginning of the Day",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "サカサマのパテマ Beginning of the Day"
+      }
+    },
+    {
+      "mal_id": 13435,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13435,
+        "title": "Taka no Tsume NEO Announcement Movie",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "鷹の爪NEO　予告ムービー"
+      }
+    },
+    {
+      "mal_id": 13495,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13495,
+        "title": "Tokyo Disney Resort: Yume ga Kanau Basho",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "東京ディズニーリゾートTVCM「夢がかなう場所」"
+      }
+    },
+    {
+      "mal_id": 13497,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13497,
+        "title": "Neko no Sumu Shima",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "猫の棲む島"
+      }
+    },
+    {
+      "mal_id": 13541,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13541,
+        "title": "Rui no Masaiban",
+        "media_type": "pv",
+        "rating": "general",
+        "title_ja": "ルイの魔裁判"
+      }
+    },
+    {
+      "mal_id": 13561,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13561,
+        "title": "Guilty Crown: 4-koma Gekijou",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ギルクラ4コマ劇場 ぎる亭くら雲"
+      }
+    },
+    {
+      "mal_id": 13563,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13563,
+        "title": "The Four Seasons",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "The Four Seasons"
+      }
+    },
+    {
+      "mal_id": 13619,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13619,
+        "title": "Sayonara Zetsubou Sensei Special Omake",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "さよなら絶望先生"
+      }
+    },
+    {
+      "mal_id": 13629,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13629,
+        "title": "Furiko",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "振り子"
+      }
+    },
+    {
+      "mal_id": 13757,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 13757,
+        "title": "Mashiro-iro Symphony: The Color of Lovers Picture Drama",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ましろ色シンフォニー  -The color of lovers- ピクチャードラマ"
+      }
+    },
+    {
+      "mal_id": 14049,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 14049,
+        "title": "Mashiro-iro Symphony: Airi ga Anata no Kanojo ni!?",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ましろ色シンフォニー- 愛理があなたの彼女に!？"
+      }
+    },
+    {
+      "mal_id": 14583,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 14583,
+        "title": "Rinne no Lagrange Specials",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "輪廻のラグランジェ"
+      }
+    },
+    {
+      "mal_id": 15453,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 15453,
+        "title": "Shinryaku! Ika Musume: Kore ga Umi e no Ai Jana-ika!",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "これが海への愛じゃなイカ!"
+      }
+    },
+    {
+      "mal_id": 15653,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 15653,
+        "title": "Stay the Same",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Stay the same"
+      }
+    },
+    {
+      "mal_id": 15673,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 15673,
+        "title": "Tell Your World",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Tell Your World"
+      }
+    },
+    {
+      "mal_id": 17949,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 17949,
+        "title": "The Everlasting Guilty Crown",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "The Everlasting Guilty Crown"
+      }
+    },
+    {
+      "mal_id": 20855,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 20855,
+        "title": "Bacterial Contamination",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "細菌汚染 – Bacterial Contamination –"
+      }
+    },
+    {
+      "mal_id": 21089,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 21089,
+        "title": "Lost Forest",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "LOST FOREST"
+      }
+    },
+    {
+      "mal_id": 24123,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 24123,
+        "title": "Kaette Kita Top wo Nerae! Kagaku Kouza",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "帰ってきた トップをねらえ! 科学講座"
+      }
+    },
+    {
+      "mal_id": 25267,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 25267,
+        "title": "Megumi to Taiyou II: Kajuu Gummi Tweet Mystery - Kieta Sapphire Roman no Nazo",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "メグミとタイヨウII 果汁グミ Tweet Mystery 消えたサファイアロマンの謎"
+      }
+    },
+    {
+      "mal_id": 29501,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 29501,
+        "title": "Neko no Sakusen",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "TheNightGame ネコのさくせん"
+      }
+    },
+    {
+      "mal_id": 29835,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 29835,
+        "title": "47 Todoufuken Specials",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "47都道府犬 2012夏"
+      }
+    },
+    {
+      "mal_id": 30149,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 30149,
+        "title": "Kamiusagi Rope 2 Specials",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "紙兎ロペ２ Specials"
+      }
+    },
+    {
+      "mal_id": 30201,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 30201,
+        "title": "Shiawase no Tokei",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "しあわせの時計"
+      }
+    },
+    {
+      "mal_id": 30209,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 30209,
+        "title": "Naze",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "なぜ"
+      }
+    },
+    {
+      "mal_id": 30433,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 30433,
+        "title": "Eat You Up/Bunny",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Eat You Up/Bunny"
+      }
+    },
+    {
+      "mal_id": 30909,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 30909,
+        "title": "Vivi",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "vivi"
+      }
+    },
+    {
+      "mal_id": 31450,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 31450,
+        "title": "Sol",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "SOL"
+      }
+    },
+    {
+      "mal_id": 36067,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36067,
+        "title": "Halfway",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Halfway"
+      }
+    },
+    {
+      "mal_id": 36085,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36085,
+        "title": "Owakare",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "おわかれ"
+      }
+    },
+    {
+      "mal_id": 36088,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36088,
+        "title": "Kaijuu",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "かいじゅう"
+      }
+    },
+    {
+      "mal_id": 36115,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36115,
+        "title": "Nosferatu",
+        "media_type": "music",
+        "rating": "r18",
+        "title_ja": "ノスフェラトゥ"
+      }
+    },
+    {
+      "mal_id": 36725,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36725,
+        "title": "Naisho no Hanashi",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "ナイショの話"
+      }
+    },
+    {
+      "mal_id": 36757,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36757,
+        "title": "Happy☆Twinkle",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Happy☆てぃんくる"
+      }
+    },
+    {
+      "mal_id": 36991,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 36991,
+        "title": "Lupin III 3DCG",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "ルパン三世 3DCG"
+      }
+    },
+    {
+      "mal_id": 38963,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 38963,
+        "title": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.: Menma e no Tegami",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "あの日見た花の名前を僕達はまだ知らない。「めんまへの手紙」"
+      }
+    },
+    {
+      "mal_id": 39208,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39208,
+        "title": "100% Renewable Energy",
+        "media_type": "special",
+        "rating": "kids",
+        "title_ja": "100% Renewable Energy"
+      }
+    },
+    {
+      "mal_id": 39329,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 39329,
+        "title": "Tenkuu no Escaflowne Recaps",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "天空のエスカフローネ BD-BOX 特別編集版"
+      }
+    },
+    {
+      "mal_id": 40304,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 40304,
+        "title": "It's a Small World",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "イッツ・ア・スモールワールド"
+      }
+    },
+    {
+      "mal_id": 40971,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 40971,
+        "title": "Newsong",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "Newsong"
+      }
+    },
+    {
+      "mal_id": 42381,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 42381,
+        "title": "Yuki no Furu Machi",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "雪の降る街"
+      }
+    },
+    {
+      "mal_id": 48930,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 48930,
+        "title": "Natalie",
+        "media_type": "music",
+        "rating": "general",
+        "title_ja": "ナタリー"
+      }
+    },
+    {
+      "mal_id": 52407,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 52407,
+        "title": "Nippon-rettou Dokkoisho: 47 Todoufuken-mei Utai Komi",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "日本列島どっこいしょ 〜47都道府県名うたい込み〜"
+      }
+    },
+    {
+      "mal_id": 53023,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 53023,
+        "title": "Kkoma Bus Tayo: Paris Baguette Gwang-go",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "꼬마버스 타요 파리바게뜨 광고"
+      }
+    },
+    {
+      "mal_id": 53757,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 53757,
+        "title": "Hello Spot CM",
+        "media_type": "cm",
+        "rating": "kids",
+        "title_ja": "Hello Spot CM"
+      }
+    },
+    {
+      "mal_id": 57393,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 57393,
+        "title": "6-sai no Ballad",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "６さいのばらーど"
+      }
+    },
+    {
+      "mal_id": 58267,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58267,
+        "title": "Hanakappa Special: Bokura no Daibouken",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "はなかっぱスペシャル ぼくらの大冒険"
+      }
+    },
+    {
+      "mal_id": 58344,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58344,
+        "title": "11-piki no Neko Marathon Taikai",
+        "media_type": "tv_special",
+        "rating": "kids",
+        "title_ja": "11ぴきのねこ マラソン大会"
+      }
+    },
+    {
+      "mal_id": 58394,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 58394,
+        "title": "Tentoumushi",
+        "media_type": "music",
+        "rating": "kids",
+        "title_ja": "てんとうむし"
+      }
+    },
+    {
+      "mal_id": 59991,
+      "status": "skip",
+      "bgm_id": null,
+      "mal": {
+        "id": 59991,
+        "title": "High Score Specials",
+        "media_type": "special",
+        "rating": "general",
+        "title_ja": "HIGH SCORE"
+      }
+    }
+  ]
+}

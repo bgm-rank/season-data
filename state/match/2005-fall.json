@@ -1,0 +1,943 @@
+{
+  "season": "2005-fall",
+  "update_time": "2026-02-26T10:47:48+08:00",
+  "items": [
+    {
+      "mal_id": 99,
+      "status": "match",
+      "bgm_id": 1028,
+      "bgm_name": "舞-乙HiME",
+      "bgm_name_cn": "舞-乙HiME",
+      "mal": {
+        "id": 99,
+        "title": "Mai-Otome",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "舞-乙HiME"
+      },
+      "candidates": [
+        {
+          "bgm_id": 1028,
+          "bgm_name": "舞-乙HiME",
+          "bgm_name_cn": "舞-乙HiME"
+        }
+      ]
+    },
+    {
+      "mal_id": 228,
+      "status": "match",
+      "bgm_id": 1260,
+      "bgm_name": "地獄少女",
+      "bgm_name_cn": "地狱少女",
+      "mal": {
+        "id": 228,
+        "title": "Jigoku Shoujo",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "地獄少女"
+      },
+      "candidates": [
+        {
+          "bgm_id": 1260,
+          "bgm_name": "地獄少女",
+          "bgm_name_cn": "地狱少女"
+        },
+        {
+          "bgm_id": 4045,
+          "bgm_name": "Corpse Bride",
+          "bgm_name_cn": "僵尸新娘"
+        }
+      ]
+    },
+    {
+      "mal_id": 280,
+      "status": "match",
+      "bgm_id": 10181,
+      "bgm_name": "アニマル横町",
+      "bgm_name_cn": "动物横町",
+      "mal": {
+        "id": 280,
+        "title": "Animal Yokochou",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "アニマル横町"
+      },
+      "candidates": [
+        {
+          "bgm_id": 10181,
+          "bgm_name": "アニマル横町",
+          "bgm_name_cn": "动物横町"
+        }
+      ]
+    },
+    {
+      "mal_id": 282,
+      "status": "match",
+      "bgm_id": 41883,
+      "bgm_name": "エンジェル・ハート",
+      "bgm_name_cn": "天使心",
+      "mal": {
+        "id": 282,
+        "title": "Angel Heart",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "エンジェル・ハート"
+      },
+      "candidates": [
+        {
+          "bgm_id": 41883,
+          "bgm_name": "エンジェル・ハート",
+          "bgm_name_cn": "天使心"
+        }
+      ]
+    },
+    {
+      "mal_id": 355,
+      "status": "match",
+      "bgm_id": 490,
+      "bgm_name": "灼眼のシャナ",
+      "bgm_name_cn": "灼眼的夏娜",
+      "mal": {
+        "id": 355,
+        "title": "Shakugan no Shana",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "灼眼のシャナ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 490,
+          "bgm_name": "灼眼のシャナ",
+          "bgm_name_cn": "灼眼的夏娜"
+        }
+      ]
+    },
+    {
+      "mal_id": 457,
+      "status": "match",
+      "bgm_id": 340,
+      "bgm_name": "蟲師",
+      "bgm_name_cn": "虫师",
+      "mal": {
+        "id": 457,
+        "title": "Mushishi",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "蟲師"
+      },
+      "candidates": [
+        {
+          "bgm_id": 340,
+          "bgm_name": "蟲師",
+          "bgm_name_cn": "虫师"
+        }
+      ]
+    },
+    {
+      "mal_id": 469,
+      "status": "match",
+      "bgm_id": 10180,
+      "bgm_name": "かりん",
+      "bgm_name_cn": "增血鬼果林",
+      "mal": {
+        "id": 469,
+        "title": "Karin",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "かりん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 10180,
+          "bgm_name": "かりん",
+          "bgm_name_cn": "增血鬼果林"
+        },
+        {
+          "bgm_id": 70256,
+          "bgm_name": "カンブリアン",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 83841,
+          "bgm_name": "人妻かすみさん",
+          "bgm_name_cn": "人妻♪霞小姐"
+        },
+        {
+          "bgm_id": 324072,
+          "bgm_name": "ワ・タ・シ・ノ・カ・オ",
+          "bgm_name_cn": "我的脸"
+        },
+        {
+          "bgm_id": 24355,
+          "bgm_name": "카드왕 믹스마스터",
+          "bgm_name_cn": "奇幻宝贝"
+        },
+        {
+          "bgm_id": 48030,
+          "bgm_name": "Capeta",
+          "bgm_name_cn": "极速方程式"
+        }
+      ]
+    },
+    {
+      "mal_id": 476,
+      "status": "match",
+      "bgm_id": 7160,
+      "bgm_name": "銀盤カレイドスコープ",
+      "bgm_name_cn": "银盘万花筒",
+      "mal": {
+        "id": 476,
+        "title": "Ginban Kaleidoscope",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "銀盤カレイドスコープ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 7160,
+          "bgm_name": "銀盤カレイドスコープ",
+          "bgm_name_cn": "银盘万花筒"
+        },
+        {
+          "bgm_id": 53729,
+          "bgm_name": "銀牙伝説WEED",
+          "bgm_name_cn": "银牙传说WEED"
+        }
+      ]
+    },
+    {
+      "mal_id": 477,
+      "status": "match",
+      "bgm_id": 531,
+      "bgm_name": "ARIA The ANIMATION",
+      "bgm_name_cn": "水星领航员",
+      "mal": {
+        "id": 477,
+        "title": "Aria the Animation",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ARIA The ANIMATION"
+      },
+      "candidates": [
+        {
+          "bgm_id": 531,
+          "bgm_name": "ARIA The ANIMATION",
+          "bgm_name_cn": "水星领航员"
+        }
+      ]
+    },
+    {
+      "mal_id": 574,
+      "status": "match",
+      "bgm_id": 3417,
+      "bgm_name": "リーンの翼",
+      "bgm_name_cn": "圣光之翼",
+      "mal": {
+        "id": 574,
+        "title": "Rean no Tsubasa",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "リーンの翼"
+      },
+      "candidates": [
+        {
+          "bgm_id": 3417,
+          "bgm_name": "リーンの翼",
+          "bgm_name_cn": "圣光之翼"
+        },
+        {
+          "bgm_id": 2314,
+          "bgm_name": "ノエイン もうひとりの君へ",
+          "bgm_name_cn": "到另一个你的身边去"
+        },
+        {
+          "bgm_id": 195012,
+          "bgm_name": "冒険王ビィト エクセリオン",
+          "bgm_name_cn": "冒险王比特EX"
+        }
+      ]
+    },
+    {
+      "mal_id": 584,
+      "status": "match",
+      "bgm_id": 2314,
+      "bgm_name": "ノエイン もうひとりの君へ",
+      "bgm_name_cn": "到另一个你的身边去",
+      "mal": {
+        "id": 584,
+        "title": "Noein: Mou Hitori no Kimi e",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ノエイン もうひとりの君へ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 2314,
+          "bgm_name": "ノエイン もうひとりの君へ",
+          "bgm_name_cn": "到另一个你的身边去"
+        },
+        {
+          "bgm_id": 490,
+          "bgm_name": "灼眼のシャナ",
+          "bgm_name_cn": "灼眼的夏娜"
+        },
+        {
+          "bgm_id": 3417,
+          "bgm_name": "リーンの翼",
+          "bgm_name_cn": "圣光之翼"
+        },
+        {
+          "bgm_id": 13809,
+          "bgm_name": "あらしのよるに",
+          "bgm_name_cn": "翡翠森林狼与羊"
+        },
+        {
+          "bgm_id": 14106,
+          "bgm_name": "蒼穹のファフナー RIGHT OF LEFT",
+          "bgm_name_cn": "苍穹之法芙娜 RIGHT OF LEFT"
+        },
+        {
+          "bgm_id": 152454,
+          "bgm_name": "蒼穹のファフナー Arcadian memory",
+          "bgm_name_cn": "苍穹之法芙娜 Arcadian memory"
+        },
+        {
+          "bgm_id": 1263,
+          "bgm_name": "魔法少女リリカルなのはA's",
+          "bgm_name_cn": "魔法少女奈叶A's"
+        },
+        {
+          "bgm_id": 4021,
+          "bgm_name": "Canvas2 〜虹色のスケッチ〜",
+          "bgm_name_cn": "七彩的素描"
+        },
+        {
+          "bgm_id": 120069,
+          "bgm_name": "ブラック・ジャック ふたりの黒い医者",
+          "bgm_name_cn": "怪医黑杰克 两位神秘医师"
+        },
+        {
+          "bgm_id": 188858,
+          "bgm_name": "NAGASAKI・1945 ～アンゼラスの鐘～",
+          "bgm_name_cn": "长崎1945 天使之钟"
+        }
+      ]
+    },
+    {
+      "mal_id": 588,
+      "status": "match",
+      "bgm_id": 10277,
+      "bgm_name": "いつだってMyサンタ!",
+      "bgm_name_cn": "我永远的圣诞老人",
+      "mal": {
+        "id": 588,
+        "title": "Itsudatte My Santa!",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "いつだってMyサンタ！"
+      },
+      "candidates": [
+        {
+          "bgm_id": 10277,
+          "bgm_name": "いつだってMyサンタ!",
+          "bgm_name_cn": "我永远的圣诞老人"
+        },
+        {
+          "bgm_id": 2314,
+          "bgm_name": "ノエイン もうひとりの君へ",
+          "bgm_name_cn": "到另一个你的身边去"
+        }
+      ]
+    },
+    {
+      "mal_id": 670,
+      "status": "match",
+      "bgm_id": 10506,
+      "bgm_name": "ラムネ",
+      "bgm_name_cn": "波子汽水",
+      "mal": {
+        "id": 670,
+        "title": "Lamune",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ラムネ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 10506,
+          "bgm_name": "ラムネ",
+          "bgm_name_cn": "波子汽水"
+        }
+      ]
+    },
+    {
+      "mal_id": 858,
+      "status": "match",
+      "bgm_id": 30522,
+      "bgm_name": "ガンパレード・オーケストラ",
+      "bgm_name_cn": "高机动幻想GPO",
+      "mal": {
+        "id": 858,
+        "title": "Gunparade Orchestra",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ガンパレード・オーケストラ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 30522,
+          "bgm_name": "ガンパレード・オーケストラ",
+          "bgm_name_cn": "高机动幻想GPO"
+        },
+        {
+          "bgm_id": 10145,
+          "bgm_name": "ガイキング LEGEND OF DAIKU-MARYU",
+          "bgm_name_cn": "新大空魔龙"
+        },
+        {
+          "bgm_id": 10180,
+          "bgm_name": "かりん",
+          "bgm_name_cn": "增血鬼果林"
+        },
+        {
+          "bgm_id": 70256,
+          "bgm_name": "カンブリアン",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 83841,
+          "bgm_name": "人妻かすみさん",
+          "bgm_name_cn": "人妻♪霞小姐"
+        },
+        {
+          "bgm_id": 324072,
+          "bgm_name": "ワ・タ・シ・ノ・カ・オ",
+          "bgm_name_cn": "我的脸"
+        },
+        {
+          "bgm_id": 48030,
+          "bgm_name": "Capeta",
+          "bgm_name_cn": "极速方程式"
+        }
+      ]
+    },
+    {
+      "mal_id": 913,
+      "status": "match",
+      "bgm_id": 3357,
+      "bgm_name": "格闘美神 武龍",
+      "bgm_name_cn": "格斗美神·武龙",
+      "mal": {
+        "id": 913,
+        "title": "Kakutou Bijin Wulong",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "格闘美神 武龍"
+      },
+      "candidates": [
+        {
+          "bgm_id": 3357,
+          "bgm_name": "格闘美神 武龍",
+          "bgm_name_cn": "格斗美神·武龙"
+        }
+      ]
+    },
+    {
+      "mal_id": 1123,
+      "status": "match",
+      "bgm_id": 195012,
+      "bgm_name": "冒険王ビィト エクセリオン",
+      "bgm_name_cn": "冒险王比特EX",
+      "mal": {
+        "id": 1123,
+        "title": "Bouken Ou Beet Excellion",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "冒険王ビィト エクセリオン"
+      },
+      "candidates": [
+        {
+          "bgm_id": 195012,
+          "bgm_name": "冒険王ビィト エクセリオン",
+          "bgm_name_cn": "冒险王比特EX"
+        },
+        {
+          "bgm_id": 284370,
+          "bgm_name": "Dr.ピノコの森の冒険",
+          "bgm_name_cn": "怪医黑杰克：皮诺可博士的森林冒险"
+        }
+      ]
+    },
+    {
+      "mal_id": 1961,
+      "status": "match",
+      "bgm_id": 13809,
+      "bgm_name": "あらしのよるに",
+      "bgm_name_cn": "翡翠森林狼与羊",
+      "mal": {
+        "id": 1961,
+        "title": "Arashi no Yoru ni",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "あらしのよるに"
+      },
+      "candidates": [
+        {
+          "bgm_id": 13809,
+          "bgm_name": "あらしのよるに",
+          "bgm_name_cn": "翡翠森林狼与羊"
+        },
+        {
+          "bgm_id": 469597,
+          "bgm_name": "アイシールド21 クリスマスボウルへの道〜南の島で特訓だ！YA-HA-!〜",
+          "bgm_name_cn": "光速跑者21号 通往圣诞大赛之路〜南岛特训〜"
+        }
+      ]
+    },
+    {
+      "mal_id": 1983,
+      "status": "match",
+      "bgm_id": 120069,
+      "bgm_name": "ブラック・ジャック ふたりの黒い医者",
+      "bgm_name_cn": "怪医黑杰克 两位神秘医师",
+      "mal": {
+        "id": 1983,
+        "title": "Black Jack: Futari no Kuroi Isha",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "ブラック・ジャック ふたりの黒い医者"
+      },
+      "candidates": [
+        {
+          "bgm_id": 120069,
+          "bgm_name": "ブラック・ジャック ふたりの黒い医者",
+          "bgm_name_cn": "怪医黑杰克 两位神秘医师"
+        },
+        {
+          "bgm_id": 284370,
+          "bgm_name": "Dr.ピノコの森の冒険",
+          "bgm_name_cn": "怪医黑杰克：皮诺可博士的森林冒险"
+        },
+        {
+          "bgm_id": 2300,
+          "bgm_name": "BLACK CAT",
+          "bgm_name_cn": "黑猫"
+        },
+        {
+          "bgm_id": 981,
+          "bgm_name": "BLOOD+",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 2137,
+      "status": "match",
+      "bgm_id": 61422,
+      "bgm_name": "背徳妻",
+      "bgm_name_cn": "背德妻",
+      "mal": {
+        "id": 2137,
+        "title": "Haitokuzuma",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "背徳妻"
+      },
+      "candidates": [
+        {
+          "bgm_id": 61422,
+          "bgm_name": "背徳妻",
+          "bgm_name_cn": "背德妻"
+        }
+      ]
+    },
+    {
+      "mal_id": 2188,
+      "status": "match",
+      "bgm_id": 7937,
+      "bgm_name": "MAID iN HEAVEN SuperS",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2188,
+        "title": "Maid in Heaven SuperS",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "MAID iN HEAVEN SuperS"
+      },
+      "candidates": [
+        {
+          "bgm_id": 7937,
+          "bgm_name": "MAID iN HEAVEN SuperS",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 2411,
+      "status": "match",
+      "bgm_id": 61417,
+      "bgm_name": "姉とボイン",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2411,
+        "title": "Ane to Boin",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "姉とボイン"
+      },
+      "candidates": [
+        {
+          "bgm_id": 61417,
+          "bgm_name": "姉とボイン",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 53581,
+          "bgm_name": "姉、ちゃんとしようよっ！",
+          "bgm_name_cn": "跟大姐姐一起做吧！"
+        }
+      ]
+    },
+    {
+      "mal_id": 2412,
+      "status": "match",
+      "bgm_id": 70256,
+      "bgm_name": "カンブリアン",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2412,
+        "title": "Cambrian",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "カンブリアン"
+      },
+      "candidates": [
+        {
+          "bgm_id": 70256,
+          "bgm_name": "カンブリアン",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 10180,
+          "bgm_name": "かりん",
+          "bgm_name_cn": "增血鬼果林"
+        },
+        {
+          "bgm_id": 30522,
+          "bgm_name": "ガンパレード・オーケストラ",
+          "bgm_name_cn": "高机动幻想GPO"
+        },
+        {
+          "bgm_id": 83841,
+          "bgm_name": "人妻かすみさん",
+          "bgm_name_cn": "人妻♪霞小姐"
+        },
+        {
+          "bgm_id": 324072,
+          "bgm_name": "ワ・タ・シ・ノ・カ・オ",
+          "bgm_name_cn": "我的脸"
+        },
+        {
+          "bgm_id": 48030,
+          "bgm_name": "Capeta",
+          "bgm_name_cn": "极速方程式"
+        }
+      ]
+    },
+    {
+      "mal_id": 2447,
+      "status": "match",
+      "bgm_id": 74424,
+      "bgm_name": "痴母",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2447,
+        "title": "Chibo",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "痴母"
+      },
+      "candidates": [
+        {
+          "bgm_id": 74424,
+          "bgm_name": "痴母",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 3171,
+      "status": "match",
+      "bgm_id": 61416,
+      "bgm_name": "凌辱人妻温泉",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 3171,
+        "title": "Ryoujoku Hitozuma Onsen",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "凌辱人妻温泉"
+      },
+      "candidates": [
+        {
+          "bgm_id": 61416,
+          "bgm_name": "凌辱人妻温泉",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 3557,
+      "status": "match",
+      "bgm_id": 74425,
+      "bgm_name": "処女オークション",
+      "bgm_name_cn": "处女拍卖师",
+      "mal": {
+        "id": 3557,
+        "title": "Shojo Auction",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "処女オークション"
+      },
+      "candidates": [
+        {
+          "bgm_id": 74425,
+          "bgm_name": "処女オークション",
+          "bgm_name_cn": "处女拍卖师"
+        }
+      ]
+    },
+    {
+      "mal_id": 3771,
+      "status": "match",
+      "bgm_id": 53581,
+      "bgm_name": "姉、ちゃんとしようよっ！",
+      "bgm_name_cn": "跟大姐姐一起做吧！",
+      "mal": {
+        "id": 3771,
+        "title": "Nee, Chanto Shiyou Yo!",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "姉、ちゃんとしようよっ！"
+      },
+      "candidates": [
+        {
+          "bgm_id": 53581,
+          "bgm_name": "姉、ちゃんとしようよっ！",
+          "bgm_name_cn": "跟大姐姐一起做吧！"
+        },
+        {
+          "bgm_id": 61417,
+          "bgm_name": "姉とボイン",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 4356,
+      "status": "match",
+      "bgm_id": 58163,
+      "bgm_name": "Innocent Blue",
+      "bgm_name_cn": "纯洁之蓝",
+      "mal": {
+        "id": 4356,
+        "title": "Innocent Blue",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "Innocent Blue"
+      },
+      "candidates": [
+        {
+          "bgm_id": 58163,
+          "bgm_name": "Innocent Blue",
+          "bgm_name_cn": "纯洁之蓝"
+        }
+      ]
+    },
+    {
+      "mal_id": 7395,
+      "status": "match",
+      "bgm_id": 24355,
+      "bgm_name": "카드왕 믹스마스터",
+      "bgm_name_cn": "奇幻宝贝",
+      "mal": {
+        "id": 7395,
+        "title": "Card Wang: Mix Master",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "카드왕 믹스마스터"
+      },
+      "candidates": [
+        {
+          "bgm_id": 24355,
+          "bgm_name": "카드왕 믹스마스터",
+          "bgm_name_cn": "奇幻宝贝"
+        }
+      ]
+    },
+    {
+      "mal_id": 8595,
+      "status": "match",
+      "bgm_id": 220044,
+      "bgm_name": "こてんこてんこ",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 8595,
+        "title": "Kotencotenco",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "こてんこてんこ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 220044,
+          "bgm_name": "こてんこてんこ",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 21275,
+      "status": "match",
+      "bgm_id": 426112,
+      "bgm_name": "やわらか戦車",
+      "bgm_name_cn": "柔软战车",
+      "mal": {
+        "id": 21275,
+        "title": "Yawaraka Sensha",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "やわらか戦車"
+      },
+      "candidates": [
+        {
+          "bgm_id": 426112,
+          "bgm_name": "やわらか戦車",
+          "bgm_name_cn": "柔软战车"
+        },
+        {
+          "bgm_id": 6499,
+          "bgm_name": "やわらか三国志 突き刺せ!! 呂布子ちゃん",
+          "bgm_name_cn": "柔软三国志 突刺!吕布子"
+        },
+        {
+          "bgm_id": 573385,
+          "bgm_name": "やわらかアトム",
+          "bgm_name_cn": "柔软阿童木"
+        },
+        {
+          "bgm_id": 486702,
+          "bgm_name": "やらかし",
+          "bgm_name_cn": "失败谈"
+        },
+        {
+          "bgm_id": 495633,
+          "bgm_name": "やたらやらしい深見くん",
+          "bgm_name_cn": "过分色气的深见君"
+        },
+        {
+          "bgm_id": 427427,
+          "bgm_name": "新・やらないか",
+          "bgm_name_cn": "新·不做吗"
+        },
+        {
+          "bgm_id": 618987,
+          "bgm_name": "これにちょいちょいやられます!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 333610,
+          "bgm_name": "今泉ん家はどうやらギャルの溜まり場になってるらしい",
+          "bgm_name_cn": "今泉家似乎成了辣妹聚集地"
+        },
+        {
+          "bgm_id": 48943,
+          "bgm_name": "ドラゴンボールZ 龍拳爆発!!悟空がやらねば誰がやる",
+          "bgm_name_cn": "龙珠Z 龙拳爆发"
+        },
+        {
+          "bgm_id": 162437,
+          "bgm_name": "Wake Up, Girls! の宮城PRやらせてください！",
+          "bgm_name_cn": "Wake Up, Girls! 让我宣传宫城县吧！"
+        }
+      ]
+    },
+    {
+      "mal_id": 33692,
+      "status": "match",
+      "bgm_id": 37569,
+      "bgm_name": "茂雄はハンサム",
+      "bgm_name_cn": "英俊的茂雄",
+      "mal": {
+        "id": 33692,
+        "title": "Shigeo wa Handsome",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "茂雄はハンサム"
+      },
+      "candidates": [
+        {
+          "bgm_id": 37569,
+          "bgm_name": "茂雄はハンサム",
+          "bgm_name_cn": "英俊的茂雄"
+        },
+        {
+          "bgm_id": 249097,
+          "bgm_name": "灵石茂险王",
+          "bgm_name_cn": "灵石茂险王"
+        },
+        {
+          "bgm_id": 60348,
+          "bgm_name": "おじゃまんが山田くん",
+          "bgm_name_cn": "山田茂"
+        },
+        {
+          "bgm_id": 220073,
+          "bgm_name": "おじゃまんが山田くん",
+          "bgm_name_cn": "山田茂 剧场版"
+        },
+        {
+          "bgm_id": 523898,
+          "bgm_name": "サラリーマン山崎シゲル",
+          "bgm_name_cn": "上班族山崎茂"
+        }
+      ]
+    },
+    {
+      "mal_id": 35859,
+      "status": "match",
+      "bgm_id": 120069,
+      "bgm_name": "ブラック・ジャック ふたりの黒い医者",
+      "bgm_name_cn": "怪医黑杰克 两位神秘医师",
+      "mal": {
+        "id": 35859,
+        "title": "Black Jack: Futari no Kuroi Isha - Manner Movie",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "ブラック・ジャック ふたりの黒い医者"
+      },
+      "candidates": [
+        {
+          "bgm_id": 120069,
+          "bgm_name": "ブラック・ジャック ふたりの黒い医者",
+          "bgm_name_cn": "怪医黑杰克 两位神秘医师"
+        },
+        {
+          "bgm_id": 284370,
+          "bgm_name": "Dr.ピノコの森の冒険",
+          "bgm_name_cn": "怪医黑杰克：皮诺可博士的森林冒险"
+        },
+        {
+          "bgm_id": 2300,
+          "bgm_name": "BLACK CAT",
+          "bgm_name_cn": "黑猫"
+        },
+        {
+          "bgm_id": 981,
+          "bgm_name": "BLOOD+",
+          "bgm_name_cn": ""
+        }
+      ]
+    }
+  ]
+}

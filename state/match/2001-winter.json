@@ -1,0 +1,830 @@
+{
+  "season": "2001-winter",
+  "update_time": "2026-02-26T10:20:34+08:00",
+  "items": [
+    {
+      "mal_id": 287,
+      "status": "match",
+      "bgm_id": 62893,
+      "bgm_name": "グラップラー刃牙",
+      "bgm_name_cn": "刃牙",
+      "mal": {
+        "id": 287,
+        "title": "Grappler Baki (TV)",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "グラップラー刃牙"
+      },
+      "candidates": [
+        {
+          "bgm_id": 62893,
+          "bgm_name": "グラップラー刃牙",
+          "bgm_name_cn": "刃牙"
+        }
+      ]
+    },
+    {
+      "mal_id": 288,
+      "status": "match",
+      "bgm_id": 9348,
+      "bgm_name": "爆転シュート ベイブレード",
+      "bgm_name_cn": "爆旋陀螺",
+      "mal": {
+        "id": 288,
+        "title": "Bakuten Shoot Beyblade",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "爆転シュート　ベイブレード"
+      },
+      "candidates": [
+        {
+          "bgm_id": 9348,
+          "bgm_name": "爆転シュート ベイブレード",
+          "bgm_name_cn": "爆旋陀螺"
+        }
+      ]
+    },
+    {
+      "mal_id": 352,
+      "status": "match",
+      "bgm_id": 14877,
+      "bgm_name": "も〜っと!おジャ魔女どれみ",
+      "bgm_name_cn": "大～集合！小魔女DoReMi",
+      "mal": {
+        "id": 352,
+        "title": "Motto! Ojamajo Doremi",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "も〜っと！おジャ魔女どれみ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 14877,
+          "bgm_name": "も〜っと!おジャ魔女どれみ",
+          "bgm_name_cn": "大～集合！小魔女DoReMi"
+        }
+      ]
+    },
+    {
+      "mal_id": 564,
+      "status": "match",
+      "bgm_id": 9966,
+      "bgm_name": "ぷにぷに☆ぽえみぃ",
+      "bgm_name_cn": "新世纪魔法少女",
+      "mal": {
+        "id": 564,
+        "title": "Puni Puni☆Poemii",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "ぷにぷに☆ぽえみぃ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 9966,
+          "bgm_name": "ぷにぷに☆ぽえみぃ",
+          "bgm_name_cn": "新世纪魔法少女"
+        }
+      ]
+    },
+    {
+      "mal_id": 601,
+      "status": "match",
+      "bgm_id": 4028,
+      "bgm_name": "ねこぢる草",
+      "bgm_name_cn": "猫汤",
+      "mal": {
+        "id": 601,
+        "title": "Nekojiru-sou",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "ねこぢる草"
+      },
+      "candidates": [
+        {
+          "bgm_id": 4028,
+          "bgm_name": "ねこぢる草",
+          "bgm_name_cn": "猫汤"
+        },
+        {
+          "bgm_id": 25919,
+          "bgm_name": "真ゲッターロボ対ネオゲッターロボ",
+          "bgm_name_cn": "真盖塔VS新盖塔"
+        },
+        {
+          "bgm_id": 316541,
+          "bgm_name": "世界名作劇場・完結版 家族ロビンソン漂流記 ふしぎな島のフローネ",
+          "bgm_name_cn": "世界名作剧场·完结版 鲁滨逊一家漂流记"
+        }
+      ]
+    },
+    {
+      "mal_id": 764,
+      "status": "match",
+      "bgm_id": 26017,
+      "bgm_name": "ゾイド新世紀/ゼロ",
+      "bgm_name_cn": "机兽新世纪ZERO",
+      "mal": {
+        "id": 764,
+        "title": "Zoids Shinseiki/Zero",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ゾイド新世紀／ゼロ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 26017,
+          "bgm_name": "ゾイド新世紀/ゼロ",
+          "bgm_name_cn": "机兽新世纪ZERO"
+        }
+      ]
+    },
+    {
+      "mal_id": 812,
+      "status": "match",
+      "bgm_id": 19418,
+      "bgm_name": "地球少女アルジュナ",
+      "bgm_name_cn": "地球少女Arjuna",
+      "mal": {
+        "id": 812,
+        "title": "Chikyuu Shoujo Arjuna",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "地球少女アルジュナ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 19418,
+          "bgm_name": "地球少女アルジュナ",
+          "bgm_name_cn": "地球少女Arjuna"
+        },
+        {
+          "bgm_id": 32497,
+          "bgm_name": "地球防衛家族",
+          "bgm_name_cn": "地球防卫家族"
+        },
+        {
+          "bgm_id": 26407,
+          "bgm_name": "Z.O.E 2167 IDOLO",
+          "bgm_name_cn": "终极地带：2167"
+        }
+      ]
+    },
+    {
+      "mal_id": 1112,
+      "status": "match",
+      "bgm_id": 54725,
+      "bgm_name": "ヴァンドレッド 胎動篇",
+      "bgm_name_cn": "银河冒险战记 胎动篇",
+      "mal": {
+        "id": 1112,
+        "title": "Vandread: Taidou-hen",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "ヴァンドレッド 胎動篇"
+      },
+      "candidates": [
+        {
+          "bgm_id": 54725,
+          "bgm_name": "ヴァンドレッド 胎動篇",
+          "bgm_name_cn": "银河冒险战记 胎动篇"
+        },
+        {
+          "bgm_id": 8700,
+          "bgm_name": "ヴァンドレッド",
+          "bgm_name_cn": "银河冒险战记"
+        },
+        {
+          "bgm_id": 42691,
+          "bgm_name": "ヴァンドレッド the second stage",
+          "bgm_name_cn": "银河冒险战记 the second stage"
+        },
+        {
+          "bgm_id": 54726,
+          "bgm_name": "ヴァンドレッド 激闘篇",
+          "bgm_name_cn": "银河冒险战记 激斗篇"
+        },
+        {
+          "bgm_id": 56113,
+          "bgm_name": "みにヴァン",
+          "bgm_name_cn": "迷你先导者"
+        },
+        {
+          "bgm_id": 181880,
+          "bgm_name": "クビキリサイクル 青色サヴァンと戯言遣い",
+          "bgm_name_cn": "斩首循环 蓝色学者与戏言跟班"
+        },
+        {
+          "bgm_id": 10225,
+          "bgm_name": "カードファイト!! ヴァンガード",
+          "bgm_name_cn": "卡片战斗先导者"
+        },
+        {
+          "bgm_id": 35977,
+          "bgm_name": "カードファイト!! ヴァンガード アジアサーキット編",
+          "bgm_name_cn": "卡片战斗先导者 亚洲巡回赛篇"
+        },
+        {
+          "bgm_id": 55783,
+          "bgm_name": "カードファイト!! ヴァンガード リンクジョーカー編",
+          "bgm_name_cn": "卡片战斗先导者 链环傀儡篇"
+        },
+        {
+          "bgm_id": 90632,
+          "bgm_name": "カードファイト!! ヴァンガード レギオンメイト編",
+          "bgm_name_cn": "卡片战斗先导者 双斗盟友篇"
+        }
+      ]
+    },
+    {
+      "mal_id": 1248,
+      "status": "match",
+      "bgm_id": 26407,
+      "bgm_name": "Z.O.E 2167 IDOLO",
+      "bgm_name_cn": "终极地带：2167",
+      "mal": {
+        "id": 1248,
+        "title": "Zone of the Enders: 2167 Idolo",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "Z.O.E 2167 IDOLO"
+      },
+      "candidates": [
+        {
+          "bgm_id": 26407,
+          "bgm_name": "Z.O.E 2167 IDOLO",
+          "bgm_name_cn": "终极地带：2167"
+        }
+      ]
+    },
+    {
+      "mal_id": 1465,
+      "status": "match",
+      "bgm_id": 37029,
+      "bgm_name": "破壊魔定光",
+      "bgm_name_cn": "破坏魔定光",
+      "mal": {
+        "id": 1465,
+        "title": "Hakaima Sadamitsu",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "破壊魔定光"
+      },
+      "candidates": [
+        {
+          "bgm_id": 37029,
+          "bgm_name": "破壊魔定光",
+          "bgm_name_cn": "破坏魔定光"
+        }
+      ]
+    },
+    {
+      "mal_id": 1608,
+      "status": "match",
+      "bgm_id": 105076,
+      "bgm_name": "サラリーマン金太郎",
+      "bgm_name_cn": "上班族金太郎",
+      "mal": {
+        "id": 1608,
+        "title": "Salaryman Kintarou",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "サラリーマン金太郎"
+      },
+      "candidates": [
+        {
+          "bgm_id": 105076,
+          "bgm_name": "サラリーマン金太郎",
+          "bgm_name_cn": "上班族金太郎"
+        }
+      ]
+    },
+    {
+      "mal_id": 1797,
+      "status": "match",
+      "bgm_id": 25665,
+      "bgm_name": "アニメーション制作進行くろみちゃん",
+      "bgm_name_cn": "动画制作进行 黑美",
+      "mal": {
+        "id": 1797,
+        "title": "Animation Seisaku Shinkou Kuromi-chan",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "アニメーション制作進行くろみちゃん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 25665,
+          "bgm_name": "アニメーション制作進行くろみちゃん",
+          "bgm_name_cn": "动画制作进行 黑美"
+        }
+      ]
+    },
+    {
+      "mal_id": 1962,
+      "status": "match",
+      "bgm_id": 32497,
+      "bgm_name": "地球防衛家族",
+      "bgm_name_cn": "地球防卫家族",
+      "mal": {
+        "id": 1962,
+        "title": "Chikyuu Bouei Kazoku",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "地球防衛家族"
+      },
+      "candidates": [
+        {
+          "bgm_id": 32497,
+          "bgm_name": "地球防衛家族",
+          "bgm_name_cn": "地球防卫家族"
+        },
+        {
+          "bgm_id": 19418,
+          "bgm_name": "地球少女アルジュナ",
+          "bgm_name_cn": "地球少女Arjuna"
+        },
+        {
+          "bgm_id": 26407,
+          "bgm_name": "Z.O.E 2167 IDOLO",
+          "bgm_name_cn": "终极地带：2167"
+        }
+      ]
+    },
+    {
+      "mal_id": 2189,
+      "status": "match",
+      "bgm_id": 67985,
+      "bgm_name": "新世紀 淫魔聖伝",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2189,
+        "title": "Shinseiki Inma Seiden",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "新世紀 淫魔聖伝"
+      },
+      "candidates": [
+        {
+          "bgm_id": 67985,
+          "bgm_name": "新世紀 淫魔聖伝",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 26017,
+          "bgm_name": "ゾイド新世紀/ゼロ",
+          "bgm_name_cn": "机兽新世纪ZERO"
+        },
+        {
+          "bgm_id": 9966,
+          "bgm_name": "ぷにぷに☆ぽえみぃ",
+          "bgm_name_cn": "新世纪魔法少女"
+        },
+        {
+          "bgm_id": 25919,
+          "bgm_name": "真ゲッターロボ対ネオゲッターロボ",
+          "bgm_name_cn": "真盖塔VS新盖塔"
+        }
+      ]
+    },
+    {
+      "mal_id": 2398,
+      "status": "match",
+      "bgm_id": 3136,
+      "bgm_name": "デジモンアドベンチャー02 ディアボロモンの逆襲",
+      "bgm_name_cn": "数码宝贝大冒险02 超恶魔兽的反击",
+      "mal": {
+        "id": 2398,
+        "title": "Digimon Adventure 02: Diablomon no Gyakushuu",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "デジモンアドベンチャー02 ディアボロモンの逆襲"
+      },
+      "candidates": [
+        {
+          "bgm_id": 3136,
+          "bgm_name": "デジモンアドベンチャー02 ディアボロモンの逆襲",
+          "bgm_name_cn": "数码宝贝大冒险02 超恶魔兽的反击"
+        }
+      ]
+    },
+    {
+      "mal_id": 2991,
+      "status": "match",
+      "bgm_id": 208177,
+      "bgm_name": "はるみちゃんのおいた",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 2991,
+        "title": "Harumi-chan no Oita",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "はるみちゃんのおいた"
+      },
+      "candidates": [
+        {
+          "bgm_id": 208177,
+          "bgm_name": "はるみちゃんのおいた",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 74293,
+          "bgm_name": "ロマンスは剣の輝きII",
+          "bgm_name_cn": "剑芒罗曼史"
+        },
+        {
+          "bgm_id": 36405,
+          "bgm_name": "野坂昭如 戦争童話集 忘れてはイケナイ物語り",
+          "bgm_name_cn": "野坂昭如 战争童话集：不能忘却的故事"
+        },
+        {
+          "bgm_id": 27883,
+          "bgm_name": "ポケットモンスター ミュウツー! 我ハココニ在リ",
+          "bgm_name_cn": "宝可梦: 超梦! 我就在这里"
+        }
+      ]
+    },
+    {
+      "mal_id": 3140,
+      "status": "match",
+      "bgm_id": 187876,
+      "bgm_name": "凌辱の都市 ～狂宴のセレモニー～",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 3140,
+        "title": "Ryoujoku no Machi: Kyouen no Ceremony",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "凌辱の都市 ～狂宴のセレモニー～"
+      },
+      "candidates": [
+        {
+          "bgm_id": 187876,
+          "bgm_name": "凌辱の都市 ～狂宴のセレモニー～",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 3300,
+      "status": "match",
+      "bgm_id": 74293,
+      "bgm_name": "ロマンスは剣の輝きII",
+      "bgm_name_cn": "剑芒罗曼史",
+      "mal": {
+        "id": 3300,
+        "title": "Romance wa Tsurugi no Kagayaki II",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "ロマンスは剣の輝きII"
+      },
+      "candidates": [
+        {
+          "bgm_id": 74293,
+          "bgm_name": "ロマンスは剣の輝きII",
+          "bgm_name_cn": "剑芒罗曼史"
+        }
+      ]
+    },
+    {
+      "mal_id": 3377,
+      "status": "match",
+      "bgm_id": 74407,
+      "bgm_name": "トレス・マリアス 3人の聖処女",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 3377,
+        "title": "Tres Marias: Sannin no Sei Shojo",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "トレス・マリアス 3人の聖処女"
+      },
+      "candidates": [
+        {
+          "bgm_id": 74407,
+          "bgm_name": "トレス・マリアス 3人の聖処女",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 112542,
+          "bgm_name": "マリンとヤマト 不思議な日曜日",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 90015,
+          "bgm_name": "ピチューとピカチュウのふゆやすみ2001",
+          "bgm_name_cn": "皮卡丘的寒假2001"
+        },
+        {
+          "bgm_id": 465,
+          "bgm_name": "ドラえもん のび太と翼の勇者たち",
+          "bgm_name_cn": "哆啦A梦：大雄与翼之勇者"
+        }
+      ]
+    },
+    {
+      "mal_id": 3458,
+      "status": "match",
+      "bgm_id": 317773,
+      "bgm_name": "ピポパポパトルくん",
+      "bgm_name_cn": "警车奇恋",
+      "mal": {
+        "id": 3458,
+        "title": "Pi Po Pa Po Patrol-kun",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ピポパポパトルくん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 317773,
+          "bgm_name": "ピポパポパトルくん",
+          "bgm_name_cn": "警车奇恋"
+        }
+      ]
+    },
+    {
+      "mal_id": 3536,
+      "status": "match",
+      "bgm_id": 81863,
+      "bgm_name": "妖囁",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 3536,
+        "title": "Youshou",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "妖囁"
+      },
+      "candidates": [
+        {
+          "bgm_id": 81863,
+          "bgm_name": "妖囁",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 10465,
+          "bgm_name": "妖獣都市",
+          "bgm_name_cn": "妖兽都市"
+        },
+        {
+          "bgm_id": 58916,
+          "bgm_name": "妖逆門",
+          "bgm_name_cn": "妖逆门"
+        },
+        {
+          "bgm_id": 79520,
+          "bgm_name": "妖香の剣",
+          "bgm_name_cn": "妖香之剑"
+        },
+        {
+          "bgm_id": 103740,
+          "bgm_name": "妖獣教室外伝",
+          "bgm_name_cn": "妖兽教室外传"
+        },
+        {
+          "bgm_id": 103741,
+          "bgm_name": "妖獣教室",
+          "bgm_name_cn": "妖兽教室"
+        },
+        {
+          "bgm_id": 178850,
+          "bgm_name": "妖树与松鼠",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 210923,
+          "bgm_name": "妖世紀水滸伝 魔星降臨",
+          "bgm_name_cn": "妖世纪水浒传 魔星降临"
+        },
+        {
+          "bgm_id": 214790,
+          "bgm_name": "妖神记",
+          "bgm_name_cn": "妖神记"
+        },
+        {
+          "bgm_id": 233703,
+          "bgm_name": "妖神记 第二季",
+          "bgm_name_cn": "妖神记 第二季"
+        }
+      ]
+    },
+    {
+      "mal_id": 3540,
+      "status": "match",
+      "bgm_id": 124968,
+      "bgm_name": "変貌 モラルハザード",
+      "bgm_name_cn": "变貌",
+      "mal": {
+        "id": 3540,
+        "title": "Henbou Moral Hazard",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "変貌 モラルハザード"
+      },
+      "candidates": [
+        {
+          "bgm_id": 124968,
+          "bgm_name": "変貌 モラルハザード",
+          "bgm_name_cn": "变貌"
+        }
+      ]
+    },
+    {
+      "mal_id": 3587,
+      "status": "match",
+      "bgm_id": 69439,
+      "bgm_name": "遺作 ～Respect～",
+      "bgm_name_cn": "遗作 ～Respect～",
+      "mal": {
+        "id": 3587,
+        "title": "Isaku: Respect",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "遺作 ～Respect～"
+      },
+      "candidates": [
+        {
+          "bgm_id": 69439,
+          "bgm_name": "遺作 ～Respect～",
+          "bgm_name_cn": "遗作 ～Respect～"
+        }
+      ]
+    },
+    {
+      "mal_id": 4541,
+      "status": "match",
+      "bgm_id": 106063,
+      "bgm_name": "ヴィシャス",
+      "bgm_name_cn": "罪恶",
+      "mal": {
+        "id": 4541,
+        "title": "Vicious",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "ヴィシャス"
+      },
+      "candidates": [
+        {
+          "bgm_id": 106063,
+          "bgm_name": "ヴィシャス",
+          "bgm_name_cn": "罪恶"
+        }
+      ]
+    },
+    {
+      "mal_id": 5570,
+      "status": "match",
+      "bgm_id": 198812,
+      "bgm_name": "微熱姫 懺悔の章",
+      "bgm_name_cn": "微热姬 忏悔之章",
+      "mal": {
+        "id": 5570,
+        "title": "Binetsu Hime: Zange no Shou",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "微熱姫 懺悔の章"
+      },
+      "candidates": [
+        {
+          "bgm_id": 198812,
+          "bgm_name": "微熱姫 懺悔の章",
+          "bgm_name_cn": "微热姬 忏悔之章"
+        }
+      ]
+    },
+    {
+      "mal_id": 23707,
+      "status": "match",
+      "bgm_id": 554070,
+      "bgm_name": "さばくの国の王女さま",
+      "bgm_name_cn": "沙漠之国的王女殿下",
+      "mal": {
+        "id": 23707,
+        "title": "Sabaku no Kuni no Oujosama",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "さばくの国の王女さま"
+      },
+      "candidates": [
+        {
+          "bgm_id": 554070,
+          "bgm_name": "さばくの国の王女さま",
+          "bgm_name_cn": "沙漠之国的王女殿下"
+        },
+        {
+          "bgm_id": 111925,
+          "bgm_name": "さばくの宝の城",
+          "bgm_name_cn": "沙漠的宝城"
+        },
+        {
+          "bgm_id": 326921,
+          "bgm_name": "おかしなさばくのスナとマヌ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 453825,
+          "bgm_name": "さざ波の少女たち",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 304638,
+          "bgm_name": "鷹の爪団のサイバー犯罪撲滅大作戦",
+          "bgm_name_cn": "鹰之爪団之网络犯罪消灭大作战"
+        },
+        {
+          "bgm_id": 82193,
+          "bgm_name": "さばげぶっ!",
+          "bgm_name_cn": "生存游戏社"
+        },
+        {
+          "bgm_id": 421835,
+          "bgm_name": "アニサバ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 524988,
+          "bgm_name": "ディズニー ツイステッドワンダーランド ザ アニメーション シーズン エピソード オブ サバナクロー",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 32585,
+          "bgm_name": "サザエさん",
+          "bgm_name_cn": "海螺小姐"
+        },
+        {
+          "bgm_id": 54819,
+          "bgm_name": "サバンナ・ゲーム",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 34490,
+      "status": "match",
+      "bgm_id": 318259,
+      "bgm_name": "すしあざらし",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 34490,
+        "title": "Sushi Azarashi",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "すしあざらし"
+      },
+      "candidates": [
+        {
+          "bgm_id": 318259,
+          "bgm_name": "すしあざらし",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 89712,
+          "bgm_name": "ドラミ&ドラえもんズ 宇宙ランド危機イッパツ!",
+          "bgm_name_cn": "哆啦美与哆啦A梦七小子·宇宙乐园之千钧一发！"
+        }
+      ]
+    },
+    {
+      "mal_id": 49498,
+      "status": "match",
+      "bgm_id": 546191,
+      "bgm_name": "らめんちゃいにゃん",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 49498,
+        "title": "Ramen Chai-nyan",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "らめんちゃいにゃん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 546191,
+          "bgm_name": "らめんちゃいにゃん",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 57591,
+      "status": "match",
+      "bgm_id": 309831,
+      "bgm_name": "すてき！さくらママ",
+      "bgm_name_cn": "好啊！樱妈妈",
+      "mal": {
+        "id": 57591,
+        "title": "Suteki! Sakura Mama",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "すてき！さくらママ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 309831,
+          "bgm_name": "すてき！さくらママ",
+          "bgm_name_cn": "好啊！樱妈妈"
+        }
+      ]
+    }
+  ]
+}

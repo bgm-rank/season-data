@@ -1,0 +1,369 @@
+{
+  "season": "2005-winter",
+  "update_time": "2026-02-26T10:43:06+08:00",
+  "items": [
+    {
+      "mal_id": 464,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 464,
+        "title": "One Piece Movie 06: Omatsuri Danshaku to Himitsu no Shima",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "ワンピース オマツリ男爵と秘密の島"
+      },
+      "candidates": [
+        {
+          "bgm_id": 133676,
+          "bgm_name": "がぁ～でぃあんHearts ぱわーあっぷ!",
+          "bgm_name_cn": "守护之心Power UP！"
+        }
+      ]
+    },
+    {
+      "mal_id": 4103,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 4103,
+        "title": "Oval x Over",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "OVALxOVER"
+      },
+      "candidates": []
+    },
+    {
+      "mal_id": 4475,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 4475,
+        "title": "Toshi wo Totta Wani",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "年をとった鰐"
+      },
+      "candidates": [
+        {
+          "bgm_id": 210803,
+          "bgm_name": "2005年宇宙の旅",
+          "bgm_name_cn": "2005年宇宙之旅"
+        }
+      ]
+    },
+    {
+      "mal_id": 5842,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 5842,
+        "title": "Kotatsu Neko",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "コタツネコ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 6751,
+          "bgm_name": "いちご100% 恋が始まる!? 撮影合宿 〜ゆれるココロが東へ西へ〜",
+          "bgm_name_cn": "草莓100% 恋爱开始!? 摄影合宿 ～动摇的心向东向西～"
+        }
+      ]
+    },
+    {
+      "mal_id": 8189,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 8189,
+        "title": "The World of Golden Eggs",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ザ・ワールド・オブ・ゴールデン・エッグス"
+      },
+      "candidates": [
+        {
+          "bgm_id": 324288,
+          "bgm_name": "未来への虹 -僕のおじさんは, ハンセン病-",
+          "bgm_name_cn": "未来的彩虹-我的叔叔患有汉森氏病-"
+        },
+        {
+          "bgm_id": 325116,
+          "bgm_name": "電信柱のお母さん",
+          "bgm_name_cn": "电线杆的母亲"
+        }
+      ]
+    },
+    {
+      "mal_id": 20797,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 20797,
+        "title": "Sennen no Yakusoku",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "千年の約束"
+      },
+      "candidates": [
+        {
+          "bgm_id": 234,
+          "bgm_name": "AIR",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 29733,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 29733,
+        "title": "Sayonara, Midori ga Ike: Tobe! Tako Glider!!",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "サヨナラ、みどりが池-飛べ!凧グライダー!!-"
+      },
+      "candidates": [
+        {
+          "bgm_id": 299,
+          "bgm_name": "さよなら絶望先生",
+          "bgm_name_cn": "再见绝望先生"
+        },
+        {
+          "bgm_id": 33922,
+          "bgm_name": "さよなら銀河鉄道999 -アンドロメダ終着駅-",
+          "bgm_name_cn": "再见 银河铁道999 安卓梅达终点站"
+        },
+        {
+          "bgm_id": 114105,
+          "bgm_name": "さよなら絶望先生 Blu-ray BOX化記念 完全新作話",
+          "bgm_name_cn": "再见绝望先生 Blu-ray BOX化纪念话"
+        },
+        {
+          "bgm_id": 218971,
+          "bgm_name": "さよならの朝に約束の花をかざろう",
+          "bgm_name_cn": "朝花夕誓——于离别之朝束起约定之花"
+        },
+        {
+          "bgm_id": 304089,
+          "bgm_name": "さよなら、ティラノ",
+          "bgm_name_cn": "再见，暴龙"
+        },
+        {
+          "bgm_id": 314163,
+          "bgm_name": "さよなら私のクラマー",
+          "bgm_name_cn": "再见了，我的克拉默"
+        },
+        {
+          "bgm_id": 495291,
+          "bgm_name": "さよならララ",
+          "bgm_name_cn": "再见，拉拉"
+        },
+        {
+          "bgm_id": 300,
+          "bgm_name": "俗・さよなら絶望先生",
+          "bgm_name_cn": "俗・再见绝望先生"
+        },
+        {
+          "bgm_id": 1742,
+          "bgm_name": "懺・さよなら絶望先生",
+          "bgm_name_cn": "忏・再见绝望先生"
+        },
+        {
+          "bgm_id": 2603,
+          "bgm_name": "獄・さよなら絶望先生",
+          "bgm_name_cn": "狱・再见绝望先生"
+        }
+      ]
+    },
+    {
+      "mal_id": 29843,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 29843,
+        "title": "Akuei to Gacchinpo: Tenkomori",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "アークエとガッチンポー てんこもり"
+      },
+      "candidates": [
+        {
+          "bgm_id": 4217,
+          "bgm_name": "ああっ女神さまっ",
+          "bgm_name_cn": "我的女神"
+        },
+        {
+          "bgm_id": 133676,
+          "bgm_name": "がぁ～でぃあんHearts ぱわーあっぷ!",
+          "bgm_name_cn": "守护之心Power UP！"
+        }
+      ]
+    },
+    {
+      "mal_id": 30409,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 30409,
+        "title": "Nepos Napos",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ネポス・ナポス"
+      },
+      "candidates": [
+        {
+          "bgm_id": 333614,
+          "bgm_name": "ネトシス",
+          "bgm_name_cn": "NTR姐姐"
+        },
+        {
+          "bgm_id": 67224,
+          "bgm_name": "ジュエルペット ハッピネス",
+          "bgm_name_cn": "宝石宠物 Happiness"
+        },
+        {
+          "bgm_id": 571896,
+          "bgm_name": "サイボーグ009 ネメシス",
+          "bgm_name_cn": "人造人009 涅墨西斯"
+        },
+        {
+          "bgm_id": 331031,
+          "bgm_name": "SCARLET NEXUS",
+          "bgm_name_cn": "绯红结系"
+        }
+      ]
+    },
+    {
+      "mal_id": 36734,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 36734,
+        "title": "(A Long Day of) Mr. Calpaccio",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "(ア・ロング・デイ・オブ)Mr.カルパッチョ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 450343,
+          "bgm_name": "ブルーロック あでぃしょなる・たいむ！",
+          "bgm_name_cn": "蓝色监狱迷你动画 伤停补时！"
+        },
+        {
+          "bgm_id": 1182,
+          "bgm_name": "アキカン！",
+          "bgm_name_cn": "空罐少女"
+        },
+        {
+          "bgm_id": 1593,
+          "bgm_name": "アラド戦記 ～スラップアップパーティー～",
+          "bgm_name_cn": "阿拉德战记 Slap-up Party"
+        },
+        {
+          "bgm_id": 3069,
+          "bgm_name": "あにゃまる探偵 キルミンずぅ",
+          "bgm_name_cn": "喵丸侦探基尔米"
+        },
+        {
+          "bgm_id": 3158,
+          "bgm_name": "アキカン! カン一発!?温泉パニック",
+          "bgm_name_cn": "空罐少女！千罐一发！？温泉危机"
+        },
+        {
+          "bgm_id": 12620,
+          "bgm_name": "アクエリオンEVOL",
+          "bgm_name_cn": "创圣的大天使EVOL"
+        },
+        {
+          "bgm_id": 29649,
+          "bgm_name": "アルヴ・レズル -機械仕掛けの妖精たち-",
+          "bgm_name_cn": "Arve Rezzle 机器化的妖精们"
+        },
+        {
+          "bgm_id": 38902,
+          "bgm_name": "あばしり一家",
+          "bgm_name_cn": "亚马尻一家"
+        },
+        {
+          "bgm_id": 50681,
+          "bgm_name": "あかほり外道アワーらぶげ",
+          "bgm_name_cn": "绝对正义vs外道少女队"
+        },
+        {
+          "bgm_id": 61420,
+          "bgm_name": "あねいも",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 39146,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 39146,
+        "title": "Chikyuu ni Yasashii Shopping: Midori-chan to Recycle-ku Shopping",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "地球にやさしいショッピング ミドリちゃんと リサイくるくるショッピング"
+      },
+      "candidates": [
+        {
+          "bgm_id": 389156,
+          "bgm_name": "チ。 ―地球の運動について―",
+          "bgm_name_cn": "地。 ―关于地球的运动―"
+        },
+        {
+          "bgm_id": 605266,
+          "bgm_name": "小さな幸せを、地球の幸せに。",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 334554,
+          "bgm_name": "地獄に堕ちても逝きたがり！！ The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 332513,
+          "bgm_name": "サムシング グレート 地図にない町",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 182103,
+          "bgm_name": "地下鉄に乗るっ",
+          "bgm_name_cn": "乘坐地铁"
+        },
+        {
+          "bgm_id": 465169,
+          "bgm_name": "隣に住んでる地雷女子に性活を乱されて困る The Motion Anime",
+          "bgm_name_cn": "被住在隔壁的地雷女子打乱了性生活很为难"
+        },
+        {
+          "bgm_id": 531107,
+          "bgm_name": "レ◯ッカ凌辱地獄 罠に堕ちた女剣闘士",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 386475,
+          "bgm_name": "僕のヒーローアカデミア 笑え！地獄のように",
+          "bgm_name_cn": "我的英雄学院 笑吧！如同地狱一般"
+        },
+        {
+          "bgm_id": 381213,
+          "bgm_name": "セックスレス 地味妻が不倫に走った理由 The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 407163,
+          "bgm_name": "地味巨乳配信ひよりちゃん 電マに泡立て器・超極太バイブなんかでハードオナニー生配信してたらうっかり子宮ポ●●しちゃいました！！",
+          "bgm_name_cn": ""
+        }
+      ]
+    }
+  ]
+}

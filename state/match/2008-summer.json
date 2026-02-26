@@ -1,0 +1,736 @@
+{
+  "season": "2008-summer",
+  "update_time": "2026-02-26T11:06:50+08:00",
+  "items": [
+    {
+      "mal_id": 2890,
+      "status": "match",
+      "bgm_id": 313,
+      "bgm_name": "崖の上のポニョ",
+      "bgm_name_cn": "崖上的波妞",
+      "mal": {
+        "id": 2890,
+        "title": "Gake no Ue no Ponyo",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "崖の上のポニョ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 313,
+          "bgm_name": "崖の上のポニョ",
+          "bgm_name_cn": "崖上的波妞"
+        }
+      ]
+    },
+    {
+      "mal_id": 3167,
+      "status": "match",
+      "bgm_id": 1760,
+      "bgm_name": "イヴの時間",
+      "bgm_name_cn": "夏娃的时间",
+      "mal": {
+        "id": 3167,
+        "title": "Eve no Jikan",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "イヴの時間"
+      },
+      "candidates": [
+        {
+          "bgm_id": 1760,
+          "bgm_name": "イヴの時間",
+          "bgm_name_cn": "夏娃的时间"
+        },
+        {
+          "bgm_id": 11658,
+          "bgm_name": "つみきのいえ",
+          "bgm_name_cn": "回忆积木小屋"
+        }
+      ]
+    },
+    {
+      "mal_id": 3467,
+      "status": "match",
+      "bgm_id": 762,
+      "bgm_name": "乃木坂春香の秘密",
+      "bgm_name_cn": "乃木坂春香的秘密",
+      "mal": {
+        "id": 3467,
+        "title": "Nogizaka Haruka no Himitsu",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "乃木坂春香の秘密"
+      },
+      "candidates": [
+        {
+          "bgm_id": 762,
+          "bgm_name": "乃木坂春香の秘密",
+          "bgm_name_cn": "乃木坂春香的秘密"
+        }
+      ]
+    },
+    {
+      "mal_id": 3604,
+      "status": "match",
+      "bgm_id": 330,
+      "bgm_name": "ひだまりスケッチ×365",
+      "bgm_name_cn": "向阳素描×365",
+      "mal": {
+        "id": 3604,
+        "title": "Hidamari Sketch x 365",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "ひだまりスケッチ×365"
+      },
+      "candidates": [
+        {
+          "bgm_id": 330,
+          "bgm_name": "ひだまりスケッチ×365",
+          "bgm_name_cn": "向阳素描×365"
+        }
+      ]
+    },
+    {
+      "mal_id": 3614,
+      "status": "match",
+      "bgm_id": 907,
+      "bgm_name": "薬師寺涼子の怪奇事件簿",
+      "bgm_name_cn": "药师寺凉子怪奇事件簿",
+      "mal": {
+        "id": 3614,
+        "title": "Yakushiji Ryouko no Kaiki Jikenbo",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "薬師寺涼子の怪奇事件簿"
+      },
+      "candidates": [
+        {
+          "bgm_id": 907,
+          "bgm_name": "薬師寺涼子の怪奇事件簿",
+          "bgm_name_cn": "药师寺凉子怪奇事件簿"
+        }
+      ]
+    },
+    {
+      "mal_id": 3667,
+      "status": "match",
+      "bgm_id": 698,
+      "bgm_name": "ストライクウィッチーズ",
+      "bgm_name_cn": "强袭魔女",
+      "mal": {
+        "id": 3667,
+        "title": "Strike Witches",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "ストライクウィッチーズ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 698,
+          "bgm_name": "ストライクウィッチーズ",
+          "bgm_name_cn": "强袭魔女"
+        }
+      ]
+    },
+    {
+      "mal_id": 3668,
+      "status": "match",
+      "bgm_id": 20683,
+      "bgm_name": "テレパシー少女 蘭",
+      "bgm_name_cn": "超能力少女兰",
+      "mal": {
+        "id": 3668,
+        "title": "Telepathy Shoujo Ran",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "テレパシー少女 蘭"
+      },
+      "candidates": [
+        {
+          "bgm_id": 20683,
+          "bgm_name": "テレパシー少女 蘭",
+          "bgm_name_cn": "超能力少女兰"
+        }
+      ]
+    },
+    {
+      "mal_id": 3702,
+      "status": "match",
+      "bgm_id": 2108,
+      "bgm_name": "デトロイト・メタル・シティ",
+      "bgm_name_cn": "重金属摇滚双面人",
+      "mal": {
+        "id": 3702,
+        "title": "Detroit Metal City",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "デトロイト・メタル・シティ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 2108,
+          "bgm_name": "デトロイト・メタル・シティ",
+          "bgm_name_cn": "重金属摇滚双面人"
+        }
+      ]
+    },
+    {
+      "mal_id": 3805,
+      "status": "match",
+      "bgm_id": 22599,
+      "bgm_name": "快盗天使ツインエンジェル",
+      "bgm_name_cn": "快盗天使双胞胎",
+      "mal": {
+        "id": 3805,
+        "title": "Kaitou Tenshi Twin Angel",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "快盗天使ツインエンジェル"
+      },
+      "candidates": [
+        {
+          "bgm_id": 22599,
+          "bgm_name": "快盗天使ツインエンジェル",
+          "bgm_name_cn": "快盗天使双胞胎"
+        }
+      ]
+    },
+    {
+      "mal_id": 4063,
+      "status": "match",
+      "bgm_id": 325,
+      "bgm_name": "セキレイ",
+      "bgm_name_cn": "鹡鸰女神",
+      "mal": {
+        "id": 4063,
+        "title": "Sekirei",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "セキレイ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 325,
+          "bgm_name": "セキレイ",
+          "bgm_name_cn": "鹡鸰女神"
+        }
+      ]
+    },
+    {
+      "mal_id": 4081,
+      "status": "match",
+      "bgm_id": 259,
+      "bgm_name": "夏目友人帳",
+      "bgm_name_cn": "夏目友人帐",
+      "mal": {
+        "id": 4081,
+        "title": "Natsume Yuujinchou",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "夏目友人帳"
+      },
+      "candidates": [
+        {
+          "bgm_id": 259,
+          "bgm_name": "夏目友人帳",
+          "bgm_name_cn": "夏目友人帐"
+        },
+        {
+          "bgm_id": 807,
+          "bgm_name": "魔法遣いに大切なこと 〜夏のソラ〜",
+          "bgm_name_cn": "魔法使的条件 夏季的天空"
+        }
+      ]
+    },
+    {
+      "mal_id": 4107,
+      "status": "match",
+      "bgm_id": 3995,
+      "bgm_name": "劇場版 天元突破グレンラガン 紅蓮篇",
+      "bgm_name_cn": "天元突破红莲螺岩 红莲篇",
+      "mal": {
+        "id": 4107,
+        "title": "Tengen Toppa Gurren Lagann Movie 1: Gurren-hen",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "劇場版 天元突破グレンラガン 紅蓮篇"
+      },
+      "candidates": [
+        {
+          "bgm_id": 3995,
+          "bgm_name": "劇場版 天元突破グレンラガン 紅蓮篇",
+          "bgm_name_cn": "天元突破红莲螺岩 红莲篇"
+        },
+        {
+          "bgm_id": 1333,
+          "bgm_name": "劇場版 空の境界 第五章 矛盾螺旋",
+          "bgm_name_cn": "剧场版 空之境界 第五章 矛盾螺旋"
+        },
+        {
+          "bgm_id": 3032,
+          "bgm_name": "劇場版ポケットモンスター ダイヤモンド&パール ギラティナと氷空の花束 シェイミ",
+          "bgm_name_cn": "剧场版宝可梦 钻石&珍珠: 骑拉帝纳与冰空的花束 谢米"
+        },
+        {
+          "bgm_id": 22444,
+          "bgm_name": "劇場版 NARUTO -ナルト- 疾風伝 絆",
+          "bgm_name_cn": "火影忍者疾风传 剧场版 羁绊"
+        },
+        {
+          "bgm_id": 18615,
+          "bgm_name": "犬夜叉 黒い鉄砕牙",
+          "bgm_name_cn": "犬夜叉 黑色铁碎牙"
+        }
+      ]
+    },
+    {
+      "mal_id": 4151,
+      "status": "match",
+      "bgm_id": 492,
+      "bgm_name": "無限の住人",
+      "bgm_name_cn": "无限之住人",
+      "mal": {
+        "id": 4151,
+        "title": "Mugen no Juunin",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "無限の住人"
+      },
+      "candidates": [
+        {
+          "bgm_id": 492,
+          "bgm_name": "無限の住人",
+          "bgm_name_cn": "无限之住人"
+        },
+        {
+          "bgm_id": 811,
+          "bgm_name": "恋姫†無双",
+          "bgm_name_cn": "恋姬无双"
+        }
+      ]
+    },
+    {
+      "mal_id": 4177,
+      "status": "match",
+      "bgm_id": 917,
+      "bgm_name": "亡念のザムド",
+      "bgm_name_cn": "亡念之扎姆德",
+      "mal": {
+        "id": 4177,
+        "title": "Bounen no Xamdou",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "亡念のザムド"
+      },
+      "candidates": [
+        {
+          "bgm_id": 917,
+          "bgm_name": "亡念のザムド",
+          "bgm_name_cn": "亡念之扎姆德"
+        }
+      ]
+    },
+    {
+      "mal_id": 4262,
+      "status": "match",
+      "bgm_id": 811,
+      "bgm_name": "恋姫†無双",
+      "bgm_name_cn": "恋姬无双",
+      "mal": {
+        "id": 4262,
+        "title": "Koihime†Musou",
+        "media_type": "tv",
+        "rating": "r18",
+        "title_ja": "恋姫†無双"
+      },
+      "candidates": [
+        {
+          "bgm_id": 811,
+          "bgm_name": "恋姫†無双",
+          "bgm_name_cn": "恋姬无双"
+        },
+        {
+          "bgm_id": 236118,
+          "bgm_name": "戀雨",
+          "bgm_name_cn": "恋雨"
+        }
+      ]
+    },
+    {
+      "mal_id": 4684,
+      "status": "match",
+      "bgm_id": 11877,
+      "bgm_name": "スケアクロウマン",
+      "bgm_name_cn": "稻草男",
+      "mal": {
+        "id": 4684,
+        "title": "Scarecrowman",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "スケアクロウマン"
+      },
+      "candidates": [
+        {
+          "bgm_id": 11877,
+          "bgm_name": "スケアクロウマン",
+          "bgm_name_cn": "稻草男"
+        }
+      ]
+    },
+    {
+      "mal_id": 5194,
+      "status": "match",
+      "bgm_id": 61420,
+      "bgm_name": "あねいも",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 5194,
+        "title": "Aneimo",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "あねいも"
+      },
+      "candidates": [
+        {
+          "bgm_id": 61420,
+          "bgm_name": "あねいも",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 364615,
+          "bgm_name": "あやリミテッド",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 3032,
+          "bgm_name": "劇場版ポケットモンスター ダイヤモンド&パール ギラティナと氷空の花束 シェイミ",
+          "bgm_name_cn": "剧场版宝可梦 钻石&珍珠: 骑拉帝纳与冰空的花束 谢米"
+        }
+      ]
+    },
+    {
+      "mal_id": 5212,
+      "status": "match",
+      "bgm_id": 74426,
+      "bgm_name": "催眠学園",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 5212,
+        "title": "Saimin Gakuen",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "催眠学園"
+      },
+      "candidates": [
+        {
+          "bgm_id": 74426,
+          "bgm_name": "催眠学園",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 5214,
+      "status": "match",
+      "bgm_id": 63343,
+      "bgm_name": "学園姉妹",
+      "bgm_name_cn": "学园姐妹",
+      "mal": {
+        "id": 5214,
+        "title": "Gakuen Shimai",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "学園姉妹"
+      },
+      "candidates": [
+        {
+          "bgm_id": 63343,
+          "bgm_name": "学園姉妹",
+          "bgm_name_cn": "学园姐妹"
+        },
+        {
+          "bgm_id": 74426,
+          "bgm_name": "催眠学園",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 5281,
+      "status": "match",
+      "bgm_id": 63020,
+      "bgm_name": "必殺痴漢人",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 5281,
+        "title": "Hissatsu Chikan Nin",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "必殺痴漢人"
+      },
+      "candidates": [
+        {
+          "bgm_id": 63020,
+          "bgm_name": "必殺痴漢人",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 5304,
+      "status": "match",
+      "bgm_id": 579392,
+      "bgm_name": "アキバちゃん",
+      "bgm_name_cn": "小秋叶",
+      "mal": {
+        "id": 5304,
+        "title": "Akiba-chan",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "アキバちゃん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 579392,
+          "bgm_name": "アキバちゃん",
+          "bgm_name_cn": "小秋叶"
+        }
+      ]
+    },
+    {
+      "mal_id": 5427,
+      "status": "match",
+      "bgm_id": 70432,
+      "bgm_name": "戦乙女ヴァルキリー2",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 5427,
+        "title": "Ikusa Otome Valkyrie 2",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "戦乙女ヴァルキリー2"
+      },
+      "candidates": [
+        {
+          "bgm_id": 70432,
+          "bgm_name": "戦乙女ヴァルキリー2",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 5496,
+      "status": "match",
+      "bgm_id": 7747,
+      "bgm_name": "風雲決",
+      "bgm_name_cn": "风云决",
+      "mal": {
+        "id": 5496,
+        "title": "Feng Yun Jue",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "風雲決"
+      },
+      "candidates": [
+        {
+          "bgm_id": 7747,
+          "bgm_name": "風雲決",
+          "bgm_name_cn": "风云决"
+        },
+        {
+          "bgm_id": 161703,
+          "bgm_name": "ロボディーズ -RoboDz- 風雲篇",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 6809,
+      "status": "match",
+      "bgm_id": 114150,
+      "bgm_name": "都市伝説物語 ひきこ",
+      "bgm_name_cn": "都市传说物语 妃姬子",
+      "mal": {
+        "id": 6809,
+        "title": "Toshi Densetsu Monogatari Hikiko",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "都市伝説物語　ひきこ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 114150,
+          "bgm_name": "都市伝説物語 ひきこ",
+          "bgm_name_cn": "都市传说物语 妃姬子"
+        }
+      ]
+    },
+    {
+      "mal_id": 11841,
+      "status": "match",
+      "bgm_id": 2769,
+      "bgm_name": "秦时明月之夜尽天明",
+      "bgm_name_cn": "秦时明月之夜尽天明",
+      "mal": {
+        "id": 11841,
+        "title": "Qin Shi Mingyue: Ye Jin Tianming",
+        "media_type": "tv",
+        "rating": "general",
+        "title_ja": "秦时明月之夜尽天明"
+      },
+      "candidates": [
+        {
+          "bgm_id": 2769,
+          "bgm_name": "秦时明月之夜尽天明",
+          "bgm_name_cn": "秦时明月之夜尽天明"
+        }
+      ]
+    },
+    {
+      "mal_id": 21951,
+      "status": "match",
+      "bgm_id": 422507,
+      "bgm_name": "それいけ!アンパンマン ヒヤヒヤヒヤリコとばぶ・ばぶばいきんまん",
+      "bgm_name_cn": "",
+      "mal": {
+        "id": 21951,
+        "title": "Sore Ike! Anpanman: Hiya Hiya Hiyariko to Babu Babu Baikinman",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "それいけ!アンパンマン ヒヤヒヤヒヤリコとばぶ・ばぶばいきんまん"
+      },
+      "candidates": [
+        {
+          "bgm_id": 422507,
+          "bgm_name": "それいけ!アンパンマン ヒヤヒヤヒヤリコとばぶ・ばぶばいきんまん",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 335295,
+          "bgm_name": "それいけ!アンパンマン 妖精リンリンのひみつ",
+          "bgm_name_cn": "面包超人：妖精琳琳的秘密"
+        },
+        {
+          "bgm_id": 807,
+          "bgm_name": "魔法遣いに大切なこと 〜夏のソラ〜",
+          "bgm_name_cn": "魔法使的条件 夏季的天空"
+        }
+      ]
+    },
+    {
+      "mal_id": 21967,
+      "status": "match",
+      "bgm_id": 335295,
+      "bgm_name": "それいけ!アンパンマン 妖精リンリンのひみつ",
+      "bgm_name_cn": "面包超人：妖精琳琳的秘密",
+      "mal": {
+        "id": 21967,
+        "title": "Sore Ike! Anpanman: Yousei Rinrin no Himitsu",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "それいけ!アンパンマン 妖精リンリンのひみつ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 335295,
+          "bgm_name": "それいけ!アンパンマン 妖精リンリンのひみつ",
+          "bgm_name_cn": "面包超人：妖精琳琳的秘密"
+        },
+        {
+          "bgm_id": 422507,
+          "bgm_name": "それいけ!アンパンマン ヒヤヒヤヒヤリコとばぶ・ばぶばいきんまん",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 807,
+          "bgm_name": "魔法遣いに大切なこと 〜夏のソラ〜",
+          "bgm_name_cn": "魔法使的条件 夏季的天空"
+        }
+      ]
+    },
+    {
+      "mal_id": 28103,
+      "status": "match",
+      "bgm_id": 535043,
+      "bgm_name": "ゲゲゲの鬼太郎 妖怪JAPANラリー3D",
+      "bgm_name_cn": "鬼太郎 日本妖怪拉力赛3D",
+      "mal": {
+        "id": 28103,
+        "title": "Gegege no Kitarou: Youkai Japan Rally 3D",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "ゲゲゲの鬼太郎 妖怪JAPANラリー3D"
+      },
+      "candidates": [
+        {
+          "bgm_id": 535043,
+          "bgm_name": "ゲゲゲの鬼太郎 妖怪JAPANラリー3D",
+          "bgm_name_cn": "鬼太郎 日本妖怪拉力赛3D"
+        }
+      ]
+    },
+    {
+      "mal_id": 40407,
+      "status": "match",
+      "bgm_id": 216384,
+      "bgm_name": "ななみちゃん 第5シリーズ",
+      "bgm_name_cn": "魔法娜娜咪 第五季",
+      "mal": {
+        "id": 40407,
+        "title": "Nanami-chan 5th Series",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ななみちゃん 第5シリーズ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 216384,
+          "bgm_name": "ななみちゃん 第5シリーズ",
+          "bgm_name_cn": "魔法娜娜咪 第五季"
+        },
+        {
+          "bgm_id": 458009,
+          "bgm_name": "サモンナイト2 Magical Disc",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 807,
+          "bgm_name": "魔法遣いに大切なこと 〜夏のソラ〜",
+          "bgm_name_cn": "魔法使的条件 夏季的天空"
+        },
+        {
+          "bgm_id": 56680,
+          "bgm_name": "エロマンガみたいな恋しよう LET’S FALL IN LOVE THE ERO-MANGA",
+          "bgm_name_cn": "像工口漫画一样恋爱吧"
+        },
+        {
+          "bgm_id": 36951,
+          "bgm_name": "Batman: Gotham Knight",
+          "bgm_name_cn": "蝙蝠侠：哥谭骑士"
+        }
+      ]
+    },
+    {
+      "mal_id": 44713,
+      "status": "match",
+      "bgm_id": 565688,
+      "bgm_name": "向钱冲，向前冲",
+      "bgm_name_cn": "向钱冲，向前冲",
+      "mal": {
+        "id": 44713,
+        "title": "Xiang Qian Chong, Xiang Qian Chong",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "向钱冲，向前冲"
+      },
+      "candidates": [
+        {
+          "bgm_id": 565688,
+          "bgm_name": "向钱冲，向前冲",
+          "bgm_name_cn": "向钱冲，向前冲"
+        }
+      ]
+    }
+  ]
+}

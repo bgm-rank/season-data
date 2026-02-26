@@ -1,0 +1,131 @@
+{
+  "season": "2000-summer",
+  "update_time": "2026-02-26T10:18:17+08:00",
+  "items": [
+    {
+      "mal_id": 557,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 557,
+        "title": "Koutetsu Tenshi Kurumi Encore",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "鋼鉄天使くるみ 25-28話"
+      },
+      "candidates": [
+        {
+          "bgm_id": 546184,
+          "bgm_name": "鋼鉄天使くるみ シングルコレクション",
+          "bgm_name_cn": "钢铁天使胡桃 SINGLE COLLECTION"
+        }
+      ]
+    },
+    {
+      "mal_id": 6412,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 6412,
+        "title": "Yuki Terai",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "テライユキ"
+      },
+      "candidates": []
+    },
+    {
+      "mal_id": 31750,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 31750,
+        "title": "TV-ban Pokemon Special Masara Town-hen Recaps",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "TV版 ポケットモンスター スペシャル マサラタウン編 総集編"
+      },
+      "candidates": [
+        {
+          "bgm_id": 38701,
+          "bgm_name": "Lilo & Stitch: The Series",
+          "bgm_name_cn": "星际宝贝TV版"
+        },
+        {
+          "bgm_id": 298010,
+          "bgm_name": "へんたつ",
+          "bgm_name_cn": "平安达纪 TV版"
+        },
+        {
+          "bgm_id": 49886,
+          "bgm_name": "万能文化猫娘",
+          "bgm_name_cn": "万能文化猫娘 TV"
+        },
+        {
+          "bgm_id": 2060,
+          "bgm_name": "サクラ大戦",
+          "bgm_name_cn": "樱花大战"
+        },
+        {
+          "bgm_id": 185792,
+          "bgm_name": "リトルウィッチアカデミア",
+          "bgm_name_cn": "小魔女学园"
+        },
+        {
+          "bgm_id": 226614,
+          "bgm_name": "陰陽百鬼物語",
+          "bgm_name_cn": "阴阳百鬼物语"
+        },
+        {
+          "bgm_id": 887,
+          "bgm_name": "空を見上げる少女の瞳に映る世界",
+          "bgm_name_cn": "仰望天空的少女瞳中的世界"
+        },
+        {
+          "bgm_id": 26391,
+          "bgm_name": "ウルトラマニアック",
+          "bgm_name_cn": "恋爱小魔女"
+        },
+        {
+          "bgm_id": 530791,
+          "bgm_name": "Godzilla (1978 TV series)",
+          "bgm_name_cn": "哥斯拉（1978版动画）"
+        },
+        {
+          "bgm_id": 75533,
+          "bgm_name": "劇場版 空の境界",
+          "bgm_name_cn": "剧场版 空之境界"
+        }
+      ]
+    },
+    {
+      "mal_id": 52155,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 52155,
+        "title": "Tabeta no Daare",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "たべたのだあれ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 62458,
+          "bgm_name": "風を見た少年",
+          "bgm_name_cn": "看见风的少年"
+        },
+        {
+          "bgm_id": 1942,
+          "bgm_name": "劇場版カードキャプターさくら 封印されたカード",
+          "bgm_name_cn": "魔卡少女樱 被封印的卡片"
+        },
+        {
+          "bgm_id": 74459,
+          "bgm_name": "M.E.M. ～汚された純潔～",
+          "bgm_name_cn": ""
+        }
+      ]
+    }
+  ]
+}

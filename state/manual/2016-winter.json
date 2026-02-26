@@ -1,0 +1,987 @@
+{
+  "season": "2016-winter",
+  "update_time": "2026-02-26T12:31:32+08:00",
+  "items": [
+    {
+      "mal_id": 30365,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 30365,
+        "title": "Shinmai Maou no Testament Burst: Toujou Basara no Shigoku Heiwa na Nichijou",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "新妹魔王の契約者 BURST 第11話「東城刃更の至極平和な日常」"
+      },
+      "candidates": [
+        {
+          "bgm_id": 111761,
+          "bgm_name": "新劇場版 頭文字D Legend3 -夢現-",
+          "bgm_name_cn": "头文字D Legend3 -梦现-"
+        },
+        {
+          "bgm_id": 566088,
+          "bgm_name": "新大头儿子和小头爸爸之超能爸爸",
+          "bgm_name_cn": "新大头儿子和小头爸爸之超能爸爸"
+        },
+        {
+          "bgm_id": 169850,
+          "bgm_name": "The Tom and Jerry Show Season 2",
+          "bgm_name_cn": "新猫和老鼠 第二季"
+        },
+        {
+          "bgm_id": 139670,
+          "bgm_name": "映画ドラえもん 新・のび太の日本誕生",
+          "bgm_name_cn": "哆啦A梦：新·大雄的日本诞生"
+        }
+      ]
+    },
+    {
+      "mal_id": 31236,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 31236,
+        "title": "Chieri to Cherry",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "ちえりとチェリー"
+      },
+      "candidates": [
+        {
+          "bgm_id": 136602,
+          "bgm_name": "かっちけねぇ！",
+          "bgm_name_cn": "无上感激"
+        },
+        {
+          "bgm_id": 174504,
+          "bgm_name": "ふらいんぐうぃっち ぷち",
+          "bgm_name_cn": "小飞翔魔女"
+        },
+        {
+          "bgm_id": 292115,
+          "bgm_name": "とらぶるだいあり～・ぴーち ムービー版",
+          "bgm_name_cn": "出包日记~·桃 动画版"
+        }
+      ]
+    },
+    {
+      "mal_id": 31380,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 31380,
+        "title": "To LOVE-Ru Darkness 2nd OVA",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "To LOVEる -とらぶる- ダークネス2nd"
+      },
+      "candidates": [
+        {
+          "bgm_id": 404757,
+          "bgm_name": "To Disappear",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 481566,
+          "bgm_name": "Born to be Yves Klein Blue",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 508731,
+          "bgm_name": "Joe Pera Talks You to Sleep",
+          "bgm_name_cn": "乔·佩拉的睡前絮语"
+        },
+        {
+          "bgm_id": 552108,
+          "bgm_name": "Dragons: Race to the Edge Season 2",
+          "bgm_name_cn": "驯龙高手：飞越边界 第二季"
+        },
+        {
+          "bgm_id": 147359,
+          "bgm_name": "ワンパンマン OAD",
+          "bgm_name_cn": "一拳超人 OAD"
+        },
+        {
+          "bgm_id": 136213,
+          "bgm_name": "ハルチカ～ハルタとチカは青春する～",
+          "bgm_name_cn": "春&夏推理事件簿～春太与千夏的青春～"
+        },
+        {
+          "bgm_id": 148726,
+          "bgm_name": "灰と幻想のグリムガル",
+          "bgm_name_cn": "灰与幻想的格林姆迦尔"
+        },
+        {
+          "bgm_id": 164649,
+          "bgm_name": "彼女と彼女の猫 -Everything Flows-",
+          "bgm_name_cn": "她和她的猫 -Everything Flows-"
+        }
+      ]
+    },
+    {
+      "mal_id": 31827,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 31827,
+        "title": "Comet Lucifer: Garden Indigo no Shasou kara",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "ガーデン・インディゴの車窓から"
+      },
+      "candidates": [
+        {
+          "bgm_id": 76045,
+          "bgm_name": "ガーデン THE ANIMATION",
+          "bgm_name_cn": "花园"
+        },
+        {
+          "bgm_id": 8590,
+          "bgm_name": "ウィンターガーデン",
+          "bgm_name_cn": "冬季花园"
+        },
+        {
+          "bgm_id": 183878,
+          "bgm_name": "ヴァイオレット・エヴァーガーデン",
+          "bgm_name_cn": "紫罗兰永恒花园"
+        },
+        {
+          "bgm_id": 242216,
+          "bgm_name": "劇場版 ヴァイオレット・エヴァーガーデン",
+          "bgm_name_cn": "剧场版 紫罗兰永恒花园"
+        },
+        {
+          "bgm_id": 277369,
+          "bgm_name": "ヴァンパイア・イン・ザ・ガーデン",
+          "bgm_name_cn": "花园里的吸血鬼"
+        },
+        {
+          "bgm_id": 280837,
+          "bgm_name": "ヴァイオレット・エヴァーガーデン 外伝 - 永遠と自動手記人形 -",
+          "bgm_name_cn": "紫罗兰永恒花园 外传 - 永远与自动手记人偶 -"
+        },
+        {
+          "bgm_id": 355109,
+          "bgm_name": "ヴァイオレット・エヴァーガーデン特別編集版",
+          "bgm_name_cn": "紫罗兰永恒花园 特别编集版"
+        },
+        {
+          "bgm_id": 421420,
+          "bgm_name": "旅するガーディ",
+          "bgm_name_cn": "旅行的卡蒂狗"
+        },
+        {
+          "bgm_id": 99244,
+          "bgm_name": "ガッデム",
+          "bgm_name_cn": "越野旅程"
+        },
+        {
+          "bgm_id": 200543,
+          "bgm_name": "がんがんがんこちゃん",
+          "bgm_name_cn": "吵闹的顽固小子"
+        }
+      ]
+    },
+    {
+      "mal_id": 32397,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 32397,
+        "title": "Saga-ken wo Meguru Animation",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "佐賀県を巡るアニメーション"
+      },
+      "candidates": [
+        {
+          "bgm_id": 211105,
+          "bgm_name": "ただいま 思い出の佐賀",
+          "bgm_name_cn": "我回来了 回忆里的佐贺"
+        },
+        {
+          "bgm_id": 328423,
+          "bgm_name": "23時の佐賀飯アニメ",
+          "bgm_name_cn": "23时的佐贺饭动画"
+        },
+        {
+          "bgm_id": 252655,
+          "bgm_name": "ゾンビランドサガ",
+          "bgm_name_cn": "佐贺偶像是传奇"
+        },
+        {
+          "bgm_id": 287488,
+          "bgm_name": "ゾンビランドサガ リベンジ",
+          "bgm_name_cn": "佐贺偶像是传奇 复仇"
+        },
+        {
+          "bgm_id": 353181,
+          "bgm_name": "ゾンビランドサガ ゆめぎんがパラダイス",
+          "bgm_name_cn": "佐贺偶像是传奇 梦想银河乐园"
+        },
+        {
+          "bgm_id": 89420,
+          "bgm_name": "佐武と市捕物控",
+          "bgm_name_cn": "佐武与市捕物控"
+        },
+        {
+          "bgm_id": 472384,
+          "bgm_name": "佐武と市捕物控 パイロットフィルム",
+          "bgm_name_cn": "佐武与市捕物控 Pilot Film"
+        },
+        {
+          "bgm_id": 158071,
+          "bgm_name": "少年猿飛佐助",
+          "bgm_name_cn": "少年猿飞佐助"
+        },
+        {
+          "bgm_id": 258090,
+          "bgm_name": "まんが猿飛佐助",
+          "bgm_name_cn": "漫画猿飞佐助"
+        },
+        {
+          "bgm_id": 414848,
+          "bgm_name": "J○駆け出し××Tuber/佐倉 悠 モーションアニメ",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 32402,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 32402,
+        "title": "Mim Mam Mint",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ミムマムミント"
+      },
+      "candidates": []
+    },
+    {
+      "mal_id": 32485,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 32485,
+        "title": "Prison School: Mad Wax",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "監獄学園[プリズンスクール] マッドワックス"
+      },
+      "candidates": [
+        {
+          "bgm_id": 158796,
+          "bgm_name": "監獄学園 OAD",
+          "bgm_name_cn": "监狱学园 OAD"
+        }
+      ]
+    },
+    {
+      "mal_id": 32553,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 32553,
+        "title": "Nisekoi: OVA",
+        "media_type": "ova",
+        "rating": "general",
+        "title_ja": "ニセコイ: OAD"
+      },
+      "candidates": [
+        {
+          "bgm_id": 135275,
+          "bgm_name": "この素晴らしい世界に祝福を！",
+          "bgm_name_cn": "为美好的世界献上祝福！"
+        },
+        {
+          "bgm_id": 168898,
+          "bgm_name": "おにくだいすき！ ゼウシくん 「すてきなハンバーグ」",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 279857,
+          "bgm_name": "母親による筆おろしが義務化された世界(モーションコミック版)",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 310074,
+          "bgm_name": "未来に向けて 防災を考える",
+          "bgm_name_cn": "防灾为未来"
+        },
+        {
+          "bgm_id": 147036,
+          "bgm_name": "GATE 自衛隊 彼の地にて、斯く戦えり 炎龍編",
+          "bgm_name_cn": "GATE 奇幻自卫队 炎龙篇"
+        },
+        {
+          "bgm_id": 283699,
+          "bgm_name": "有奈の不思議な処女喪失 ～ 双子のキモ・デブ・オヤジに支配された世界へ迷い込み ～",
+          "bgm_name_cn": "有奈的不可思议的处女丧失~误入被双胞胎基莫・胖子・大叔支配的世界~"
+        },
+        {
+          "bgm_id": 163922,
+          "bgm_name": "TIGER & BUNNY Too many cooks spoil the broth.",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 336523,
+          "bgm_name": "Fate/ゼロカフェ 第2弾",
+          "bgm_name_cn": "Fate/Zero cafe 第2弹"
+        }
+      ]
+    },
+    {
+      "mal_id": 32894,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 32894,
+        "title": "Love Bites",
+        "media_type": "ona",
+        "rating": "general",
+        "title_ja": "LOVE BITES"
+      },
+      "candidates": [
+        {
+          "bgm_id": 480123,
+          "bgm_name": "Love",
+          "bgm_name_cn": "爱"
+        },
+        {
+          "bgm_id": 126175,
+          "bgm_name": "ももくり",
+          "bgm_name_cn": "小桃小栗 Love Love物语"
+        },
+        {
+          "bgm_id": 292115,
+          "bgm_name": "とらぶるだいあり～・ぴーち ムービー版",
+          "bgm_name_cn": "出包日记~·桃 动画版"
+        }
+      ]
+    },
+    {
+      "mal_id": 32926,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 32926,
+        "title": "Duel Masters: Hamukatsu to Dogiragon no Curry-pan Daibouken",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "デュエル・マスターズ ハムカツとドギラゴンのカレーパン大冒険"
+      },
+      "candidates": [
+        {
+          "bgm_id": 114968,
+          "bgm_name": "デュラララ!!×2 結",
+          "bgm_name_cn": "无头骑士异闻录×2 结"
+        },
+        {
+          "bgm_id": 145745,
+          "bgm_name": "デュラララ!!×2 転 お惚気チャカポコ",
+          "bgm_name_cn": "无头骑士异闻录×2 转 恋爱故事铿铿铿"
+        },
+        {
+          "bgm_id": 181722,
+          "bgm_name": "ジュエルペットあたっくちゃんす!?",
+          "bgm_name_cn": "宝石宠物 Attack Chance!?"
+        },
+        {
+          "bgm_id": 214622,
+          "bgm_name": "ツインテール",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 33086,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 33086,
+        "title": "Uchuu Neko: Mardock no Bouken",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "宇宙ネコ マードックの冒険"
+      },
+      "candidates": [
+        {
+          "bgm_id": 280634,
+          "bgm_name": "宇宙奴隷艦アマド 肉奴隷女船務長",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 559135,
+          "bgm_name": "宇宙の蜉蝣2",
+          "bgm_name_cn": "宇宙的蜉蝣2"
+        },
+        {
+          "bgm_id": 279478,
+          "bgm_name": "忍たま乱太郎の宇宙大冒険 with コズミックフロント☆NEXT",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 182054,
+          "bgm_name": "Lego DC Comics Super Heroes: Justice League - Cosmic Clash",
+          "bgm_name_cn": "乐高DC超级英雄:正义联盟-宇宙冲突"
+        },
+        {
+          "bgm_id": 198485,
+          "bgm_name": "Forms in Nature：Understanding Our Universe",
+          "bgm_name_cn": "自然的形式：理解我们的宇宙"
+        }
+      ]
+    },
+    {
+      "mal_id": 33276,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 33276,
+        "title": "Konnichiwa Onara Gorou",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "こんにちは おなら吾郎"
+      },
+      "candidates": [
+        {
+          "bgm_id": 3643,
+          "bgm_name": "こんにちは アン ～Before Green Gables",
+          "bgm_name_cn": "你好 安妮"
+        },
+        {
+          "bgm_id": 589944,
+          "bgm_name": "みんなのたぁ坊こんにちは",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 85250,
+          "bgm_name": "おそ松くん スイカの星からこんにちはザンス!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 630006,
+          "bgm_name": "世界名作劇場・完結版 こんにちは アン ~Before Green Gables~",
+          "bgm_name_cn": "世界名作剧场·完结版 你好 安妮"
+        },
+        {
+          "bgm_id": 484981,
+          "bgm_name": "さようなら竜生、こんにちは人生",
+          "bgm_name_cn": "再见龙生，你好人生"
+        },
+        {
+          "bgm_id": 114192,
+          "bgm_name": "花の子ルンルン こんにちわ桜の国",
+          "bgm_name_cn": "花仙子 你好！樱花盛开的国度"
+        }
+      ]
+    },
+    {
+      "mal_id": 33846,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 33846,
+        "title": "Garo: Guren no Tsuki - Yurugaro",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ゆるがろ"
+      },
+      "candidates": [
+        {
+          "bgm_id": 20018,
+          "bgm_name": "週刊シマコー / その時、シマコーが動いた!",
+          "bgm_name_cn": "周刊岛耕"
+        },
+        {
+          "bgm_id": 576283,
+          "bgm_name": "おジャ魔女カーニバル‼︎ ゆる旅篇",
+          "bgm_name_cn": "小魔女DoReMi嘉年华!! 悠闲之旅篇"
+        },
+        {
+          "bgm_id": 99959,
+          "bgm_name": "巴がゆく!",
+          "bgm_name_cn": "咆哮女郎巴明欣"
+        },
+        {
+          "bgm_id": 106726,
+          "bgm_name": "修羅がゆく",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 92876,
+          "bgm_name": "官兵衛くんがゆく",
+          "bgm_name_cn": "军师官兵卫"
+        },
+        {
+          "bgm_id": 6751,
+          "bgm_name": "いちご100% 恋が始まる!? 撮影合宿 〜ゆれるココロが東へ西へ〜",
+          "bgm_name_cn": "草莓100% 恋爱开始!? 摄影合宿 ～动摇的心向东向西～"
+        },
+        {
+          "bgm_id": 52788,
+          "bgm_name": "幽幻怪社",
+          "bgm_name_cn": "幽幻怪社"
+        },
+        {
+          "bgm_id": 93717,
+          "bgm_name": "ゆうとくんがいく",
+          "bgm_name_cn": "GOGO佑都"
+        },
+        {
+          "bgm_id": 93716,
+          "bgm_name": "劇場版 ゆうとくんがいく",
+          "bgm_name_cn": "剧场版 GOGO佑都"
+        },
+        {
+          "bgm_id": 418458,
+          "bgm_name": "ゆうなつ ～夕日が差し込む夏の教室～",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 34935,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 34935,
+        "title": "Yowai Robot to 10 no Story Project",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "弱いロボットと10のストーリー Project"
+      },
+      "candidates": [
+        {
+          "bgm_id": 133387,
+          "bgm_name": "最弱無敗の神装機竜",
+          "bgm_name_cn": "最弱无败神装机龙"
+        }
+      ]
+    },
+    {
+      "mal_id": 35047,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 35047,
+        "title": "Mirai e no Tegami: Kono Michi no Tochuu kara",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "みらいへの手紙~この道の途中から~"
+      },
+      "candidates": [
+        {
+          "bgm_id": 174504,
+          "bgm_name": "ふらいんぐうぃっち ぷち",
+          "bgm_name_cn": "小飞翔魔女"
+        },
+        {
+          "bgm_id": 161449,
+          "bgm_name": "映画プリパラ み～んなのあこがれ♪レッツゴー☆プリパリ",
+          "bgm_name_cn": "美妙天堂剧场版 大～家的憧憬♪出发吧☆美妙巴黎"
+        },
+        {
+          "bgm_id": 137062,
+          "bgm_name": "普通の女子校生が【ろこどる】やってみた。 OVA",
+          "bgm_name_cn": "普通女高中生要做当地偶像 OVA"
+        },
+        {
+          "bgm_id": 402644,
+          "bgm_name": "校内恥辱!汗だく女子学生汁まみレ〇プ(モーションコミック版)",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 509619,
+          "bgm_name": "最近太ってきた東條さんを電マで激しくイカせてみた",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 35980,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 35980,
+        "title": "Oh! 96-kku",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "OH!96ック"
+      },
+      "candidates": [
+        {
+          "bgm_id": 9539,
+          "bgm_name": "OH!MYコンブ",
+          "bgm_name_cn": "伙头仔昆布"
+        },
+        {
+          "bgm_id": 77246,
+          "bgm_name": "Oh!ファミリー",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 85771,
+          "bgm_name": "OH!スーパーミルクチャン",
+          "bgm_name_cn": "哦! 超级小奶糖"
+        },
+        {
+          "bgm_id": 238312,
+          "bgm_name": "OH!スーパーミルクチャン ミルクのIT革命",
+          "bgm_name_cn": "哦! 超级小奶糖 奶粉的IT革命"
+        },
+        {
+          "bgm_id": 243343,
+          "bgm_name": "Oh My Darling",
+          "bgm_name_cn": "哦，亲爱的"
+        },
+        {
+          "bgm_id": 264088,
+          "bgm_name": "Oh What A Nico",
+          "bgm_name_cn": "喔！我的英雄续集"
+        },
+        {
+          "bgm_id": 281469,
+          "bgm_name": "Oh,Yes！ 褐色ビッチ人妻の性欲解消～エロエロできるママさんバレー会～ The Motion Anime",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 296077,
+          "bgm_name": "Oh Sheep!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 506404,
+          "bgm_name": "Oh Willy...",
+          "bgm_name_cn": "噢，威利…"
+        },
+        {
+          "bgm_id": 536405,
+          "bgm_name": "Oh My God, Yes! A Series of Extremely Relatable Circumstances",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 36611,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 36611,
+        "title": "Bary-san no Shokoku Manyuuki",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "バリィさんの諸国漫遊記"
+      },
+      "candidates": [
+        {
+          "bgm_id": 167694,
+          "bgm_name": "ましゅまろ☆いもうと☆さっきゅばす",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 149257,
+          "bgm_name": "ばくおん!! OAD",
+          "bgm_name_cn": "爆音少女!! OAD"
+        },
+        {
+          "bgm_id": 135275,
+          "bgm_name": "この素晴らしい世界に祝福を！",
+          "bgm_name_cn": "为美好的世界献上祝福！"
+        }
+      ]
+    },
+    {
+      "mal_id": 36753,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 36753,
+        "title": "Kakushin",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "確信"
+      },
+      "candidates": []
+    },
+    {
+      "mal_id": 36799,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 36799,
+        "title": "Kyoto Animation Koushiki Twitter: Itsumo Arigatou",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "京都アニメーション公式Twitter いつも ありがとう"
+      },
+      "candidates": [
+        {
+          "bgm_id": 160970,
+          "bgm_name": "京剧猫",
+          "bgm_name_cn": "京剧猫"
+        }
+      ]
+    },
+    {
+      "mal_id": 54209,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 54209,
+        "title": "Minna to Manner wo Manabou",
+        "media_type": "movie",
+        "rating": "general",
+        "title_ja": "みんなとマナーを学ぼう"
+      },
+      "candidates": [
+        {
+          "bgm_id": 159824,
+          "bgm_name": "映画 プリキュアオールスターズ みんなで歌う♪奇跡の魔法!",
+          "bgm_name_cn": "电影 光之美少女 All Stars 大家歌唱吧♪奇迹的魔法！"
+        },
+        {
+          "bgm_id": 161449,
+          "bgm_name": "映画プリパラ み～んなのあこがれ♪レッツゴー☆プリパリ",
+          "bgm_name_cn": "美妙天堂剧场版 大～家的憧憬♪出发吧☆美妙巴黎"
+        },
+        {
+          "bgm_id": 137062,
+          "bgm_name": "普通の女子校生が【ろこどる】やってみた。 OVA",
+          "bgm_name_cn": "普通女高中生要做当地偶像 OVA"
+        },
+        {
+          "bgm_id": 402644,
+          "bgm_name": "校内恥辱!汗だく女子学生汁まみレ〇プ(モーションコミック版)",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 509619,
+          "bgm_name": "最近太ってきた東條さんを電マで激しくイカせてみた",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 54421,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 54421,
+        "title": "Wakuwaku Hakubutsukan Adventure",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "わくわくはくぶつかんアドベンチャー"
+      },
+      "candidates": [
+        {
+          "bgm_id": 279475,
+          "bgm_name": "テレビ野郎 ナナーナ わくわく洞窟ランド",
+          "bgm_name_cn": "香蕉怪大叔 呐呐~呐 好奇洞穴乐园"
+        },
+        {
+          "bgm_id": 315571,
+          "bgm_name": "ポチャッコのわくわくバースデイ",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 345056,
+          "bgm_name": "セリア先生のわくわくまじかる教室",
+          "bgm_name_cn": "瑟莉亚老师的激动人心魔法教室"
+        },
+        {
+          "bgm_id": 448950,
+          "bgm_name": "セリア先生のわくわくまじかる教室 season2",
+          "bgm_name_cn": "瑟莉亚老师的激动人心魔法教室 第二季"
+        },
+        {
+          "bgm_id": 515250,
+          "bgm_name": "リーゼロッテのわくわくまじかる商会",
+          "bgm_name_cn": "莉赛罗黛的激动人心魔法商会"
+        },
+        {
+          "bgm_id": 550506,
+          "bgm_name": "TAMAYA アニメCM 「わくわく篇」",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 37251,
+          "bgm_name": "NG騎士ラムネ&40 DX ワクワク時空 炎の大捜査戦",
+          "bgm_name_cn": "NG骑士柠檬汽水&40 DX"
+        },
+        {
+          "bgm_id": 338474,
+          "bgm_name": "映画コラショの海底わくわく大冒険!",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 8973,
+          "bgm_name": "クレヨンしんちゃん 爆発!温泉わくわく大決戦",
+          "bgm_name_cn": "蜡笔小新：爆发！温泉激烈大决战"
+        },
+        {
+          "bgm_id": 82727,
+          "bgm_name": "Dr.スランプ アラレちゃん んちゃ!!わくわくハートの夏休み",
+          "bgm_name_cn": "阿拉蕾 心跳的暑假"
+        }
+      ]
+    },
+    {
+      "mal_id": 54442,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 54442,
+        "title": "Mietchi Cuisine",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "『MIETCHI CUISINE』アッシ・パルマンティエ / Hachis parmentier の作り方"
+      },
+      "candidates": [
+        {
+          "bgm_id": 531945,
+          "bgm_name": "フェルマーの料理",
+          "bgm_name_cn": "费马的料理"
+        }
+      ]
+    },
+    {
+      "mal_id": 56195,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 56195,
+        "title": "Arinko Hepo: Futari no Himitsu Kichi",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "ありんこヘポーふたりのひみつきちー"
+      },
+      "candidates": [
+        {
+          "bgm_id": 151993,
+          "bgm_name": "アリス・イン・ドリームランド",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 292115,
+          "bgm_name": "とらぶるだいあり～・ぴーち ムービー版",
+          "bgm_name_cn": "出包日记~·桃 动画版"
+        },
+        {
+          "bgm_id": 124341,
+          "bgm_name": "ARIA The AVVENIRE",
+          "bgm_name_cn": "水星领航员 The AVVENIRE"
+        },
+        {
+          "bgm_id": 161662,
+          "bgm_name": "アマカノ",
+          "bgm_name_cn": "甜蜜女友"
+        },
+        {
+          "bgm_id": 279901,
+          "bgm_name": "ビッチなあの子は箱入り娘?(モーションコミック版)",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 57474,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 57474,
+        "title": "Levity",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "Levity"
+      },
+      "candidates": [
+        {
+          "bgm_id": 404733,
+          "bgm_name": "Levitating",
+          "bgm_name_cn": ""
+        }
+      ]
+    },
+    {
+      "mal_id": 59259,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 59259,
+        "title": "Uribo",
+        "media_type": "ona",
+        "rating": "kids",
+        "title_ja": "URIBO"
+      },
+      "candidates": []
+    },
+    {
+      "mal_id": 63068,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 63068,
+        "title": "Dondonshi Television Vol. 0: Saito-san wo Shinryaku shita yo.",
+        "media_type": "ova",
+        "rating": "kids",
+        "title_ja": "どんどんしーてれび vol.0 さいとーさんをしんりゃくしたよ。"
+      },
+      "candidates": [
+        {
+          "bgm_id": 544106,
+          "bgm_name": "転生したらドラゴンの卵だった",
+          "bgm_name_cn": "转生之后的我变成了龙蛋"
+        },
+        {
+          "bgm_id": 81566,
+          "bgm_name": "どんどんドメルとロン",
+          "bgm_name_cn": "倒霉狗"
+        },
+        {
+          "bgm_id": 2103,
+          "bgm_name": "ドラゴンボール改",
+          "bgm_name_cn": "龙珠改"
+        },
+        {
+          "bgm_id": 3149,
+          "bgm_name": "ドキドキ♡伝説 魔法陣グルグル",
+          "bgm_name_cn": "咕噜咕噜魔法阵 心跳传说"
+        },
+        {
+          "bgm_id": 9005,
+          "bgm_name": "ドラゴンボールZ",
+          "bgm_name_cn": "龙珠Z"
+        },
+        {
+          "bgm_id": 9565,
+          "bgm_name": "ドラゴンボール",
+          "bgm_name_cn": "龙珠"
+        },
+        {
+          "bgm_id": 9566,
+          "bgm_name": "ドラゴンボールGT",
+          "bgm_name_cn": "龙珠GT"
+        },
+        {
+          "bgm_id": 9783,
+          "bgm_name": "ドラゴンクライシス!",
+          "bgm_name_cn": "龙之界点！"
+        },
+        {
+          "bgm_id": 18504,
+          "bgm_name": "ドラゴンボールZ 復活のフュージョン!!悟空とベジータ",
+          "bgm_name_cn": "龙珠Z 复活的融合！悟空与贝吉塔"
+        },
+        {
+          "bgm_id": 18505,
+          "bgm_name": "ドラゴンボールZ たったひとりの最終決戦〜フリーザに挑んだZ戦士 孫悟空の父〜",
+          "bgm_name_cn": "龙珠Z 一夫当关的最后决战~挑战弗利萨的Z战士 孙悟空的父亲~"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "season": "2001-winter",
+  "update_time": "2026-02-26T10:20:34+08:00",
+  "items": [
+    {
+      "mal_id": 828,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 828,
+        "title": "Jinshin Yuugi",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "人心遊戯"
+      },
+      "candidates": [
+        {
+          "bgm_id": 13423,
+          "bgm_name": "時空異邦人KYOKO ちょこらにおま",
+          "bgm_name_cn": "时空异邦人KYOKO 交给巧克力吧！"
+        },
+        {
+          "bgm_id": 74407,
+          "bgm_name": "トレス・マリアス 3人の聖処女",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 505393,
+          "bgm_name": "She Puppet",
+          "bgm_name_cn": "她人偶"
+        }
+      ]
+    },
+    {
+      "mal_id": 2420,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 2420,
+        "title": "Spirit of Wonder: Shounen Kagaku Club",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "ザスピリットオブワンダー : 少年科學倶楽部"
+      },
+      "candidates": [
+        {
+          "bgm_id": 19418,
+          "bgm_name": "地球少女アルジュナ",
+          "bgm_name_cn": "地球少女Arjuna"
+        },
+        {
+          "bgm_id": 5826,
+          "bgm_name": "キクマナ",
+          "bgm_name_cn": "德玛娜说少女"
+        },
+        {
+          "bgm_id": 9966,
+          "bgm_name": "ぷにぷに☆ぽえみぃ",
+          "bgm_name_cn": "新世纪魔法少女"
+        }
+      ]
+    },
+    {
+      "mal_id": 2653,
+      "status": "unconfirmed",
+      "bgm_id": null,
+      "mal": {
+        "id": 2653,
+        "title": "Doraemon: Ganbare! Gian!!",
+        "media_type": "movie",
+        "rating": "kids",
+        "title_ja": "ドラえもん がんばれ！ジャイアン！！"
+      },
+      "candidates": [
+        {
+          "bgm_id": 465,
+          "bgm_name": "ドラえもん のび太と翼の勇者たち",
+          "bgm_name_cn": "哆啦A梦：大雄与翼之勇者"
+        },
+        {
+          "bgm_id": 89712,
+          "bgm_name": "ドラミ&ドラえもんズ 宇宙ランド危機イッパツ!",
+          "bgm_name_cn": "哆啦美与哆啦A梦七小子·宇宙乐园之千钧一发！"
+        }
+      ]
+    }
+  ]
+}
