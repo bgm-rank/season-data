@@ -1,10 +1,9 @@
 {
   "season": "2024-fall",
-  "update_time": "2026-02-26T14:46:13+08:00",
   "items": [
     {
       "mal_id": 59091,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59091,
@@ -33,7 +32,7 @@
     },
     {
       "mal_id": 59820,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59820,
@@ -67,7 +66,7 @@
     },
     {
       "mal_id": 59989,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59989,
@@ -131,7 +130,7 @@
     },
     {
       "mal_id": 60067,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60067,
@@ -150,7 +149,7 @@
     },
     {
       "mal_id": 60182,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60182,
@@ -174,7 +173,7 @@
     },
     {
       "mal_id": 60263,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60263,
@@ -238,7 +237,7 @@
     },
     {
       "mal_id": 60295,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60295,
@@ -272,8 +271,10 @@
     },
     {
       "mal_id": 60418,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 577150,
+      "bgm_name": "万界独尊 第三季",
+      "bgm_name_cn": "",
       "mal": {
         "id": 60418,
         "title": "Wan Jie Du Zun 3rd Season",
@@ -296,7 +297,7 @@
     },
     {
       "mal_id": 60480,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60480,
@@ -325,7 +326,7 @@
     },
     {
       "mal_id": 60624,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60624,
@@ -348,72 +349,8 @@
       ]
     },
     {
-      "mal_id": 60629,
-      "status": "unconfirmed",
-      "bgm_id": null,
-      "mal": {
-        "id": 60629,
-        "title": "\"1-punkan dake Furete mo Ii yo...\" Share House no Himitsu Rule.",
-        "media_type": "ona",
-        "rating": "r18",
-        "title_ja": "「1分間だけ触れてもいいよ...」シェアハウスの秘密ルール."
-      },
-      "candidates": [
-        {
-          "bgm_id": 523538,
-          "bgm_name": "1초",
-          "bgm_name_cn": "争分夺秒"
-        },
-        {
-          "bgm_id": 489820,
-          "bgm_name": "らんま1/2",
-          "bgm_name_cn": "乱马1/2"
-        },
-        {
-          "bgm_id": 493195,
-          "bgm_name": "第19回東方M-1ぐらんぷり",
-          "bgm_name_cn": "第十九届东方M-1漫才大赛"
-        },
-        {
-          "bgm_id": 506329,
-          "bgm_name": "猪猪侠校园风云1",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 528258,
-          "bgm_name": "VIPルームで⋯パート①：フルバージョン",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 558015,
-          "bgm_name": "2024年SP11月_しぐれうい01",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 561780,
-          "bgm_name": "2024年SP12月 伊落マリー01",
-          "bgm_name_cn": ""
-        },
-        {
-          "bgm_id": 442614,
-          "bgm_name": "映画 ラブライブ！虹ヶ咲学園スクールアイドル同好会 完結編 第1章",
-          "bgm_name_cn": "电影 Love Live! 虹咲学园校园偶像同好会 完结篇 第1章"
-        },
-        {
-          "bgm_id": 554236,
-          "bgm_name": "宁德山海奇遇记——蓝色牧场",
-          "bgm_name_cn": "宁德山海奇遇记——蓝色牧场"
-        },
-        {
-          "bgm_id": 454787,
-          "bgm_name": "トリリオンゲーム",
-          "bgm_name_cn": "一兆＄游戏"
-        }
-      ]
-    },
-    {
       "mal_id": 60653,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60653,
@@ -457,7 +394,7 @@
     },
     {
       "mal_id": 60775,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60775,
@@ -496,7 +433,7 @@
     },
     {
       "mal_id": 60930,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60930,
@@ -530,7 +467,7 @@
     },
     {
       "mal_id": 61464,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61464,
@@ -554,7 +491,7 @@
     },
     {
       "mal_id": 61513,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 61513,

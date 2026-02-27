@@ -1,11 +1,12 @@
 {
   "season": "2024-spring",
-  "update_time": "2026-02-26T14:40:16+08:00",
   "items": [
     {
       "mal_id": 58123,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 476697,
+      "bgm_name": "Dearest Blue",
+      "bgm_name_cn": "最爱之蓝",
       "mal": {
         "id": 58123,
         "title": "Dearest Blue",
@@ -68,8 +69,10 @@
     },
     {
       "mal_id": 58602,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 485354,
+      "bgm_name": "ユーチューニャー 新作アニメシリーズ",
+      "bgm_name_cn": "YouTu喵 新作动画剧集",
       "mal": {
         "id": 58602,
         "title": "YouTuNya 2nd Season",
@@ -87,7 +90,7 @@
     },
     {
       "mal_id": 58608,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58608,
@@ -116,7 +119,7 @@
     },
     {
       "mal_id": 58681,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58681,
@@ -180,7 +183,7 @@
     },
     {
       "mal_id": 58758,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58758,
@@ -204,7 +207,7 @@
     },
     {
       "mal_id": 58844,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58844,
@@ -217,7 +220,7 @@
     },
     {
       "mal_id": 58935,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 58935,
@@ -281,7 +284,7 @@
     },
     {
       "mal_id": 59013,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 59013,
@@ -310,7 +313,7 @@
     },
     {
       "mal_id": 60093,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60093,
@@ -374,7 +377,7 @@
     },
     {
       "mal_id": 60127,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60127,
@@ -393,7 +396,7 @@
     },
     {
       "mal_id": 60328,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60328,
@@ -437,7 +440,7 @@
     },
     {
       "mal_id": 60409,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60409,
@@ -456,7 +459,7 @@
     },
     {
       "mal_id": 60643,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60643,
@@ -520,7 +523,7 @@
     },
     {
       "mal_id": 60929,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 60929,
@@ -539,8 +542,10 @@
     },
     {
       "mal_id": 61620,
-      "status": "unconfirmed",
-      "bgm_id": null,
+      "status": "human",
+      "bgm_id": 504018,
+      "bgm_name": "山川純一アニメ劇場",
+      "bgm_name_cn": "山川纯一动画剧场",
       "mal": {
         "id": 61620,
         "title": "Yamakawa Junichi Anime Gekijou",
@@ -573,7 +578,7 @@
     },
     {
       "mal_id": 62382,
-      "status": "unconfirmed",
+      "status": "human_skip",
       "bgm_id": null,
       "mal": {
         "id": 62382,

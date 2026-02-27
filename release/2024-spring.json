@@ -1,6 +1,5 @@
 {
   "season": "2024-spring",
-  "update_time": "2026-02-26T14:40:16+08:00",
   "items": [
     {
       "bgm_id": 1505,
@@ -1347,6 +1346,18 @@
       }
     },
     {
+      "bgm_id": 476697,
+      "bgm_name": "Dearest Blue",
+      "bgm_name_cn": "最爱之蓝",
+      "mal": {
+        "id": 58123,
+        "title": "Dearest Blue",
+        "media_type": "ova",
+        "rating": "r18",
+        "title_ja": "ディアレストブルー"
+      }
+    },
+    {
       "bgm_id": 476698,
       "bgm_name": "サキュバス★コネクト！",
       "bgm_name_cn": "魅魔★钟爱!",
@@ -1524,6 +1535,18 @@
         "media_type": "movie",
         "rating": "general",
         "title_ja": "好きでも嫌いなあまのじゃく"
+      }
+    },
+    {
+      "bgm_id": 485354,
+      "bgm_name": "ユーチューニャー 新作アニメシリーズ",
+      "bgm_name_cn": "YouTu喵 新作动画剧集",
+      "mal": {
+        "id": 58602,
+        "title": "YouTuNya 2nd Season",
+        "media_type": "tv",
+        "rating": "kids",
+        "title_ja": "ユーチューニャー 第2期"
       }
     },
     {
@@ -1836,6 +1859,18 @@
         "media_type": "ona",
         "rating": "kids",
         "title_ja": "ラニーちゃんとたんじょうびやさん"
+      }
+    },
+    {
+      "bgm_id": 504018,
+      "bgm_name": "山川純一アニメ劇場",
+      "bgm_name_cn": "山川纯一动画剧场",
+      "mal": {
+        "id": 61620,
+        "title": "Yamakawa Junichi Anime Gekijou",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "山川純一アニメ劇場"
       }
     },
     {

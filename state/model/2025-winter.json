@@ -1,6 +1,5 @@
 {
   "season": "2025-winter",
-  "update_time": "2026-02-26T15:06:25+08:00",
   "items": [
     {
       "mal_id": 49363,
@@ -1400,6 +1399,62 @@
           "bgm_id": 547654,
           "bgm_name": "출동! 로봇 V",
           "bgm_name_cn": "出动！机器人V"
+        }
+      ]
+    },
+    {
+      "mal_id": 60629,
+      "status": "model",
+      "bgm_id": 525733,
+      "bgm_name": "「1分間だけ触れてもいいよ…」シェアハウスの秘密ルール。",
+      "bgm_name_cn": "「只能触摸一分钟哦...」合租房的秘密规则。",
+      "mal": {
+        "id": 60629,
+        "title": "\"1-punkan dake Furete mo Ii yo...\" Share House no Himitsu Rule.",
+        "media_type": "ona",
+        "rating": "r18",
+        "title_ja": "「1分間だけ触れてもいいよ...」シェアハウスの秘密ルール."
+      },
+      "candidates": [
+        {
+          "bgm_id": 525733,
+          "bgm_name": "「1分間だけ触れてもいいよ…」シェアハウスの秘密ルール。",
+          "bgm_name_cn": "「只能触摸一分钟哦...」合租房的秘密规则。"
+        },
+        {
+          "bgm_id": 535065,
+          "bgm_name": "水浒1：风雪山神庙",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 493195,
+          "bgm_name": "第19回東方M-1ぐらんぷり",
+          "bgm_name_cn": "第十九届东方M-1漫才大赛"
+        },
+        {
+          "bgm_id": 528258,
+          "bgm_name": "VIPルームで⋯パート①：フルバージョン",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 507115,
+          "bgm_name": "怪獣8号 第1期総集編",
+          "bgm_name_cn": "怪兽8号 第一季总集篇"
+        },
+        {
+          "bgm_id": 471793,
+          "bgm_name": "君のことが大大大大大好きな100人の彼女 第2期",
+          "bgm_name_cn": "超超超超超喜欢你的100个女朋友 第二季"
+        },
+        {
+          "bgm_id": 561780,
+          "bgm_name": "2024年SP12月 伊落マリー01",
+          "bgm_name_cn": ""
+        },
+        {
+          "bgm_id": 501234,
+          "bgm_name": "青田小田鱼",
+          "bgm_name_cn": "青田小田鱼"
         }
       ]
     }
