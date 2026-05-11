@@ -5,7 +5,7 @@ import re
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from loguru import logger
 
@@ -177,9 +177,7 @@ class SeasonProcessor:
                 logger.debug("[override] MAL {} 已在列表中，跳过", mal_id)
                 continue
             if self.mal_client is None:
-                logger.warning(
-                    "[override] 需要 MalClient 获取 MAL {}，但未配置", mal_id
-                )
+                logger.warning("[override] 需要 MalClient 获取 MAL {}，但未配置", mal_id)
                 continue
             try:
                 raw = self.mal_client.get_anime(mal_id)
@@ -190,16 +188,12 @@ class SeasonProcessor:
                 logger.error("[override] 获取 MAL {} 失败: {}", mal_id, e)
 
         if override.add or override.skip:
-            logger.info(
-                "[override] add: {}, skip: {}", len(override.add), len(override.skip)
-            )
+            logger.info("[override] add: {}, skip: {}", len(override.add), len(override.skip))
 
         # 4. 加载已有 state（合并 4 个目录）
         old_items_by_mal_id = self._load_all_states(year, season)
         if old_items_by_mal_id:
-            confirmed_count = sum(
-                1 for item in old_items_by_mal_id.values() if item.status.is_confirmed()
-            )
+            confirmed_count = sum(1 for item in old_items_by_mal_id.values() if item.status.is_confirmed())
             logger.info(
                 "已有 state: {} 条, 已确认: {}",
                 len(old_items_by_mal_id),
@@ -331,9 +325,7 @@ class SeasonProcessor:
         # 首轮搜索+匹配失败，用 LLM 提取关键词做最后尝试
         if self.openrouter:
             try:
-                suggestion = self.openrouter.suggest_search(
-                    search_keyword, media_type_str
-                )
+                suggestion = self.openrouter.suggest_search(search_keyword, media_type_str)
                 if suggestion.get("skip"):
                     logger.info("[model_skip] {} (LLM 判断非日本动画)", title)
                     return StateItem(
@@ -343,15 +335,11 @@ class SeasonProcessor:
                     )
                 for kw in suggestion.get("keywords", []):
                     logger.debug("[fallback] LLM 建议关键词: {} -> {}", title, kw)
-                    retry_subjects = self.bgmtv.search_anime_by_keyword(
-                        kw, start_date, end_date
-                    )
+                    retry_subjects = self.bgmtv.search_anime_by_keyword(kw, start_date, end_date)
                     if not retry_subjects:
                         retry_subjects = self.bgmtv.search_anime_by_keyword_no_date(kw)
                     if retry_subjects:
-                        result = self._try_match(
-                            mal_id, title, title_ja, retry_subjects, mal_info
-                        )
+                        result = self._try_match(mal_id, title, title_ja, retry_subjects, mal_info)
                         if result:
                             return result
             except Exception as e:
@@ -401,13 +389,9 @@ class SeasonProcessor:
         if self.openrouter:
             try:
                 llm_candidates = [(s.id, s.name or "", s.name_cn) for s in subjects]
-                matched_id = self.openrouter.match_anime(
-                    title, title_ja, llm_candidates
-                )
+                matched_id = self.openrouter.match_anime(title, title_ja, llm_candidates)
                 if matched_id is not None:
-                    matched_subj = next(
-                        (s for s in subjects if s.id == matched_id), None
-                    )
+                    matched_subj = next((s for s in subjects if s.id == matched_id), None)
                     if matched_subj:
                         logger.info(
                             "[model] {} -> bgm:{} {}",
@@ -589,9 +573,7 @@ class SeasonProcessor:
                 result[item.mal_id] = item
         return result
 
-    def _load_category_state(
-        self, year: int, season: str, category: str
-    ) -> list[StateItem]:
+    def _load_category_state(self, year: int, season: str, category: str) -> list[StateItem]:
         """加载单个目录的 state 文件。"""
         path = ROOT_DIR / "state" / category / f"{year}-{season}.json"
         if not path.exists():
@@ -623,13 +605,9 @@ class SeasonProcessor:
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(state.to_dict(), f, ensure_ascii=False, indent=2)
                 f.write("\n")
-            logger.info(
-                "state/{} 已保存: {} ({} 条)", category, path.name, len(group_items)
-            )
+            logger.info("state/{} 已保存: {} ({} 条)", category, path.name, len(group_items))
 
-    def _save_category_state(
-        self, year: int, season: str, category: str, items: list[StateItem]
-    ) -> None:
+    def _save_category_state(self, year: int, season: str, category: str, items: list[StateItem]) -> None:
         """保存单个目录的 state 文件。"""
         season_key = f"{year}-{season}"
         state = StateData(
@@ -666,7 +644,7 @@ class SeasonProcessor:
             raise FileNotFoundError(f"MAL 数据文件不存在: {path}")
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        return data.get("items", [])
+        return cast(list[dict[str, Any]], data.get("items", []))
 
     @staticmethod
     def _subjects_to_candidates(subjects: list[Subject]) -> list[BgmCandidate]:

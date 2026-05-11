@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import time
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, cast
 
 import httpx
 from loguru import logger
@@ -207,6 +207,8 @@ class OpenRouterClient:
                     )
                     time.sleep(RETRY_DELAY)
 
+        # mypy can't prove last_error is non-None here: loop runs MAX_RETRIES times and
+        # always assigns last_error in the except branch, but flow analysis doesn't track that.
         raise last_error  # type: ignore[misc]
 
     def match_anime(
@@ -266,7 +268,7 @@ class OpenRouterClient:
         except json.JSONDecodeError as e:
             raise RuntimeError(f"Invalid JSON: {content} - {e}") from e
 
-        return result.get("id")
+        return cast("int | None", result.get("id"))
 
     def suggest_search(
         self,
@@ -303,6 +305,6 @@ class OpenRouterClient:
 
         json_str = extract_json(content)
         try:
-            return json.loads(json_str)
+            return cast(dict[str, Any], json.loads(json_str))
         except json.JSONDecodeError:
             return {"keywords": []}

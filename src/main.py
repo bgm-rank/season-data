@@ -55,9 +55,7 @@ def main() -> None:
                         )
                         continue
                     except Exception:
-                        logger.exception(
-                            "[{}/{}] {} 处理失败", current, total, season_key
-                        )
+                        logger.exception("[{}/{}] {} 处理失败", current, total, season_key)
                         failed.append(season_key)
 
             logger.info("全部完成: 共 {} 个季度, 失败 {}", total, len(failed))

@@ -14,7 +14,7 @@ import json
 import subprocess
 import sys
 import tempfile
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 RELEASE_DIR = Path(__file__).resolve().parent.parent / "release"
@@ -44,7 +44,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="合并 release 并发布到 GitHub")
     parser.add_argument(
         "--tag",
-        default=f"v{datetime.now(timezone.utc).strftime('%Y-%m-%d')}",
+        default=f"v{datetime.now(UTC).strftime('%Y-%m-%d')}",
         help="GitHub Release tag (默认: v{当前日期})",
     )
     parser.add_argument(

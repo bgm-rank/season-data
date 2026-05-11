@@ -21,9 +21,7 @@ def main() -> None:
 
     with BgmtvClient(token) as client:
         if args.start_date and args.end_date:
-            subjects = client.search_anime_by_keyword(
-                args.keyword, args.start_date, args.end_date
-            )
+            subjects = client.search_anime_by_keyword(args.keyword, args.start_date, args.end_date)
         else:
             subjects = client.search_anime_by_keyword_no_date(args.keyword)
 

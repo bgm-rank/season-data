@@ -12,7 +12,6 @@ from services.openrouter import OpenRouterClient
 from .processor import SeasonProcessor
 from .season import SEASON_VALUES
 
-
 COMMANDS = ("run", "release", "complete")
 
 
@@ -20,9 +19,7 @@ def _usage() -> None:
     print("Usage:")
     print("  python -m core run <year> <season>      处理季度新番")
     print("  python -m core release <year> <season>   从 state 重新生成 release")
-    print(
-        "  python -m core complete <year> <season>  补全 bgm_id 名称并重新生成 release"
-    )
+    print("  python -m core complete <year> <season>  补全 bgm_id 名称并重新生成 release")
     print()
     print(f"  season: {', '.join(SEASON_VALUES)}")
     sys.exit(1)

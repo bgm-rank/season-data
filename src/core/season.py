@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, cast
 
 SEASON_VALUES = ("winter", "spring", "summer", "fall")
 
@@ -32,4 +32,4 @@ def is_new_anime(item: dict[str, Any], year: int, season: str) -> bool:
     start_season = item.get("start_season")
     if start_season is None:
         return False
-    return start_season.get("year") == year and start_season.get("season") == season
+    return cast(bool, start_season.get("year") == year and start_season.get("season") == season)

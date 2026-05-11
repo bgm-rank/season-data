@@ -171,6 +171,8 @@ class BgmtvClient:
                     )
                     time.sleep(RETRY_DELAY)
 
+        # mypy can't prove last_error is non-None here: loop runs MAX_RETRIES times and
+        # always assigns last_error in the except branch, but flow analysis doesn't track that.
         raise last_error  # type: ignore[misc]
 
     def get_subject(self, subject_id: int) -> Subject:
@@ -199,6 +201,8 @@ class BgmtvClient:
                     )
                     time.sleep(RETRY_DELAY)
 
+        # mypy can't prove last_error is non-None here: loop runs MAX_RETRIES times and
+        # always assigns last_error in the except branch, but flow analysis doesn't track that.
         raise last_error  # type: ignore[misc]
 
     def search_anime_by_keyword(

@@ -106,9 +106,7 @@ class MalClient:
         limit = 500
 
         while True:
-            resp = self.get_seasonal_anime(
-                year, season, limit=limit, offset=offset, nsfw=nsfw
-            )
+            resp = self.get_seasonal_anime(year, season, limit=limit, offset=offset, nsfw=nsfw)
             data: list[dict[str, Any]] = resp.get("data", [])
             count = len(data)
             for entry in data:
@@ -132,9 +130,7 @@ def _save(year: int, season: str, items: list[dict[str, Any]]) -> Path:
 
     RELEASE_DIR.mkdir(parents=True, exist_ok=True)
     out_path = RELEASE_DIR / f"{year}-{season}.json"
-    out_path.write_text(
-        json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    out_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     return out_path
 
 
@@ -163,9 +159,7 @@ def sort_all() -> int:
         sorted_items = sorted(items, key=lambda x: x["id"])
         if items != sorted_items:
             data["items"] = sorted_items
-            f.write_text(
-                json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
-            )
+            f.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
             count += 1
             logger.info("已排序: {}", f.name)
     logger.info("完成: 共处理 {} 个文件, 其中 {} 个需要排序", len(files), count)
