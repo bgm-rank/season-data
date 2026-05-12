@@ -107,15 +107,17 @@ def migrate_items(conn: object, season_filter: str | None = None) -> dict[str, i
                     ]
                     candidates_json = json.dumps(cands, ensure_ascii=False)
 
+                confidence = 0.0 if source == "llm" else None
+
                 conn_typed.execute(
                     """
                     INSERT OR REPLACE INTO items
                       (mal_id, season_id, status, source, confidence, bgm_id, bgm_name, bgm_name_cn,
                        mal_title, mal_title_ja, mal_media_type, mal_rating, error, candidates, updated_at)
-                    VALUES (?,?,?,?,NULL,?,?,?,?,?,?,?,NULL,?,?)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,NULL,?,?)
                     """,
                     (
-                        mal_id, season_id, status, source,
+                        mal_id, season_id, status, source, confidence,
                         bgm_id, bgm_name, bgm_name_cn,
                         mal_title, mal_title_ja, mal_media_type, mal_rating,
                         candidates_json, now,
