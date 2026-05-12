@@ -14,7 +14,11 @@ MAX_RETRIES = 3
 RETRY_DELAY = 1.0
 
 # 动漫匹配系统提示（固定以最大化缓存命中）
-MATCH_SYSTEM_PROMPT = '匹配MAL动漫与Bangumi候选。续作必须季数一致（2nd/第2期/II等）。输出JSON：{"id":数字或null}'
+MATCH_SYSTEM_PROMPT = (
+    "匹配MAL动漫与Bangumi候选。续作必须季数一致（2nd/第2期/II等）。"
+    "输出JSON数组，每个候选包含bgm_id和confidence(0.0-1.0)，无匹配时输出空数组："
+    '[{"bgm_id":数字,"confidence":0.9}]'
+)
 
 # 搜索关键词提取系统提示
 SUGGEST_SYSTEM_PROMPT = (
@@ -216,10 +220,10 @@ class OpenRouterClient:
         mal_title: str,
         mal_title_ja: str | None,
         candidates: list[tuple[int, str, str | None]],
-    ) -> int | None:
-        """动漫匹配验证。
+    ) -> list[dict[str, Any]]:
+        """动漫匹配验证，返回带 confidence 的候选列表。
 
-        返回匹配的 Bangumi ID，无匹配返回 None。
+        返回 [{"bgm_id": int, "confidence": float}]，无匹配返回 []。
 
         Args:
             mal_title: MAL 英文标题
@@ -227,7 +231,7 @@ class OpenRouterClient:
             candidates: [(bgm_id, name, name_cn), ...]
         """
         if not candidates:
-            return None
+            return []
 
         # 构建精简的用户输入
         parts = [f"MAL:{mal_title}"]
@@ -247,7 +251,7 @@ class OpenRouterClient:
                 Message.user(user_input),
             ],
             model=self.model,
-        ).with_max_tokens(32)
+        ).with_max_tokens(128)
 
         response = self.chat(request)
         content = response.content()
@@ -261,14 +265,28 @@ class OpenRouterClient:
             response.usage.total_tokens,
         )
 
-        # 解析 {"id": 123} 或 {"id": null}
         json_str = extract_json(content)
         try:
             result = json.loads(json_str)
         except json.JSONDecodeError as e:
             raise RuntimeError(f"Invalid JSON: {content} - {e}") from e
 
-        return cast("int | None", result.get("id"))
+        if not isinstance(result, list):
+            return []
+
+        out: list[dict[str, Any]] = []
+        for item in result:
+            bgm_id = item.get("bgm_id")
+            confidence = item.get("confidence")
+            if bgm_id is None:
+                continue
+            out.append(
+                {
+                    "bgm_id": int(bgm_id),
+                    "confidence": float(confidence) if confidence is not None else None,
+                }
+            )
+        return out
 
     def suggest_search(
         self,
