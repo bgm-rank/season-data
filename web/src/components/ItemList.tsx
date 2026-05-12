@@ -6,6 +6,7 @@ import * as api from '@/services/api'
 import type { Item, ItemStatus } from '@/types/api'
 
 type StatusFilter = 'all' | 'pending' | 'included' | 'excluded'
+type SourceFilter = 'all' | 'rule' | 'exact' | 'llm' | 'human'
 
 const STATUS_LABELS: Record<ItemStatus, string> = {
   pending: '待审核',
@@ -33,14 +34,17 @@ interface Props {
 export function ItemList({ seasonId }: Props) {
   const [items, setItems] = useState<Item[]>([])
   const [filter, setFilter] = useState<StatusFilter>('all')
+  const [sourceFilter, setSourceFilter] = useState<SourceFilter>('all')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [editingItem, setEditingItem] = useState<Item | null>(null)
 
   const loadItems = () => {
     setLoading(true)
-    const params = filter !== 'all' ? { status: filter } : undefined
-    api.getItems(seasonId, params)
+    const params: { status?: string; source?: string } = {}
+    if (filter !== 'all') params.status = filter
+    if (sourceFilter !== 'all') params.source = sourceFilter
+    api.getItems(seasonId, Object.keys(params).length ? params : undefined)
       .then(setItems)
       .catch((e: unknown) => setError(e instanceof Error ? e.message : String(e)))
       .finally(() => setLoading(false))
@@ -49,33 +53,49 @@ export function ItemList({ seasonId }: Props) {
   useEffect(() => {
     loadItems()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [seasonId, filter])
+  }, [seasonId, filter, sourceFilter])
 
-  const tabs: { value: StatusFilter; label: string }[] = [
+  const statusTabs: { value: StatusFilter; label: string }[] = [
     { value: 'all', label: '全部' },
     { value: 'pending', label: '待审核' },
     { value: 'included', label: '已收录' },
     { value: 'excluded', label: '已排除' },
   ]
 
+  const sourceTabs: { value: SourceFilter; label: string }[] = [
+    { value: 'all', label: '全部来源' },
+    { value: 'rule', label: '规则' },
+    { value: 'exact', label: '精确匹配' },
+    { value: 'llm', label: 'LLM' },
+    { value: 'human', label: '人工' },
+  ]
+
+  const btnClass = (active: boolean) =>
+    `px-3 py-1 rounded text-sm transition-colors ${
+      active
+        ? 'bg-primary text-primary-foreground'
+        : 'bg-muted text-muted-foreground hover:bg-muted/80'
+    }`
+
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-semibold">全番组列表</h2>
 
-      <div className="flex gap-2 flex-wrap">
-        {tabs.map((t) => (
-          <button
-            key={t.value}
-            onClick={() => setFilter(t.value)}
-            className={`px-3 py-1 rounded text-sm transition-colors ${
-              filter === t.value
-                ? 'bg-primary text-primary-foreground'
-                : 'bg-muted text-muted-foreground hover:bg-muted/80'
-            }`}
-          >
-            {t.label}
-          </button>
-        ))}
+      <div className="space-y-2">
+        <div className="flex gap-2 flex-wrap">
+          {statusTabs.map((t) => (
+            <button key={t.value} onClick={() => setFilter(t.value)} className={btnClass(filter === t.value)}>
+              {t.label}
+            </button>
+          ))}
+        </div>
+        <div className="flex gap-2 flex-wrap">
+          {sourceTabs.map((t) => (
+            <button key={t.value} onClick={() => setSourceFilter(t.value)} className={btnClass(sourceFilter === t.value)}>
+              {t.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       {error && <div className="text-sm text-destructive">{error}</div>}
