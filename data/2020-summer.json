@@ -1,0 +1,7226 @@
+{
+  "season": {
+    "id": "2020-summer",
+    "year": 2020,
+    "season": "summer",
+    "released_at": null,
+    "created_at": "2026-05-12T07:45:27.498631+00:00",
+    "updated_at": "2026-05-12T07:45:27.498631+00:00"
+  },
+  "items": [
+    {
+      "mal_id": 33050,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 175600,
+      "bgm_name": "劇場版 Fate/stay night [Heaven's Feel] III.spring song",
+      "bgm_name_cn": "剧场版 Fate/stay night [Heaven's Feel] III.spring song",
+      "mal_title": "Fate/stay night Movie: Heaven's Feel - III. Spring Song",
+      "mal_title_ja": "劇場版「Fate/stay night [Heaven's Feel] III.spring song」",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 175600,
+          "bgm_name": "劇場版 Fate/stay night [Heaven's Feel] III.spring song",
+          "confidence": null
+        },
+        {
+          "bgm_id": 242216,
+          "bgm_name": "劇場版 ヴァイオレット・エヴァーガーデン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 290993,
+          "bgm_name": "映画 ギヴン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 569170,
+          "bgm_name": "ましんむかしばなし劇場",
+          "confidence": null
+        },
+        {
+          "bgm_id": 399383,
+          "bgm_name": "Big Hero 6: The Series Season 3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37587,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 241185,
+      "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+      "bgm_name_cn": "宝石幻想 光芒重现",
+      "mal_title": "Lapis Re:LiGHTs",
+      "mal_title_ja": "ラピスリライツ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 241185,
+          "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37932,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 217235,
+      "bgm_name": "全职高手2",
+      "bgm_name_cn": "全职高手 第二季",
+      "mal_title": "Quanzhi Gaoshou 2",
+      "mal_title_ja": "全职高手2",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 217235,
+          "bgm_name": "全职高手2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315740,
+          "bgm_name": "全职高手2 Q版小剧场",
+          "confidence": null
+        },
+        {
+          "bgm_id": 325244,
+          "bgm_name": "戰鬥姬 – 全面反擊",
+          "confidence": null
+        },
+        {
+          "bgm_id": 596680,
+          "bgm_name": "バーチャル 『キズOOO』AV感謝祭",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37936,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 305515,
+      "bgm_name": "雾山五行",
+      "bgm_name_cn": "雾山五行",
+      "mal_title": "Wu Shan Wu Xing (2020)",
+      "mal_title_ja": "雾山五行",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 305515,
+          "bgm_name": "雾山五行",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37987,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 242216,
+      "bgm_name": "劇場版 ヴァイオレット・エヴァーガーデン",
+      "bgm_name_cn": "剧场版 紫罗兰永恒花园",
+      "mal_title": "Violet Evergarden Movie",
+      "mal_title_ja": "劇場版 ヴァイオレット・エヴァーガーデン",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 242216,
+          "bgm_name": "劇場版 ヴァイオレット・エヴァーガーデン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 175600,
+          "bgm_name": "劇場版 Fate/stay night [Heaven's Feel] III.spring song",
+          "confidence": null
+        },
+        {
+          "bgm_id": 399383,
+          "bgm_name": "Big Hero 6: The Series Season 3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 290993,
+          "bgm_name": "映画 ギヴン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 569170,
+          "bgm_name": "ましんむかしばなし劇場",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 38835,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 269389,
+      "bgm_name": "うまよん",
+      "bgm_name_cn": "赛马娘四格",
+      "mal_title": "Umayon",
+      "mal_title_ja": "うまよん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 269389,
+          "bgm_name": "うまよん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 323986,
+          "bgm_name": "飴うさこゆるアニメ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 38990,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 244229,
+      "bgm_name": "穿书自救指南",
+      "bgm_name_cn": "穿书自救指南 修雅篇",
+      "mal_title": "Chuan Shu Zijiu Zhinan",
+      "mal_title_ja": "穿书自救指南",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 244229,
+          "bgm_name": "穿书自救指南",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39519,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 277322,
+      "bgm_name": "ドラゴンズドグマ",
+      "bgm_name_cn": "龙之信条",
+      "mal_title": "Dragon's Dogma",
+      "mal_title_ja": "ドラゴンズドグマ",
+      "mal_media_type": "ona",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 277322,
+          "bgm_name": "ドラゴンズドグマ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39547,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 277954,
+      "bgm_name": "やはり俺の青春ラブコメはまちがっている。完",
+      "bgm_name_cn": "我的青春恋爱物语果然有问题 完",
+      "mal_title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan",
+      "mal_title_ja": "やはり俺の青春ラブコメはまちがっている。完",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 277954,
+          "bgm_name": "やはり俺の青春ラブコメはまちがっている。完",
+          "confidence": null
+        },
+        {
+          "bgm_id": 350990,
+          "bgm_name": "異世界で、今度こそヤリまくり人生を！ -The Motion Anime-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39587,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 278826,
+      "bgm_name": "Re:ゼロから始める異世界生活 2nd season",
+      "bgm_name_cn": "Re：从零开始的异世界生活 第二季",
+      "mal_title": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+      "mal_title_ja": "Re：ゼロから始める異世界生活 2",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 278826,
+          "bgm_name": "Re:ゼロから始める異世界生活 2nd season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310194,
+          "bgm_name": "Re:ゼロから始める休憩時間 2nd Season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241185,
+          "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39753,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 281096,
+      "bgm_name": "思い、思われ、ふり、ふられ",
+      "bgm_name_cn": "恋途未卜",
+      "mal_title": "Omoi, Omoware, Furi, Furare",
+      "mal_title_ja": "思い、思われ、ふり、ふられ",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 281096,
+          "bgm_name": "思い、思われ、ふり、ふられ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39948,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 284838,
+      "bgm_name": "ムヒョとロージーの魔法律相談事務所 第2期",
+      "bgm_name_cn": "魔法律事务所 第二季",
+      "mal_title": "Muhyo to Rouji no Mahouritsu Soudan Jimusho 2nd Season",
+      "mal_title_ja": "ムヒョとロージーの魔法律相談事務所 2期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 284838,
+          "bgm_name": "ムヒョとロージーの魔法律相談事務所 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40044,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 285759,
+      "bgm_name": "映画ドラえもん のび太の新恐竜",
+      "bgm_name_cn": "哆啦A梦：大雄的新恐龙",
+      "mal_title": "Doraemon Movie 40: Nobita no Shin Kyouryuu",
+      "mal_title_ja": "映画 ドラえもん のび太の新恐竜",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 285759,
+          "bgm_name": "映画ドラえもん のび太の新恐竜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 290993,
+          "bgm_name": "映画 ギヴン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309635,
+          "bgm_name": "忘れたフリをして",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40052,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 285813,
+      "bgm_name": "GREAT PRETENDER",
+      "bgm_name_cn": "大欺诈师",
+      "mal_title": "Great Pretender",
+      "mal_title_ja": "GREAT PRETENDER",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 285813,
+          "bgm_name": "GREAT PRETENDER",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40056,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 285879,
+      "bgm_name": "デカダンス",
+      "bgm_name_cn": "没落要塞",
+      "mal_title": "Deca-Dence",
+      "mal_title_ja": "デカダンス",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 285879,
+          "bgm_name": "デカダンス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40074,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 286109,
+      "bgm_name": "GIBIATE the Animation",
+      "bgm_name_cn": "猎魔武士",
+      "mal_title": "Gibiate",
+      "mal_title_ja": "ジビエート",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 286109,
+          "bgm_name": "GIBIATE the Animation",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40075,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 260736,
+      "bgm_name": "恋とプロデューサー～EVOL×LOVE～",
+      "bgm_name_cn": "恋与制作人",
+      "mal_title": "Koi to Producer: EVOLxLOVE",
+      "mal_title_ja": "恋とプロデューサー~EVOL×LOVE~",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 260736,
+          "bgm_name": "恋とプロデューサー～EVOL×LOVE～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 317887,
+          "bgm_name": "恋するシロクマ 「おしえてシャチさん」篇",
+          "confidence": null
+        },
+        {
+          "bgm_id": 317888,
+          "bgm_name": "恋するシロクマ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40215,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 288274,
+      "bgm_name": "アグレッシブ烈子 シーズン3",
+      "bgm_name_cn": "职场小烈 第三季",
+      "mal_title": "Aggressive Retsuko (ONA) 3rd Season",
+      "mal_title_ja": "アグレッシブ烈子第3期",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 288274,
+          "bgm_name": "アグレッシブ烈子 シーズン3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40329,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 291038,
+      "bgm_name": "クレヨンしんちゃん 激突! ラクガキングダムとほぼ四人の勇者",
+      "bgm_name_cn": "蜡笔小新：激战！涂鸦王国和约四位勇士",
+      "mal_title": "Crayon Shin-chan Movie 28: Gekitotsu! Rakuga Kingdom to Hobo Yonin no Yuusha",
+      "mal_title_ja": "映画クレヨンしんちゃん 激突! ラクガキングダムとほぼ四人の勇者",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 291038,
+          "bgm_name": "クレヨンしんちゃん 激突! ラクガキングダムとほぼ四人の勇者",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40416,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Date A Bullet: Dead or Bullet",
+      "mal_title_ja": "デート・ア・バレット デッド・オア・バレット",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 315985,
+          "bgm_name": "異世界では稀によくあること(モーションコミック版)",
+          "confidence": null
+        },
+        {
+          "bgm_id": 350990,
+          "bgm_name": "異世界で、今度こそヤリまくり人生を！ -The Motion Anime-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616986,
+          "bgm_name": "【メス堕ち♂】男の子を金で買い続けた結果…モーションコミック版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 365784,
+          "bgm_name": "淫中毒者キモオヤジ3ー2人できょうりょく・討伐性交ー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310475,
+          "bgm_name": "歩きスマホは条例違反！見つけたら問答無用で即ハメ生中出し！ The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 320023,
+          "bgm_name": "サキュバスター 俺の精子を奪いに来た見習い淫魔を絶倫○○○で返り討ち The Motion Anime",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40421,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 290993,
+      "bgm_name": "映画 ギヴン",
+      "bgm_name_cn": "电影 GIVEN",
+      "mal_title": "Given Movie 1",
+      "mal_title_ja": "映画 ギヴン",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 290993,
+          "bgm_name": "映画 ギヴン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 285759,
+          "bgm_name": "映画ドラえもん のび太の新恐竜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309635,
+          "bgm_name": "忘れたフリをして",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40435,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 289945,
+      "bgm_name": "魔道祖师Q",
+      "bgm_name_cn": "魔道祖师Q",
+      "mal_title": "Mo Dao Zu Shi Q",
+      "mal_title_ja": "魔道祖師Q",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 289945,
+          "bgm_name": "魔道祖师Q",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284838,
+          "bgm_name": "ムヒョとロージーの魔法律相談事務所 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 294654,
+          "bgm_name": "モンスター娘のお医者さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313826,
+          "bgm_name": "サキュバステードライフ THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40436,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 291195,
+      "bgm_name": "ピーター・グリルと賢者の時間",
+      "bgm_name_cn": "彼得·格里尔和贤者的时间",
+      "mal_title": "Peter Grill to Kenja no Jikan",
+      "mal_title_ja": "ピーター・グリルと賢者の時間",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 291195,
+          "bgm_name": "ピーター・グリルと賢者の時間",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40473,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 310150,
+      "bgm_name": "超普通都市カシワ伝説R",
+      "bgm_name_cn": "超普通都市柏传说R",
+      "mal_title": "Chou Futsuu Toshi Kashiwa Densetsu R",
+      "mal_title_ja": "超普通都市カシワ伝説R",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 310150,
+          "bgm_name": "超普通都市カシワ伝説R",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309905,
+          "bgm_name": "EVANGELION 超·现实",
+          "confidence": null
+        },
+        {
+          "bgm_id": 399383,
+          "bgm_name": "Big Hero 6: The Series Season 3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40496,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 292222,
+      "bgm_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+      "bgm_name_cn": "魔王学院的不适任者～史上最强的魔王始祖，转生就读子孙们的学校～",
+      "mal_title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou",
+      "mal_title_ja": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 292222,
+          "bgm_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284838,
+          "bgm_name": "ムヒョとロージーの魔法律相談事務所 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 289945,
+          "bgm_name": "魔道祖师Q",
+          "confidence": null
+        },
+        {
+          "bgm_id": 331202,
+          "bgm_name": "巴啦啦小魔仙之魔法海萤堡 第二季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 316000,
+          "bgm_name": "もしも童貞のまま30歳を迎えると魔法使いになれるとしたら The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 294654,
+          "bgm_name": "モンスター娘のお医者さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313826,
+          "bgm_name": "サキュバステードライフ THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241185,
+          "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40515,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 292382,
+      "bgm_name": "日本沈没2020",
+      "bgm_name_cn": "日本沉没2020",
+      "mal_title": "Nihon Chinbotsu 2020",
+      "mal_title_ja": "日本沈没2020",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 292382,
+          "bgm_name": "日本沈没2020",
+          "confidence": null
+        },
+        {
+          "bgm_id": 316108,
+          "bgm_name": "耐え子の日常 第二期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 384740,
+          "bgm_name": "猪猪侠之恐龙日记 3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 384741,
+          "bgm_name": "猪猪侠之恐龙日记 4",
+          "confidence": null
+        },
+        {
+          "bgm_id": 318579,
+          "bgm_name": "かいじゅうステップ ワンダバダ 第2シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313826,
+          "bgm_name": "サキュバステードライフ THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40529,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 291479,
+      "bgm_name": "ノー・ガンズ・ライフ 第2クール",
+      "bgm_name_cn": "非枪人生 第2部分",
+      "mal_title": "No Guns Life 2nd Season",
+      "mal_title_ja": "ノー・ガンズ・ライフ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 291479,
+          "bgm_name": "ノー・ガンズ・ライフ 第2クール",
+          "confidence": null
+        },
+        {
+          "bgm_id": 293610,
+          "bgm_name": "海辺のエトランゼ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 297342,
+          "bgm_name": "炎炎ノ消防隊 弐ノ章",
+          "confidence": null
+        },
+        {
+          "bgm_id": 299427,
+          "bgm_name": "荒野のコトブキ飛行隊 完全版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310656,
+          "bgm_name": "「進撃の巨人」〜クロニクル〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 318411,
+          "bgm_name": "人体のサバイバル！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 339266,
+          "bgm_name": "僕のヒーローアカデミアOVA 生き残れ！決死のサバイバル訓練",
+          "confidence": null
+        },
+        {
+          "bgm_id": 584488,
+          "bgm_name": "夏の婚前旅行ムービース",
+          "confidence": null
+        },
+        {
+          "bgm_id": 277954,
+          "bgm_name": "やはり俺の青春ラブコメはまちがっている。完",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284838,
+          "bgm_name": "ムヒョとロージーの魔法律相談事務所 第2期",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40540,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 292238,
+      "bgm_name": "ソードアート・オンライン アリシゼーション War of Underworld -THE LAST SEASON-",
+      "bgm_name_cn": "刀剑神域 爱丽丝篇 异界战争 -终章-",
+      "mal_title": "Sword Art Online: Alicization - War of Underworld 2nd Season",
+      "mal_title_ja": "ソードアート・オンライン アリシゼーション War of Underworld",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 292238,
+          "bgm_name": "ソードアート・オンライン アリシゼーション War of Underworld -THE LAST SEASON-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40615,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 293610,
+      "bgm_name": "海辺のエトランゼ",
+      "bgm_name_cn": "海边的异邦人",
+      "mal_title": "Umibe no Étranger",
+      "mal_title_ja": "海辺のエトランゼ",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 293610,
+          "bgm_name": "海辺のエトランゼ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 331202,
+          "bgm_name": "巴啦啦小魔仙之魔法海萤堡 第二季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 319664,
+          "bgm_name": "The SpongeBob Movie: Sponge on the Run",
+          "confidence": null
+        },
+        {
+          "bgm_id": 390766,
+          "bgm_name": "Octonauts and the Caves of Sac Actun",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40623,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 293648,
+      "bgm_name": "ド級編隊エグゼロス",
+      "bgm_name_cn": "弩级战队HXEROS",
+      "mal_title": "Dokyuu Hentai HxEros",
+      "mal_title_ja": "ド級編隊エグゼロス",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 293648,
+          "bgm_name": "ド級編隊エグゼロス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313829,
+          "bgm_name": "王女＆女騎士Ｗド下品露出～恥辱の見世物奴隷～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 260736,
+          "bgm_name": "恋とプロデューサー～EVOL×LOVE～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 303553,
+          "bgm_name": "巨神と氷華の城",
+          "confidence": null
+        },
+        {
+          "bgm_id": 316042,
+          "bgm_name": "浮気と本気 THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284838,
+          "bgm_name": "ムヒョとロージーの魔法律相談事務所 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291195,
+          "bgm_name": "ピーター・グリルと賢者の時間",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 345040,
+          "bgm_name": "無垢なこの子と勝手に家族計画(モーションコミック版)",
+          "confidence": null
+        },
+        {
+          "bgm_id": 416819,
+          "bgm_name": "それを愛と呼ぶだけ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40665,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 294134,
+      "bgm_name": "少女☆歌劇 レヴュースタァライト ロンド・ロンド・ロンド",
+      "bgm_name_cn": "少女☆歌剧 Revue Starlight RONDO·RONDO·RONDO",
+      "mal_title": "Shoujo☆Kageki Revue Starlight: Rondo Rondo Rondo",
+      "mal_title_ja": "少女☆歌劇 レヴュースタァライト ロンド・ロンド・ロンド",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 294134,
+          "bgm_name": "少女☆歌劇 レヴュースタァライト ロンド・ロンド・ロンド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 345039,
+          "bgm_name": "聖女エミリアー悪魔に魅入られた少女ー(モーションコミック版)",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315722,
+          "bgm_name": "夜な夜な学園の怪奇たちとドスケベしちゃう少女のお話 The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 314242,
+          "bgm_name": "サクラ革命 ～華咲く乙女たち～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40708,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 294654,
+      "bgm_name": "モンスター娘のお医者さん",
+      "bgm_name_cn": "魔物娘的医生",
+      "mal_title": "Monster Musume no Oishasan",
+      "mal_title_ja": "モンスター娘のお医者さん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 294654,
+          "bgm_name": "モンスター娘のお医者さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 518032,
+          "bgm_name": "ポケットモンスター オーロラからのメッセージ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40735,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 269552,
+      "bgm_name": "天宝伏妖录",
+      "bgm_name_cn": "天宝伏妖录",
+      "mal_title": "Tianbao Fuyao Lu",
+      "mal_title_ja": "天宝伏妖录",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 269552,
+          "bgm_name": "天宝伏妖录",
+          "confidence": null
+        },
+        {
+          "bgm_id": 223147,
+          "bgm_name": "凡人修仙传之凡人风起天南",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315772,
+          "bgm_name": "ふしぎ駄菓子屋 銭天堂",
+          "confidence": null
+        },
+        {
+          "bgm_id": 523919,
+          "bgm_name": "Twins in Paradise",
+          "confidence": null
+        },
+        {
+          "bgm_id": 333946,
+          "bgm_name": "マタタビムービーラボ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 399383,
+          "bgm_name": "Big Hero 6: The Series Season 3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 175600,
+          "bgm_name": "劇場版 Fate/stay night [Heaven's Feel] III.spring song",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40839,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 296076,
+      "bgm_name": "彼女、お借りします",
+      "bgm_name_cn": "租借女友",
+      "mal_title": "Kanojo, Okarishimasu",
+      "mal_title_ja": "彼女、お借りします",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 296076,
+          "bgm_name": "彼女、お借りします",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312510,
+          "bgm_name": "彼女は歌う、だから僕は",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313827,
+          "bgm_name": "彼女がヤツに抱かれたヒ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291195,
+          "bgm_name": "ピーター・グリルと賢者の時間",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40863,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 341389,
+      "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+      "bgm_name_cn": "屁屁侦探 瓢虫遗迹之谜",
+      "mal_title": "Oshiri Tantei Movie 2: Tentoumushi Iseki no Nazo",
+      "mal_title_ja": "映画おしりたんてい テントウムシいせきの なぞ",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309635,
+          "bgm_name": "忘れたフリをして",
+          "confidence": null
+        },
+        {
+          "bgm_id": 285759,
+          "bgm_name": "映画ドラえもん のび太の新恐竜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 290993,
+          "bgm_name": "映画 ギヴン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40924,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "22/7: 8+3=?",
+      "mal_title_ja": "22/7: 8＋3=?",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40936,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 297225,
+      "bgm_name": "俺を好きなのはお前だけかよ～俺たちのゲームセット～",
+      "bgm_name_cn": "喜欢本大爷的竟然就你一个？～我们的比赛结束～",
+      "mal_title": "Ore wo Suki nano wa Omae dake ka yo: Oretachi no Game Set",
+      "mal_title_ja": "俺を好きなのはお前だけかよ  ～俺たちのゲームセット～",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 297225,
+          "bgm_name": "俺を好きなのはお前だけかよ～俺たちのゲームセット～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 320023,
+          "bgm_name": "サキュバスター 俺の精子を奪いに来た見習い淫魔を絶倫○○○で返り討ち The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 277954,
+          "bgm_name": "やはり俺の青春ラブコメはまちがっている。完",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315805,
+          "bgm_name": "動画版 陸上部女子は俺の生オナホ!!!校内種付け編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40956,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 297342,
+      "bgm_name": "炎炎ノ消防隊 弐ノ章",
+      "bgm_name_cn": "炎炎消防队 二之章",
+      "mal_title": "Enen no Shouboutai: Ni no Shou",
+      "mal_title_ja": "炎炎ノ消防隊 弐ノ章",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 297342,
+          "bgm_name": "炎炎ノ消防隊 弐ノ章",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41008,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Murenase! Seton Gakuen Special",
+      "mal_title_ja": "群れなせ！シートン学園",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41137,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 299139,
+      "bgm_name": "バトルスピリッツ 赫盟のガレット",
+      "bgm_name_cn": "战斗之魂 赫盟的加雷特",
+      "mal_title": "Battle Spirits: Kakumei no Galette",
+      "mal_title_ja": "バトルスピリッツ 赫盟のガレット",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 299139,
+          "bgm_name": "バトルスピリッツ 赫盟のガレット",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417429,
+          "bgm_name": "こはるびよりR。～巨乳JKとあまあま童貞喪失セックス～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41205,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 299427,
+      "bgm_name": "荒野のコトブキ飛行隊 完全版",
+      "bgm_name_cn": "荒野的寿飞行队 完全版",
+      "mal_title": "Kouya no Kotobuki Hikoutai Kanzenban",
+      "mal_title_ja": "荒野のコトブキ飛行隊 完全版",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 299427,
+          "bgm_name": "荒野のコトブキ飛行隊 完全版",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41219,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 223147,
+      "bgm_name": "凡人修仙传之凡人风起天南",
+      "bgm_name_cn": "凡人修仙传之凡人风起天南",
+      "mal_title": "Fanren Xiu Xian Zhuan",
+      "mal_title_ja": "凡人修仙传",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 223147,
+          "bgm_name": "凡人修仙传之凡人风起天南",
+          "confidence": null
+        },
+        {
+          "bgm_id": 317320,
+          "bgm_name": "落凡尘",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41226,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 299498,
+      "bgm_name": "宇崎ちゃんは遊びたい!",
+      "bgm_name_cn": "宇崎学妹想要玩！",
+      "mal_title": "Uzaki-chan wa Asobitai!",
+      "mal_title_ja": "宇崎ちゃんは遊びたい！",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 299498,
+          "bgm_name": "宇崎ちゃんは遊びたい!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 405400,
+          "bgm_name": "Phineas and Ferb the Movie: Candace Against the Universe",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41341,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sword Art Online: Alicization - War of Underworld Recap",
+      "mal_title_ja": "「アリシゼーションWoU」1stクール総集編",
+      "mal_media_type": "tv_special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41353,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 305511,
+      "bgm_name": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
+      "bgm_name_cn": "高校之神",
+      "mal_title": "The God of High School",
+      "mal_title_ja": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 305511,
+          "bgm_name": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
+          "confidence": null
+        },
+        {
+          "bgm_id": 319664,
+          "bgm_name": "The SpongeBob Movie: Sponge on the Run",
+          "confidence": null
+        },
+        {
+          "bgm_id": 319722,
+          "bgm_name": "The Stockholms",
+          "confidence": null
+        },
+        {
+          "bgm_id": 379838,
+          "bgm_name": "The Simpsons Season 32",
+          "confidence": null
+        },
+        {
+          "bgm_id": 433337,
+          "bgm_name": "The Lighthouse Man",
+          "confidence": null
+        },
+        {
+          "bgm_id": 465903,
+          "bgm_name": "The Loud House Season 5",
+          "confidence": null
+        },
+        {
+          "bgm_id": 585235,
+          "bgm_name": "The Secret History of Venom",
+          "confidence": null
+        },
+        {
+          "bgm_id": 326981,
+          "bgm_name": "妖闻录",
+          "confidence": null
+        },
+        {
+          "bgm_id": 286109,
+          "bgm_name": "GIBIATE the Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313826,
+          "bgm_name": "サキュバステードライフ THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41383,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 301477,
+      "bgm_name": "おばけずかん",
+      "bgm_name_cn": "妖怪图鉴",
+      "mal_title": "Obake Zukan",
+      "mal_title_ja": "おばけずかん",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 301477,
+          "bgm_name": "おばけずかん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 294654,
+          "bgm_name": "モンスター娘のお医者さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 296076,
+          "bgm_name": "彼女、お借りします",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315722,
+          "bgm_name": "夜な夜な学園の怪奇たちとドスケベしちゃう少女のお話 The Motion Anime",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41466,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 306993,
+      "bgm_name": "巨人族の花嫁",
+      "bgm_name_cn": "巨人族的新娘",
+      "mal_title": "Kyojinzoku no Hanayome",
+      "mal_title_ja": "巨人族の花嫁",
+      "mal_media_type": "ona",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 306993,
+          "bgm_name": "巨人族の花嫁",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310656,
+          "bgm_name": "「進撃の巨人」〜クロニクル〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 433337,
+          "bgm_name": "The Lighthouse Man",
+          "confidence": null
+        },
+        {
+          "bgm_id": 303553,
+          "bgm_name": "巨神と氷華の城",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576034,
+          "bgm_name": "巨龙山谷",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417429,
+          "bgm_name": "こはるびよりR。～巨乳JKとあまあま童貞喪失セックス～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41568,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "ARP Backstage Pass: Paradise",
+      "mal_title_ja": "ARP Backstage Pass Paradise",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41659,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 304051,
+      "bgm_name": "歌舞伎町シャーロック OVA",
+      "bgm_name_cn": "歌舞伎町夏洛克 OVA",
+      "mal_title": "Kabukichou Sherlock OVA",
+      "mal_title_ja": "歌舞伎町シャーロック",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 304051,
+          "bgm_name": "歌舞伎町シャーロック OVA",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41734,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 318411,
+      "bgm_name": "人体のサバイバル！",
+      "bgm_name_cn": "",
+      "mal_title": "Jintai no Survival!",
+      "mal_title_ja": "人体のサバイバル!",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 318411,
+          "bgm_name": "人体のサバイバル！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291038,
+          "bgm_name": "クレヨンしんちゃん 激突! ラクガキングダムとほぼ四人の勇者",
+          "confidence": null
+        },
+        {
+          "bgm_id": 293610,
+          "bgm_name": "海辺のエトランゼ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309869,
+          "bgm_name": "「はたらく細胞!!」最強の敵、再び。体の中は“腸”大騒ぎ！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310234,
+          "bgm_name": "人类博物馆",
+          "confidence": null
+        },
+        {
+          "bgm_id": 521443,
+          "bgm_name": "采光人",
+          "confidence": null
+        },
+        {
+          "bgm_id": 365784,
+          "bgm_name": "淫中毒者キモオヤジ3ー2人できょうりょく・討伐性交ー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 350990,
+          "bgm_name": "異世界で、今度こそヤリまくり人生を！ -The Motion Anime-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 260736,
+          "bgm_name": "恋とプロデューサー～EVOL×LOVE～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291479,
+          "bgm_name": "ノー・ガンズ・ライフ 第2クール",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41794,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 306660,
+      "bgm_name": "夏が終わるまで The Animation",
+      "bgm_name_cn": "直到夏天结束",
+      "mal_title": "Natsu ga Owaru made The Animation",
+      "mal_title_ja": "夏が終わるまで The Animation",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 306660,
+          "bgm_name": "夏が終わるまで The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 584488,
+          "bgm_name": "夏の婚前旅行ムービース",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41795,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311532,
+      "bgm_name": "琥珀色のハンター THE ANIMATION",
+      "bgm_name_cn": "琥珀色的猎人",
+      "mal_title": "Kohakuiro no Hunter The Animation",
+      "mal_title_ja": "琥珀色のハンター THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311532,
+          "bgm_name": "琥珀色のハンター THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41807,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 303173,
+      "bgm_name": "GETUP! GETLIVE! #げらげら",
+      "bgm_name_cn": "",
+      "mal_title": "Get Up! Get Live! #Geragera",
+      "mal_title_ja": "GETUP! GETLIVE! #げらげら",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 303173,
+          "bgm_name": "GETUP! GETLIVE! #げらげら",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41824,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 306668,
+      "bgm_name": "装煌聖姫イースフィア 〜淫虐の洗脳改造〜",
+      "bgm_name_cn": "装煌圣姫依丝菲雅 〜淫虐的洗脑改造〜",
+      "mal_title": "Soukou Seiki Ysphere: Ingyaku no Sennou Kaizou",
+      "mal_title_ja": "装煌聖姫イースフィア ~淫虐の洗脳改造~",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 306668,
+          "bgm_name": "装煌聖姫イースフィア 〜淫虐の洗脳改造〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41848,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 306659,
+      "bgm_name": "異世界ハーレム物語",
+      "bgm_name_cn": "异世界后宫物语",
+      "mal_title": "Isekai Harem Monogatari",
+      "mal_title_ja": "異世界ハーレム物語",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 306659,
+          "bgm_name": "異世界ハーレム物語",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315985,
+          "bgm_name": "異世界では稀によくあること(モーションコミック版)",
+          "confidence": null
+        },
+        {
+          "bgm_id": 350990,
+          "bgm_name": "異世界で、今度こそヤリまくり人生を！ -The Motion Anime-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278826,
+          "bgm_name": "Re:ゼロから始める異世界生活 2nd season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 293610,
+          "bgm_name": "海辺のエトランゼ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41884,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 308948,
+      "bgm_name": "灵剑尊 第四季",
+      "bgm_name_cn": "灵剑尊 第四季",
+      "mal_title": "Ling Jian Zun 4th Season",
+      "mal_title_ja": "灵剑尊 第四季",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308948,
+          "bgm_name": "灵剑尊 第四季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291095,
+          "bgm_name": "灵笼:INCARNATION 下半季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 306914,
+          "bgm_name": "首席御灵师",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41916,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 297758,
+      "bgm_name": "有药",
+      "bgm_name_cn": "有药",
+      "mal_title": "You Yao",
+      "mal_title_ja": "有药",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 297758,
+          "bgm_name": "有药",
+          "confidence": null
+        },
+        {
+          "bgm_id": 277954,
+          "bgm_name": "やはり俺の青春ラブコメはまちがっている。完",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41917,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 244334,
+      "bgm_name": "民调局异闻录",
+      "bgm_name_cn": "民调局异闻录",
+      "mal_title": "Min Diao Ju Yi Wen Lu",
+      "mal_title_ja": "民调局异闻录",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 244334,
+          "bgm_name": "民调局异闻录",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41920,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 304668,
+      "bgm_name": "大话之少年游",
+      "bgm_name_cn": "",
+      "mal_title": "Dahua Zhi Shaonian You",
+      "mal_title_ja": "大话之少年游",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 304668,
+          "bgm_name": "大话之少年游",
+          "confidence": null
+        },
+        {
+          "bgm_id": 516651,
+          "bgm_name": "斗破苍穹之大主宰 第2季 动态漫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554376,
+          "bgm_name": "LEGO Ninjago：Season 13",
+          "confidence": null
+        },
+        {
+          "bgm_id": 328080,
+          "bgm_name": "喜羊羊与灰太狼之异国大营救",
+          "confidence": null
+        },
+        {
+          "bgm_id": 344606,
+          "bgm_name": "Bigfoot Family",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309869,
+          "bgm_name": "「はたらく細胞!!」最強の敵、再び。体の中は“腸”大騒ぎ！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 307284,
+          "bgm_name": "大鸾——周恩来童年读书的故事",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278202,
+          "bgm_name": "バキ 大擂台賽編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311909,
+          "bgm_name": "任务大师",
+          "confidence": null
+        },
+        {
+          "bgm_id": 427132,
+          "bgm_name": "星际大逃亡",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41923,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 244226,
+      "bgm_name": "一念永恒",
+      "bgm_name_cn": "",
+      "mal_title": "Yi Nian Yong Heng",
+      "mal_title_ja": "一念永恒",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 244226,
+          "bgm_name": "一念永恒",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42031,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311528,
+      "bgm_name": "村又さんの秘密",
+      "bgm_name_cn": "村又的秘密",
+      "mal_title": "Muramata-san no Himitsu",
+      "mal_title_ja": "村又さんの秘密",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311528,
+          "bgm_name": "村又さんの秘密",
+          "confidence": null
+        },
+        {
+          "bgm_id": 328080,
+          "bgm_name": "喜羊羊与灰太狼之异国大营救",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42048,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 313826,
+      "bgm_name": "サキュバステードライフ THE ANIMATION",
+      "bgm_name_cn": "与魅魔的同居生活",
+      "mal_title": "Succubus Stayed Life The Animation",
+      "mal_title_ja": "サキュバステードライフ THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 313826,
+          "bgm_name": "サキュバステードライフ THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42057,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 303553,
+      "bgm_name": "巨神と氷華の城",
+      "bgm_name_cn": "巨神与冰华之城",
+      "mal_title": "Kyoshin to Hyouka no Shiro",
+      "mal_title_ja": "巨神と氷華の城",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 303553,
+          "bgm_name": "巨神と氷華の城",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417429,
+          "bgm_name": "こはるびよりR。～巨乳JKとあまあま童貞喪失セックス～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 306993,
+          "bgm_name": "巨人族の花嫁",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576034,
+          "bgm_name": "巨龙山谷",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310656,
+          "bgm_name": "「進撃の巨人」〜クロニクル〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 433337,
+          "bgm_name": "The Lighthouse Man",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42090,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 316108,
+      "bgm_name": "耐え子の日常 第二期",
+      "bgm_name_cn": "",
+      "mal_title": "Taeko no Nichijou 2nd Season",
+      "mal_title_ja": "耐え子の日常",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 316108,
+          "bgm_name": "耐え子の日常 第二期",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42091,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 310656,
+      "bgm_name": "「進撃の巨人」〜クロニクル〜",
+      "bgm_name_cn": "进击的巨人 编年史",
+      "mal_title": "Shingeki no Kyojin: Chronicle",
+      "mal_title_ja": "進撃の巨人 〜クロニクル〜",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 310656,
+          "bgm_name": "「進撃の巨人」〜クロニクル〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42141,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 313827,
+      "bgm_name": "彼女がヤツに抱かれたヒ",
+      "bgm_name_cn": "她被他抱住的那天",
+      "mal_title": "Kanojo ga Yatsu ni Idakareta Hi",
+      "mal_title_ja": "彼女がヤツに抱かれたヒ",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 313827,
+          "bgm_name": "彼女がヤツに抱かれたヒ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312510,
+          "bgm_name": "彼女は歌う、だから僕は",
+          "confidence": null
+        },
+        {
+          "bgm_id": 296076,
+          "bgm_name": "彼女、お借りします",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291195,
+          "bgm_name": "ピーター・グリルと賢者の時間",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42145,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 308711,
+      "bgm_name": "フライングベイビーズ改め ステイングベイビーズ",
+      "bgm_name_cn": "",
+      "mal_title": "Hulaing Babies Aratame: Staying Babies",
+      "mal_title_ja": "フライングベイビーズ改め ステイングベイビーズ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308711,
+          "bgm_name": "フライングベイビーズ改め ステイングベイビーズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42179,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 381849,
+      "bgm_name": "LALALACOCO",
+      "bgm_name_cn": "",
+      "mal_title": "Lalalacoco II",
+      "mal_title_ja": "LALALACOCO II",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 381849,
+          "bgm_name": "LALALACOCO",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42206,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 310687,
+      "bgm_name": "女武神的餐桌Ⅱ",
+      "bgm_name_cn": "女武神的餐桌 第二季",
+      "mal_title": "Nu Wushen de Canzhuo II",
+      "mal_title_ja": "女武神的餐桌 II",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 310687,
+          "bgm_name": "女武神的餐桌Ⅱ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313829,
+          "bgm_name": "王女＆女騎士Ｗド下品露出～恥辱の見世物奴隷～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324960,
+          "bgm_name": "ケモミミ女の娘の性活事情 -犬神ちな編-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42223,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 313829,
+      "bgm_name": "王女＆女騎士Ｗド下品露出～恥辱の見世物奴隷～",
+      "bgm_name_cn": "",
+      "mal_title": "Oujo & Onna Kishi W Do Gehin Roshutsu",
+      "mal_title_ja": "王女＆女騎士Wド下品露出",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 313829,
+          "bgm_name": "王女＆女騎士Ｗド下品露出～恥辱の見世物奴隷～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 344606,
+          "bgm_name": "Bigfoot Family",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42224,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 313828,
+      "bgm_name": "色欲INFINITE",
+      "bgm_name_cn": "",
+      "mal_title": "Shikiyoku Infinite",
+      "mal_title_ja": "色欲INFINITE",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 313828,
+          "bgm_name": "色欲INFINITE",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311532,
+          "bgm_name": "琥珀色のハンター THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42260,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 308997,
+      "bgm_name": "忍者コレクション",
+      "bgm_name_cn": "忍者收藏",
+      "mal_title": "Ninja Collection",
+      "mal_title_ja": "忍者コレクション",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308997,
+          "bgm_name": "忍者コレクション",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554375,
+          "bgm_name": "LEGO Ninjago：Season 12",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554376,
+          "bgm_name": "LEGO Ninjago：Season 13",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42266,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 309600,
+      "bgm_name": "武动乾坤 第二季",
+      "bgm_name_cn": "武动乾坤 第二季",
+      "mal_title": "Wu Dong Qian Kun 2nd Season",
+      "mal_title_ja": "武动乾坤 第二季",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 309600,
+          "bgm_name": "武动乾坤 第二季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42284,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 269546,
+      "bgm_name": "元龙",
+      "bgm_name_cn": "元龙",
+      "mal_title": "Yuan Long",
+      "mal_title_ja": "元龙",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 269546,
+          "bgm_name": "元龙",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42285,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 269541,
+      "bgm_name": "时之歌-花与焰的狂想诗",
+      "bgm_name_cn": "时之歌 - 花与焰的狂想诗",
+      "mal_title": "Shi Zhi Ge: Hua Yu Yan De Kuangxiang Shi",
+      "mal_title_ja": "时之歌—花与焰的狂想诗",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 269541,
+          "bgm_name": "时之歌-花与焰的狂想诗",
+          "confidence": null
+        },
+        {
+          "bgm_id": 334286,
+          "bgm_name": "Story of a Beginning",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42290,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 291095,
+      "bgm_name": "灵笼:INCARNATION 下半季",
+      "bgm_name_cn": "灵笼 下半季",
+      "mal_title": "Ling Long: Incarnation Part 2",
+      "mal_title_ja": "灵笼:INCARNATION 下半季",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 291095,
+          "bgm_name": "灵笼:INCARNATION 下半季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 308948,
+          "bgm_name": "灵剑尊 第四季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 306914,
+          "bgm_name": "首席御灵师",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42291,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 308950,
+      "bgm_name": "仙风剑雨录",
+      "bgm_name_cn": "仙风剑雨录",
+      "mal_title": "Xian Feng Jianyu Lu",
+      "mal_title_ja": "仙风剑雨录",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308950,
+          "bgm_name": "仙风剑雨录",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42296,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Fushigi Dagashiya: Zenitendou Movie - Tsuri Taiyaki",
+      "mal_title_ja": "映画 ふしぎ駄菓子屋 銭天堂 つりたい焼き",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 285759,
+          "bgm_name": "映画ドラえもん のび太の新恐竜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 290993,
+          "bgm_name": "映画 ギヴン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309635,
+          "bgm_name": "忘れたフリをして",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42302,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 308826,
+      "bgm_name": "大王不高兴2",
+      "bgm_name_cn": "大王不高兴 第二季",
+      "mal_title": "Da Wang Bu Gaoxing 2",
+      "mal_title_ja": "大王不高兴2",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308826,
+          "bgm_name": "大王不高兴2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 307284,
+          "bgm_name": "大鸾——周恩来童年读书的故事",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278202,
+          "bgm_name": "バキ 大擂台賽編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311909,
+          "bgm_name": "任务大师",
+          "confidence": null
+        },
+        {
+          "bgm_id": 427132,
+          "bgm_name": "星际大逃亡",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311778,
+          "bgm_name": "吃鸡大作战 第3季 冰天雪地大挑战",
+          "confidence": null
+        },
+        {
+          "bgm_id": 516651,
+          "bgm_name": "斗破苍穹之大主宰 第2季 动态漫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 328080,
+          "bgm_name": "喜羊羊与灰太狼之异国大营救",
+          "confidence": null
+        },
+        {
+          "bgm_id": 285813,
+          "bgm_name": "GREAT PRETENDER",
+          "confidence": null
+        },
+        {
+          "bgm_id": 314253,
+          "bgm_name": "アイドルマスター シンデレラガールズ スターライトステージ 5周年記念！「Go Just Go!」アニメPV",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42319,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 309304,
+      "bgm_name": "没出息的阴阳师一家2",
+      "bgm_name_cn": "没出息的阴阳师一家 第二季",
+      "mal_title": "Mei Chuxi de Yinyangshi Yijia 2",
+      "mal_title_ja": "没出息的阴阳师一家2",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 309304,
+          "bgm_name": "没出息的阴阳师一家2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311978,
+          "bgm_name": "快把我哥带走4",
+          "confidence": null
+        },
+        {
+          "bgm_id": 292382,
+          "bgm_name": "日本沈没2020",
+          "confidence": null
+        },
+        {
+          "bgm_id": 285879,
+          "bgm_name": "デカダンス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42320,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 310233,
+      "bgm_name": "柳毅传奇",
+      "bgm_name_cn": "柳毅传奇",
+      "mal_title": "Liu Yi Chuanqi",
+      "mal_title_ja": "柳毅传奇",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 310233,
+          "bgm_name": "柳毅传奇",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42324,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 316042,
+      "bgm_name": "浮気と本気 THE ANIMATION",
+      "bgm_name_cn": "调情和认真",
+      "mal_title": "Uwaki to Honki The Animation",
+      "mal_title_ja": "浮気と本気 THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 316042,
+          "bgm_name": "浮気と本気 THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312114,
+          "bgm_name": "精灵梦叶罗丽 第8季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42330,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311677,
+      "bgm_name": "三三的恶作剧厨房",
+      "bgm_name_cn": "三三的恶作剧厨房",
+      "mal_title": "Sansan de Ezuoju Chufang",
+      "mal_title_ja": "三三的恶作剧厨房",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311677,
+          "bgm_name": "三三的恶作剧厨房",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42331,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 310234,
+      "bgm_name": "人类博物馆",
+      "bgm_name_cn": "人类博物馆",
+      "mal_title": "Renlei Bowuguan",
+      "mal_title_ja": "人类博物馆",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 310234,
+          "bgm_name": "人类博物馆",
+          "confidence": null
+        },
+        {
+          "bgm_id": 318411,
+          "bgm_name": "人体のサバイバル！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 521443,
+          "bgm_name": "采光人",
+          "confidence": null
+        },
+        {
+          "bgm_id": 365784,
+          "bgm_name": "淫中毒者キモオヤジ3ー2人できょうりょく・討伐性交ー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291038,
+          "bgm_name": "クレヨンしんちゃん 激突! ラクガキングダムとほぼ四人の勇者",
+          "confidence": null
+        },
+        {
+          "bgm_id": 350990,
+          "bgm_name": "異世界で、今度こそヤリまくり人生を！ -The Motion Anime-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 260736,
+          "bgm_name": "恋とプロデューサー～EVOL×LOVE～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291479,
+          "bgm_name": "ノー・ガンズ・ライフ 第2クール",
+          "confidence": null
+        },
+        {
+          "bgm_id": 293610,
+          "bgm_name": "海辺のエトランゼ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 390900,
+          "bgm_name": "仮面ライダーゼロワン ショートアニメ EVERYONE'S DAILY LIFE",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42332,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 309449,
+      "bgm_name": "梦游敦煌",
+      "bgm_name_cn": "梦游敦煌",
+      "mal_title": "Mengyou Dunhuang",
+      "mal_title_ja": "梦游敦煌",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 309449,
+          "bgm_name": "梦游敦煌",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312114,
+          "bgm_name": "精灵梦叶罗丽 第8季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 285759,
+          "bgm_name": "映画ドラえもん のび太の新恐竜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 518032,
+          "bgm_name": "ポケットモンスター オーロラからのメッセージ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42333,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 308028,
+      "bgm_name": "请吃红小豆吧！ 第四季",
+      "bgm_name_cn": "请吃红小豆吧！ 第四季",
+      "mal_title": "Qing Chi Hong Xiaodou Ba! 4th Season",
+      "mal_title_ja": "请吃红小豆吧！ 第四季",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308028,
+          "bgm_name": "请吃红小豆吧！ 第四季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42345,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 303173,
+      "bgm_name": "GETUP! GETLIVE! #げらげら",
+      "bgm_name_cn": "",
+      "mal_title": "Get Up! Get Live! #GeraGera Episode 0",
+      "mal_title_ja": "GET UP! GET LIVE! #ゲラゲラ ０話",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 303173,
+          "bgm_name": "GETUP! GETLIVE! #げらげら",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42364,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Re:Zero kara Hajimeru Break Time 2nd Season",
+      "mal_title_ja": "Re:ゼロから始める休憩時間（ブレイクタイム）2nd season",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42387,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 309869,
+      "bgm_name": "「はたらく細胞!!」最強の敵、再び。体の中は“腸”大騒ぎ！",
+      "bgm_name_cn": "工作细胞：细胞大作战",
+      "mal_title": "Hataraku Saibou!! Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
+      "mal_title_ja": "『はたらく細胞!!』最強の敵、再び。体の中は“腸”大騒ぎ！",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 309869,
+          "bgm_name": "「はたらく細胞!!」最強の敵、再び。体の中は“腸”大騒ぎ！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42485,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 294657,
+      "bgm_name": "妙先生",
+      "bgm_name_cn": "妙先生",
+      "mal_title": "Miao Xiansheng",
+      "mal_title_ja": "妙先生",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 294657,
+          "bgm_name": "妙先生",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42491,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 390900,
+      "bgm_name": "仮面ライダーゼロワン ショートアニメ EVERYONE'S DAILY LIFE",
+      "bgm_name_cn": "假面骑士01 短篇动画 每个人的日常生活",
+      "mal_title": "Kamen Rider Zero-One: Short Anime - Everyone's Daily Life",
+      "mal_title_ja": "仮面ライダーゼロワン ショートアニメ EVERYONE’S DAILY LIFE",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 390900,
+          "bgm_name": "仮面ライダーゼロワン ショートアニメ EVERYONE'S DAILY LIFE",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42500,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 499517,
+      "bgm_name": "ただいま！ちびゴジラ",
+      "bgm_name_cn": "我回来了！小哥斯拉",
+      "mal_title": "Tadaima! Chibi Godzilla",
+      "mal_title_ja": "ただいま！ちびゴジラ",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 499517,
+          "bgm_name": "ただいま！ちびゴジラ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42517,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 312982,
+      "bgm_name": "オオカミさんは食べられたい",
+      "bgm_name_cn": "大神小姐想被吃掉",
+      "mal_title": "Ookami-san wa Taberaretai",
+      "mal_title_ja": "オオカミさんは食べられたい",
+      "mal_media_type": "ona",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 312982,
+          "bgm_name": "オオカミさんは食べられたい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42522,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 316107,
+      "bgm_name": "最響カミズモード！",
+      "bgm_name_cn": "最响Kamizmode!",
+      "mal_title": "Saikyou Kamizmode!",
+      "mal_title_ja": "最響カミズモード！",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 316107,
+          "bgm_name": "最響カミズモード！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 1931,
+          "bgm_name": "最終兵器彼女",
+          "confidence": null
+        },
+        {
+          "bgm_id": 5874,
+          "bgm_name": "最終兵器彼女 Another love song",
+          "confidence": null
+        },
+        {
+          "bgm_id": 6993,
+          "bgm_name": "最遊記RELOAD -burial-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 6995,
+          "bgm_name": "最遊記RELOAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 6997,
+          "bgm_name": "最遊記RELOAD GUNLOCK",
+          "confidence": null
+        },
+        {
+          "bgm_id": 6998,
+          "bgm_name": "最遊記外伝",
+          "confidence": null
+        },
+        {
+          "bgm_id": 57202,
+          "bgm_name": "最終痴漢電車NEXT",
+          "confidence": null
+        },
+        {
+          "bgm_id": 65517,
+          "bgm_name": "最終痴漢電車",
+          "confidence": null
+        },
+        {
+          "bgm_id": 117076,
+          "bgm_name": "最遊記",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42526,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Teiketsu Bolt",
+      "mal_title_ja": "低血ボルト",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42546,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 308711,
+      "bgm_name": "フライングベイビーズ改め ステイングベイビーズ",
+      "bgm_name_cn": "",
+      "mal_title": "Hulaing Babies Aratame - Staying Babies: Chikyuu wo Mamore! Staying Babies with Yuusha Hayami-san",
+      "mal_title_ja": "フライングベイビーズ改め ステイングベイビーズ　第4.5話「地球を守れ！ステイングベイビーズ with 勇者ハヤミさん」",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 308711,
+          "bgm_name": "フライングベイビーズ改め ステイングベイビーズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42584,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Showtime",
+      "mal_title_ja": "Showtime",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42593,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kesshouban: Eigakan e Iku",
+      "mal_title_ja": "血小板 映画館へ行く",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 451339,
+          "bgm_name": "低血ボルト",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42600,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Never Giving Up!",
+      "mal_title_ja": "Never giving up!",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42602,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Miloha CM:  Oresama ni, Amae Chai na",
+      "mal_title_ja": "Miloha（ミロハ）「オレ様に、甘えちゃいな。」",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42603,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 339266,
+      "bgm_name": "僕のヒーローアカデミアOVA 生き残れ！決死のサバイバル訓練",
+      "bgm_name_cn": "我的英雄学院OVA 活下来！殊死的生存训练",
+      "mal_title": "Boku no Hero Academia: Ikinokore! Kesshi no Survival Kunren",
+      "mal_title_ja": "僕のヒーローアカデミア 生き残れ！決死のサバイバル訓練",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 339266,
+          "bgm_name": "僕のヒーローアカデミアOVA 生き残れ！決死のサバイバル訓練",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312510,
+          "bgm_name": "彼女は歌う、だから僕は",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42618,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "White Lily Light",
+      "mal_title_ja": "White Lily Light",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42667,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mouseman: Ai no Katamari",
+      "mal_title_ja": "マウスマン～愛の塊～",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 296076,
+          "bgm_name": "彼女、お借りします",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42673,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Rakuen Tsuihou: Faith Conquest",
+      "mal_title_ja": "楽園追放 -Faith Conquest-",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42685,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Dokyuu Hentai HxEros: HxEros Report",
+      "mal_title_ja": "ド級編隊エグゼロス 第7.5話「エグゼロス・レポート」",
+      "mal_media_type": "tv_special",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42703,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sore wo Ai to Yobu dake",
+      "mal_title_ja": "それを愛と呼ぶだけ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42723,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 285879,
+      "bgm_name": "デカダンス",
+      "bgm_name_cn": "没落要塞",
+      "mal_title": "Deca-Dence: Install",
+      "mal_title_ja": "デカダンス 第5.5話「install」",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 285879,
+          "bgm_name": "デカダンス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42729,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Xpice",
+      "mal_title_ja": "XPICE",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42737,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 311092,
+      "bgm_name": "기기괴괴 성형수",
+      "bgm_name_cn": "整容液",
+      "mal_title": "Gigi Goegoe Sunghyungsoo",
+      "mal_title_ja": "기기괴괴-성형수",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311092,
+          "bgm_name": "기기괴괴 성형수",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42783,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Dazzling White Town",
+      "mal_title_ja": "Dazzling White Town",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42791,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 314242,
+      "bgm_name": "サクラ革命 ～華咲く乙女たち～",
+      "bgm_name_cn": "樱花革命～花开时的少女们～",
+      "mal_title": "Sakura Kakumei: Hanasaku Otome-tachi",
+      "mal_title_ja": "サクラ革命 ～華咲く乙女たち～",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 314242,
+          "bgm_name": "サクラ革命 ～華咲く乙女たち～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315084,
+          "bgm_name": "サクガサク",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315746,
+          "bgm_name": "神待ちサイト[THE MOVIE]",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42793,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Carol (Music)",
+      "mal_title_ja": "Carol",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42794,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 286358,
+      "bgm_name": "镜·双城 风起篇",
+      "bgm_name_cn": "镜·双城 风起篇",
+      "mal_title": "Jing: Shuang Cheng - Feng Qi Pian",
+      "mal_title_ja": "镜·双城 风起篇",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 286358,
+          "bgm_name": "镜·双城 风起篇",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42797,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Rebirth: Virtual to no Souguu",
+      "mal_title_ja": "りばあす ヴァーチャルとの遭遇",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42812,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Black Channel",
+      "mal_title_ja": "ブラックチャンネル",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 2453,
+          "bgm_name": "ブラック★ロックシューター",
+          "confidence": null
+        },
+        {
+          "bgm_id": 22179,
+          "bgm_name": "ブラック★ロックシューター",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27088,
+          "bgm_name": "ブラックマジック M-66",
+          "confidence": null
+        },
+        {
+          "bgm_id": 46036,
+          "bgm_name": "ブラック・ジャック",
+          "confidence": null
+        },
+        {
+          "bgm_id": 52787,
+          "bgm_name": "ブラック・ジャック OVA",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74542,
+          "bgm_name": "ブラック・ジャック 劇場版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 80918,
+          "bgm_name": "ブラック・ジャック21",
+          "confidence": null
+        },
+        {
+          "bgm_id": 84873,
+          "bgm_name": "ブラック・ブレット",
+          "confidence": null
+        },
+        {
+          "bgm_id": 120067,
+          "bgm_name": "ブラック・ジャック OVA FINAL",
+          "confidence": null
+        },
+        {
+          "bgm_id": 120069,
+          "bgm_name": "ブラック・ジャック ふたりの黒い医者",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42815,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Xin Yu Gong Yu Shan",
+      "mal_title_ja": "新愚公移山",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42834,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 312079,
+      "bgm_name": "喵千岁的成年礼",
+      "bgm_name_cn": "喵千岁的成年礼",
+      "mal_title": "Miao Qiansui de Chengnian Li",
+      "mal_title_ja": "喵千岁的成年礼",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 312079,
+          "bgm_name": "喵千岁的成年礼",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42835,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311909,
+      "bgm_name": "任务大师",
+      "bgm_name_cn": "任务大师",
+      "mal_title": "Renwu Dashi",
+      "mal_title_ja": "任务大师",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311909,
+          "bgm_name": "任务大师",
+          "confidence": null
+        },
+        {
+          "bgm_id": 292222,
+          "bgm_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42836,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "This Is Not Blue",
+      "mal_title_ja": "This is not BLUE",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 615088,
+          "bgm_name": "This is Not a Time to Lie",
+          "confidence": null
+        },
+        {
+          "bgm_id": 525976,
+          "bgm_name": "This Is America, Charlie Brown",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615072,
+          "bgm_name": "This is Love",
+          "confidence": null
+        },
+        {
+          "bgm_id": 506261,
+          "bgm_name": "Porque é Este o Meu Ofício",
+          "confidence": null
+        },
+        {
+          "bgm_id": 18797,
+          "bgm_name": "これはゾンビですか? オブ・ザ・デッド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 333176,
+          "bgm_name": "このヒーラー、めんどくさい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 505793,
+          "bgm_name": "勇者パーティーを追放された白魔導師、Sランク冒険者に拾われる ～この白魔導師が規格外すぎる～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 321407,
+          "bgm_name": "究極進化したフルダイブRPGが現実よりもクソゲーだったら",
+          "confidence": null
+        },
+        {
+          "bgm_id": 137338,
+          "bgm_name": "This Wonderful Life",
+          "confidence": null
+        },
+        {
+          "bgm_id": 160678,
+          "bgm_name": "This Way Up",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42855,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Fudanshi Shoukan: Isekai de Shinjuu ni Hameraremashita",
+      "mal_title_ja": "腐男子召喚〜異世界で神獣にハメられました〜",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 180211,
+          "bgm_name": "腐男子高校生活",
+          "confidence": null
+        },
+        {
+          "bgm_id": 220312,
+          "bgm_name": "ヲタクに恋は難しい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 260946,
+          "bgm_name": "ヲタクに恋は難しい OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 7033,
+          "bgm_name": "腐女子の品格",
+          "confidence": null
+        },
+        {
+          "bgm_id": 299434,
+          "bgm_name": "腐界に眠る王女のアバドーン THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 320232,
+          "bgm_name": "爸妈来自二次元",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42867,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 296076,
+      "bgm_name": "彼女、お借りします",
+      "bgm_name_cn": "租借女友",
+      "mal_title": "Kanojo, Okarishimasu Petit",
+      "mal_title_ja": "彼女, お借りします ぷち",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 296076,
+          "bgm_name": "彼女、お借りします",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312510,
+          "bgm_name": "彼女は歌う、だから僕は",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313827,
+          "bgm_name": "彼女がヤツに抱かれたヒ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291195,
+          "bgm_name": "ピーター・グリルと賢者の時間",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42882,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "The iDOLM@STER Cinderella Girls: Starlight Stage - 5-shuunen Kinen \"Go Just Go!\" PV",
+      "mal_title_ja": "【デレステ】5周年記念！「Go Just Go!」アニメPV",
+      "mal_media_type": "pv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42889,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Muteki-kyuu*Believer / Mirai Harmony",
+      "mal_title_ja": "無敵級*ビリーバー / 未来ハーモニー",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42898,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 314522,
+      "bgm_name": "万界仙踪 第四季",
+      "bgm_name_cn": "万界仙踪 第四季",
+      "mal_title": "Wan Jie Xian Zong 4th Season",
+      "mal_title_ja": "万界仙踪 第四季",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 314522,
+          "bgm_name": "万界仙踪 第四季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42908,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Natsu wo Ikiru",
+      "mal_title_ja": "夏を生きる",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42910,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Padoga Kkeutnaneun Goskkaji",
+      "mal_title_ja": "파도가 끝나는 곳까지",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42911,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Nolaehago Sip-eo",
+      "mal_title_ja": "노래하고 싶어",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42914,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 518032,
+      "bgm_name": "ポケットモンスター オーロラからのメッセージ",
+      "bgm_name_cn": "宝可梦 旅途：极光的传讯",
+      "mal_title": "Planetarium Pokemon: Aurora kara no Message",
+      "mal_title_ja": "プラネタリウム ポケットモンスター オーロラからのメッセージ",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 518032,
+          "bgm_name": "ポケットモンスター オーロラからのメッセージ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 338353,
+          "bgm_name": "POKÉTOON",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42935,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sakugasaku",
+      "mal_title_ja": "サクガサク",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42955,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 315683,
+      "bgm_name": "モンストアニメ「ハレルヤ - 運命の選択- 」",
+      "bgm_name_cn": "",
+      "mal_title": "Hallelujah: Unmei no Sentaku",
+      "mal_title_ja": "ハレルヤ - 運命の選択 -",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 315683,
+          "bgm_name": "モンストアニメ「ハレルヤ - 運命の選択- 」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417429,
+          "bgm_name": "こはるびよりR。～巨乳JKとあまあま童貞喪失セックス～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 42984,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Gotcha!",
+      "mal_title_ja": "GOTCHA!",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43318,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Because",
+      "mal_title_ja": "because",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43415,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kanchigaisei Han Kiboushou feat. Hatsune Miku",
+      "mal_title_ja": "勘違い性反希望症 feat. 初音ミク",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43492,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mr. Fixer",
+      "mal_title_ja": "Mr.Fixer",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43532,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mushi no Tsubuyaki",
+      "mal_title_ja": "虫のつぶやき",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43683,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Boku no Hero Academia the Movie 2: Heroes:Rising - Epilogue Plus - Yume wo Genjitsu ni",
+      "mal_title_ja": "僕のヒーローアカデミア THE MOVIE ヒーローズ・ライジング エピローグ・プラス《夢を現実に》",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43739,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Idol Shineitai",
+      "mal_title_ja": "アイドル新鋭隊",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43769,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "OTMGirls no Yokiyoki Channel",
+      "mal_title_ja": "OTMGirlsのよきよきチャンネル",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44002,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 328080,
+      "bgm_name": "喜羊羊与灰太狼之异国大营救",
+      "bgm_name_cn": "",
+      "mal_title": "Xi Yangyang Yu Hui Tailang: Yiguo Da Yingjiu",
+      "mal_title_ja": "喜羊羊與灰太狼之異國大營救",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311850,
+          "bgm_name": "喜羊羊与灰太狼之羊羊趣冒险",
+          "confidence": null
+        },
+        {
+          "bgm_id": 328080,
+          "bgm_name": "喜羊羊与灰太狼之异国大营救",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44013,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311850,
+      "bgm_name": "喜羊羊与灰太狼之羊羊趣冒险",
+      "bgm_name_cn": "喜羊羊与灰太狼之羊羊趣冒险",
+      "mal_title": "Xi Yangyang Yu Hui Tailang: Yangyang Qu Maoxian",
+      "mal_title_ja": "喜羊羊与灰太狼之羊羊趣冒险",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311850,
+          "bgm_name": "喜羊羊与灰太狼之羊羊趣冒险",
+          "confidence": null
+        },
+        {
+          "bgm_id": 328080,
+          "bgm_name": "喜羊羊与灰太狼之异国大营救",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44246,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Aisarenakutemo Kimi ga Iru",
+      "mal_title_ja": "愛されなくても君がいる",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44254,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Milabo",
+      "mal_title_ja": "MILABO",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44284,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ai-mai Chocolate",
+      "mal_title_ja": "愛昧ショコラーテ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44571,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 306907,
+      "bgm_name": "烈阳天道Ⅰ",
+      "bgm_name_cn": "烈阳天道",
+      "mal_title": "Lie Yang Tiandao I",
+      "mal_title_ja": "烈阳天道Ⅰ",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 306907,
+          "bgm_name": "烈阳天道Ⅰ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 288274,
+          "bgm_name": "アグレッシブ烈子 シーズン3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44590,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Adachi to Shimamura Mini Anime",
+      "mal_title_ja": "安達としまむら ミニアニメ",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 327207,
+          "bgm_name": "Amphibia Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44591,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 268726,
+      "bgm_name": "転生したらスライムだった件 OAD",
+      "bgm_name_cn": "关于我转生变成史莱姆这档事 OAD",
+      "mal_title": "Slime-tachi no Idobata Kaigi",
+      "mal_title_ja": "スライムたちの井戸端会議",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 421174,
+          "bgm_name": "転生したらスライムだった件 コリウスの夢",
+          "confidence": null
+        },
+        {
+          "bgm_id": 350185,
+          "bgm_name": "劇場版 転生したらスライムだった件 紅蓮の絆編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515595,
+          "bgm_name": "劇場版 転生したらスライムだった件 蒼海の涙編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 408715,
+          "bgm_name": "『転生したらスライムだった件 魔王と竜の建国譚』1周年記念新アニメPV",
+          "confidence": null
+        },
+        {
+          "bgm_id": 520588,
+          "bgm_name": "『転生したらスライムだった件 魔王と竜の建国譚』3周年記念新アニメPV",
+          "confidence": null
+        },
+        {
+          "bgm_id": 66597,
+          "bgm_name": "アンスイート 寝取られ堕ちた女たち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 239816,
+          "bgm_name": "転生したらスライムだった件",
+          "confidence": null
+        },
+        {
+          "bgm_id": 268726,
+          "bgm_name": "転生したらスライムだった件 OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278031,
+          "bgm_name": "転生したらスライムだった件 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 302523,
+          "bgm_name": "転生したらスライムだった件 第2期 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 45065,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 384758,
+      "bgm_name": "猪猪侠之深海小英雄 2",
+      "bgm_name_cn": "",
+      "mal_title": "Xiao Gongzhu Ai Wei La Yu Shenmi Wangguo 2",
+      "mal_title_ja": "小公主艾薇拉与神秘王国2",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 326978,
+          "bgm_name": "小司令",
+          "confidence": null
+        },
+        {
+          "bgm_id": 318579,
+          "bgm_name": "かいじゅうステップ ワンダバダ 第2シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 282635,
+          "bgm_name": "狐妖小红娘 金晨曦篇",
+          "confidence": null
+        },
+        {
+          "bgm_id": 331202,
+          "bgm_name": "巴啦啦小魔仙之魔法海萤堡 第二季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 356830,
+          "bgm_name": "阿巳与小铃铛",
+          "confidence": null
+        },
+        {
+          "bgm_id": 384757,
+          "bgm_name": "猪猪侠之深海小英雄 1",
+          "confidence": null
+        },
+        {
+          "bgm_id": 384758,
+          "bgm_name": "猪猪侠之深海小英雄 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 288274,
+          "bgm_name": "アグレッシブ烈子 シーズン3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 390766,
+          "bgm_name": "Octonauts and the Caves of Sac Actun",
+          "confidence": null
+        },
+        {
+          "bgm_id": 308504,
+          "bgm_name": "Monkie Kid: A Hero is Born",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 45114,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 178596,
+      "bgm_name": "阿里巴巴2所罗门封印",
+      "bgm_name_cn": "",
+      "mal_title": "Alibaba Yu Shen Deng",
+      "mal_title_ja": "阿里巴巴与神灯",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 83321,
+          "bgm_name": "アリババと40匹の盗賊",
+          "confidence": null
+        },
+        {
+          "bgm_id": 431540,
+          "bgm_name": "Alì Babà",
+          "confidence": null
+        },
+        {
+          "bgm_id": 240763,
+          "bgm_name": "积高侠与阿里巴巴",
+          "confidence": null
+        },
+        {
+          "bgm_id": 130745,
+          "bgm_name": "阿里巴巴：大盗奇兵",
+          "confidence": null
+        },
+        {
+          "bgm_id": 178596,
+          "bgm_name": "阿里巴巴2所罗门封印",
+          "confidence": null
+        },
+        {
+          "bgm_id": 271661,
+          "bgm_name": "阿里巴巴三根金发",
+          "confidence": null
+        },
+        {
+          "bgm_id": 580656,
+          "bgm_name": "Ejen Ali: The Movie",
+          "confidence": null
+        },
+        {
+          "bgm_id": 580659,
+          "bgm_name": "Ejen Ali: The Movie 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 45149,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 311778,
+      "bgm_name": "吃鸡大作战 第3季 冰天雪地大挑战",
+      "bgm_name_cn": "吃鸡大作战 第三季 冰天雪地大挑战",
+      "mal_title": "Chi Ji Da Zuozhan 3rd Season",
+      "mal_title_ja": "吃鸡大作战 第3季",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311778,
+          "bgm_name": "吃鸡大作战 第3季 冰天雪地大挑战",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311978,
+          "bgm_name": "快把我哥带走4",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 45935,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sirotsumekusa",
+      "mal_title_ja": "白爪草",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 34447,
+          "bgm_name": "白鸽岛",
+          "confidence": null
+        },
+        {
+          "bgm_id": 105129,
+          "bgm_name": "白鯨伝説",
+          "confidence": null
+        },
+        {
+          "bgm_id": 161564,
+          "bgm_name": "白想这么多",
+          "confidence": null
+        },
+        {
+          "bgm_id": 304819,
+          "bgm_name": "白テニミニアニメ劇場～今日もどこかでミューエンマ～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 322505,
+          "bgm_name": "白紙",
+          "confidence": null
+        },
+        {
+          "bgm_id": 345758,
+          "bgm_name": "白月儿",
+          "confidence": null
+        },
+        {
+          "bgm_id": 387822,
+          "bgm_name": "白聖女と黒牧師",
+          "confidence": null
+        },
+        {
+          "bgm_id": 524373,
+          "bgm_name": "白雲加鹽",
+          "confidence": null
+        },
+        {
+          "bgm_id": 601814,
+          "bgm_name": "白の路",
+          "confidence": null
+        },
+        {
+          "bgm_id": 98425,
+          "bgm_name": "ドラゴンフィスト",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 47386,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 249074,
+      "bgm_name": "百变布鲁可 第2季",
+      "bgm_name_cn": "百变布鲁可 第二季",
+      "mal_title": "Bu Lu Ke Zhandui: Yuan Xing Shi Shouwei",
+      "mal_title_ja": "布鲁可战队之源星石守卫",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 247974,
+          "bgm_name": "百变布鲁可",
+          "confidence": null
+        },
+        {
+          "bgm_id": 249074,
+          "bgm_name": "百变布鲁可 第2季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 149210,
+          "bgm_name": "Mother Pluto",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241574,
+          "bgm_name": "Pluto's Judgement Day",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241602,
+          "bgm_name": "Pluto's Dream House",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241612,
+          "bgm_name": "Plutopia",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241614,
+          "bgm_name": "Pluto's Party",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241615,
+          "bgm_name": "Pluto's Christmas Tree",
+          "confidence": null
+        },
+        {
+          "bgm_id": 243245,
+          "bgm_name": "Pluto's Blue Note",
+          "confidence": null
+        },
+        {
+          "bgm_id": 359176,
+          "bgm_name": "Pluto's Purchase",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 47475,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311320,
+      "bgm_name": "无敌鹿战队",
+      "bgm_name_cn": "无敌鹿战队",
+      "mal_title": "Wudi Lu Zhandui",
+      "mal_title_ja": "无敌鹿战队",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311320,
+          "bgm_name": "无敌鹿战队",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311809,
+          "bgm_name": "無敵級*ビリーバー アニメーションPV",
+          "confidence": null
+        },
+        {
+          "bgm_id": 345040,
+          "bgm_name": "無垢なこの子と勝手に家族計画(モーションコミック版)",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310475,
+          "bgm_name": "歩きスマホは条例違反！見つけたら問答無用で即ハメ生中出し！ The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 326500,
+          "bgm_name": "Infinity Train Book 3: Cult of the Conductor",
+          "confidence": null
+        },
+        {
+          "bgm_id": 299202,
+          "bgm_name": "泣きたい私は猫をかぶる",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 47717,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 311817,
+      "bgm_name": "别惹流氓兔马修3",
+      "bgm_name_cn": "别惹流氓兔马修 第3季",
+      "mal_title": "Bie Re Liumang Tu Ma Xiu 3",
+      "mal_title_ja": "别惹流氓兔马修 第3季",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311817,
+          "bgm_name": "别惹流氓兔马修3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309869,
+          "bgm_name": "「はたらく細胞!!」最強の敵、再び。体の中は“腸”大騒ぎ！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 47816,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 331075,
+      "bgm_name": "阿衰 第三季",
+      "bgm_name_cn": "",
+      "mal_title": "Ashuai 3rd Season",
+      "mal_title_ja": "阿衰 第三季",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 331075,
+          "bgm_name": "阿衰 第三季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 356830,
+          "bgm_name": "阿巳与小铃铛",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 47972,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Suiyoubi no Yakusoku",
+      "mal_title_ja": "水曜日の約束",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48006,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 294876,
+      "bgm_name": "精忠报国",
+      "bgm_name_cn": "精忠报国",
+      "mal_title": "Jingzhong Baoguo",
+      "mal_title_ja": "精忠报国",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 294876,
+          "bgm_name": "精忠报国",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48023,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 307995,
+      "bgm_name": "风雨廊桥",
+      "bgm_name_cn": "风雨廊桥",
+      "mal_title": "Fengyu Lang Qiao",
+      "mal_title_ja": "风雨廊桥",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 307995,
+          "bgm_name": "风雨廊桥",
+          "confidence": null
+        },
+        {
+          "bgm_id": 308950,
+          "bgm_name": "仙风剑雨录",
+          "confidence": null
+        },
+        {
+          "bgm_id": 286358,
+          "bgm_name": "镜·双城 风起篇",
+          "confidence": null
+        },
+        {
+          "bgm_id": 223147,
+          "bgm_name": "凡人修仙传之凡人风起天南",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48055,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Wo Shi Wangzhe",
+      "mal_title_ja": "我是王者",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48120,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Xiao Ta Lixian Ji: Jiyi Senlin",
+      "mal_title_ja": "小塔历险记之记忆森林",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48193,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mabeobsonyeo Dee Dee",
+      "mal_title_ja": "마법소녀 디디",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48250,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 553418,
+      "bgm_name": "뽀롱뽀롱 뽀로로 시즌1",
+      "bgm_name_cn": "小企鹅Pororo 第一季",
+      "mal_title": "Pororo Donghwanala",
+      "mal_title_ja": "뽀로로 동화나라",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 553418,
+          "bgm_name": "뽀롱뽀롱 뽀로로 시즌1",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48377,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Cotton Candy Ei-Ei-Oh!",
+      "mal_title_ja": "コットンキャンディえいえいおー！",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48525,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Last Lament",
+      "mal_title_ja": "Last Lament",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48530,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Knockin' Fantasy",
+      "mal_title_ja": "Knockin' Fantasy",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48531,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Bigbang Reflection!!",
+      "mal_title_ja": "BIGBANG REFLECTION!!",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48533,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Survival of the Illest",
+      "mal_title_ja": "Survival of the Illest",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48538,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Trick with Treat!! (with Undead)",
+      "mal_title_ja": "TRICK with TREAT!!(with UNDEAD)",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48541,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Habataki no Fortissimo",
+      "mal_title_ja": "羽ばたきのフォルティシモ",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48552,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Rainbow Stairway",
+      "mal_title_ja": "Rainbow Stairway",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48557,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Super Nova Revolu5tar",
+      "mal_title_ja": "SUPER NOVA REVOLU5TAR",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48558,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Emerald Planet",
+      "mal_title_ja": "エメラルドプラネット",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48560,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Play \"Tag\"",
+      "mal_title_ja": "Play \"Tag\"",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48565,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Unlimited☆Power!!!!!",
+      "mal_title_ja": "アンリミテッド☆パワー!!!!!",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48594,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Pittanko!! Nekozakana (2020)",
+      "mal_title_ja": "ぴったんこ!! ねこざかな (2020)",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 313827,
+          "bgm_name": "彼女がヤツに抱かれたヒ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48824,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Blue Archive PVs",
+      "mal_title_ja": "ブルーアーカイブ",
+      "mal_media_type": "pv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48861,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Chuukou Ikkan!! Kimetsu Gakuen Monogatari: Kimetsu no Utage Tokubetsu-hen",
+      "mal_title_ja": "中高一貫!!キメツ学園物語 ～鬼滅の宴=特別編=～",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 49126,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Honeycomb Summer",
+      "mal_title_ja": "Honeycomb Summer",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 49528,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mister Jewel Box",
+      "mal_title_ja": "Mister Jewel Box",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 49901,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Yummy Yummy Yummy",
+      "mal_title_ja": "Yummy Yummy Yummy",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50039,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tabun",
+      "mal_title_ja": "たぶん",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50040,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Jouyatou",
+      "mal_title_ja": "常夜燈",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50054,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ham",
+      "mal_title_ja": "Ham",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50056,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Telecaster B-Boy",
+      "mal_title_ja": "テレキャスタービーボーイ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50079,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Dero",
+      "mal_title_ja": "DERO",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50110,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 278826,
+      "bgm_name": "Re:ゼロから始める異世界生活 2nd season",
+      "bgm_name_cn": "Re：从零开始的异世界生活 第二季",
+      "mal_title": "Kata no Ato",
+      "mal_title_ja": "かたのあと",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 518032,
+          "bgm_name": "ポケットモンスター オーロラからのメッセージ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 297225,
+          "bgm_name": "俺を好きなのはお前だけかよ～俺たちのゲームセット～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241185,
+          "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 306660,
+          "bgm_name": "夏が終わるまで The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313827,
+          "bgm_name": "彼女がヤツに抱かれたヒ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315084,
+          "bgm_name": "サクガサク",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278826,
+          "bgm_name": "Re:ゼロから始める異世界生活 2nd season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310194,
+          "bgm_name": "Re:ゼロから始める休憩時間 2nd Season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 312510,
+          "bgm_name": "彼女は歌う、だから僕は",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50227,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Love (2020)",
+      "mal_title_ja": "ラヴ",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50249,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Leer he Guoguo",
+      "mal_title_ja": "乐儿和果果",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50316,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Nadame Sukashi Negotiation",
+      "mal_title_ja": "なだめスかし Negotiation",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50462,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Jiyi Guanli Ju",
+      "mal_title_ja": "记忆管理局",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 521913,
+          "bgm_name": "アズールレーン 3周年記念アニメPV",
+          "confidence": null
+        },
+        {
+          "bgm_id": 517608,
+          "bgm_name": "「Fate/Grand Order」配信5周年記念アニメーションPV",
+          "confidence": null
+        },
+        {
+          "bgm_id": 314253,
+          "bgm_name": "アイドルマスター シンデレラガールズ スターライトステージ 5周年記念！「Go Just Go!」アニメPV",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50480,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "LB Commerce: Omoi yo Todoke!",
+      "mal_title_ja": "『想いよ届け！』～エルビーコマース～アニメCM",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 50535,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Toon Blast",
+      "mal_title_ja": "",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 506578,
+          "bgm_name": "Tiny Toon Adventures",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51261,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 309899,
+      "bgm_name": "Gon的旱獭之獭獭突然想到",
+      "bgm_name_cn": "獭獭突然想到",
+      "mal_title": "Tata Tu Ran Xiang Dao",
+      "mal_title_ja": "獭獭突然想到",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 309899,
+          "bgm_name": "Gon的旱獭之獭獭突然想到",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51429,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Maiodore! Maimai Time",
+      "mal_title_ja": "マイオドレ！舞舞タイム",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51449,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "A Lot of Life",
+      "mal_title_ja": "A lot of life",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51451,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Wish You Luck",
+      "mal_title_ja": "Wish You Luck",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51487,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Lagtrain",
+      "mal_title_ja": "ラグトレイン",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51528,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ahoy!! Warera Houshou Kaizokudan☆",
+      "mal_title_ja": "Ahoy!! 我ら宝鐘海賊団☆",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51602,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Larva Island Movie",
+      "mal_title_ja": "라바 아일랜드 무비",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51831,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tanjou",
+      "mal_title_ja": "誕生",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51883,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Pikachu no Asa no Nikka",
+      "mal_title_ja": "ピカチュウのあさ",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 27759,
+          "bgm_name": "ピカチュウのなつやすみ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27779,
+          "bgm_name": "ピカチュウのドキドキかくれんぼ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27879,
+          "bgm_name": "ピカチュウのふしぎなふしぎな大冒険",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27880,
+          "bgm_name": "ピカチュウのおばけカーニバル",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27881,
+          "bgm_name": "ピカチュウのキラキラだいそうさく！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 90013,
+          "bgm_name": "ピカチュウのふゆやすみ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 90014,
+          "bgm_name": "ピカチュウのふゆやすみ2000",
+          "confidence": null
+        },
+        {
+          "bgm_id": 90610,
+          "bgm_name": "ピカチュウのなつまつり",
+          "confidence": null
+        },
+        {
+          "bgm_id": 90612,
+          "bgm_name": "ピカチュウのわんぱくアイランド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 90613,
+          "bgm_name": "ピカチュウの探検クラブ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52066,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Recola",
+      "mal_title_ja": "リコラ",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52102,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kako ni Torawareteiru",
+      "mal_title_ja": "過去に囚われている",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52486,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 313924,
+      "bgm_name": "HoneyWorks 10th Anniversary \"LIP×LIP FILM×LIVE\"",
+      "bgm_name_cn": "这个世界的享受方式～Secret Story Film～",
+      "mal_title": "HoneyWorks 10th Anniversary \"LIPxLIP FILMxLIVE\" Mini Anime",
+      "mal_title_ja": "『HoneyWorks 10th Anniversary “LIP×LIP FILM×LIVE”』ミニアニメ",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 313924,
+          "bgm_name": "HoneyWorks 10th Anniversary \"LIP×LIP FILM×LIVE\"",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52514,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Air Folktale",
+      "mal_title_ja": "エアフオルクテイル",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52525,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Yaranakya Ikenai Koto Bakari",
+      "mal_title_ja": "やらなきゃいけないことばかり",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52526,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Day by Day CRiSiS Songs",
+      "mal_title_ja": "Day by Day CRiSiS Songs",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52527,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "After-School Emotion",
+      "mal_title_ja": "アフタースクール・エモーション",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52528,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "I Just Rock",
+      "mal_title_ja": "アイジャストロック",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52559,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Dizzy Dizzy",
+      "mal_title_ja": "ディジーディジー",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52610,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 356830,
+      "bgm_name": "阿巳与小铃铛",
+      "bgm_name_cn": "",
+      "mal_title": "Asi Yu Xiao Liangdang",
+      "mal_title_ja": "阿巳与小铃铛",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 356830,
+          "bgm_name": "阿巳与小铃铛",
+          "confidence": null
+        },
+        {
+          "bgm_id": 331075,
+          "bgm_name": "阿衰 第三季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52813,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kimi dake ga Sushi!!",
+      "mal_title_ja": "キミだけがすしっ！！",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52910,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 559135,
+      "bgm_name": "宇宙の蜉蝣2",
+      "bgm_name_cn": "宇宙的蜉蝣2",
+      "mal_title": "Fuyou Riji",
+      "mal_title_ja": "蜉蝣日记",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 559135,
+          "bgm_name": "宇宙の蜉蝣2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53010,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ekaki Uta",
+      "mal_title_ja": "絵描きうた",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53101,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Inside Night Looper",
+      "mal_title_ja": "インサイド・ナイトルーパー",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53365,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Untitled World",
+      "mal_title_ja": "Untitled World",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53371,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 544902,
+      "bgm_name": "브레드 이발소:Season 2",
+      "bgm_name_cn": "面包理发店第二季",
+      "mal_title": "Beuledeu Ibalso 2",
+      "mal_title_ja": "브레드 이발소 2",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 544902,
+          "bgm_name": "브레드 이발소:Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53520,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "BT21 Original Story",
+      "mal_title_ja": "BT21 ORIGINAL STORY",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 539984,
+          "bgm_name": "【ORIGINAL SONG+MV】サイキョウチックポルカ - Omaru Polka【尾丸ポルカ】",
+          "confidence": null
+        },
+        {
+          "bgm_id": 236901,
+          "bgm_name": "オリジナル C・V・P モモコ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 465111,
+          "bgm_name": "SHINKIRO",
+          "confidence": null
+        },
+        {
+          "bgm_id": 555669,
+          "bgm_name": "A Horny Money World ~伝説の夜~",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3284,
+          "bgm_name": "スーパーロボット大戦ORIGINAL GENERATION THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24222,
+          "bgm_name": "ときめきメモリアル4 ORIGINAL ANIMATION -始まりのファインダー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 137590,
+          "bgm_name": "DC Showcase Original Shorts Collection",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554452,
+          "bgm_name": "LEGO Ninjago：Prime Empire Original Shorts",
+          "confidence": null
+        },
+        {
+          "bgm_id": 550509,
+          "bgm_name": "TAMAYA 「 I♡BRAND 」玉家質店 original animation cm",
+          "confidence": null
+        },
+        {
+          "bgm_id": 550520,
+          "bgm_name": "TAMAYA アニメCM「ジブンイロ」玉家質店 Original Animation cm",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53687,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 207866,
+      "bgm_name": "凹凸世界 第二季",
+      "bgm_name_cn": "凹凸世界 第二季",
+      "mal_title": "AOTU Xueyuan 2nd Season",
+      "mal_title_ja": "凹凸学园 第二季",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 80913,
+          "bgm_name": "凹凸世界",
+          "confidence": null
+        },
+        {
+          "bgm_id": 207866,
+          "bgm_name": "凹凸世界 第二季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 237991,
+          "bgm_name": "凹凸世界 第三季·上",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284641,
+          "bgm_name": "凹凸世界 第三季·下",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309092,
+          "bgm_name": "凹凸世界 第四季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 331100,
+          "bgm_name": "凹凸世界 番外篇",
+          "confidence": null
+        },
+        {
+          "bgm_id": 474880,
+          "bgm_name": "凹凸世界 特别篇 天陨终曲",
+          "confidence": null
+        },
+        {
+          "bgm_id": 501950,
+          "bgm_name": "凹凸世界REBORN 先行集",
+          "confidence": null
+        },
+        {
+          "bgm_id": 607337,
+          "bgm_name": "凹凸世界·Reborn",
+          "confidence": null
+        },
+        {
+          "bgm_id": 400551,
+          "bgm_name": "でこぼこ魔女の親子事情",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53931,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Laundry (2020)",
+      "mal_title_ja": "Laundry",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54396,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tsumurin: Korokoro Yamu no Daibouken",
+      "mal_title_ja": "つむりん　ころころやまのだいぼうけん",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 241185,
+          "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54667,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mukashibanashi no Oheya: Tsutaetai Nihon Mukashibanashi",
+      "mal_title_ja": "むかしばなしのおへや　〜伝えたい日本昔話〜",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 569170,
+          "bgm_name": "ましんむかしばなし劇場",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341389,
+          "bgm_name": "おしりたんてい テントウムシいせきの なぞ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54778,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hawk no Onayami Soudanshitsu Special",
+      "mal_title_ja": "ホークのお悩み相談室 Special",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55023,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Saezuru Doubutsu wa Yarushikanai! Specials",
+      "mal_title_ja": "囀る動物はやるしかない！",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55044,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tensei Mae no Ryouma to Tabuchi",
+      "mal_title_ja": "転生前の竜馬と田淵",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 292222,
+          "bgm_name": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55275,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sugar Highway",
+      "mal_title_ja": "シュガーハイウェイ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55371,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Last Of Me",
+      "mal_title_ja": "Last Of Me",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55393,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "The IDOLM@STER Cinderella Girls: Starlight Stage CMs",
+      "mal_title_ja": "アイドルマスター シンデレラガールズ スターライトステージ CMs",
+      "mal_media_type": "cm",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55434,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Anthracite",
+      "mal_title_ja": "アンスラサイト",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55442,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Eien Hanahadashii",
+      "mal_title_ja": "永遠甚だしい",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55473,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Candy Alien",
+      "mal_title_ja": "きゃんでいえいりあん",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55507,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Cynthia",
+      "mal_title_ja": "シンシア",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55582,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Utopia (2020)",
+      "mal_title_ja": "ユートピア",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55588,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Alone",
+      "mal_title_ja": "alone",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55707,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kokoro",
+      "mal_title_ja": "心",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55860,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Magic Door",
+      "mal_title_ja": "Magic Door",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55963,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ice Cream (2020)",
+      "mal_title_ja": "Ice Cream",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56023,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Aruiwa Eiga no Yona",
+      "mal_title_ja": "あるいは映画のような",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56156,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 333946,
+      "bgm_name": "マタタビムービーラボ",
+      "bgm_name_cn": "木天蓼影像实验室",
+      "mal_title": "Matatabi Movie Labo",
+      "mal_title_ja": "マタタビムービーラボ",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 333946,
+          "bgm_name": "マタタビムービーラボ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56238,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ashiato",
+      "mal_title_ja": "足跡",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56304,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hello Carbot Season 9",
+      "mal_title_ja": "헬로 카봇 시즌9",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56356,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 544901,
+      "bgm_name": "히어로 써클",
+      "bgm_name_cn": "英雄圆环",
+      "mal_title": "Hero Circle",
+      "mal_title_ja": "히어로 써클",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 544901,
+          "bgm_name": "히어로 써클",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56368,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Robocar Poli: Song Song Museum",
+      "mal_title_ja": "로보카폴리 쏭쏭뮤지엄",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56422,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Recycle Zoo: Mamore! Mokuyoubi wa Shigengomi no Hi",
+      "mal_title_ja": "りさいくるずー まもれ!もくようびは資源ごみの日",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 241185,
+          "bgm_name": "Lapis Re:LiGHTs ラピスリライツ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56527,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Binggrae CM",
+      "mal_title_ja": "빙그레 메이커를 위하여",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56536,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mirror Me",
+      "mal_title_ja": "ミラーミー",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56807,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Da Li Si Rizhi Qixi Pian",
+      "mal_title_ja": "大理寺日志七夕篇",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57010,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kimi to Ha no Uta",
+      "mal_title_ja": "キミと歯のうた",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57016,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Magical: Gongjuleul Usgyeola",
+      "mal_title_ja": "매지컬: 공주를 웃겨라",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57084,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 136857,
+      "bgm_name": "Red Hot Riding Hood",
+      "bgm_name_cn": "热辣小红帽",
+      "mal_title": "Orangeback + Hoo-D Pilot",
+      "mal_title_ja": "",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 66231,
+          "bgm_name": "Robin Hood",
+          "confidence": null
+        },
+        {
+          "bgm_id": 136857,
+          "bgm_name": "Red Hot Riding Hood",
+          "confidence": null
+        },
+        {
+          "bgm_id": 256096,
+          "bgm_name": "Mila Red Riding Hood",
+          "confidence": null
+        },
+        {
+          "bgm_id": 280526,
+          "bgm_name": "Little Rural Riding Hood",
+          "confidence": null
+        },
+        {
+          "bgm_id": 464418,
+          "bgm_name": "Little Red Walking Hood",
+          "confidence": null
+        },
+        {
+          "bgm_id": 65923,
+          "bgm_name": "Batman: Under the Red Hood",
+          "confidence": null
+        },
+        {
+          "bgm_id": 139952,
+          "bgm_name": "Tom and Jerry: Robin Hood and His Merry Mouse",
+          "confidence": null
+        },
+        {
+          "bgm_id": 529011,
+          "bgm_name": "Hoodwinked Too! Hood vs. Evil",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315664,
+          "bgm_name": "けろけろけろっぴのロビンフッド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 25728,
+          "bgm_name": "ロビンフッドの大冒険",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57125,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 422501,
+      "bgm_name": "최강 전사 의 미니 특공대",
+      "bgm_name_cn": "最强战士之迷你特工队",
+      "mal_title": "Miniforce: Super Dino Power Part 2",
+      "mal_title_ja": "미니특공대 슈퍼공룡파워 파트 2",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 422501,
+          "bgm_name": "최강 전사 의 미니 특공대",
+          "confidence": null
+        },
+        {
+          "bgm_id": 13805,
+          "bgm_name": "마리이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 529268,
+          "bgm_name": "장미의 론도",
+          "confidence": null
+        },
+        {
+          "bgm_id": 433673,
+          "bgm_name": "유미의 세포들 더 무비",
+          "confidence": null
+        },
+        {
+          "bgm_id": 282031,
+          "bgm_name": "DEVIL MAY CRY",
+          "confidence": null
+        },
+        {
+          "bgm_id": 159690,
+          "bgm_name": "マギアレコード 魔法少女まどか☆マギカ外伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57127,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Miniforce: Haembeogeogoemului Seubgyeog",
+      "mal_title_ja": "극장판 미니특공대: 햄버거괴물의 습격",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57266,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kaodon",
+      "mal_title_ja": "顔ドン",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57286,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Bai Yao Pu Special: Meng Hui Youhun",
+      "mal_title_ja": "百妖譜 番外篇 梦回幽魂",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57738,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Disney Twisted-Wonderland CMs",
+      "mal_title_ja": "ディズニー ツイステッドワンダーランド TVCM",
+      "mal_media_type": "cm",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57857,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 312510,
+      "bgm_name": "彼女は歌う、だから僕は",
+      "bgm_name_cn": "她唱歌，所以我",
+      "mal_title": "Kanojo wa Utau, Dakara Boku wa.",
+      "mal_title_ja": "彼女は歌う、だから僕は。",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 312510,
+          "bgm_name": "彼女は歌う、だから僕は",
+          "confidence": null
+        },
+        {
+          "bgm_id": 296076,
+          "bgm_name": "彼女、お借りします",
+          "confidence": null
+        },
+        {
+          "bgm_id": 313827,
+          "bgm_name": "彼女がヤツに抱かれたヒ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291195,
+          "bgm_name": "ピーター・グリルと賢者の時間",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58027,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hissei yo",
+      "mal_title_ja": "畢生よ",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58044,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Fall in Sunset",
+      "mal_title_ja": "Fall in Sunset",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58047,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "The King of Fighters: Awaken PV",
+      "mal_title_ja": "拳皇·觉醒",
+      "mal_media_type": "pv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58348,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tomadoi Telepathy (Hiiragi Kirai Remix)",
+      "mal_title_ja": "戸惑いテレパシー（柊キライRemix）",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58899,
+      "season_id": "2020-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 310323,
+      "bgm_name": "中小治棒棒哒",
+      "bgm_name_cn": "中小治棒棒哒",
+      "mal_title": "Zhongxiao Zhi Bang Bang da",
+      "mal_title_ja": "中小治棒棒哒",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 310323,
+          "bgm_name": "中小治棒棒哒",
+          "confidence": null
+        },
+        {
+          "bgm_id": 571639,
+          "bgm_name": "中国传媒大学 2016级动画毕业创作线上展",
+          "confidence": null
+        },
+        {
+          "bgm_id": 365784,
+          "bgm_name": "淫中毒者キモオヤジ3ー2人できょうりょく・討伐性交ー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 305740,
+          "bgm_name": "義姉はヤンママ授乳中",
+          "confidence": null
+        },
+        {
+          "bgm_id": 488184,
+          "bgm_name": "我们的一切在末日中心",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310475,
+          "bgm_name": "歩きスマホは条例違反！見つけたら問答無用で即ハメ生中出し！ The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315998,
+          "bgm_name": "霊姦少女外伝 トイレの花子さんvs屈強退魔師 悪堕ちメス穴に天誅ザーメン連続中出し The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309869,
+          "bgm_name": "「はたらく細胞!!」最強の敵、再び。体の中は“腸”大騒ぎ！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59033,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Pororo Loopy Moheom",
+      "mal_title_ja": "뽀로로와 루피의 모험",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59211,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Doodle",
+      "mal_title_ja": "DOODLE",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59576,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Meitantei GJ8man: Kieta Shamisen",
+      "mal_title_ja": "名探偵GJ8マン 消えた三味線",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 89279,
+          "bgm_name": "名探偵コナン 異次元の狙撃手",
+          "confidence": null
+        },
+        {
+          "bgm_id": 119187,
+          "bgm_name": "名探偵コナン 業火の向日葵",
+          "confidence": null
+        },
+        {
+          "bgm_id": 192732,
+          "bgm_name": "名探偵コナン エピソード“ONE” 小さくなった名探偵",
+          "confidence": null
+        },
+        {
+          "bgm_id": 114745,
+          "bgm_name": "江戸川コナン失踪事件～史上最悪の二日間～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 823,
+          "bgm_name": "名探偵コナン 瞳の中の暗殺者",
+          "confidence": null
+        },
+        {
+          "bgm_id": 899,
+          "bgm_name": "名探偵コナン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2783,
+          "bgm_name": "名探偵コナン 漆黒の追跡者",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2968,
+          "bgm_name": "名探偵コナン 時計じかけの摩天楼",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2969,
+          "bgm_name": "名探偵コナン 14番目の標的",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2970,
+          "bgm_name": "名探偵コナン 世紀末の魔術師",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60324,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tell Me Answer",
+      "mal_title_ja": "テルミーアンサー",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60730,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Fukakumei Zenya",
+      "mal_title_ja": "不革命前夜",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61078,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Issho na Futari",
+      "mal_title_ja": "一緒なふたり",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61291,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Zetsumetsu Kigu-shun. x Uchuu Nanchara Kotetsu-kun Gekijou Manner Douga",
+      "mal_title_ja": "「ぜつめつきぐしゅんっ。」 ×「宇宙なんちゃら こてつくん」劇場マナー動画",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62877,
+      "season_id": "2020-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tomedo Naki Hakujou",
+      "mal_title_ja": "とめどなき白情",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62985,
+      "season_id": "2020-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sotsugyou",
+      "mal_title_ja": "そつぎょう",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    }
+  ],
+  "overrides": []
+}

@@ -1,0 +1,2813 @@
+{
+  "season": {
+    "id": "2005-summer",
+    "year": 2005,
+    "season": "summer",
+    "released_at": null,
+    "created_at": "2026-05-12T07:45:27.498631+00:00",
+    "updated_at": "2026-05-12T07:45:27.498631+00:00"
+  },
+  "items": [
+    {
+      "mal_id": 73,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 337,
+      "bgm_name": "フルメタル・パニック! The Second Raid",
+      "bgm_name_cn": "全金属狂潮 The Second Raid",
+      "mal_title": "Full Metal Panic! The Second Raid",
+      "mal_title_ja": "フルメタル パニック！The Second Raid",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 337,
+          "bgm_name": "フルメタル・パニック! The Second Raid",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417422,
+          "bgm_name": "つん★デれ!～ぷにゅぷりEX～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 79,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 2937,
+      "bgm_name": "SHUFFLE!",
+      "bgm_name_cn": "",
+      "mal_title": "Shuffle!",
+      "mal_title_ja": "SHUFFLE! (シャッフル!)",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 2937,
+          "bgm_name": "SHUFFLE!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 291,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 2680,
+      "bgm_name": "D.C.S.S. 〜ダ・カーポ セカンドシーズン〜",
+      "bgm_name_cn": "初音岛 第二季",
+      "mal_title": "D.C.S.S: Da Capo Second Season",
+      "mal_title_ja": "D.C.S.S. ～ダ・カーポ セカンドシーズン～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 2680,
+          "bgm_name": "D.C.S.S. 〜ダ・カーポ セカンドシーズン〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 309,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 50681,
+      "bgm_name": "あかほり外道アワーらぶげ",
+      "bgm_name_cn": "绝对正义vs外道少女队",
+      "mal_title": "Akahori Gedou Hour Rabuge",
+      "mal_title_ja": "あかほり外道アワーらぶげ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 50681,
+          "bgm_name": "あかほり外道アワーらぶげ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 317,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 1890,
+      "bgm_name": "FINAL FANTASY VII ADVENT CHILDREN",
+      "bgm_name_cn": "最终幻想7：降临之子",
+      "mal_title": "Final Fantasy VII: Advent Children",
+      "mal_title_ja": "ファイナルファンタジーVII アドベントチルドレン",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 1890,
+          "bgm_name": "FINAL FANTASY VII ADVENT CHILDREN",
+          "confidence": null
+        },
+        {
+          "bgm_id": 20117,
+          "bgm_name": "LAST ORDER -FINAL FANTASY VII-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 390,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 10508,
+      "bgm_name": "涼風",
+      "bgm_name_cn": "凉风",
+      "mal_title": "Suzuka",
+      "mal_title_ja": "涼風",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 10508,
+          "bgm_name": "涼風",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 398,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 9619,
+      "bgm_name": "星界の戦旗III",
+      "bgm_name_cn": "星界的战旗III",
+      "mal_title": "Seikai no Senki III",
+      "mal_title_ja": "星界の戦旗 III",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 9619,
+          "bgm_name": "星界の戦旗III",
+          "confidence": null
+        },
+        {
+          "bgm_id": 545093,
+          "bgm_name": "그리스 로마 신화 올림포스 가디언: 기간테스 대역습",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 408,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Final Fantasy VII: Last Order",
+      "mal_title_ja": "ラストオーダー -ファイナルファンタジーVII-",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 411,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 8539,
+      "bgm_name": "ガン×ソード",
+      "bgm_name_cn": "枪心剑刃",
+      "mal_title": "Gun x Sword",
+      "mal_title_ja": "ガン×ソード",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 8539,
+          "bgm_name": "ガン×ソード",
+          "confidence": null
+        },
+        {
+          "bgm_id": 15353,
+          "bgm_name": "強殖装甲ガイバー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 50681,
+          "bgm_name": "あかほり外道アワーらぶげ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 413,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 16215,
+      "bgm_name": "破滅のマルス",
+      "bgm_name_cn": "破灭的Mars",
+      "mal_title": "Hametsu no Mars",
+      "mal_title_ja": "破滅のマルス",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 16215,
+          "bgm_name": "破滅のマルス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 430,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 1935,
+      "bgm_name": "鋼の錬金術師 シャンバラを征く者",
+      "bgm_name_cn": "钢之炼金术师 香巴拉的征服者",
+      "mal_title": "Fullmetal Alchemist: The Conqueror of Shamballa",
+      "mal_title_ja": "劇場版 鋼の錬金術師 シャンバラを征く者",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 1935,
+          "bgm_name": "鋼の錬金術師 シャンバラを征く者",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 470,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 8295,
+      "bgm_name": "おくさまは女子高生",
+      "bgm_name_cn": "我太太是高中生",
+      "mal_title": "Okusama wa Joshikousei (TV)",
+      "mal_title_ja": "おくさまは女子高生",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 8295,
+          "bgm_name": "おくさまは女子高生",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324275,
+          "bgm_name": "おしるこ -The Summertime Mischief-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27880,
+          "bgm_name": "ピカチュウのおばけカーニバル",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 473,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 6804,
+      "bgm_name": "タイドライン・ブルー",
+      "bgm_name_cn": "蓝色潮痕",
+      "mal_title": "Tide-Line Blue",
+      "mal_title_ja": "タイドライン・ブルー",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 6804,
+          "bgm_name": "タイドライン・ブルー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 13131,
+          "bgm_name": "喜羊羊与灰太狼",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 475,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hotori: Tada Saiwai wo Koinegau",
+      "mal_title_ja": "ほとり～たださいわいを希う",
+      "mal_media_type": "tv_special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 488,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 284,
+      "bgm_name": "苺ましまろ",
+      "bgm_name_cn": "草莓棉花糖",
+      "mal_title": "Ichigo Mashimaro",
+      "mal_title_ja": "苺ましまろ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 284,
+          "bgm_name": "苺ましまろ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 602449,
+          "bgm_name": "苺ましまろプロローグ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 489,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 4235,
+      "bgm_name": "かみちゅ!",
+      "bgm_name_cn": "神是中学生",
+      "mal_title": "Kamichu!",
+      "mal_title_ja": "かみちゅ!",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 4235,
+          "bgm_name": "かみちゅ!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 50681,
+          "bgm_name": "あかほり外道アワーらぶげ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 490,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 1617,
+      "bgm_name": "ぱにぽにだっしゅ!",
+      "bgm_name_cn": "不可思议的教室",
+      "mal_title": "Paniponi Dash!",
+      "mal_title_ja": "ぱにぽにだっしゅ！",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 1617,
+          "bgm_name": "ぱにぽにだっしゅ!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324783,
+          "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+          "confidence": null
+        },
+        {
+          "bgm_id": 419873,
+          "bgm_name": "それいけ!アンパンマン くろゆき姫とモテモテばいきんまん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 8295,
+          "bgm_name": "おくさまは女子高生",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23536,
+          "bgm_name": "奥さまは魔法少女",
+          "confidence": null
+        },
+        {
+          "bgm_id": 84995,
+          "bgm_name": "ルパン三世 天使の策略 〜夢のカケラは殺しの香り〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 22109,
+          "bgm_name": "劇場版 NARUTO -ナルト- 大激突! 幻の地底遺跡だってばよ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3029,
+          "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 511,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 4234,
+      "bgm_name": "機動新撰組 萌えよ剣 TV",
+      "bgm_name_cn": "机动新撰组 萌之剑 TV",
+      "mal_title": "Kidou Shinsengumi Moeyo Ken TV",
+      "mal_title_ja": "機動新撰組 萌えよ剣 TV",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 4234,
+          "bgm_name": "機動新撰組 萌えよ剣 TV",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 591,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 22049,
+      "bgm_name": "あまえないでよっ!!",
+      "bgm_name_cn": "不要撒娇哦!!",
+      "mal_title": "Amaenaide yo!!",
+      "mal_title_ja": "あまえないでよっ!!",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 22049,
+          "bgm_name": "あまえないでよっ!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 50681,
+          "bgm_name": "あかほり外道アワーらぶげ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 469597,
+          "bgm_name": "アイシールド21 クリスマスボウルへの道〜南の島で特訓だ！YA-HA-!〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74396,
+          "bgm_name": "夜勤病棟 Kranke 児玉あい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 169665,
+          "bgm_name": "シンキング アンド ドローイング 日本の新世紀アート・アニメーション",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 609,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 5874,
+      "bgm_name": "最終兵器彼女 Another love song",
+      "bgm_name_cn": "最终兵器彼女 Another love song",
+      "mal_title": "Saishuu Heiki Kanojo: Another Love Song",
+      "mal_title_ja": "最終兵器彼女Another Love Song",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 5874,
+          "bgm_name": "最終兵器彼女 Another love song",
+          "confidence": null
+        },
+        {
+          "bgm_id": 20117,
+          "bgm_name": "LAST ORDER -FINAL FANTASY VII-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 612,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 14086,
+      "bgm_name": "ぺとぺとさん",
+      "bgm_name_cn": "我是小粘粘",
+      "mal_title": "PetoPeto-san",
+      "mal_title_ja": "ぺとぺとさん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 14086,
+          "bgm_name": "ぺとぺとさん",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 614,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 23536,
+      "bgm_name": "奥さまは魔法少女",
+      "bgm_name_cn": "太太是魔法少女",
+      "mal_title": "Okusama wa Mahou Shoujo",
+      "mal_title_ja": "奥さまは魔法少女",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 23536,
+          "bgm_name": "奥さまは魔法少女",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3029,
+          "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 656,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Air in Summer",
+      "mal_title_ja": "AIR イン サマー",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 793,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 2897,
+      "bgm_name": "劇場版×××HOLiC 真夏ノ夜ノ夢",
+      "bgm_name_cn": "×××HOLiC 仲夏夜之梦",
+      "mal_title": "xxxHOLiC Movie: Manatsu no Yoru no Yume",
+      "mal_title_ja": "劇場版　×××HOLiC　真夏ノ夜ノ夢",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 2897,
+          "bgm_name": "劇場版×××HOLiC 真夏ノ夜ノ夢",
+          "confidence": null
+        },
+        {
+          "bgm_id": 22109,
+          "bgm_name": "劇場版 NARUTO -ナルト- 大激突! 幻の地底遺跡だってばよ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2893,
+          "bgm_name": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3029,
+          "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324783,
+          "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 807,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 2893,
+      "bgm_name": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+      "bgm_name_cn": "翼·年代记 鸟笼国的公主",
+      "mal_title": "Tsubasa Chronicle: Torikago no Kuni no Himegimi",
+      "mal_title_ja": "ツバサ・クロニクル 鳥カゴの国の姫君",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 2893,
+          "bgm_name": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 911,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 109774,
+      "bgm_name": "金色のガッシュベル!! メカバルカンの来襲",
+      "bgm_name_cn": "金色的卡修 机械巴鲁刚的来袭",
+      "mal_title": "Konjiki no Gash Bell!!: Mecha Vulkan no Raishuu",
+      "mal_title_ja": "劇場版　金色のガッシュベル!!　メカバルカンの来襲",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 109774,
+          "bgm_name": "金色のガッシュベル!! メカバルカンの来襲",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 936,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 22109,
+      "bgm_name": "劇場版 NARUTO -ナルト- 大激突! 幻の地底遺跡だってばよ",
+      "bgm_name_cn": "火影忍者剧场版 大激突！幻之地底遗迹",
+      "mal_title": "Naruto Movie 2: Dai Gekitotsu! Maboroshi no Chiteiiseki Dattebayo!",
+      "mal_title_ja": "劇場版　NARUTO　大激突！幻の地底遺跡だってばよ",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 22109,
+          "bgm_name": "劇場版 NARUTO -ナルト- 大激突! 幻の地底遺跡だってばよ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2897,
+          "bgm_name": "劇場版×××HOLiC 真夏ノ夜ノ夢",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2893,
+          "bgm_name": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3029,
+          "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324783,
+          "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1035,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 13384,
+      "bgm_name": "パタリロ西遊記!",
+      "bgm_name_cn": "帕塔利洛西游记",
+      "mal_title": "Patalliro Saiyuuki!",
+      "mal_title_ja": "パタリロ西遊記！",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 13384,
+          "bgm_name": "パタリロ西遊記!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1147,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tenchi Muyou! Ryououki 3rd Season: Tenchi Seirou naredo Namitakashi?",
+      "mal_title_ja": "天地無用！魎皇鬼 第三期 天地晴朗なれど波高し？",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 84995,
+          "bgm_name": "ルパン三世 天使の策略 〜夢のカケラは殺しの香り〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 22049,
+          "bgm_name": "あまえないでよっ!!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1374,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 15353,
+      "bgm_name": "強殖装甲ガイバー",
+      "bgm_name_cn": "强殖装甲凯普",
+      "mal_title": "Kyoushoku Soukou Guyver (2005)",
+      "mal_title_ja": "強殖装甲ガイバー",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 15353,
+          "bgm_name": "強殖装甲ガイバー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1389,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 74398,
+      "bgm_name": "夜勤病棟・参",
+      "bgm_name_cn": "",
+      "mal_title": "Yakin Byoutou San",
+      "mal_title_ja": "夜勤病棟・参",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 74398,
+          "bgm_name": "夜勤病棟・参",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74396,
+          "bgm_name": "夜勤病棟 Kranke 児玉あい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2897,
+          "bgm_name": "劇場版×××HOLiC 真夏ノ夜ノ夢",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1414,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Lupin III: Tenshi no Tactics - Yume no Kakera wa Koroshi no Kaori",
+      "mal_title_ja": "ルパン三世 - 天使の策略（タクティクス）～夢のカケラは殺しの香り～",
+      "mal_media_type": "tv_special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1526,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 3029,
+      "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+      "bgm_name_cn": "剧场版宝可梦 超世代: 梦幻与波导的勇者 路卡利欧",
+      "mal_title": "Pokemon Movie 08: Mew to Hadou no Yuusha Lucario",
+      "mal_title_ja": "ポケットモンスターアドバンスジェネレーション ミュウと波導の勇者　ルカリオ",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 3029,
+          "bgm_name": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1642,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 10160,
+      "bgm_name": "シュガシュガルーン",
+      "bgm_name_cn": "魔界女王候补生",
+      "mal_title": "Sugar Sugar Rune",
+      "mal_title_ja": "シュガシュガルーン",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 10160,
+          "bgm_name": "シュガシュガルーン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1905,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Harukanaru Toki no Naka de: Hachiyou Shou Specials",
+      "mal_title_ja": "遙かなる時空の中で〜八葉抄〜 1〜9",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1926,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Jishu Seisaku Movie Binchou-tan",
+      "mal_title_ja": "自主制作ムービー びんちょうタン",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 235441,
+          "bgm_name": "11:08",
+          "confidence": null
+        },
+        {
+          "bgm_id": 183962,
+          "bgm_name": "宫子",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37412,
+          "bgm_name": "自古英雄出少年",
+          "confidence": null
+        },
+        {
+          "bgm_id": 82133,
+          "bgm_name": "自慰倒錯Ⅱ 〜破滅への快楽〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 130039,
+          "bgm_name": "自慰倒錯 〜好奇心〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 207230,
+          "bgm_name": "自宅警備員",
+          "confidence": null
+        },
+        {
+          "bgm_id": 297591,
+          "bgm_name": "自宅警備員2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 337294,
+          "bgm_name": "自分の胸に手を当てて",
+          "confidence": null
+        },
+        {
+          "bgm_id": 392973,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う",
+          "confidence": null
+        },
+        {
+          "bgm_id": 419419,
+          "bgm_name": "自分と目が合った女の子は全員2秒で発情する学園",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2413,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 70252,
+      "bgm_name": "BOIN レクチャー",
+      "bgm_name_cn": "BOIN 巨乳教学",
+      "mal_title": "Boin",
+      "mal_title_ja": "boin ボイン",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 70252,
+          "bgm_name": "BOIN レクチャー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2446,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 70269,
+      "bgm_name": "肉嫁～高柳家の人々～",
+      "bgm_name_cn": "肉嫁～高柳家的人们～",
+      "mal_title": "Nikuyome: Takayanagi Ke no Hitobito",
+      "mal_title_ja": "肉嫁 高柳家の人々",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 70269,
+          "bgm_name": "肉嫁～高柳家の人々～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2449,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 48745,
+      "bgm_name": "攻殻機動隊 STAND ALONE COMPLEX the Laughing Man",
+      "bgm_name_cn": "攻壳机动队 STAND ALONE COMPLEX 笑面男",
+      "mal_title": "Koukaku Kidoutai: Stand Alone Complex - The Laughing Man",
+      "mal_title_ja": "攻殻機動隊 Stand Alone Complex - The Laughing Man",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 48745,
+          "bgm_name": "攻殻機動隊 STAND ALONE COMPLEX the Laughing Man",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324,
+          "bgm_name": "攻殻機動隊 STAND ALONE COMPLEX",
+          "confidence": null
+        },
+        {
+          "bgm_id": 320,
+          "bgm_name": "攻殻機動隊 STAND ALONE COMPLEX Solid State Society",
+          "confidence": null
+        },
+        {
+          "bgm_id": 107543,
+          "bgm_name": "攻殻機動隊ARISE border:4 Ghost Stands Alone",
+          "confidence": null
+        },
+        {
+          "bgm_id": 326,
+          "bgm_name": "攻殻機動隊 S.A.C. 2nd GIG",
+          "confidence": null
+        },
+        {
+          "bgm_id": 12885,
+          "bgm_name": "攻殻機動隊 S.A.C. SOLID STATE SOCIETY 3D",
+          "confidence": null
+        },
+        {
+          "bgm_id": 48746,
+          "bgm_name": "攻殻機動隊 S.A.C. 2nd GIG Individual Eleven",
+          "confidence": null
+        },
+        {
+          "bgm_id": 61498,
+          "bgm_name": "攻殻機動隊ARISE border:1 Ghost Pain",
+          "confidence": null
+        },
+        {
+          "bgm_id": 77014,
+          "bgm_name": "攻殻機動隊ARISE border:2 Ghost Whispers",
+          "confidence": null
+        },
+        {
+          "bgm_id": 89486,
+          "bgm_name": "攻殻機動隊ARISE border:3 Ghost Tears",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2455,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 74561,
+      "bgm_name": "プレイヤーズ",
+      "bgm_name_cn": "歌魂斗",
+      "mal_title": "Prayers",
+      "mal_title_ja": "プレイヤーズ",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 74561,
+          "bgm_name": "プレイヤーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35981,
+          "bgm_name": "超変身コス∞プレイヤー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2457,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 4191,
+      "bgm_name": "魔女っ娘つくねちゃん",
+      "bgm_name_cn": "魔法少女朱可奈",
+      "mal_title": "Majokko Tsukune-chan",
+      "mal_title_ja": "魔女っ娘つくねちゃん",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 4191,
+          "bgm_name": "魔女っ娘つくねちゃん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 10160,
+          "bgm_name": "シュガシュガルーン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23536,
+          "bgm_name": "奥さまは魔法少女",
+          "confidence": null
+        },
+        {
+          "bgm_id": 216378,
+          "bgm_name": "ななみちゃん 第2シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 116155,
+          "bgm_name": "Barbie and the Magic of Pegasus",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2507,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 76017,
+      "bgm_name": "つまつま 人妻×人妻",
+      "bgm_name_cn": "人妻×人妻",
+      "mal_title": "Tsuma Tsuma",
+      "mal_title_ja": "人妻x人妻[つまつま]",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 76017,
+          "bgm_name": "つまつま 人妻×人妻",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23536,
+          "bgm_name": "奥さまは魔法少女",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2873,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 62507,
+      "bgm_name": "Bible Black Only Version",
+      "bgm_name_cn": "黑暗圣经 Only",
+      "mal_title": "Bible Black Only Version",
+      "mal_title_ja": "バイブルブラック・オンリー版",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 62507,
+          "bgm_name": "Bible Black Only Version",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2910,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Koi Koi 7 Specials",
+      "mal_title_ja": "こいこい7",
+      "mal_media_type": "special",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2951,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Gintama: Nanigoto mo Saisho ga Kanjin nanode Tashou Senobisuru Kurai ga Choudoyoi",
+      "mal_title_ja": "銀魂〜何事も最初が肝心なので多少背伸びするくらいが丁度良い〜",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3250,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 72305,
+      "bgm_name": "大失禁ヘレナ",
+      "bgm_name_cn": "",
+      "mal_title": "Daishikkin Helena",
+      "mal_title_ja": "大失禁へレナ",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 72305,
+          "bgm_name": "大失禁ヘレナ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 22109,
+          "bgm_name": "劇場版 NARUTO -ナルト- 大激突! 幻の地底遺跡だってばよ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324783,
+          "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3465,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 188858,
+      "bgm_name": "NAGASAKI・1945 ～アンゼラスの鐘～",
+      "bgm_name_cn": "长崎1945 天使之钟",
+      "mal_title": "Nagasaki 1945: Angelus no Kane",
+      "mal_title_ja": "NAGASAKI・1945 アンゼラスの鐘",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 188858,
+          "bgm_name": "NAGASAKI・1945 ～アンゼラスの鐘～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3646,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Glass no Usagi",
+      "mal_title_ja": "ガラスのうさぎ",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 84995,
+          "bgm_name": "ルパン三世 天使の策略 〜夢のカケラは殺しの香り〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3768,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 113899,
+      "bgm_name": "プレイボール",
+      "bgm_name_cn": "棒球物语",
+      "mal_title": "Play Ball",
+      "mal_title_ja": "プレイボール",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 113899,
+          "bgm_name": "プレイボール",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417422,
+          "bgm_name": "つん★デれ!～ぷにゅぷりEX～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3818,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Soratobu Toshi Keikaku",
+      "mal_title_ja": "空飛ぶ都市計画",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3896,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 63018,
+      "bgm_name": "淫母",
+      "bgm_name_cn": "",
+      "mal_title": "Inbo",
+      "mal_title_ja": "淫母 －いんぼ－",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 63018,
+          "bgm_name": "淫母",
+          "confidence": null
+        },
+        {
+          "bgm_id": 63016,
+          "bgm_name": "淫娘",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 4314,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 216378,
+      "bgm_name": "ななみちゃん 第2シリーズ",
+      "bgm_name_cn": "魔法娜娜咪 第二季",
+      "mal_title": "Nanami-chan 2nd Series",
+      "mal_title_ja": "ななみちゃん 第2シリーズ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 216378,
+          "bgm_name": "ななみちゃん 第2シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 22049,
+          "bgm_name": "あまえないでよっ!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 84587,
+          "bgm_name": "あした元気にな～れ!～半分のさつまいも～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 4544,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 507265,
+      "bgm_name": "왕후 심청",
+      "bgm_name_cn": "王后沈清",
+      "mal_title": "Wanghu Sim Cheong",
+      "mal_title_ja": "왕후 심청",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 507265,
+          "bgm_name": "왕후 심청",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 4553,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sukima no Kuni no Polta",
+      "mal_title_ja": "スキマの国のポルタ",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5016,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Fluximation",
+      "mal_title_ja": "FLUXIMATION",
+      "mal_media_type": "music",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5263,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tomorrow's Song",
+      "mal_title_ja": "トゥモロウズ ソング",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5347,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Bible Black: Imari Ryoujoku Genba",
+      "mal_title_ja": "バイブルブラック「伊万里 凌辱現場」",
+      "mal_media_type": "special",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5568,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 81861,
+      "bgm_name": "輪奸学園",
+      "bgm_name_cn": "轮奸学园",
+      "mal_title": "Rinkan Gakuen: Yamete! ...Okaasan, Minaide!",
+      "mal_title_ja": "輪奸学園「やめてっ! …お母さん、見ないで!」",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 81861,
+          "bgm_name": "輪奸学園",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5602,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 147325,
+      "bgm_name": "Navia Dratp",
+      "bgm_name_cn": "",
+      "mal_title": "Navia Dratp",
+      "mal_title_ja": "NAVIA DRATP",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 147325,
+          "bgm_name": "Navia Dratp",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5844,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Pokemon: Pikachu no Obake Carnival",
+      "mal_title_ja": "ピカチュウのおばけカーニバル",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5890,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 63018,
+      "bgm_name": "淫母",
+      "bgm_name_cn": "",
+      "mal_title": "Inko",
+      "mal_title_ja": "淫娘 ~いんこ~",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 63016,
+          "bgm_name": "淫娘",
+          "confidence": null
+        },
+        {
+          "bgm_id": 63018,
+          "bgm_name": "淫母",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 6152,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 1890,
+      "bgm_name": "FINAL FANTASY VII ADVENT CHILDREN",
+      "bgm_name_cn": "最终幻想7：降临之子",
+      "mal_title": "Final Fantasy VII: Advent Children - Venice Film Festival Footage",
+      "mal_title_ja": "FINAL FANTASY VII ADVENT CHILDREN ヴェネチア映画祭版",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 1890,
+          "bgm_name": "FINAL FANTASY VII ADVENT CHILDREN",
+          "confidence": null
+        },
+        {
+          "bgm_id": 20117,
+          "bgm_name": "LAST ORDER -FINAL FANTASY VII-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 6291,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Full Metal Panic! The Second Raid Episode 00",
+      "mal_title_ja": "フルメタル パニック！The Second Raid 前夜祭「Scene00」",
+      "mal_media_type": "tv_special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 7420,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 548008,
+      "bgm_name": "이야기 배달부 동개비",
+      "bgm_name_cn": "冬盖彼",
+      "mal_title": "Byulbyul Iyagi",
+      "mal_title_ja": "별별 이야기 -차별에 대한 유쾌한 풍자-",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 614689,
+          "bgm_name": "신비아파트: 고스트볼X의 탄생 두 번째 이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 123335,
+          "bgm_name": "Star vs. the Forces of Evil (Season 1)",
+          "confidence": null
+        },
+        {
+          "bgm_id": 548008,
+          "bgm_name": "이야기 배달부 동개비",
+          "confidence": null
+        },
+        {
+          "bgm_id": 13805,
+          "bgm_name": "마리이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544898,
+          "bgm_name": "소녀이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 333930,
+          "bgm_name": "제불찰씨 이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278014,
+          "bgm_name": "끝나지 않은 이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615230,
+          "bgm_name": "신비아파트 고스트볼 ZERO 두 번째 이야기",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56117,
+          "bgm_name": "猫物語（黒）",
+          "confidence": null
+        },
+        {
+          "bgm_id": 548005,
+          "bgm_name": "이얍! 스페이스 정글",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 7510,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 315584,
+      "bgm_name": "死者の書",
+      "bgm_name_cn": "死者之书",
+      "mal_title": "Shisha no Sho",
+      "mal_title_ja": "死者の書",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 315584,
+          "bgm_name": "死者の書",
+          "confidence": null
+        },
+        {
+          "bgm_id": 14650,
+          "bgm_name": "キスダム -ENGAGE planet-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 194036,
+          "bgm_name": "劇場版総集編 オーバーロード 不死者の王",
+          "confidence": null
+        },
+        {
+          "bgm_id": 11044,
+          "bgm_name": "ブレイク ブレイド 第五章 死線ノ涯",
+          "confidence": null
+        },
+        {
+          "bgm_id": 398662,
+          "bgm_name": "ダメ!ぜったいデス!! ～死神の狂シ曲～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 110526,
+          "bgm_name": "ONE PIECE “3D2Y” エースの死を越えて! ルフィ仲間との誓い",
+          "confidence": null
+        },
+        {
+          "bgm_id": 234731,
+          "bgm_name": "NARUTO -ナルト- 滝隠れの死闘 オレが英雄だってばよ!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 506773,
+          "bgm_name": "Duel Masters LOST ～月下の死神～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 47730,
+          "bgm_name": "宇宙戦艦ヤマト2199 第二章「太陽圏の死闘」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 8804,
+          "bgm_name": "幽☆遊☆白書 冥界死闘篇 炎の絆",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 7809,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 9619,
+      "bgm_name": "星界の戦旗III",
+      "bgm_name_cn": "星界的战旗III",
+      "mal_title": "3-tsu no Kumo",
+      "mal_title_ja": "３つの雲",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 101720,
+          "bgm_name": "Justice League Unlimited Season 3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 9619,
+          "bgm_name": "星界の戦旗III",
+          "confidence": null
+        },
+        {
+          "bgm_id": 337,
+          "bgm_name": "フルメタル・パニック! The Second Raid",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 8670,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Pozzie",
+      "mal_title_ja": "ポッツィー",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 9070,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 58871,
+      "bgm_name": "がんばれ! おでんくん",
+      "bgm_name_cn": "加油！黑轮君",
+      "mal_title": "Oden-kun",
+      "mal_title_ja": "おでんくん",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 58871,
+          "bgm_name": "がんばれ! おでんくん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 365796,
+          "bgm_name": "ガチロリマグワイ2～クールロリちゃんとキモおじさんのパコハメハーモニー～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 140996,
+          "bgm_name": "おでんの歌",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27781,
+          "bgm_name": "おどるポケモンひみつ基地",
+          "confidence": null
+        },
+        {
+          "bgm_id": 31417,
+          "bgm_name": "オズマ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 31698,
+          "bgm_name": "オズの魔法使い",
+          "confidence": null
+        },
+        {
+          "bgm_id": 77470,
+          "bgm_name": "おしん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 88907,
+          "bgm_name": "オーバン・スターレーサーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 138210,
+          "bgm_name": "おじさんとマシュマロ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 139363,
+          "bgm_name": "おがみ松吾郎",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 9501,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 545093,
+      "bgm_name": "그리스 로마 신화 올림포스 가디언: 기간테스 대역습",
+      "bgm_name_cn": "奥林匹斯星传：巨人的反击",
+      "mal_title": "Greek Roman Sinhwa: Olympus Guardian (Movie)",
+      "mal_title_ja": "그리스 로마 신화-올림포스 가디언",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 545093,
+          "bgm_name": "그리스 로마 신화 올림포스 가디언: 기간테스 대역습",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 9785,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 454807,
+      "bgm_name": "名探偵コナン コナンVSキッド SHARK ＆ JEWEL",
+      "bgm_name_cn": "名侦探柯南 柯南vs基德 鲨鱼和珠宝",
+      "mal_title": "Meitantei Conan: Conan vs. Kid - Shark & Jewel",
+      "mal_title_ja": "名探偵コナン コナンvsキッド SHARK & JEWEL",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 454807,
+          "bgm_name": "名探偵コナン コナンVSキッド SHARK ＆ JEWEL",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 10947,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Koukaku Kidoutai: Stand Alone Complex - The Laughing Man - Tachikoma na Hibi",
+      "mal_title_ja": "攻殻機動隊 Stand Alone Complex - The Laughing Man タチコマな日々",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 15159,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Fantastic Children: Befort no Kodomo-tachi no Sonogo",
+      "mal_title_ja": "ファンタジックチルドレン ベフォールの子供たちのその後",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 17215,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 324783,
+      "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+      "bgm_name_cn": "面包超人：哈比的大冒险",
+      "mal_title": "Sore Ike! Anpanman: Happy no Daibouken",
+      "mal_title_ja": "それいけ! アンパンマン ハピーの大冒険",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 324783,
+          "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+          "confidence": null
+        },
+        {
+          "bgm_id": 419873,
+          "bgm_name": "それいけ!アンパンマン くろゆき姫とモテモテばいきんまん",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 18475,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 104213,
+      "bgm_name": "輝け!友情のVサイン",
+      "bgm_name_cn": "",
+      "mal_title": "Kagayake! Yuujou no V Sign",
+      "mal_title_ja": "輝け!友情のVサイン",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 104213,
+          "bgm_name": "輝け!友情のVサイン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 369030,
+          "bgm_name": "神河：輝ける世界 アニメーショントレーラー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 425945,
+          "bgm_name": "ASTRO BOY 鉄腕アトム特別編 輝ける地球〜あなたは青く、美しい…〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 423497,
+          "bgm_name": "辉煌100年",
+          "confidence": null
+        },
+        {
+          "bgm_id": 139342,
+          "bgm_name": "いのち輝く灯",
+          "confidence": null
+        },
+        {
+          "bgm_id": 293615,
+          "bgm_name": "新星輝デュエル・マスターズ フラッシュ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 5016,
+          "bgm_name": "ONE～輝く季節へ～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 5017,
+          "bgm_name": "ONE～輝く季節へ～ True Stories",
+          "confidence": null
+        },
+        {
+          "bgm_id": 7348,
+          "bgm_name": "STAR DRIVER 輝きのタクト",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23178,
+          "bgm_name": "鎧伝サムライトルーパー 輝煌帝伝説",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 18773,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 426114,
+      "bgm_name": "くわがたツマミ",
+      "bgm_name_cn": "",
+      "mal_title": "Kuwagata Tsumami",
+      "mal_title_ja": "くわがたツマミ",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 426114,
+          "bgm_name": "くわがたツマミ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 432557,
+          "bgm_name": "チャップリンとクーガン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 19479,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Monkey Punch: Manga Katsudou Daishashin - Crime Mate Special",
+      "mal_title_ja": "モンキー・パンチ　漫画活動大写真",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 20207,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Boku no Boukuugou",
+      "mal_title_ja": "ぼくの防空壕",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 21959,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 419873,
+      "bgm_name": "それいけ!アンパンマン くろゆき姫とモテモテばいきんまん",
+      "bgm_name_cn": "",
+      "mal_title": "Sore Ike! Anpanman: Kuroyuki-hime to Mote Mote Baikinman",
+      "mal_title_ja": "それいけ!アンパンマン くろゆき姫とモテモテばいきんまん",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 419873,
+          "bgm_name": "それいけ!アンパンマン くろゆき姫とモテモテばいきんまん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324783,
+          "bgm_name": "それいけ! アンパンマン ハピーの大冒険",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 22053,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Gakkou no Kaidan (OVA)",
+      "mal_title_ja": "学校の怪談",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 579368,
+          "bgm_name": "学の夏休み～伝えよう 日本のこころ～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 29387,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Momonga-mon",
+      "mal_title_ja": "ももんがぁモン",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 29889,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Akuei to Gacchinpo: Tenkomori - Maboroshi no Omake Episode",
+      "mal_title_ja": "アークエとガッチンポー てんこもり 幻のおまけエピソード",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 32684,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Suki na Mono wa Suki Dakara Shou ga Nai!!: Onsen ni Ikou!",
+      "mal_title_ja": "好きなものは好きだからしょうがない!! 温泉に行こう!",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 33465,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 113023,
+      "bgm_name": "紅孩兒：決戰火焰山",
+      "bgm_name_cn": "红孩儿：决战火焰山",
+      "mal_title": "Hong Haier: Juezhan Huoyanshan",
+      "mal_title_ja": "紅孩兒 決戰火焰山",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 113023,
+          "bgm_name": "紅孩兒：決戰火焰山",
+          "confidence": null
+        },
+        {
+          "bgm_id": 307,
+          "bgm_name": "紅の豚",
+          "confidence": null
+        },
+        {
+          "bgm_id": 494,
+          "bgm_name": "紅 Kurenai",
+          "confidence": null
+        },
+        {
+          "bgm_id": 5869,
+          "bgm_name": "红气球",
+          "confidence": null
+        },
+        {
+          "bgm_id": 6820,
+          "bgm_name": "紅 Kurenai OVA",
+          "confidence": null
+        },
+        {
+          "bgm_id": 10933,
+          "bgm_name": "紅三四郎",
+          "confidence": null
+        },
+        {
+          "bgm_id": 55024,
+          "bgm_name": "紅狼",
+          "confidence": null
+        },
+        {
+          "bgm_id": 60575,
+          "bgm_name": "紅蓮",
+          "confidence": null
+        },
+        {
+          "bgm_id": 172764,
+          "bgm_name": "红云崖",
+          "confidence": null
+        },
+        {
+          "bgm_id": 178851,
+          "bgm_name": "红石峰",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 33607,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 422517,
+      "bgm_name": "嘉兵衛の海",
+      "bgm_name_cn": "嘉兵卫之海",
+      "mal_title": "Kahei no Umi",
+      "mal_title_ja": "嘉兵衛の海",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 422517,
+          "bgm_name": "嘉兵衛の海",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 34476,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Platonic Chain: Ansatsu Jikkouchuu",
+      "mal_title_ja": "プラトニックチェーン 暗殺実行中",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 34692,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Umbrella Fighter!",
+      "mal_title_ja": "アンブレラ ファイター！",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 35785,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Cell no Koi",
+      "mal_title_ja": "セルの恋",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39107,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 18513,
+      "bgm_name": "とっとこハム太郎",
+      "bgm_name_cn": "哈姆太郎",
+      "mal_title": "Tottoko Hamtarou: Hiragana Tanken",
+      "mal_title_ja": "とっとこハム太郎ひらがなたんけん",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 18513,
+          "bgm_name": "とっとこハム太郎",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417410,
+          "bgm_name": "とっとこハム太郎",
+          "confidence": null
+        },
+        {
+          "bgm_id": 13264,
+          "bgm_name": "とっとこハム太郎 でちゅ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417407,
+          "bgm_name": "とっとこハム太郎 は〜い!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 317785,
+          "bgm_name": "劇場版 とっとこハム太郎 ハムハムランド大冒険",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417387,
+          "bgm_name": "劇場版 とっとこハム太郎 ハムハムハムージャ! 幻のプリンセス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417396,
+          "bgm_name": "劇場版 とっとこハム太郎 ハムハムグランプリン オーロラ谷の奇跡 リボンちゃん危機一髪!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417398,
+          "bgm_name": "劇場版 とっとこハム太郎 はむはむぱらだいちゅ! ハム太郎とふしぎのオニの絵本塔",
+          "confidence": null
+        },
+        {
+          "bgm_id": 166755,
+          "bgm_name": "カバトット",
+          "confidence": null
+        },
+        {
+          "bgm_id": 425290,
+          "bgm_name": "窓ぎわのトットちゃん",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39328,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 23542,
+      "bgm_name": "ふしぎ星の☆ふたご姫",
+      "bgm_name_cn": "不可思议星球的双胞胎公主",
+      "mal_title": "Fushigiboshi no☆Futagohime: Marugoto DVD",
+      "mal_title_ja": "ふしぎ星の☆ふたご姫姫 まるごとDVD",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 23542,
+          "bgm_name": "ふしぎ星の☆ふたご姫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24356,
+          "bgm_name": "ふしぎ星の☆ふたご姫 Gyu!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 170772,
+          "bgm_name": "ブブキ・ブランキ 星の巨人",
+          "confidence": null
+        },
+        {
+          "bgm_id": 422906,
+          "bgm_name": "それいけ!アンパンマン だだんだんとふたごの星",
+          "confidence": null
+        },
+        {
+          "bgm_id": 1981,
+          "bgm_name": "ふしぎの海のナディア",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34418,
+          "bgm_name": "ふしぎの海のナディア 劇場用オリジナル版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 195914,
+          "bgm_name": "ふしぎの国のアリス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 425680,
+          "bgm_name": "バイオ名作劇埸 ふしぎの村のレオン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 417398,
+          "bgm_name": "劇場版 とっとこハム太郎 はむはむぱらだいちゅ! ハム太郎とふしぎのオニの絵本塔",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544222,
+          "bgm_name": "ハローキティのふしぎなみずうみ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39333,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Seikai no Senki II Special",
+      "mal_title_ja": "星界の戦旗II 特別篇",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 39363,
+      "season_id": "2005-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 425948,
+      "bgm_name": "ASTRO BOY 鉄腕アトム 10万光年の来訪者・IGZA",
+      "bgm_name_cn": "铁臂阿童木 10万光年的来访者IGZA",
+      "mal_title": "Astro Boy: Tetsuwan Atom - 10-man Kounen no Raihousha - IGZA",
+      "mal_title_ja": "ASTRO BOY 鉄腕アトム 10万光年の来訪者・IGZA",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 425948,
+          "bgm_name": "ASTRO BOY 鉄腕アトム 10万光年の来訪者・IGZA",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48195,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mask Man",
+      "mal_title_ja": "마스크맨",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48254,
+      "season_id": "2005-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Shadow Fighter",
+      "mal_title_ja": "섀도우 파이터",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54172,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Shunyo to Watashi",
+      "mal_title_ja": "春陽とわたし",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 136213,
+          "bgm_name": "ハルチカ～ハルタとチカは青春する～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 18606,
+          "bgm_name": "春を抱いていた",
+          "confidence": null
+        },
+        {
+          "bgm_id": 70425,
+          "bgm_name": "春恋＊乙女 ～乙女の園で逢いましょう。～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 113445,
+          "bgm_name": "春の唄",
+          "confidence": null
+        },
+        {
+          "bgm_id": 140985,
+          "bgm_name": "春は来る",
+          "confidence": null
+        },
+        {
+          "bgm_id": 211056,
+          "bgm_name": "春に澄む少年",
+          "confidence": null
+        },
+        {
+          "bgm_id": 246989,
+          "bgm_name": "春芽宝贝",
+          "confidence": null
+        },
+        {
+          "bgm_id": 268657,
+          "bgm_name": "春を彩る",
+          "confidence": null
+        },
+        {
+          "bgm_id": 298457,
+          "bgm_name": "春庭家の3人目",
+          "confidence": null
+        },
+        {
+          "bgm_id": 300220,
+          "bgm_name": "春画的先生ムービーズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54177,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tsukin Daisensou",
+      "mal_title_ja": "通勤大戦争",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 469597,
+          "bgm_name": "アイシールド21 クリスマスボウルへの道〜南の島で特訓だ！YA-HA-!〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57619,
+      "season_id": "2005-summer",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tori no Machi",
+      "mal_title_ja": "鳥の街",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56665,
+          "bgm_name": "鳥の歌",
+          "confidence": null
+        },
+        {
+          "bgm_id": 436936,
+          "bgm_name": "日本名作童話シリーズ 赤い鳥のこころ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 16190,
+          "bgm_name": "火の鳥",
+          "confidence": null
+        },
+        {
+          "bgm_id": 40536,
+          "bgm_name": "火の鳥2772 愛のコスモゾーン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 40935,
+          "bgm_name": "火の鳥 鳳凰編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 48998,
+          "bgm_name": "火の鳥 OVA",
+          "confidence": null
+        },
+        {
+          "bgm_id": 279122,
+          "bgm_name": "火の鳥“道後温泉編”",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324616,
+          "bgm_name": "火の鳥 羽衣編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 324620,
+          "bgm_name": "火の鳥 絆編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 409350,
+          "bgm_name": "火の鳥 エデンの宙",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    }
+  ],
+  "overrides": []
+}

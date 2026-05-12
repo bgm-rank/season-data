@@ -1,0 +1,5140 @@
+{
+  "season": {
+    "id": "2012-spring",
+    "year": 2012,
+    "season": "spring",
+    "released_at": null,
+    "created_at": "2026-05-12T07:45:27.498631+00:00",
+    "updated_at": "2026-05-12T07:45:27.498631+00:00"
+  },
+  "items": [
+    {
+      "mal_id": 6219,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 33068,
+      "bgm_name": "虹色ほたる ～永遠の夏休み～",
+      "bgm_name_cn": "虹色萤火虫～永远的暑假～",
+      "mal_title": "Nijiiro Hotaru: Eien no Natsuyasumi",
+      "mal_title_ja": "虹色ほたる~永遠の夏休み~",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 33068,
+          "bgm_name": "虹色ほたる ～永遠の夏休み～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 7867,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 36131,
+      "bgm_name": "GON -ゴン-",
+      "bgm_name_cn": "小恐龙阿贡",
+      "mal_title": "Gon",
+      "mal_title_ja": "ゴン",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 36131,
+          "bgm_name": "GON -ゴン-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41408,
+          "bgm_name": "コンピューター革命 最強×最速の頭脳誕生",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38131,
+          "bgm_name": "名探偵コナン BONUS FILE ファンタジスタの花",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38132,
+          "bgm_name": "名探偵コナン えくすかりばあの奇跡",
+          "confidence": null
+        },
+        {
+          "bgm_id": 46940,
+          "bgm_name": "名探偵コナン 11人目のストライカー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 10389,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 26800,
+      "bgm_name": "ももへの手紙",
+      "bgm_name_cn": "给桃子的信",
+      "mal_title": "Momo e no Tegami",
+      "mal_title_ja": "ももへの手紙",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 26800,
+          "bgm_name": "ももへの手紙",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 10681,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 23626,
+      "bgm_name": "劇場版 BLOOD-C The Last Dark",
+      "bgm_name_cn": "BLOOD-C The Last Dark",
+      "mal_title": "Blood-C: The Last Dark",
+      "mal_title_ja": "劇場版 ブラッドシー ザ ラスト ダーク",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 18016,
+          "bgm_name": "ストライクウィッチーズ 劇場版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 185906,
+          "bgm_name": "のねのね劇場",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23626,
+          "bgm_name": "劇場版 BLOOD-C The Last Dark",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41019,
+          "bgm_name": "PERSONA4 the Animation -the Factor of Hope-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 46940,
+          "bgm_name": "名探偵コナン 11人目のストライカー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34025,
+          "bgm_name": "図書館戦争 革命のつばさ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 77929,
+          "bgm_name": "諾亞動物診所病歷記錄簿",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 10790,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 18797,
+      "bgm_name": "これはゾンビですか? オブ・ザ・デッド",
+      "bgm_name_cn": "这个是僵尸吗？OF THE DEAD",
+      "mal_title": "Kore wa Zombie desu ka? of the Dead",
+      "mal_title_ja": "これはゾンビですか? OF THE DEAD",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 18797,
+          "bgm_name": "これはゾンビですか? オブ・ザ・デッド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 29813,
+          "bgm_name": "こいけん! ～私たちアニメになっちゃった!～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74466,
+          "bgm_name": "ストリンジェンド～エンジェルたちのプライベートレッスン～ コアMIX メガ盛り オカズですよ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 10884,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 24165,
+      "bgm_name": "咲-Saki- 阿知賀編 episode of side-A",
+      "bgm_name_cn": "天才麻将少女 阿知贺篇",
+      "mal_title": "Saki Achiga-hen: Episode of Side-A",
+      "mal_title_ja": "咲-Saki-阿知賀編 episode of side-A",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 24165,
+          "bgm_name": "咲-Saki- 阿知賀編 episode of side-A",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11001,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 34025,
+      "bgm_name": "図書館戦争 革命のつばさ",
+      "bgm_name_cn": "图书馆战争 革命之翼",
+      "mal_title": "Toshokan Sensou: Kakumei no Tsubasa",
+      "mal_title_ja": "図書館戦争 革命のつばさ",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 34025,
+          "bgm_name": "図書館戦争 革命のつばさ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11499,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 28230,
+      "bgm_name": "さんかれあ",
+      "bgm_name_cn": "散华礼弥",
+      "mal_title": "Sankarea",
+      "mal_title_ja": "さんかれあ",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28230,
+          "bgm_name": "さんかれあ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41612,
+          "bgm_name": "さんかれあ OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35867,
+          "bgm_name": "黒魔女さんが通る!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284509,
+          "bgm_name": "駅長さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34605,
+          "bgm_name": "しばいぬ子さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24508,
+          "bgm_name": "這いよれ! ニャル子さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 31212,
+          "bgm_name": "よんでますよ、アザゼルさん。ルシファー編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11701,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Another: The Other - Inga",
+      "mal_title_ja": "アナザー The Other -因果-",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 31212,
+          "bgm_name": "よんでますよ、アザゼルさん。ルシファー編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11739,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29421,
+      "bgm_name": "君と僕。2",
+      "bgm_name_cn": "少年同盟 2",
+      "mal_title": "Kimi to Boku. 2",
+      "mal_title_ja": "君と僕。2",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29421,
+          "bgm_name": "君と僕。2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 26806,
+          "bgm_name": "君のいる町～黄昏交差点～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74299,
+          "bgm_name": "NINJAハットリくんリターンズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11741,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 31414,
+      "bgm_name": "ファイ・ブレイン 〜神のパズル 第2シリーズ",
+      "bgm_name_cn": "Phi-Brain～神之谜题2",
+      "mal_title": "Fate/Zero 2nd Season",
+      "mal_title_ja": "フェイト/ゼロ 2ndシーズン",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 36379,
+          "bgm_name": "Fate/Zero Remix",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35977,
+          "bgm_name": "カードファイト!! ヴァンガード アジアサーキット編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36896,
+          "bgm_name": "メタルファイト ベイブレード ZEROG",
+          "confidence": null
+        },
+        {
+          "bgm_id": 31414,
+          "bgm_name": "ファイ・ブレイン 〜神のパズル 第2シリーズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11759,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 23685,
+      "bgm_name": "アクセル・ワールド",
+      "bgm_name_cn": "加速世界",
+      "mal_title": "Accel World",
+      "mal_title_ja": "アクセル・ワールド",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 23685,
+          "bgm_name": "アクセル・ワールド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24815,
+          "bgm_name": "映画ドラえもん のび太と奇跡の島 〜アニマル アドベンチャー〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11761,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 23683,
+      "bgm_name": "めだかボックス",
+      "bgm_name_cn": "最强会长黑神",
+      "mal_title": "Medaka Box",
+      "mal_title_ja": "めだかボックス",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 23683,
+          "bgm_name": "めだかボックス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36896,
+          "bgm_name": "メタルファイト ベイブレード ZEROG",
+          "confidence": null
+        },
+        {
+          "bgm_id": 309779,
+          "bgm_name": "メガネ編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56931,
+          "bgm_name": "オトメドリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74466,
+          "bgm_name": "ストリンジェンド～エンジェルたちのプライベートレッスン～ コアMIX メガ盛り オカズですよ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11771,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 23684,
+      "bgm_name": "黒子のバスケ",
+      "bgm_name_cn": "黑子的篮球",
+      "mal_title": "Kuroko no Basket",
+      "mal_title_ja": "黒子のバスケ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 23684,
+          "bgm_name": "黒子のバスケ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35867,
+          "bgm_name": "黒魔女さんが通る!!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11785,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 24508,
+      "bgm_name": "這いよれ! ニャル子さん",
+      "bgm_name_cn": "潜行吧！奈亚子",
+      "mal_title": "Haiyore! Nyaruko-san",
+      "mal_title_ja": "這いよれ！ニャル子さん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 24508,
+          "bgm_name": "這いよれ! ニャル子さん",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11793,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tamayura: Hitotose - Attakai Kaze no Omoide, nanode",
+      "mal_title_ja": "たまゆら～hitotose～ 第5.5話「あったかい風の想い出、なので」",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11837,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 24738,
+      "bgm_name": "ZETMAN",
+      "bgm_name_cn": "",
+      "mal_title": "Zetman",
+      "mal_title_ja": "ゼットマン",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 24738,
+          "bgm_name": "ZETMAN",
+          "confidence": null
+        },
+        {
+          "bgm_id": 279825,
+          "bgm_name": "もっとずっと愛して",
+          "confidence": null
+        },
+        {
+          "bgm_id": 31212,
+          "bgm_name": "よんでますよ、アザゼルさん。ルシファー編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36379,
+          "bgm_name": "Fate/Zero Remix",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11859,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 33354,
+      "bgm_name": "クイーンズブレイド リベリオン",
+      "bgm_name_cn": "女皇之刃 叛乱",
+      "mal_title": "Queen's Blade: Rebellion",
+      "mal_title_ja": "クイーンズブレイド リベリオン",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 33354,
+          "bgm_name": "クイーンズブレイド リベリオン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11889,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "The iDOLM@STER: 765 Pro to Iu Monogatari",
+      "mal_title_ja": "アイドルマスター 765プロという物語",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12029,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 37745,
+      "bgm_name": "宇宙戦艦ヤマト2199 第一章「遥かなる旅立ち」",
+      "bgm_name_cn": "宇宙战舰大和号2199 第一章「踏上遥远的征途」",
+      "mal_title": "Uchuu Senkan Yamato 2199",
+      "mal_title_ja": "宇宙戦艦ヤマト2199",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37745,
+          "bgm_name": "宇宙戦艦ヤマト2199 第一章「遥かなる旅立ち」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28533,
+          "bgm_name": "宇宙兄弟",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12055,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 48358,
+      "bgm_name": "Brandish",
+      "bgm_name_cn": "",
+      "mal_title": "Brandish",
+      "mal_title_ja": "Brandish",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 48358,
+          "bgm_name": "Brandish",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12059,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 56931,
+      "bgm_name": "オトメドリ",
+      "bgm_name_cn": "纯洁的轮舞曲",
+      "mal_title": "Otome Dori",
+      "mal_title_ja": "オトメドリ",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56931,
+          "bgm_name": "オトメドリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 49619,
+          "bgm_name": "お願い！ アインツベルン相談室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56929,
+          "bgm_name": "おくさまは天使（ミカえる）？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 33354,
+          "bgm_name": "クイーンズブレイド リベリオン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37416,
+          "bgm_name": "猫神やおよろず OVA",
+          "confidence": null
+        },
+        {
+          "bgm_id": 212153,
+          "bgm_name": "しまじろうのわお!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12113,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 45240,
+      "bgm_name": "ベルセルク 黄金時代篇II ドルドレイ攻略",
+      "bgm_name_cn": "剑风传奇 黄金时代篇II 多尔多雷攻略",
+      "mal_title": "Berserk: Ougon Jidai-hen II - Doldrey Kouryaku",
+      "mal_title_ja": "ベルセルク 黄金時代篇Ⅱ ドルドレイ攻略",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 45240,
+          "bgm_name": "ベルセルク 黄金時代篇II ドルドレイ攻略",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12117,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 46940,
+      "bgm_name": "名探偵コナン 11人目のストライカー",
+      "bgm_name_cn": "名侦探柯南 第11位前锋",
+      "mal_title": "Meitantei Conan Movie 16: 11-ninme no Striker",
+      "mal_title_ja": "劇場版　名探偵コナン　11人目のストライカー",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 46940,
+          "bgm_name": "名探偵コナン 11人目のストライカー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 18016,
+          "bgm_name": "ストライクウィッチーズ 劇場版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 185906,
+          "bgm_name": "のねのね劇場",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23626,
+          "bgm_name": "劇場版 BLOOD-C The Last Dark",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41019,
+          "bgm_name": "PERSONA4 the Animation -the Factor of Hope-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34025,
+          "bgm_name": "図書館戦争 革命のつばさ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 77929,
+          "bgm_name": "諾亞動物診所病歷記錄簿",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12119,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 26825,
+      "bgm_name": "夏色キセキ",
+      "bgm_name_cn": "夏色奇迹",
+      "mal_title": "Natsu-iro Kiseki",
+      "mal_title_ja": "夏色キセキ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 26825,
+          "bgm_name": "夏色キセキ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12123,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 26987,
+      "bgm_name": "ゆるめいつ 3でぃ",
+      "bgm_name_cn": "希望宅邸 3D",
+      "mal_title": "Yurumates 3D",
+      "mal_title_ja": "ゆるめいつ 3でぃ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 26987,
+          "bgm_name": "ゆるめいつ 3でぃ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 364619,
+          "bgm_name": "ゆいリミテッド",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12149,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 27317,
+      "bgm_name": "AKB0048",
+      "bgm_name_cn": "",
+      "mal_title": "AKB0048",
+      "mal_title_ja": "AKB0048",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 27317,
+          "bgm_name": "AKB0048",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12189,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 27364,
+      "bgm_name": "氷菓",
+      "bgm_name_cn": "冰菓",
+      "mal_title": "Hyouka",
+      "mal_title_ja": "氷菓",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 27364,
+          "bgm_name": "氷菓",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12291,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 28431,
+      "bgm_name": "あっちこっち",
+      "bgm_name_cn": "一起一起这里那里",
+      "mal_title": "Acchi Kocchi",
+      "mal_title_ja": "あっちこっち",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28431,
+          "bgm_name": "あっちこっち",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12317,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 27334,
+      "bgm_name": "うぽって!!",
+      "bgm_name_cn": "枪械少女",
+      "mal_title": "Upotte!!",
+      "mal_title_ja": "うぽって!!",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 27334,
+          "bgm_name": "うぽって!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 51212,
+          "bgm_name": "うぽって!! OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 53890,
+          "bgm_name": "あいまいみー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 11207,
+          "bgm_name": "うさるさん。",
+          "confidence": null
+        },
+        {
+          "bgm_id": 380506,
+          "bgm_name": "うまゆる",
+          "confidence": null
+        },
+        {
+          "bgm_id": 555332,
+          "bgm_name": "うまゆる ぷりてぃ～ぐれい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 10436,
+          "bgm_name": "へうげもの",
+          "confidence": null
+        },
+        {
+          "bgm_id": 192705,
+          "bgm_name": "まめうしくん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 214671,
+          "bgm_name": "スロウスタート",
+          "confidence": null
+        },
+        {
+          "bgm_id": 384635,
+          "bgm_name": "咲う アルスノトリア すんっ！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12367,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 28697,
+      "bgm_name": "シャイニング・ハーツ ～幸せのパン～",
+      "bgm_name_cn": "光明之心-幸福的面包",
+      "mal_title": "Shining Hearts: Shiawase no Pan",
+      "mal_title_ja": "シャイニング・ハーツ 〜幸せのパン〜",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28697,
+          "bgm_name": "シャイニング・ハーツ ～幸せのパン～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12413,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29073,
+      "bgm_name": "ヨルムンガンド",
+      "bgm_name_cn": "军火女王",
+      "mal_title": "Jormungand",
+      "mal_title_ja": "ヨルムンガンド",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29073,
+          "bgm_name": "ヨルムンガンド",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12431,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 28533,
+      "bgm_name": "宇宙兄弟",
+      "bgm_name_cn": "宇宙兄弟",
+      "mal_title": "Uchuu Kyoudai",
+      "mal_title_ja": "宇宙兄弟",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28533,
+          "bgm_name": "宇宙兄弟",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37745,
+          "bgm_name": "宇宙戦艦ヤマト2199 第一章「遥かなる旅立ち」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12445,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29060,
+      "bgm_name": "黄昏乙女×アムネジア",
+      "bgm_name_cn": "黄昏少女×失忆",
+      "mal_title": "Tasogare Otome x Amnesia",
+      "mal_title_ja": "黄昏乙女×アムネジア",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29060,
+          "bgm_name": "黄昏乙女×アムネジア",
+          "confidence": null
+        },
+        {
+          "bgm_id": 26806,
+          "bgm_name": "君のいる町～黄昏交差点～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12461,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29072,
+      "bgm_name": "緋色の欠片",
+      "bgm_name_cn": "绯色的欠片",
+      "mal_title": "Hiiro no Kakera",
+      "mal_title_ja": "緋色の欠片",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29072,
+          "bgm_name": "緋色の欠片",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12467,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29323,
+      "bgm_name": "謎の彼女X",
+      "bgm_name_cn": "谜样女友X",
+      "mal_title": "Nazo no Kanojo X",
+      "mal_title_ja": "謎の彼女X",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29323,
+          "bgm_name": "謎の彼女X",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12471,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29259,
+      "bgm_name": "エウレカセブンAO",
+      "bgm_name_cn": "交响诗篇AO",
+      "mal_title": "Eureka Seven AO",
+      "mal_title_ja": "エウレカセブンAO",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29259,
+          "bgm_name": "エウレカセブンAO",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12499,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 27555,
+      "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+      "bgm_name_cn": "蜡笔小新：我和我的宇宙公主",
+      "mal_title": "Crayon Shin-chan Movie 20: Arashi wo Yobu! Ora to Uchuu no Princess",
+      "mal_title_ja": "映画 クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12501,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 43139,
+      "bgm_name": "萌えCanちぇんじ!",
+      "bgm_name_cn": "萌幻变身",
+      "mal_title": "Ai Mai! Moe Can Change!",
+      "mal_title_ja": "あいまい! 萌えCanちぇんじ!",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 43139,
+          "bgm_name": "萌えCanちぇんじ!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12505,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "C³: Rinkan Gakkou Confusion!",
+      "mal_title_ja": "-シーキューブ- 林間学校こんふゅーじょん!",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12531,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29426,
+      "bgm_name": "坂道のアポロン",
+      "bgm_name_cn": "坂道上的阿波罗",
+      "mal_title": "Sakamichi no Apollon",
+      "mal_title_ja": "坂道のアポロン",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29426,
+          "bgm_name": "坂道のアポロン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12581,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 29608,
+      "bgm_name": "朝まで授業chu!",
+      "bgm_name_cn": "授课到天亮Chu!",
+      "mal_title": "Asa made Jugyou Chu!",
+      "mal_title_ja": "朝まで授業chu!",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29608,
+          "bgm_name": "朝まで授業chu!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 67818,
+          "bgm_name": "Head Over Heels",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12611,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 33355,
+      "bgm_name": "戦国コレクション",
+      "bgm_name_cn": "战国Collection",
+      "mal_title": "Sengoku Collection",
+      "mal_title_ja": "戦国コレクション",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 33355,
+          "bgm_name": "戦国コレクション",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37745,
+          "bgm_name": "宇宙戦艦ヤマト2199 第一章「遥かなる旅立ち」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34025,
+          "bgm_name": "図書館戦争 革命のつばさ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12669,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Amagami SS+ Plus: Extra Episode+ Plus",
+      "mal_title_ja": "アマガミSS+ plus エクストラ・エピソード+ plus",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12677,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 31417,
+      "bgm_name": "オズマ",
+      "bgm_name_cn": "OZUMA",
+      "mal_title": "Ozma",
+      "mal_title_ja": "オズマ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 31417,
+          "bgm_name": "オズマ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 416205,
+          "bgm_name": "おじゃる丸 第15シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74466,
+          "bgm_name": "ストリンジェンド～エンジェルたちのプライベートレッスン～ コアMIX メガ盛り オカズですよ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 133402,
+          "bgm_name": "Oggy et les Cafards season 4",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12695,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 39496,
+      "bgm_name": "タイトロープ",
+      "bgm_name_cn": "钢索危情",
+      "mal_title": "Tight-rope",
+      "mal_title_ja": "タイトロープ",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 39496,
+          "bgm_name": "タイトロープ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 409182,
+          "bgm_name": "捕らえられたブラック 救出編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 29813,
+          "bgm_name": "こいけん! ～私たちアニメになっちゃった!～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12727,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Thermae Romae Specials",
+      "mal_title_ja": "テルマエ・ロマエ",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12753,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 31414,
+      "bgm_name": "ファイ・ブレイン 〜神のパズル 第2シリーズ",
+      "bgm_name_cn": "Phi-Brain～神之谜题2",
+      "mal_title": "Phi Brain: Kami no Puzzle - Orpheus Order-hen",
+      "mal_title_ja": "ファイ・ブレイン ～神のパズル オルペウス・オーダー編",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 31414,
+          "bgm_name": "ファイ・ブレイン 〜神のパズル 第2シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35977,
+          "bgm_name": "カードファイト!! ヴァンガード アジアサーキット編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36896,
+          "bgm_name": "メタルファイト ベイブレード ZEROG",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12815,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 32318,
+      "bgm_name": "しろくまカフェ",
+      "bgm_name_cn": "白熊咖啡馆",
+      "mal_title": "Shirokuma Cafe",
+      "mal_title_ja": "しろくまカフェ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 32318,
+          "bgm_name": "しろくまカフェ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12863,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 32816,
+      "bgm_name": "プリティーリズム・ディアマイフューチャー",
+      "bgm_name_cn": "美妙旋律 Dear My Future",
+      "mal_title": "Pretty Rhythm: Dear My Future",
+      "mal_title_ja": "プリティーリズム ディアマイフューチャー",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 32816,
+          "bgm_name": "プリティーリズム・ディアマイフューチャー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12875,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 31374,
+      "bgm_name": "銀河へキックオフ！！",
+      "bgm_name_cn": "银河KICK OFF！！",
+      "mal_title": "Ginga e Kickoff!!",
+      "mal_title_ja": "銀河へキックオフ!!",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 31374,
+          "bgm_name": "銀河へキックオフ！！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 333962,
+          "bgm_name": "은실이",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12883,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 33255,
+      "bgm_name": "つり球",
+      "bgm_name_cn": "钓球",
+      "mal_title": "Tsuritama",
+      "mal_title_ja": "つり球",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 33255,
+          "bgm_name": "つり球",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12893,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Danshi Koukousei no Nichijou Specials",
+      "mal_title_ja": "男子高校生の日常",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12929,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 33446,
+      "bgm_name": "聖闘士星矢Ω",
+      "bgm_name_cn": "圣斗士星矢Ω",
+      "mal_title": "Saint Seiya Omega",
+      "mal_title_ja": "聖闘士星矢Ω",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 33446,
+          "bgm_name": "聖闘士星矢Ω",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12955,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 56930,
+      "bgm_name": "セレ♡カノ",
+      "bgm_name_cn": "名媛女友",
+      "mal_title": "Cele Kano",
+      "mal_title_ja": "セレ・カノ",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56930,
+          "bgm_name": "セレ♡カノ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12963,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 37136,
+      "bgm_name": "ジュエルペット きら☆デコッ！",
+      "bgm_name_cn": "宝石宠物 Kira☆Deco！",
+      "mal_title": "Jewelpet Kira☆Deco!",
+      "mal_title_ja": "ジュエルペットきら☆デコッ!",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37136,
+          "bgm_name": "ジュエルペット きら☆デコッ！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 262236,
+          "bgm_name": "なつみオブリビオン～STAR☆jewel スタージュエル外伝～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 293620,
+          "bgm_name": "デュエル・マスターズ ビクトリーV",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12979,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 28496,
+      "bgm_name": "NARUTO-ナルト- SD ロック・リーの青春フルパワー忍伝",
+      "bgm_name_cn": "火影忍者外传 李洛克的青春FULL POWER忍传",
+      "mal_title": "Naruto SD: Rock Lee no Seishun Full-Power Ninden",
+      "mal_title_ja": "ナルトSD ロック・リーの青春フルパワー忍伝",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28496,
+          "bgm_name": "NARUTO-ナルト- SD ロック・リーの青春フルパワー忍伝",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37745,
+          "bgm_name": "宇宙戦艦ヤマト2199 第一章「遥かなる旅立ち」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 531104,
+          "bgm_name": "なみの 並々ならない物語 女航海士・極限凌辱",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12995,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 43263,
+      "bgm_name": "Dark Blue",
+      "bgm_name_cn": "黑暗之蓝",
+      "mal_title": "Dark Blue",
+      "mal_title_ja": "Dark Blue",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 43263,
+          "bgm_name": "Dark Blue",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23626,
+          "bgm_name": "劇場版 BLOOD-C The Last Dark",
+          "confidence": null
+        },
+        {
+          "bgm_id": 185906,
+          "bgm_name": "のねのね劇場",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 12997,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 48118,
+      "bgm_name": "プリーズ・○○○・ミー！",
+      "bgm_name_cn": "",
+      "mal_title": "Please ♥♥♥♥ Me!",
+      "mal_title_ja": "プリーズ・♡♡♡♡・ミー！",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 48118,
+          "bgm_name": "プリーズ・○○○・ミー！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13029,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 34028,
+      "bgm_name": "あらしのよるに ひみつのともだち",
+      "bgm_name_cn": "翡翠森林狼与羊 秘密的朋友",
+      "mal_title": "Arashi no Yoru ni: Himitsu no Tomodachi",
+      "mal_title_ja": "あらしのよるに ひみつのともだち",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 34028,
+          "bgm_name": "あらしのよるに ひみつのともだち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28230,
+          "bgm_name": "さんかれあ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41612,
+          "bgm_name": "さんかれあ OAD",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13055,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 28230,
+      "bgm_name": "さんかれあ",
+      "bgm_name_cn": "散华礼弥",
+      "mal_title": "Sankarea OVA",
+      "mal_title_ja": "さんかれあ",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28230,
+          "bgm_name": "さんかれあ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41612,
+          "bgm_name": "さんかれあ OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35867,
+          "bgm_name": "黒魔女さんが通る!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 284509,
+          "bgm_name": "駅長さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34605,
+          "bgm_name": "しばいぬ子さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24508,
+          "bgm_name": "這いよれ! ニャル子さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 31212,
+          "bgm_name": "よんでますよ、アザゼルさん。ルシファー編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13103,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ponta to Ensoku",
+      "mal_title_ja": "ポンタと遠足",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 33068,
+          "bgm_name": "虹色ほたる ～永遠の夏休み～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28697,
+          "bgm_name": "シャイニング・ハーツ ～幸せのパン～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13139,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 37140,
+      "bgm_name": "ガッ活!",
+      "bgm_name_cn": "学活！",
+      "mal_title": "Gakkatsu!",
+      "mal_title_ja": "ガッ活!",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37140,
+          "bgm_name": "ガッ活!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35867,
+          "bgm_name": "黒魔女さんが通る!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 18797,
+          "bgm_name": "これはゾンビですか? オブ・ザ・デッド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28230,
+          "bgm_name": "さんかれあ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 41612,
+          "bgm_name": "さんかれあ OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56930,
+          "bgm_name": "セレ♡カノ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38132,
+          "bgm_name": "名探偵コナン えくすかりばあの奇跡",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13141,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 34605,
+      "bgm_name": "しばいぬ子さん",
+      "bgm_name_cn": "柴犬子",
+      "mal_title": "Shiba Inuko-san",
+      "mal_title_ja": "しばいぬ子さん",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 34605,
+          "bgm_name": "しばいぬ子さん",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13143,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 37859,
+      "bgm_name": "爆TECH!爆丸",
+      "bgm_name_cn": "爆TECH！爆丸",
+      "mal_title": "Baku Tech! Bakugan",
+      "mal_title_ja": "爆TECH！爆丸",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37859,
+          "bgm_name": "爆TECH!爆丸",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36896,
+          "bgm_name": "メタルファイト ベイブレード ZEROG",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13145,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 35977,
+      "bgm_name": "カードファイト!! ヴァンガード アジアサーキット編",
+      "bgm_name_cn": "卡片战斗先导者 亚洲巡回赛篇",
+      "mal_title": "Cardfight!! Vanguard: Asia Circuit-hen",
+      "mal_title_ja": "カードファイト!! ヴァンガード アジアサーキット編",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 35977,
+          "bgm_name": "カードファイト!! ヴァンガード アジアサーキット編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13159,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 35867,
+      "bgm_name": "黒魔女さんが通る!!",
+      "bgm_name_cn": "黑魔女学园",
+      "mal_title": "Kuromajo-san ga Tooru!!",
+      "mal_title_ja": "黒魔女さんが通る!!",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 35867,
+          "bgm_name": "黒魔女さんが通る!!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13163,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 37619,
+      "bgm_name": "ふるさと再生 日本の昔ばなし",
+      "bgm_name_cn": "故乡重现 日本的古老传说",
+      "mal_title": "Furusato Saisei: Nippon no Mukashibanashi",
+      "mal_title_ja": "ふるさと再生 日本の昔ばなし",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37619,
+          "bgm_name": "ふるさと再生 日本の昔ばなし",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35977,
+          "bgm_name": "カードファイト!! ヴァンガード アジアサーキット編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36896,
+          "bgm_name": "メタルファイト ベイブレード ZEROG",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28496,
+          "bgm_name": "NARUTO-ナルト- SD ロック・リーの青春フルパワー忍伝",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36379,
+          "bgm_name": "Fate/Zero Remix",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13165,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Paboo & Mojies",
+      "mal_title_ja": "パブー＆モジーズ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 79975,
+          "bgm_name": "新・光神話 パルテナの鏡",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38132,
+          "bgm_name": "名探偵コナン えくすかりばあの奇跡",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13203,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 36355,
+      "bgm_name": "LUPIN the Third -峰不二子という女-",
+      "bgm_name_cn": "鲁邦三世 -名为峰不二子的女人-",
+      "mal_title": "Lupin the Third: Mine Fujiko to Iu Onna",
+      "mal_title_ja": "LUPIN the Third ～峰不二子という女～",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 36355,
+          "bgm_name": "LUPIN the Third -峰不二子という女-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 278938,
+          "bgm_name": "ルパン8世",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13217,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 56933,
+      "bgm_name": "秘書課ドロップ THE ANIMATION",
+      "bgm_name_cn": "秘书课秘蜜情事",
+      "mal_title": "Hishoka Drop The Animation",
+      "mal_title_ja": "秘書課ドロップ THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56933,
+          "bgm_name": "秘書課ドロップ THE ANIMATION",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37620,
+          "bgm_name": "秘密結社 鷹の爪NEO",
+          "confidence": null
+        },
+        {
+          "bgm_id": 393476,
+          "bgm_name": "いたずらてぃーちゃー ～秘密の保健室～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34028,
+          "bgm_name": "あらしのよるに ひみつのともだち",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13219,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 42815,
+      "bgm_name": "姫様限定！",
+      "bgm_name_cn": "",
+      "mal_title": "Himesama Gentei!",
+      "mal_title_ja": "姫様限定!",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 42815,
+          "bgm_name": "姫様限定！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35988,
+          "bgm_name": "マケン姫っ! OAD",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13221,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 56932,
+      "bgm_name": "巨乳ファンタジー",
+      "bgm_name_cn": "巨乳幻想",
+      "mal_title": "Kyonyuu Fantasy",
+      "mal_title_ja": "巨乳ファンタジー",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56932,
+          "bgm_name": "巨乳ファンタジー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 157974,
+          "bgm_name": "Caldera",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13231,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 36896,
+      "bgm_name": "メタルファイト ベイブレード ZEROG",
+      "bgm_name_cn": "战斗陀螺 金属对决 ZEROG",
+      "mal_title": "Metal Fight Beyblade Zero G",
+      "mal_title_ja": "メタルファイト ベイブレード ZEROG",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 36896,
+          "bgm_name": "メタルファイト ベイブレード ZEROG",
+          "confidence": null
+        },
+        {
+          "bgm_id": 33068,
+          "bgm_name": "虹色ほたる ～永遠の夏休み～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74466,
+          "bgm_name": "ストリンジェンド～エンジェルたちのプライベートレッスン～ コアMIX メガ盛り オカズですよ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13245,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Shin Tennis no Oujisama Specials",
+      "mal_title_ja": "新テニスの王子様",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13261,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 38758,
+      "bgm_name": "イナズマイレブンGO クロノ・ストーン",
+      "bgm_name_cn": "闪电十一人GO 时空之石",
+      "mal_title": "Inazuma Eleven Go: Chrono Stone",
+      "mal_title_ja": "イナズマイレブンGO クロノ・ストーン",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 38758,
+          "bgm_name": "イナズマイレブンGO クロノ・ストーン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 393476,
+          "bgm_name": "いたずらてぃーちゃー ～秘密の保健室～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13325,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 56934,
+      "bgm_name": "クリムゾンガールズ ～痴漢支配～",
+      "bgm_name_cn": "",
+      "mal_title": "Crimson Girls: Chikan Shihai",
+      "mal_title_ja": "クリムゾンガールズ～痴漢支配～",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56934,
+          "bgm_name": "クリムゾンガールズ ～痴漢支配～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13377,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 37344,
+      "bgm_name": "リコーダーとランドセル レ♪",
+      "bgm_name_cn": "竖笛与双肩书包 2♪",
+      "mal_title": "Recorder to Randoseru Re♪",
+      "mal_title_ja": "リコーダーとランドセル レ♪",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37344,
+          "bgm_name": "リコーダーとランドセル レ♪",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13379,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 56929,
+      "bgm_name": "おくさまは天使（ミカえる）？",
+      "bgm_name_cn": "太太是天使？",
+      "mal_title": "Okusama wa Michael",
+      "mal_title_ja": "おくさまは天使 [ミカえる] ♥",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56929,
+          "bgm_name": "おくさまは天使（ミカえる）？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 49619,
+          "bgm_name": "お願い！ アインツベルン相談室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56931,
+          "bgm_name": "オトメドリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 33354,
+          "bgm_name": "クイーンズブレイド リベリオン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37416,
+          "bgm_name": "猫神やおよろず OVA",
+          "confidence": null
+        },
+        {
+          "bgm_id": 212153,
+          "bgm_name": "しまじろうのわお!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13427,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 41864,
+      "bgm_name": "PES: Peace Eco Smile",
+      "bgm_name_cn": "驾临地球",
+      "mal_title": "PES: Peace Eco Smile",
+      "mal_title_ja": "PES: Peace Eco Smile",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 41864,
+          "bgm_name": "PES: Peace Eco Smile",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13431,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 37620,
+      "bgm_name": "秘密結社 鷹の爪NEO",
+      "bgm_name_cn": "秘密结社 鹰之爪NEO",
+      "mal_title": "Himitsukessha Taka no Tsume NEO",
+      "mal_title_ja": "秘密結社鷹の爪 NEO",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37620,
+          "bgm_name": "秘密結社 鷹の爪NEO",
+          "confidence": null
+        },
+        {
+          "bgm_id": 393476,
+          "bgm_name": "いたずらてぃーちゃー ～秘密の保健室～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34028,
+          "bgm_name": "あらしのよるに ひみつのともだち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56933,
+          "bgm_name": "秘書課ドロップ THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13433,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 37620,
+      "bgm_name": "秘密結社 鷹の爪NEO",
+      "bgm_name_cn": "秘密结社 鹰之爪NEO",
+      "mal_title": "himitsukesshatakanotsume.jp",
+      "mal_title_ja": "秘密結社鷹の爪.jp",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37620,
+          "bgm_name": "秘密結社 鷹の爪NEO",
+          "confidence": null
+        },
+        {
+          "bgm_id": 393476,
+          "bgm_name": "いたずらてぃーちゃー ～秘密の保健室～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34028,
+          "bgm_name": "あらしのよるに ひみつのともだち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56933,
+          "bgm_name": "秘書課ドロップ THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13455,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 37723,
+      "bgm_name": "ズモモとヌペペ",
+      "bgm_name_cn": "自摸摸和努呸呸",
+      "mal_title": "Zumomo to Nupepe",
+      "mal_title_ja": "ズモモとヌペペ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37723,
+          "bgm_name": "ズモモとヌペペ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 279825,
+          "bgm_name": "もっとずっと愛して",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74299,
+          "bgm_name": "NINJAハットリくんリターンズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13459,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ribbon-chan",
+      "mal_title_ja": "リボンちゃん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 32816,
+          "bgm_name": "プリティーリズム・ディアマイフューチャー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74299,
+          "bgm_name": "NINJAハットリくんリターンズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 262236,
+          "bgm_name": "なつみオブリビオン～STAR☆jewel スタージュエル外伝～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13463,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 37345,
+      "bgm_name": "パンダのたぷたぷ",
+      "bgm_name_cn": "熊猫TAPUTAPU",
+      "mal_title": "Panda no Taputapu",
+      "mal_title_ja": "パンダのたぷたぷ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37345,
+          "bgm_name": "パンダのたぷたぷ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28697,
+          "bgm_name": "シャイニング・ハーツ ～幸せのパン～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13465,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 133667,
+      "bgm_name": "リトル・チャロ東北編",
+      "bgm_name_cn": "",
+      "mal_title": "Little Charo: Touhoku-hen",
+      "mal_title_ja": "リトル・チャロ～東北編～",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 133667,
+          "bgm_name": "リトル・チャロ東北編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28496,
+          "bgm_name": "NARUTO-ナルト- SD ロック・リーの青春フルパワー忍伝",
+          "confidence": null
+        },
+        {
+          "bgm_id": 33354,
+          "bgm_name": "クイーンズブレイド リベリオン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13595,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 43296,
+      "bgm_name": "好きで好きで、すきで THE ANIMATION",
+      "bgm_name_cn": "喜欢着、喜欢着、喜欢着",
+      "mal_title": "Suki de Suki de, Suki de The Animation",
+      "mal_title_ja": "好きで好きで, すきで THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 43296,
+          "bgm_name": "好きで好きで、すきで THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13639,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hi no Youjin",
+      "mal_title_ja": "火要鎮",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 324620,
+          "bgm_name": "火の鳥 絆編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13669,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Owari no Chronicle",
+      "mal_title_ja": "終わりのクロニクル",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13677,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ao no Exorcist Movie Special",
+      "mal_title_ja": "劇場版「青の祓魔師」特別映像",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13727,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Rinne no Lagrange: Kamogawa Days",
+      "mal_title_ja": "輪廻のラグランジェ 鴨川デイズ",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56931,
+          "bgm_name": "オトメドリ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13731,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Koukyoushihen Eureka Seven: New Order",
+      "mal_title_ja": "交響詩篇エウレカセブン第51話「ニュー・オーダー」",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13785,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 43367,
+      "bgm_name": "雨芳恋歌",
+      "bgm_name_cn": "雨芳恋歌",
+      "mal_title": "Uhou Renka",
+      "mal_title_ja": "雨芳恋歌",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 43367,
+          "bgm_name": "雨芳恋歌",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13821,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kamiusagi Rope tsuka, Natsuyasumi Rasuichi tte Maji ssuka!?",
+      "mal_title_ja": "紙兎ロペ　つか、夏休みラスイチってマジっすか！？",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 548002,
+          "bgm_name": "알록달록 종이마을",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13837,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 38131,
+      "bgm_name": "名探偵コナン BONUS FILE ファンタジスタの花",
+      "bgm_name_cn": "名侦探柯南 BONUS FILE 幻想曲之花",
+      "mal_title": "Meitantei Conan Bonus File: Fantasista no Hana",
+      "mal_title_ja": "名探偵コナン BONUS FILE ファンタジスタの花",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 38131,
+          "bgm_name": "名探偵コナン BONUS FILE ファンタジスタの花",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38132,
+          "bgm_name": "名探偵コナン えくすかりばあの奇跡",
+          "confidence": null
+        },
+        {
+          "bgm_id": 46940,
+          "bgm_name": "名探偵コナン 11人目のストライカー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13839,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 38132,
+      "bgm_name": "名探偵コナン えくすかりばあの奇跡",
+      "bgm_name_cn": "名侦探柯南 传说中的球棒的奇迹",
+      "mal_title": "Meitantei Conan OVA 12: Excalibur no Kiseki",
+      "mal_title_ja": "名探偵コナン　えくすかりばあの奇跡",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 38132,
+          "bgm_name": "名探偵コナン えくすかりばあの奇跡",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38131,
+          "bgm_name": "名探偵コナン BONUS FILE ファンタジスタの花",
+          "confidence": null
+        },
+        {
+          "bgm_id": 46940,
+          "bgm_name": "名探偵コナン 11人目のストライカー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13855,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Queen's Blade: Rebellion Specials",
+      "mal_title_ja": "クイーンズブレイド リベリオン 限界突破で見えちゃうの",
+      "mal_media_type": "special",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13927,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sacred Seven: Shirogane no Tsubasa Picture Drama",
+      "mal_title_ja": "劇場版 セイクリッドセブン – 銀月の翼 – ピクチャードラマ",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 13983,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 317692,
+      "bgm_name": "テルマエ・ロマエ ノヴァエ",
+      "bgm_name_cn": "新罗马浴场",
+      "mal_title": "Thermae Romae: Kodai Romajin ga Uchuu e",
+      "mal_title_ja": "テルマエ・ロマエ　古代ローマ人が宇宙へ",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 28687,
+          "bgm_name": "テルマエ・ロマエ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 317692,
+          "bgm_name": "テルマエ・ロマエ ノヴァエ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 7354,
+          "bgm_name": "愛してるぜベイベ★★",
+          "confidence": null
+        },
+        {
+          "bgm_id": 11743,
+          "bgm_name": "イケてる2人",
+          "confidence": null
+        },
+        {
+          "bgm_id": 49266,
+          "bgm_name": "メーテルレジェンド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 304178,
+          "bgm_name": "溜まってるの、ママが出してやるし♪～黒ギャルママのドーテー調教レッスン The Motion Anime",
+          "confidence": null
+        },
+        {
+          "bgm_id": 407697,
+          "bgm_name": "最弱テイマーはゴミ拾いの旅を始めました。",
+          "confidence": null
+        },
+        {
+          "bgm_id": 564289,
+          "bgm_name": "愛してるゲームを終わらせたい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 614424,
+          "bgm_name": "最弱テイマーはゴミ拾いの旅を始めました。 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 1321,
+          "bgm_name": "マリア様がみてる 4thシーズン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14077,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 185906,
+      "bgm_name": "のねのね劇場",
+      "bgm_name_cn": "",
+      "mal_title": "Blood-C: None-None Gekijou",
+      "mal_title_ja": "のねのね劇場",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 185906,
+          "bgm_name": "のねのね劇場",
+          "confidence": null
+        },
+        {
+          "bgm_id": 23684,
+          "bgm_name": "黒子のバスケ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 26806,
+          "bgm_name": "君のいる町～黄昏交差点～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 29072,
+          "bgm_name": "緋色の欠片",
+          "confidence": null
+        },
+        {
+          "bgm_id": 29323,
+          "bgm_name": "謎の彼女X",
+          "confidence": null
+        },
+        {
+          "bgm_id": 29426,
+          "bgm_name": "坂道のアポロン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34028,
+          "bgm_name": "あらしのよるに ひみつのともだち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37345,
+          "bgm_name": "パンダのたぷたぷ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 44796,
+          "bgm_name": "まりもの花 〜最強武闘派小学生伝説〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 212153,
+          "bgm_name": "しまじろうのわお!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14095,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kamen Rider Fourze x Crayon Shin-chan",
+      "mal_title_ja": "仮面ライダーフォーゼ×クレオンしんちゃん",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14117,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Blood-C: Special Edition",
+      "mal_title_ja": "『BLOOD-C』特別編集ver",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14123,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Pokemon Black and White 2: Introduction Movie",
+      "mal_title_ja": "ポケットモンスターブラック２・ホワイト２",
+      "mal_media_type": "pv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14267,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 41019,
+      "bgm_name": "PERSONA4 the Animation -the Factor of Hope-",
+      "bgm_name_cn": "女神异闻录4 剧场版",
+      "mal_title": "Persona 4 the Animation: The Factor of Hope",
+      "mal_title_ja": "ペルソナ4 the Animation -the Factor of Hope-",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 41019,
+          "bgm_name": "PERSONA4 the Animation -the Factor of Hope-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14317,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Computer Kakumei: Saikyou x Saisoku no Zunou Tanjou",
+      "mal_title_ja": "コンピューター革命 最強×最速の頭脳誕生",
+      "mal_media_type": "tv_special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14359,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Vocaloid China Project Senden Animation",
+      "mal_title_ja": "VOCALOID CHINA PROJECT宣伝用アニメーション",
+      "mal_media_type": "pv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14479,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 42253,
+      "bgm_name": "魔法使いなら味噌を喰え！",
+      "bgm_name_cn": "是魔法使的话就吃味噌！",
+      "mal_title": "Mahoutsukai Nara Miso wo Kue!",
+      "mal_title_ja": "魔法使いなら味噌を喰え！",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 42253,
+          "bgm_name": "魔法使いなら味噌を喰え！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35867,
+          "bgm_name": "黒魔女さんが通る!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35988,
+          "bgm_name": "マケン姫っ! OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 18016,
+          "bgm_name": "ストライクウィッチーズ 劇場版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24738,
+          "bgm_name": "ZETMAN",
+          "confidence": null
+        },
+        {
+          "bgm_id": 162108,
+          "bgm_name": "El Vendedor de Humo",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14537,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Cinnamon no Parade",
+      "mal_title_ja": "シナモンのパレード",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 39637,
+          "bgm_name": "しらんぷり",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14657,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 57267,
+      "bgm_name": "ネトラレヅマ ～礼子～",
+      "bgm_name_cn": "",
+      "mal_title": "Netorare Zuma",
+      "mal_title_ja": "ネトラレヅマ",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 57267,
+          "bgm_name": "ネトラレヅマ ～礼子～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14663,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Queen's Blade Rebellion vs. Hagure Yuusha no Aesthetica",
+      "mal_title_ja": "クイーンズブレイド リベリオンVSはぐれ勇者の鬼畜美学",
+      "mal_media_type": "pv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 14853,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 385706,
+      "bgm_name": "九天玄帝诀 第二季",
+      "bgm_name_cn": "",
+      "mal_title": "Tsukumo",
+      "mal_title_ja": "九十九",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 294865,
+          "bgm_name": "九九八十一",
+          "confidence": null
+        },
+        {
+          "bgm_id": 619059,
+          "bgm_name": "大神探诸葛九九",
+          "confidence": null
+        },
+        {
+          "bgm_id": 476850,
+          "bgm_name": "Ninety-five Senses",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241605,
+          "bgm_name": "The Nifty Nineties",
+          "confidence": null
+        },
+        {
+          "bgm_id": 291204,
+          "bgm_name": "九州缥缈录",
+          "confidence": null
+        },
+        {
+          "bgm_id": 323649,
+          "bgm_name": "九夜神传",
+          "confidence": null
+        },
+        {
+          "bgm_id": 356977,
+          "bgm_name": "九州非常刀",
+          "confidence": null
+        },
+        {
+          "bgm_id": 364859,
+          "bgm_name": "九天玄帝诀",
+          "confidence": null
+        },
+        {
+          "bgm_id": 385706,
+          "bgm_name": "九天玄帝诀 第二季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 403743,
+          "bgm_name": "九天玄帝诀 第三季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 15077,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 189517,
+      "bgm_name": "旅するぬいぐるみ ～traveling “Daru”～",
+      "bgm_name_cn": "绒毛玩偶之旅",
+      "mal_title": "Tabisuru Nuigurumi: Traveling Daru",
+      "mal_title_ja": "旅するぬいぐるみ ~Traveling Daru~",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 189517,
+          "bgm_name": "旅するぬいぐるみ ～traveling “Daru”～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 421420,
+          "bgm_name": "旅するガーディ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 488324,
+          "bgm_name": "押絵ト旅スル男",
+          "confidence": null
+        },
+        {
+          "bgm_id": 10582,
+          "bgm_name": "キノの旅 何かをするために -life goes on.-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 393238,
+          "bgm_name": "とんでもスキルで異世界放浪メシ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 462459,
+          "bgm_name": "とんでもスキルで異世界放浪メシ2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 444046,
+          "bgm_name": "異世界スーサイド・スクワッド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 315589,
+          "bgm_name": "旅",
+          "confidence": null
+        },
+        {
+          "bgm_id": 44467,
+          "bgm_name": "旅館白鷺",
+          "confidence": null
+        },
+        {
+          "bgm_id": 160210,
+          "bgm_name": "旅街レイトショー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 15219,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": ".hack//Versus: The Thanatos Report",
+      "mal_title_ja": ".hack//Versus タナトスレポート",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 16606,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "C.L.A.Y.",
+      "mal_title_ja": "C.L.A.Y.",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 23626,
+          "bgm_name": "劇場版 BLOOD-C The Last Dark",
+          "confidence": null
+        },
+        {
+          "bgm_id": 185906,
+          "bgm_name": "のねのね劇場",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 17811,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kyoto Animation: Hassou-hen",
+      "mal_title_ja": "京都アニメーションCM「発想編」",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 17813,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kyoto Animation: Megane-hen",
+      "mal_title_ja": "京都アニメーション CM 「メガネ編」",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 17815,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kyoto Animation: Kasa-hen",
+      "mal_title_ja": "京都アニメーションCM「傘編」",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 18003,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Thermae Romae x TOTO Collaboration",
+      "mal_title_ja": "テルマエ・ロマエｘ TOTO企業コラボレーション",
+      "mal_media_type": "cm",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 18841,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "PES: Peace Eco Smile - Drive your Heart",
+      "mal_title_ja": "PES: Peace Eco Smile - Drive your Heart",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 18845,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ninja Hattori-kun (2012)",
+      "mal_title_ja": "忍者ハットリくん （2012年版）",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 74299,
+          "bgm_name": "NINJAハットリくんリターンズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 161698,
+          "bgm_name": "忍たま乱太郎 20期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 28496,
+          "bgm_name": "NARUTO-ナルト- SD ロック・リーの青春フルパワー忍伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 18941,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 212153,
+      "bgm_name": "しまじろうのわお!",
+      "bgm_name_cn": "巧虎 WAO！",
+      "mal_title": "Shimajirou no Wow!",
+      "mal_title_ja": "しまじろうのわお!",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 212153,
+          "bgm_name": "しまじろうのわお!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 20205,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Yama ni Kagayaku: Guide-ken Heiji Gou",
+      "mal_title_ja": "山に輝く ガイド犬平治号",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 20469,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 601040,
+      "bgm_name": "ひめゆり",
+      "bgm_name_cn": "姬百合",
+      "mal_title": "Himeyuri",
+      "mal_title_ja": "ひめゆり",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 601040,
+          "bgm_name": "ひめゆり",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 20547,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Top wo Nerae 2! Kagaku Kouza",
+      "mal_title_ja": "トップをねらえ２！科学講座",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 21451,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Nihonbashi Koukashita R Keikaku",
+      "mal_title_ja": "日本橋高架下R計画",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 21997,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 293620,
+      "bgm_name": "デュエル・マスターズ ビクトリーV",
+      "bgm_name_cn": "决斗大师 Victory V",
+      "mal_title": "Duel Masters Victory V",
+      "mal_title_ja": "デュエル・マスターズ ビクトリーV",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 293620,
+          "bgm_name": "デュエル・マスターズ ビクトリーV",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37136,
+          "bgm_name": "ジュエルペット きら☆デコッ！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 262236,
+          "bgm_name": "なつみオブリビオン～STAR☆jewel スタージュエル外伝～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 22049,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Just Awake",
+      "mal_title_ja": "Just Awake",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 22585,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 378682,
+      "bgm_name": "ぬっこ。NUKKO",
+      "bgm_name_cn": "",
+      "mal_title": "Nukko.",
+      "mal_title_ja": "ぬっこ。",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 378682,
+          "bgm_name": "ぬっこ。NUKKO",
+          "confidence": null
+        },
+        {
+          "bgm_id": 34605,
+          "bgm_name": "しばいぬ子さん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37723,
+          "bgm_name": "ズモモとヌペペ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 23675,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hi no Tori: Kizuna-hen",
+      "mal_title_ja": "火の鳥 絆編",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 24237,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Surprise 4 U.",
+      "mal_title_ja": "SURPRISE 4 U.",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 261199,
+          "bgm_name": "Astérix et la surprise de César",
+          "confidence": null
+        },
+        {
+          "bgm_id": 359547,
+          "bgm_name": "Pluto's Surprise Package",
+          "confidence": null
+        },
+        {
+          "bgm_id": 631108,
+          "bgm_name": "Mickey's Surprise Party",
+          "confidence": null
+        },
+        {
+          "bgm_id": 137263,
+          "bgm_name": "Luxo Jr. in 'Surprise' and 'Light & Heavy'",
+          "confidence": null
+        },
+        {
+          "bgm_id": 198736,
+          "bgm_name": "カンガルーの誕生日",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 24995,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Moonfesta",
+      "mal_title_ja": "ｍｏｏｎｆｅｓｔａ～ムーンフェスタ～",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 25103,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sumiko no Egao",
+      "mal_title_ja": "スミ子の笑顔",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 25491,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Megumi to Taiyou III: Kajuu Gummi Tweet Fantasy - Timeline World",
+      "mal_title_ja": "メグミとタイヨウIII 果汁グミ Tweet Fantasy タイムラインワールド",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 25891,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Stitch to Suna no Wakusei",
+      "mal_title_ja": "スティッチと砂の惑星",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 26159,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 114199,
+      "bgm_name": "進研ゼミ高校講座",
+      "bgm_name_cn": "进研研讨会高校讲座",
+      "mal_title": "Shinken Seminar Koukou Kouza",
+      "mal_title_ja": "進研ゼミ高校講座",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 114199,
+          "bgm_name": "進研ゼミ高校講座",
+          "confidence": null
+        },
+        {
+          "bgm_id": 211581,
+          "bgm_name": "グラゼニ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 251060,
+          "bgm_name": "グラゼニ シーズン2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 55770,
+          "bgm_name": "進撃の巨人",
+          "confidence": null
+        },
+        {
+          "bgm_id": 80993,
+          "bgm_name": "進撃の巨人 OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 110049,
+          "bgm_name": "進撃の巨人 悔いなき選択 OAD",
+          "confidence": null
+        },
+        {
+          "bgm_id": 118335,
+          "bgm_name": "進撃の巨人 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 141781,
+          "bgm_name": "進撃！巨人中学校",
+          "confidence": null
+        },
+        {
+          "bgm_id": 158003,
+          "bgm_name": "進撃の巨人 -関西弁版-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 217300,
+          "bgm_name": "進撃の巨人 Season 3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 29477,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Rescue YoYo",
+      "mal_title_ja": "レスキューYoYo",
+      "mal_media_type": "tv_special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 30913,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mekakucity Days",
+      "mal_title_ja": "メカクシティデイズ",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 32739,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "JRA Hokan Keikaku",
+      "mal_title_ja": "JRA補完計画",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 32811,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Black Ocean",
+      "mal_title_ja": "Black Ocean",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 32845,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ishitsubutsu Toriatsukaijo",
+      "mal_title_ja": "遺失物取扱所",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 33529,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kubbe PV Full ver.",
+      "mal_title_ja": "KUBBE（キュッパ） PV フル ver.",
+      "mal_media_type": "pv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 34628,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 37620,
+      "bgm_name": "秘密結社 鷹の爪NEO",
+      "bgm_name_cn": "秘密结社 鹰之爪NEO",
+      "mal_title": "Taka no Tsume x Hello Kitty ga Masaka no Collab!",
+      "mal_title_ja": "鷹の爪×HELLO KITTYがまさかのコラボ！",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 37620,
+          "bgm_name": "秘密結社 鷹の爪NEO",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 34952,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Koi to Byounetsu",
+      "mal_title_ja": "恋と病熱",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 35317,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mini Rope",
+      "mal_title_ja": "miniロペ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 141172,
+          "bgm_name": "Mini Wakfu",
+          "confidence": null
+        },
+        {
+          "bgm_id": 316377,
+          "bgm_name": "ミニモニ. やるのだぴょん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 629167,
+          "bgm_name": "时光小剧场",
+          "confidence": null
+        },
+        {
+          "bgm_id": 257844,
+          "bgm_name": "アイドルマスター SideM 理由あってMini!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554436,
+          "bgm_name": "LEGO Ninjago：Chen mini-movies",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554334,
+          "bgm_name": "LEGO Ninjago：Masters of Spinjitzu Mini-movies",
+          "confidence": null
+        },
+        {
+          "bgm_id": 220885,
+          "bgm_name": "バカとテストと召喚獣 Blu-ray BOX 特典 新作ミニアニメーション",
+          "confidence": null
+        },
+        {
+          "bgm_id": 341040,
+          "bgm_name": "みにヴぁん ら～じ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 513462,
+          "bgm_name": "みにヴぁん 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 225156,
+          "bgm_name": "シルバニアファミリー ミニストーリー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 35978,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Namae no Nai Hi",
+      "mal_title_ja": "名前のない日",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 36065,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Jirijiri",
+      "mal_title_ja": "ジリジリ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 36081,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tengoku",
+      "mal_title_ja": "天国",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 36082,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Toshi Keikaku",
+      "mal_title_ja": "都市計画",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37385,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tough Boy",
+      "mal_title_ja": "TOUGH BOY",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37528,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Decadence: Remix",
+      "mal_title_ja": "Decadence-Remix-",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37545,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Amakage",
+      "mal_title_ja": "雨影",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 43367,
+          "bgm_name": "雨芳恋歌",
+          "confidence": null
+        },
+        {
+          "bgm_id": 197889,
+          "bgm_name": "再见雨天",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37602,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Na mo Nai Mainichi",
+      "mal_title_ja": "名もない毎日",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37733,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Caligula (Music)",
+      "mal_title_ja": "CALiGULA",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37930,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sketch",
+      "mal_title_ja": "スケッチ",
+      "mal_media_type": "cm",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 38132,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 208064,
+      "bgm_name": "猪猪侠之囧囧危机",
+      "bgm_name_cn": "",
+      "mal_title": "Zhu Zhu Xia: Jiong Jiong Wei Ji",
+      "mal_title_ja": "猪猪侠 囧囧危机",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 208064,
+          "bgm_name": "猪猪侠之囧囧危机",
+          "confidence": null
+        },
+        {
+          "bgm_id": 38434,
+          "bgm_name": "BUTA",
+          "confidence": null
+        },
+        {
+          "bgm_id": 310135,
+          "bgm_name": "卖猪",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 38312,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 35331,
+      "bgm_name": "超蛙战士之威武教官",
+      "bgm_name_cn": "超蛙战士之威武教官",
+      "mal_title": "Chao Wa Zhanshi: Weiwu Jiaoguan",
+      "mal_title_ja": "超蛙战 威武教官",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 35331,
+          "bgm_name": "超蛙战士之威武教官",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24738,
+          "bgm_name": "ZETMAN",
+          "confidence": null
+        },
+        {
+          "bgm_id": 56416,
+          "bgm_name": "The Pirates! In an Adventure with Scientists!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 38376,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Factory",
+      "mal_title_ja": "FACTORY",
+      "mal_media_type": "pv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40087,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 334120,
+      "bgm_name": "ペンギンの問題 Max",
+      "bgm_name_cn": "企鹅的问题 Max",
+      "mal_title": "Penguin no Mondai POW",
+      "mal_title_ja": "ペンギンの問題POW",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 207587,
+          "bgm_name": "ペンギンの問題",
+          "confidence": null
+        },
+        {
+          "bgm_id": 334120,
+          "bgm_name": "ペンギンの問題 Max",
+          "confidence": null
+        },
+        {
+          "bgm_id": 220062,
+          "bgm_name": "Приключения пингвинёнка Лоло",
+          "confidence": null
+        },
+        {
+          "bgm_id": 475818,
+          "bgm_name": "ジェネレーション オブ カオス ネクスト~誓いのペンダント~",
+          "confidence": null
+        },
+        {
+          "bgm_id": 2487,
+          "bgm_name": "ペンギン娘♥はぁと",
+          "confidence": null
+        },
+        {
+          "bgm_id": 239270,
+          "bgm_name": "ペンギン・ハイウェイ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 366451,
+          "bgm_name": "テイコウペンギン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 72669,
+          "bgm_name": "よなよなペンギン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 82723,
+          "bgm_name": "Dr.スランプ アラレちゃん んちゃ!ペンギン村はハレのち晴れ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 82725,
+          "bgm_name": "Dr.スランプ アラレちゃん んちゃ!ペンギン村より愛をこめて",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40715,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "To Dimension",
+      "mal_title_ja": "To Dimension",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40867,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Chikatetsu no Doutai",
+      "mal_title_ja": "地下鉄の動態",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41248,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Irony",
+      "mal_title_ja": "アイロニ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41251,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Soshite Kimi wa Tsuki ni Natta",
+      "mal_title_ja": "そして君は月になった",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41673,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Oshiri no Yama wa Everest",
+      "mal_title_ja": "おしりの山はエベレスト",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43627,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Houkiboshi (2012)",
+      "mal_title_ja": "ほうき星",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 43976,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 41027,
+      "bgm_name": "戚继光英雄传",
+      "bgm_name_cn": "",
+      "mal_title": "Qi Jiguang Yingxiong Chuan",
+      "mal_title_ja": "戚继光英雄传",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 41027,
+          "bgm_name": "戚继光英雄传",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44154,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 134469,
+      "bgm_name": "赛尔号大电影2：雷伊与迈尔斯",
+      "bgm_name_cn": "",
+      "mal_title": "Sai Er Hao Movie 2: Leiyi Yu Mai Er Si",
+      "mal_title_ja": "赛尔号大电影2：雷伊与迈尔斯",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 134469,
+          "bgm_name": "赛尔号大电影2：雷伊与迈尔斯",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44161,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 463618,
+      "bgm_name": "摩尔庄园 第二季",
+      "bgm_name_cn": "",
+      "mal_title": "Mole Zhuang Yuan: Zhou Bo Ju",
+      "mal_title_ja": "摩尔庄园周播剧",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 463618,
+          "bgm_name": "摩尔庄园 第二季",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44415,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Shaonian Shiye: Xiayi Huanle Xing",
+      "mal_title_ja": "少年师爷之侠义欢乐行",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44820,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Wo Yu LaLa",
+      "mal_title_ja": "我与拉拉",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44821,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tutu Weiji",
+      "mal_title_ja": "兔兔危机",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 44826,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 554387,
+      "bgm_name": "LEGO Ninjago：Wu's Teas",
+      "bgm_name_cn": "乐高幻影忍者番外篇：吴大师的茶铺",
+      "mal_title": "Wu Jianxiong",
+      "mal_title_ja": "吴健雄",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 385454,
+          "bgm_name": "吴狄的足球",
+          "confidence": null
+        },
+        {
+          "bgm_id": 345867,
+          "bgm_name": "缉妖录之启程篇",
+          "confidence": null
+        },
+        {
+          "bgm_id": 485843,
+          "bgm_name": "Bình Ngô đại chiến",
+          "confidence": null
+        },
+        {
+          "bgm_id": 554387,
+          "bgm_name": "LEGO Ninjago：Wu's Teas",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 46332,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 130800,
+      "bgm_name": "十二生肖城市英雄",
+      "bgm_name_cn": "",
+      "mal_title": "Shi Er Shengxiao: Long Xing Tianxia",
+      "mal_title_ja": "十二生肖之龙行天下",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 292966,
+          "bgm_name": "福星高照朱小八",
+          "confidence": null
+        },
+        {
+          "bgm_id": 130795,
+          "bgm_name": "生肖传奇之十二生肖总动员",
+          "confidence": null
+        },
+        {
+          "bgm_id": 333304,
+          "bgm_name": "生肖传奇之十二生肖闯江湖",
+          "confidence": null
+        },
+        {
+          "bgm_id": 438224,
+          "bgm_name": "生肖传奇之十二生肖快乐街",
+          "confidence": null
+        },
+        {
+          "bgm_id": 320235,
+          "bgm_name": "长安十二时辰之白夜行者",
+          "confidence": null
+        },
+        {
+          "bgm_id": 116156,
+          "bgm_name": "Barbie as the 12 dancing princesses",
+          "confidence": null
+        },
+        {
+          "bgm_id": 261198,
+          "bgm_name": "Les douze travaux d'Astérix",
+          "confidence": null
+        },
+        {
+          "bgm_id": 240834,
+          "bgm_name": "十二星魂之战士的觉醒",
+          "confidence": null
+        },
+        {
+          "bgm_id": 12943,
+          "bgm_name": "十二生肖",
+          "confidence": null
+        },
+        {
+          "bgm_id": 130800,
+          "bgm_name": "十二生肖城市英雄",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 46402,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Ben Ben You Youji: Mala Xialingying",
+      "mal_title_ja": "笨笨悠游记之麻辣夏令营",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 46907,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Dongnan Te Weidui",
+      "mal_title_ja": "东南特卫队",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 48968,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 305059,
+      "bgm_name": "BanG Dream! ぽっぴん'どりーむ！",
+      "bgm_name_cn": "剧场版 BanG Dream! Poppin'Dream！",
+      "mal_title": "Popping, Mixing",
+      "mal_title_ja": "POPPING, MIXING",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 619322,
+          "bgm_name": "Poppin-Play Kitchen",
+          "confidence": null
+        },
+        {
+          "bgm_id": 305059,
+          "bgm_name": "BanG Dream! ぽっぴん'どりーむ！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 558831,
+          "bgm_name": "つれづれポピパ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51356,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 130893,
+      "bgm_name": "我是大熊猫",
+      "bgm_name_cn": "",
+      "mal_title": "Wo Shi Da Xiongmao",
+      "mal_title_ja": "我是大熊猫",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 130893,
+          "bgm_name": "我是大熊猫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 27555,
+          "bgm_name": "クレヨンしんちゃん 嵐を呼ぶ!オラと宇宙のプリンセス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 508967,
+          "bgm_name": "Guess How Much I Love You: The Adventures of Little Nutbrown Hare Season 1",
+          "confidence": null
+        },
+        {
+          "bgm_id": 32816,
+          "bgm_name": "プリティーリズム・ディアマイフューチャー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51596,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 130902,
+      "bgm_name": "今天·明天",
+      "bgm_name_cn": "今天·明天",
+      "mal_title": "Jintian Mingtian",
+      "mal_title_ja": "今天·明天",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 130902,
+          "bgm_name": "今天·明天",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 51631,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 130810,
+      "bgm_name": "潜艇总动员2",
+      "bgm_name_cn": "",
+      "mal_title": "Qian Ting Zong Dong Yuan 2",
+      "mal_title_ja": "潜艇总动员2",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 130810,
+          "bgm_name": "潜艇总动员2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 24508,
+          "bgm_name": "這いよれ! ニャル子さん",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52240,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mermaid Licca-chan",
+      "mal_title_ja": "マーメイドリカちゃん",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 30515,
+          "bgm_name": "マーメイドメロディー ぴちぴちピッチ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 67990,
+          "bgm_name": "マーメイドメロディー ぴちぴちピッチ ピュア",
+          "confidence": null
+        },
+        {
+          "bgm_id": 70427,
+          "bgm_name": "しおふきマーメイド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 129091,
+          "bgm_name": "ヴァルキリードライヴ マーメイド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 262027,
+          "bgm_name": "パンツ泥棒とスク水マーメイド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 262028,
+          "bgm_name": "パンツ泥棒たちとスク水マーメイド",
+          "confidence": null
+        },
+        {
+          "bgm_id": 343710,
+          "bgm_name": "アリス・ギア・アイギス ～ドキッ！アクトレスだらけのマーメイドグランプリ♡～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 382127,
+          "bgm_name": "淫魔大戦",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52767,
+      "season_id": "2012-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 319798,
+      "bgm_name": "38-39°C",
+      "bgm_name_cn": "38-39度",
+      "mal_title": "38-39°C",
+      "mal_title_ja": "38-39°C",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 319798,
+          "bgm_name": "38-39°C",
+          "confidence": null
+        },
+        {
+          "bgm_id": 37259,
+          "bgm_name": "太陽の使者 鉄人28号",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53504,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Judge",
+      "mal_title_ja": "JUDGE",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54017,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Juubee Ninpuuchou Burst",
+      "mal_title_ja": "獣兵衛忍風帖BURST",
+      "mal_media_type": "pv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 55382,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Arifureta Sekai Seifuku",
+      "mal_title_ja": "ありふれたせかいせいふく",
+      "mal_media_type": "music",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60414,
+      "season_id": "2012-spring",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Arms Micron Gekijou",
+      "mal_title_ja": "アームズマイクロン劇場",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 111604,
+          "bgm_name": "マイ ライフ アズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 214257,
+          "bgm_name": "バビ・ストック II ザ・リベンジ・オブ アイズマン -愛の鼓動の彼方に",
+          "confidence": null
+        },
+        {
+          "bgm_id": 198961,
+          "bgm_name": "フレームアームズ・ガール",
+          "confidence": null
+        },
+        {
+          "bgm_id": 241270,
+          "bgm_name": "フレームアームズ・ガール～きゃっきゃうふふなワンダーランド～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 14052,
+          "bgm_name": "PROJECT ARMS",
+          "confidence": null
+        },
+        {
+          "bgm_id": 98866,
+          "bgm_name": "WILD ARMS TWILIGHT VENOM",
+          "confidence": null
+        },
+        {
+          "bgm_id": 541539,
+          "bgm_name": "アズワン／AS ONE",
+          "confidence": null
+        },
+        {
+          "bgm_id": 39543,
+          "bgm_name": "レイアース",
+          "confidence": null
+        },
+        {
+          "bgm_id": 83079,
+          "bgm_name": "キャプテン・アース",
+          "confidence": null
+        },
+        {
+          "bgm_id": 207351,
+          "bgm_name": "グリーン・アイズ -姉キュン！より- THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60896,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Baltic",
+      "mal_title_ja": "BALTIC",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61661,
+      "season_id": "2012-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Switch (Music)",
+      "mal_title_ja": "スウィッチ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    }
+  ],
+  "overrides": []
+}

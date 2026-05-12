@@ -1,0 +1,2390 @@
+{
+  "season": {
+    "id": "2004-winter",
+    "year": 2004,
+    "season": "winter",
+    "released_at": null,
+    "created_at": "2026-05-12T07:45:27.498631+00:00",
+    "updated_at": "2026-05-12T07:45:27.498631+00:00"
+  },
+  "items": [
+    {
+      "mal_id": 108,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 98284,
+      "bgm_name": "王ドロボウJING in Seventh Heaven",
+      "bgm_name_cn": "盗贼王JING之七重天",
+      "mal_title": "Ou Dorobou Jing in Seventh Heaven",
+      "mal_title_ja": "王ドロボウ JING in Seventh Heaven",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 98284,
+          "bgm_name": "王ドロボウJING in Seventh Heaven",
+          "confidence": null
+        },
+        {
+          "bgm_id": 162049,
+          "bgm_name": "ONE PIECE めざせ!海賊野球王",
+          "confidence": null
+        },
+        {
+          "bgm_id": 39299,
+          "bgm_name": "モンキーターン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 112,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 35981,
+      "bgm_name": "超変身コス∞プレイヤー",
+      "bgm_name_cn": "超变身巫女祈斗士",
+      "mal_title": "Chou Henshin Cosprayers",
+      "mal_title_ja": "超変身コス∞プレイヤー",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 35981,
+          "bgm_name": "超変身コス∞プレイヤー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 42690,
+          "bgm_name": "超重神グラヴィオンZwei",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35982,
+          "bgm_name": "ヒットをねらえ!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 189383,
+          "bgm_name": "トランスフォーマー スーパーリンク",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 139,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 10358,
+      "bgm_name": "HUNTER×HUNTER OVA 第3期 G・I Final",
+      "bgm_name_cn": "猎人 OVA3 贪婪大陆 最终季",
+      "mal_title": "Hunter x Hunter: Greed Island Final",
+      "mal_title_ja": "HUNTER×HUNTER G・I Final",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 10358,
+          "bgm_name": "HUNTER×HUNTER OVA 第3期 G・I Final",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 148,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kita e.: Diamond Dust Drops",
+      "mal_title_ja": "北へ。 ～Diamond Dust Drops～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 1977,
+          "bgm_name": "北へ。〜Diamond Dust Drops〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 158,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 4214,
+      "bgm_name": "マリア様がみてる",
+      "bgm_name_cn": "圣母在上",
+      "mal_title": "Maria-sama ga Miteru",
+      "mal_title_ja": "マリア様がみてる",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 4214,
+          "bgm_name": "マリア様がみてる",
+          "confidence": null
+        },
+        {
+          "bgm_id": 7145,
+          "bgm_name": "エリア88",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 204,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 3328,
+      "bgm_name": "ゆめりあ",
+      "bgm_name_cn": "梦物语",
+      "mal_title": "Yumeria",
+      "mal_title_ja": "ゆめりあ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 3328,
+          "bgm_name": "ゆめりあ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 222,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 4185,
+      "bgm_name": "MEZZO -メゾ-",
+      "bgm_name_cn": "危险代理人",
+      "mal_title": "Mezzo DSA",
+      "mal_title_ja": "メゾ",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 4185,
+          "bgm_name": "MEZZO -メゾ-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 162049,
+          "bgm_name": "ONE PIECE めざせ!海賊野球王",
+          "confidence": null
+        },
+        {
+          "bgm_id": 120070,
+          "bgm_name": "ブラック・ジャック2時間スペシャル 〜命をめぐる4つの奇跡〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 209548,
+          "bgm_name": "かいけつゾロリ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 242,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 61001,
+      "bgm_name": "ごくせん",
+      "bgm_name_cn": "极道鲜师",
+      "mal_title": "Gokusen",
+      "mal_title_ja": "ごくせん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 61001,
+          "bgm_name": "ごくせん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 114188,
+          "bgm_name": "ご案内しますアナザーワールドへ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 284,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 7145,
+      "bgm_name": "エリア88",
+      "bgm_name_cn": "战区88",
+      "mal_title": "Area 88 (TV)",
+      "mal_title_ja": "エリア８８",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 7145,
+          "bgm_name": "エリア88",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 295,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 8591,
+      "bgm_name": "みさきクロニクル 〜ダイバージェンス・イヴ〜",
+      "bgm_name_cn": "死体兵 第二季",
+      "mal_title": "Divergence Eve 2: Misaki Chronicles",
+      "mal_title_ja": "みさきクロニクル 〜ダイバージェンス・イヴ〜",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 8591,
+          "bgm_name": "みさきクロニクル 〜ダイバージェンス・イヴ〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 4214,
+          "bgm_name": "マリア様がみてる",
+          "confidence": null
+        },
+        {
+          "bgm_id": 320205,
+          "bgm_name": "それいけ! アンパンマン 怪傑ナガネギマンとドレミ姫",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 323,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 843,
+      "bgm_name": "妄想代理人",
+      "bgm_name_cn": "妄想代理人",
+      "mal_title": "Mousou Dairinin",
+      "mal_title_ja": "妄想代理人",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 843,
+          "bgm_name": "妄想代理人",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 438,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Phantom The Animation",
+      "mal_title_ja": "ファントム THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56391,
+          "bgm_name": "SEXFRIEND ～セックスフレンド～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 463,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "One Piece Movie 05: Norowareta Seiken",
+      "mal_title_ja": "ワンピース呪われた聖剣",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 90789,
+          "bgm_name": "ONE PIECE 守れ! 最後の大舞台",
+          "confidence": null
+        },
+        {
+          "bgm_id": 162049,
+          "bgm_name": "ONE PIECE めざせ!海賊野球王",
+          "confidence": null
+        },
+        {
+          "bgm_id": 470,
+          "bgm_name": "ドラえもん のび太のワンニャン時空伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 468,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 238,
+      "bgm_name": "イノセンス",
+      "bgm_name_cn": "攻壳机动队2 无罪",
+      "mal_title": "Innocence",
+      "mal_title_ja": "イノセンス",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 238,
+          "bgm_name": "イノセンス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 603,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 4243,
+      "bgm_name": "ふたりはプリキュア",
+      "bgm_name_cn": "光之美少女",
+      "mal_title": "Futari wa Precure",
+      "mal_title_ja": "ふたりはプリキュア",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 4243,
+          "bgm_name": "ふたりはプリキュア",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 636,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 3294,
+      "bgm_name": "十兵衛ちゃん2 -シベリア柳生の逆襲-",
+      "bgm_name_cn": "十兵卫2 西伯利亚柳生的反击",
+      "mal_title": "Juubee-chan 2: Siberia Yagyuu no Gyakushuu",
+      "mal_title_ja": "十兵衛ちゃん2 ～シベリア柳生の逆襲～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 3294,
+          "bgm_name": "十兵衛ちゃん2 -シベリア柳生の逆襲-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 645,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hikaru no Go: Hokuto Hai e no Michi",
+      "mal_title_ja": "ヒカルの碁 北斗杯への道",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 681,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 16221,
+      "bgm_name": "天罰エンジェルラビィ☆",
+      "bgm_name_cn": "天罚-天使拉比",
+      "mal_title": "Tenbatsu Angel Rabbie☆",
+      "mal_title_ja": "天罰エンジェルラビィ☆",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 16221,
+          "bgm_name": "天罰エンジェルラビィ☆",
+          "confidence": null
+        },
+        {
+          "bgm_id": 18616,
+          "bgm_name": "犬夜叉 天下覇道の剣",
+          "confidence": null
+        },
+        {
+          "bgm_id": 20235,
+          "bgm_name": "聖闘士星矢 天界編 序奏 ~Overture~",
+          "confidence": null
+        },
+        {
+          "bgm_id": 98284,
+          "bgm_name": "王ドロボウJING in Seventh Heaven",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 693,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 29278,
+      "bgm_name": "BURN-UP SCRAMBLE",
+      "bgm_name_cn": "杀人科 SCRAMBLE",
+      "mal_title": "Burn Up Scramble",
+      "mal_title_ja": "バーンナップスクランブル",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 29278,
+          "bgm_name": "BURN-UP SCRAMBLE",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 801,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 326,
+      "bgm_name": "攻殻機動隊 S.A.C. 2nd GIG",
+      "bgm_name_cn": "攻壳机动队 S.A.C. 2nd GIG",
+      "mal_title": "Koukaku Kidoutai: Stand Alone Complex 2nd GIG",
+      "mal_title_ja": "攻殻機動隊 S.A.C. 2nd GIG",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 326,
+          "bgm_name": "攻殻機動隊 S.A.C. 2nd GIG",
+          "confidence": null
+        },
+        {
+          "bgm_id": 238,
+          "bgm_name": "イノセンス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 830,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 56391,
+      "bgm_name": "SEXFRIEND ～セックスフレンド～",
+      "bgm_name_cn": "",
+      "mal_title": "Sexfriend",
+      "mal_title_ja": "SEXFRIEND ～セックスフレンド～",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 56391,
+          "bgm_name": "SEXFRIEND ～セックスフレンド～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 864,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 43982,
+      "bgm_name": "機動戦士ガンダムSEED MSV ASTRAY",
+      "bgm_name_cn": "机动战士高达SEED MSV ASTRAY",
+      "mal_title": "Kidou Senshi Gundam SEED MSV Astray",
+      "mal_title_ja": "機動戦士ガンダムSEED MSV ASTRAY",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 43982,
+          "bgm_name": "機動戦士ガンダムSEED MSV ASTRAY",
+          "confidence": null
+        },
+        {
+          "bgm_id": 117898,
+          "bgm_name": "機動戦士ガンダムSEED スペシャルエディション",
+          "confidence": null
+        },
+        {
+          "bgm_id": 238,
+          "bgm_name": "イノセンス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 326,
+          "bgm_name": "攻殻機動隊 S.A.C. 2nd GIG",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 927,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 189383,
+      "bgm_name": "トランスフォーマー スーパーリンク",
+      "bgm_name_cn": "变形金刚：超能连结",
+      "mal_title": "Transformers Superlink",
+      "mal_title_ja": "トランスフォーマー スーパーリンク",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 189383,
+          "bgm_name": "トランスフォーマー スーパーリンク",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 974,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 8461,
+      "bgm_name": "DEAD LEAVES",
+      "bgm_name_cn": "落叶",
+      "mal_title": "Dead Leaves",
+      "mal_title_ja": "デッド　リーブス",
+      "mal_media_type": "movie",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 8461,
+          "bgm_name": "DEAD LEAVES",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1023,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Wolf's Rain OVA",
+      "mal_title_ja": "ウルフズ・レイン",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 1983,
+          "bgm_name": "WOLF'S RAIN",
+          "confidence": null
+        },
+        {
+          "bgm_id": 86721,
+          "bgm_name": "ガッチャマン クラウズ インサイト",
+          "confidence": null
+        },
+        {
+          "bgm_id": 363414,
+          "bgm_name": "映画 オッドタクシー イン・ザ・ウッズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 269483,
+          "bgm_name": "ウルフガイ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 1905,
+          "bgm_name": "サマーウォーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 75627,
+          "bgm_name": "ビッグ・ウォーズ 神撃つ朱き荒野に",
+          "confidence": null
+        },
+        {
+          "bgm_id": 86414,
+          "bgm_name": "ディスク・ウォーズ:アベンジャーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 103179,
+          "bgm_name": "マネーウォーズ 狙われたウォーターフロント計画",
+          "confidence": null
+        },
+        {
+          "bgm_id": 103970,
+          "bgm_name": "ジャングルウォーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 157209,
+          "bgm_name": "ビーストウォーズII 超生命体トランスフォーマー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1053,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 38686,
+      "bgm_name": "東京大学物語DX",
+      "bgm_name_cn": "东京大学物语",
+      "mal_title": "Tokyo Daigaku Monogatari",
+      "mal_title_ja": "東京大学物語",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 38686,
+          "bgm_name": "東京大学物語DX",
+          "confidence": null
+        },
+        {
+          "bgm_id": 82290,
+          "bgm_name": "東方奇闘剧1",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1082,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 2274,
+      "bgm_name": "光と水のダフネ",
+      "bgm_name_cn": "光与水的女神",
+      "mal_title": "Hikari to Mizu no Daphne",
+      "mal_title_ja": "光と水のダフネ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 2274,
+          "bgm_name": "光と水のダフネ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 4243,
+          "bgm_name": "ふたりはプリキュア",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1085,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 3498,
+      "bgm_name": "インタールード",
+      "bgm_name_cn": "间奏曲",
+      "mal_title": "Interlude",
+      "mal_title_ja": "インタールード",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 3498,
+          "bgm_name": "インタールード",
+          "confidence": null
+        },
+        {
+          "bgm_id": 91628,
+          "bgm_name": "インターステラ5555:THE 5TORY OF THE 5ECRET 5TAR 5YSTEM",
+          "confidence": null
+        },
+        {
+          "bgm_id": 81728,
+          "bgm_name": "淫の方程式",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1099,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 47341,
+      "bgm_name": "SHADOW SKILL クルダ流交殺法の秘密",
+      "bgm_name_cn": "影技 克鲁达流交杀法的秘密",
+      "mal_title": "Shadow Skill: Kurudaryuu Kousatsuhou no Himitsu",
+      "mal_title_ja": "SHADOW SKILL ～クルダ流交殺法の秘密～",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 47341,
+          "bgm_name": "SHADOW SKILL クルダ流交殺法の秘密",
+          "confidence": null
+        },
+        {
+          "bgm_id": 32580,
+          "bgm_name": "影Shadow",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1149,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 42690,
+      "bgm_name": "超重神グラヴィオンZwei",
+      "bgm_name_cn": "超重神GRAVION Zwei",
+      "mal_title": "Choujuushin Gravion Zwei",
+      "mal_title_ja": "超重神グラヴィオンツヴァイ",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 42690,
+          "bgm_name": "超重神グラヴィオンZwei",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35981,
+          "bgm_name": "超変身コス∞プレイヤー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 35982,
+          "bgm_name": "ヒットをねらえ!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 189383,
+          "bgm_name": "トランスフォーマー スーパーリンク",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1203,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 60195,
+      "bgm_name": "NITABOH 仁太坊-津軽三味線始祖外聞",
+      "bgm_name_cn": "仁太坊 津轻三味线始祖外传",
+      "mal_title": "Nitaboh",
+      "mal_title_ja": "NITABOH 仁太坊―津軽三味線始祖外聞",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 60195,
+          "bgm_name": "NITABOH 仁太坊-津軽三味線始祖外聞",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1246,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 3305,
+      "bgm_name": "勇午 ～交渉人～",
+      "bgm_name_cn": "交涉人勇午",
+      "mal_title": "Yuugo: Koushounin",
+      "mal_title_ja": "勇午 ～交渉人～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 3305,
+          "bgm_name": "勇午 ～交渉人～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1259,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 20235,
+      "bgm_name": "聖闘士星矢 天界編 序奏 ~Overture~",
+      "bgm_name_cn": "圣斗士星矢 天界篇 序奏～overture～",
+      "mal_title": "Saint Seiya: Tenkai-hen Josou - Overture",
+      "mal_title_ja": "聖闘士星矢 天界編 序奏 ~overture~",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 20235,
+          "bgm_name": "聖闘士星矢 天界編 序奏 ~Overture~",
+          "confidence": null
+        },
+        {
+          "bgm_id": 1990,
+          "bgm_name": "ONE PIECE 呪われた聖剣",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1798,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Animation Seisaku Shinkou Kuromi-chan 2",
+      "mal_title_ja": "アニメーション制作進行くろみちゃん 2",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 21051,
+          "bgm_name": "オリジナルビデオアニメーション アンジェリーク",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 1977,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 8702,
+      "bgm_name": "土方歳三 白の軌跡",
+      "bgm_name_cn": "土方岁三 白之轨迹",
+      "mal_title": "Hijikata Toshizou: Shiro no Kiseki",
+      "mal_title_ja": "土方歳三　白の軌跡",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 8702,
+          "bgm_name": "土方歳三 白の軌跡",
+          "confidence": null
+        },
+        {
+          "bgm_id": 112809,
+          "bgm_name": "土俵の鬼たち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 311600,
+          "bgm_name": "土下座で頼んでみた",
+          "confidence": null
+        },
+        {
+          "bgm_id": 630036,
+          "bgm_name": "土红色的骆驼",
+          "confidence": null
+        },
+        {
+          "bgm_id": 630110,
+          "bgm_name": "土豆侠 第一季",
+          "confidence": null
+        },
+        {
+          "bgm_id": 630482,
+          "bgm_name": "土豆来了",
+          "confidence": null
+        },
+        {
+          "bgm_id": 339688,
+          "bgm_name": "沙发土豆",
+          "confidence": null
+        },
+        {
+          "bgm_id": 193548,
+          "bgm_name": "ハード&ルーズ 〜私立探偵・土岐正造トラブル・ノート〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 239280,
+          "bgm_name": "裏庭の土地神様",
+          "confidence": null
+        },
+        {
+          "bgm_id": 261143,
+          "bgm_name": "小王子与土豆仔",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2138,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 32580,
+      "bgm_name": "影Shadow",
+      "bgm_name_cn": "影Shadow",
+      "mal_title": "Kage (OVA)",
+      "mal_title_ja": "影Shadow",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 32580,
+          "bgm_name": "影Shadow",
+          "confidence": null
+        },
+        {
+          "bgm_id": 47341,
+          "bgm_name": "SHADOW SKILL クルダ流交殺法の秘密",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2209,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 53418,
+      "bgm_name": "V.G.NEO THE ANIMATION",
+      "bgm_name_cn": "",
+      "mal_title": "V.G.Neo The Animation",
+      "mal_title_ja": "V.G.NEO THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 53418,
+          "bgm_name": "V.G.NEO THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2298,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kidou Senshi Gundam SEED: Hoshi no Hazama de",
+      "mal_title_ja": "機動戦士ガンダムSEED 星のはざまで",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2391,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 15154,
+      "bgm_name": "SDガンダムフォース",
+      "bgm_name_cn": "SD高达FORCE",
+      "mal_title": "SD Gundam Force",
+      "mal_title_ja": "SDガンダムフォース",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 15154,
+          "bgm_name": "SDガンダムフォース",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2435,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 74421,
+      "bgm_name": "懲罰予備校",
+      "bgm_name_cn": "",
+      "mal_title": "Choubatsu Yobikou",
+      "mal_title_ja": "懲罰予備校",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 74421,
+          "bgm_name": "懲罰予備校",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2490,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 162049,
+      "bgm_name": "ONE PIECE めざせ!海賊野球王",
+      "bgm_name_cn": "航海王：目标！海贼棒球王",
+      "mal_title": "One Piece: Mezase! Kaizoku Yakyuu Ou",
+      "mal_title_ja": "ワンピース めざせ！海賊野球王",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 162049,
+          "bgm_name": "ONE PIECE めざせ!海賊野球王",
+          "confidence": null
+        },
+        {
+          "bgm_id": 90789,
+          "bgm_name": "ONE PIECE 守れ! 最後の大舞台",
+          "confidence": null
+        },
+        {
+          "bgm_id": 470,
+          "bgm_name": "ドラえもん のび太のワンニャン時空伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2514,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 38124,
+      "bgm_name": "名探偵コナン コナンとキッドとクリスタル・マザー",
+      "bgm_name_cn": "名侦探柯南 柯南、基德与水晶之母",
+      "mal_title": "Meitantei Conan OVA 04: Conan to Kid to Crystal Mother",
+      "mal_title_ja": "名探偵コナン: コナンとキッドとクリスタルマザー",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 38124,
+          "bgm_name": "名探偵コナン コナンとキッドとクリスタル・マザー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2534,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 21051,
+      "bgm_name": "オリジナルビデオアニメーション アンジェリーク",
+      "bgm_name_cn": "安琪莉可 OVA",
+      "mal_title": "Angelique",
+      "mal_title_ja": "オリジナルビデオアニメーション アンジェリーク",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 21051,
+          "bgm_name": "オリジナルビデオアニメーション アンジェリーク",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2656,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 470,
+      "bgm_name": "ドラえもん のび太のワンニャン時空伝",
+      "bgm_name_cn": "哆啦A梦：大雄的猫狗时空传",
+      "mal_title": "Doraemon Movie 25: Nobita no Wan Nyan Jikuuden",
+      "mal_title_ja": "映画 ドラえもん のび太のワンニャン時空伝",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 470,
+          "bgm_name": "ドラえもん のび太のワンニャン時空伝",
+          "confidence": null
+        },
+        {
+          "bgm_id": 121751,
+          "bgm_name": "ドラえもんアニバーサリー25",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2740,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 39299,
+      "bgm_name": "モンキーターン",
+      "bgm_name_cn": "驰风！赛艇王",
+      "mal_title": "Monkey Turn",
+      "mal_title_ja": "モンキーターン",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 39299,
+          "bgm_name": "モンキーターン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2789,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 60199,
+      "bgm_name": "B-伝説! バトルビーダマン",
+      "bgm_name_cn": "B传说！战斗弹珠人",
+      "mal_title": "B-Legend! Battle B-Daman",
+      "mal_title_ja": "B-伝説(ビーレジェンド)! バトルビーダマン",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 60199,
+          "bgm_name": "B-伝説! バトルビーダマン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2861,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 74490,
+      "bgm_name": "制服処女 THE ANIMATION",
+      "bgm_name_cn": "制服处女",
+      "mal_title": "Seifuku Shojo The Animation",
+      "mal_title_ja": "制服処女 the Animation",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 74490,
+          "bgm_name": "制服処女 THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2956,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 92914,
+      "bgm_name": "真版女神探偵 VINUS FILE",
+      "bgm_name_cn": "",
+      "mal_title": "Shin-ban Megami Tantei Vinus File",
+      "mal_title_ja": "真版女神探偵 VINUS FILE",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 92914,
+          "bgm_name": "真版女神探偵 VINUS FILE",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 2958,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 62250,
+      "bgm_name": "人妻コスプレ喫茶",
+      "bgm_name_cn": "人妻cosplay喫茶",
+      "mal_title": "Hitozuma Cosplay Kissa",
+      "mal_title_ja": "人妻コスプレ喫茶",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 62250,
+          "bgm_name": "人妻コスプレ喫茶",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3305,
+          "bgm_name": "勇午 ～交渉人～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 4243,
+          "bgm_name": "ふたりはプリキュア",
+          "confidence": null
+        },
+        {
+          "bgm_id": 60199,
+          "bgm_name": "B-伝説! バトルビーダマン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3048,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 81728,
+      "bgm_name": "淫の方程式",
+      "bgm_name_cn": "淫乱方程式",
+      "mal_title": "In no Houteishiki",
+      "mal_title_ja": "淫の方程式",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 81728,
+          "bgm_name": "淫の方程式",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3379,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 77858,
+      "bgm_name": "御神楽探偵団",
+      "bgm_name_cn": "",
+      "mal_title": "Mikagura Tanteidan",
+      "mal_title_ja": "御神楽探偵団",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 77858,
+          "bgm_name": "御神楽探偵団",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 3638,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 209548,
+      "bgm_name": "かいけつゾロリ",
+      "bgm_name_cn": "怪侠佐罗利",
+      "mal_title": "Kaiketsu Zorori",
+      "mal_title_ja": "かいけつゾロリ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 209548,
+          "bgm_name": "かいけつゾロリ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 4558,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 36233,
+      "bgm_name": "雪夜一夜物語",
+      "bgm_name_cn": "",
+      "mal_title": "Yukiyo Ichiya Monogatari",
+      "mal_title_ja": "雪夜一夜物語",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 36233,
+          "bgm_name": "雪夜一夜物語",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 4803,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 75869,
+      "bgm_name": "河原崎家の一族2",
+      "bgm_name_cn": "河原崎家的一族2",
+      "mal_title": "Kawarazaki-ke no Ichizoku 2",
+      "mal_title_ja": "河原崎家の一族2",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 75869,
+          "bgm_name": "河原崎家の一族2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5208,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 194362,
+      "bgm_name": "初恋",
+      "bgm_name_cn": "初恋",
+      "mal_title": "Hatsukoi",
+      "mal_title_ja": "初恋",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 194362,
+          "bgm_name": "初恋",
+          "confidence": null
+        },
+        {
+          "bgm_id": 4243,
+          "bgm_name": "ふたりはプリキュア",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5408,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 78752,
+      "bgm_name": "Princess Holiday〜転がるりんご亭千夜一夜〜",
+      "bgm_name_cn": "公主假日",
+      "mal_title": "Princess Holiday: Korogaru Ringo Tei Senya Ichiya",
+      "mal_title_ja": "Princess Holiday ～転がるりんご亭千夜一夜～",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 78752,
+          "bgm_name": "Princess Holiday〜転がるりんご亭千夜一夜〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 470666,
+          "bgm_name": "テニスの王子様 THE BAND OF PRINCES FILM KICK THE FUTURE!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 5608,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 74291,
+      "bgm_name": "女教師 -肉体授業-",
+      "bgm_name_cn": "女教师 -肉体授业-",
+      "mal_title": "Onna Kyoushi: Nikutai Jugyou",
+      "mal_title_ja": "女教師 ―肉体授業―",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 74291,
+          "bgm_name": "女教師 -肉体授業-",
+          "confidence": null
+        },
+        {
+          "bgm_id": 245425,
+          "bgm_name": "女スパイ拷問 敵の基地は女体拷問所",
+          "confidence": null
+        },
+        {
+          "bgm_id": 74490,
+          "bgm_name": "制服処女 THE ANIMATION",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 7122,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Dai Yamato Zero-gou",
+      "mal_title_ja": "大ヤマト零号",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 90789,
+          "bgm_name": "ONE PIECE 守れ! 最後の大舞台",
+          "confidence": null
+        },
+        {
+          "bgm_id": 54608,
+          "bgm_name": "こちら葛飾区亀有公園前派出所 THE MOVIE2 UFO襲来! トルネード大作戦!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 470,
+          "bgm_name": "ドラえもん のび太のワンニャン時空伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 8965,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tottoko Hamtarou OVA 3: Hamuchanzu to Niji no Kuni no Oujisama - Sekai de Ichiban no Takaramono",
+      "mal_title_ja": "ハムちゃんずと虹の国の王子さま 〜せかいでいちばんのたからもの〜",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 3293,
+          "bgm_name": "ジャングルはいつもハレのちグゥ FINAL",
+          "confidence": null
+        },
+        {
+          "bgm_id": 4243,
+          "bgm_name": "ふたりはプリキュア",
+          "confidence": null
+        },
+        {
+          "bgm_id": 245425,
+          "bgm_name": "女スパイ拷問 敵の基地は女体拷問所",
+          "confidence": null
+        },
+        {
+          "bgm_id": 425945,
+          "bgm_name": "ASTRO BOY 鉄腕アトム特別編 輝ける地球〜あなたは青く、美しい…〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 36233,
+          "bgm_name": "雪夜一夜物語",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 10949,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Koukaku Kidoutai: Stand Alone Complex - Tachikoma na Hibi - Interval",
+      "mal_title_ja": "ファンディスク 攻殻機動隊 STAND ALONE COMPLEX-インターバル-",
+      "mal_media_type": "special",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11883,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Nendo no Tatakai 2",
+      "mal_title_ja": "ねんどのたたかい２",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311048,
+          "bgm_name": "ねんどのたたかい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 11897,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 311048,
+      "bgm_name": "ねんどのたたかい",
+      "bgm_name_cn": "黏土之战",
+      "mal_title": "Nendo no Tatakai",
+      "mal_title_ja": "ねんどのたたかい",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 311048,
+          "bgm_name": "ねんどのたたかい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 17963,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 425945,
+      "bgm_name": "ASTRO BOY 鉄腕アトム特別編 輝ける地球〜あなたは青く、美しい…〜",
+      "bgm_name_cn": "铁臂阿童木特别篇 辉煌的地球",
+      "mal_title": "Tetsuwan Atom: Kagayakeru Hoshi - Anata wa Aoku, Utsukushii...",
+      "mal_title_ja": "Tetsuwan Atom 鉄腕アトム 特別編: 輝ける地球 ~あなたは青く、美しい...~",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 425945,
+          "bgm_name": "ASTRO BOY 鉄腕アトム特別編 輝ける地球〜あなたは青く、美しい…〜",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 22231,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tenshi no Shippo Chu!: Tenshi no Utagoe",
+      "mal_title_ja": "天使のしっぽＣｈｕ！ ~総集編~ 天使の歌声 (うたごえ)",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 18616,
+          "bgm_name": "犬夜叉 天下覇道の剣",
+          "confidence": null
+        },
+        {
+          "bgm_id": 16221,
+          "bgm_name": "天罰エンジェルラビィ☆",
+          "confidence": null
+        },
+        {
+          "bgm_id": 20235,
+          "bgm_name": "聖闘士星矢 天界編 序奏 ~Overture~",
+          "confidence": null
+        },
+        {
+          "bgm_id": 98284,
+          "bgm_name": "王ドロボウJING in Seventh Heaven",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 23709,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 543908,
+      "bgm_name": "花と少年",
+      "bgm_name_cn": "花与少年",
+      "mal_title": "Hana to Shounen",
+      "mal_title_ja": "花と少年",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 543908,
+          "bgm_name": "花と少年",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 23983,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 109446,
+      "bgm_name": "ふぇちかの！",
+      "bgm_name_cn": "性癖淫女友！",
+      "mal_title": "Fuichin-san",
+      "mal_title_ja": "フイチンさん",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 304631,
+          "bgm_name": "ちはやふる番外編「新に会いにあわらへいこっさ！」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 435568,
+          "bgm_name": "新世紀GPXサイバーフォーミュラ EARLYDAYS RENEWAL",
+          "confidence": null
+        },
+        {
+          "bgm_id": 75183,
+          "bgm_name": "チンプイ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 89691,
+          "bgm_name": "チンプイ エリさま活動大写真",
+          "confidence": null
+        },
+        {
+          "bgm_id": 541961,
+          "bgm_name": "チンプイ エリさまのグッドラック",
+          "confidence": null
+        },
+        {
+          "bgm_id": 109446,
+          "bgm_name": "ふぇちかの！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 220082,
+          "bgm_name": "フクちゃん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 582792,
+          "bgm_name": "フクちゃんの潜水艦",
+          "confidence": null
+        },
+        {
+          "bgm_id": 103247,
+          "bgm_name": "フルエルクチビル",
+          "confidence": null
+        },
+        {
+          "bgm_id": 236098,
+          "bgm_name": "ちちぶでぶちち",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 24441,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Shiden Pilot",
+      "mal_title_ja": "SHIDEN",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 26115,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 325115,
+      "bgm_name": "盲導犬クイールの一生",
+      "bgm_name_cn": "导盲犬小Q的一生",
+      "mal_title": "Moudouken Quill no Isshou",
+      "mal_title_ja": "盲導犬クイールの一生",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 325115,
+          "bgm_name": "盲導犬クイールの一生",
+          "confidence": null
+        },
+        {
+          "bgm_id": 220059,
+          "bgm_name": "がんばれ! 盲導犬サーブ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 153087,
+          "bgm_name": "盲女与狐狸",
+          "confidence": null
+        },
+        {
+          "bgm_id": 115729,
+          "bgm_name": "Blind Spot",
+          "confidence": null
+        },
+        {
+          "bgm_id": 127201,
+          "bgm_name": "A Scanner Darkly",
+          "confidence": null
+        },
+        {
+          "bgm_id": 207438,
+          "bgm_name": "Vaysha, l'aveugle",
+          "confidence": null
+        },
+        {
+          "bgm_id": 388987,
+          "bgm_name": "Saules aveugles, femme endormie",
+          "confidence": null
+        },
+        {
+          "bgm_id": 392831,
+          "bgm_name": "Lumaajuuq",
+          "confidence": null
+        },
+        {
+          "bgm_id": 137115,
+          "bgm_name": "The Three Blind Mice",
+          "confidence": null
+        },
+        {
+          "bgm_id": 149209,
+          "bgm_name": "Three Blind Mouseketeers",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 29549,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Kitty to Daniel no Odoru Santa-san no Himitsu",
+      "mal_title_ja": "キティとダニエルのおどるサンタさんのひみつ",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 544373,
+          "bgm_name": "キティとミミィのハッピーバースデー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544837,
+          "bgm_name": "キティとミミィの新しい傘",
+          "confidence": null
+        },
+        {
+          "bgm_id": 314191,
+          "bgm_name": "ハローキティとミミィのハッピーバースデー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 545751,
+          "bgm_name": "ハローキティといっしょ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 85249,
+          "bgm_name": "ハローキティ りんごの森とパラレルタウン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 283835,
+          "bgm_name": "キキとララのはばたけ!ペガサス",
+          "confidence": null
+        },
+        {
+          "bgm_id": 294292,
+          "bgm_name": "きこりと宝物",
+          "confidence": null
+        },
+        {
+          "bgm_id": 614343,
+          "bgm_name": "キキとララのお姫さまになりたい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 614359,
+          "bgm_name": "キキとララのヘンゼルとグレーテル",
+          "confidence": null
+        },
+        {
+          "bgm_id": 614582,
+          "bgm_name": "キキとララの青い鳥",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 29611,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 111339,
+      "bgm_name": "Pa-Pa-Pa ザ★ムービー パーマン タコDEポン!アシHAポン!",
+      "bgm_name_cn": "Pa-Pa-Pa 电影小超人帕门：章鱼DE，砰，八条腿，砰！",
+      "mal_title": "Pa-Pa-Pa the ★ Movie: Perman - Tako de Pon! Ashi wa Pon!",
+      "mal_title_ja": "Pa-Pa-Pa ザ★ムービー パーマン タコDEポン! アシHAポン!",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 111339,
+          "bgm_name": "Pa-Pa-Pa ザ★ムービー パーマン タコDEポン!アシHAポン!",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 32255,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 159664,
+      "bgm_name": "あした・きらりん",
+      "bgm_name_cn": "",
+      "mal_title": "Ashita Kirarin",
+      "mal_title_ja": "あした・きらりん",
+      "mal_media_type": "ova",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 159664,
+          "bgm_name": "あした・きらりん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 49287,
+          "bgm_name": "映画 あたしンち",
+          "confidence": null
+        },
+        {
+          "bgm_id": 425945,
+          "bgm_name": "ASTRO BOY 鉄腕アトム特別編 輝ける地球〜あなたは青く、美しい…〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 111339,
+          "bgm_name": "Pa-Pa-Pa ザ★ムービー パーマン タコDEポン!アシHAポン!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3328,
+          "bgm_name": "ゆめりあ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 33315,
+          "bgm_name": "冬の日",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 35331,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Sugai-kun to Kazoku Ishi",
+      "mal_title_ja": "菅井君と家族石",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 387818,
+          "bgm_name": "5億年ボタン～菅原そうたのショートショート～",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 37112,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 121751,
+      "bgm_name": "ドラえもんアニバーサリー25",
+      "bgm_name_cn": "哆啦A梦25周年纪念日",
+      "mal_title": "Doraemon Anniversary 25",
+      "mal_title_ja": "ドラえもんアニバーサリー25",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 121751,
+          "bgm_name": "ドラえもんアニバーサリー25",
+          "confidence": null
+        },
+        {
+          "bgm_id": 470,
+          "bgm_name": "ドラえもん のび太のワンニャン時空伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 40695,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Zou da Zou",
+      "mal_title_ja": "象だゾウ",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 41306,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "JoJo no Kimyou na Bouken: Phantom Blood Pilot",
+      "mal_title_ja": "ジョジョの奇妙な冒険 ファントム ブラッド",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52642,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Shounen Sunday CM: Shijou Saikyou no Deshi Kenichi",
+      "mal_title_ja": "CM　小学館　少年サンデー　「史上最強の弟子　ケンイチ」編",
+      "mal_media_type": "cm",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 52697,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 110589,
+      "bgm_name": "蝴蝶夢－梁山伯與祝英台",
+      "bgm_name_cn": "蝴蝶梦：梁山伯与祝英台",
+      "mal_title": "Hudie Meng: Liang Shan Bo yu Zhu Ying Tai",
+      "mal_title_ja": "蝴蝶夢：梁山伯與祝英台",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 110589,
+          "bgm_name": "蝴蝶夢－梁山伯與祝英台",
+          "confidence": null
+        },
+        {
+          "bgm_id": 152003,
+          "bgm_name": "蝴蝶泉",
+          "confidence": null
+        },
+        {
+          "bgm_id": 172735,
+          "bgm_name": "三只蝴蝶",
+          "confidence": null
+        },
+        {
+          "bgm_id": 198496,
+          "bgm_name": "蝶のさいなん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 270229,
+          "bgm_name": "胡蝶綺 ～若き信長～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 295397,
+          "bgm_name": "Farfalla",
+          "confidence": null
+        },
+        {
+          "bgm_id": 364870,
+          "bgm_name": "Бабочка",
+          "confidence": null
+        },
+        {
+          "bgm_id": 479165,
+          "bgm_name": "خيال الفراشات",
+          "confidence": null
+        },
+        {
+          "bgm_id": 529722,
+          "bgm_name": "Papillon",
+          "confidence": null
+        },
+        {
+          "bgm_id": 612768,
+          "bgm_name": "Butterfly R.I.P. 1975",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 54169,
+      "season_id": "2004-winter",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 420047,
+      "bgm_name": "境界戦機 極鋼ノ装鬼",
+      "bgm_name_cn": "境界战机：极钢装鬼",
+      "mal_title": "Sou Ashi Sensha no Yuuutsu",
+      "mal_title_ja": "装脚戦車の憂鬱",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 187112,
+          "bgm_name": "装神少女まとい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 306668,
+          "bgm_name": "装煌聖姫イースフィア 〜淫虐の洗脳改造〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 10306,
+          "bgm_name": "獣装機攻ダンクーガノヴァ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 32165,
+          "bgm_name": "魔装機神サイバスター",
+          "confidence": null
+        },
+        {
+          "bgm_id": 298337,
+          "bgm_name": "霊装神姫イリュシオン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 373710,
+          "bgm_name": "金装のヴェルメイユ～崖っぷち魔術師は最強の厄災と魔法世界を突き進む～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 133387,
+          "bgm_name": "最弱無敗の神装機竜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 420047,
+          "bgm_name": "境界戦機 極鋼ノ装鬼",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58096,
+      "season_id": "2004-winter",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Neko Ningen no Atashi",
+      "mal_title_ja": "猫人間のあたし",
+      "mal_media_type": "music",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62351,
+      "season_id": "2004-winter",
+      "status": "pending",
+      "source": null,
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Mr. Calpaccio",
+      "mal_title_ja": "Mr.カルパッチョ",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 261536,
+          "bgm_name": "Mr. Bean: The Animated Series Season 3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    }
+  ],
+  "overrides": []
+}

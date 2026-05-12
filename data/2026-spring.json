@@ -1,0 +1,3256 @@
+{
+  "season": {
+    "id": "2026-spring",
+    "year": 2026,
+    "season": "spring",
+    "released_at": null,
+    "created_at": "2026-05-12T02:11:45.377265+00:00",
+    "updated_at": "2026-05-12T02:11:45.414635+00:00"
+  },
+  "items": [
+    {
+      "mal_id": 51553,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 377130,
+      "bgm_name": "とんがり帽子のアトリエ",
+      "bgm_name_cn": "尖帽子的魔法工房",
+      "mal_title": "Tongari Boushi no Atelier",
+      "mal_title_ja": "とんがり帽子のアトリエ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 377130,
+          "bgm_name": "とんがり帽子のアトリエ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 53732,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 409468,
+      "bgm_name": "左ききのエレン",
+      "bgm_name_cn": "左撇子艾伦",
+      "mal_title": "Hidarikiki no Eren",
+      "mal_title_ja": "左ききのエレン",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 409468,
+          "bgm_name": "左ききのエレン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56646,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "human",
+      "confidence": null,
+      "bgm_id": 454438,
+      "bgm_name": "北斗の拳",
+      "bgm_name_cn": "北斗神拳",
+      "mal_title": "Hokuto no Ken: Fist of the North Star",
+      "mal_title_ja": "北斗の拳 -FIST OF THE NORTH STAR-",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 8386,
+          "bgm_name": "北斗の拳",
+          "confidence": null
+        },
+        {
+          "bgm_id": 3844,
+          "bgm_name": "北斗の拳ラオウ外伝-天の覇王",
+          "confidence": null
+        },
+        {
+          "bgm_id": 53742,
+          "bgm_name": "北斗の拳2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 137436,
+          "bgm_name": "北斗の拳 イチゴ味",
+          "confidence": null
+        },
+        {
+          "bgm_id": 584833,
+          "bgm_name": "北斗の拳 拳王軍ザコたちの挽歌",
+          "confidence": null
+        },
+        {
+          "bgm_id": 637339,
+          "bgm_name": "北斗の拳 拳王軍ザコたちの挽歌 第2クール",
+          "confidence": null
+        },
+        {
+          "bgm_id": 62946,
+          "bgm_name": "DD北斗の拳",
+          "confidence": null
+        },
+        {
+          "bgm_id": 67437,
+          "bgm_name": "新・北斗の拳",
+          "confidence": null
+        },
+        {
+          "bgm_id": 144414,
+          "bgm_name": "DD北斗の拳2 イチゴ味+",
+          "confidence": null
+        },
+        {
+          "bgm_id": 118572,
+          "bgm_name": "真救世主伝説 北斗の拳 ユリア伝",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56734,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 456079,
+      "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+      "bgm_name_cn": "和班上第二可爱的女孩成为朋友",
+      "mal_title": "Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta",
+      "mal_title_ja": "クラスで２番目に可愛い女の子と友だちになった",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        },
+        {
+          "bgm_id": 508004,
+          "bgm_name": "Dr.STONE SCIENCE FUTURE 第3クール",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 56876,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 458684,
+      "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+      "bgm_name_cn": "关于邻家的天使大人不知不觉把我惯成了废人这档子事 第二季",
+      "mal_title": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken 2",
+      "mal_title_ja": "お隣の天使様にいつの間にか駄目人間にされていた件 2期制",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 605312,
+          "bgm_name": "おしり前マン〜復活のおしり前帝国〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616378,
+          "bgm_name": "おでかけ子ザメ シーズン2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 625355,
+          "bgm_name": "おしりたんてい 第10シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 632411,
+          "bgm_name": "性指導員のお仕事 The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57466,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 469104,
+      "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
+      "bgm_name_cn": "小书痴的下克上 〜为了成为图书管理员而不择手段〜 第四季",
+      "mal_title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo",
+      "mal_title_ja": "本好きの下剋上 ～司書になるためには手段を選んでいられません～ 領主の養女",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 469104,
+          "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616453,
+          "bgm_name": "大きい女の子は好きですか？",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 57779,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 474371,
+      "bgm_name": "ドロヘドロ Season 2",
+      "bgm_name_cn": "异兽魔都 第二季",
+      "mal_title": "Dorohedoro Season 2",
+      "mal_title_ja": "ドロヘドロ Season2",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 474371,
+          "bgm_name": "ドロヘドロ Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515856,
+          "bgm_name": "杖と剣のウィストリア Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 547888,
+          "bgm_name": "Re:ゼロから始める異世界生活 4th season 喪失編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576351,
+          "bgm_name": "黒猫と魔女の教室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615797,
+          "bgm_name": "蛇と蜘蛛",
+          "confidence": null
+        },
+        {
+          "bgm_id": 551123,
+          "bgm_name": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 631928,
+          "bgm_name": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+          "confidence": null
+        },
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58820,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 493724,
+      "bgm_name": "淡島百景",
+      "bgm_name_cn": "淡岛百景",
+      "mal_title": "Awajima Hyakkei",
+      "mal_title_ja": "淡島百景",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 493724,
+          "bgm_name": "淡島百景",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58832,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 493804,
+      "bgm_name": "クジマ歌えば家ほろろ",
+      "bgm_name_cn": "库兹马唱歌的话家里哆啰啰",
+      "mal_title": "Kujima Utaeba Ie Hororo",
+      "mal_title_ja": "クジマ歌えば家ほろろ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 493804,
+          "bgm_name": "クジマ歌えば家ほろろ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 532772,
+          "bgm_name": "クマーバ シーズン3",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 58877,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 495238,
+      "bgm_name": "ダイヤのA actⅡ Second Season",
+      "bgm_name_cn": "钻石王牌 act2 第二季",
+      "mal_title": "Diamond no Ace: Act II Second Season",
+      "mal_title_ja": "ダイヤのA actⅡ Second Season",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 495238,
+          "bgm_name": "ダイヤのA actⅡ Second Season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623854,
+          "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 624836,
+          "bgm_name": "新幹線変形ロボ シンカリオン 特別ダイヤ版",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 537722,
+          "bgm_name": "レプリカだって、恋をする。",
+          "confidence": null
+        },
+        {
+          "bgm_id": 564289,
+          "bgm_name": "愛してるゲームを終わらせたい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59174,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 501729,
+      "bgm_name": "劇場版 魔法科高校の劣等生 四葉継承編",
+      "bgm_name_cn": "剧场版 魔法科高校的劣等生 四叶继承篇",
+      "mal_title": "Mahouka Koukou no Rettousei Movie: Yotsuba Keishou-hen",
+      "mal_title_ja": "魔法科高校の劣等生 四葉継承編",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 501729,
+          "bgm_name": "劇場版 魔法科高校の劣等生 四葉継承編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 501796,
+          "bgm_name": "魔法の姉妹ルルットリリィ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 377130,
+          "bgm_name": "とんがり帽子のアトリエ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 524486,
+          "bgm_name": "魔入りました！入間くん 第4シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 621358,
+          "bgm_name": "魔物喰らいの冒険者～俺だけ魔物を喰らって強くなる～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576351,
+          "bgm_name": "黒猫と魔女の教室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 474371,
+          "bgm_name": "ドロヘドロ Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515856,
+          "bgm_name": "杖と剣のウィストリア Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59176,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 501796,
+      "bgm_name": "魔法の姉妹ルルットリリィ",
+      "bgm_name_cn": "魔法姐妹露露特莉莉",
+      "mal_title": "Mahou no Shimai Lulutto Lilly",
+      "mal_title_ja": "魔法の姉妹ルルットリリィ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 501796,
+          "bgm_name": "魔法の姉妹ルルットリリィ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 501729,
+          "bgm_name": "劇場版 魔法科高校の劣等生 四葉継承編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 377130,
+          "bgm_name": "とんがり帽子のアトリエ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576351,
+          "bgm_name": "黒猫と魔女の教室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 621358,
+          "bgm_name": "魔物喰らいの冒険者～俺だけ魔物を喰らって強くなる～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515856,
+          "bgm_name": "杖と剣のウィストリア Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 524486,
+          "bgm_name": "魔入りました！入間くん 第4シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 474371,
+          "bgm_name": "ドロヘドロ Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59393,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 505258,
+      "bgm_name": "ニワトリ・ファイター",
+      "bgm_name_cn": "公鸡斗士",
+      "mal_title": "Niwatori Fighter",
+      "mal_title_ja": "ニワトリ・ファイター",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 505258,
+          "bgm_name": "ニワトリ・ファイター",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59443,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 506149,
+      "bgm_name": "リィンカーネーションの花弁",
+      "bgm_name_cn": "轮回的花瓣",
+      "mal_title": "Reincarnation no Kaben",
+      "mal_title_ja": "リィンカーネーションの花弁",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 506149,
+          "bgm_name": "リィンカーネーションの花弁",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59551,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 508455,
+      "bgm_name": "ガンバレ！中村くん!!",
+      "bgm_name_cn": "加油吧！中村君!!",
+      "mal_title": "Ganbare! Nakamura-kun!!",
+      "mal_title_ja": "ガンバレ！中村くん!!",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 508455,
+          "bgm_name": "ガンバレ！中村くん!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 636546,
+          "bgm_name": "『機動武闘伝Gガンダム』30周年記念ファイティングムービー",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59708,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 510710,
+      "bgm_name": "ようこそ実力至上主義の教室へ 4th Season",
+      "bgm_name_cn": "欢迎来到实力至上主义教室 第四季",
+      "mal_title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki",
+      "mal_title_ja": "ようこそ実力至上主義の教室へ 4th Season 2年生編1学期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 510710,
+          "bgm_name": "ようこそ実力至上主義の教室へ 4th Season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 526789,
+          "bgm_name": "よわよわ先生",
+          "confidence": null
+        },
+        {
+          "bgm_id": 633305,
+          "bgm_name": "ヨルシカ - 千鳥（OFFICIAL VIDEO）",
+          "confidence": null
+        },
+        {
+          "bgm_id": 473416,
+          "bgm_name": "ヤマトよ永遠に REBEL3199 第六章 碧い迷宮",
+          "confidence": null
+        },
+        {
+          "bgm_id": 599171,
+          "bgm_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59835,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 513208,
+      "bgm_name": "霧尾ファンクラブ",
+      "bgm_name_cn": "雾尾粉丝后援会",
+      "mal_title": "Kirio Fanclub",
+      "mal_title_ja": "霧尾ファンクラブ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 513208,
+          "bgm_name": "霧尾ファンクラブ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59889,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 217071,
+      "bgm_name": "機動警察パトレイバー EZY File 1",
+      "bgm_name_cn": "机动警察 EZY 第一章",
+      "mal_title": "Kidou Keisatsu Patlabor: EZY",
+      "mal_title_ja": "機動警察パトレイバー EZY（イズィー）",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 217071,
+          "bgm_name": "機動警察パトレイバー EZY File 1",
+          "confidence": null
+        },
+        {
+          "bgm_id": 636546,
+          "bgm_name": "『機動武闘伝Gガンダム』30周年記念ファイティングムービー",
+          "confidence": null
+        },
+        {
+          "bgm_id": 585790,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う 3rd season",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59970,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 515594,
+      "bgm_name": "転生したらスライムだった件 第4期",
+      "bgm_name_cn": "关于我转生变成史莱姆这档事 第四季",
+      "mal_title": "Tensei shitara Slime Datta Ken 4th Season",
+      "mal_title_ja": "転生したらスライムだった件 第4期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 515594,
+          "bgm_name": "転生したらスライムだった件 第4期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623854,
+          "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 59983,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 515856,
+      "bgm_name": "杖と剣のウィストリア Season 2",
+      "bgm_name_cn": "杖与剑的魔剑谭 第二季",
+      "mal_title": "Tsue to Tsurugi no Wistoria Season 2",
+      "mal_title_ja": "杖と剣のウィストリア Season 2",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 515856,
+          "bgm_name": "杖と剣のウィストリア Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60028,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 516543,
+      "bgm_name": "姫騎士は蛮族の嫁",
+      "bgm_name_cn": "姬骑士是蛮族的新娘",
+      "mal_title": "Himekishi wa Barbaroi no Yome",
+      "mal_title_ja": "姫騎士は蛮族の嫁",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 516543,
+          "bgm_name": "姫騎士は蛮族の嫁",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60055,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 517027,
+      "bgm_name": "夜桜さんちの大作戦 第2期",
+      "bgm_name_cn": "夜樱家的大作战 第二季",
+      "mal_title": "Yozakura-san Chi no Daisakusen 2nd Season",
+      "mal_title_ja": "夜桜さんちの大作戦 第2期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 517027,
+          "bgm_name": "夜桜さんちの大作戦 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 627137,
+          "bgm_name": "百鬼夜行抄",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60153,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 520633,
+      "bgm_name": "リラックマ",
+      "bgm_name_cn": "轻松熊",
+      "mal_title": "Rilakkuma",
+      "mal_title_ja": "リラックマ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 520633,
+          "bgm_name": "リラックマ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60310,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 524486,
+      "bgm_name": "魔入りました！入間くん 第4シリーズ",
+      "bgm_name_cn": "入间同学入魔了 第四季",
+      "mal_title": "Mairimashita! Iruma-kun 4th Season",
+      "mal_title_ja": "魔入りました！入間くん 第4シリーズ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 524486,
+          "bgm_name": "魔入りました！入間くん 第4シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 474371,
+          "bgm_name": "ドロヘドロ Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60444,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 526789,
+      "bgm_name": "よわよわ先生",
+      "bgm_name_cn": "弱弱老师",
+      "mal_title": "Yowayowa Sensei",
+      "mal_title_ja": "よわよわ先生",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 526789,
+          "bgm_name": "よわよわ先生",
+          "confidence": null
+        },
+        {
+          "bgm_id": 473416,
+          "bgm_name": "ヤマトよ永遠に REBEL3199 第六章 碧い迷宮",
+          "confidence": null
+        },
+        {
+          "bgm_id": 510710,
+          "bgm_name": "ようこそ実力至上主義の教室へ 4th Season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 633305,
+          "bgm_name": "ヨルシカ - 千鳥（OFFICIAL VIDEO）",
+          "confidence": null
+        },
+        {
+          "bgm_id": 599171,
+          "bgm_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60592,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 405232,
+      "bgm_name": "大道独行之蝶龙变",
+      "bgm_name_cn": "大道独行之蝶龙变",
+      "mal_title": "Dadao Duxing: Die Long Bian",
+      "mal_title_ja": "大道独行之蝶龙变",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 405232,
+          "bgm_name": "大道独行之蝶龙变",
+          "confidence": null
+        },
+        {
+          "bgm_id": 625971,
+          "bgm_name": "大賢者リドルの時間逆行",
+          "confidence": null
+        },
+        {
+          "bgm_id": 517027,
+          "bgm_name": "夜桜さんちの大作戦 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 604307,
+          "bgm_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 473416,
+          "bgm_name": "ヤマトよ永遠に REBEL3199 第六章 碧い迷宮",
+          "confidence": null
+        },
+        {
+          "bgm_id": 484701,
+          "bgm_name": "The Super Mario Galaxy Movie",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544627,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第3幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544628,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第4幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 552589,
+          "bgm_name": "カナン様はあくまでチョロい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 60852,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 535669,
+      "bgm_name": "氷の城壁",
+      "bgm_name_cn": "冰之城墙",
+      "mal_title": "Koori no Jouheki",
+      "mal_title_ja": "氷の城壁",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 535669,
+          "bgm_name": "氷の城壁",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61013,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 537722,
+      "bgm_name": "レプリカだって、恋をする。",
+      "bgm_name_cn": "复制品的我也会谈恋爱。",
+      "mal_title": "Replica datte, Koi wo Suru.",
+      "mal_title_ja": "レプリカだって、恋をする。",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 537722,
+          "bgm_name": "レプリカだって、恋をする。",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61186,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 543360,
+      "bgm_name": "上伊那ぼたん、酔へる姿は百合の花",
+      "bgm_name_cn": "上伊那牡丹，酒醉身姿似百合花般",
+      "mal_title": "Kamiina Botan, Yoeru Sugata wa Yuri no Hana",
+      "mal_title_ja": "上伊那ぼたん、酔へる姿は百合の花",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 543360,
+          "bgm_name": "上伊那ぼたん、酔へる姿は百合の花",
+          "confidence": null
+        },
+        {
+          "bgm_id": 469104,
+          "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544816,
+          "bgm_name": "最終楽章 響け！ユーフォニアム 前編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61202,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 505562,
+      "bgm_name": "劇場版 モノノ怪 蛇神",
+      "bgm_name_cn": "剧场版 物怪 蛇神",
+      "mal_title": "Mononoke Movie 3: Hebigami",
+      "mal_title_ja": "劇場版モノノ怪 第三章 蛇神",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 505562,
+          "bgm_name": "劇場版 モノノ怪 蛇神",
+          "confidence": null
+        },
+        {
+          "bgm_id": 501729,
+          "bgm_name": "劇場版 魔法科高校の劣等生 四葉継承編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 583746,
+          "bgm_name": "劇場版 暗殺教室 みんなの時間",
+          "confidence": null
+        },
+        {
+          "bgm_id": 577190,
+          "bgm_name": "遮天剧场版 背棺战王腾",
+          "confidence": null
+        },
+        {
+          "bgm_id": 590353,
+          "bgm_name": "マリッジトキシン",
+          "confidence": null
+        },
+        {
+          "bgm_id": 564361,
+          "bgm_name": "Stranger Things: Tales From '85",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61230,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 544816,
+      "bgm_name": "最終楽章 響け！ユーフォニアム 前編",
+      "bgm_name_cn": "最终乐章 吹响吧！上低音号 前篇",
+      "mal_title": "Saishuu Gakushou Hibike! Euphonium",
+      "mal_title_ja": "最終楽章 響け！ユーフォニアム",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 544816,
+          "bgm_name": "最終楽章 響け！ユーフォニアム 前編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 485990,
+          "bgm_name": "BEASTARS FINAL SEASON Part2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 565304,
+          "bgm_name": "最強の王様、二度目の人生は何をする？ Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 599171,
+          "bgm_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61316,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 547888,
+      "bgm_name": "Re:ゼロから始める異世界生活 4th season 喪失編",
+      "bgm_name_cn": "Re：从零开始的异世界生活 第四季 丧失篇",
+      "mal_title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+      "mal_title_ja": "Re:ゼロから始める異世界生活 4th season",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 547888,
+          "bgm_name": "Re:ゼロから始める異世界生活 4th season 喪失編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61425,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 551123,
+      "bgm_name": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+      "bgm_name_cn": "木头风纪委员和迷你裙JK的故事",
+      "mal_title": "Ponkotsu Fuuki Iin to Skirt-take ga Futekisetsu na JK no Hanashi",
+      "mal_title_ja": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 551123,
+          "bgm_name": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61443,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 551455,
+      "bgm_name": "春夏秋冬代行者 春の舞",
+      "bgm_name_cn": "春夏秋冬代行者 春之舞",
+      "mal_title": "Shunkashuutou Daikousha: Haru no Mai",
+      "mal_title_ja": "春夏秋冬代行者 春の舞",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 551455,
+          "bgm_name": "春夏秋冬代行者 春の舞",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61501,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 552589,
+      "bgm_name": "カナン様はあくまでチョロい",
+      "bgm_name_cn": "迦楠大人的白给是恶魔级",
+      "mal_title": "Kanan-sama wa Akumade Choroi",
+      "mal_title_ja": "カナン様はあくまでチョロい",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 552589,
+          "bgm_name": "カナン様はあくまでチョロい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 635233,
+          "bgm_name": "こんなこいるかな",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616453,
+          "bgm_name": "大きい女の子は好きですか？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623854,
+          "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 541814,
+          "bgm_name": "アイアイドルマスター ミリオンライブ！～いつか、真ん中で～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61687,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 558088,
+      "bgm_name": "自称悪役令嬢な婚約者の観察記録。",
+      "bgm_name_cn": "自称恶役大小姐的婚约者观察记录。",
+      "mal_title": "Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku.",
+      "mal_title_ja": "自称悪役令嬢な婚約者の観察記録。",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 558088,
+          "bgm_name": "自称悪役令嬢な婚約者の観察記録。",
+          "confidence": null
+        },
+        {
+          "bgm_id": 585790,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う 3rd season",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61806,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 563256,
+      "bgm_name": "映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+      "bgm_name_cn": "电影 莲之空女学院学园偶像俱乐部 Bloom Garden Party",
+      "mal_title": "Love Live! Hasunosora Jogakuin School Idol Club Movie: Bloom Garden Party",
+      "mal_title_ja": "映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 563256,
+          "bgm_name": "映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+          "confidence": null
+        },
+        {
+          "bgm_id": 552670,
+          "bgm_name": "映画 えんとつ町のプペル 〜約束の時計台〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 611768,
+          "bgm_name": "映画ひみつのアイプリ まんかいバズリウムライブ！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61831,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 565304,
+      "bgm_name": "最強の王様、二度目の人生は何をする？ Season 2",
+      "bgm_name_cn": "最强王者的第二人生 第二季",
+      "mal_title": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? Season 2",
+      "mal_title_ja": "最強の王様、二度目の人生は何をする? Season2",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 565304,
+          "bgm_name": "最強の王様、二度目の人生は何をする？ Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 599171,
+          "bgm_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544816,
+          "bgm_name": "最終楽章 響け！ユーフォニアム 前編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 485990,
+          "bgm_name": "BEASTARS FINAL SEASON Part2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61839,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 564289,
+      "bgm_name": "愛してるゲームを終わらせたい",
+      "bgm_name_cn": "想结束这场“我爱你”的游戏",
+      "mal_title": "Aishiteru Game wo Owarasetai",
+      "mal_title_ja": "愛してるゲームを終わらせたい",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 564289,
+          "bgm_name": "愛してるゲームを終わらせたい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61931,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 567234,
+      "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+      "bgm_name_cn": "身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力。 第二季",
+      "mal_title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu. Season 2",
+      "mal_title_ja": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。Season2",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 61943,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 567418,
+      "bgm_name": "灰原くんの強くて青春ニューゲーム",
+      "bgm_name_cn": "灰原同学重返过去，开启所向无敌的第二轮青春游戏",
+      "mal_title": "Haibara-kun no Tsuyokute Seishun New Game",
+      "mal_title_ja": "灰原くんの強くて青春ニューゲーム",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 567418,
+          "bgm_name": "灰原くんの強くて青春ニューゲーム",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62001,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 568572,
+      "bgm_name": "黄泉のツガイ",
+      "bgm_name_cn": "黄泉的使者",
+      "mal_title": "Yomi no Tsugai",
+      "mal_title_ja": "黄泉のツガイ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 568572,
+          "bgm_name": "黄泉のツガイ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62018,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 569161,
+      "bgm_name": "一畳間まんきつ暮らし！",
+      "bgm_name_cn": "一叠间漫画咖啡屋生活！",
+      "mal_title": "Ichijouma Mankitsugurashi!",
+      "mal_title_ja": "一畳間まんきつ暮らし！",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 569161,
+          "bgm_name": "一畳間まんきつ暮らし！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62048,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 570448,
+      "bgm_name": "MAO",
+      "bgm_name_cn": "摩绪",
+      "mal_title": "Mao",
+      "mal_title_ja": "MAO",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 570448,
+          "bgm_name": "MAO",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62050,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 570584,
+      "bgm_name": "神の庭付き楠木邸",
+      "bgm_name_cn": "楠木邸的神明庭院",
+      "mal_title": "Kami no Niwatsuki Kusunoki-tei",
+      "mal_title_ja": "神の庭付き楠木邸",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 570584,
+          "bgm_name": "神の庭付き楠木邸",
+          "confidence": null
+        },
+        {
+          "bgm_id": 609175,
+          "bgm_name": "神の雫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 505562,
+          "bgm_name": "劇場版 モノノ怪 蛇神",
+          "confidence": null
+        },
+        {
+          "bgm_id": 434759,
+          "bgm_name": "搜神记",
+          "confidence": null
+        },
+        {
+          "bgm_id": 282118,
+          "bgm_name": "こめかみっ！ガールズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62068,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 571555,
+      "bgm_name": "スノウボールアース",
+      "bgm_name_cn": "冻结地球",
+      "mal_title": "Snowball Earth",
+      "mal_title_ja": "スノウボールアース",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 571555,
+          "bgm_name": "スノウボールアース",
+          "confidence": null
+        },
+        {
+          "bgm_id": 563256,
+          "bgm_name": "映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+          "confidence": null
+        },
+        {
+          "bgm_id": 604307,
+          "bgm_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+          "confidence": null
+        },
+        {
+          "bgm_id": 637077,
+          "bgm_name": "プリマドンナ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62146,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 575057,
+      "bgm_name": "異世界のんびり農家２",
+      "bgm_name_cn": "异世界悠闲农家 第二季",
+      "mal_title": "Isekai Nonbiri Nouka 2",
+      "mal_title_ja": "異世界のんびり農家2",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 575057,
+          "bgm_name": "異世界のんびり農家２",
+          "confidence": null
+        },
+        {
+          "bgm_id": 459601,
+          "bgm_name": "異世界でチート能力を手にした俺は、現実世界をも無双する～レベルアップは人生を変えた～ スペシャル",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623854,
+          "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 547888,
+          "bgm_name": "Re:ゼロから始める異世界生活 4th season 喪失編",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62164,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 576121,
+      "bgm_name": "あかね噺",
+      "bgm_name_cn": "落语朱音",
+      "mal_title": "Akane-banashi",
+      "mal_title_ja": "あかね噺",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 576121,
+          "bgm_name": "あかね噺",
+          "confidence": null
+        },
+        {
+          "bgm_id": 541814,
+          "bgm_name": "アイアイドルマスター ミリオンライブ！～いつか、真ん中で～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 571555,
+          "bgm_name": "スノウボールアース",
+          "confidence": null
+        },
+        {
+          "bgm_id": 611768,
+          "bgm_name": "映画ひみつのアイプリ まんかいバズリウムライブ！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62171,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 576351,
+      "bgm_name": "黒猫と魔女の教室",
+      "bgm_name_cn": "黑猫与魔女的教室",
+      "mal_title": "Kuroneko to Majo no Kyoushitsu",
+      "mal_title_ja": "黒猫と魔女の教室",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 576351,
+          "bgm_name": "黒猫と魔女の教室",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62331,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 580133,
+      "bgm_name": "LIAR GAME",
+      "bgm_name_cn": "欺诈游戏",
+      "mal_title": "Liar Game",
+      "mal_title_ja": "LIAR GAME",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 580133,
+          "bgm_name": "LIAR GAME",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62342,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 580473,
+      "bgm_name": "メイドさんは食べるだけ",
+      "bgm_name_cn": "女仆小姐的贪吃日常",
+      "mal_title": "Maid-san wa Taberu dake",
+      "mal_title_ja": "メイドさんは食べるだけ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 580473,
+          "bgm_name": "メイドさんは食べるだけ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62387,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 581920,
+      "bgm_name": "名探偵コナン ハイウェイの堕天使",
+      "bgm_name_cn": "名侦探柯南 高速公路的堕天使",
+      "mal_title": "Meitantei Conan Movie 29: Highway no Datenshi",
+      "mal_title_ja": "名探偵コナン ハイウェイの堕天使",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 581920,
+          "bgm_name": "名探偵コナン ハイウェイの堕天使",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62391,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 581284,
+      "bgm_name": "キルアオ",
+      "bgm_name_cn": "杀手青春",
+      "mal_title": "Kill Ao",
+      "mal_title_ja": "キルアオ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 581284,
+          "bgm_name": "キルアオ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 636424,
+          "bgm_name": "ヌきヌき♡ずっぽしイズム",
+          "confidence": null
+        },
+        {
+          "bgm_id": 631928,
+          "bgm_name": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62485,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 533027,
+      "bgm_name": "彼女、お借りします 第5期",
+      "bgm_name_cn": "租借女友 第五季",
+      "mal_title": "Kanojo, Okarishimasu 5th Season",
+      "mal_title_ja": "彼女、お借りします 第5期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62495,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 582598,
+      "bgm_name": "ねずみくんのチョッキ",
+      "bgm_name_cn": "",
+      "mal_title": "Nezumi-kun no Chokki (TV)",
+      "mal_title_ja": "ねずみくんのチョッキ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 582598,
+          "bgm_name": "ねずみくんのチョッキ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62512,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 585790,
+      "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う 3rd season",
+      "bgm_name_cn": "转生成自动贩卖机的我今天也在迷宫徘徊 第三季",
+      "mal_title": "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou 3rd Season",
+      "mal_title_ja": "自動販売機に生まれ変わった俺は迷宮を彷徨う3期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 585790,
+          "bgm_name": "自動販売機に生まれ変わった俺は迷宮を彷徨う 3rd season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 558088,
+          "bgm_name": "自称悪役令嬢な婚約者の観察記録。",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62568,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 508004,
+      "bgm_name": "Dr.STONE SCIENCE FUTURE 第3クール",
+      "bgm_name_cn": "石纪元 科学与未来 第3部分",
+      "mal_title": "Dr. Stone: Science Future Part 3",
+      "mal_title_ja": "Dr.STONE SCIENCE FUTURE 第3クール",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 508004,
+          "bgm_name": "Dr.STONE SCIENCE FUTURE 第3クール",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62601,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 590353,
+      "bgm_name": "マリッジトキシン",
+      "bgm_name_cn": "婚姻剧毒",
+      "mal_title": "Marriagetoxin",
+      "mal_title_ja": "マリッジトキシン",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 590353,
+          "bgm_name": "マリッジトキシン",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62604,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 590393,
+      "bgm_name": "オタクに優しいギャルはいない!?",
+      "bgm_name_cn": "没有辣妹会对阿宅温柔!?",
+      "mal_title": "Otaku ni Yasashii Gal wa Inai!?",
+      "mal_title_ja": "オタクに優しいギャルはいない!?",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 590393,
+          "bgm_name": "オタクに優しいギャルはいない!?",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 605312,
+          "bgm_name": "おしり前マン〜復活のおしり前帝国〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616378,
+          "bgm_name": "おでかけ子ザメ シーズン2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 625355,
+          "bgm_name": "おしりたんてい 第10シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 632411,
+          "bgm_name": "性指導員のお仕事 The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62825,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 599171,
+      "bgm_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+      "bgm_name_cn": "最强的职业不是勇者也不是贤者好像是鉴定士(伪)的样子?",
+      "mal_title": "Saikyou no Shokugyou wa Yuusha demo Kenja demo Naku Kanteishi (Kari) Rashii desu yo?",
+      "mal_title_ja": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 599171,
+          "bgm_name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 565304,
+          "bgm_name": "最強の王様、二度目の人生は何をする？ Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544816,
+          "bgm_name": "最終楽章 響け！ユーフォニアム 前編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 485990,
+          "bgm_name": "BEASTARS FINAL SEASON Part2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62852,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 600675,
+      "bgm_name": "ゴーストコンサート : missing Songs",
+      "bgm_name_cn": "幽灵音乐会",
+      "mal_title": "Ghost Concert: Missing Songs",
+      "mal_title_ja": "ゴーストコンサート: missing Songs",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 600675,
+          "bgm_name": "ゴーストコンサート : missing Songs",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62893,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 604307,
+      "bgm_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+      "bgm_name_cn": "关于虽然逃走的鱼很大、但钓上来的鱼却太大了这件事",
+      "mal_title": "Nigashita Sakana wa Ookikatta ga Tsuriageta Sakana ga Ookisugita Ken",
+      "mal_title_ja": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 604307,
+          "bgm_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62913,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 606263,
+      "bgm_name": "NEEDY GIRL OVERDOSE",
+      "bgm_name_cn": "主播女孩重度依赖",
+      "mal_title": "Needy Girl Overdose",
+      "mal_title_ja": "NEEDY GIRL OVERDOSE",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 606263,
+          "bgm_name": "NEEDY GIRL OVERDOSE",
+          "confidence": null
+        },
+        {
+          "bgm_id": 620918,
+          "bgm_name": "NEEDY GIRL OVERDOSE -OVERTURE-",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62933,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 607043,
+      "bgm_name": "小3アシベ QQゴマちゃん",
+      "bgm_name_cn": "小3阿贝 QQ小芝麻",
+      "mal_title": "Shou 3 Ashibe QQ Goma-chan",
+      "mal_title_ja": "小３アシベ QQゴマちゃん",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 607043,
+          "bgm_name": "小3アシベ QQゴマちゃん",
+          "confidence": null
+        },
+        {
+          "bgm_id": 469104,
+          "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616378,
+          "bgm_name": "おでかけ子ザメ シーズン2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62964,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 608227,
+      "bgm_name": "また殺されてしまったのですね、探偵様",
+      "bgm_name_cn": "又被杀掉了呢，侦探大人",
+      "mal_title": "Mata Korosarete Shimatta no desu ne, Tantei-sama",
+      "mal_title_ja": "また殺されてしまったのですね、探偵様",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 608227,
+          "bgm_name": "また殺されてしまったのですね、探偵様",
+          "confidence": null
+        },
+        {
+          "bgm_id": 524486,
+          "bgm_name": "魔入りました！入間くん 第4シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 605312,
+          "bgm_name": "おしり前マン〜復活のおしり前帝国〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623063,
+          "bgm_name": "それいけ！アンパンマン パンタンと約束の星",
+          "confidence": null
+        },
+        {
+          "bgm_id": 469104,
+          "bgm_name": "本好きの下剋上 〜司書になるためには手段を選んでいられません〜 第4期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 570448,
+          "bgm_name": "MAO",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62981,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 609175,
+      "bgm_name": "神の雫",
+      "bgm_name_cn": "神之水滴",
+      "mal_title": "Kami no Shizuku",
+      "mal_title_ja": "神の雫",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 609175,
+          "bgm_name": "神の雫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 570584,
+          "bgm_name": "神の庭付き楠木邸",
+          "confidence": null
+        },
+        {
+          "bgm_id": 505562,
+          "bgm_name": "劇場版 モノノ怪 蛇神",
+          "confidence": null
+        },
+        {
+          "bgm_id": 434759,
+          "bgm_name": "搜神记",
+          "confidence": null
+        },
+        {
+          "bgm_id": 282118,
+          "bgm_name": "こめかみっ！ガールズ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 62983,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 609183,
+      "bgm_name": "茉莉花ちゃんの好感度はぶっ壊れている",
+      "bgm_name_cn": "茉莉花酱的好感度正在崩坏",
+      "mal_title": "Marika-chan no Koukando wa Bukkowareteiru",
+      "mal_title_ja": "茉莉花ちゃんの好感度はぶっ壊れている",
+      "mal_media_type": "tv",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 609183,
+          "bgm_name": "茉莉花ちゃんの好感度はぶっ壊れている",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63014,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 610703,
+      "bgm_name": "ただいま、おじゃまされます！",
+      "bgm_name_cn": "当前、正被打扰中！",
+      "mal_title": "Tadaima, Ojamasaremasu!",
+      "mal_title_ja": "ただいま、おじゃまされます！",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        },
+        {
+          "bgm_id": 495238,
+          "bgm_name": "ダイヤのA actⅡ Second Season",
+          "confidence": null
+        },
+        {
+          "bgm_id": 624836,
+          "bgm_name": "新幹線変形ロボ シンカリオン 特別ダイヤ版",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63125,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 616378,
+      "bgm_name": "おでかけ子ザメ シーズン2",
+      "bgm_name_cn": "小鲨鱼去郊游 第二季",
+      "mal_title": "Odekake Kozame 2nd Season",
+      "mal_title_ja": "おでかけ子ザメ シーズン2",
+      "mal_media_type": "ona",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 616378,
+          "bgm_name": "おでかけ子ザメ シーズン2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 605312,
+          "bgm_name": "おしり前マン〜復活のおしり前帝国〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 625355,
+          "bgm_name": "おしりたんてい 第10シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 632411,
+          "bgm_name": "性指導員のお仕事 The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63130,
+      "season_id": "2026-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Boku no Hero Academia: More",
+      "mal_title_ja": "僕のヒーローアカデミア More",
+      "mal_media_type": "tv_special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63153,
+      "season_id": "2026-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Hyakushou Kizoku 3rd Season Specials",
+      "mal_title_ja": "百姓貴族 3rd Season",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63248,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 616453,
+      "bgm_name": "大きい女の子は好きですか？",
+      "bgm_name_cn": "这样高大的女孩子你喜欢吗？",
+      "mal_title": "Ookii Onnanoko wa Suki desu ka?",
+      "mal_title_ja": "大きい女の子は好きですか？",
+      "mal_media_type": "ona",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 616453,
+          "bgm_name": "大きい女の子は好きですか？",
+          "confidence": null
+        },
+        {
+          "bgm_id": 604307,
+          "bgm_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+          "confidence": null
+        },
+        {
+          "bgm_id": 625971,
+          "bgm_name": "大賢者リドルの時間逆行",
+          "confidence": null
+        },
+        {
+          "bgm_id": 517027,
+          "bgm_name": "夜桜さんちの大作戦 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 473416,
+          "bgm_name": "ヤマトよ永遠に REBEL3199 第六章 碧い迷宮",
+          "confidence": null
+        },
+        {
+          "bgm_id": 484701,
+          "bgm_name": "The Super Mario Galaxy Movie",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544627,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第3幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544628,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第4幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 552589,
+          "bgm_name": "カナン様はあくまでチョロい",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63276,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 621449,
+      "bgm_name": "キャンディーカリエス",
+      "bgm_name_cn": "Candy Caries 蛀在糖糖里",
+      "mal_title": "Candy Caries",
+      "mal_title_ja": "キャンディーカリエス",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 621449,
+          "bgm_name": "キャンディーカリエス",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63304,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 621358,
+      "bgm_name": "魔物喰らいの冒険者～俺だけ魔物を喰らって強くなる～",
+      "bgm_name_cn": "",
+      "mal_title": "Mamonogurai no Boukensha: Ore dake Mamono wo Kuratte Tsuyoku Naru",
+      "mal_title_ja": "魔物喰らいの冒険者 ~俺だけ魔物を喰らって強くなる~",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 621358,
+          "bgm_name": "魔物喰らいの冒険者～俺だけ魔物を喰らって強くなる～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 501796,
+          "bgm_name": "魔法の姉妹ルルットリリィ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 524486,
+          "bgm_name": "魔入りました！入間くん 第4シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 501729,
+          "bgm_name": "劇場版 魔法科高校の劣等生 四葉継承編",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576351,
+          "bgm_name": "黒猫と魔女の教室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 474371,
+          "bgm_name": "ドロヘドロ Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 377130,
+          "bgm_name": "とんがり帽子のアトリエ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515856,
+          "bgm_name": "杖と剣のウィストリア Season 2",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63310,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 621602,
+      "bgm_name": "インゴクダンチ",
+      "bgm_name_cn": "淫狱团地",
+      "mal_title": "Ingoku Danchi",
+      "mal_title_ja": "インゴクダンチ",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 621602,
+          "bgm_name": "インゴクダンチ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63345,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 621553,
+      "bgm_name": "ラブはギャルから始まる運命",
+      "bgm_name_cn": "",
+      "mal_title": "Love wa Gal kara Hajimaru Unmei",
+      "mal_title_ja": "ラブはギャルから始まる運命",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 621553,
+          "bgm_name": "ラブはギャルから始まる運命",
+          "confidence": null
+        },
+        {
+          "bgm_id": 563256,
+          "bgm_name": "映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544627,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第3幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544628,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第4幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 541814,
+          "bgm_name": "アイアイドルマスター ミリオンライブ！～いつか、真ん中で～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 513208,
+          "bgm_name": "霧尾ファンクラブ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63352,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 622634,
+      "bgm_name": "おねがいアイプリ",
+      "bgm_name_cn": "",
+      "mal_title": "Onegai AiPri",
+      "mal_title_ja": "おねがいアイプリ",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 605312,
+          "bgm_name": "おしり前マン〜復活のおしり前帝国〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616378,
+          "bgm_name": "おでかけ子ザメ シーズン2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 625355,
+          "bgm_name": "おしりたんてい 第10シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 632411,
+          "bgm_name": "性指導員のお仕事 The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63356,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 623063,
+      "bgm_name": "それいけ！アンパンマン パンタンと約束の星",
+      "bgm_name_cn": "",
+      "mal_title": "Sore Ike! Anpanman: Pantan to Yakusoku no Hoshi",
+      "mal_title_ja": "それいけ！アンパンマン パンタンと約束の星",
+      "mal_media_type": "movie",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 623063,
+          "bgm_name": "それいけ！アンパンマン パンタンと約束の星",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63375,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 623851,
+      "bgm_name": "日本三國",
+      "bgm_name_cn": "日本三国",
+      "mal_title": "Nippon Sangoku",
+      "mal_title_ja": "日本三國",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 623851,
+          "bgm_name": "日本三國",
+          "confidence": null
+        },
+        {
+          "bgm_id": 491656,
+          "bgm_name": "花緑青が明ける日に",
+          "confidence": null
+        },
+        {
+          "bgm_id": 580473,
+          "bgm_name": "メイドさんは食べるだけ",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63376,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 623854,
+      "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+      "bgm_name_cn": "女神“异世界转生想成为什么”我“勇者的肋骨”",
+      "mal_title": "Megami \"Isekai Tensei Nani ni Naritai desu ka\" Ore \"Yuusha no Rokkotsu de\"",
+      "mal_title_ja": "女神「異世界転生何になりたいですか」俺「勇者の肋骨で」",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 623854,
+          "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 250224,
+          "bgm_name": "放开那个女巫",
+          "confidence": null
+        },
+        {
+          "bgm_id": 563256,
+          "bgm_name": "映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 580473,
+          "bgm_name": "メイドさんは食べるだけ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 606263,
+          "bgm_name": "NEEDY GIRL OVERDOSE",
+          "confidence": null
+        },
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        },
+        {
+          "bgm_id": 516543,
+          "bgm_name": "姫騎士は蛮族の嫁",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63383,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 532772,
+      "bgm_name": "クマーバ シーズン3",
+      "bgm_name_cn": "",
+      "mal_title": "Kumarba Season 3",
+      "mal_title_ja": "クマーバ シーズン3",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 532772,
+          "bgm_name": "クマーバ シーズン3",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567418,
+          "bgm_name": "灰原くんの強くて青春ニューゲーム",
+          "confidence": null
+        },
+        {
+          "bgm_id": 582598,
+          "bgm_name": "ねずみくんのチョッキ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 508455,
+          "bgm_name": "ガンバレ！中村くん!!",
+          "confidence": null
+        },
+        {
+          "bgm_id": 524486,
+          "bgm_name": "魔入りました！入間くん 第4シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63394,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 621554,
+      "bgm_name": "痴魅悶凌",
+      "bgm_name_cn": "",
+      "mal_title": "Chimimonryou",
+      "mal_title_ja": "痴魅悶凌",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 621554,
+          "bgm_name": "痴魅悶凌",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63433,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 625971,
+      "bgm_name": "大賢者リドルの時間逆行",
+      "bgm_name_cn": "大贤者里德尔的时空逆行",
+      "mal_title": "Daikenja Riddle no Jikan Gyakkou",
+      "mal_title_ja": "大賢者リドルの時間逆行",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 625971,
+          "bgm_name": "大賢者リドルの時間逆行",
+          "confidence": null
+        },
+        {
+          "bgm_id": 517027,
+          "bgm_name": "夜桜さんちの大作戦 第2期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 473416,
+          "bgm_name": "ヤマトよ永遠に REBEL3199 第六章 碧い迷宮",
+          "confidence": null
+        },
+        {
+          "bgm_id": 484701,
+          "bgm_name": "The Super Mario Galaxy Movie",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544627,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第3幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 544628,
+          "bgm_name": "ガールズ＆パンツァー もっとらぶらぶ作戦です！ 第4幕",
+          "confidence": null
+        },
+        {
+          "bgm_id": 558088,
+          "bgm_name": "自称悪役令嬢な婚約者の観察記録。",
+          "confidence": null
+        },
+        {
+          "bgm_id": 604307,
+          "bgm_name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63469,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 627137,
+      "bgm_name": "百鬼夜行抄",
+      "bgm_name_cn": "百鬼夜行抄",
+      "mal_title": "Hyakki Yakoushou",
+      "mal_title_ja": "百鬼夜行抄",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 627137,
+          "bgm_name": "百鬼夜行抄",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63503,
+      "season_id": "2026-spring",
+      "status": "excluded",
+      "source": "rule",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Isekai no Sata wa Shachiku Shidai: Omoi wo Hasemashita",
+      "mal_title_ja": "異世界の沙汰は社畜次第 OVA 「思いを馳せました」",
+      "mal_media_type": "special",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63520,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 623242,
+      "bgm_name": "とどの妻り",
+      "bgm_name_cn": "",
+      "mal_title": "Todo no Tsumari",
+      "mal_title_ja": "とどの妻り",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 623242,
+          "bgm_name": "とどの妻り",
+          "confidence": null
+        },
+        {
+          "bgm_id": 631928,
+          "bgm_name": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515856,
+          "bgm_name": "杖と剣のウィストリア Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 576351,
+          "bgm_name": "黒猫と魔女の教室",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623063,
+          "bgm_name": "それいけ！アンパンマン パンタンと約束の星",
+          "confidence": null
+        },
+        {
+          "bgm_id": 567234,
+          "bgm_name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします 。 Season 2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 551123,
+          "bgm_name": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615797,
+          "bgm_name": "蛇と蜘蛛",
+          "confidence": null
+        },
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63572,
+      "season_id": "2026-spring",
+      "status": "excluded",
+      "source": "human",
+      "confidence": null,
+      "bgm_id": 458684,
+      "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+      "bgm_name_cn": "关于邻家的天使大人不知不觉把我惯成了废人这档子事 第二季",
+      "mal_title": "Dandelion",
+      "mal_title_ja": "だんでらいおん",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 456079,
+          "bgm_name": "クラスで2番目に可愛い女の子と友だちになった",
+          "confidence": null
+        },
+        {
+          "bgm_id": 459601,
+          "bgm_name": "異世界でチート能力を手にした俺は、現実世界をも無双する～レベルアップは人生を変えた～ スペシャル",
+          "confidence": null
+        },
+        {
+          "bgm_id": 623854,
+          "bgm_name": "女神『異世界転生何になりたいですか』俺「勇者の肋骨で」",
+          "confidence": null
+        },
+        {
+          "bgm_id": 621358,
+          "bgm_name": "魔物喰らいの冒険者～俺だけ魔物を喰らって強くなる～",
+          "confidence": null
+        },
+        {
+          "bgm_id": 608227,
+          "bgm_name": "また殺されてしまったのですね、探偵様",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 631928,
+          "bgm_name": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+          "confidence": null
+        },
+        {
+          "bgm_id": 564289,
+          "bgm_name": "愛してるゲームを終わらせたい",
+          "confidence": null
+        },
+        {
+          "bgm_id": 537722,
+          "bgm_name": "レプリカだって、恋をする。",
+          "confidence": null
+        },
+        {
+          "bgm_id": 515594,
+          "bgm_name": "転生したらスライムだった件 第4期",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63582,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 631928,
+      "bgm_name": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+      "bgm_name_cn": "",
+      "mal_title": "Kyonyuu ga Futari Inai to Bokki Shinai Otto no Tame ni Tomodachi wo Tsuretekita Tsuma",
+      "mal_title_ja": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 631928,
+          "bgm_name": "巨乳が2人いないと勃起しない夫のために友達を連れてきた妻",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63606,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 577190,
+      "bgm_name": "遮天剧场版 背棺战王腾",
+      "bgm_name_cn": "",
+      "mal_title": "Zhe Tian Movie: Bei Guan Zhan Wang Teng",
+      "mal_title_ja": "遮天剧场版 背棺战王腾",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 577190,
+          "bgm_name": "遮天剧场版 背棺战王腾",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63657,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 632411,
+      "bgm_name": "性指導員のお仕事 The Animation",
+      "bgm_name_cn": "",
+      "mal_title": "Seishidouin no Oshigoto",
+      "mal_title_ja": "性指導員のお仕事",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 632411,
+          "bgm_name": "性指導員のお仕事 The Animation",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63762,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 625355,
+      "bgm_name": "おしりたんてい 第10シリーズ",
+      "bgm_name_cn": "屁屁侦探 第十季",
+      "mal_title": "Oshiri Tantei 10th Season",
+      "mal_title_ja": "おしりたんてい",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 625355,
+          "bgm_name": "おしりたんてい 第10シリーズ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 605312,
+          "bgm_name": "おしり前マン〜復活のおしり前帝国〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 533027,
+          "bgm_name": "彼女、お借りします 第5期",
+          "confidence": null
+        },
+        {
+          "bgm_id": 458684,
+          "bgm_name": "お隣の天使様にいつの間にか駄目人間にされていた件2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 616378,
+          "bgm_name": "おでかけ子ザメ シーズン2",
+          "confidence": null
+        },
+        {
+          "bgm_id": 622634,
+          "bgm_name": "おねがいアイプリ",
+          "confidence": null
+        },
+        {
+          "bgm_id": 632411,
+          "bgm_name": "性指導員のお仕事 The Animation",
+          "confidence": null
+        },
+        {
+          "bgm_id": 615309,
+          "bgm_name": "アナルマニアオタクとアナニー大好きなお嬢様 〜奇跡のマッチング〜",
+          "confidence": null
+        },
+        {
+          "bgm_id": 610703,
+          "bgm_name": "ただいま、おじゃまされます！",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    },
+    {
+      "mal_id": 63765,
+      "season_id": "2026-spring",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.0,
+      "bgm_id": 636424,
+      "bgm_name": "ヌきヌき♡ずっぽしイズム",
+      "bgm_name_cn": "",
+      "mal_title": "Nuki Nuki Zupposism",
+      "mal_title_ja": "ヌきヌき ずっぽしイズム",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 636424,
+          "bgm_name": "ヌきヌき♡ずっぽしイズム",
+          "confidence": null
+        }
+      ],
+      "updated_at": "2026-05-12T07:45:27.498631+00:00"
+    }
+  ],
+  "overrides": []
+}

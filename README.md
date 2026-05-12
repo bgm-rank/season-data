@@ -69,6 +69,20 @@ MAL 有时会把某季番标到错误季度，可以通过 Web UI 的 Override M
 - **add**：强制将某 MAL ID 加入本季，并指定 bgm_id
 - **skip**：强制将某 MAL ID 排除
 
+## 数据库备份与恢复
+
+`data/` 目录是 `season.db` 的 JSON 副本，纳入 git 管理，用于在多台机器间同步工作状态。
+
+```bash
+# 导出（提交前运行，将 DB 同步到 data/）
+PYTHONPATH=src uv run python scripts/export_db.py
+
+# 换机器后恢复（从 data/ 重建 season.db）
+PYTHONPATH=src uv run python scripts/import_db.py
+```
+
+每个季度对应 `data/{year}-{season}.json`，包含该季度的完整状态（items、overrides），恢复后无需重新 fetch MAL 数据或重跑匹配。
+
 ## 发布
 
 ```bash
@@ -81,6 +95,7 @@ uv run python scripts/publish_release.py
 
 ```
 season.db              主数据库（seasons / items / overrides）
+data/                  数据库 JSON 副本（git 管理，用于跨机器同步）
 release/               最终发布文件
 src/
   api/                 FastAPI 后端
