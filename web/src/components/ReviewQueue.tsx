@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { CandidatePanel } from '@/components/CandidatePanel'
 import * as api from '@/services/api'
-import type { Item } from '@/types/api'
+import type { Item, SeasonSummary } from '@/types/api'
 
 interface ReviewQueueState {
   items: Item[]
@@ -118,6 +118,17 @@ export function ReviewQueue({ seasonId }: Props) {
   const [manualBgmId, setManualBgmId] = useState('')
   const manualInputRef = useRef<HTMLInputElement>(null)
 
+  const [seasons, setSeasons] = useState<SeasonSummary[]>([])
+  const [moveOpen, setMoveOpen] = useState(false)
+  const [targetSeasonId, setTargetSeasonId] = useState('')
+  const [moveBgmId, setMoveBgmId] = useState('')
+  const [moveError, setMoveError] = useState<string | null>(null)
+  const [moveSubmitting, setMoveSubmitting] = useState(false)
+
+  useEffect(() => {
+    api.getSeasons().then(setSeasons).catch(() => {})
+  }, [])
+
   const confirmManualBgmId = useCallback(async () => {
     if (!currentItem) return
     const bgm_id = parseInt(manualBgmId.trim(), 10)
@@ -145,7 +156,29 @@ export function ReviewQueue({ seasonId }: Props) {
     return () => window.removeEventListener('keydown', handler)
   }, [selectCandidate, excludeItem, confirmSelection, skipItem])
 
-  useEffect(() => { setManualBgmId('') }, [state.currentIndex])
+  const moveToSeason = useCallback(async () => {
+    if (!currentItem || !targetSeasonId || !moveBgmId) return
+    const bgm_id = parseInt(moveBgmId, 10)
+    if (!bgm_id || bgm_id <= 0) return
+    setMoveSubmitting(true)
+    setMoveError(null)
+    const snapshot = state.items
+    try {
+      await api.patchItem(seasonId, currentItem.mal_id, { action: 'exclude' })
+      await api.createOverride(targetSeasonId, { mal_id: currentItem.mal_id, action: 'add', bgm_id })
+      setMoveOpen(false)
+      setMoveBgmId('')
+      setTargetSeasonId('')
+      advanceQueue()
+    } catch (e) {
+      setState((s) => ({ ...s, items: snapshot }))
+      setMoveError(e instanceof Error ? e.message : '操作失败')
+    } finally {
+      setMoveSubmitting(false)
+    }
+  }, [currentItem, targetSeasonId, moveBgmId, seasonId, state.items, advanceQueue])
+
+  useEffect(() => { setManualBgmId(''); setMoveOpen(false); setMoveError(null) }, [state.currentIndex])
 
   if (state.loading) {
     return <div className="text-sm text-muted-foreground p-4">加载中...</div>
@@ -199,8 +232,9 @@ export function ReviewQueue({ seasonId }: Props) {
         <Card>
           <CardHeader className="pb-3">
             <CardTitle className="text-base">{currentItem.mal_title}</CardTitle>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap items-center">
               <Badge variant="outline">{currentItem.mal_media_type}</Badge>
+              <span className="text-xs font-mono text-muted-foreground">MAL:{currentItem.mal_id}</span>
               {currentItem.mal_title_ja && (
                 <span className="text-xs text-muted-foreground">{currentItem.mal_title_ja}</span>
               )}
@@ -267,7 +301,63 @@ export function ReviewQueue({ seasonId }: Props) {
                   此番不属于本季度或无需收录
                 </span>
               </Button>
+              <Button
+                variant="outline"
+                onClick={() => setMoveOpen((o) => !o)}
+              >
+                移至其他季度
+              </Button>
             </div>
+
+            {moveOpen && (
+              <div className="border rounded-md p-3 space-y-3 bg-muted/30">
+                <p className="text-sm font-medium">移至其他季度（排除当前 + 在目标季度添加 override）</p>
+                <div className="flex gap-2 flex-wrap items-end">
+                  <div className="space-y-1">
+                    <label className="text-xs text-muted-foreground">目标季度</label>
+                    <select
+                      value={targetSeasonId}
+                      onChange={(e) => setTargetSeasonId(e.target.value)}
+                      className="h-9 rounded-md border border-input bg-background px-3 text-sm"
+                    >
+                      <option value="">选择季度...</option>
+                      {seasons
+                        .filter((s) => s.id !== seasonId)
+                        .sort((a, b) => b.id.localeCompare(a.id))
+                        .map((s) => (
+                          <option key={s.id} value={s.id}>{s.id}</option>
+                        ))}
+                    </select>
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs text-muted-foreground">BGM ID</label>
+                    <Input
+                      type="number"
+                      min={1}
+                      placeholder="BGM ID"
+                      value={moveBgmId}
+                      onChange={(e) => setMoveBgmId(e.target.value)}
+                      className="w-32"
+                    />
+                  </div>
+                  <Button
+                    size="sm"
+                    onClick={() => void moveToSeason()}
+                    disabled={moveSubmitting || !targetSeasonId || !moveBgmId}
+                  >
+                    {moveSubmitting ? '处理中...' : '确认移至'}
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => { setMoveOpen(false); setMoveBgmId(''); setMoveError(null) }}
+                  >
+                    取消
+                  </Button>
+                </div>
+                {moveError && <p className="text-xs text-destructive">{moveError}</p>}
+              </div>
+            )}
           </CardContent>
         </Card>
       )}
