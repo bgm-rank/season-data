@@ -78,7 +78,10 @@ def _row_to_detail(conn: sqlite3.Connection, row: sqlite3.Row) -> SeasonDetail:
 
 @router.get("/seasons", response_model=list[SeasonSummary])
 def list_seasons(db: sqlite3.Connection = Depends(_get_db)) -> list[SeasonSummary]:
-    rows = db.execute("SELECT * FROM seasons ORDER BY id").fetchall()
+    rows = db.execute(
+        "SELECT * FROM seasons ORDER BY year DESC,"
+        " CASE season WHEN 'fall' THEN 4 WHEN 'summer' THEN 3 WHEN 'spring' THEN 2 WHEN 'winter' THEN 1 END DESC"
+    ).fetchall()
     return [_row_to_summary(db, row) for row in rows]
 
 
