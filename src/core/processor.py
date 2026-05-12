@@ -280,7 +280,7 @@ class SeasonProcessor:
             self.conn.commit()
             return
 
-        matched = self._try_match(mal_id, mal_title, mal_title_ja, subjects, now)
+        matched = self._try_match(mal_id, mal_title, mal_title_ja, mal_media_type, subjects, now)
         if matched:
             return
 
@@ -300,7 +300,7 @@ class SeasonProcessor:
                     if not retry_subjects:
                         retry_subjects = self.bgmtv.search_anime_by_keyword_no_date(kw)
                     if retry_subjects:
-                        matched = self._try_match(mal_id, mal_title, mal_title_ja, retry_subjects, now)
+                        matched = self._try_match(mal_id, mal_title, mal_title_ja, mal_media_type, retry_subjects, now)
                         if matched:
                             return
                         subjects = subjects or retry_subjects
@@ -321,6 +321,7 @@ class SeasonProcessor:
         mal_id: int,
         mal_title: str,
         mal_title_ja: str | None,
+        mal_media_type: str | None,
         subjects: list[Subject],
         now: str,
     ) -> bool:
@@ -344,8 +345,8 @@ class SeasonProcessor:
         # LLM match
         if self.openrouter:
             try:
-                llm_candidates = [(s.id, s.name or "", s.name_cn) for s in subjects]
-                results = self.openrouter.match_anime(mal_title, mal_title_ja, llm_candidates)
+                llm_candidates = [(s.id, s.name or "", s.name_cn, s.date, s.summary) for s in subjects]
+                results = self.openrouter.match_anime(mal_title, mal_title_ja, mal_media_type, llm_candidates)
                 if results:
                     best = results[0]
                     bgm_id_match: int = best["bgm_id"]

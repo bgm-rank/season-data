@@ -53,18 +53,19 @@ def main() -> None:
                 print("错误: match 模式需要 --mal-title 和 --candidates 参数")
                 return
 
-            candidates: list[tuple[int, str, str | None]] = []
+            candidates: list[tuple[int, str, str | None, str | None, str | None]] = []
             for item in args.candidates.split(","):
                 id_rest = item.split(":", 1)
                 bgm_id = int(id_rest[0])
                 names = id_rest[1].split("|", 1) if len(id_rest) > 1 else [""]
                 name = names[0]
                 name_cn = names[1] if len(names) > 1 else None
-                candidates.append((bgm_id, name, name_cn))
+                candidates.append((bgm_id, name, name_cn, None, None))
 
             result = client.match_anime(
                 args.mal_title,
                 args.mal_title_ja,
+                None,
                 candidates,
             )
             if result is not None:

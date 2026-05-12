@@ -32,16 +32,21 @@ def _run_processor(
     load_dotenv()
 
     from services.bgmtv import BgmtvClient
-    from services.openrouter import OpenRouterClient
+    from services.openrouter import DEEPSEEK_BASE_URL, DEFAULT_DEEPSEEK_MODEL, DEFAULT_MODEL, OpenRouterClient
 
     bgm_token = os.getenv("BGM_TOKEN", "")
     openrouter_key = os.getenv("OPENROUTER_API_KEY", "")
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY", "")
 
     try:
         with BgmtvClient(bgm_token) as bgmtv:
             openrouter: OpenRouterClient | None = None
-            if openrouter_key:
-                openrouter = OpenRouterClient(openrouter_key)
+            if deepseek_key:
+                model = os.getenv("DEEPSEEK_MODEL", DEFAULT_DEEPSEEK_MODEL)
+                openrouter = OpenRouterClient(deepseek_key, model=model, base_url=DEEPSEEK_BASE_URL)
+            elif openrouter_key:
+                model = os.getenv("OPENROUTER_MODEL", DEFAULT_MODEL)
+                openrouter = OpenRouterClient(openrouter_key, model=model)
             try:
                 from core.processor import SeasonProcessor
 

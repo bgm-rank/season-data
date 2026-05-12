@@ -10,13 +10,17 @@ from loguru import logger
 
 BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_MODEL = "google/gemini-2.5-flash-lite"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
+DEFAULT_DEEPSEEK_MODEL = "deepseek-chat"
 MAX_RETRIES = 3
 RETRY_DELAY = 1.0
+SUMMARY_MAX_CHARS = 80
 
 # 动漫匹配系统提示（固定以最大化缓存命中）
 MATCH_SYSTEM_PROMPT = (
     "匹配MAL动漫与Bangumi候选。续作必须季数一致（2nd/第2期/II等）。"
-    "输出JSON数组，每个候选包含bgm_id和confidence(0.0-1.0)，无匹配时输出空数组："
+    "MAL格式：英文名|日文名|媒体类型。BGM候选格式：bgm_id:日文名|中文名|首播日期|简介(可选)。"
+    "输出JSON数组，每个候选含bgm_id和confidence(0.0-1.0)，无匹配输出空数组："
     '[{"bgm_id":数字,"confidence":0.9}]'
 )
 
@@ -166,8 +170,9 @@ def extract_json(content: str) -> str:
 
 
 class OpenRouterClient:
-    def __init__(self, api_key: str, model: str = DEFAULT_MODEL) -> None:
+    def __init__(self, api_key: str, model: str = DEFAULT_MODEL, base_url: str = BASE_URL) -> None:
         self.model = model
+        self.base_url = base_url
         self.client = httpx.Client(
             headers={
                 "Authorization": f"Bearer {api_key}",
@@ -187,7 +192,7 @@ class OpenRouterClient:
 
     def chat(self, request: ChatRequest) -> ChatResponse:
         """发送聊天请求（带重试逻辑）。"""
-        url = f"{BASE_URL}/chat/completions"
+        url = f"{self.base_url}/chat/completions"
 
         last_error: Exception | None = None
         for attempt in range(1, MAX_RETRIES + 1):
@@ -219,7 +224,8 @@ class OpenRouterClient:
         self,
         mal_title: str,
         mal_title_ja: str | None,
-        candidates: list[tuple[int, str, str | None]],
+        mal_media_type: str | None,
+        candidates: list[tuple[int, str, str | None, str | None, str | None]],
     ) -> list[dict[str, Any]]:
         """动漫匹配验证，返回带 confidence 的候选列表。
 
@@ -228,20 +234,27 @@ class OpenRouterClient:
         Args:
             mal_title: MAL 英文标题
             mal_title_ja: MAL 日文标题
-            candidates: [(bgm_id, name, name_cn), ...]
+            mal_media_type: MAL 媒体类型（TV/Movie/OVA 等）
+            candidates: [(bgm_id, name, name_cn, date, summary), ...]
         """
         if not candidates:
             return []
 
-        # 构建精简的用户输入
+        # 构建用户输入
         parts = [f"MAL:{mal_title}"]
         if mal_title_ja:
             parts[0] += f"|{mal_title_ja}"
+        if mal_media_type:
+            parts[0] += f"|{mal_media_type}"
         parts.append("BGM:")
-        for bgm_id, name, name_cn in candidates:
+        for bgm_id, name, name_cn, date, summary in candidates:
             line = f"{bgm_id}:{name}"
             if name_cn:
                 line += f"|{name_cn}"
+            if date:
+                line += f"|{date}"
+            if summary:
+                line += f"|{summary[:SUMMARY_MAX_CHARS]}"
             parts.append(line)
         user_input = "\n".join(parts)
 
@@ -266,10 +279,14 @@ class OpenRouterClient:
         )
 
         json_str = extract_json(content)
+        if not json_str:
+            logger.warning("match_anime: 模型返回空响应")
+            return []
         try:
             result = json.loads(json_str)
-        except json.JSONDecodeError as e:
-            raise RuntimeError(f"Invalid JSON: {content} - {e}") from e
+        except json.JSONDecodeError:
+            logger.warning("match_anime: 无效 JSON: {!r}", content)
+            return []
 
         if not isinstance(result, list):
             return []

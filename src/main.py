@@ -11,7 +11,7 @@ from api.db import get_connection, init_db
 from core.processor import SeasonProcessor
 from core.season import SEASON_VALUES
 from services.bgmtv import BgmtvClient
-from services.openrouter import OpenRouterClient
+from services.openrouter import DEEPSEEK_BASE_URL, DEFAULT_DEEPSEEK_MODEL, DEFAULT_MODEL, OpenRouterClient
 
 START_YEAR = 2000
 END_YEAR = 2025
@@ -22,6 +22,7 @@ def main() -> None:
 
     bgm_token = os.getenv("BGM_TOKEN", "")
     openrouter_key = os.getenv("OPENROUTER_API_KEY", "")
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY", "")
 
     from pathlib import Path
 
@@ -31,8 +32,12 @@ def main() -> None:
 
     with BgmtvClient(bgm_token) as bgmtv:
         openrouter: OpenRouterClient | None = None
-        if openrouter_key:
-            openrouter = OpenRouterClient(openrouter_key)
+        if deepseek_key:
+            model = os.getenv("DEEPSEEK_MODEL", DEFAULT_DEEPSEEK_MODEL)
+            openrouter = OpenRouterClient(deepseek_key, model=model, base_url=DEEPSEEK_BASE_URL)
+        elif openrouter_key:
+            model = os.getenv("OPENROUTER_MODEL", DEFAULT_MODEL)
+            openrouter = OpenRouterClient(openrouter_key, model=model)
 
         try:
             total = (END_YEAR - START_YEAR + 1) * len(SEASON_VALUES)
