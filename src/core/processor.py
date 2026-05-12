@@ -307,7 +307,7 @@ class SeasonProcessor:
             except Exception as e:
                 logger.error("[error] mal:{} LLM suggest 失败: {}", mal_id, e)
 
-        candidates = [{"bgm_id": s.id, "bgm_name": s.name, "confidence": None} for s in subjects]
+        candidates = [{"bgm_id": s.id, "bgm_name": s.name, "air_date": s.date, "confidence": None} for s in subjects]
         self.conn.execute(
             "UPDATE items SET status='pending', source=NULL,"
             " candidates=?, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
@@ -357,6 +357,7 @@ class SeasonProcessor:
                                 {
                                     "bgm_id": r["bgm_id"],
                                     "bgm_name": next((s.name for s in subjects if s.id == r["bgm_id"]), None),
+                                    "air_date": next((s.date for s in subjects if s.id == r["bgm_id"]), None),
                                     "confidence": r.get("confidence"),
                                 }
                                 for r in results

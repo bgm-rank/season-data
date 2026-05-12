@@ -6,6 +6,12 @@ CLAUDE.md
 specs/
 season-data.json
 season.db
+season.db-shm
+season.db-wal
+web/node_modules/
+web/.astro/
+web/dist/
+web/.env
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,python,pycharm,visualstudiocode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,python,pycharm,visualstudiocode,visualstudio

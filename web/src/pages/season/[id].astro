@@ -1,0 +1,46 @@
+---
+import '../../styles/global.css'
+import { ReviewQueue } from '../../components/ReviewQueue'
+import { SeasonActions } from '../../components/SeasonActions'
+import { ItemList } from '../../components/ItemList'
+import { OverrideManager } from '../../components/OverrideManager'
+import { ExportPanel } from '../../components/ExportPanel'
+
+const { id } = Astro.params as { id: string }
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>季度详情 — bgm-rank</title>
+  </head>
+  <body class="bg-background text-foreground min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 py-8 space-y-8">
+      <div class="flex items-center gap-4">
+        <a href="/" class="text-sm text-muted-foreground hover:underline">← 返回首页</a>
+        <h1 class="text-2xl font-bold">{id}</h1>
+      </div>
+
+      <SeasonActions client:load seasonId={id} />
+
+      <section>
+        <ReviewQueue client:load seasonId={id} />
+      </section>
+
+      <section>
+        <ItemList client:load seasonId={id} />
+      </section>
+
+      <section>
+        <OverrideManager client:load seasonId={id} />
+      </section>
+
+      <section>
+        <ExportPanel client:load seasonId={id} />
+      </section>
+    </div>
+  </body>
+</html>
