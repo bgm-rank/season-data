@@ -34,6 +34,7 @@ def _run_processor(
     bgm_token = os.getenv("BGM_TOKEN", "")
     openrouter_key = os.getenv("OPENROUTER_API_KEY", "")
     deepseek_key = os.getenv("DEEPSEEK_API_KEY", "")
+    mal_client_id = os.getenv("MAL_CLIENT_ID", "")
 
     try:
         with BgmtvClient(bgm_token) as bgmtv:
@@ -46,12 +47,15 @@ def _run_processor(
                 openrouter = OpenRouterClient(openrouter_key, model=model)
             try:
                 from core.processor import SeasonProcessor
+                from services.mal.client import MalClient
 
+                mal: MalClient | None = MalClient(mal_client_id) if mal_client_id else None
                 processor = SeasonProcessor(
                     conn=conn,
                     season_id=season_id,
                     bgmtv_client=bgmtv,
                     openrouter_client=openrouter,
+                    mal_client=mal,
                     progress_queue=queue,
                     retry=retry,
                 )

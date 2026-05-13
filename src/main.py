@@ -11,6 +11,7 @@ from api.db import get_connection, init_db
 from core.processor import SeasonProcessor
 from core.season import SEASON_VALUES
 from services.bgmtv import BgmtvClient
+from services.mal.client import MalClient
 from services.openrouter import DEEPSEEK_BASE_URL, DEFAULT_DEEPSEEK_MODEL, DEFAULT_MODEL, OpenRouterClient
 
 START_YEAR = 2000
@@ -23,12 +24,15 @@ def main() -> None:
     bgm_token = os.getenv("BGM_TOKEN", "")
     openrouter_key = os.getenv("OPENROUTER_API_KEY", "")
     deepseek_key = os.getenv("DEEPSEEK_API_KEY", "")
+    mal_client_id = os.getenv("MAL_CLIENT_ID", "")
 
     from pathlib import Path
 
     root = Path(__file__).resolve().parent.parent
     init_db(root / "season.db")
     conn = get_connection(root / "season.db")
+
+    mal: MalClient | None = MalClient(mal_client_id) if mal_client_id else None
 
     with BgmtvClient(bgm_token) as bgmtv:
         openrouter: OpenRouterClient | None = None
@@ -66,6 +70,7 @@ def main() -> None:
                             season_id=season_id,
                             bgmtv_client=bgmtv,
                             openrouter_client=openrouter,
+                            mal_client=mal,
                         )
                         processor.process()
                     except Exception:

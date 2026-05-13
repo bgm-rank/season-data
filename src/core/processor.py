@@ -13,9 +13,10 @@ from typing import Any
 from loguru import logger
 
 from services.bgmtv import BgmtvClient, Subject
+from services.mal.client import MalClient
 from services.openrouter import OpenRouterClient
 
-from .models import MediaType, ReleaseData, ReleaseItem
+from .models import MalInfo, MediaType, ReleaseData, ReleaseItem
 from .season import season_date_range
 
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
@@ -90,6 +91,7 @@ class SeasonProcessor:
         season_id: str,
         bgmtv_client: BgmtvClient,
         openrouter_client: OpenRouterClient | None = None,
+        mal_client: MalClient | None = None,
         progress_queue: asyncio.Queue[dict[str, Any]] | None = None,
         retry: bool = False,
     ) -> None:
@@ -97,6 +99,7 @@ class SeasonProcessor:
         self.season_id = season_id
         self.bgmtv = bgmtv_client
         self.openrouter = openrouter_client
+        self.mal = mal_client
         self.progress_queue = progress_queue
         self.retry = retry
 
@@ -167,14 +170,28 @@ class SeasonProcessor:
             now = datetime.now(UTC).isoformat()
             try:
                 subject = self.bgmtv.get_subject(bgm_id_ov)
+                mal_title = f"override-add-{mal_id}"
+                mal_title_ja: str | None = None
+                mal_media_type = "tv"
+                mal_rating = "general"
+                if self.mal is not None:
+                    try:
+                        mal_raw = self.mal.get_anime(mal_id)
+                        mal_info = MalInfo.from_raw(mal_raw)
+                        mal_title = mal_info.title
+                        mal_title_ja = mal_info.title_ja
+                        mal_media_type = mal_info.media_type
+                        mal_rating = mal_info.rating
+                    except Exception as e:
+                        logger.warning("[override add] 获取 MAL 数据失败 mal:{}: {}", mal_id, e)
                 self.conn.execute(
                     """
                     INSERT OR REPLACE INTO items
                       (mal_id, season_id, status, source, confidence, bgm_id, bgm_name, bgm_name_cn,
                        mal_title, mal_title_ja, mal_media_type, mal_rating, error, candidates, updated_at)
-                    VALUES (?,?,'included','human',NULL,?,?,?,?,NULL,'tv','general',NULL,NULL,?)
+                    VALUES (?,?,'included','human',NULL,?,?,?,?,?,?,?,NULL,NULL,?)
                     """,
-                    (mal_id, self.season_id, bgm_id_ov, subject.name, subject.name_cn, f"override-add-{mal_id}", now),
+                    (mal_id, self.season_id, bgm_id_ov, subject.name, subject.name_cn, mal_title, mal_title_ja, mal_media_type, mal_rating, now),
                 )
                 self.conn.commit()
                 logger.info("[override add] mal:{} -> bgm:{}", mal_id, bgm_id_ov)

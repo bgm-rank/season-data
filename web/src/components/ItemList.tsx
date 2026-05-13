@@ -178,6 +178,10 @@ export function ItemList({ seasonId }: Props) {
                     >
                       {item.mal_id}
                     </a>
+                    <span className="ml-2 text-muted-foreground/60">{item.mal_media_type}</span>
+                    {item.mal_rating !== 'general' && (
+                      <span className="ml-1 text-muted-foreground/60">· {item.mal_rating}</span>
+                    )}
                   </div>
                   <div className="flex text-xs text-muted-foreground">
                     <span className="w-8 shrink-0" />
