@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import asyncio
 import json
+import os
 import sqlite3
+import time
 from datetime import UTC, datetime
 from typing import Any
 
@@ -34,6 +37,7 @@ def _row_to_item(row: sqlite3.Row) -> ItemRead:
         mal_rating=row["mal_rating"],
         error=row["error"],
         candidates=candidates,
+        bgm_air_date=row["bgm_air_date"],
         updated_at=row["updated_at"],
     )
 
@@ -104,3 +108,39 @@ def update_item(
         (mal_id, season_id),
     ).fetchone()
     return _row_to_item(updated)
+
+
+@router.post("/seasons/{season_id}/sync-bgm")
+async def sync_bgm(
+    season_id: str,
+    db: sqlite3.Connection = Depends(_get_db),
+) -> dict[str, int]:
+    from services.bgmtv import BgmtvClient
+
+    rows = db.execute(
+        "SELECT mal_id, bgm_id FROM items WHERE season_id=? AND bgm_id IS NOT NULL",
+        (season_id,),
+    ).fetchall()
+
+    def _do_sync() -> dict[str, int]:
+        bgm_token = os.getenv("BGM_TOKEN", "")
+        updated = 0
+        errors = 0
+        now = datetime.now(UTC).isoformat()
+        with BgmtvClient(bgm_token) as bgmtv:
+            for row in rows:
+                try:
+                    subject = bgmtv.get_subject(row["bgm_id"])
+                    db.execute(
+                        "UPDATE items SET bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=?"
+                        " WHERE mal_id=? AND season_id=?",
+                        (subject.name, subject.name_cn, subject.date, now, row["mal_id"], season_id),
+                    )
+                    db.commit()
+                    updated += 1
+                    time.sleep(0.3)
+                except Exception:
+                    errors += 1
+        return {"updated": updated, "errors": errors}
+
+    return await asyncio.to_thread(_do_sync)

@@ -23,6 +23,8 @@ export function SeasonActions({ seasonId }: Props) {
   const [fetching, setFetching] = useState(false)
   const [running, setRunning] = useState(false)
   const [runningSeasonId, setRunningSeasonId] = useState<string | null>(null)
+  const [syncing, setSyncing] = useState(false)
+  const [syncResult, setSyncResult] = useState<{ updated: number; errors: number } | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -58,6 +60,20 @@ export function SeasonActions({ seasonId }: Props) {
     }
   }
 
+  const handleSync = async () => {
+    setSyncing(true)
+    setSyncResult(null)
+    setError(null)
+    try {
+      const res = await api.syncBgm(seasonId)
+      setSyncResult(res)
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '刷新失败')
+    } finally {
+      setSyncing(false)
+    }
+  }
+
   const handleRunDone = () => {
     setRunning(false)
     setRunningSeasonId(null)
@@ -90,10 +106,23 @@ export function SeasonActions({ seasonId }: Props) {
         <Button
           variant="secondary"
           onClick={() => void handleRun()}
-          disabled={running || fetching}
+          disabled={running || fetching || syncing}
         >
           {running ? '运行中...' : '运行匹配'}
         </Button>
+
+        <Button
+          variant="outline"
+          onClick={() => void handleSync()}
+          disabled={running || fetching || syncing}
+        >
+          {syncing ? '刷新中...' : '刷新 BGM 数据'}
+        </Button>
+        {syncResult && (
+          <span className="text-sm text-muted-foreground self-center">
+            已更新 {syncResult.updated} 条{syncResult.errors > 0 ? `，${syncResult.errors} 条失败` : ''}
+          </span>
+        )}
       </div>
 
       {runningSeasonId && (

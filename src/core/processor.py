@@ -237,8 +237,8 @@ class SeasonProcessor:
                 subject = self.bgmtv.get_subject(bgm_id_val)
                 self.conn.execute(
                     "UPDATE items SET status='included', source='human',"
-                    " bgm_name=?, bgm_name_cn=?, updated_at=? WHERE mal_id=? AND season_id=?",
-                    (subject.name, subject.name_cn, now, mal_id, self.season_id),
+                    " bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=? WHERE mal_id=? AND season_id=?",
+                    (subject.name, subject.name_cn, subject.date, now, mal_id, self.season_id),
                 )
                 self.conn.commit()
                 logger.info("[auto-complete] mal:{} -> bgm:{} {}", mal_id, bgm_id_val, subject.name)
@@ -335,8 +335,8 @@ class SeasonProcessor:
                 if subj.name and _normalize_title(subj.name) == title_ja_norm:
                     self.conn.execute(
                         "UPDATE items SET status='included', source='exact',"
-                        " bgm_id=?, bgm_name=?, bgm_name_cn=?, updated_at=? WHERE mal_id=? AND season_id=?",
-                        (subj.id, subj.name, subj.name_cn, now, mal_id, self.season_id),
+                        " bgm_id=?, bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=? WHERE mal_id=? AND season_id=?",
+                        (subj.id, subj.name, subj.name_cn, subj.date, now, mal_id, self.season_id),
                     )
                     self.conn.commit()
                     logger.info("[match] mal:{} -> bgm:{} {}", mal_id, subj.id, subj.name)
@@ -368,12 +368,13 @@ class SeasonProcessor:
                         if confidence is not None and confidence >= LLM_CONFIDENCE_THRESHOLD:
                             self.conn.execute(
                                 "UPDATE items SET status='included', source='llm',"
-                                " bgm_id=?, bgm_name=?, bgm_name_cn=?, confidence=?,"
+                                " bgm_id=?, bgm_name=?, bgm_name_cn=?, bgm_air_date=?, confidence=?,"
                                 " candidates=?, updated_at=? WHERE mal_id=? AND season_id=?",
                                 (
                                     bgm_id_match,
                                     matched_subj.name,
                                     matched_subj.name_cn,
+                                    matched_subj.date,
                                     confidence,
                                     candidates_json,
                                     now,
@@ -385,9 +386,9 @@ class SeasonProcessor:
                         else:
                             self.conn.execute(
                                 "UPDATE items SET status='pending', source='llm',"
-                                " bgm_id=?, confidence=?, candidates=?, updated_at=?"
+                                " bgm_id=?, bgm_air_date=?, confidence=?, candidates=?, updated_at=?"
                                 " WHERE mal_id=? AND season_id=?",
-                                (bgm_id_match, confidence, candidates_json, now, mal_id, self.season_id),
+                                (bgm_id_match, matched_subj.date, confidence, candidates_json, now, mal_id, self.season_id),
                             )
                             logger.info("[model pending] mal:{} -> bgm:{} conf={}", mal_id, bgm_id_match, confidence)
                         self.conn.commit()

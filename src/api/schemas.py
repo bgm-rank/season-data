@@ -47,6 +47,7 @@ class ItemRead(BaseModel):
     mal_rating: str
     error: str | None
     candidates: list[dict[str, object]] | None
+    bgm_air_date: str | None
     updated_at: str
 
 

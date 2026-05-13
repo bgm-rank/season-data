@@ -9,11 +9,24 @@ DEFAULT_DB_PATH = ROOT_DIR / "season.db"
 
 
 def init_db(db_path: Path | str = DEFAULT_DB_PATH) -> None:
-    sql = (MIGRATIONS_DIR / "001_initial.sql").read_text(encoding="utf-8")
     conn = sqlite3.connect(db_path)
     try:
-        conn.executescript(sql)
+        conn.execute(
+            "CREATE TABLE IF NOT EXISTS schema_migrations "
+            "(filename TEXT PRIMARY KEY, applied_at TEXT NOT NULL)"
+        )
         conn.commit()
+
+        applied = {row[0] for row in conn.execute("SELECT filename FROM schema_migrations")}
+        for migration in sorted(MIGRATIONS_DIR.glob("*.sql")):
+            if migration.name in applied:
+                continue
+            conn.executescript(migration.read_text(encoding="utf-8"))
+            conn.execute(
+                "INSERT INTO schema_migrations (filename, applied_at) VALUES (?, datetime('now'))",
+                (migration.name,),
+            )
+            conn.commit()
     finally:
         conn.close()
 

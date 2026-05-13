@@ -60,6 +60,7 @@ export interface Item {
   mal_rating: string
   error: string | null
   candidates: CandidateEntry[] | null
+  bgm_air_date: string | null
   updated_at: string
 }
 
