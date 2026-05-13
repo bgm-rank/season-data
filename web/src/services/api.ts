@@ -74,6 +74,10 @@ export function patchItem(id: string, malId: number, body: ItemUpdate): Promise<
   })
 }
 
+export function syncBgmItem(id: string, malId: number): Promise<Item> {
+  return request(`/seasons/${id}/items/${malId}/sync-bgm`, { method: 'POST' })
+}
+
 export function getOverrides(id: string): Promise<Override[]> {
   return request(`/seasons/${id}/overrides`)
 }

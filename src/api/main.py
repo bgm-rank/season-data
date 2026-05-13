@@ -4,10 +4,13 @@ import sqlite3
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.db import get_connection, init_db
+
+load_dotenv()
 
 
 def create_app() -> FastAPI:

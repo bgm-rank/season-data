@@ -9,7 +9,6 @@ from collections.abc import AsyncIterator
 from typing import Any
 from uuid import uuid4
 
-from dotenv import load_dotenv
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import StreamingResponse
 
@@ -29,8 +28,6 @@ def _run_processor(
     retry: bool,
     queue: asyncio.Queue[dict[str, Any]],
 ) -> None:
-    load_dotenv()
-
     from services.bgmtv import BgmtvClient
     from services.openrouter import DEEPSEEK_BASE_URL, DEFAULT_DEEPSEEK_MODEL, DEFAULT_MODEL, OpenRouterClient
 

@@ -205,7 +205,7 @@ class BgmtvClient:
         last_error: Exception | None = None
         for attempt in range(1, MAX_RETRIES + 1):
             try:
-                resp = self.client.get(url, params={"nsfw": "true"})
+                resp = self.client.get(url)
                 if not resp.is_success:
                     raise httpx.HTTPStatusError(
                         f"{resp.status_code}: {resp.text}",

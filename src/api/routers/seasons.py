@@ -114,13 +114,10 @@ def fetch_season(
     season_id: str,
     db: sqlite3.Connection = Depends(_get_db),
 ) -> dict[str, int]:
-    from dotenv import load_dotenv
-
     from core.models import Rating
     from core.season import is_new_anime
     from services.mal import MalClient
 
-    load_dotenv()
     row = db.execute("SELECT * FROM seasons WHERE id = ?", (season_id,)).fetchone()
     if row is None:
         raise HTTPException(status_code=404, detail=f"Season {season_id} not found")

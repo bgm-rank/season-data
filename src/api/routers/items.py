@@ -162,6 +162,42 @@ def _run_sync(
             queue.put_nowait({"type": "error", "message": str(e)})
 
 
+@router.post("/seasons/{season_id}/items/{mal_id}/sync-bgm", response_model=ItemRead)
+def sync_bgm_item(
+    season_id: str,
+    mal_id: int,
+    db: sqlite3.Connection = Depends(_get_db),
+) -> ItemRead:
+    row = db.execute(
+        "SELECT * FROM items WHERE mal_id=? AND season_id=?",
+        (mal_id, season_id),
+    ).fetchone()
+    if row is None:
+        raise HTTPException(status_code=404, detail=f"Item {mal_id} not found in season {season_id}")
+    if row["bgm_id"] is None:
+        raise HTTPException(status_code=422, detail="Item has no bgm_id")
+
+    from services.bgmtv import BgmtvClient
+
+    bgm_token = os.getenv("BGM_TOKEN", "")
+    with BgmtvClient(bgm_token) as bgmtv:
+        subject = bgmtv.get_subject(row["bgm_id"])
+
+    now = datetime.now(UTC).isoformat()
+    db.execute(
+        "UPDATE items SET bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=?"
+        " WHERE mal_id=? AND season_id=?",
+        (subject.name, subject.name_cn, subject.date, now, mal_id, season_id),
+    )
+    db.commit()
+
+    updated = db.execute(
+        "SELECT * FROM items WHERE mal_id=? AND season_id=?",
+        (mal_id, season_id),
+    ).fetchone()
+    return _row_to_item(updated)
+
+
 @router.post("/seasons/{season_id}/sync-bgm", status_code=202)
 async def sync_bgm(
     season_id: str,

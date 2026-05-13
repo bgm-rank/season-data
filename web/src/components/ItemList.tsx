@@ -68,6 +68,20 @@ export function ItemList({ seasonId }: Props) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [editingItem, setEditingItem] = useState<Item | null>(null)
+  const [syncingIds, setSyncingIds] = useState<Set<number>>(new Set())
+
+  const syncItem = async (malId: number, e: React.MouseEvent) => {
+    e.stopPropagation()
+    setSyncingIds((s) => new Set(s).add(malId))
+    try {
+      const updated = await api.syncBgmItem(seasonId, malId)
+      setItems((prev) => prev.map((it) => it.mal_id === malId ? updated : it))
+    } catch {
+      // silently ignore; user can retry
+    } finally {
+      setSyncingIds((s) => { const n = new Set(s); n.delete(malId); return n })
+    }
+  }
 
   const loadItems = () => {
     setLoading(true)
@@ -223,6 +237,16 @@ export function ItemList({ seasonId }: Props) {
                   )}
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
+                  {item.bgm_id && (
+                    <button
+                      onClick={(e) => void syncItem(item.mal_id, e)}
+                      disabled={syncingIds.has(item.mal_id)}
+                      className="text-xs text-muted-foreground hover:text-foreground disabled:opacity-40"
+                      title="强制刷新 BGM 数据"
+                    >
+                      {syncingIds.has(item.mal_id) ? '刷新中' : '↻'}
+                    </button>
+                  )}
                   {item.source && (
                     <Badge variant="outline" className="text-xs">
                       {SOURCE_LABELS[item.source] ?? item.source}

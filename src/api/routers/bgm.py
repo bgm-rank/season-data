@@ -3,7 +3,6 @@ from __future__ import annotations
 import os
 from typing import Any
 
-from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException, Query
 
 router = APIRouter()
@@ -14,7 +13,6 @@ def search_bgm(
     q: str = Query(..., description="搜索关键词"),
     season: str | None = Query(default=None, description="季度 ID，用于过滤"),
 ) -> list[dict[str, Any]]:
-    load_dotenv()
     bgm_token = os.getenv("BGM_TOKEN", "")
 
     from core.season import season_date_range
