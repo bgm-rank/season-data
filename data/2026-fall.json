@@ -5,7 +5,7 @@
     "season": "fall",
     "released_at": null,
     "created_at": "2026-05-12T08:15:09.881836+00:00",
-    "updated_at": "2026-05-12T08:15:28.284173+00:00"
+    "updated_at": "2026-05-13T03:03:14.254242+00:00"
   },
   "items": [
     {
@@ -30,7 +30,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:52.774057+00:00"
+      "updated_at": "2026-05-13T02:24:22.052074+00:00"
     },
     {
       "mal_id": 52480,
@@ -54,17 +54,17 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:27.243903+00:00"
+      "updated_at": "2026-05-13T02:24:10.411082+00:00"
     },
     {
       "mal_id": 53913,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 1.0,
+      "bgm_id": 412008,
+      "bgm_name": "転生したら剣でした 第2期",
+      "bgm_name_cn": "转生成为魔剑 第二季",
       "mal_title": "Tensei shitara Ken deshita 2",
       "mal_title_ja": "転生したら剣でした2",
       "mal_media_type": "tv",
@@ -75,64 +75,10 @@
           "bgm_id": 412008,
           "bgm_name": "転生したら剣でした 第2期",
           "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 350224,
-          "bgm_name": "転生したら剣でした",
-          "air_date": "2022-10-05",
-          "confidence": null
-        },
-        {
-          "bgm_id": 239816,
-          "bgm_name": "転生したらスライムだった件",
-          "air_date": "2018-10-01",
-          "confidence": null
-        },
-        {
-          "bgm_id": 268726,
-          "bgm_name": "転生したらスライムだった件 OAD",
-          "air_date": "2019-07-09",
-          "confidence": null
-        },
-        {
-          "bgm_id": 278031,
-          "bgm_name": "転生したらスライムだった件 第2期",
-          "air_date": "2021-01-12",
-          "confidence": null
-        },
-        {
-          "bgm_id": 302523,
-          "bgm_name": "転生したらスライムだった件 第2期 2",
-          "air_date": "2021-07-06",
-          "confidence": null
-        },
-        {
-          "bgm_id": 407133,
-          "bgm_name": "転生したら第七王子だったので、気ままに魔術を極めます",
-          "air_date": "2024-04-01",
-          "confidence": null
-        },
-        {
-          "bgm_id": 407573,
-          "bgm_name": "転生したらスライムだった件 第3期",
-          "air_date": "2024-04-05",
-          "confidence": null
-        },
-        {
-          "bgm_id": 408715,
-          "bgm_name": "『転生したらスライムだった件 魔王と竜の建国譚』1周年記念新アニメPV",
-          "air_date": "2022-10-27",
-          "confidence": null
-        },
-        {
-          "bgm_id": 421174,
-          "bgm_name": "転生したらスライムだった件 コリウスの夢",
-          "air_date": "2023-11-01",
-          "confidence": null
+          "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-12T08:16:37.515485+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 54250,
@@ -149,7 +95,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:44.032025+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 54344,
@@ -166,7 +112,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:13.564802+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 56733,
@@ -244,7 +190,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:17:08.292917+00:00"
+      "updated_at": "2026-05-13T02:24:32.167916+00:00"
     },
     {
       "mal_id": 57961,
@@ -261,7 +207,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:14.450124+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 59088,
@@ -278,24 +224,24 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:26.342676+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 59204,
       "season_id": "2026-fall",
-      "status": "included",
-      "source": "exact",
+      "status": "pending",
+      "source": null,
       "confidence": null,
-      "bgm_id": 19613,
-      "bgm_name": "魔法騎士レイアース",
-      "bgm_name_cn": "魔法骑士雷阿斯",
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
       "mal_title": "Magic Knight Rayearth (2026)",
       "mal_title_ja": "魔法騎士レイアース",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:22.231350+00:00"
+      "updated_at": "2026-05-13T03:03:05.228760+00:00"
     },
     {
       "mal_id": 60601,
@@ -312,7 +258,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:21.722534+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 60948,
@@ -348,7 +294,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:16.227062+00:00"
+      "updated_at": "2026-05-13T02:24:05.266507+00:00"
     },
     {
       "mal_id": 61014,
@@ -365,7 +311,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:05.560900+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 61140,
@@ -382,7 +328,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:42.576774+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 61153,
@@ -399,7 +345,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:21.362174+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 61323,
@@ -423,7 +369,7 @@
           "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-12T08:16:44.478706+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 61603,
@@ -447,7 +393,7 @@
           "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-12T08:16:22.639546+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 61987,
@@ -464,7 +410,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:23.104912+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 61999,
@@ -481,7 +427,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:41.712694+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62039,
@@ -505,7 +451,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:15:46.066583+00:00"
+      "updated_at": "2026-05-13T02:23:51.047561+00:00"
     },
     {
       "mal_id": 62524,
@@ -522,7 +468,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:43.448071+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62534,
@@ -539,7 +485,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:39.055270+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62582,
@@ -556,7 +502,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:21.274168+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62590,
@@ -573,7 +519,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:40.837837+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62615,
@@ -590,7 +536,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:36.857811+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62696,
@@ -607,7 +553,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:37.735045+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 62844,
@@ -685,7 +631,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:46.697554+00:00"
+      "updated_at": "2026-05-13T02:24:17.578392+00:00"
     },
     {
       "mal_id": 63053,
@@ -702,7 +648,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:14.023943+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63098,
@@ -780,7 +726,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:56.666131+00:00"
+      "updated_at": "2026-05-13T02:24:25.729937+00:00"
     },
     {
       "mal_id": 63157,
@@ -797,7 +743,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:34.913721+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63181,
@@ -851,7 +797,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:17:14.886066+00:00"
+      "updated_at": "2026-05-13T02:24:36.941561+00:00"
     },
     {
       "mal_id": 63221,
@@ -875,7 +821,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:00.397559+00:00"
+      "updated_at": "2026-05-13T02:23:56.765101+00:00"
     },
     {
       "mal_id": 63293,
@@ -892,7 +838,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:20.476170+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63323,
@@ -909,7 +855,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:38.612176+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63367,
@@ -926,7 +872,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:25.464839+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63382,
@@ -943,7 +889,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:17:07.410570+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63423,
@@ -960,7 +906,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:15.789294+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63712,
@@ -977,7 +923,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:11.324613+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63713,
@@ -994,7 +940,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:44.333597+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63751,
@@ -1011,7 +957,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:39.972971+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63764,
@@ -1028,7 +974,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:45.194741+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63801,
@@ -1045,7 +991,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:51.903443+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63818,
@@ -1062,7 +1008,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:14.903929+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63901,
@@ -1079,7 +1025,7 @@
       "mal_rating": "kids",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:54.602318+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 63938,
@@ -1103,24 +1049,24 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:16:05.566401+00:00"
+      "updated_at": "2026-05-13T02:24:01.335876+00:00"
     },
     {
       "mal_id": 64028,
       "season_id": "2026-fall",
-      "status": "included",
-      "source": "exact",
+      "status": "pending",
+      "source": null,
       "confidence": null,
-      "bgm_id": 236911,
-      "bgm_name": "タヌキとキツネ",
-      "bgm_name_cn": "小狸猫与小狐狸",
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
       "mal_title": "Tanuki to Kitsune (TV)",
       "mal_title_ja": "タヌキとキツネ",
       "mal_media_type": "tv",
       "mal_rating": "kids",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:15:53.693503+00:00"
+      "updated_at": "2026-05-13T03:03:14.254242+00:00"
     },
     {
       "mal_id": 64084,
@@ -1137,17 +1083,17 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T08:16:13.131459+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
       "mal_id": 64180,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
+      "status": "included",
+      "source": "exact",
       "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "bgm_id": 650428,
+      "bgm_name": "傷だらけ聖女より報復をこめて Season2",
+      "bgm_name_cn": "",
       "mal_title": "Kizu darake Seijo yori Houfuku wo Komete Season 2",
       "mal_title_ja": "傷だらけ聖女より報復をこめて Season2",
       "mal_media_type": "tv",
@@ -1215,7 +1161,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-12T08:15:55.486131+00:00"
+      "updated_at": "2026-05-13T02:40:13.834107+00:00"
     }
   ],
   "overrides": []
