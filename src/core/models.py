@@ -217,36 +217,3 @@ class StateData:
             "season": self.season,
             "items": [i.to_dict() for i in self.items],
         }
-
-
-@dataclass
-class ReleaseItem:
-    """发布条目（release 文件中的单个条目）。"""
-
-    bgm_id: int
-    bgm_name: str | None
-    bgm_name_cn: str | None
-    mal: MalInfo
-
-    def to_dict(self) -> dict[str, Any]:
-        d: dict[str, Any] = {"bgm_id": self.bgm_id}
-        if self.bgm_name is not None:
-            d["bgm_name"] = self.bgm_name
-        if self.bgm_name_cn is not None:
-            d["bgm_name_cn"] = self.bgm_name_cn
-        d["mal"] = self.mal.to_dict()
-        return d
-
-
-@dataclass
-class ReleaseData:
-    """发布文件顶层结构。"""
-
-    season: str
-    items: list[ReleaseItem]
-
-    def to_dict(self) -> dict[str, Any]:
-        return {
-            "season": self.season,
-            "items": [i.to_dict() for i in self.items],
-        }

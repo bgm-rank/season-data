@@ -1,4 +1,4 @@
-"""将 release/ 下所有季度 JSON 合并为一个文件并发布到 GitHub Release。
+"""将 data/ 下所有季度 JSON 合并为一个文件并发布到 GitHub Release。
 
 用法:
   uv run python scripts/publish_release.py [--tag TAG] [--dry-run]
@@ -17,31 +17,32 @@ import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
 
-RELEASE_DIR = Path(__file__).resolve().parent.parent / "release"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 
 def _slim_item(item: dict) -> dict:
     """只保留 bgm_id, media_type, rating。"""
-    mal = item.get("mal", {})
     return {
         "bgm_id": item["bgm_id"],
-        "media_type": mal.get("media_type", ""),
-        "rating": mal.get("rating", ""),
+        "media_type": item.get("mal_media_type", ""),
+        "rating": item.get("mal_rating", ""),
     }
 
 
-def merge_releases(release_dir: Path) -> dict:
-    """读取所有季度 release JSON，合并为 { season: [items] }。"""
+def merge_releases(data_dir: Path) -> dict:
+    """读取所有季度 data JSON，过滤 included 条目，合并为 { season: [items] }。"""
     merged: dict = {}
-    for f in sorted(release_dir.glob("*.json")):
+    for f in sorted(data_dir.glob("*.json")):
         data = json.loads(f.read_text("utf-8"))
-        season = data.get("season", f.stem)
-        merged[season] = [_slim_item(it) for it in data.get("items", [])]
+        season_field = data.get("season", {})
+        season = season_field.get("id", f.stem) if isinstance(season_field, dict) else season_field
+        included = [it for it in data.get("items", []) if it.get("status") == "included"]
+        merged[season] = [_slim_item(it) for it in included]
     return merged
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="合并 release 并发布到 GitHub")
+    parser = argparse.ArgumentParser(description="合并 data 并发布到 GitHub")
     parser.add_argument(
         "--tag",
         default=f"v{datetime.now(UTC).strftime('%Y-%m-%d')}",
@@ -54,11 +55,11 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    if not RELEASE_DIR.is_dir():
-        print(f"Error: release 目录不存在: {RELEASE_DIR}", file=sys.stderr)
+    if not DATA_DIR.is_dir():
+        print(f"Error: data 目录不存在: {DATA_DIR}", file=sys.stderr)
         sys.exit(1)
 
-    merged = merge_releases(RELEASE_DIR)
+    merged = merge_releases(DATA_DIR)
     print(f"合并了 {len(merged)} 个季度", file=sys.stderr)
 
     if args.dry_run:

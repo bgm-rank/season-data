@@ -4,8 +4,6 @@ from .models import (
     MalInfo,
     MediaType,
     Rating,
-    ReleaseData,
-    ReleaseItem,
     StateData,
     StateItem,
 )
@@ -18,8 +16,6 @@ __all__ = [
     "MalInfo",
     "MediaType",
     "Rating",
-    "ReleaseData",
-    "ReleaseItem",
     "SeasonProcessor",
     "alternative_keywords",
     "StateData",

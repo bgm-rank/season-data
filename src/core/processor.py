@@ -16,7 +16,7 @@ from services.bgmtv import BgmtvClient, Subject
 from services.mal.client import MalClient
 from services.openrouter import OpenRouterClient
 
-from .models import MalInfo, MediaType, ReleaseData, ReleaseItem
+from .models import MalInfo, MediaType
 from .season import season_date_range
 
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
@@ -433,40 +433,3 @@ class SeasonProcessor:
                 return subjects
 
         return []
-
-
-def generate_release_from_db(conn: sqlite3.Connection, season_id: str) -> None:
-    rows = conn.execute(
-        "SELECT * FROM items WHERE season_id=? AND status='included' ORDER BY bgm_id ASC",
-        (season_id,),
-    ).fetchall()
-
-    from .models import MalInfo
-
-    release_items: list[ReleaseItem] = []
-    for row in rows:
-        if row["bgm_id"] is None:
-            continue
-        mal_info = MalInfo(
-            id=row["mal_id"],
-            title=row["mal_title"],
-            title_ja=row["mal_title_ja"],
-            media_type=row["mal_media_type"],
-            rating=row["mal_rating"],
-        )
-        release_items.append(
-            ReleaseItem(
-                bgm_id=row["bgm_id"],
-                bgm_name=row["bgm_name"],
-                bgm_name_cn=row["bgm_name_cn"],
-                mal=mal_info,
-            )
-        )
-
-    release = ReleaseData(season=season_id, items=release_items)
-    release_path = ROOT_DIR / "release" / f"{season_id}.json"
-    release_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(release_path, "w", encoding="utf-8") as f:
-        json.dump(release.to_dict(), f, ensure_ascii=False, indent=2)
-        f.write("\n")
-    logger.info("release 文件已保存: {} ({} 条)", release_path, len(release_items))

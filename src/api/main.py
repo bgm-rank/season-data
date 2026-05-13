@@ -35,13 +35,12 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    from api.routers import bgm, export, items, overrides, run, seasons
+    from api.routers import bgm, items, overrides, run, seasons
 
     app.include_router(seasons.router, prefix="/api")
     app.include_router(items.router, prefix="/api")
     app.include_router(overrides.router, prefix="/api")
     app.include_router(run.router, prefix="/api")
-    app.include_router(export.router, prefix="/api")
     app.include_router(bgm.router, prefix="/api")
 
     return app

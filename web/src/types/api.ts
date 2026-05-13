@@ -120,31 +120,6 @@ export interface ProgressEvent {
   message?: string
 }
 
-// ─── Export ───────────────────────────────────────────────────────────────
-
-export interface ReleasePreview {
-  season: string
-  items: ReleaseItem[]
-}
-
-export interface ReleaseItem {
-  bgm_id: number
-  bgm_name?: string
-  bgm_name_cn?: string
-  mal: {
-    id: number
-    title: string
-    title_ja?: string
-    media_type: string
-    rating: string
-  }
-}
-
-export interface ExportResult {
-  path: string
-  item_count: number
-}
-
 // ─── API Endpoints Summary ────────────────────────────────────────────────
 //
 // GET    /api/seasons                           → SeasonSummary[]
@@ -158,7 +133,4 @@ export interface ExportResult {
 // GET    /api/seasons/{id}/overrides            → Override[]
 // POST   /api/seasons/{id}/overrides            body: OverrideCreate → Override (201)
 // DELETE /api/seasons/{id}/overrides/{mal_id}   → 204
-// GET    /api/seasons/{id}/release              → ReleasePreview
-// POST   /api/seasons/{id}/export/release       → ExportResult
-// POST   /api/seasons/{id}/export/snapshot      → ExportResult
 // GET    /api/bgm/search?q=&season=             → BgmSearchResult[]

@@ -4,7 +4,6 @@ import { ReviewQueue } from '../../components/ReviewQueue'
 import { SeasonActions } from '../../components/SeasonActions'
 import { ItemList } from '../../components/ItemList'
 import { OverrideManager } from '../../components/OverrideManager'
-import { ExportPanel } from '../../components/ExportPanel'
 
 const { id } = Astro.params as { id: string }
 ---
@@ -36,10 +35,6 @@ const { id } = Astro.params as { id: string }
 
       <section>
         <OverrideManager client:load seasonId={id} />
-      </section>
-
-      <section>
-        <ExportPanel client:load seasonId={id} />
       </section>
     </div>
   </body>

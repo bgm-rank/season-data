@@ -9,8 +9,6 @@ import type {
   BgmSearchResult,
   RunStartResponse,
   SyncStartResponse,
-  ExportResult,
-  ReleasePreview,
 } from '@/types/api'
 
 const BASE = '/api'
@@ -92,18 +90,6 @@ export function createOverride(id: string, body: OverrideCreate): Promise<Overri
 
 export function deleteOverride(id: string, malId: number): Promise<void> {
   return request(`/seasons/${id}/overrides/${malId}`, { method: 'DELETE' })
-}
-
-export function exportRelease(id: string): Promise<ExportResult> {
-  return request(`/seasons/${id}/export/release`, { method: 'POST' })
-}
-
-export function exportSnapshot(id: string): Promise<ExportResult> {
-  return request(`/seasons/${id}/export/snapshot`, { method: 'POST' })
-}
-
-export function getRelease(id: string): Promise<ReleasePreview> {
-  return request(`/seasons/${id}/release`)
 }
 
 export function searchBgm(q: string, season?: string): Promise<BgmSearchResult[]> {

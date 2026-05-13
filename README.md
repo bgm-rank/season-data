@@ -17,7 +17,7 @@ cd web && pnpm install
 | 变量 | 用途 | 必需 |
 | --- | --- | --- |
 | `MAL_CLIENT_ID` | MAL API ([申请](https://myanimelist.net/apiconfig)) | fetch 时需要 |
-| `BGM_TOKEN` | Bangumi.tv API token | 可选，提高限速 |
+| `BGM_TOKEN` | Bangumi.tv API token | nsfw 条目需要 |
 | `OPENROUTER_API_KEY` | LLM 匹配 ([OpenRouter](https://openrouter.ai/)) | run 时需要 |
 | `DEEPSEEK_API_KEY` | LLM 匹配（DeepSeek，优先于 OpenRouter） | run 时需要 |
 | `GITHUB_TOKEN` | 发布 GitHub Release | publish 时需要 |
@@ -39,7 +39,7 @@ cd web && pnpm dev
 1. 在 Web UI 创建季度 → Fetch MAL 数据（写入 `season.db`）
 2. 点击 Run 触发自动匹配（规则过滤 → 精确匹配 → LLM）
 3. 在 Review Queue 审查 `pending` 条目，填入 `bgm_id` 或标记排除
-4. Export Release 生成 `release/{year}-{season}.json`
+4. Export Data 生成 `data/{year}-{season}.json`
 
 ## 命令行（可选）
 
@@ -89,14 +89,13 @@ PYTHONPATH=src uv run python scripts/import_db.py
 uv run python scripts/publish_release.py
 ```
 
-合并所有 `release/*.json` 并发布到 GitHub Release。
+合并所有 `data/*.json` 只取部分字段并发布到 GitHub Release。
 
 ## 目录结构
 
 ```
 season.db              主数据库（seasons / items / overrides）
-data/                  数据库 JSON 副本（git 管理，用于跨机器同步）
-release/               最终发布文件
+data/                  数据库 JSON 副本（git 管理，用于跨机器同步和发布 release）
 src/
   api/                 FastAPI 后端
     routers/           seasons / items / overrides / run / export / bgm
