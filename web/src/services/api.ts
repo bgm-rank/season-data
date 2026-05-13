@@ -8,6 +8,7 @@ import type {
   OverrideCreate,
   BgmSearchResult,
   RunStartResponse,
+  SyncStartResponse,
   ExportResult,
   ReleasePreview,
 } from '@/types/api'
@@ -48,7 +49,7 @@ export function runMatching(id: string, retry = false): Promise<RunStartResponse
   return request(`/seasons/${id}/run?retry=${retry}`, { method: 'POST' })
 }
 
-export function syncBgm(id: string): Promise<{ updated: number; errors: number }> {
+export function syncBgm(id: string): Promise<SyncStartResponse> {
   return request(`/seasons/${id}/sync-bgm`, { method: 'POST' })
 }
 

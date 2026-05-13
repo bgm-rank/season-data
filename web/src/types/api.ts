@@ -102,6 +102,10 @@ export interface RunStartResponse {
   task_id: string
 }
 
+export interface SyncStartResponse {
+  task_id: string
+}
+
 export type ProgressEventType = 'progress' | 'done' | 'error' | 'heartbeat'
 
 export interface ProgressEvent {
@@ -111,6 +115,8 @@ export interface ProgressEvent {
   pending?: number
   included?: number
   excluded?: number
+  updated?: number
+  errors?: number
   message?: string
 }
 

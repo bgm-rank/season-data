@@ -6,7 +6,7 @@ interface Props {
 }
 
 export function RunProgress({ seasonId, onDone }: Props) {
-  const { progress, done, error } = useProgressStream(seasonId)
+  const { progress, done, error } = useProgressStream(`/api/seasons/${seasonId}/run/progress`)
 
   if (error) {
     return (

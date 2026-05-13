@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import type { ProgressEvent } from '@/types/api'
 
-export function useProgressStream(seasonId: string | null) {
+export function useProgressStream(url: string | null) {
   const [progress, setProgress] = useState<ProgressEvent | null>(null)
   const [done, setDone] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (!seasonId) return
-    const es = new EventSource(`/api/seasons/${seasonId}/run/progress`)
+    if (!url) return
+    const es = new EventSource(url)
     es.onmessage = (e: MessageEvent) => {
       const data = JSON.parse(e.data as string) as ProgressEvent
       if (data.type === 'progress') setProgress(data)
@@ -26,7 +26,7 @@ export function useProgressStream(seasonId: string | null) {
       es.close()
     }
     return () => es.close()
-  }, [seasonId])
+  }, [url])
 
   return { progress, done, error }
 }

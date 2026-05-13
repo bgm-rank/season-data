@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { RunProgress } from '@/components/RunProgress'
+import { useProgressStream } from '@/hooks/useProgressStream'
 import * as api from '@/services/api'
 import type { SeasonPhase } from '@/types/api'
 
@@ -24,8 +25,11 @@ export function SeasonActions({ seasonId }: Props) {
   const [running, setRunning] = useState(false)
   const [runningSeasonId, setRunningSeasonId] = useState<string | null>(null)
   const [syncing, setSyncing] = useState(false)
-  const [syncResult, setSyncResult] = useState<{ updated: number; errors: number } | null>(null)
+  const [syncSeasonId, setSyncSeasonId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
+
+  const syncUrl = syncSeasonId ? `/api/seasons/${syncSeasonId}/sync-bgm/progress` : null
+  const { progress: syncProgress, done: syncDone, error: syncError } = useProgressStream(syncUrl)
 
   useEffect(() => {
     api.getSeason(seasonId)
@@ -60,16 +64,22 @@ export function SeasonActions({ seasonId }: Props) {
     }
   }
 
+  useEffect(() => {
+    if (syncDone || syncError) {
+      setSyncing(false)
+      if (syncError) setError(syncError)
+    }
+  }, [syncDone, syncError])
+
   const handleSync = async () => {
     setSyncing(true)
-    setSyncResult(null)
+    setSyncSeasonId(null)
     setError(null)
     try {
-      const res = await api.syncBgm(seasonId)
-      setSyncResult(res)
+      await api.syncBgm(seasonId)
+      setSyncSeasonId(seasonId)
     } catch (e) {
       setError(e instanceof Error ? e.message : '刷新失败')
-    } finally {
       setSyncing(false)
     }
   }
@@ -118,15 +128,45 @@ export function SeasonActions({ seasonId }: Props) {
         >
           {syncing ? '刷新中...' : '刷新 BGM 数据'}
         </Button>
-        {syncResult && (
-          <span className="text-sm text-muted-foreground self-center">
-            已更新 {syncResult.updated} 条{syncResult.errors > 0 ? `，${syncResult.errors} 条失败` : ''}
-          </span>
-        )}
       </div>
 
       {runningSeasonId && (
         <RunProgress seasonId={runningSeasonId} onDone={handleRunDone} />
+      )}
+
+      {syncSeasonId && (
+        <div className="space-y-2">
+          {syncError ? (
+            <div className="text-sm text-destructive bg-destructive/10 px-3 py-2 rounded">
+              刷新出错：{syncError}
+            </div>
+          ) : syncDone ? (
+            <div className="text-sm text-green-600 bg-green-50 px-3 py-2 rounded">
+              刷新完成
+              {syncProgress?.updated != null && ` — 已更新 ${syncProgress.updated} 条`}
+              {syncProgress?.errors != null && syncProgress.errors > 0 && `，${syncProgress.errors} 条失败`}
+            </div>
+          ) : (
+            <>
+              <div className="flex items-center justify-between text-sm">
+                <span>刷新进度</span>
+                <span className="text-muted-foreground">
+                  {syncProgress?.processed ?? 0} / {syncProgress?.total ?? '?'}
+                </span>
+              </div>
+              <div className="w-full bg-muted rounded-full h-2">
+                <div
+                  className="bg-primary h-2 rounded-full transition-all"
+                  style={{
+                    width: syncProgress?.total
+                      ? `${Math.round(((syncProgress.processed ?? 0) / syncProgress.total) * 100)}%`
+                      : '0%',
+                  }}
+                />
+              </div>
+            </>
+          )}
+        </div>
       )}
     </div>
   )

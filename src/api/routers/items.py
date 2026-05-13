@@ -1,18 +1,24 @@
 from __future__ import annotations
 
 import asyncio
+import contextlib
 import json
 import os
 import sqlite3
 import time
+from collections.abc import AsyncIterator
 from datetime import UTC, datetime
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
+from fastapi.responses import StreamingResponse
 
 from api.schemas import ItemRead, ItemUpdate
 
 router = APIRouter()
+
+_sync_tasks: dict[str, asyncio.Task[None]] = {}
+_sync_queues: dict[str, asyncio.Queue[dict[str, Any]]] = {}
 
 
 def _get_db(request: Request) -> sqlite3.Connection:
@@ -115,25 +121,26 @@ def update_item(
     return _row_to_item(updated)
 
 
-@router.post("/seasons/{season_id}/sync-bgm")
-async def sync_bgm(
+def _run_sync(
+    db: sqlite3.Connection,
     season_id: str,
-    db: sqlite3.Connection = Depends(_get_db),
-) -> dict[str, int]:
+    queue: asyncio.Queue[dict[str, Any]],
+) -> None:
     from services.bgmtv import BgmtvClient
 
     rows = db.execute(
         "SELECT mal_id, bgm_id FROM items WHERE season_id=? AND bgm_id IS NOT NULL",
         (season_id,),
     ).fetchall()
+    total = len(rows)
+    updated = 0
+    errors = 0
+    now = datetime.now(UTC).isoformat()
 
-    def _do_sync() -> dict[str, int]:
+    try:
         bgm_token = os.getenv("BGM_TOKEN", "")
-        updated = 0
-        errors = 0
-        now = datetime.now(UTC).isoformat()
         with BgmtvClient(bgm_token) as bgmtv:
-            for row in rows:
+            for i, row in enumerate(rows, 1):
                 try:
                     subject = bgmtv.get_subject(row["bgm_id"])
                     db.execute(
@@ -146,6 +153,57 @@ async def sync_bgm(
                     time.sleep(0.3)
                 except Exception:
                     errors += 1
-        return {"updated": updated, "errors": errors}
+                with contextlib.suppress(asyncio.QueueFull):
+                    queue.put_nowait({"type": "progress", "processed": i, "total": total})
+        with contextlib.suppress(asyncio.QueueFull):
+            queue.put_nowait({"type": "done", "processed": total, "total": total, "updated": updated, "errors": errors})
+    except Exception as e:
+        with contextlib.suppress(asyncio.QueueFull):
+            queue.put_nowait({"type": "error", "message": str(e)})
 
-    return await asyncio.to_thread(_do_sync)
+
+@router.post("/seasons/{season_id}/sync-bgm", status_code=202)
+async def sync_bgm(
+    season_id: str,
+    db: sqlite3.Connection = Depends(_get_db),
+) -> dict[str, str]:
+    if season_id in _sync_tasks and not _sync_tasks[season_id].done():
+        raise HTTPException(status_code=409, detail=f"Season {season_id} already syncing")
+
+    queue: asyncio.Queue[dict[str, Any]] = asyncio.Queue(maxsize=1000)
+    _sync_queues[season_id] = queue
+
+    loop = asyncio.get_event_loop()
+
+    async def _run() -> None:
+        await loop.run_in_executor(None, _run_sync, db, season_id, queue)
+        _sync_tasks.pop(season_id, None)
+
+    task = asyncio.create_task(_run())
+    _sync_tasks[season_id] = task
+    return {"task_id": season_id}
+
+
+@router.get("/seasons/{season_id}/sync-bgm/progress")
+async def sync_bgm_progress(season_id: str) -> StreamingResponse:
+    no_task = season_id not in _sync_tasks or _sync_tasks[season_id].done()
+    if no_task and season_id not in _sync_queues:
+        raise HTTPException(status_code=404, detail=f"No running sync for season {season_id}")
+
+    queue = _sync_queues.get(season_id)
+    if queue is None:
+        raise HTTPException(status_code=404, detail=f"No running sync for season {season_id}")
+
+    async def event_stream() -> AsyncIterator[str]:
+        while True:
+            try:
+                event = await asyncio.wait_for(queue.get(), timeout=30.0)
+            except TimeoutError:
+                yield 'data: {"type":"heartbeat"}\n\n'
+                continue
+            yield f"data: {json.dumps(event, ensure_ascii=False)}\n\n"
+            if event.get("type") in ("done", "error"):
+                _sync_queues.pop(season_id, None)
+                break
+
+    return StreamingResponse(event_stream(), media_type="text/event-stream")
