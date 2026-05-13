@@ -52,7 +52,7 @@ class ItemRead(BaseModel):
 
 
 class ItemUpdate(BaseModel):
-    action: Literal["include", "exclude"]
+    action: Literal["include", "exclude", "pending"]
     bgm_id: int | None = None
 
 

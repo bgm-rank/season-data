@@ -65,7 +65,7 @@ export interface Item {
 }
 
 export interface ItemUpdate {
-  action: 'include' | 'exclude'
+  action: 'include' | 'exclude' | 'pending'
   bgm_id?: number | null
 }
 

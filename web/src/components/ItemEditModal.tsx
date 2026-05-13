@@ -34,7 +34,7 @@ interface Props {
 }
 
 export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
-  const [action, setAction] = useState<'include' | 'exclude'>('include')
+  const [action, setAction] = useState<'include' | 'exclude' | 'pending'>('include')
   const [bgmId, setBgmId] = useState(item.bgm_id != null ? String(item.bgm_id) : '')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -46,7 +46,9 @@ export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
       const body =
         action === 'include'
           ? { action: 'include' as const, bgm_id: parseInt(bgmId) }
-          : { action: 'exclude' as const }
+          : action === 'pending'
+            ? { action: 'pending' as const }
+            : { action: 'exclude' as const }
       await api.patchItem(seasonId, item.mal_id, body)
       onUpdated()
     } catch (e) {
@@ -72,7 +74,7 @@ export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
             <Badge>{STATUS_LABELS[item.status]}</Badge>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 flex-wrap">
             <button
               type="button"
               onClick={() => setAction('include')}
@@ -95,6 +97,19 @@ export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
             >
               排除（不收录）
             </button>
+            {item.status !== 'pending' && (
+              <button
+                type="button"
+                onClick={() => setAction('pending')}
+                className={`flex-1 py-2 rounded border text-sm transition-colors ${
+                  action === 'pending'
+                    ? 'border-primary bg-primary text-primary-foreground'
+                    : 'border-input hover:bg-muted'
+                }`}
+              >
+                打回审核
+              </button>
+            )}
           </div>
 
           {action === 'include' && (

@@ -94,6 +94,11 @@ def update_item(
             "UPDATE items SET status='included', source='human', bgm_id=?, updated_at=? WHERE mal_id=? AND season_id=?",
             (body.bgm_id, now, mal_id, season_id),
         )
+    elif body.action == "pending":
+        db.execute(
+            "UPDATE items SET status='pending', source=NULL, bgm_id=NULL, bgm_name=NULL, bgm_name_cn=NULL, bgm_air_date=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+            (now, mal_id, season_id),
+        )
     else:
         db.execute(
             "UPDATE items SET status='excluded', source='human', updated_at=? WHERE mal_id=? AND season_id=?",
