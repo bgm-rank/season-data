@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import time
 from dataclasses import dataclass
 from typing import Any
@@ -8,6 +9,24 @@ import httpx
 from loguru import logger
 
 BASE_URL = "https://api.bgm.tv"
+
+
+def _date_from_infobox(infobox: list[dict[str, Any]]) -> str | None:
+    for item in infobox:
+        if item.get("key") == "放送开始":
+            val = item.get("value", "")
+            if not isinstance(val, str):
+                continue
+            m = re.match(r"(\d{4})年(\d{1,2})月(?:(\d{1,2})日)?", val)
+            if m:
+                year, month, day = m.group(1), m.group(2), m.group(3)
+                if day:
+                    return f"{year}-{int(month):02d}-{int(day):02d}"
+                return f"{year}-{int(month):02d}"
+            m2 = re.match(r"(\d{4})年", val)
+            if m2:
+                return m2.group(1)
+    return None
 USER_AGENT = "bgm-rank/season-data (https://github.com/bgm-rank/season-data)"
 MAX_RETRIES = 3
 RETRY_DELAY = 1.0
@@ -29,13 +48,17 @@ class Subject:
 
     @staticmethod
     def from_dict(data: dict[str, Any]) -> Subject:
+        date = data.get("date")
+        if date is None:
+            infobox = data.get("infobox") or []
+            date = _date_from_infobox(infobox)
         return Subject(
             id=data["id"],
             type=data["type"],
             name=data.get("name"),
             name_cn=data.get("name_cn"),
             summary=data.get("summary"),
-            date=data.get("date"),
+            date=date,
             platform=data.get("platform"),
             nsfw=data.get("nsfw"),
             tags=data.get("tags"),
@@ -182,7 +205,7 @@ class BgmtvClient:
         last_error: Exception | None = None
         for attempt in range(1, MAX_RETRIES + 1):
             try:
-                resp = self.client.get(url)
+                resp = self.client.get(url, params={"nsfw": "true"})
                 if not resp.is_success:
                     raise httpx.HTTPStatusError(
                         f"{resp.status_code}: {resp.text}",
