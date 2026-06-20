@@ -197,6 +197,9 @@ eggs/
 .eggs/
 lib/
 lib64/
+# 上面的 Python lib/ 规则会误伤前端源码目录，这里重新包含
+!web/src/lib/
+!web/src/lib/**
 parts/
 sdist/
 var/
