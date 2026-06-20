@@ -5,18 +5,18 @@
     "season": "fall",
     "released_at": null,
     "created_at": "2026-05-12T08:15:09.881836+00:00",
-    "updated_at": "2026-05-13T03:03:14.254242+00:00"
+    "updated_at": "2026-06-20T01:04:09.127522+00:00"
   },
   "items": [
     {
       "mal_id": 39168,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 1.0,
+      "bgm_id": 208829,
+      "bgm_name": "ガールズ＆パンツァー 最終章 第5話",
+      "bgm_name_cn": "少女与战车 最终章 第5话",
       "mal_title": "Girls & Panzer: Saishuushou Part 5",
       "mal_title_ja": "『ガールズ＆パンツァー 最終章』第5話",
       "mal_media_type": "movie",
@@ -27,18 +27,18 @@
           "bgm_id": 208829,
           "bgm_name": "ガールズ＆パンツァー 最終章 第5話",
           "air_date": "2026-10-09",
-          "confidence": null
+          "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-13T02:24:22.052074+00:00"
+      "updated_at": "2026-06-20T00:57:11.854530+00:00"
     },
     {
       "mal_id": 52480,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
+      "status": "included",
+      "source": "human",
       "confidence": null,
-      "bgm_id": null,
+      "bgm_id": 393010,
       "bgm_name": null,
       "bgm_name_cn": null,
       "mal_title": "Tantei wa Mou, Shindeiru. Season 2",
@@ -54,14 +54,14 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-13T02:24:10.411082+00:00"
+      "updated_at": "2026-06-20T01:00:46.154954+00:00"
     },
     {
       "mal_id": 53913,
       "season_id": "2026-fall",
       "status": "included",
       "source": "llm",
-      "confidence": 1.0,
+      "confidence": 0.95,
       "bgm_id": 412008,
       "bgm_name": "転生したら剣でした 第2期",
       "bgm_name_cn": "转生成为魔剑 第二季",
@@ -74,11 +74,11 @@
         {
           "bgm_id": 412008,
           "bgm_name": "転生したら剣でした 第2期",
-          "air_date": null,
-          "confidence": 1.0
+          "air_date": "2026-10",
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:48.253130+00:00"
     },
     {
       "mal_id": 54250,
@@ -95,34 +95,47 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:50.045756+00:00"
     },
     {
       "mal_id": 54344,
       "season_id": "2026-fall",
       "status": "included",
-      "source": "exact",
-      "confidence": null,
+      "source": "human",
+      "confidence": 0.1,
       "bgm_id": 418229,
-      "bgm_name": "魔法少女育成計画 restart",
-      "bgm_name_cn": "魔法少女育成计划 restart",
+      "bgm_name": null,
+      "bgm_name_cn": null,
       "mal_title": "Mahou Shoujo Ikusei Keikaku: Restart",
       "mal_title_ja": "魔法少女育成計画 restart",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
-      "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "candidates": [
+        {
+          "bgm_id": 617452,
+          "bgm_name": "魔法のプリンセス ミンキーモモ 憧れの夢へ まごころの二重奏",
+          "air_date": "2026-11-13",
+          "confidence": 0.1
+        },
+        {
+          "bgm_id": 583786,
+          "bgm_name": "Hexed",
+          "air_date": "2026-11-25",
+          "confidence": 0.1
+        }
+      ],
+      "updated_at": "2026-06-20T01:03:26.648502+00:00"
     },
     {
       "mal_id": 56733,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 456078,
+      "bgm_name": "マジカル★エクスプローラー",
+      "bgm_name_cn": "魔法★探险家",
       "mal_title": "Magical★Explorer",
       "mal_title_ja": "マジカル★エクスプロ",
       "mal_media_type": "tv",
@@ -132,65 +145,35 @@
         {
           "bgm_id": 456078,
           "bgm_name": "マジカル★エクスプローラー",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 19426,
-          "bgm_name": "まじかるカナン",
-          "air_date": "2005-01-01",
-          "confidence": null
-        },
-        {
-          "bgm_id": 47161,
-          "bgm_name": "まじかるすいーとプリズム・ナナ",
-          "air_date": "2015-11-29",
-          "confidence": null
-        },
-        {
-          "bgm_id": 53736,
-          "bgm_name": "まじかる☆タルるートくん",
-          "air_date": "1990-09-02",
-          "confidence": null
-        },
-        {
-          "bgm_id": 67407,
-          "bgm_name": "マジカル☆スター かのん100%",
-          "air_date": "2013-06-18",
-          "confidence": null
-        },
-        {
-          "bgm_id": 67784,
-          "bgm_name": "マジカルトワイライト",
-          "air_date": "1994-07-08",
-          "confidence": null
-        },
-        {
-          "bgm_id": 98516,
-          "bgm_name": "まじかるマホ",
-          "air_date": "1997-03-21",
-          "confidence": null
-        },
-        {
-          "bgm_id": 315264,
-          "bgm_name": "マジカルエミ 〜フィナーレ！フィナーレ！〜",
-          "air_date": "1986-05-25",
-          "confidence": null
-        },
-        {
-          "bgm_id": 416533,
-          "bgm_name": "まじかる☆タルるートくん 燃えろ!友情の魔法大戦",
-          "air_date": "1991-07-20",
-          "confidence": null
-        },
-        {
-          "bgm_id": 416781,
-          "bgm_name": "まじかる☆タルるートくん",
-          "air_date": "1991-03-09",
-          "confidence": null
+          "air_date": "2026-10",
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T02:24:32.167916+00:00"
+      "updated_at": "2026-06-20T00:57:08.007349+00:00"
+    },
+    {
+      "mal_id": 57612,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 471844,
+      "bgm_name": "帰還者の魔法は特別です 第2期",
+      "bgm_name_cn": "归还者的魔法要特别 第二季",
+      "mal_title": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
+      "mal_title_ja": "帰還者の魔法は特別です 2期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 471844,
+          "bgm_name": "帰還者の魔法は特別です 第2期",
+          "air_date": "2026-10",
+          "confidence": 0.95
+        }
+      ],
+      "updated_at": "2026-06-20T00:56:35.169314+00:00"
     },
     {
       "mal_id": 57961,
@@ -207,7 +190,31 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:57:11.328818+00:00"
+    },
+    {
+      "mal_id": 58518,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 486456,
+      "bgm_name": "佐々木とピーちゃん 第2期",
+      "bgm_name_cn": "佐佐木与文鸟小哔 第二季",
+      "mal_title": "Sasaki to Pii-chan Season 2",
+      "mal_title_ja": "佐々木とピーちゃん シーズン２",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 486456,
+          "bgm_name": "佐々木とピーちゃん 第2期",
+          "air_date": "2026-10",
+          "confidence": 0.95
+        }
+      ],
+      "updated_at": "2026-06-20T00:56:41.271622+00:00"
     },
     {
       "mal_id": 59088,
@@ -224,15 +231,15 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:43.034415+00:00"
     },
     {
       "mal_id": 59204,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
+      "status": "included",
+      "source": "human",
+      "confidence": 0.1,
+      "bgm_id": 502123,
       "bgm_name": null,
       "bgm_name_cn": null,
       "mal_title": "Magic Knight Rayearth (2026)",
@@ -240,8 +247,21 @@
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
-      "candidates": null,
-      "updated_at": "2026-05-13T03:03:05.228760+00:00"
+      "candidates": [
+        {
+          "bgm_id": 617452,
+          "bgm_name": "魔法のプリンセス ミンキーモモ 憧れの夢へ まごころの二重奏",
+          "air_date": "2026-11-13",
+          "confidence": 0.1
+        },
+        {
+          "bgm_id": 583786,
+          "bgm_name": "Hexed",
+          "air_date": "2026-11-25",
+          "confidence": 0.1
+        }
+      ],
+      "updated_at": "2026-06-20T01:04:09.127522+00:00"
     },
     {
       "mal_id": 60601,
@@ -258,17 +278,17 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:37.749167+00:00"
     },
     {
       "mal_id": 60948,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.99,
+      "bgm_id": 536270,
+      "bgm_name": "目覚めたら最強装備と宇宙船持ちだったので 、一戸建て目指して傭兵として自由に生きたい",
+      "bgm_name_cn": "一觉醒来坐拥神装和飞船，我决定以买一套独门独户的房子为目标作为佣兵自由地活下去",
       "mal_title": "Mezametara Saikyou Soubi to Uchuusenmochi Datta node, Ikkodate Mezashite Youhei toshite Jiyuu ni Ikitai",
       "mal_title_ja": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
       "mal_media_type": "tv",
@@ -278,23 +298,11 @@
         {
           "bgm_id": 536270,
           "bgm_name": "目覚めたら最強装備と宇宙船持ちだったので 、一戸建て目指して傭兵として自由に生きたい",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 500040,
-          "bgm_name": "目覚めのアウロラ ～虹の森に咲くきみと～",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 156692,
-          "bgm_name": "二度と目覚めぬ子守唄",
-          "air_date": "1985-01-01",
-          "confidence": null
+          "air_date": "2026-10",
+          "confidence": 0.99
         }
       ],
-      "updated_at": "2026-05-13T02:24:05.266507+00:00"
+      "updated_at": "2026-06-20T00:57:04.901433+00:00"
     },
     {
       "mal_id": 61014,
@@ -311,7 +319,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:57.200749+00:00"
     },
     {
       "mal_id": 61140,
@@ -328,7 +336,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:05.392639+00:00"
     },
     {
       "mal_id": 61153,
@@ -345,7 +353,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:57:15.709224+00:00"
     },
     {
       "mal_id": 61323,
@@ -369,14 +377,14 @@
           "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:50.639770+00:00"
     },
     {
       "mal_id": 61603,
       "season_id": "2026-fall",
       "status": "included",
       "source": "llm",
-      "confidence": 1.0,
+      "confidence": 0.95,
       "bgm_id": 555605,
       "bgm_name": "アオアシ Season 2",
       "bgm_name_cn": "青之芦苇 第二季",
@@ -390,10 +398,34 @@
           "bgm_id": 555605,
           "bgm_name": "アオアシ Season 2",
           "air_date": "2026-10-04",
-          "confidence": 1.0
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:38.851997+00:00"
+    },
+    {
+      "mal_id": 61967,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 567896,
+      "bgm_name": "ブラッククローバー 2nd Season",
+      "bgm_name_cn": "黑色五叶草 第二季",
+      "mal_title": "Black Clover 2nd Season",
+      "mal_title_ja": "ブラッククローバー 2nd season",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 567896,
+          "bgm_name": "ブラッククローバー 2nd Season",
+          "air_date": "2026-10",
+          "confidence": 0.95
+        }
+      ],
+      "updated_at": "2026-06-20T00:56:46.510027+00:00"
     },
     {
       "mal_id": 61987,
@@ -410,7 +442,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:57:18.583719+00:00"
     },
     {
       "mal_id": 61999,
@@ -427,15 +459,15 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:57:06.908976+00:00"
     },
     {
       "mal_id": 62039,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
+      "status": "included",
+      "source": "human",
       "confidence": null,
-      "bgm_id": null,
+      "bgm_id": 563508,
       "bgm_name": null,
       "bgm_name_cn": null,
       "mal_title": "Pan Dorobou",
@@ -451,7 +483,7 @@
           "confidence": null
         }
       ],
-      "updated_at": "2026-05-13T02:23:51.047561+00:00"
+      "updated_at": "2026-06-20T01:00:19.465979+00:00"
     },
     {
       "mal_id": 62524,
@@ -468,7 +500,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:06.627970+00:00"
     },
     {
       "mal_id": 62534,
@@ -485,7 +517,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:13.328177+00:00"
     },
     {
       "mal_id": 62582,
@@ -502,7 +534,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:37.184663+00:00"
     },
     {
       "mal_id": 62590,
@@ -519,7 +551,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:32.804505+00:00"
     },
     {
       "mal_id": 62615,
@@ -536,7 +568,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:01.961717+00:00"
     },
     {
       "mal_id": 62696,
@@ -553,17 +585,34 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:55:55.180512+00:00"
+    },
+    {
+      "mal_id": 62753,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 596771,
+      "bgm_name": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+      "bgm_name_cn": "弱气MAX的大小姐、居然接受了铁腕未婚夫的赌约",
+      "mal_title": "Yowaki Max Reijou nanoni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta",
+      "mal_title_ja": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:33.965169+00:00"
     },
     {
       "mal_id": 62844,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 599894,
+      "bgm_name": "薬屋のひとりごと 劇場版",
+      "bgm_name_cn": "药屋少女的呢喃 剧场版",
       "mal_title": "Kusuriya no Hitorigoto Movie",
       "mal_title_ja": "劇場版 薬屋のひとりごと",
       "mal_media_type": "movie",
@@ -574,64 +623,44 @@
           "bgm_id": 599894,
           "bgm_name": "薬屋のひとりごと 劇場版",
           "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 233,
-          "bgm_name": "劇場版 空の境界 第一章 俯瞰風景",
-          "air_date": "2007-12-01",
-          "confidence": null
-        },
-        {
-          "bgm_id": 766,
-          "bgm_name": "劇場版 空の境界 第四章 伽藍の洞",
-          "air_date": "2008-05-24",
-          "confidence": null
-        },
-        {
-          "bgm_id": 767,
-          "bgm_name": "劇場版 空の境界 第三章 痛覚残留",
-          "air_date": "2008-02-09",
-          "confidence": null
-        },
-        {
-          "bgm_id": 812,
-          "bgm_name": "劇場版 空の境界 第二章 殺人考察(前)",
-          "air_date": "2007-12-29",
-          "confidence": null
-        },
-        {
-          "bgm_id": 1333,
-          "bgm_name": "劇場版 空の境界 第五章 矛盾螺旋",
-          "air_date": "2008-08-16",
-          "confidence": null
-        },
-        {
-          "bgm_id": 1862,
-          "bgm_name": "劇場版 灼眼のシャナ",
-          "air_date": "2007-04-21",
-          "confidence": null
-        },
-        {
-          "bgm_id": 1941,
-          "bgm_name": "劇場版 カードキャプターさくら",
-          "air_date": "1999-08-21",
-          "confidence": null
-        },
-        {
-          "bgm_id": 1942,
-          "bgm_name": "劇場版カードキャプターさくら 封印されたカード",
-          "air_date": "2000-07-15",
-          "confidence": null
-        },
-        {
-          "bgm_id": 2225,
-          "bgm_name": "劇場版 空の境界 第六章 忘却録音",
-          "air_date": "2008-12-20",
-          "confidence": null
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T02:24:17.578392+00:00"
+      "updated_at": "2026-06-20T00:56:51.955341+00:00"
+    },
+    {
+      "mal_id": 62907,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 605533,
+      "bgm_name": "おじさんはカワイイものがお好き。",
+      "bgm_name_cn": "大叔喜欢可爱小玩意",
+      "mal_title": "Ojisan wa Kawaii Mono ga Osuki.",
+      "mal_title_ja": "おじさんはカワイイものがお好き。",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:29.231354+00:00"
+    },
+    {
+      "mal_id": 62922,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 606716,
+      "bgm_name": "貸した魔力は【リボ払い】で強制徴収",
+      "bgm_name_cn": "借出去的魔力要用【分期还款】强制收回",
+      "mal_title": "Kashita Maryoku wa \"Revo Barai\" de Kyousei Choushuu",
+      "mal_title_ja": "貸した魔力は【リボ払い】で強制徴収",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:10.901299+00:00"
     },
     {
       "mal_id": 63053,
@@ -648,15 +677,15 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:30.381276+00:00"
     },
     {
       "mal_id": 63098,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
+      "status": "included",
+      "source": "human",
       "confidence": null,
-      "bgm_id": null,
+      "bgm_id": 614640,
       "bgm_name": null,
       "bgm_name_cn": null,
       "mal_title": "Psyren",
@@ -690,6 +719,12 @@
           "confidence": null
         },
         {
+          "bgm_id": 499474,
+          "bgm_name": "東京リベンジャーズ 三天戦争編",
+          "air_date": "2026-10-02",
+          "confidence": null
+        },
+        {
           "bgm_id": 503237,
           "bgm_name": "Shrek 5",
           "air_date": "2026-12-23",
@@ -718,15 +753,9 @@
           "bgm_name": "Shaun the Sheep: The Beast of Mossy Bottom",
           "air_date": "2026-09-18",
           "confidence": null
-        },
-        {
-          "bgm_id": 563041,
-          "bgm_name": "最終楽章 響け！ユーフォニアム 後編",
-          "air_date": "2026-09-11",
-          "confidence": null
         }
       ],
-      "updated_at": "2026-05-13T02:24:25.729937+00:00"
+      "updated_at": "2026-06-20T01:01:27.250851+00:00"
     },
     {
       "mal_id": 63157,
@@ -743,17 +772,34 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:14.592720+00:00"
+    },
+    {
+      "mal_id": 63167,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 617452,
+      "bgm_name": "魔法のプリンセス ミンキーモモ 憧れの夢へ まごころの二重奏",
+      "bgm_name_cn": "魔法公主明琪桃子 向着憧憬之梦 真心的二重奏",
+      "mal_title": "Mahou no Princess Minky Momo: Akogare no Yume e - Magokoro no Duo",
+      "mal_title_ja": "魔法のプリンセス ミンキーモモ 憧れの夢へ まごころの二重奏",
+      "mal_media_type": "ova",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:26.269695+00:00"
     },
     {
       "mal_id": 63181,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 617948,
+      "bgm_name": "桃源暗鬼 ～日光・華厳の滝編～",
+      "bgm_name_cn": "桃源暗鬼 ～日光・华严之泷篇～",
       "mal_title": "Tougen Anki: Nikko Kegon no Taki-hen",
       "mal_title_ja": "桃源暗鬼 日光・華厳の滝編",
       "mal_media_type": "tv",
@@ -763,49 +809,19 @@
         {
           "bgm_id": 617948,
           "bgm_name": "桃源暗鬼 ～日光・華厳の滝編～",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 493546,
-          "bgm_name": "桃源暗鬼",
-          "air_date": "2025-07-11",
-          "confidence": null
-        },
-        {
-          "bgm_id": 624121,
-          "bgm_name": "おにもももも",
-          "air_date": "2025-07-13",
-          "confidence": null
-        },
-        {
-          "bgm_id": 51947,
-          "bgm_name": "わが青春のアルカディア 無限軌道SSX",
-          "air_date": "1982-10-13",
-          "confidence": null
-        },
-        {
-          "bgm_id": 127779,
-          "bgm_name": "わが青春のアルカディア",
-          "air_date": "1982-07-28",
-          "confidence": null
-        },
-        {
-          "bgm_id": 82770,
-          "bgm_name": "幻想万華鏡 泡沫、哀のまほろば",
-          "air_date": "2012-10-20",
-          "confidence": null
+          "air_date": "2026-10",
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T02:24:36.941561+00:00"
+      "updated_at": "2026-06-20T00:56:55.264894+00:00"
     },
     {
       "mal_id": 63221,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
+      "status": "excluded",
+      "source": "human",
+      "confidence": 0.1,
+      "bgm_id": 657605,
       "bgm_name": null,
       "bgm_name_cn": null,
       "mal_title": "Norman the Snowman: Kodomo-tachi no Hitotsuboshi",
@@ -815,13 +831,19 @@
       "error": null,
       "candidates": [
         {
+          "bgm_id": 657605,
+          "bgm_name": "ノーマン",
+          "air_date": null,
+          "confidence": 0.1
+        },
+        {
           "bgm_id": 220083,
           "bgm_name": "愛の奇跡 ドクターノーマン物語",
           "air_date": "1982-12-24",
-          "confidence": null
+          "confidence": 0.1
         }
       ],
-      "updated_at": "2026-05-13T02:23:56.765101+00:00"
+      "updated_at": "2026-06-20T01:03:07.797281+00:00"
     },
     {
       "mal_id": 63293,
@@ -838,7 +860,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:57:13.301144+00:00"
     },
     {
       "mal_id": 63323,
@@ -855,7 +877,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:01.433590+00:00"
     },
     {
       "mal_id": 63367,
@@ -872,7 +894,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:39.982379+00:00"
     },
     {
       "mal_id": 63382,
@@ -889,7 +911,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:57:03.658078+00:00"
     },
     {
       "mal_id": 63423,
@@ -909,6 +931,47 @@
       "updated_at": "2026-05-13T02:40:13.834107+00:00"
     },
     {
+      "mal_id": 63431,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "human",
+      "confidence": 0.0,
+      "bgm_id": 625799,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Tsuihou sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka suru. Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
+      "mal_title_ja": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。 ～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 477456,
+          "bgm_name": "楽園追放 心のレゾナンス",
+          "air_date": "2026-11-13",
+          "confidence": 0.0
+        }
+      ],
+      "updated_at": "2026-06-20T01:02:25.178903+00:00"
+    },
+    {
+      "mal_id": 63509,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 630160,
+      "bgm_name": "ダークサモナーとデキている",
+      "bgm_name_cn": "黑暗召唤师在地下恋爱中",
+      "mal_title": "Dark Summoner to Dekiteiru",
+      "mal_title_ja": "ダークサモナーとデキている",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:28.095922+00:00"
+    },
+    {
       "mal_id": 63712,
       "season_id": "2026-fall",
       "status": "included",
@@ -923,7 +986,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:00.322008+00:00"
     },
     {
       "mal_id": 63713,
@@ -940,7 +1003,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:55:59.120128+00:00"
     },
     {
       "mal_id": 63751,
@@ -957,7 +1020,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:07.878926+00:00"
     },
     {
       "mal_id": 63764,
@@ -974,7 +1037,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:55:57.875597+00:00"
     },
     {
       "mal_id": 63801,
@@ -991,7 +1054,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:54.025307+00:00"
     },
     {
       "mal_id": 63818,
@@ -1008,7 +1071,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:25.065178+00:00"
     },
     {
       "mal_id": 63901,
@@ -1025,17 +1088,17 @@
       "mal_rating": "kids",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:21.875784+00:00"
     },
     {
       "mal_id": 63938,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 640765,
+      "bgm_name": "カードファイト!! ヴァンガード Divinez 運命星戦編",
+      "bgm_name_cn": "卡片战斗先导者 Divinez 命运星战篇",
       "mal_title": "Cardfight!! Vanguard: Divinez Unmei Seisen-hen",
       "mal_title_ja": "カードファイト!! ヴァンガード DivineZ 運命星戦編",
       "mal_media_type": "tv",
@@ -1046,27 +1109,27 @@
           "bgm_id": 640765,
           "bgm_name": "カードファイト!! ヴァンガード Divinez 運命星戦編",
           "air_date": "2026-11-07",
-          "confidence": null
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T02:24:01.335876+00:00"
+      "updated_at": "2026-06-20T00:56:16.957272+00:00"
     },
     {
       "mal_id": 64028,
       "season_id": "2026-fall",
-      "status": "pending",
-      "source": null,
+      "status": "included",
+      "source": "exact",
       "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "bgm_id": 236911,
+      "bgm_name": "タヌキとキツネ",
+      "bgm_name_cn": "小狸猫与小狐狸",
       "mal_title": "Tanuki to Kitsune (TV)",
       "mal_title_ja": "タヌキとキツネ",
       "mal_media_type": "tv",
       "mal_rating": "kids",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:03:14.254242+00:00"
+      "updated_at": "2026-06-20T00:56:18.143006+00:00"
     },
     {
       "mal_id": 64084,
@@ -1083,7 +1146,24 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:04.265395+00:00"
+    },
+    {
+      "mal_id": 64131,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 647220,
+      "bgm_name": "彼女の友達",
+      "bgm_name_cn": "女友的朋友",
+      "mal_title": "Kanojo no Tomodachi",
+      "mal_title_ja": "彼女の友達",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:26.879492+00:00"
     },
     {
       "mal_id": 64180,
@@ -1099,69 +1179,83 @@
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:03.113956+00:00"
+    },
+    {
+      "mal_id": 64254,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 654294,
+      "bgm_name": "冰剣の魔術師が世界を統べるⅡ",
+      "bgm_name_cn": "冰剑的魔术师将要统一世界 第二季",
+      "mal_title": "Hyouken no Majutsushi ga Sekai wo Suberu II",
+      "mal_title_ja": "冰剣の魔術師が世界を統べるII",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:57:14.510338+00:00"
+    },
+    {
+      "mal_id": 64326,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 657084,
+      "bgm_name": "マロニエ王国の七人の騎士",
+      "bgm_name_cn": "七叶树王国的七名骑士",
+      "mal_title": "Marronnier Oukoku no Shichinin no Kishi",
+      "mal_title_ja": "マロニエ王国の七人の騎士",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:31.627415+00:00"
+    },
+    {
+      "mal_id": 64340,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "llm",
+      "confidence": 1.0,
+      "bgm_id": 657656,
+      "bgm_name": "テムパル～アイテムの力～",
+      "bgm_name_cn": "装备我最强",
+      "mal_title": "Tempal: Item no Chikara",
+      "mal_title_ja": "テムパル ～アイテムの力～",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
       "candidates": [
         {
-          "bgm_id": 515418,
-          "bgm_name": "傷だらけ聖女より報復をこめて",
-          "air_date": "2025-07-09",
-          "confidence": null
-        },
-        {
-          "bgm_id": 7707,
-          "bgm_name": "傷物語Ⅰ鉄血篇",
-          "air_date": "2016-01-08",
-          "confidence": null
-        },
-        {
-          "bgm_id": 78067,
-          "bgm_name": "傷追い人",
-          "air_date": "1986-07-05",
-          "confidence": null
-        },
-        {
-          "bgm_id": 148036,
-          "bgm_name": "傷物語Ⅱ熱血篇",
-          "air_date": "2016-08-19",
-          "confidence": null
-        },
-        {
-          "bgm_id": 148037,
-          "bgm_name": "傷物語Ⅲ冷血篇",
-          "air_date": "2017-07-12",
-          "confidence": null
-        },
-        {
-          "bgm_id": 237963,
-          "bgm_name": "傷物語VR",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 454045,
-          "bgm_name": "傷物語-こよみヴァンプ-",
-          "air_date": "2024-01-12",
-          "confidence": null
-        },
-        {
-          "bgm_id": 52827,
-          "bgm_name": "人魚の傷",
-          "air_date": "1993-09-24",
-          "confidence": null
-        },
-        {
-          "bgm_id": 314488,
-          "bgm_name": "プレイタの傷",
-          "air_date": "2021-01-08",
-          "confidence": null
-        },
-        {
-          "bgm_id": 63026,
-          "bgm_name": "新・脅迫2 THE ANIMATION～傷に咲く花 鮮血の紅～",
-          "air_date": "2006-05-26",
-          "confidence": null
+          "bgm_id": 657656,
+          "bgm_name": "テムパル～アイテムの力～",
+          "air_date": "2026-10",
+          "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-13T02:40:13.834107+00:00"
+      "updated_at": "2026-06-20T00:56:09.017282+00:00"
+    },
+    {
+      "mal_id": 64344,
+      "season_id": "2026-fall",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 657778,
+      "bgm_name": "獣王武神ダンデヴァイン",
+      "bgm_name_cn": "兽王武神DANDIVINE",
+      "mal_title": "Juuou Mujin Dandivine",
+      "mal_title_ja": "獣王武神ダンデヴァイン",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T00:56:15.712903+00:00"
     }
   ],
   "overrides": []
