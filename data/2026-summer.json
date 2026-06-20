@@ -5,7 +5,7 @@
     "season": "summer",
     "released_at": null,
     "created_at": "2026-05-12T03:25:57.138209+00:00",
-    "updated_at": "2026-05-12T09:04:50.784379+00:00"
+    "updated_at": "2026-06-20T01:42:55.359894+00:00"
   },
   "items": [
     {
@@ -17,13 +17,13 @@
       "bgm_id": 325767,
       "bgm_name": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
       "bgm_name_cn": "感谢对战。 ～大小姐才不玩格斗游戏～",
-      "mal_title": "Tai-Ari deshita.: Ojousama wa Kakutou Game nante Shinai",
+      "mal_title": "Tai-Ari deshita. Ojousama wa Kakutou Game nante Shinai",
       "mal_title_ja": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:46.168962+00:00"
     },
     {
       "mal_id": 48820,
@@ -40,14 +40,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:48.805710+00:00"
     },
     {
       "mal_id": 49233,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.95,
       "bgm_id": 339515,
       "bgm_name": "幼女戦記Ⅱ",
       "bgm_name_cn": "幼女战记 第二季",
@@ -58,55 +58,13 @@
       "error": null,
       "candidates": [
         {
-          "bgm_id": 167655,
-          "bgm_name": "幼女戦記",
-          "air_date": "2017-01-06",
-          "confidence": null
-        },
-        {
           "bgm_id": 339515,
           "bgm_name": "幼女戦記Ⅱ",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 234771,
-          "bgm_name": "劇場版 幼女戦記",
-          "air_date": "2019-02-08",
-          "confidence": null
-        },
-        {
-          "bgm_id": 316795,
-          "bgm_name": "幼女社長",
-          "air_date": "2021-01-01",
-          "confidence": null
-        },
-        {
-          "bgm_id": 339533,
-          "bgm_name": "幼女戦記 砂漠のパスタ大作戦",
-          "air_date": "2021-06-19",
-          "confidence": null
-        },
-        {
-          "bgm_id": 401970,
-          "bgm_name": "幼女社長R",
-          "air_date": "2023-07-01",
-          "confidence": null
-        },
-        {
-          "bgm_id": 338653,
-          "bgm_name": "社畜さんは幼女幽霊に癒されたい。",
-          "air_date": "2022-04-07",
-          "confidence": null
-        },
-        {
-          "bgm_id": 205115,
-          "bgm_name": "ようじょしぇんき",
-          "air_date": "2017-01-06",
-          "confidence": null
+          "air_date": "2026-07-08",
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:11.561635+00:00"
     },
     {
       "mal_id": 54000,
@@ -123,7 +81,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:47.824268+00:00"
     },
     {
       "mal_id": 56613,
@@ -140,7 +98,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:21.348396+00:00"
     },
     {
       "mal_id": 56735,
@@ -157,13 +115,13 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:04.770581+00:00"
     },
     {
       "mal_id": 56736,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
+      "source": "exact",
       "confidence": null,
       "bgm_id": 456081,
       "bgm_name": "最強出涸らし皇子の暗躍帝位争い",
@@ -173,15 +131,8 @@
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
-      "candidates": [
-        {
-          "bgm_id": 583862,
-          "bgm_name": "世界最強の後衛 ～迷宮国の新人探索者～",
-          "air_date": "2026-07-05",
-          "confidence": null
-        }
-      ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:57.241373+00:00"
     },
     {
       "mal_id": 58878,
@@ -198,7 +149,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:07.162126+00:00"
     },
     {
       "mal_id": 58929,
@@ -215,14 +166,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:46.697564+00:00"
     },
     {
       "mal_id": 59193,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 1.0,
       "bgm_id": 501963,
       "bgm_name": "無職転生Ⅲ ～異世界行ったら本気だす～",
       "bgm_name_cn": "无职转生 第三季 ～到了异世界就拿出真本事～",
@@ -236,10 +187,10 @@
           "bgm_id": 501963,
           "bgm_name": "無職転生Ⅲ ～異世界行ったら本気だす～",
           "air_date": "2026-07-05",
-          "confidence": null
+          "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:50.597811+00:00"
     },
     {
       "mal_id": 59741,
@@ -249,14 +200,14 @@
       "confidence": null,
       "bgm_id": 511177,
       "bgm_name": "追放された転生重騎士はゲーム知識で無双する",
-      "bgm_name_cn": "被流放的转生重骑士用游戏知识开无双",
+      "bgm_name_cn": "遭到流放的转生重骑士凭借游戏知识大开无双",
       "mal_title": "Tsuihou sareta Tensei Juukishi wa Game Chishiki de Musou suru",
       "mal_title_ja": "追放された転生重騎士はゲーム知識で無双する",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:43.061824+00:00"
     },
     {
       "mal_id": 60059,
@@ -273,7 +224,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:41.950898+00:00"
     },
     {
       "mal_id": 60522,
@@ -290,7 +241,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:52.509628+00:00"
     },
     {
       "mal_id": 60552,
@@ -307,7 +258,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:00.094538+00:00"
     },
     {
       "mal_id": 60636,
@@ -324,7 +275,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:49.347943+00:00"
     },
     {
       "mal_id": 60637,
@@ -341,7 +292,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:18.493277+00:00"
     },
     {
       "mal_id": 61048,
@@ -358,7 +309,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:58.356307+00:00"
     },
     {
       "mal_id": 61126,
@@ -375,7 +326,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:55.568397+00:00"
     },
     {
       "mal_id": 61169,
@@ -392,7 +343,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:40.907507+00:00"
     },
     {
       "mal_id": 61240,
@@ -402,14 +353,14 @@
       "confidence": null,
       "bgm_id": 545008,
       "bgm_name": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～",
-      "bgm_name_cn": "恶女不才，请多关照 ~雏宫蝶鼠换身传~",
+      "bgm_name_cn": "恶女不才，请多关照 ～雏宫蝶鼠换身传～",
       "mal_title": "Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den",
       "mal_title_ja": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:56.107535+00:00"
     },
     {
       "mal_id": 61280,
@@ -426,7 +377,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:04.587007+00:00"
     },
     {
       "mal_id": 61483,
@@ -443,7 +394,31 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:44.172335+00:00"
+    },
+    {
+      "mal_id": 61607,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 555710,
+      "bgm_name": "时光代理人Ⅲ Part One",
+      "bgm_name_cn": "时光代理人 第三季 Part 1",
+      "mal_title": "Shiguang Dailiren III",
+      "mal_title_ja": "时光代理人III",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 555710,
+          "bgm_name": "时光代理人Ⅲ Part One",
+          "air_date": "2026-08-14",
+          "confidence": 0.95
+        }
+      ],
+      "updated_at": "2026-06-20T01:40:39.554607+00:00"
     },
     {
       "mal_id": 61686,
@@ -460,7 +435,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:02.483392+00:00"
     },
     {
       "mal_id": 61814,
@@ -477,7 +452,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:01.860890+00:00"
     },
     {
       "mal_id": 61897,
@@ -494,7 +469,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:47.232463+00:00"
     },
     {
       "mal_id": 62031,
@@ -511,7 +486,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:34.337439+00:00"
     },
     {
       "mal_id": 62051,
@@ -521,14 +496,14 @@
       "confidence": null,
       "bgm_id": 570583,
       "bgm_name": "グロウアップショウ ～ひまわりのサーカス団～",
-      "bgm_name_cn": "成长秀～向日葵马戏团～",
+      "bgm_name_cn": "Grow Up Show ～向日葵马戏团～",
       "mal_title": "Grow Up Show: Himawari no Circus-dan",
       "mal_title_ja": "グロウアップショウ ～ひまわりのサーカス団～",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:03.464338+00:00"
     },
     {
       "mal_id": 62076,
@@ -538,14 +513,14 @@
       "confidence": null,
       "bgm_id": 571784,
       "bgm_name": "スーパーの裏でヤニ吸うふたり",
-      "bgm_name_cn": "躲在超市后门抽烟的两人",
+      "bgm_name_cn": "在超市后门吸烟的二人",
       "mal_title": "Super no Ura de Yani Suu Futari",
       "mal_title_ja": "スーパーの裏でヤニ吸うふたり",
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:01.464930+00:00"
     },
     {
       "mal_id": 62078,
@@ -562,13 +537,30 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:56.714436+00:00"
+    },
+    {
+      "mal_id": 62079,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 571896,
+      "bgm_name": "サイボーグ009 ネメシス",
+      "bgm_name_cn": "人造人009 涅墨西斯",
+      "mal_title": "Cyborg 009: Nemesis",
+      "mal_title_ja": "サイボーグ009 ネメシス",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:31.906293+00:00"
     },
     {
       "mal_id": 62080,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
+      "source": "exact",
       "confidence": null,
       "bgm_id": 571910,
       "bgm_name": "無自覚聖女は今日も無意識に力を垂れ流す",
@@ -578,15 +570,8 @@
       "mal_media_type": "tv",
       "mal_rating": "general",
       "error": null,
-      "candidates": [
-        {
-          "bgm_id": 501963,
-          "bgm_name": "無職転生Ⅲ ～異世界行ったら本気だす～",
-          "air_date": "2026-07-05",
-          "confidence": null
-        }
-      ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:38.349067+00:00"
     },
     {
       "mal_id": 62102,
@@ -603,7 +588,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:21.880801+00:00"
     },
     {
       "mal_id": 62233,
@@ -620,7 +605,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-12T03:27:20.946025+00:00"
+      "updated_at": "2026-06-20T01:40:56.710205+00:00"
     },
     {
       "mal_id": 62289,
@@ -637,7 +622,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:57.826201+00:00"
     },
     {
       "mal_id": 62312,
@@ -654,7 +639,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:43.649663+00:00"
     },
     {
       "mal_id": 62322,
@@ -671,14 +656,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:09.583985+00:00"
     },
     {
       "mal_id": 62430,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.95,
       "bgm_id": 583729,
       "bgm_name": "BanG Dream! ゆめ∞みた",
       "bgm_name_cn": "BanG Dream! YUME∞MITA",
@@ -692,10 +677,10 @@
           "bgm_id": 583729,
           "bgm_name": "BanG Dream! ゆめ∞みた",
           "air_date": "2026-07-02",
-          "confidence": null
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:05.694393+00:00"
     },
     {
       "mal_id": 62435,
@@ -712,7 +697,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:58.938358+00:00"
     },
     {
       "mal_id": 62476,
@@ -729,7 +714,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:16.045867+00:00"
     },
     {
       "mal_id": 62513,
@@ -746,7 +731,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:55.035875+00:00"
     },
     {
       "mal_id": 62535,
@@ -763,7 +748,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:59.509762+00:00"
     },
     {
       "mal_id": 62542,
@@ -780,7 +765,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:51.771215+00:00"
     },
     {
       "mal_id": 62617,
@@ -797,7 +782,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:10.295081+00:00"
     },
     {
       "mal_id": 62683,
@@ -814,14 +799,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:13.146418+00:00"
     },
     {
       "mal_id": 62811,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.99,
       "bgm_id": 598058,
       "bgm_name": "君のことが大大大大大好きな100人の彼女 第3期",
       "bgm_name_cn": "超超超超超喜欢你的100个女朋友 第三季",
@@ -835,28 +820,10 @@
           "bgm_id": 598058,
           "bgm_name": "君のことが大大大大大好きな100人の彼女 第3期",
           "air_date": "2026-07-05",
-          "confidence": null
-        },
-        {
-          "bgm_id": 623228,
-          "bgm_name": "君と花火と約束と",
-          "air_date": "2026-07-17",
-          "confidence": null
-        },
-        {
-          "bgm_id": 638497,
-          "bgm_name": "正反対な君と僕 第2期",
-          "air_date": "2026-07-05",
-          "confidence": null
-        },
-        {
-          "bgm_id": 607340,
-          "bgm_name": "透明な夜に駆ける君と、目に見えない恋をした。",
-          "air_date": "2026-07-06",
-          "confidence": null
+          "confidence": 0.99
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:53.106684+00:00"
     },
     {
       "mal_id": 62856,
@@ -873,7 +840,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:41.428518+00:00"
     },
     {
       "mal_id": 62876,
@@ -890,14 +857,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:05.296513+00:00"
     },
     {
       "mal_id": 62883,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.95,
       "bgm_id": 603352,
       "bgm_name": "文豪ストレイドッグス わん！２",
       "bgm_name_cn": "文豪野犬 汪！第二季",
@@ -908,67 +875,13 @@
       "error": null,
       "candidates": [
         {
-          "bgm_id": 144357,
-          "bgm_name": "文豪ストレイドッグス",
-          "air_date": "2016-04-06",
-          "confidence": null
-        },
-        {
-          "bgm_id": 171068,
-          "bgm_name": "文豪ストレイドッグス 第2シーズン",
-          "air_date": "2016-10-05",
-          "confidence": null
-        },
-        {
-          "bgm_id": 194201,
-          "bgm_name": "文豪ストレイドッグス OAD",
-          "air_date": "2017-08-04",
-          "confidence": null
-        },
-        {
-          "bgm_id": 209596,
-          "bgm_name": "文豪ストレイドッグス DEAD APPLE",
-          "air_date": "2018-03-03",
-          "confidence": null
-        },
-        {
-          "bgm_id": 254762,
-          "bgm_name": "文豪ストレイドッグス 第3シーズン",
-          "air_date": "2019-04-12",
-          "confidence": null
-        },
-        {
-          "bgm_id": 297208,
-          "bgm_name": "文豪とアルケミスト 〜審判ノ歯車〜",
-          "air_date": "2020-04-03",
-          "confidence": null
-        },
-        {
-          "bgm_id": 308961,
-          "bgm_name": "文豪ストレイドッグス わん！",
-          "air_date": "2021-01-12",
-          "confidence": null
-        },
-        {
-          "bgm_id": 356413,
-          "bgm_name": "文豪ストレイドッグス 第4シーズン",
-          "air_date": "2023-01-04",
-          "confidence": null
-        },
-        {
-          "bgm_id": 426815,
-          "bgm_name": "文豪ストレイドッグス 第5シーズン",
-          "air_date": "2023-07-12",
-          "confidence": null
-        },
-        {
           "bgm_id": 603352,
           "bgm_name": "文豪ストレイドッグス わん！２",
-          "air_date": null,
-          "confidence": null
+          "air_date": "2026-07-02",
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:00.621283+00:00"
     },
     {
       "mal_id": 62936,
@@ -985,7 +898,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:04.185685+00:00"
     },
     {
       "mal_id": 63011,
@@ -1002,14 +915,14 @@
       "mal_rating": "kids",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:33.797135+00:00"
     },
     {
       "mal_id": 63047,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.95,
       "bgm_id": 612697,
       "bgm_name": "鎧真伝サムライトルーパー 第2クール",
       "bgm_name_cn": "铠真传 武士军团 第2部分",
@@ -1022,59 +935,11 @@
         {
           "bgm_id": 612697,
           "bgm_name": "鎧真伝サムライトルーパー 第2クール",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 564175,
-          "bgm_name": "鎧真伝サムライトルーパー",
-          "air_date": "2026-01-06",
-          "confidence": null
-        },
-        {
-          "bgm_id": 3621,
-          "bgm_name": "鎧伝サムライトルーパー",
-          "air_date": "1988-04-30",
-          "confidence": null
-        },
-        {
-          "bgm_id": 23177,
-          "bgm_name": "鎧伝サムライトルーパー 外伝",
-          "air_date": "1989-04-30",
-          "confidence": null
-        },
-        {
-          "bgm_id": 23178,
-          "bgm_name": "鎧伝サムライトルーパー 輝煌帝伝説",
-          "air_date": "1989-10-08",
-          "confidence": null
-        },
-        {
-          "bgm_id": 23180,
-          "bgm_name": "鎧伝サムライトルーパー MESSAGE",
-          "air_date": "1991-03-21",
-          "confidence": null
-        },
-        {
-          "bgm_id": 487963,
-          "bgm_name": "铠兽超人1之兽魂出击",
-          "air_date": "2022-11-04",
-          "confidence": null
-        },
-        {
-          "bgm_id": 487964,
-          "bgm_name": "铠兽超人2超次元战队",
-          "air_date": "2024-04-12",
-          "confidence": null
-        },
-        {
-          "bgm_id": 322347,
-          "bgm_name": "果宝特攻4之铠之魂",
-          "air_date": "2017-09-12",
-          "confidence": null
+          "air_date": "2026-07-07",
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:32.441339+00:00"
     },
     {
       "mal_id": 63061,
@@ -1091,7 +956,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:14.844463+00:00"
     },
     {
       "mal_id": 63082,
@@ -1108,7 +973,31 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:15.436535+00:00"
+    },
+    {
+      "mal_id": 63100,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 615835,
+      "bgm_name": "鉄鍋のジャン",
+      "bgm_name_cn": "炒翻天",
+      "mal_title": "Tetsunabe no Jan!",
+      "mal_title_ja": "鉄鍋のジャン！",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 615835,
+          "bgm_name": "鉄鍋のジャン",
+          "air_date": "2026-07-05",
+          "confidence": 0.95
+        }
+      ],
+      "updated_at": "2026-06-20T01:40:08.838743+00:00"
     },
     {
       "mal_id": 63150,
@@ -1125,7 +1014,24 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:03.585301+00:00"
+    },
+    {
+      "mal_id": 63219,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 175468,
+      "bgm_name": "あはれ! 名作くん",
+      "bgm_name_cn": "做得很好！名作君",
+      "mal_title": "Aware! Meisaku-kun (2026)",
+      "mal_title_ja": "あはれ! 名作くん",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:29.093876+00:00"
     },
     {
       "mal_id": 63316,
@@ -1142,7 +1048,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:10.885473+00:00"
     },
     {
       "mal_id": 63324,
@@ -1159,7 +1065,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:04.064171+00:00"
     },
     {
       "mal_id": 63347,
@@ -1176,7 +1082,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:07.700725+00:00"
     },
     {
       "mal_id": 63366,
@@ -1186,14 +1092,14 @@
       "confidence": null,
       "bgm_id": 623228,
       "bgm_name": "君と花火と約束と",
-      "bgm_name_cn": "",
+      "bgm_name_cn": "你与烟花与约定",
       "mal_title": "Kimi to Hanabi to Yakusoku to",
       "mal_title_ja": "君と花火と約束と",
       "mal_media_type": "movie",
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:05.107959+00:00"
     },
     {
       "mal_id": 63403,
@@ -1210,7 +1116,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:45.540430+00:00"
     },
     {
       "mal_id": 63418,
@@ -1227,7 +1133,24 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:31.304720+00:00"
+    },
+    {
+      "mal_id": 63423,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 626870,
+      "bgm_name": "どこよりも遠い場所にいる君へ",
+      "bgm_name_cn": "致身处比任何地方都更遥远的你",
+      "mal_title": "Doko yori mo Tooi Basho ni Iru Kimi e",
+      "mal_title_ja": "どこよりも遠い場所にいる君へ",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:19.628355+00:00"
     },
     {
       "mal_id": 63468,
@@ -1244,7 +1167,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:12.542003+00:00"
     },
     {
       "mal_id": 63489,
@@ -1261,7 +1184,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:38.940722+00:00"
     },
     {
       "mal_id": 63508,
@@ -1278,47 +1201,51 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:03.061984+00:00"
     },
     {
       "mal_id": 63512,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
+      "source": "exact",
       "confidence": null,
       "bgm_id": 615446,
-      "bgm_name": "クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
-      "bgm_name_cn": "蜡笔小新：奇奇怪怪！我的妖怪假期",
+      "bgm_name": "映画クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
+      "bgm_name_cn": "电影蜡笔小新：奇奇怪怪！我的妖怪假期",
       "mal_title": "Crayon Shin-chan Movie 34: Kikikaikai! Ora no Youkai Bake-shon",
       "mal_title_ja": "映画クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
       "mal_media_type": "movie",
       "mal_rating": "kids",
       "error": null,
-      "candidates": [
-        {
-          "bgm_id": 610494,
-          "bgm_name": "映画ちいかわ 人魚の島のひみつ",
-          "air_date": "2026-07-24",
-          "confidence": null
-        },
-        {
-          "bgm_id": 639663,
-          "bgm_name": "映画名探偵プリキュア！",
-          "air_date": "2026-09-18",
-          "confidence": null
-        }
-      ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:36.506298+00:00"
+    },
+    {
+      "mal_id": 63514,
+      "season_id": "2026-summer",
+      "status": "excluded",
+      "source": "llm",
+      "confidence": null,
+      "bgm_id": null,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Perfect Addiction",
+      "mal_title_ja": "",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:10.140549+00:00"
     },
     {
       "mal_id": 63537,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.99,
       "bgm_id": 631018,
       "bgm_name": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
-      "bgm_name_cn": "",
+      "bgm_name_cn": "说了不打算爱我的公爵继承人，不知为何对我宠爱有加",
       "mal_title": "\"Kimi wo Aisuru Ki wa Nai\" to Itta Jiki Koushaku-sama ga Nazeka Dekiai shitekimasu",
       "mal_title_ja": "『きみを愛する気はない』と言った次期公爵様がなぜか溺愛してきます",
       "mal_media_type": "tv",
@@ -1328,65 +1255,11 @@
         {
           "bgm_id": 631018,
           "bgm_name": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 368809,
-          "bgm_name": "ワンダリズム きみを呼ぶ声",
-          "air_date": "2022-03-31",
-          "confidence": null
-        },
-        {
-          "bgm_id": 53669,
-          "bgm_name": "キミの名を呼べば",
-          "air_date": "2008-11-28",
-          "confidence": null
-        },
-        {
-          "bgm_id": 189546,
-          "bgm_name": "きみの声をとどけたい",
-          "air_date": "2017-08-25",
-          "confidence": null
-        },
-        {
-          "bgm_id": 541285,
-          "bgm_name": "きみが死ぬまで恋をしたい",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 633260,
-          "bgm_name": "「きみが死ぬまで恋をしたい」パイロットフィルム",
-          "air_date": "2025-03-02",
-          "confidence": null
-        },
-        {
-          "bgm_id": 306956,
-          "bgm_name": "ボクらのロケットはキミと青春成層圏をこえていく",
-          "air_date": null,
-          "confidence": null
-        },
-        {
-          "bgm_id": 308,
-          "bgm_name": "キミキス pure rouge",
-          "air_date": "2007-10-06",
-          "confidence": null
-        },
-        {
-          "bgm_id": 61421,
-          "bgm_name": "きみはぐ",
-          "air_date": "2009-05-25",
-          "confidence": null
-        },
-        {
-          "bgm_id": 211882,
-          "bgm_name": "キミノヒカリ ～あさがおと加瀬さん。～",
-          "air_date": "2017-05-07",
-          "confidence": null
+          "air_date": "2026-07-04",
+          "confidence": 0.99
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:16.617259+00:00"
     },
     {
       "mal_id": 63619,
@@ -1403,7 +1276,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:23.577910+00:00"
     },
     {
       "mal_id": 63641,
@@ -1420,17 +1293,17 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:26.857425+00:00"
     },
     {
       "mal_id": 63736,
       "season_id": "2026-summer",
-      "status": "excluded",
-      "source": "human",
-      "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "status": "included",
+      "source": "llm",
+      "confidence": 0.95,
+      "bgm_id": 633618,
+      "bgm_name": "Unanswered//butterfly",
+      "bgm_name_cn": "",
       "mal_title": "Sword Art Online: Unanswered//butterfly",
       "mal_title_ja": "Unanswered//butterfly: Sword Art Online",
       "mal_media_type": "movie",
@@ -1441,10 +1314,10 @@
           "bgm_id": 633618,
           "bgm_name": "Unanswered//butterfly",
           "air_date": "2026-05-09",
-          "confidence": null
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-12T09:04:50.784379+00:00"
+      "updated_at": "2026-06-20T01:40:07.103148+00:00"
     },
     {
       "mal_id": 63752,
@@ -1461,7 +1334,41 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:20.766566+00:00"
+    },
+    {
+      "mal_id": 63780,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 637124,
+      "bgm_name": "花ざかりの君たちへ 第2期",
+      "bgm_name_cn": "花样少年少女 第二季",
+      "mal_title": "Hanazakari no Kimitachi e 2nd Season",
+      "mal_title_ja": "花ざかりの君たちへ 第2期",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:19.033817+00:00"
+    },
+    {
+      "mal_id": 63802,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 276787,
+      "bgm_name": "メビウス・ダスト",
+      "bgm_name_cn": "梅比乌斯之尘",
+      "mal_title": "Mebius Dust",
+      "mal_title_ja": "メビウス・ダスト",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:23.060267+00:00"
     },
     {
       "mal_id": 63817,
@@ -1478,14 +1385,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:45.017171+00:00"
     },
     {
       "mal_id": 63819,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 1.0,
       "bgm_id": 638185,
       "bgm_name": "死亡遊戯で飯を食う。 44:CLOUDY BEACH",
       "bgm_name_cn": "靠死亡游戏混饭吃。 44:CLOUDY BEACH",
@@ -1499,10 +1406,10 @@
           "bgm_id": 638185,
           "bgm_name": "死亡遊戯で飯を食う。 44:CLOUDY BEACH",
           "air_date": "2026-07-10",
-          "confidence": null
+          "confidence": 1.0
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:41:08.242362+00:00"
     },
     {
       "mal_id": 63832,
@@ -1519,7 +1426,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:54.510893+00:00"
     },
     {
       "mal_id": 63878,
@@ -1536,14 +1443,14 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:13.672451+00:00"
     },
     {
       "mal_id": 63903,
       "season_id": "2026-summer",
       "status": "included",
-      "source": "human",
-      "confidence": null,
+      "source": "llm",
+      "confidence": 0.95,
       "bgm_id": 639663,
       "bgm_name": "映画名探偵プリキュア！",
       "bgm_name_cn": "电影名侦探光之美少女！",
@@ -1557,16 +1464,10 @@
           "bgm_id": 639663,
           "bgm_name": "映画名探偵プリキュア！",
           "air_date": "2026-09-18",
-          "confidence": null
-        },
-        {
-          "bgm_id": 610494,
-          "bgm_name": "映画ちいかわ 人魚の島のひみつ",
-          "air_date": "2026-07-24",
-          "confidence": null
+          "confidence": 0.95
         }
       ],
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:37.049165+00:00"
     },
     {
       "mal_id": 63973,
@@ -1583,67 +1484,24 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:34.930210+00:00"
     },
     {
       "mal_id": 64012,
       "season_id": "2026-summer",
-      "status": "excluded",
-      "source": "human",
+      "status": "included",
+      "source": "exact",
       "confidence": null,
-      "bgm_id": null,
-      "bgm_name": null,
-      "bgm_name_cn": null,
+      "bgm_id": 643828,
+      "bgm_name": "THE RIBBON HERO リボンヒーロー",
+      "bgm_name_cn": "缎带英雄",
       "mal_title": "The Ribbon Hero",
       "mal_title_ja": "THE RIBBON HERO リボンヒーロー",
       "mal_media_type": "ona",
       "mal_rating": "general",
       "error": null,
-      "candidates": [
-        {
-          "bgm_id": 527479,
-          "bgm_name": "The Legend of Vox Machina S4",
-          "air_date": "2026-06-03",
-          "confidence": null
-        },
-        {
-          "bgm_id": 557818,
-          "bgm_name": "Shaun the Sheep: The Beast of Mossy Bottom",
-          "air_date": "2026-09-18",
-          "confidence": null
-        },
-        {
-          "bgm_id": 496276,
-          "bgm_name": "攻殻機動隊 THE GHOST IN THE SHELL",
-          "air_date": "2026-07-07",
-          "confidence": null
-        },
-        {
-          "bgm_id": 618793,
-          "bgm_name": "PAW Patrol: The Dino Movie",
-          "air_date": "2026-07-24",
-          "confidence": null
-        },
-        {
-          "bgm_id": 638750,
-          "bgm_name": "彼の知らない秘密を入れて。 THE ANIMATION",
-          "air_date": "2026-06-26",
-          "confidence": null
-        },
-        {
-          "bgm_id": 622633,
-          "bgm_name": "ワールド イズ ダンシング",
-          "air_date": "2026-07-02",
-          "confidence": null
-        },
-        {
-          "bgm_id": 334105,
-          "bgm_name": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-          "air_date": "2026-08-28",
-          "confidence": null
-        }
-      ],
-      "updated_at": "2026-05-12T03:44:59.875323+00:00"
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:17.902994+00:00"
     },
     {
       "mal_id": 64019,
@@ -1660,7 +1518,7 @@
       "mal_rating": "general",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:19:24.533826+00:00"
+      "updated_at": "2026-06-20T01:40:22.455405+00:00"
     },
     {
       "mal_id": 64053,
@@ -1677,7 +1535,7 @@
       "mal_rating": "r18",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:53:39.984890+00:00"
+      "updated_at": "2026-06-20T01:40:30.199889+00:00"
     },
     {
       "mal_id": 64095,
@@ -1694,7 +1552,201 @@
       "mal_rating": "r18",
       "error": null,
       "candidates": null,
-      "updated_at": "2026-05-13T03:53:43.752973+00:00"
+      "updated_at": "2026-06-20T01:40:35.983568+00:00"
+    },
+    {
+      "mal_id": 64107,
+      "season_id": "2026-summer",
+      "status": "excluded",
+      "source": "human",
+      "confidence": 0.0,
+      "bgm_id": 638497,
+      "bgm_name": null,
+      "bgm_name_cn": null,
+      "mal_title": "Boku no Hero Academia: I Am a Hero Too",
+      "mal_title_ja": "僕のヒーローアカデミア I am a hero too",
+      "mal_media_type": "ona",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": [
+        {
+          "bgm_id": 638497,
+          "bgm_name": "正反対な君と僕 第2期",
+          "air_date": "2026-07-05",
+          "confidence": 0.0
+        }
+      ],
+      "updated_at": "2026-06-20T01:42:55.359894+00:00"
+    },
+    {
+      "mal_id": 64250,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 651573,
+      "bgm_name": "デコ×デコ THE ANIMATION",
+      "bgm_name_cn": "玩美×玩媚",
+      "mal_title": "Deco x Deco The Animation",
+      "mal_title_ja": "デコ×デコ THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:24.702164+00:00"
+    },
+    {
+      "mal_id": 64291,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 655061,
+      "bgm_name": "サレ妻は奪われたい",
+      "bgm_name_cn": "",
+      "mal_title": "Sare Tsuma wa Ubawaretai",
+      "mal_title_ja": "サレ妻は奪われたい",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:24.166100+00:00"
+    },
+    {
+      "mal_id": 64292,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 655076,
+      "bgm_name": "ピュアホリック ～純潔乙女と婚姻カンケイ！？～ THE ANIMATION",
+      "bgm_name_cn": "",
+      "mal_title": "Pure x Holic: Junketsu Otome to Konin Kankei!? The Animation",
+      "mal_title_ja": "ピュアホリック ～純潔乙女と婚姻カンケイ！？～ THE ANIMATION",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:25.801844+00:00"
+    },
+    {
+      "mal_id": 64357,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 659686,
+      "bgm_name": "トミカとトム シーズン2",
+      "bgm_name_cn": "",
+      "mal_title": "Tomica to Tom (TV) Season 2",
+      "mal_title_ja": "トミカとトム シーズン2",
+      "mal_media_type": "tv",
+      "mal_rating": "kids",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:27.381627+00:00"
+    },
+    {
+      "mal_id": 64373,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 658066,
+      "bgm_name": "田舎にはこれくらいしか娯楽がない",
+      "bgm_name_cn": "",
+      "mal_title": "Inaka ni wa Kore Kurai Shika Goraku ga Nai",
+      "mal_title_ja": "田舎にはこれくらいしか娯楽がない",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:26.336398+00:00"
+    },
+    {
+      "mal_id": 64378,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 637339,
+      "bgm_name": "北斗の拳 拳王軍ザコたちの挽歌 第2クール",
+      "bgm_name_cn": "北斗神拳 拳王军杂兵们的挽歌 第二季",
+      "mal_title": "Hokuto no Ken: Kenougun Zako-tachi no Banka Part 2",
+      "mal_title_ja": "北斗の拳 拳王軍ザコたちの挽歌 第2クール",
+      "mal_media_type": "tv",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:30.730549+00:00"
+    },
+    {
+      "mal_id": 64382,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 492481,
+      "bgm_name": "八仙！",
+      "bgm_name_cn": "八仙！",
+      "mal_title": "Baxian!",
+      "mal_title_ja": "八仙！",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:27.980814+00:00"
+    },
+    {
+      "mal_id": 64383,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 560379,
+      "bgm_name": "大唐妖探",
+      "bgm_name_cn": "大唐妖探",
+      "mal_title": "Da Tang Yao Tan",
+      "mal_title_ja": "大唐妖探",
+      "mal_media_type": "movie",
+      "mal_rating": "general",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:28.564351+00:00"
+    },
+    {
+      "mal_id": 64404,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 659249,
+      "bgm_name": "村又さんの愛情",
+      "bgm_name_cn": "村又小姐的爱情",
+      "mal_title": "Muramata-san no Aijou",
+      "mal_title_ja": "村又さんの愛情",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:35.462347+00:00"
+    },
+    {
+      "mal_id": 64405,
+      "season_id": "2026-summer",
+      "status": "included",
+      "source": "exact",
+      "confidence": null,
+      "bgm_id": 659247,
+      "bgm_name": "寝取られた爆乳妻たち2",
+      "bgm_name_cn": "被寝取的巨乳人妻们2",
+      "mal_title": "Netorareta Bakunyuu Tsuma-tachi 2",
+      "mal_title_ja": "寝取られた爆乳妻たち2",
+      "mal_media_type": "ova",
+      "mal_rating": "r18",
+      "error": null,
+      "candidates": null,
+      "updated_at": "2026-06-20T01:40:25.230633+00:00"
     }
   ],
   "overrides": []
