@@ -49,18 +49,14 @@ cd web && pnpm dev
 # 获取 MAL 原始数据
 PYTHONPATH=src uv run python -m services.mal fetch 2026 winter
 
-# 处理季度新番匹配
-PYTHONPATH=src uv run python -m core run 2026 winter
-
-# 人工填入 bgm_id 后补全名称 + 重新生成 release
-PYTHONPATH=src uv run python -m core complete 2026 winter
-
-# 从数据库重新生成 release（不调用 API）
-PYTHONPATH=src uv run python -m core release 2026 winter
+# 处理季度新番匹配（--retry 重跑已被 LLM 处理过的 pending 条目）
+PYTHONPATH=src uv run python -m core run [--retry] 2026 winter
 
 # 批量处理所有历史季度
 PYTHONPATH=src uv run python src/main.py
 ```
+
+人工填入 `bgm_id` 后无需单独的补全命令：再次 `run` 时会自动拉取 BGM 名称并标记为 `human`。
 
 ## Override 补番
 
@@ -98,7 +94,7 @@ season.db              主数据库（seasons / items / overrides）
 data/                  数据库 JSON 副本（git 管理，用于跨机器同步和发布 release）
 src/
   api/                 FastAPI 后端
-    routers/           seasons / items / overrides / run / export / bgm
+    routers/           seasons / items / overrides / run / bgm
     migrations/        SQL 初始化脚本
   core/                匹配主逻辑 + CLI
   services/mal/        MAL API 客户端
