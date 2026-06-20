@@ -19,6 +19,10 @@ from pathlib import Path
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
+# 下游服务接受的 media_type 枚举，必须与其保持一致。
+# MAL 偶尔返回 `unknown` 等不在此集合内的值，会导致下游整份 JSON 解析失败，需在发布前剔除。
+VALID_MEDIA_TYPES = frozenset({"tv", "movie", "ova", "ona", "tv_special", "special", "music", "pv", "cm"})
+
 
 def _slim_item(item: dict) -> dict:
     """只保留 bgm_id, media_type, rating。"""
@@ -30,14 +34,33 @@ def _slim_item(item: dict) -> dict:
 
 
 def merge_releases(data_dir: Path) -> dict:
-    """读取所有季度 data JSON，过滤 included 条目，合并为 { season: [items] }。"""
+    """读取所有季度 data JSON，过滤 included 条目，合并为 { season: [items] }。
+
+    media_type 不在 VALID_MEDIA_TYPES 内的条目会被剔除并打印警告，避免下游解析失败。
+    """
     merged: dict = {}
+    skipped = 0
     for f in sorted(data_dir.glob("*.json")):
         data = json.loads(f.read_text("utf-8"))
         season_field = data.get("season", {})
         season = season_field.get("id", f.stem) if isinstance(season_field, dict) else season_field
-        included = [it for it in data.get("items", []) if it.get("status") == "included"]
-        merged[season] = [_slim_item(it) for it in included]
+        items = []
+        for it in data.get("items", []):
+            if it.get("status") != "included":
+                continue
+            media_type = it.get("mal_media_type")
+            if media_type not in VALID_MEDIA_TYPES:
+                skipped += 1
+                print(
+                    f"[warn] 跳过非法 media_type={media_type!r} 条目: "
+                    f"season={season} mal_id={it.get('mal_id')} 「{it.get('mal_title')}」",
+                    file=sys.stderr,
+                )
+                continue
+            items.append(_slim_item(it))
+        merged[season] = items
+    if skipped:
+        print(f"共跳过 {skipped} 条非法 media_type 条目", file=sys.stderr)
     return merged
 
 
