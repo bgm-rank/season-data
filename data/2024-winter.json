@@ -8401,5 +8401,18 @@
       "updated_at": "2026-05-12T07:45:27.498631+00:00"
     }
   ],
-  "overrides": []
+  "overrides": [
+    {
+      "mal_id": 57470,
+      "season_id": "2024-winter",
+      "action": "add",
+      "bgm_id": 469072
+    },
+    {
+      "mal_id": 58648,
+      "season_id": "2024-winter",
+      "action": "add",
+      "bgm_id": 488262
+    }
+  ]
 }
