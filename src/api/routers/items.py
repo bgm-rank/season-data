@@ -8,12 +8,17 @@ import sqlite3
 import time
 from collections.abc import AsyncIterator
 from datetime import UTC, datetime
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
+from loguru import logger
 
+from api.repo import ensure_bgm_subject
 from api.schemas import ItemRead, ItemUpdate
+
+if TYPE_CHECKING:
+    from services.bgmtv import Subject
 
 router = APIRouter()
 
@@ -23,6 +28,18 @@ _sync_queues: dict[str, asyncio.Queue[dict[str, Any]]] = {}
 
 def _get_db(request: Request) -> sqlite3.Connection:
     return request.app.state.db  # type: ignore[no-any-return]
+
+
+def _try_fetch_subject(bgm_id: int) -> Subject | None:
+    """拉一条 BGM 条目详情，失败返回 None（调用方会退化成骨架行）。"""
+    from services.bgmtv import BgmtvClient
+
+    try:
+        with BgmtvClient(os.getenv("BGM_TOKEN", "")) as bgmtv:
+            return bgmtv.get_subject(bgm_id)
+    except Exception as e:
+        logger.warning("拉取 BGM 条目失败 bgm:{}: {}", bgm_id, e)
+        return None
 
 
 def _row_to_item(row: sqlite3.Row) -> ItemRead:
@@ -71,7 +88,7 @@ def list_items(
     order = "confidence ASC NULLS LAST" if status == "pending" else "mal_id ASC"
 
     rows = db.execute(
-        f"SELECT * FROM items WHERE {where} ORDER BY {order} LIMIT ? OFFSET ?",
+        f"SELECT * FROM items_flat WHERE {where} ORDER BY {order} LIMIT ? OFFSET ?",
         (*params, limit, offset),
     ).fetchall()
     return [_row_to_item(r) for r in rows]
@@ -85,7 +102,7 @@ def update_item(
     db: sqlite3.Connection = Depends(_get_db),
 ) -> ItemRead:
     row = db.execute(
-        "SELECT * FROM items WHERE mal_id = ? AND season_id = ?",
+        "SELECT * FROM items_flat WHERE mal_id = ? AND season_id = ?",
         (mal_id, season_id),
     ).fetchone()
     if row is None:
@@ -96,18 +113,24 @@ def update_item(
     if body.action == "include":
         if body.bgm_id is None:
             raise HTTPException(status_code=422, detail="bgm_id is required for action=include")
+        # 外键要求先有 bgm_subject 行。顺手把名称拉回来，人工填完 ID 立刻能看到番名做二次确认；
+        # BGM API 不可用就退化成骨架行，不能让外键把人工输入卡死。
+        subject = _try_fetch_subject(body.bgm_id)
+        ensure_bgm_subject(db, body.bgm_id, subject)
         db.execute(
-            "UPDATE items SET status='included', source='human', bgm_id=?, updated_at=? WHERE mal_id=? AND season_id=?",
+            "UPDATE season_items SET status='included', source='human', bgm_id=?,"
+            " confidence=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
             (body.bgm_id, now, mal_id, season_id),
         )
     elif body.action == "pending":
         db.execute(
-            "UPDATE items SET status='pending', source=NULL, bgm_id=NULL, bgm_name=NULL, bgm_name_cn=NULL, bgm_air_date=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+            "UPDATE season_items SET status='pending', source=NULL, bgm_id=NULL,"
+            " confidence=NULL, candidates=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
             (now, mal_id, season_id),
         )
     else:
         db.execute(
-            "UPDATE items SET status='excluded', source='human', updated_at=? WHERE mal_id=? AND season_id=?",
+            "UPDATE season_items SET status='excluded', source='human', updated_at=? WHERE mal_id=? AND season_id=?",
             (now, mal_id, season_id),
         )
 
@@ -115,7 +138,7 @@ def update_item(
     db.commit()
 
     updated = db.execute(
-        "SELECT * FROM items WHERE mal_id=? AND season_id=?",
+        "SELECT * FROM items_flat WHERE mal_id=? AND season_id=?",
         (mal_id, season_id),
     ).fetchone()
     return _row_to_item(updated)
@@ -128,30 +151,29 @@ def _run_sync(
 ) -> None:
     from services.bgmtv import BgmtvClient
 
+    # 按 bgm_id 去重：同一条目被本季多个 MAL 条目引用时只需拉一次
     rows = db.execute(
-        "SELECT mal_id, bgm_id FROM items WHERE season_id=? AND bgm_id IS NOT NULL",
+        "SELECT DISTINCT bgm_id FROM season_items WHERE season_id=? AND bgm_id IS NOT NULL",
         (season_id,),
     ).fetchall()
     total = len(rows)
     updated = 0
     errors = 0
-    now = datetime.now(UTC).isoformat()
 
     try:
         bgm_token = os.getenv("BGM_TOKEN", "")
         with BgmtvClient(bgm_token) as bgmtv:
             for i, row in enumerate(rows, 1):
+                bgm_id: int = row["bgm_id"]
                 try:
-                    subject = bgmtv.get_subject(row["bgm_id"])
-                    db.execute(
-                        "UPDATE items SET bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=?"
-                        " WHERE mal_id=? AND season_id=?",
-                        (subject.name, subject.name_cn, subject.date, now, row["mal_id"], season_id),
-                    )
+                    # 只写 bgm_subject，碰不到任何决策列。summary/platform/tags/nsfw
+                    # 早就在 Subject 里，一并落库供后续增强 LLM prompt 用。
+                    ensure_bgm_subject(db, bgm_id, bgmtv.get_subject(bgm_id))
                     db.commit()
                     updated += 1
                     time.sleep(0.3)
-                except Exception:
+                except Exception as e:
+                    logger.warning("同步 BGM 条目失败 bgm:{}: {}", bgm_id, e)
                     errors += 1
                 with contextlib.suppress(asyncio.QueueFull):
                     queue.put_nowait({"type": "progress", "processed": i, "total": total})
@@ -169,7 +191,7 @@ def sync_bgm_item(
     db: sqlite3.Connection = Depends(_get_db),
 ) -> ItemRead:
     row = db.execute(
-        "SELECT * FROM items WHERE mal_id=? AND season_id=?",
+        "SELECT * FROM items_flat WHERE mal_id=? AND season_id=?",
         (mal_id, season_id),
     ).fetchone()
     if row is None:
@@ -183,16 +205,11 @@ def sync_bgm_item(
     with BgmtvClient(bgm_token) as bgmtv:
         subject = bgmtv.get_subject(row["bgm_id"])
 
-    now = datetime.now(UTC).isoformat()
-    db.execute(
-        "UPDATE items SET bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=?"
-        " WHERE mal_id=? AND season_id=?",
-        (subject.name, subject.name_cn, subject.date, now, mal_id, season_id),
-    )
+    ensure_bgm_subject(db, row["bgm_id"], subject)
     db.commit()
 
     updated = db.execute(
-        "SELECT * FROM items WHERE mal_id=? AND season_id=?",
+        "SELECT * FROM items_flat WHERE mal_id=? AND season_id=?",
         (mal_id, season_id),
     ).fetchone()
     return _row_to_item(updated)

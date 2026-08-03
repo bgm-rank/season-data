@@ -12,6 +12,7 @@ from typing import Any
 
 from loguru import logger
 
+from api.repo import ensure_bgm_subject, upsert_mal_anime
 from services.bgmtv import BgmtvClient, Subject
 from services.mal.client import MalClient
 from services.openrouter import OpenRouterClient
@@ -115,7 +116,7 @@ class SeasonProcessor:
                 SUM(CASE WHEN status='pending'  THEN 1 ELSE 0 END) AS pending,
                 SUM(CASE WHEN status='included' THEN 1 ELSE 0 END) AS included,
                 SUM(CASE WHEN status='excluded' THEN 1 ELSE 0 END) AS excluded
-            FROM items WHERE season_id=?
+            FROM season_items WHERE season_id=?
             """,
             (self.season_id,),
         ).fetchone()
@@ -128,7 +129,7 @@ class SeasonProcessor:
     def process(self) -> None:
         logger.info("开始处理 {} ...", self.season_id)
 
-        rows = self.conn.execute("SELECT * FROM items WHERE season_id=?", (self.season_id,)).fetchall()
+        rows = self.conn.execute("SELECT * FROM items_flat WHERE season_id=?", (self.season_id,)).fetchall()
         total = len(rows)
         processed = 0
 
@@ -170,28 +171,31 @@ class SeasonProcessor:
             now = datetime.now(UTC).isoformat()
             try:
                 subject = self.bgmtv.get_subject(bgm_id_ov)
-                mal_title = f"override-add-{mal_id}"
-                mal_title_ja: str | None = None
-                mal_media_type = "tv"
+
+                # MAL 拿不到时用占位，保证 mal_anime 至少有一行供外键引用
+                mal_raw: dict[str, Any] = {
+                    "id": mal_id,
+                    "title": f"override-add-{mal_id}",
+                    "media_type": "tv",
+                }
                 mal_rating = "general"
                 if self.mal is not None:
                     try:
                         mal_raw = self.mal.get_anime(mal_id)
-                        mal_info = MalInfo.from_raw(mal_raw)
-                        mal_title = mal_info.title
-                        mal_title_ja = mal_info.title_ja
-                        mal_media_type = mal_info.media_type
-                        mal_rating = mal_info.rating
+                        mal_rating = MalInfo.from_raw(mal_raw).rating
                     except Exception as e:
                         logger.warning("[override add] 获取 MAL 数据失败 mal:{}: {}", mal_id, e)
+
+                upsert_mal_anime(self.conn, mal_raw, mal_rating)
+                ensure_bgm_subject(self.conn, bgm_id_ov, subject)
                 self.conn.execute(
                     """
-                    INSERT OR REPLACE INTO items
-                      (mal_id, season_id, status, source, confidence, bgm_id, bgm_name, bgm_name_cn,
-                       mal_title, mal_title_ja, mal_media_type, mal_rating, error, candidates, updated_at)
-                    VALUES (?,?,'included','human',NULL,?,?,?,?,?,?,?,NULL,NULL,?)
+                    INSERT INTO season_items
+                      (season_id, mal_id, status, source, bgm_id, origin, updated_at)
+                    VALUES (?,?,'included','human',?,'override',?)
+                    ON CONFLICT(season_id, mal_id) DO NOTHING
                     """,
-                    (mal_id, self.season_id, bgm_id_ov, subject.name, subject.name_cn, mal_title, mal_title_ja, mal_media_type, mal_rating, now),
+                    (self.season_id, mal_id, bgm_id_ov, now),
                 )
                 self.conn.commit()
                 logger.info("[override add] mal:{} -> bgm:{}", mal_id, bgm_id_ov)
@@ -223,7 +227,7 @@ class SeasonProcessor:
         # Step 1: override skip
         if mal_id in overrides_skip:
             self.conn.execute(
-                "UPDATE items SET status='excluded', source='rule', updated_at=? WHERE mal_id=? AND season_id=?",
+                "UPDATE season_items SET status='excluded', source='rule', updated_at=? WHERE mal_id=? AND season_id=?",
                 (now, mal_id, self.season_id),
             )
             self.conn.commit()
@@ -235,27 +239,25 @@ class SeasonProcessor:
             if status == "included" and source == "human":
                 bgm_id: int | None = row["bgm_id"]
                 if bgm_id is not None:
+                    # 只刷新 BGM 事实缓存，一个决策列都不碰
                     try:
-                        subject = self.bgmtv.get_subject(bgm_id)
-                        self.conn.execute(
-                            "UPDATE items SET bgm_name=?, bgm_name_cn=?, updated_at=? WHERE mal_id=? AND season_id=?",
-                            (subject.name, subject.name_cn, now, mal_id, self.season_id),
-                        )
+                        ensure_bgm_subject(self.conn, bgm_id, self.bgmtv.get_subject(bgm_id))
                         self.conn.commit()
                     except Exception as e:
                         logger.error("[human] mal:{} bgm:{} 名称同步失败: {}", mal_id, bgm_id, e)
             return
 
-        # Step 3: has bgm_id but no bgm_name → auto complete and mark human
+        # Step 3: 有 bgm_id 但 subject 尚未填充 → 人工填过 ID，补全后标记 human
         bgm_id_val: int | None = row["bgm_id"]
         bgm_name_val: str | None = row["bgm_name"]
         if bgm_id_val is not None and bgm_name_val is None:
             try:
                 subject = self.bgmtv.get_subject(bgm_id_val)
+                ensure_bgm_subject(self.conn, bgm_id_val, subject)
                 self.conn.execute(
-                    "UPDATE items SET status='included', source='human',"
-                    " bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=? WHERE mal_id=? AND season_id=?",
-                    (subject.name, subject.name_cn, subject.date, now, mal_id, self.season_id),
+                    "UPDATE season_items SET status='included', source='human', updated_at=?"
+                    " WHERE mal_id=? AND season_id=?",
+                    (now, mal_id, self.season_id),
                 )
                 self.conn.commit()
                 logger.info("[auto-complete] mal:{} -> bgm:{} {}", mal_id, bgm_id_val, subject.name)
@@ -276,7 +278,8 @@ class SeasonProcessor:
             media_type = MediaType.from_mal(mal_media_type)
             if media_type.should_skip():
                 self.conn.execute(
-                    "UPDATE items SET status='excluded', source='rule', updated_at=? WHERE mal_id=? AND season_id=?",
+                    "UPDATE season_items SET status='excluded', source='rule', updated_at=?"
+                    " WHERE mal_id=? AND season_id=?",
                     (now, mal_id, self.season_id),
                 )
                 self.conn.commit()
@@ -291,7 +294,8 @@ class SeasonProcessor:
         except Exception as e:
             logger.error("[error] mal:{} BGM 搜索失败: {}", mal_id, e)
             self.conn.execute(
-                "UPDATE items SET status='pending', source='llm', error=?, updated_at=? WHERE mal_id=? AND season_id=?",
+                "UPDATE season_items SET status='pending', source='llm', error=?, updated_at=?"
+                " WHERE mal_id=? AND season_id=?",
                 (str(e), now, mal_id, self.season_id),
             )
             self.conn.commit()
@@ -306,7 +310,8 @@ class SeasonProcessor:
                 suggestion = self.openrouter.suggest_search(search_keyword, mal_media_type)
                 if suggestion.get("skip"):
                     self.conn.execute(
-                        "UPDATE items SET status='excluded', source='llm', updated_at=? WHERE mal_id=? AND season_id=?",
+                        "UPDATE season_items SET status='excluded', source='llm', updated_at=?"
+                        " WHERE mal_id=? AND season_id=?",
                         (now, mal_id, self.season_id),
                     )
                     self.conn.commit()
@@ -326,7 +331,7 @@ class SeasonProcessor:
 
         candidates = [{"bgm_id": s.id, "bgm_name": s.name, "air_date": s.date, "confidence": None} for s in subjects]
         self.conn.execute(
-            "UPDATE items SET status='pending', source=NULL,"
+            "UPDATE season_items SET status='pending', source=NULL,"
             " candidates=?, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
             (json.dumps(candidates, ensure_ascii=False) if candidates else None, now, mal_id, self.season_id),
         )
@@ -350,10 +355,11 @@ class SeasonProcessor:
             title_ja_norm = _normalize_title(mal_title_ja)
             for subj in subjects:
                 if subj.name and _normalize_title(subj.name) == title_ja_norm:
+                    ensure_bgm_subject(self.conn, subj.id, subj)
                     self.conn.execute(
-                        "UPDATE items SET status='included', source='exact',"
-                        " bgm_id=?, bgm_name=?, bgm_name_cn=?, bgm_air_date=?, updated_at=? WHERE mal_id=? AND season_id=?",
-                        (subj.id, subj.name, subj.name_cn, subj.date, now, mal_id, self.season_id),
+                        "UPDATE season_items SET status='included', source='exact',"
+                        " bgm_id=?, updated_at=? WHERE mal_id=? AND season_id=?",
+                        (subj.id, now, mal_id, self.season_id),
                     )
                     self.conn.commit()
                     logger.info("[match] mal:{} -> bgm:{} {}", mal_id, subj.id, subj.name)
@@ -382,30 +388,21 @@ class SeasonProcessor:
                             ],
                             ensure_ascii=False,
                         )
+                        ensure_bgm_subject(self.conn, bgm_id_match, matched_subj)
                         if confidence is not None and confidence >= LLM_CONFIDENCE_THRESHOLD:
                             self.conn.execute(
-                                "UPDATE items SET status='included', source='llm',"
-                                " bgm_id=?, bgm_name=?, bgm_name_cn=?, bgm_air_date=?, confidence=?,"
-                                " candidates=?, updated_at=? WHERE mal_id=? AND season_id=?",
-                                (
-                                    bgm_id_match,
-                                    matched_subj.name,
-                                    matched_subj.name_cn,
-                                    matched_subj.date,
-                                    confidence,
-                                    candidates_json,
-                                    now,
-                                    mal_id,
-                                    self.season_id,
-                                ),
+                                "UPDATE season_items SET status='included', source='llm',"
+                                " bgm_id=?, confidence=?, candidates=?, updated_at=?"
+                                " WHERE mal_id=? AND season_id=?",
+                                (bgm_id_match, confidence, candidates_json, now, mal_id, self.season_id),
                             )
                             logger.info("[model] mal:{} -> bgm:{} conf={}", mal_id, bgm_id_match, confidence)
                         else:
                             self.conn.execute(
-                                "UPDATE items SET status='pending', source='llm',"
-                                " bgm_id=?, bgm_air_date=?, confidence=?, candidates=?, updated_at=?"
+                                "UPDATE season_items SET status='pending', source='llm',"
+                                " bgm_id=?, confidence=?, candidates=?, updated_at=?"
                                 " WHERE mal_id=? AND season_id=?",
-                                (bgm_id_match, matched_subj.date, confidence, candidates_json, now, mal_id, self.season_id),
+                                (bgm_id_match, confidence, candidates_json, now, mal_id, self.season_id),
                             )
                             logger.info("[model pending] mal:{} -> bgm:{} conf={}", mal_id, bgm_id_match, confidence)
                         self.conn.commit()

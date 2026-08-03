@@ -8,6 +8,7 @@ from typing import Any
 from fastapi import APIRouter, Depends, HTTPException, Request
 
 from api.db import derive_phase
+from api.repo import upsert_mal_anime
 from api.schemas import SeasonCreate, SeasonDetail, SeasonSummary
 
 router = APIRouter()
@@ -26,7 +27,7 @@ def _season_stats(conn: sqlite3.Connection, season_id: str) -> dict[str, Any]:
             SUM(CASE WHEN status = 'pending'  THEN 1 ELSE 0 END) AS pending,
             SUM(CASE WHEN status = 'included' THEN 1 ELSE 0 END) AS included,
             SUM(CASE WHEN status = 'excluded' THEN 1 ELSE 0 END) AS excluded
-        FROM items WHERE season_id = ?
+        FROM season_items WHERE season_id = ?
         """,
         (season_id,),
     ).fetchone()
@@ -134,9 +135,9 @@ def fetch_season(
     except Exception as e:
         raise HTTPException(status_code=502, detail=f"MAL API error: {e}") from e
 
-    # 已存在的条目只刷新 MAL 侧字段，绝不触碰 status/source/bgm_*/confidence/candidates —
-    # 早先这里用 INSERT OR REPLACE（= DELETE + INSERT），重新拉一次 MAL 就会清空该季全部人工决策。
-    existing: set[int] = {r["mal_id"] for r in db.execute("SELECT mal_id FROM items WHERE season_id = ?", (season_id,))}
+    existing: set[int] = {
+        r["mal_id"] for r in db.execute("SELECT mal_id FROM season_items WHERE season_id = ?", (season_id,))
+    }
 
     now = datetime.now(UTC).isoformat()
     count = 0
@@ -145,25 +146,20 @@ def fetch_season(
         if not is_new_anime(raw, year, season):
             continue
         mal_id: int = raw["id"]
-        mal_title: str = raw.get("title", "")
-        mal_title_ja: str | None = raw.get("alternative_titles", {}).get("ja")
-        mal_media_type: str = raw.get("media_type", "tv")
-        mal_rating: str = Rating.from_mal(raw.get("rating")).value
 
+        # MAL 事实全部落进 mal_anime，是可以随便重拉覆盖的缓存
+        upsert_mal_anime(db, raw, Rating.from_mal(raw.get("rating")).value)
+
+        # 关联行只负责「这个条目属于这个季度」，已存在就什么都不做。
+        # 这条 SQL 里压根没有 status/source/bgm_id 的更新分支，
+        # 所以重新 fetch 在结构上就不可能清掉人工决策。
         db.execute(
             """
-            INSERT INTO items
-              (mal_id, season_id, status, source, confidence, bgm_id, bgm_name, bgm_name_cn,
-               mal_title, mal_title_ja, mal_media_type, mal_rating, error, candidates, updated_at)
-            VALUES (?,?,'pending',NULL,NULL,NULL,NULL,NULL,?,?,?,?,NULL,NULL,?)
-            ON CONFLICT(mal_id, season_id) DO UPDATE SET
-              mal_title = excluded.mal_title,
-              mal_title_ja = excluded.mal_title_ja,
-              mal_media_type = excluded.mal_media_type,
-              mal_rating = excluded.mal_rating,
-              updated_at = excluded.updated_at
+            INSERT INTO season_items (season_id, mal_id, status, origin, updated_at)
+            VALUES (?,?,'pending','mal',?)
+            ON CONFLICT(season_id, mal_id) DO NOTHING
             """,
-            (mal_id, season_id, mal_title, mal_title_ja, mal_media_type, mal_rating, now),
+            (season_id, mal_id, now),
         )
         count += 1
         if mal_id not in existing:

@@ -39,10 +39,12 @@ def merge_releases(db_path: Path) -> dict:
 
         rows = conn.execute(
             """
-            SELECT season_id, mal_id, mal_title, bgm_id, mal_media_type, mal_rating
-            FROM items
-            WHERE status = 'included'
-            ORDER BY season_id, mal_id
+            SELECT si.season_id, si.mal_id, si.bgm_id, m.title AS mal_title,
+                   m.media_type AS mal_media_type, m.rating AS mal_rating
+            FROM season_items si
+            JOIN mal_anime m USING (mal_id)
+            WHERE si.status = 'included'
+            ORDER BY si.season_id, si.mal_id
             """
         ).fetchall()
     finally:
