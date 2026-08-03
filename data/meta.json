@@ -1,0 +1,972 @@
+{
+  "overrides": [
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "mal_id": 60629,
+      "season_id": "2024-fall"
+    },
+    {
+      "action": "add",
+      "bgm_id": 469072,
+      "mal_id": 57470,
+      "season_id": "2024-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": 488262,
+      "mal_id": 58648,
+      "season_id": "2024-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": null,
+      "mal_id": 61303,
+      "season_id": "2025-fall"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "mal_id": 63096,
+      "season_id": "2025-fall"
+    },
+    {
+      "action": "add",
+      "bgm_id": null,
+      "mal_id": 58888,
+      "season_id": "2025-spring"
+    },
+    {
+      "action": "add",
+      "bgm_id": null,
+      "mal_id": 58954,
+      "season_id": "2025-spring"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "mal_id": 61303,
+      "season_id": "2025-spring"
+    },
+    {
+      "action": "add",
+      "bgm_id": null,
+      "mal_id": 62494,
+      "season_id": "2025-spring"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "mal_id": 58888,
+      "season_id": "2025-winter"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "mal_id": 58954,
+      "season_id": "2025-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": null,
+      "mal_id": 60629,
+      "season_id": "2025-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": 629653,
+      "mal_id": 60901,
+      "season_id": "2025-winter"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "mal_id": 62494,
+      "season_id": "2025-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": 565007,
+      "mal_id": 64102,
+      "season_id": "2025-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": 633618,
+      "mal_id": 63736,
+      "season_id": "2026-spring"
+    },
+    {
+      "action": "add",
+      "bgm_id": null,
+      "mal_id": 63096,
+      "season_id": "2026-winter"
+    }
+  ],
+  "seasons": [
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2000-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:48:40.416102+00:00",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2000-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2000-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2000-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2001-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2001-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2001-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2001-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2002-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2002-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2002-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2002-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2003-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2003-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2003-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2003-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2004-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2004-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2004-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2004-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2005-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2005-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2005-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2005-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2006-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2006-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2006-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2006-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2007-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2007-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2007-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2007-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2008-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2008-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2008-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2008-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2009-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2009-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2009-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2009-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2010-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2010-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2010-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2010-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2011-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2011-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2011-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2011-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2012-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2012-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2012-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2012-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2013-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2013-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2013-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2013-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2014-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2014-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2014-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2014-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2015-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2015-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2015-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2015-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2016-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2016-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2016-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2016-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2017-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2017-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2017-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2017-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2018-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2018-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2018-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2018-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2019-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2019-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2019-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2019-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2020-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2020-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2020-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2020-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2021-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2021-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2021-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2021-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2022-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2022-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2022-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2022-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2023-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-07-31T08:30:52.599870+00:00",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2023-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2023-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2023-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2024-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-08-03T01:50:55.079175+00:00",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2024-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2024-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2024-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2025-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2025-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2025-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2025-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-05-12T08:15:09.881836+00:00",
+      "id": "2026-fall",
+      "released_at": null,
+      "season": "fall",
+      "updated_at": "2026-06-20T01:04:09.127522+00:00",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-05-12T02:11:45.377265+00:00",
+      "id": "2026-spring",
+      "released_at": null,
+      "season": "spring",
+      "updated_at": "2026-05-13T06:27:52.513412+00:00",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-05-12T03:25:57.138209+00:00",
+      "id": "2026-summer",
+      "released_at": null,
+      "season": "summer",
+      "updated_at": "2026-06-20T01:42:55.359894+00:00",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-05-12T07:45:27.498631+00:00",
+      "id": "2026-winter",
+      "released_at": null,
+      "season": "winter",
+      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "year": 2026
+    }
+  ]
+}
