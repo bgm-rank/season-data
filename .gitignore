@@ -8,6 +8,7 @@ season-data.json
 season.db
 season.db-shm
 season.db-wal
+backups/
 web/node_modules/
 web/.astro/
 web/dist/
