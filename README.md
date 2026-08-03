@@ -39,7 +39,7 @@ cd web && pnpm dev
 1. 在 Web UI 创建季度 → Fetch MAL 数据（写入 `season.db`）
 2. 点击 Run 触发自动匹配（规则过滤 → 精确匹配 → LLM）
 3. 在 Review Queue 审查 `pending` 条目，填入 `bgm_id` 或标记排除
-4. Export Data 生成 `data/{year}-{season}.json`
+4. 跑 `scripts/export_decisions.py` 把决策快照落进 git
 
 ## 命令行（可选）
 
@@ -67,17 +67,26 @@ MAL 有时会把某季番标到错误季度，可以通过 Web UI 的 Override M
 
 ## 数据库备份与恢复
 
-`data/` 目录是 `season.db` 的 JSON 副本，纳入 git 管理，用于在多台机器间同步工作状态。
+`season.db`（gitignored）是唯一权威数据源。备份只针对**不可重建**的部分——MAL 和 BGM
+的事实随时能重拉，人工审核成果不能。
 
 ```bash
-# 导出（提交前运行，将 DB 同步到 data/）
-PYTHONPATH=src uv run python scripts/export_db.py
+# 决策快照（改动数据后运行，产物纳入 git）
+uv run python scripts/export_decisions.py
 
-# 换机器后恢复（从 data/ 重建 season.db）
-PYTHONPATH=src uv run python scripts/import_db.py
+# 整库快照（做破坏性操作前运行，backups/ 不进 git）
+uv run python -c "import sqlite3;sqlite3.connect('season.db').execute(\"VACUUM INTO 'backups/season-$(date +%Y%m%d).db'\")"
 ```
 
-每个季度对应 `data/{year}-{season}.json`，包含该季度的完整状态（items、overrides），恢复后无需重新 fetch MAL 数据或重跑匹配。
+`export_decisions.py` 产出两个文件：
+
+- `data/decisions.jsonl` —— 每行一条决策（`season_id` / `mal_id` / `status` / `source` /
+  `bgm_id` / `confidence` / `origin`），按 `(season_id, mal_id)` 排序，所以 git diff 是行级的：
+  改 10 条就只有 10 行变化。
+- `data/meta.json` —— `seasons` 与 `overrides` 两张小表。
+
+恢复路径：重建空库 → 导入这两个文件 → `fetch` 重拉 MAL 事实 → `sync-bgm` 重拉 BGM 事实
+（`bgm_subject.fetched_at IS NULL` 天然就是待刷队列）。
 
 ## 发布
 
@@ -85,23 +94,27 @@ PYTHONPATH=src uv run python scripts/import_db.py
 uv run python scripts/publish_release.py
 ```
 
-合并所有 `data/*.json` 只取部分字段并发布到 GitHub Release。
+直接从 `season.db` 读出全部 included 条目，只取 `bgm_id` / `media_type` / `rating`
+发布到 GitHub Release。
 
 ## 目录结构
 
 ```
-season.db              主数据库（seasons / items / overrides）
-data/                  数据库 JSON 副本（git 管理，用于跨机器同步和发布 release）
+season.db              主数据库（gitignored，唯一权威数据源）
+                       seasons / mal_anime / bgm_subject / season_items / overrides
+backups/               整库快照（gitignored）
+data/                  决策快照（git 管理）decisions.jsonl + meta.json
 src/
   api/                 FastAPI 后端
     routers/           seasons / items / overrides / run / bgm
-    migrations/        SQL 初始化脚本
+    migrations/        SQL 迁移（append-only，按文件名顺序执行）
+    repo.py            跨表写入 helper（mal_anime / bgm_subject 的 upsert）
   core/                匹配主逻辑 + CLI
   services/mal/        MAL API 客户端
   services/bgmtv/      Bangumi.tv API 客户端
   services/openrouter/  OpenRouter / DeepSeek LLM 客户端
 web/                   Astro + React 前端
-scripts/               辅助脚本（publish、migrate）
+scripts/               辅助脚本（publish_release、export_decisions）
 ```
 
 ## 开发
