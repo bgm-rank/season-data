@@ -134,8 +134,13 @@ def fetch_season(
     except Exception as e:
         raise HTTPException(status_code=502, detail=f"MAL API error: {e}") from e
 
+    # 已存在的条目只刷新 MAL 侧字段，绝不触碰 status/source/bgm_*/confidence/candidates —
+    # 早先这里用 INSERT OR REPLACE（= DELETE + INSERT），重新拉一次 MAL 就会清空该季全部人工决策。
+    existing: set[int] = {r["mal_id"] for r in db.execute("SELECT mal_id FROM items WHERE season_id = ?", (season_id,))}
+
     now = datetime.now(UTC).isoformat()
     count = 0
+    new_count = 0
     for raw in items:
         if not is_new_anime(raw, year, season):
             continue
@@ -147,15 +152,23 @@ def fetch_season(
 
         db.execute(
             """
-            INSERT OR REPLACE INTO items
+            INSERT INTO items
               (mal_id, season_id, status, source, confidence, bgm_id, bgm_name, bgm_name_cn,
                mal_title, mal_title_ja, mal_media_type, mal_rating, error, candidates, updated_at)
-            VALUES (?,?,?,NULL,NULL,NULL,NULL,NULL,?,?,?,?,NULL,NULL,?)
+            VALUES (?,?,'pending',NULL,NULL,NULL,NULL,NULL,?,?,?,?,NULL,NULL,?)
+            ON CONFLICT(mal_id, season_id) DO UPDATE SET
+              mal_title = excluded.mal_title,
+              mal_title_ja = excluded.mal_title_ja,
+              mal_media_type = excluded.mal_media_type,
+              mal_rating = excluded.mal_rating,
+              updated_at = excluded.updated_at
             """,
-            (mal_id, season_id, "pending", mal_title, mal_title_ja, mal_media_type, mal_rating, now),
+            (mal_id, season_id, mal_title, mal_title_ja, mal_media_type, mal_rating, now),
         )
         count += 1
+        if mal_id not in existing:
+            new_count += 1
 
     db.execute("UPDATE seasons SET updated_at = ? WHERE id = ?", (now, season_id))
     db.commit()
-    return {"fetched_count": count}
+    return {"fetched_count": count, "new_count": new_count, "updated_count": count - new_count}
