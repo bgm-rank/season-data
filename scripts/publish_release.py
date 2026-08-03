@@ -1,4 +1,4 @@
-"""将 data/ 下所有季度 JSON 合并为一个文件并发布到 GitHub Release。
+"""从 season.db 读取全部 included 条目，合并为一个文件并发布到 GitHub Release。
 
 用法:
   uv run python scripts/publish_release.py [--tag TAG] [--dry-run]
@@ -11,54 +11,62 @@ from __future__ import annotations
 
 import argparse
 import json
+import sqlite3
 import subprocess
 import sys
 import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DB_PATH = Path(__file__).resolve().parent.parent / "season.db"
 
 # 下游服务接受的 media_type 枚举，必须与其保持一致。
 # MAL 偶尔返回 `unknown` 等不在此集合内的值，会导致下游整份 JSON 解析失败，需在发布前剔除。
 VALID_MEDIA_TYPES = frozenset({"tv", "movie", "ova", "ona", "tv_special", "special", "music", "pv", "cm"})
 
 
-def _slim_item(item: dict) -> dict:
-    """只保留 bgm_id, media_type, rating。"""
-    return {
-        "bgm_id": item["bgm_id"],
-        "media_type": item.get("mal_media_type", ""),
-        "rating": item.get("mal_rating", ""),
-    }
+def merge_releases(db_path: Path) -> dict:
+    """读取 DB 中全部 included 条目，合并为 { season_id: [items] }。
 
-
-def merge_releases(data_dir: Path) -> dict:
-    """读取所有季度 data JSON，过滤 included 条目，合并为 { season: [items] }。
-
-    media_type 不在 VALID_MEDIA_TYPES 内的条目会被剔除并打印警告，避免下游解析失败。
+    每个 item 只保留 bgm_id / media_type / rating。
+    media_type 不在 VALID_MEDIA_TYPES 内、或缺 bgm_id 的条目会被剔除并打印警告，避免下游解析失败。
     """
-    merged: dict = {}
+    conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+    conn.row_factory = sqlite3.Row
+    try:
+        # 先把全部季度铺成空列表，保证没有 included 条目的季度也出现在产物里
+        merged: dict = {row["id"]: [] for row in conn.execute("SELECT id FROM seasons ORDER BY id")}
+
+        rows = conn.execute(
+            """
+            SELECT season_id, mal_id, mal_title, bgm_id, mal_media_type, mal_rating
+            FROM items
+            WHERE status = 'included'
+            ORDER BY season_id, mal_id
+            """
+        ).fetchall()
+    finally:
+        conn.close()
+
     skipped = 0
-    for f in sorted(data_dir.glob("*.json")):
-        data = json.loads(f.read_text("utf-8"))
-        season_field = data.get("season", {})
-        season = season_field.get("id", f.stem) if isinstance(season_field, dict) else season_field
-        items = []
-        for it in data.get("items", []):
-            if it.get("status") != "included":
-                continue
-            media_type = it.get("mal_media_type")
-            if media_type not in VALID_MEDIA_TYPES:
-                skipped += 1
-                print(
-                    f"[warn] 跳过非法 media_type={media_type!r} 条目: "
-                    f"season={season} mal_id={it.get('mal_id')} 「{it.get('mal_title')}」",
-                    file=sys.stderr,
-                )
-                continue
-            items.append(_slim_item(it))
-        merged[season] = items
+    for row in rows:
+        season = row["season_id"]
+        media_type = row["mal_media_type"]
+        if media_type not in VALID_MEDIA_TYPES or row["bgm_id"] is None:
+            skipped += 1
+            reason = f"media_type={media_type!r}" if media_type not in VALID_MEDIA_TYPES else "缺少 bgm_id"
+            print(
+                f"[warn] 跳过非法 {reason} 条目: season={season} mal_id={row['mal_id']} 「{row['mal_title']}」",
+                file=sys.stderr,
+            )
+            continue
+        merged.setdefault(season, []).append(
+            {
+                "bgm_id": row["bgm_id"],
+                "media_type": media_type,
+                "rating": row["mal_rating"] or "",
+            }
+        )
     if skipped:
         print(f"共跳过 {skipped} 条非法 media_type 条目", file=sys.stderr)
     return merged
@@ -78,11 +86,11 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    if not DATA_DIR.is_dir():
-        print(f"Error: data 目录不存在: {DATA_DIR}", file=sys.stderr)
+    if not DB_PATH.is_file():
+        print(f"Error: 数据库不存在: {DB_PATH}", file=sys.stderr)
         sys.exit(1)
 
-    merged = merge_releases(DATA_DIR)
+    merged = merge_releases(DB_PATH)
     print(f"合并了 {len(merged)} 个季度", file=sys.stderr)
 
     if args.dry_run:
