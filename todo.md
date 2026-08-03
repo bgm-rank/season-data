@@ -3,8 +3,9 @@
 > 2026-08-03 全流程 review 产出。写得比较详细，目的是让新会话不用重读代码/查库就能直接动手。
 > 结论：手感问题只是表象，真正的问题是**第 4、5 步事实上没跑起来**，且有几个静默 bug 在持续破坏数据 / 制造错误匹配。
 > 章节按你的五步流程组织；文末有跨章节的优先级执行顺序。
+> 已完成的条目直接删除，不再保留划线记录（病因需要留档的写进 commit message）。条目编号保持稳定，删了不重排。
 
-## 现状体检（2026-08-03，基于 season.db + data/*.json）
+## 现状体检（2026-08-03，基于 season.db）
 
 ```
 季度总数 108，其中 95 个季度仍有 pending
@@ -19,68 +20,26 @@ bgm_air_date 覆盖率： 347 / 11782 included 条目 = 3%
 单季条目数 > 200：    51 个季度（最大 339 条）
 ```
 
-复核脚本（**本仓库跑 Python 一律用 `uv run python`，不要用 `python3`**）：
+复核脚本（**本仓库跑 Python 一律用 `uv run python`，不要用 `python3`**）。
+注意：旧 `items` 表已冻结，查询一律走 `items_flat` 视图，否则读到的是拆表前的快照。
 
 ```bash
 uv run python - <<'EOF'
 import sqlite3
 c = sqlite3.connect('season.db'); c.row_factory = sqlite3.Row
-for r in c.execute("SELECT status, source, COUNT(*) n FROM items GROUP BY 1,2 ORDER BY 1,2"):
+for r in c.execute("SELECT status, source, COUNT(*) n FROM items_flat GROUP BY 1,2 ORDER BY 1,2"):
     print(f"{r['status']:9} {str(r['source']):6} {r['n']}")
-print("季内撞车组数:", len(c.execute("""SELECT season_id,bgm_id FROM items
+print("季内撞车组数:", len(c.execute("""SELECT season_id,bgm_id FROM items_flat
     WHERE status='included' AND bgm_id IS NOT NULL GROUP BY 1,2 HAVING COUNT(*)>1""").fetchall()))
 print("air_date 覆盖:",
-      c.execute("SELECT COUNT(*) FROM items WHERE status='included' AND bgm_air_date IS NOT NULL").fetchone()[0], "/",
-      c.execute("SELECT COUNT(*) FROM items WHERE status='included' AND bgm_id IS NOT NULL").fetchone()[0])
+      c.execute("SELECT COUNT(*) FROM items_flat WHERE status='included' AND bgm_air_date IS NOT NULL").fetchone()[0], "/",
+      c.execute("SELECT COUNT(*) FROM items_flat WHERE status='included' AND bgm_id IS NOT NULL").fetchone()[0])
 EOF
 ```
 
 ---
 
 # 1. 拉取 MAL 数据
-
-## ~~1-1. 【P0·数据破坏】重新拉取 MAL 会把该季全部匹配数据清空，包括人工决策~~ ✅ 已修
-
-分两步修掉。先在旧 schema 上换成 `ON CONFLICT ... DO UPDATE`（只刷 MAL 侧四列），
-随后拆表把它变成结构上不可能发生：MAL 事实进 `mal_anime`，关联行只做
-`INSERT ... ON CONFLICT DO NOTHING`，**fetch 的 SQL 里根本不存在 `status` 这个列名**。
-返回值已加 `new_count` / `updated_count`。
-
-验收已通过：对同一季度重复跑 fetch 循环体，`season_items` 的
-`(status, source, bgm_id, confidence)` 逐行不变，而 `mal_anime.title` 确实刷新了。
-
-以下是原始诊断，留作病因记录。
-
-**已确认**。`src/api/routers/seasons.py:148-156` 用的是：
-
-```sql
-INSERT OR REPLACE INTO items (mal_id, season_id, status, source, confidence, bgm_id, ...)
-VALUES (?,?,'pending',NULL,NULL,NULL,NULL,NULL,?,?,?,?,NULL,NULL,?)
-```
-
-SQLite 的 `REPLACE` 等价于 DELETE + INSERT，所以：
-- `status` 强制回 `pending`、`source`/`bgm_id`/`bgm_name`/`bgm_name_cn`/`confidence`/`candidates` 全部置 NULL —— **rule、exact、llm、human 的成果一律清零**；
-- `bgm_air_date` 甚至没出现在列名里，同样被 DELETE 掉（已验证：`fetch_season` 未覆盖的列 = `['bgm_air_date']`）。
-
-也就是说，只要点一次「拉取 MAL 数据」，这一季就得从头审。
-
-**做法**：改成"只补新条目、只更新 MAL 侧字段"的 upsert：
-
-```sql
-INSERT INTO items (mal_id, season_id, status, source, ..., updated_at)
-VALUES (?,?, 'pending', NULL, ...)
-ON CONFLICT(mal_id, season_id) DO UPDATE SET
-  mal_title=excluded.mal_title,
-  mal_title_ja=excluded.mal_title_ja,
-  mal_media_type=excluded.mal_media_type,
-  mal_rating=excluded.mal_rating,
-  updated_at=excluded.updated_at
--- 注意：status / source / bgm_* / confidence / candidates 一律不动
-```
-
-返回值除 `fetched_count` 外再加 `new_count` / `updated_count`，前端 `SeasonActions.tsx:44-46` 显示出来。
-
-**验收**：对一个已审完的季度连点两次 fetch，`SELECT status,source,COUNT(*) ... GROUP BY 1,2` 结果不变。
 
 ## 1-2. 【P2】`is_new_anime` 过滤口径
 
@@ -140,19 +99,20 @@ bgm:549170「팡팡 다이노」被 7 个占用
 
 现状：
 - `MATCH_SYSTEM_PROMPT`（`client.py:20-25`）是为省 token 极限压缩的，候选行只给 `bgm_id:日文名|中文名|日期|简介前 80 字`（`SUMMARY_MAX_CHARS = 80`，`client.py:17`），`max_tokens=128`（`client.py:267`）；
-- MAL 侧只给 `英文名|日文名|媒体类型`（`client.py:244-248`）—— **MAL 的 synopsis、studios、start_date、num_episodes 全都没用上，甚至没存进 DB**；
-- BGM 侧 `Subject` 已经取到了 `summary`/`date`/`platform`/`tags`（`services/bgmtv/client.py:36-47`），但只有 summary 前 80 字进了 prompt，tags/platform 都浪费了；
-- 系统 prompt 写死为常量是为了最大化 prompt 缓存命中（见 CLAUDE.md），改的时候保持这个特性。
+- MAL 侧只给 `英文名|日文名|媒体类型`（`client.py:244-248`）—— **MAL 的 synopsis、studios、start_date、num_episodes 全都没用上**；
+- BGM 侧 `Subject` 已经取到了 `summary`/`date`/`platform`/`tags`（`services/bgmtv/client.py:36-47`），但只有 summary 前 80 字进了 prompt，tags/platform 都浪费了。
+
+**前置条件（已满足）**：`mal_anime` 有 `synopsis` / `start_date` / `end_date` / `num_episodes` /
+`source` / `studios` / `title_en`，`bgm_subject` 有 `summary` / `platform` / `tags` / `nsfw`。
+MAL 侧 fetch 时已写满（`MalClient.FIELDS` 本来就在请求这些字段）；**BGM 侧待 4-3 跑完才有数据，
+所以 2-3 必须排在 4-3 之后**。cast 需要额外接口，仍待评估。
 
 **做法**：
-1. ~~**先存数据**~~ **✅ 已随拆表完成**：`mal_anime` 有 `synopsis` / `start_date` / `end_date` /
-   `num_episodes` / `source` / `studios` / `title_en`，`bgm_subject` 有 `summary` / `platform` /
-   `tags` / `nsfw`。`MalClient.FIELDS` 本来就在请求这些字段（只是以前拿到就丢），
-   所以 fetch 落库是零 API 成本。BGM 侧待 4-3 跑完填满。cast 需要额外接口，仍待评估。
-2. **扩 prompt 输入**：MAL 侧加首播日期 + 集数 + 简介摘要；BGM 侧 `SUMMARY_MAX_CHARS` 从 80 提到 200~300，加上 `platform`（TV/剧场版/OVA，可直接和 MAL media_type 交叉验证）和高频 tags。**数据都已就位，只差改 prompt 组装。**
-3. **加硬规则**：首播日期相差 > 6 个月直接扣分或判否；media_type 与 platform 明显冲突（movie vs TV）判否。这些其实用代码做比让 LLM 做更可靠、更省钱。
-4. `max_tokens` 相应放宽，并让模型输出一个简短 `reason` 存进 candidates，人工审核时能看到它为什么这么判。
-5. 换更强的模型（当前默认 `deepseek-chat` / `google/gemini-2.5-flash-lite`，`client.py:12-14`），改完 prompt 后拿撞车的那 466 条当回归集验证。
+1. **扩 prompt 输入**：MAL 侧加首播日期 + 集数 + 简介摘要；BGM 侧 `SUMMARY_MAX_CHARS` 从 80 提到 200~300，加上 `platform`（TV/剧场版/OVA，可直接和 MAL media_type 交叉验证）和高频 tags。**数据都已就位，只差改 prompt 组装。**
+2. **加硬规则**：首播日期相差 > 6 个月直接扣分或判否；media_type 与 platform 明显冲突（movie vs TV）判否。这些其实用代码做比让 LLM 做更可靠、更省钱。
+3. `max_tokens` 相应放宽，并让模型输出一个简短 `reason` 存进 candidates，人工审核时能看到它为什么这么判。
+4. 换更强的模型（当前默认 `deepseek-chat` / `google/gemini-2.5-flash-lite`，`client.py:12-14`），改完 prompt 后拿撞车的那 466 条当回归集验证。
+5. 保持系统 prompt 写死为常量（prompt 缓存命中，见 CLAUDE.md）。
 
 ## 2-4. 【P2】run 在重复劳动 + 全串行
 
@@ -178,47 +138,74 @@ bgm:549170「팡팡 다이노」被 7 个占用
 
 **做法**：在 `ReviewQueue.tsx:257-275` 的手动输入 bgm_id 区域旁挂上 `<BgmSearch seasonId={seasonId} onSelect={...} />`，选中直接填 bgm_id；无候选时默认展开并用 `mal_title_ja` 预填搜索词。
 
-## ~~3-2. 【P1】人工填完 ID 没有确认反馈~~ ✅ 随拆表一并修掉
-
-不是顺手加的功能，是外键逼出来的：写 `season_items.bgm_id` 之前必须先有 `bgm_subject` 行，
-而落那行最自然的方式就是把详情拉回来。PATCH include 现在走
-`_try_fetch_subject()` → `ensure_bgm_subject()`，响应里立刻带上番名；BGM API 不可用时
-退化成骨架行，写入照样成功，不让外键把人工输入卡死。
-
-约束逼出正确行为，而不是靠记得在 include 分支里补三行代码。
-
 ## 3-3. 【P2】`ReviewQueue` 也吃 limit=200 默认值
 
 `ReviewQueue.tsx:35` 调 `getItems` 不传 limit，后端默认 200（`items.py:57`）。当前单季 pending 最多 41 条够用，但和 P0-2 一并修掉。
+
+## 3-4. 【P1·须先于第 7 节】人工决策不记录原因，且 override skip 被伪装成 rule
+
+两个独立但同一次迁移能解决的问题。
+
+**问题 A：`overrides` 的 skip 结果写成 `source='rule'`**（`processor.py:230`）
+
+override skip 的语义是**「MAL 把季度标错了，这条番属于别的季度」**——它和审核界面里的 exclude
+不是一回事：exclude 说的是「这个东西在 BGM 侧不成立」，skip 说的是「这个东西成立，但不在这里」。
+典型用法是配对操作：A 季度 skip + B 季度 add。
+
+现在把它记成 `source='rule'`，等于把一个**位置错误**伪装成**媒体类型规则过滤**，跑完之后
+无法回答「这条是规则踢的还是我手工挪走的」。`origin='override'` 给 add 补了出处，skip 这半边漏了。
+
+**问题 B：exclude / skip 都没有原因字段**
+
+半年后看到一条 `excluded`，无从知道当时是因为 BGM 没收录、还是 BGM 把它并进本篇的额外 ep 了。
+自由填空成本太高且很多情况没法分类，所以走**预设枚举 + 可选补充文本**，且**允许不填**。
+
+两组原因几乎不重叠，正好印证 A 里说的语义区别：
+
+| `season_items` 人工 exclude | `overrides` skip |
+|---|---|
+| `not_on_bgm` BGM 根本没收录 | `wrong_season` MAL 标错季度，该去别的季 |
+| `merged_into_ep` BGM 没单列，并进本篇当额外 ep | |
+| `not_anime` 媒体类型不该收 | |
+| `duplicate` MAL 里重复条目 | |
+| `other` + note | |
+
+> 枚举取值是凭现有样例推的，**动手前先按实际跑一遍高频场景补全**，落进 CHECK 之后再加值要新迁移。
+
+**做法**：
+
+1. 新迁移（编号取当时下一个可用值；和 §8 计划的 `004_drop_items.sql` 抢 004，谁先落谁用）：
+   ```sql
+   ALTER TABLE overrides     ADD COLUMN reason           TEXT;  -- CHECK 枚举
+   ALTER TABLE overrides     ADD COLUMN target_season_id TEXT;  -- skip 时可填：它该去哪
+   ALTER TABLE overrides     ADD COLUMN note             TEXT;
+   ALTER TABLE overrides     ADD COLUMN created_at       TEXT;
+   ALTER TABLE season_items  ADD COLUMN reason           TEXT;
+   ALTER TABLE season_items  ADD COLUMN note             TEXT;
+   -- 顺手补上一直缺的：CHECK(action <> 'add' OR bgm_id IS NOT NULL)
+   -- 现在只有 router 在拦（overrides.py:38），CLI/直接 SQL 写进去会让
+   -- processor.py:170 的 `bgm_id_ov: int` 拿到 None
+   ```
+2. `processor.py:230` 的 skip 分支改 `source='human'`，并把 override 的 reason 一并落进 `season_items.reason`。
+3. **不要把 override 的 reason 冗余到 `season_items`**（除第 2 步的 skip 落地外）：override 行是 append 的意图记录、不会删，
+   `items_flat` 里 `LEFT JOIN overrides` 带出 `override_action` / `override_reason` 即可。
+   `origin` 之所以要冗余是因为 add 进来的行必须自证出处，skip 没这个问题。
+4. UI：排除按钮做成小 dropdown（4 个预设 + 「其他…」），**不填也能提交**。常见情况零成本，长尾才付文字代价。
+5. `target_season_id` 先只当**线索/备忘**用：在 A 季度 skip 时顺手记下「去 2026-summer」，
+   将来在 B 季度就能查「有哪些番标记着要挪进来但还没 add」，把隐性的配对操作变成可查询的待办。
+   **不做成 `action='move'` 自动跨季写入**——skip 时未必已知 bgm_id，且 B 季度可能还没建，
+   run B 时要反扫全库 overrides，复杂度不划算。
+
+**为什么必须排在第 7 节之前**：那次清理会产生 700~1000 条人工 exclude 决策。
+字段不存在的话，这批决策的原因**永久丢失**，且正是最需要留档的一批（全是可疑匹配的判定结果）。
+
+⚠️ 不要复用 `season_items.error`——那是「匹配流程失败原因」，只在 pending 时有值，语义完全不同。
 
 ---
 
 # 4. 拉取 Bangumi.tv 数据
 
-## ~~4-1. 【P0·数据丢失】`export_db.py` / `import_db.py` 丢失 `bgm_air_date`~~ ✅ 随拆表消失
-
-原因是宽表逼着同步脚本手写一份 15 列的字段清单，加列时漏一处就静默丢数据。
-
-拆表后 `data/` 整个被抛弃、三个脚本（`export_db` / `import_db` / `migrate_to_db`）已删除，
-没有 export 就没有字段清单可漏。`bgm_air_date` 也不再冗余在关联表里，改为
-`bgm_subject.air_date` 单一来源，读取时由 `items_flat` 视图 JOIN 取。
-
-备份改为 `scripts/export_decisions.py`，只导不可重建的决策，字段列表自然不会漏缓存列。
-补齐历史 air_date 见 4-3（回填时 `fetched_at` 一律置 NULL，11068 条已经排好队）。
-
-## 4-2. 【P1】顺手把 BGM 原始数据存一份（你提的）
-
-现在 `_run_sync`（`items.py:124-162`）拿到完整 `Subject` 后**只抽了 name / name_cn / date 三个字段就丢掉**，`summary`/`platform`/`tags`/`nsfw` 全部浪费。而这些正是 2-3 想喂给 LLM 的输入。
-
-**✅ 存储部分已随拆表完成**：`bgm_subject` 表有 `type` / `platform` / `summary` / `tags` /
-`nsfw` / `fetched_at` 六个字段，`sync-bgm` 与 processor 匹配命中时都会写满
-（`ensure_bgm_subject()`）。**剩下的只是填充**——回填时 `fetched_at` 一律置 NULL，
-11068 条已经排在待刷队列里，跑一次 4-3 的增量同步即可。
-
-不再需要 `data/bgm/{bgm_id}.json` 那套外部缓存：数据按 `bgm_id` 天然唯一，
-存在表里语义正确，也不会被 export 弄丢。
-
-## 4-3. 【P2】`sync-bgm` 不可用于当前规模
+## 4-3. 【P0 首跑 / P2 并发】`sync-bgm` 不可用于当前规模
 
 `src/api/routers/items.py:124-162` 的 `_run_sync`：
 - `WHERE bgm_id IS NOT NULL` **全量**，不支持"只刷 air_date 为空的"增量
@@ -233,7 +220,9 @@ bgm:549170「팡팡 다이노」被 7 个占用
 
 **剩下要做的**：把触发入口从「单季」改成「全库」，再加并发。当前 11068 条骨架行
 （回填时 `fetched_at` 全置 NULL）跑一遍就能把 air_date 覆盖率从 3% 补齐，
-顺带把 4-2 的 platform / summary / tags 一次性填满。
+顺带把 `bgm_subject` 的 `platform` / `summary` / `tags` / `nsfw` 一次性填满
+（字段和写入路径 `ensure_bgm_subject()` 已随拆表就位，纯粹缺数据）。
+这四个字段是 2-3 增强 LLM prompt 的输入，5-1 的 `date_mismatch` 也等这一跑。
 
 ---
 
@@ -328,42 +317,53 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 # 8. 优先级执行顺序
 
-> **2026-08-03 更新**：`dev.md` 的数据库重构已完成（拆表 + 抛弃 `data/`）。
-> 随之解决的：**1-1**（结构上不可能再发生）、**4-1**（脚本已删除）、**3-2**（外键逼出正确行为）、
-> **4-2** 的存储部分。**4-3** / **5-1** / **2-3** 的阻塞已解除，见各条目里的「🔓 拆表已解锁」。
-> 剩下的 P0 是纯前端的 5-3 / 5-2 和质量检查 5-1。
+> **2026-08-03 更新**：`dev.md` 的数据库重构已完成（拆表 + 抛弃 `data/`），
+> 由此解决的条目（原 1-1 / 3-2 / 4-1 / 4-2）已从本文件删除。
+> **4-3** / **5-1** / **2-3** 的阻塞随之解除，见各条目里的「🔓 拆表已解锁」。
+>
+> **主线依赖**：`5-3 → 5-2`（能看全 + 改得动）→ `4-3`（有数据）→ `5-1`（能筛出问题）
+> → `2-1 / 2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理** → `2-3`（提质）。
+> 这条链上每一步都是下一步的前提，不要跳。
 
 ## P0 — 立刻（做完才能正常干活）
 
 | 顺序 | 任务 | 成本 | 收益 |
 |---|---|---|---|
-| ~~1~~ | ~~**1-1** fetch 不再清空匹配数据~~ ✅ | — | 已完成 |
-| ~~2~~ | ~~**4-1** export/import 补 `bgm_air_date`~~ ✅ | — | 随 `data/` 抛弃而消失 |
 | 1 | **5-3** `getItems` limit / 分页 | 10min | 补回 51 个季度看不见的条目 |
 | 2 | **5-2** `ItemList` 乐观更新 + 行内操作 | 半天 | 直接解决滚动丢失，二次审核 4 次交互 → 1 次 |
-| 3 | **4-3** 全库跑一次增量 sync-bgm | 1h + 等 | 补齐 97% 缺失的 air_date，5-1 的 `date_mismatch` 才可用 |
+| 3 | **4-3** 全库跑一次增量 sync-bgm（先只做「全库触发」，并发留 P2） | 1h + 等 | 补齐 97% 缺失的 air_date；解锁 5-1 的 `date_mismatch` 和 2-3 的 BGM 侧输入 |
 | 4 | **5-1** 质量检查 API + UI 筛选 | 半天 | 一次性揪出 700+ 已有错误 |
 
-## P1 — 止血 + 提升匹配质量（约两天；不做完不值得大批量审核）
+## P1 — 止血（不做完不值得大批量审核，否则清完又被新错配弄脏）
 
 | 顺序 | 任务 | 成本 |
 |---|---|---|
 | 5 | **2-1** 语言护栏（韩文/纯中文直接 excluded） | 1h |
 | 6 | **2-2** 收窄后缀剥离 + exact 加日期校验 + 撞车前置检查 | 半天 |
-| 7 | **3-1** 挂载 `BgmSearch` | 1h |
-| ~~8~~ | ~~**3-2** PATCH include 同步补全 bgm 字段~~ ✅ | — |
-| ~~9~~ | ~~**4-2** 存 BGM 原始数据~~ ✅ 存储已就位，填充并入 4-3 | — |
-| 8 | **2-3** 增强 LLM prompt（字段已落库，只差改 prompt + 硬规则 + 回归验证） | 1 天 |
+| 7 | **3-1** 挂载 `BgmSearch`（§7 清理后审核队列会暴涨，先把无候选的路打通） | 1h |
+| 8 | **3-4** 决策原因迁移 + skip 的 `source='rule'` 修正 | 半天 |
+
+> **8 必须在 §7 之前**：那次清理产生 700~1000 条人工 exclude，
+> 字段不存在的话这批原因永久丢失，而它们恰恰是最值得留档的一批。
 
 ## 一次性清理
 
+| 顺序 | 任务 | 成本 |
+|---|---|---|
 | 9 | **第 7 节** 打回 700~1000 条问题 included，用新逻辑重跑 | 半天 + 机器时间 |
+
+## P1.5 — 清理之后
+
+| 顺序 | 任务 | 成本 |
+|---|---|---|
+| 10 | **2-3** 增强 LLM prompt（依赖 4-3 填满 BGM 侧字段；拿撞车的 466 条当回归集） | 1 天 |
 
 ## P2 — 规模化（批处理 100+ 季之前）
 
 | 顺序 | 任务 | 成本 |
 |---|---|---|
-| 10 | **2-4** run 短路修复 + 并发 | 1 天 |
-| 11 | **4-3** 余下部分：sync-bgm 并发 | 2h |
-| 12 | **2-5 / 6** unknown media_type 源头拦截、END_YEAR、连接隔离、删死代码 | 半天 |
-| 13 | **`004_drop_items.sql`** 确认新 schema 稳定后删掉冻结的旧 `items` 表 | 10min |
+| 11 | **2-4** run 短路修复 + 并发 | 1 天 |
+| 12 | **4-3** 余下部分：sync-bgm 并发 | 2h |
+| 13 | **1-2** `is_new_anime` 过滤口径复查（等 5-1 的跨季总览出来后回头看漏了多少） | 待定 |
+| 14 | **2-5 / 3-3 / 6** unknown media_type 源头拦截、`ReviewQueue` limit、END_YEAR、连接隔离、删死代码 | 半天 |
+| 15 | **`00N_drop_items.sql`** 确认新 schema 稳定后删掉冻结的旧 `items` 表（注意和 3-4 的迁移抢编号） | 10min |
