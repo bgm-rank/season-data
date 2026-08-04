@@ -15,7 +15,7 @@ from loguru import logger
 from api.repo import ensure_bgm_subject, upsert_mal_anime
 from services.bgmtv import BgmtvClient, Subject
 from services.mal.client import MalClient
-from services.openrouter import OpenRouterClient
+from services.openrouter import BgmCandidate, MalBrief, OpenRouterClient
 
 from .models import MalInfo, MediaType
 from .season import season_date_range
@@ -65,6 +65,67 @@ def is_korean_title(title: str | None) -> bool:
     if not title:
         return False
     return bool(_HANGUL_RE.search(title)) and not _KANA_RE.search(title)
+
+
+_YM_RE = re.compile(r"^(\d{4})(?:[-/](\d{1,2}))?")
+
+# 冲突代码，会写进 candidates JSON 的 conflicts 数组，前端据此显示 badge
+CONFLICT_DATE = "date"
+CONFLICT_PLATFORM = "platform"
+
+DATE_CONFLICT_MONTHS = 6
+
+# MAL media_type 与 BGM platform 明显互斥的组合。取值保守——platform 还有
+# OVA / 动态漫画 / WEB 等一堆语义重叠的值，只挑绝无可能同指一部作品的两组。
+_PLATFORM_CONFLICTS: list[tuple[set[str], set[str]]] = [
+    ({"movie"}, {"TV", "WEB"}),
+    ({"tv", "ona"}, {"剧场版", "劇場版"}),
+]
+
+
+def _parse_ym(date: str | None) -> tuple[int, int | None] | None:
+    """把 `YYYY` / `YYYY-MM` / `YYYY-MM-DD` 解析成 (年, 月|None)。"""
+    if not date:
+        return None
+    m = _YM_RE.match(date.strip())
+    if not m:
+        return None
+    month = int(m.group(2)) if m.group(2) else None
+    if month is not None and not 1 <= month <= 12:
+        month = None
+    return int(m.group(1)), month
+
+
+def match_conflicts(mal_start_date: str | None, mal_media_type: str | None, subject: Subject) -> list[str]:
+    """代码侧硬规则：LLM 说匹配、但事实明显对不上的情况。
+
+    命中不代表一定错（MAL 拆分 / BGM 合并的边界情况确实存在），所以调用方是把
+    自动 included 降级成 pending 交人工，而不是直接 excluded。
+    两种 prompt 模式都跑——纯本地判断，零 token 成本，比让 LLM 自己守规则可靠。
+    """
+    conflicts: list[str] = []
+
+    mal_ym = _parse_ym(mal_start_date)
+    bgm_ym = _parse_ym(subject.date)
+    if mal_ym and bgm_ym:
+        (my, mm), (by, bm) = mal_ym, bgm_ym
+        if mm is not None and bm is not None:
+            if abs((my * 12 + mm) - (by * 12 + bm)) > DATE_CONFLICT_MONTHS:
+                conflicts.append(CONFLICT_DATE)
+        # 只精确到年时，差 1 年可能实际只差 1 个月（12 月 vs 次年 1 月），
+        # 要差 2 年才能保证超过阈值。宁可漏判不误判。
+        elif abs(my - by) >= 2:
+            conflicts.append(CONFLICT_DATE)
+
+    if mal_media_type and subject.platform:
+        mt = mal_media_type.strip().lower()
+        pf = subject.platform.strip()
+        for mal_types, platforms in _PLATFORM_CONFLICTS:
+            if mt in mal_types and pf in platforms:
+                conflicts.append(CONFLICT_PLATFORM)
+                break
+
+    return conflicts
 
 
 def alternative_keywords(title: str) -> list[str]:
@@ -142,7 +203,10 @@ class SeasonProcessor:
         }
 
     def process(self) -> None:
-        logger.info("开始处理 {} ...", self.season_id)
+        if self.openrouter is not None:
+            logger.info("开始处理 {} (LLM prompt 模式: {}) ...", self.season_id, self.openrouter.prompt_mode)
+        else:
+            logger.info("开始处理 {} ...", self.season_id)
 
         rows = self.conn.execute("SELECT * FROM items_flat WHERE season_id=?", (self.season_id,)).fetchall()
         total = len(rows)
@@ -320,7 +384,8 @@ class SeasonProcessor:
             self.conn.commit()
             return
 
-        matched = self._try_match(mal_id, mal_title, mal_title_ja, mal_media_type, subjects, now, allow_llm=not korean)
+        mal = self._mal_brief(row)
+        matched = self._try_match(mal_id, mal, subjects, now, allow_llm=not korean)
         if matched:
             return
 
@@ -351,7 +416,7 @@ class SeasonProcessor:
                     if not retry_subjects:
                         retry_subjects = self.bgmtv.search_anime_by_keyword_no_date(kw)
                     if retry_subjects:
-                        matched = self._try_match(mal_id, mal_title, mal_title_ja, mal_media_type, retry_subjects, now)
+                        matched = self._try_match(mal_id, mal, retry_subjects, now)
                         if matched:
                             return
                         subjects = subjects or retry_subjects
@@ -367,18 +432,75 @@ class SeasonProcessor:
         self.conn.commit()
         logger.warning("[unconfirmed] mal:{} {} 个候选", mal_id, len(candidates))
 
+    def _mal_brief(self, row: sqlite3.Row) -> MalBrief:
+        """把 items_flat 行 + mal_anime 的扩展字段拼成喂 prompt 的 MAL 侧输入。
+
+        扩展字段不在 items_flat 视图里（视图列刻意与 ItemRead 一一对应），单独查一次。
+        low 模式只有 start_date 会被用到（硬规则要），其余字段进不了 prompt。
+        """
+        extra = self.conn.execute(
+            "SELECT start_date, num_episodes, source, studios, synopsis FROM mal_anime WHERE mal_id=?",
+            (row["mal_id"],),
+        ).fetchone()
+
+        studios: list[str] | None = None
+        if extra is not None and extra["studios"]:
+            with contextlib.suppress(json.JSONDecodeError, TypeError):
+                studios = [s["name"] for s in json.loads(extra["studios"]) if s.get("name")] or None
+
+        return MalBrief(
+            title=row["mal_title"],
+            title_ja=row["mal_title_ja"],
+            media_type=row["mal_media_type"],
+            start_date=extra["start_date"] if extra is not None else None,
+            num_episodes=extra["num_episodes"] if extra is not None else None,
+            source=extra["source"] if extra is not None else None,
+            studios=studios,
+            synopsis=extra["synopsis"] if extra is not None else None,
+        )
+
+    def _enrich_subjects(self, subjects: list[Subject]) -> None:
+        """就地补全搜索结果缺失的字段（platform / summary / tags）。
+
+        搜索接口不返回 platform，而 4-3 的全库同步已经把详情灌进 bgm_subject 了，
+        本地查一次就能拿到——逐条 get_subject 是 10 倍 API 调用，不划算。
+        只填搜索结果里为空的字段，绝不覆盖。
+        """
+        missing = [s.id for s in subjects if s.platform is None or s.summary is None or s.tags is None]
+        if not missing:
+            return
+
+        rows = self.conn.execute(
+            "SELECT bgm_id, platform, summary, tags FROM bgm_subject"
+            f" WHERE fetched_at IS NOT NULL AND bgm_id IN ({','.join('?' * len(missing))})",
+            missing,
+        ).fetchall()
+        cached = {r["bgm_id"]: r for r in rows}
+
+        for subj in subjects:
+            cache = cached.get(subj.id)
+            if cache is None:
+                continue
+            if subj.platform is None:
+                subj.platform = cache["platform"]
+            if subj.summary is None:
+                subj.summary = cache["summary"]
+            if subj.tags is None and cache["tags"]:
+                with contextlib.suppress(json.JSONDecodeError, TypeError):
+                    subj.tags = json.loads(cache["tags"])
+
     def _try_match(
         self,
         mal_id: int,
-        mal_title: str,
-        mal_title_ja: str | None,
-        mal_media_type: str | None,
+        mal: MalBrief,
         subjects: list[Subject],
         now: str,
         allow_llm: bool = True,
     ) -> bool:
         if not subjects:
             return False
+
+        mal_title_ja = mal.title_ja
 
         # Exact match
         if mal_title_ja:
@@ -398,14 +520,27 @@ class SeasonProcessor:
         # LLM match
         if self.openrouter and allow_llm:
             try:
-                llm_candidates = [(s.id, s.name or "", s.name_cn, s.date, s.summary) for s in subjects]
-                results = self.openrouter.match_anime(mal_title, mal_title_ja, mal_media_type, llm_candidates)
+                self._enrich_subjects(subjects)
+                llm_candidates = [
+                    BgmCandidate(
+                        bgm_id=s.id,
+                        name=s.name or "",
+                        name_cn=s.name_cn,
+                        date=s.date,
+                        summary=s.summary,
+                        platform=s.platform,
+                        tags=[t["name"] for t in (s.tags or []) if t.get("name")] or None,
+                    )
+                    for s in subjects
+                ]
+                results = self.openrouter.match_anime(mal, llm_candidates)
                 if results:
                     best = results[0]
                     bgm_id_match: int = best["bgm_id"]
                     confidence: float | None = best.get("confidence")
                     matched_subj = next((s for s in subjects if s.id == bgm_id_match), None)
                     if matched_subj:
+                        conflicts = match_conflicts(mal.start_date, mal.media_type, matched_subj)
                         candidates_json = json.dumps(
                             [
                                 {
@@ -413,13 +548,23 @@ class SeasonProcessor:
                                     "bgm_name": next((s.name for s in subjects if s.id == r["bgm_id"]), None),
                                     "air_date": next((s.date for s in subjects if s.id == r["bgm_id"]), None),
                                     "confidence": r.get("confidence"),
+                                    "reason": r.get("reason"),
+                                    "conflicts": conflicts if r["bgm_id"] == bgm_id_match else [],
                                 }
                                 for r in results
                             ],
                             ensure_ascii=False,
                         )
                         ensure_bgm_subject(self.conn, bgm_id_match, matched_subj)
-                        if confidence is not None and confidence >= LLM_CONFIDENCE_THRESHOLD:
+                        if conflicts and confidence is not None and confidence >= LLM_CONFIDENCE_THRESHOLD:
+                            logger.warning(
+                                "[hard guard] mal:{} -> bgm:{} conf={} 冲突={} -> pending",
+                                mal_id,
+                                bgm_id_match,
+                                confidence,
+                                conflicts,
+                            )
+                        if not conflicts and confidence is not None and confidence >= LLM_CONFIDENCE_THRESHOLD:
                             self.conn.execute(
                                 "UPDATE season_items SET status='included', source='llm',"
                                 " bgm_id=?, confidence=?, candidates=?, updated_at=?"

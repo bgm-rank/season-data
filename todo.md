@@ -6,6 +6,9 @@
 > 已完成的条目直接删除，不再保留划线记录（病因需要留档的写进 commit message）。条目编号保持稳定，删了不重排。
 > **2026-08-04**：P0 四项（5-3 / 5-2 / 4-3 首跑 / 5-1 质量检查）已完成并测试，见 commit `b03191e`，相应条目已删。
 > **2026-08-04（二）**：2-1 语言护栏已完成，但原文两条做法经实测否决 —— 详见 §8 的更新块，动手前务必先看。
+> **2026-08-04（三）**：2-3 已完成（high/low 双 prompt + 代码侧硬规则），顺带挖出两个 live bug
+> 和一次全库回填 —— 详见 §8 的更新块。**注意 §7 清理的目标集因此扩大**：硬规则在
+> `included/llm` 上命中 637 条（15.5%），抽样几乎全是真错配，可直接当打回名单。
 
 ## 现状体检（2026-08-03 基线，air_date / issue 数据为 2026-08-04 复测）
 
@@ -16,6 +19,8 @@ excluded  7054  (rule  6321 / llm  613 / human 134)
 pending   1746  (全部 source=NULL；1638 条有候选，108 条无候选，0 条带 error)
 
 bgm_air_date 覆盖率： 11720 / 11776 included = 99.5%（4-3 全库同步已跑完，剩 2 条骨架行）
+mal_anime 扩展字段： 20587 / 20607 = 99.9%（2026-08-04 backfill_mal.py 跑完，此前只有 80 行）
+硬规则命中(2-3)：    included/llm 637 / 4113 = 15.5%，included/exact 106 / 7615 = 1.4%
 质量检查全库命中：    dup_in_season 463 / dup_global 914 / date_mismatch 810 / no_bgm_name 0
 韩文标题条目：        774 条，其中 288 条被 included（llm 156 全错 / exact 132 全对，见 2026-08-04(二) 更新）
 单季条目数 > 200：    51 个季度（最大 339 条）
@@ -71,25 +76,6 @@ EOF
 2. `alternative_keywords` 加保护：剥完后长度 < 原标题一半就丢弃该候选；
 3. **剥离后关键词搜出的结果，exact 匹配必须过日期校验** —— air_date 落在季度范围内才允许自动 included，否则降级到 pending 带候选。单这一条就能挡掉大部分撞车；
 4. 写入 included 前先查该 bgm_id 是否已被本季/他季占用，是则强制降级 pending。
-
-## 2-3. 【P1】更强的 LLM prompt：喂更多输入（你提的）
-
-现状：
-- `MATCH_SYSTEM_PROMPT`（`client.py:20-25`）是为省 token 极限压缩的，候选行只给 `bgm_id:日文名|中文名|日期|简介前 80 字`（`SUMMARY_MAX_CHARS = 80`，`client.py:17`），`max_tokens=128`（`client.py:267`）；
-- MAL 侧只给 `英文名|日文名|媒体类型`（`client.py:244-248`）—— **MAL 的 synopsis、studios、start_date、num_episodes 全都没用上**；
-- BGM 侧 `Subject` 已经取到了 `summary`/`date`/`platform`/`tags`（`services/bgmtv/client.py:36-47`），但只有 summary 前 80 字进了 prompt，tags/platform 都浪费了。
-
-**前置条件（已满足）**：`mal_anime` 有 `synopsis` / `start_date` / `end_date` / `num_episodes` /
-`source` / `studios` / `title_en`，`bgm_subject` 有 `summary` / `platform` / `tags` / `nsfw`。
-MAL 侧 fetch 时已写满（`MalClient.FIELDS` 本来就在请求这些字段）；**BGM 侧的数据 4-3 首跑已补齐
-（2026-08-04），阻塞解除**。cast 需要额外接口，仍待评估。
-
-**做法**：
-1. **扩 prompt 输入**：MAL 侧加首播日期 + 集数 + 简介摘要；BGM 侧 `SUMMARY_MAX_CHARS` 从 80 提到 200~300，加上 `platform`（TV/剧场版/OVA，可直接和 MAL media_type 交叉验证）和高频 tags。**数据都已就位，只差改 prompt 组装。**
-2. **加硬规则**：首播日期相差 > 6 个月直接扣分或判否；media_type 与 platform 明显冲突（movie vs TV）判否。这些其实用代码做比让 LLM 做更可靠、更省钱。
-3. `max_tokens` 相应放宽，并让模型输出一个简短 `reason` 存进 candidates，人工审核时能看到它为什么这么判。
-4. 换更强的模型（当前默认 `deepseek-chat` / `google/gemini-2.5-flash-lite`，`client.py:12-14`），改完 prompt 后拿撞车的那 466 条当回归集验证。
-5. 保持系统 prompt 写死为常量（prompt 缓存命中，见 CLAUDE.md）。
 
 ## 2-4. 【P2】run 在重复劳动 + 全串行
 
@@ -256,6 +242,22 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 1. 用 5-1 的质量检查列出全部 `dup_in_season`（463 条）+ `date_mismatch`（810 条）+ 韩文 `included/llm`（156 条）+ `dup_global`（914 条，与前几项有重叠）；
    ⚠️ **韩文只打回 `source='llm'` 那 156 条**，`source='exact'` 的 132 条是正确匹配（BGM 以谚文原名收录韩国动画，标题严格相等），不要碰。打回后重跑会走 2-1 的语言护栏，无精确匹配的一律 `excluded/rule`；
+   ➕ **另加 2-3 硬规则的命中集**（2026-08-04 实测，`included/llm` 637 条 / `included/exact` 106 条），
+   抽样准确率远高于 `date_mismatch`。名单用 `core.processor.match_conflicts()` 现算即可：
+   ```bash
+   uv run python - <<'EOF'
+   import sqlite3, sys; sys.path.insert(0, 'src')
+   from core.processor import match_conflicts
+   from services.bgmtv import Subject
+   c = sqlite3.connect('season.db'); c.row_factory = sqlite3.Row
+   for r in c.execute("""SELECT si.season_id, si.mal_id, si.source, m.start_date, m.media_type,
+       b.air_date, b.platform FROM season_items si JOIN mal_anime m USING(mal_id)
+       LEFT JOIN bgm_subject b ON b.bgm_id=si.bgm_id WHERE si.status='included'"""):
+       cf = match_conflicts(r["start_date"], r["media_type"],
+                            Subject(id=0, type=2, date=r["air_date"], platform=r["platform"]))
+       if cf: print(r["season_id"], r["mal_id"], r["source"], cf)
+   EOF
+   ```
 2. 批量打回 `pending`（`PATCH action=pending` 会清空 bgm_id/name，见 `items.py:103-107`）；
 3. 修完 2-2 后重跑 `run --retry`，让新逻辑重新匹配；
 4. 剩下的进人工审核队列；
@@ -263,7 +265,8 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 **动手前先 `VACUUM INTO 'backups/season-<日期>.db'`** —— 这是唯一会大批量改写决策列的操作。
 
-预估影响范围：约 700~1000 条 included 需复核，占总量 6~8%。
+预估影响范围：约 700~1000 条 included 需复核，占总量 6~8%；
+加上 2-3 硬规则命中集（743 条，与 `date_mismatch` 有大量重叠）后上限约 1200 条。
 
 ---
 
@@ -288,9 +291,28 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 >   `suggest_search`，精确匹配失败直接 `excluded/rule`（日志 `[lang guard]`）。零 LLM 调用。
 >   判据 `is_korean_title()` 要求含谚文**且不含假名**，否则会误伤「ブルーアーカイブ / 블루 아카이브」这类日韩混排。
 >
-> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1 → 2-1~~（已完成）
-> → `2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理** → `2-3`（提质）。
+> **2026-08-04（三）**：2-3 完成，实现与原文一致（high/low 双 prompt + 硬规则 + reason），
+> 但过程中挖出的三件事比 prompt 本身更值钱：
+> - **`mal_anime` 扩展字段全库是空的**。原文写「MAL 侧 fetch 时已写满」是错的：003 拆表只搬了
+>   4 列，之后没重新 fetch 过的季度一直空着——20607 行里只有 80 行有 `start_date`。
+>   即是说 high 模式的 MAL 侧输入和日期硬规则本来会全程空转。已加 `scripts/backfill_mal.py`
+>   （只写 mal_anime 这张缓存表，不碰决策）并跑完全库：覆盖率 0.4% → 99.9%，耗时 204s。
+> - **`max_tokens` 对推理模型是致命的**。`google/gemini-3.6-flash` 的 reasoning_tokens
+>   （实测 122~244）也算进 `max_tokens`，旧的 `match_anime=128` / `suggest_search=64`
+>   让输出在 JSON 写完前就 `finish_reason=length` 被砍断，解析失败后**静默当成「无匹配」**——
+>   钱照付、结果全丢。这多半就是 2-4 说的「1746 条 pending 全是 source=NULL」的一大来源。
+>   已改成 768/1024/512 并在截断时打 WARNING；`extract_json` 也补了未闭合围栏的处理。
+> - **硬规则的命中率远超预期**：`included/llm` 4113 条里命中 637 条（15.5%，date 562 / platform 174），
+>   `included/exact` 7615 条里命中 106 条（1.4%）。抽样看几乎全是真错配
+>   （School Days ONA→TV 2007、滋賀ッツマン→あずまんが大王、オモヒデ→おもひでぽろぽろ 1991）。
+>   **这就是 §7 现成的打回名单**，比原计划的 dup/date_mismatch 组合更准。
+>   注意硬规则只拦新写入，这 637 条历史数据得靠 §7 打回重跑才会被纠正
+>   （已在副本上验证：打回后重跑，错配的那几条新逻辑要么给 pending 要么直接判无匹配）。
+>
+> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1 → 2-1 → 2-3~~（已完成）
+> → `2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理**。
 > 这条链上每一步都是下一步的前提，不要跳。
+> 2-3 提前做掉是因为它不改决策逻辑、只改输入质量，且 §7 重跑时要靠它提质。
 
 ## P1 — 止血（不做完不值得大批量审核，否则清完又被新错配弄脏）
 
@@ -309,12 +331,6 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 | 顺序 | 任务 | 成本 |
 |---|---|---|
 | 9 | **第 7 节** 打回 700~1000 条问题 included，用新逻辑重跑 | 半天 + 机器时间 |
-
-## P1.5 — 清理之后
-
-| 顺序 | 任务 | 成本 |
-|---|---|---|
-| 10 | **2-3** 增强 LLM prompt（依赖 4-3 填满 BGM 侧字段；拿撞车的 466 条当回归集） | 1 天 |
 
 ## P2 — 规模化（批处理 100+ 季之前）
 

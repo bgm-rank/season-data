@@ -5,7 +5,7 @@ import os
 
 from dotenv import load_dotenv
 
-from .client import ChatRequest, Message, OpenRouterClient
+from .client import BgmCandidate, ChatRequest, MalBrief, Message, OpenRouterClient
 
 
 def main() -> None:
@@ -53,23 +53,21 @@ def main() -> None:
                 print("错误: match 模式需要 --mal-title 和 --candidates 参数")
                 return
 
-            candidates: list[tuple[int, str, str | None, str | None, str | None]] = []
+            candidates: list[BgmCandidate] = []
             for item in args.candidates.split(","):
                 id_rest = item.split(":", 1)
                 bgm_id = int(id_rest[0])
                 names = id_rest[1].split("|", 1) if len(id_rest) > 1 else [""]
                 name = names[0]
                 name_cn = names[1] if len(names) > 1 else None
-                candidates.append((bgm_id, name, name_cn, None, None))
+                candidates.append(BgmCandidate(bgm_id=bgm_id, name=name, name_cn=name_cn))
 
-            result = client.match_anime(
-                args.mal_title,
-                args.mal_title_ja,
-                None,
-                candidates,
-            )
-            if result is not None:
-                print(f"匹配结果: bgm_id={result}")
+            mal = MalBrief(title=args.mal_title, title_ja=args.mal_title_ja)
+            results = client.match_anime(mal, candidates)
+            if results:
+                print(f"prompt 模式: {client.prompt_mode}")
+                for r in results:
+                    print(f"匹配结果: bgm_id={r['bgm_id']} confidence={r['confidence']} reason={r['reason']}")
             else:
                 print("无匹配")
 

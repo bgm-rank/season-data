@@ -40,12 +40,19 @@ export type ItemSource = 'rule' | 'exact' | 'llm' | 'human'
 /** Quality issues derived server-side (src/api/quality.py), never persisted. */
 export type IssueKind = 'dup_in_season' | 'dup_global' | 'date_mismatch' | 'no_bgm_name'
 
+/** Hard-rule conflict codes, mirrors CONFLICT_* in core/processor.py. */
+export type CandidateConflict = 'date' | 'platform'
+
 export interface CandidateEntry {
   bgm_id: number
   bgm_name: string | null
   /** Added in processor fix (R2). May be absent in data processed before fix. */
   air_date?: string | null
   confidence: number | null
+  /** LLM's stated reason. Only the high-mode prompt asks for it; absent otherwise. */
+  reason?: string | null
+  /** Code-side conflicts that forced an otherwise-confident match back to pending. */
+  conflicts?: CandidateConflict[]
 }
 
 export interface Item {

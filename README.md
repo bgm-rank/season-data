@@ -20,7 +20,12 @@ cd web && pnpm install
 | `BGM_TOKEN` | Bangumi.tv API token | nsfw 条目需要 |
 | `OPENROUTER_API_KEY` | LLM 匹配 ([OpenRouter](https://openrouter.ai/)) | run 时需要 |
 | `DEEPSEEK_API_KEY` | LLM 匹配（DeepSeek，优先于 OpenRouter） | run 时需要 |
+| `LLM_PROMPT_MODE` | 匹配 prompt 丰富度：`low`（默认）/ `high` | 否 |
 | `GITHUB_TOKEN` | 发布 GitHub Release | publish 时需要 |
+
+`LLM_PROMPT_MODE=high` 会把 MAL 的首播日期 / 集数 / 原作 / 制作公司 / 简介，
+以及 BGM 的 platform / tags / 更长简介一并喂给模型，并要求模型给出判定理由（显示在审查界面的候选卡上）。
+输入 token 约为 `low` 的 2.5~3 倍，日常 run 用默认的 `low`，大批量重跑或清理问题数据时再开 `high`。
 
 ## 启动
 

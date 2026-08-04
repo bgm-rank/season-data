@@ -1,11 +1,16 @@
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
-import type { CandidateEntry } from '@/types/api'
+import type { CandidateConflict, CandidateEntry } from '@/types/api'
 
 interface Props {
   candidates: CandidateEntry[]
   selectedIndex: number | null
   onSelect: (index: number) => void
+}
+
+const CONFLICT_LABELS: Record<CandidateConflict, string> = {
+  date: '日期不符',
+  platform: '类型不符',
 }
 
 export function CandidatePanel({ candidates, selectedIndex, onSelect }: Props) {
@@ -38,7 +43,13 @@ export function CandidatePanel({ candidates, selectedIndex, onSelect }: Props) {
                     置信度 {(c.confidence * 100).toFixed(0)}%
                   </span>
                 )}
+                {c.conflicts?.map((k) => (
+                  <Badge key={k} variant="destructive" className="text-xs">
+                    {CONFLICT_LABELS[k] ?? k}
+                  </Badge>
+                ))}
               </div>
+              {c.reason && <p className="text-xs text-muted-foreground mt-1">{c.reason}</p>}
             </div>
           </CardContent>
         </Card>

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import time
 from dataclasses import dataclass, field
 from typing import Any, cast
@@ -14,7 +15,18 @@ DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
 DEFAULT_DEEPSEEK_MODEL = "deepseek-chat"
 MAX_RETRIES = 3
 RETRY_DELAY = 1.0
+
+# prompt 丰富度，env LLM_PROMPT_MODE 控制。low 是默认值，行为与增强前逐字符一致；
+# high 把 MAL / BGM 两侧已有但没用上的字段全喂进去，input token 约 2.5~3 倍。
+PROMPT_MODE_LOW = "low"
+PROMPT_MODE_HIGH = "high"
+DEFAULT_PROMPT_MODE = PROMPT_MODE_LOW
+
 SUMMARY_MAX_CHARS = 80
+SUMMARY_MAX_CHARS_HIGH = 240
+SYNOPSIS_MAX_CHARS_HIGH = 300
+MAX_TAGS_HIGH = 5
+REASON_MAX_CHARS = 60
 
 # 动漫匹配系统提示（固定以最大化缓存命中）
 MATCH_SYSTEM_PROMPT = (
@@ -22,6 +34,20 @@ MATCH_SYSTEM_PROMPT = (
     "MAL格式：英文名|日文名|媒体类型。BGM候选格式：bgm_id:日文名|中文名|首播日期|简介(可选)。"
     "输出JSON数组，每个候选含bgm_id和confidence(0.0-1.0)，无匹配输出空数组："
     '[{"bgm_id":数字,"confidence":0.9}]'
+)
+
+# high 模式的匹配提示（同样写死为常量以命中 prompt 缓存）
+MATCH_SYSTEM_PROMPT_HIGH = (
+    "匹配MAL动漫与Bangumi候选。判定规则：\n"
+    "1.续作季数必须一致（2nd/第2期/II等），季数不同判否。\n"
+    "2.首播日期应接近，相差超过半年需有同一作品不同发行的确证才可匹配。\n"
+    "3.媒体类型与BGM platform冲突（movie对TV连载、TV对剧场版）判否。\n"
+    "4.简介须描述同一作品：角色、设定、剧情一致；同系列的不同作品判否。\n"
+    "MAL格式：英文名|日文名|媒体类型|首播日期|集数|原作|制作公司|简介\n"
+    "BGM候选格式：bgm_id:日文名|中文名|首播日期|platform|tags|简介\n"
+    "（字段缺失时该段省略，不留空管道）\n"
+    "输出JSON数组，按confidence降序，无匹配输出空数组：\n"
+    '[{"bgm_id":数字,"confidence":0.9,"reason":"20字以内的判定依据"}]'
 )
 
 # 搜索关键词提取系统提示
@@ -36,6 +62,40 @@ SUGGEST_SYSTEM_PROMPT = (
     'JA:프린세스 캐치! 티니핑→{"skip":true}\n'
     'JA:劇場版『ゾンビランドサガ ゆめぎんがパラダイス』→{"keywords":["ゾンビランドサガ"]}'
 )
+
+
+@dataclass
+class MalBrief:
+    """喂给匹配 prompt 的 MAL 侧信息。
+
+    前三个字段 low / high 都用，其余只在 high 模式进 prompt。
+    """
+
+    title: str
+    title_ja: str | None = None
+    media_type: str | None = None
+    start_date: str | None = None
+    num_episodes: int | None = None
+    source: str | None = None
+    studios: list[str] | None = None
+    synopsis: str | None = None
+
+
+@dataclass
+class BgmCandidate:
+    """喂给匹配 prompt 的单个 BGM 候选。
+
+    `platform` / `tags` 只在 high 模式进 prompt；搜索结果常缺这两项，
+    调用方会用 `bgm_subject` 里已同步的详情补齐（见 processor）。
+    """
+
+    bgm_id: int
+    name: str
+    name_cn: str | None = None
+    date: str | None = None
+    summary: str | None = None
+    platform: str | None = None
+    tags: list[str] | None = None
 
 
 @dataclass
@@ -147,6 +207,26 @@ class ChatResponse:
         return None
 
 
+def _warn_if_truncated(where: str, response: ChatResponse) -> None:
+    """输出被 max_tokens 砍断时明确报警。
+
+    截断的后果是 JSON 解析失败 → 静默降级成「无匹配」，钱花了活没干。
+    推理模型（reasoning_tokens 也占 max_tokens）特别容易踩到，不出声就查不出来。
+    """
+    if response.choices and response.choices[0].finish_reason == "length":
+        logger.warning(
+            "{}: 输出被 max_tokens 截断（模型 {}，completion {} tokens），结果不可用",
+            where,
+            response.model,
+            response.usage.completion_tokens,
+        )
+
+
+def _squash(text: str) -> str:
+    """把简介压成单行——BGM summary 和 MAL synopsis 都带换行，会撑破一行一候选的格式。"""
+    return " ".join(text.split())
+
+
 def extract_json(content: str) -> str:
     """从 LLM 响应中提取 JSON 内容。
 
@@ -163,16 +243,29 @@ def extract_json(content: str) -> str:
         if start != -1:
             after_start = trimmed[start + 1 :]
             end = after_start.rfind("```")
-            if end != -1:
-                return after_start[:end].strip()
+            # 收尾的 ``` 可能不存在（模型漏写，或输出被 max_tokens 截断），
+            # 这时也要把开头的围栏剥掉，别整段当成 JSON 去解析
+            return after_start[:end].strip() if end != -1 else after_start.strip()
 
     return trimmed
 
 
 class OpenRouterClient:
-    def __init__(self, api_key: str, model: str = DEFAULT_MODEL, base_url: str = BASE_URL) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model: str = DEFAULT_MODEL,
+        base_url: str = BASE_URL,
+        prompt_mode: str | None = None,
+    ) -> None:
         self.model = model
         self.base_url = base_url
+        # env 在这里读而不是在三处 provider 选择块里各读一遍；各入口都已先跑 load_dotenv()
+        mode = (prompt_mode or os.getenv("LLM_PROMPT_MODE") or DEFAULT_PROMPT_MODE).strip().lower()
+        if mode not in (PROMPT_MODE_LOW, PROMPT_MODE_HIGH):
+            logger.warning("未知的 LLM_PROMPT_MODE={!r}，退回 {}", mode, DEFAULT_PROMPT_MODE)
+            mode = DEFAULT_PROMPT_MODE
+        self.prompt_mode = mode
         self.client = httpx.Client(
             headers={
                 "Authorization": f"Bearer {api_key}",
@@ -220,51 +313,76 @@ class OpenRouterClient:
         # always assigns last_error in the except branch, but flow analysis doesn't track that.
         raise last_error  # type: ignore[misc]
 
+    def _build_match_input(self, mal: MalBrief, candidates: list[BgmCandidate]) -> str:
+        """组装匹配 prompt 的用户输入。
+
+        low 分支与增强前逐字符一致，改动只发生在 high 分支。
+        """
+        high = self.prompt_mode == PROMPT_MODE_HIGH
+        summary_max = SUMMARY_MAX_CHARS_HIGH if high else SUMMARY_MAX_CHARS
+
+        parts = [f"MAL:{mal.title}"]
+        if mal.title_ja:
+            parts[0] += f"|{mal.title_ja}"
+        if mal.media_type:
+            parts[0] += f"|{mal.media_type}"
+        if high:
+            if mal.start_date:
+                parts[0] += f"|{mal.start_date}"
+            if mal.num_episodes:
+                parts[0] += f"|{mal.num_episodes}话"
+            if mal.source:
+                parts[0] += f"|{mal.source}"
+            if mal.studios:
+                parts[0] += f"|{'、'.join(mal.studios)}"
+            if mal.synopsis:
+                parts[0] += f"|{_squash(mal.synopsis)[:SYNOPSIS_MAX_CHARS_HIGH]}"
+
+        parts.append("BGM:")
+        for c in candidates:
+            line = f"{c.bgm_id}:{c.name}"
+            if c.name_cn:
+                line += f"|{c.name_cn}"
+            if c.date:
+                line += f"|{c.date}"
+            if high:
+                if c.platform:
+                    line += f"|{c.platform}"
+                if c.tags:
+                    line += f"|{'、'.join(c.tags[:MAX_TAGS_HIGH])}"
+            if c.summary:
+                line += f"|{_squash(c.summary)[:summary_max] if high else c.summary[:summary_max]}"
+            parts.append(line)
+
+        return "\n".join(parts)
+
     def match_anime(
         self,
-        mal_title: str,
-        mal_title_ja: str | None,
-        mal_media_type: str | None,
-        candidates: list[tuple[int, str, str | None, str | None, str | None]],
+        mal: MalBrief,
+        candidates: list[BgmCandidate],
     ) -> list[dict[str, Any]]:
         """动漫匹配验证，返回带 confidence 的候选列表。
 
-        返回 [{"bgm_id": int, "confidence": float}]，无匹配返回 []。
-
-        Args:
-            mal_title: MAL 英文标题
-            mal_title_ja: MAL 日文标题
-            mal_media_type: MAL 媒体类型（TV/Movie/OVA 等）
-            candidates: [(bgm_id, name, name_cn, date, summary), ...]
+        返回 [{"bgm_id": int, "confidence": float | None, "reason": str | None}]，无匹配返回 []。
+        `reason` 只有 high 模式的 prompt 会要求模型输出，low 模式一般是 None。
         """
         if not candidates:
             return []
 
-        # 构建用户输入
-        parts = [f"MAL:{mal_title}"]
-        if mal_title_ja:
-            parts[0] += f"|{mal_title_ja}"
-        if mal_media_type:
-            parts[0] += f"|{mal_media_type}"
-        parts.append("BGM:")
-        for bgm_id, name, name_cn, date, summary in candidates:
-            line = f"{bgm_id}:{name}"
-            if name_cn:
-                line += f"|{name_cn}"
-            if date:
-                line += f"|{date}"
-            if summary:
-                line += f"|{summary[:SUMMARY_MAX_CHARS]}"
-            parts.append(line)
-        user_input = "\n".join(parts)
+        high = self.prompt_mode == PROMPT_MODE_HIGH
+        user_input = self._build_match_input(mal, candidates)
 
+        # low 曾经是 128，对推理模型完全不够：gemini-3.6-flash 的 reasoning_tokens
+        # （实测 122~244）也算进 max_tokens，JSON 还没开始写就被 finish_reason=length 砍断，
+        # 解析失败后静默当成「无匹配」——每次调用都付了钱却拿不到结果。
+        # 输出按实际生成量计费，上限放宽本身不花钱，截断反而是纯亏。
         request = ChatRequest(
             messages=[
-                Message.system(MATCH_SYSTEM_PROMPT),
+                Message.system(MATCH_SYSTEM_PROMPT_HIGH if high else MATCH_SYSTEM_PROMPT),
                 Message.user(user_input),
             ],
             model=self.model,
-        ).with_max_tokens(128)
+        ).with_max_tokens(1024 if high else 768)
 
         response = self.chat(request)
         content = response.content()
@@ -277,6 +395,7 @@ class OpenRouterClient:
             content,
             response.usage.total_tokens,
         )
+        _warn_if_truncated("match_anime", response)
 
         json_str = extract_json(content)
         if not json_str:
@@ -295,12 +414,14 @@ class OpenRouterClient:
         for item in result:
             bgm_id = item.get("bgm_id")
             confidence = item.get("confidence")
+            reason = item.get("reason")
             if bgm_id is None:
                 continue
             out.append(
                 {
                     "bgm_id": int(bgm_id),
                     "confidence": float(confidence) if confidence is not None else None,
+                    "reason": str(reason)[:REASON_MAX_CHARS] if reason else None,
                 }
             )
         return out
@@ -324,7 +445,7 @@ class OpenRouterClient:
                 Message.user(user_input),
             ],
             model=self.model,
-        ).with_max_tokens(64)
+        ).with_max_tokens(512)  # 同 match_anime：64 对推理模型必然截断，见那边的注释
 
         response = self.chat(request)
         content = response.content()
@@ -337,9 +458,11 @@ class OpenRouterClient:
             content,
             response.usage.total_tokens,
         )
+        _warn_if_truncated("suggest_search", response)
 
         json_str = extract_json(content)
         try:
             return cast(dict[str, Any], json.loads(json_str))
         except json.JSONDecodeError:
+            logger.warning("suggest_search: 无效 JSON: {!r}", content)
             return {"keywords": []}
