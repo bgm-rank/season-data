@@ -4,8 +4,9 @@
 > 结论：手感问题只是表象，真正的问题是**第 4、5 步事实上没跑起来**，且有几个静默 bug 在持续破坏数据 / 制造错误匹配。
 > 章节按你的五步流程组织；文末有跨章节的优先级执行顺序。
 > 已完成的条目直接删除，不再保留划线记录（病因需要留档的写进 commit message）。条目编号保持稳定，删了不重排。
+> **2026-08-04**：P0 四项（5-3 / 5-2 / 4-3 首跑 / 5-1 质量检查）已完成并测试，见 commit `b03191e`，相应条目已删。
 
-## 现状体检（2026-08-03，基于 season.db）
+## 现状体检（2026-08-03 基线，air_date / issue 数据为 2026-08-04 复测）
 
 ```
 季度总数 108，其中 95 个季度仍有 pending
@@ -13,9 +14,8 @@ included 11796  (exact 7615 / llm 4119 / human 48)
 excluded  7054  (rule  6321 / llm  613 / human 134)
 pending   1746  (全部 source=NULL；1638 条有候选，108 条无候选，0 条带 error)
 
-bgm_air_date 覆盖率： 347 / 11782 included 条目 = 3%
-季内 bgm_id 撞车：    227 组，涉及 466 条 included
-全局 bgm_id 重复：    610 个 bgm_id，涉及 1328 条 included
+bgm_air_date 覆盖率： 11720 / 11776 included = 99.5%（4-3 全库同步已跑完，剩 2 条骨架行）
+质量检查全库命中：    dup_in_season 463 / dup_global 914 / date_mismatch 810 / no_bgm_name 0
 韩文标题条目：        774 条，其中 292 条被 included（llm 160 + exact 132），几乎全错
 单季条目数 > 200：    51 个季度（最大 339 条）
 ```
@@ -43,7 +43,7 @@ EOF
 
 ## 1-2. 【P2】`is_new_anime` 过滤口径
 
-`src/core/season.py:30-35` 只保留 `start_season` 完全等于本季的条目。MAL 偶尔把番标错季度，这部分只能靠 overrides 手工补（`README.md` 的 Override 补番）。暂时不动，但 P0-4 的跨季问题总览做出来后可以回头看看漏了多少。
+`src/core/season.py:30-35` 只保留 `start_season` 完全等于本季的条目。MAL 偶尔把番标错季度，这部分只能靠 overrides 手工补（`README.md` 的 Override 补番）。暂时不动，但 5-1 的跨季问题总览做出来后可以回头看看漏了多少。
 
 ---
 
@@ -104,8 +104,8 @@ bgm:549170「팡팡 다이노」被 7 个占用
 
 **前置条件（已满足）**：`mal_anime` 有 `synopsis` / `start_date` / `end_date` / `num_episodes` /
 `source` / `studios` / `title_en`，`bgm_subject` 有 `summary` / `platform` / `tags` / `nsfw`。
-MAL 侧 fetch 时已写满（`MalClient.FIELDS` 本来就在请求这些字段）；**BGM 侧待 4-3 跑完才有数据，
-所以 2-3 必须排在 4-3 之后**。cast 需要额外接口，仍待评估。
+MAL 侧 fetch 时已写满（`MalClient.FIELDS` 本来就在请求这些字段）；**BGM 侧的数据 4-3 首跑已补齐
+（2026-08-04），阻塞解除**。cast 需要额外接口，仍待评估。
 
 **做法**：
 1. **扩 prompt 输入**：MAL 侧加首播日期 + 集数 + 简介摘要；BGM 侧 `SUMMARY_MAX_CHARS` 从 80 提到 200~300，加上 `platform`（TV/剧场版/OVA，可直接和 MAL media_type 交叉验证）和高频 tags。**数据都已就位，只差改 prompt 组装。**
@@ -137,10 +137,6 @@ MAL 侧 fetch 时已写满（`MalClient.FIELDS` 本来就在请求这些字段�
 影响：108 条无候选的 pending，只能开 bgm.tv 网页手搜再把 ID 抄回输入框。`docs/DESIGN-2026-05-12.md` 的 US-D2 本来就规划了这个交互。
 
 **做法**：在 `ReviewQueue.tsx:257-275` 的手动输入 bgm_id 区域旁挂上 `<BgmSearch seasonId={seasonId} onSelect={...} />`，选中直接填 bgm_id；无候选时默认展开并用 `mal_title_ja` 预填搜索词。
-
-## 3-3. 【P2】`ReviewQueue` 也吃 limit=200 默认值
-
-`ReviewQueue.tsx:35` 调 `getItems` 不传 limit，后端默认 200（`items.py:57`）。当前单季 pending 最多 41 条够用，但和 P0-2 一并修掉。
 
 ## 3-4. 【P1·须先于第 7 节】人工决策不记录原因，且 override skip 被伪装成 rule
 
@@ -205,45 +201,32 @@ override skip 的语义是**「MAL 把季度标错了，这条番属于别的季
 
 # 4. 拉取 Bangumi.tv 数据
 
-## 4-3. 【P0 首跑 / P2 并发】`sync-bgm` 不可用于当前规模
+## 4-3. 【P2】`sync-bgm` 并发
 
-`src/api/routers/items.py:124-162` 的 `_run_sync`：
-- `WHERE bgm_id IS NOT NULL` **全量**，不支持"只刷 air_date 为空的"增量
-- `time.sleep(0.3)` 串行 → 11782 条 ≈ 1 小时
-- 无断点续传，中断就白跑
-- 只能按单季触发，100+ 季要点 100+ 次
+全库增量同步已落地为 `scripts/sync_bgm.py`（队列 = `bgm_subject.fetched_at IS NULL`，
+天然断点续传），首跑也已完成：air_date 覆盖率 3% → 99.5%，`platform` / `summary` /
+`tags` / `nsfw` 一并填满，2-3 的 BGM 侧输入和 5-1 的 `date_mismatch` 由此解锁。
 
-**🔓 拆表已解锁**：待刷队列现在就是一句 `SELECT bgm_id FROM bgm_subject WHERE fetched_at IS NULL`
-——天然支持跨季、天然断点续传（拉完就置 `fetched_at`，中断重跑只会捡剩下的），
-不需要 `only_missing` 参数这种打补丁的设计。`_run_sync` 也已经改成按 `bgm_id` 去重，
-不再对同一条目重复请求。
-
-**剩下要做的**：把触发入口从「单季」改成「全库」，再加并发。当前 11068 条骨架行
-（回填时 `fetched_at` 全置 NULL）跑一遍就能把 air_date 覆盖率从 3% 补齐，
-顺带把 `bgm_subject` 的 `platform` / `summary` / `tags` / `nsfw` 一次性填满
-（字段和写入路径 `ensure_bgm_subject()` 已随拆表就位，纯粹缺数据）。
-这四个字段是 2-3 增强 LLM prompt 的输入，5-1 的 `date_mismatch` 也等这一跑。
+**剩下的**：`sync_subjects()`（`src/core/bgm_sync.py`）仍是 `time.sleep(0.3)` 串行，
+下次大批量刷新（如重跑 §7 后的新 bgm_id）还是要一两个小时。改并发时注意 API 侧
+`_run_sync` 与主线程共用同一个 sqlite Connection，见 §6 的连接隔离条目。
 
 ---
 
 # 5. 人工二次审核（异常数据）
 
-## 5-1. 【P0·最高价值】没有"危险匹配"筛选 —— 700+ 条错误匹配已经审核通过了
+## 5-1. 【P1】质量检查缺跨季度总览页
 
-`included` 条目在 UI 里全都长一样，没有任何质量维度筛选。而质量问题非常严重且**纯 SQL 就能查出来**：
+单季的质量检查已完成：`src/api/quality.py` 提供 `dup_in_season` / `dup_global` /
+`date_mismatch` / `no_bgm_name` 四项判定，`GET /seasons/{id}/items?issue=` 支持筛选并回
+`issue_counts`，`ItemList` 有 issue tab + 卡片 badge。全库命中见文首体检块。
 
-| 检查项 | 数量 |
-|---|---|
-| 同一季内 bgm_id 撞车 | 227 组 / 466 条（必然至少一半是错的） |
-| 全局 bgm_id 被多条 MAL 占用 | 610 个 id / 1328 条 |
-| bgm_air_date 与季度不符 | 跑完 4-3 的增量同步后才有数据（当前覆盖率 3%） |
-| included 但 bgm_name 为 NULL | 待查 |
-| LLM 置信度刚过阈值（0.85~0.9） | 待查 |
+`low_confidence`（0.85 ≤ confidence < 0.9）**故意没做**：实测这个区间 0 条——
+阈值就是 0.85，LLM 给的分基本落在 0.9 以上，这条筛选没有信息量。
 
-**🔓 拆表已解锁**：这几项现在都是带索引的一句 SQL。`dup_in_season` / `dup_global` 走
-`idx_si_bgm`（全局 partial index，不再像旧表那样只有 `(season_id, bgm_id)` 复合索引、
-跨季查询要全表扫）；`date_mismatch` 直接 JOIN `bgm_subject.air_date` 和 `seasons` 的
-日期范围，不再依赖每行冗余的 `bgm_air_date`——单一来源之后这个检查才有可靠的数据基础。
+**剩下的**：加**跨季度全局问题总览页**（首页或 `/issues`），否则 108 个季度要一个个点进去
+才知道哪些季度有问题。§7 的一次性清理需要它来定位目标季度，也可以直接拿 SQL 跑一遍
+清单代替（见文首体检块的统计脚本），做不做取决于清理时的手感。
 
 注意：**不要把撞车做成 UNIQUE 约束**。MAL 拆分 / BGM 合并导致 N:1 和 1:N 现实中都合法，
 硬约束会挡掉正确数据。只能是质量视图。
@@ -257,35 +240,6 @@ override skip 的语义是**「MAL 把季度标错了，这条番属于别的季
 
 bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/コラボ 短片）
 ```
-
-**做法**：
-1. 后端新增 `GET /api/seasons/{id}/issues`（或给 `list_items` 加 `issue=` 参数），判定逻辑放 SQL / 新建 `src/api/quality.py`：
-   - `dup_in_season`：同季 bgm_id 出现 > 1 次
-   - `dup_global`：该 bgm_id 在其他季度也被 included
-   - `date_mismatch`：`bgm_air_date` 超出季度范围（复用 `ItemList.tsx:31-58` 的 `isDateOutOfRange`，**建议下沉到后端统一口径**）
-   - `no_bgm_name`：included 但 bgm_name 为空
-   - `low_confidence`：0.85 ≤ confidence < 0.9
-2. `ItemList` 加第三行 tab：`全部 / ⚠重复 / ⚠日期不符 / ⚠低置信`，卡片上给 issue 打红色 badge。
-3. 加**跨季度全局问题总览页**（首页或 `/issues`），否则 100+ 季要一个个点进去。
-
-## 5-2. 【P0】标记后整页刷新，滚动位置丢失（原 todo #1）
-
-`web/src/components/ItemList.tsx:274-277` 的 `onUpdated` 调 `loadItems()` 全量重载并 `setLoading(true)`，整个列表卸载重建，滚动位置归零。
-
-参照：`ReviewQueue.tsx:71-102` 已经是乐观更新（先改本地 state，失败用 snapshot 回滚）；`ItemList.tsx:73-84` 的 `syncItem` 也已经是局部替换的写法，直接抄。
-
-**做法**：
-1. `ItemEditModal` 的 `onUpdated` 改为接收更新后的 item，`ItemList` 用 `setItems(prev => prev.map(it => it.mal_id === updated.mal_id ? updated : it))` 局部替换（`api.patchItem` 的返回值就是更新后的 item）。
-2. 加**行内快捷操作**：现在改一条要「点卡片 → 开 modal → 选排除 → 点确认 → 整页重载」4 次交互，卡片右侧加 ✗（排除）/ ↺（打回 pending）按钮即可一次搞定。
-3. 可选：列表键盘导航（j/k 移动、x 排除）—— 二次审核是最高频操作。
-
-## 5-3. 【P0】`ItemList` 静默截断，51 个季度看不全
-
-`web/src/services/api.ts:53-66` 的 `getItems` 不传 limit，后端 `src/api/routers/items.py:57` 默认 `limit=200`。
-
-51 个季度条目数 > 200（最大 339）→ 最多 139 条条目在 UI 上**根本不存在**，无分页无提示。第 5 步二次审核天然漏掉这部分。
-
-**做法**：最省事是 `ItemList` 显式传 `limit: 1000`；正规做法是后端返回 total、前端分页或无限滚动。
 
 ---
 
@@ -303,7 +257,7 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 2-1 / 2-2 只能阻止**新增**错配，历史上已写进 `included` 的错误要单独清：
 
-1. 用 5-1 的质量检查列出全部 `dup_in_season`（466 条）+ 韩文 included（292 条）+ `dup_global`（1328 条，去重后）；
+1. 用 5-1 的质量检查列出全部 `dup_in_season`（463 条）+ `date_mismatch`（810 条）+ 韩文 included（292 条）+ `dup_global`（914 条，与前几项有重叠）；
 2. 批量打回 `pending`（`PATCH action=pending` 会清空 bgm_id/name，见 `items.py:103-107`）；
 3. 修完 2-2 后重跑 `run --retry`，让新逻辑重新匹配；
 4. 剩下的进人工审核队列；
@@ -319,20 +273,15 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 > **2026-08-03 更新**：`dev.md` 的数据库重构已完成（拆表 + 抛弃 `data/`），
 > 由此解决的条目（原 1-1 / 3-2 / 4-1 / 4-2）已从本文件删除。
-> **4-3** / **5-1** / **2-3** 的阻塞随之解除，见各条目里的「🔓 拆表已解锁」。
 >
-> **主线依赖**：`5-3 → 5-2`（能看全 + 改得动）→ `4-3`（有数据）→ `5-1`（能筛出问题）
+> **2026-08-04 更新**：P0 四项全部完成（commit `b03191e`）——
+> 5-3（分页 + total）、5-2（乐观更新 + 行内操作 + 键盘导航）、3-3（顺手修）、
+> 4-3 首跑（air_date 3% → 99.5%）、5-1 质量检查 API + UI 筛选。P0 表已删。
+> 5-1 只剩跨季总览页、4-3 只剩并发，均已降级。
+>
+> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1~~（已完成）
 > → `2-1 / 2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理** → `2-3`（提质）。
 > 这条链上每一步都是下一步的前提，不要跳。
-
-## P0 — 立刻（做完才能正常干活）
-
-| 顺序 | 任务 | 成本 | 收益 |
-|---|---|---|---|
-| 1 | **5-3** `getItems` limit / 分页 | 10min | 补回 51 个季度看不见的条目 |
-| 2 | **5-2** `ItemList` 乐观更新 + 行内操作 | 半天 | 直接解决滚动丢失，二次审核 4 次交互 → 1 次 |
-| 3 | **4-3** 全库跑一次增量 sync-bgm（先只做「全库触发」，并发留 P2） | 1h + 等 | 补齐 97% 缺失的 air_date；解锁 5-1 的 `date_mismatch` 和 2-3 的 BGM 侧输入 |
-| 4 | **5-1** 质量检查 API + UI 筛选 | 半天 | 一次性揪出 700+ 已有错误 |
 
 ## P1 — 止血（不做完不值得大批量审核，否则清完又被新错配弄脏）
 
@@ -342,6 +291,7 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 | 6 | **2-2** 收窄后缀剥离 + exact 加日期校验 + 撞车前置检查 | 半天 |
 | 7 | **3-1** 挂载 `BgmSearch`（§7 清理后审核队列会暴涨，先把无候选的路打通） | 1h |
 | 8 | **3-4** 决策原因迁移 + skip 的 `source='rule'` 修正 | 半天 |
+| 8.5 | **5-1 剩余** 跨季度问题总览页（也可用 SQL 清单代替，看清理时的手感） | 2h |
 
 > **8 必须在 §7 之前**：那次清理产生 700~1000 条人工 exclude，
 > 字段不存在的话这批原因永久丢失，而它们恰恰是最值得留档的一批。
@@ -363,7 +313,7 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 | 顺序 | 任务 | 成本 |
 |---|---|---|
 | 11 | **2-4** run 短路修复 + 并发 | 1 天 |
-| 12 | **4-3** 余下部分：sync-bgm 并发 | 2h |
+| 12 | **4-3** sync-bgm 并发 | 2h |
 | 13 | **1-2** `is_new_anime` 过滤口径复查（等 5-1 的跨季总览出来后回头看漏了多少） | 待定 |
-| 14 | **2-5 / 3-3 / 6** unknown media_type 源头拦截、`ReviewQueue` limit、END_YEAR、连接隔离、删死代码 | 半天 |
+| 14 | **2-5 / 6** unknown media_type 源头拦截、END_YEAR、连接隔离、删死代码 | 半天 |
 | 15 | **`00N_drop_items.sql`** 确认新 schema 稳定后删掉冻结的旧 `items` 表（注意和 3-4 的迁移抢编号） | 10min |
