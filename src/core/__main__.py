@@ -62,9 +62,7 @@ def main() -> None:
         if row is None:
             now = datetime.now(UTC).isoformat()
             conn.execute(
-                "INSERT INTO seasons"
-                " (id, year, season, released_at, created_at, updated_at)"
-                " VALUES (?,?,?,NULL,?,?)",
+                "INSERT INTO seasons (id, year, season, released_at, created_at, updated_at) VALUES (?,?,?,NULL,?,?)",
                 (season_id, year, season, now, now),
             )
             conn.commit()

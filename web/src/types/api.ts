@@ -37,6 +37,9 @@ export interface SeasonCreate {
 export type ItemStatus = 'pending' | 'included' | 'excluded'
 export type ItemSource = 'rule' | 'exact' | 'llm' | 'human'
 
+/** Quality issues derived server-side (src/api/quality.py), never persisted. */
+export type IssueKind = 'dup_in_season' | 'dup_global' | 'date_mismatch' | 'no_bgm_name'
+
 export interface CandidateEntry {
   bgm_id: number
   bgm_name: string | null
@@ -62,6 +65,17 @@ export interface Item {
   candidates: CandidateEntry[] | null
   bgm_air_date: string | null
   updated_at: string
+  issues: IssueKind[]
+}
+
+/** List envelope. `total` is the unpaginated count so the UI can tell it was truncated. */
+export interface ItemListResponse {
+  total: number
+  limit: number
+  offset: number
+  items: Item[]
+  /** Season-wide counts per issue kind, unaffected by the `issue` filter. */
+  issue_counts: Partial<Record<IssueKind, number>>
 }
 
 export interface ItemUpdate {
@@ -128,7 +142,7 @@ export interface ProgressEvent {
 // POST   /api/seasons/{id}/fetch                → { fetched_count: number }
 // POST   /api/seasons/{id}/run?retry=false      → RunStartResponse (202)
 // GET    /api/seasons/{id}/run/progress         → SSE: ProgressEvent[]
-// GET    /api/seasons/{id}/items                → Item[]  (query: status?, source?, limit?, offset?)
+// GET    /api/seasons/{id}/items                → ItemListResponse  (query: status?, source?, issue?, limit?, offset?)
 // PATCH  /api/seasons/{id}/items/{mal_id}       body: ItemUpdate → Item
 // GET    /api/seasons/{id}/overrides            → Override[]
 // POST   /api/seasons/{id}/overrides            body: OverrideCreate → Override (201)

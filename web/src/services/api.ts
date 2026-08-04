@@ -3,6 +3,7 @@ import type {
   SeasonDetail,
   SeasonCreate,
   Item,
+  ItemListResponse,
   ItemUpdate,
   Override,
   OverrideCreate,
@@ -53,11 +54,12 @@ export function syncBgm(id: string): Promise<SyncStartResponse> {
 
 export function getItems(
   id: string,
-  params?: { status?: string; source?: string; limit?: number; offset?: number }
-): Promise<Item[]> {
+  params?: { status?: string; source?: string; issue?: string; limit?: number; offset?: number }
+): Promise<ItemListResponse> {
   const qs = new URLSearchParams()
   if (params?.status) qs.set('status', params.status)
   if (params?.source) qs.set('source', params.source)
+  if (params?.issue) qs.set('issue', params.issue)
   if (params?.limit != null) qs.set('limit', String(params.limit))
   if (params?.offset != null) qs.set('offset', String(params.offset))
   const query = qs.toString() ? `?${qs}` : ''

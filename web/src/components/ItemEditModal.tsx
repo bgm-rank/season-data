@@ -30,7 +30,8 @@ interface Props {
   item: Item
   seasonId: string
   onClose: () => void
-  onUpdated: () => void
+  /** Receives the updated item so the caller can patch it in place instead of reloading. */
+  onUpdated: (updated: Item) => void
 }
 
 export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
@@ -49,8 +50,7 @@ export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
           : action === 'pending'
             ? { action: 'pending' as const }
             : { action: 'exclude' as const }
-      await api.patchItem(seasonId, item.mal_id, body)
-      onUpdated()
+      onUpdated(await api.patchItem(seasonId, item.mal_id, body))
     } catch (e) {
       setError(e instanceof Error ? e.message : '操作失败')
     } finally {

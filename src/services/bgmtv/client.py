@@ -27,6 +27,8 @@ def _date_from_infobox(infobox: list[dict[str, Any]]) -> str | None:
             if m2:
                 return m2.group(1)
     return None
+
+
 USER_AGENT = "bgm-rank/season-data (https://github.com/bgm-rank/season-data)"
 MAX_RETRIES = 3
 RETRY_DELAY = 1.0

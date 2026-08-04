@@ -12,8 +12,7 @@ def init_db(db_path: Path | str = DEFAULT_DB_PATH) -> None:
     conn = sqlite3.connect(db_path)
     try:
         conn.execute(
-            "CREATE TABLE IF NOT EXISTS schema_migrations "
-            "(filename TEXT PRIMARY KEY, applied_at TEXT NOT NULL)"
+            "CREATE TABLE IF NOT EXISTS schema_migrations (filename TEXT PRIMARY KEY, applied_at TEXT NOT NULL)"
         )
         conn.commit()
 

@@ -5,7 +5,6 @@ import contextlib
 import json
 import os
 import sqlite3
-import time
 from collections.abc import AsyncIterator
 from datetime import UTC, datetime
 from typing import TYPE_CHECKING, Any
@@ -14,8 +13,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
 from loguru import logger
 
+from api.quality import ISSUE_KINDS, issue_counts, item_issues, season_issue_map
 from api.repo import ensure_bgm_subject
-from api.schemas import ItemRead, ItemUpdate
+from api.schemas import ItemListResponse, ItemRead, ItemUpdate
 
 if TYPE_CHECKING:
     from services.bgmtv import Subject
@@ -42,7 +42,7 @@ def _try_fetch_subject(bgm_id: int) -> Subject | None:
         return None
 
 
-def _row_to_item(row: sqlite3.Row) -> ItemRead:
+def _row_to_item(row: sqlite3.Row, issues: list[str] | None = None) -> ItemRead:
     candidates_raw = row["candidates"]
     candidates: list[dict[str, Any]] | None = json.loads(candidates_raw) if candidates_raw else None
     return ItemRead(
@@ -62,18 +62,25 @@ def _row_to_item(row: sqlite3.Row) -> ItemRead:
         candidates=candidates,
         bgm_air_date=row["bgm_air_date"],
         updated_at=row["updated_at"],
+        issues=issues or [],  # type: ignore[arg-type]
     )
 
 
-@router.get("/seasons/{season_id}/items", response_model=list[ItemRead])
+@router.get("/seasons/{season_id}/items", response_model=ItemListResponse)
 def list_items(
     season_id: str,
     db: sqlite3.Connection = Depends(_get_db),
     status: str | None = Query(default=None),
     source: str | None = Query(default=None),
-    limit: int = Query(default=200, ge=1),
+    issue: str | None = Query(default=None),
+    limit: int = Query(default=500, ge=1, le=2000),
     offset: int = Query(default=0, ge=0),
-) -> list[ItemRead]:
+) -> ItemListResponse:
+    if issue is not None and issue not in ISSUE_KINDS:
+        raise HTTPException(status_code=422, detail=f"Unknown issue kind: {issue}")
+
+    issue_map = season_issue_map(db, season_id)
+
     clauses = ["season_id = ?"]
     params: list[Any] = [season_id]
 
@@ -83,15 +90,30 @@ def list_items(
     if source is not None:
         clauses.append("source = ?")
         params.append(source)
+    if issue is not None:
+        # 把命中的 mal_id 拼进同一条 SQL，让 total 和 LIMIT 都对得上；
+        # 在 Python 里对已分页的结果过滤会让分页立刻错乱。
+        matched = [mal_id for mal_id, kinds in issue_map.items() if issue in kinds]
+        if not matched:
+            return ItemListResponse(total=0, limit=limit, offset=offset, items=[], issue_counts=issue_counts(issue_map))
+        clauses.append(f"mal_id IN ({','.join('?' * len(matched))})")
+        params.extend(matched)
 
     where = " AND ".join(clauses)
     order = "confidence ASC NULLS LAST" if status == "pending" else "mal_id ASC"
 
+    total: int = db.execute(f"SELECT COUNT(*) FROM items_flat WHERE {where}", params).fetchone()[0]
     rows = db.execute(
         f"SELECT * FROM items_flat WHERE {where} ORDER BY {order} LIMIT ? OFFSET ?",
         (*params, limit, offset),
     ).fetchall()
-    return [_row_to_item(r) for r in rows]
+    return ItemListResponse(
+        total=total,
+        limit=limit,
+        offset=offset,
+        items=[_row_to_item(r, issue_map.get(r["mal_id"])) for r in rows],
+        issue_counts=issue_counts(issue_map),
+    )
 
 
 @router.patch("/seasons/{season_id}/items/{mal_id}", response_model=ItemRead)
@@ -141,7 +163,8 @@ def update_item(
         "SELECT * FROM items_flat WHERE mal_id=? AND season_id=?",
         (mal_id, season_id),
     ).fetchone()
-    return _row_to_item(updated)
+    # 前端拿这个返回值做局部替换，不带 issues 会把质量 badge 洗掉
+    return _row_to_item(updated, item_issues(db, season_id, mal_id))
 
 
 def _run_sync(
@@ -149,36 +172,28 @@ def _run_sync(
     season_id: str,
     queue: asyncio.Queue[dict[str, Any]],
 ) -> None:
-    from services.bgmtv import BgmtvClient
+    from core.bgm_sync import sync_subjects
 
-    # 按 bgm_id 去重：同一条目被本季多个 MAL 条目引用时只需拉一次
+    # 按 bgm_id 去重：同一条目被本季多个 MAL 条目引用时只需拉一次。
+    # 这里刻意不看 fetched_at——按钮的语义是「强制刷新本季」，
+    # 增量补齐走 scripts/sync_bgm.py。
     rows = db.execute(
         "SELECT DISTINCT bgm_id FROM season_items WHERE season_id=? AND bgm_id IS NOT NULL",
         (season_id,),
     ).fetchall()
-    total = len(rows)
-    updated = 0
-    errors = 0
+    bgm_ids = [r["bgm_id"] for r in rows]
+    total = len(bgm_ids)
+
+    def on_progress(processed: int, count: int) -> None:
+        with contextlib.suppress(asyncio.QueueFull):
+            queue.put_nowait({"type": "progress", "processed": processed, "total": count})
 
     try:
-        bgm_token = os.getenv("BGM_TOKEN", "")
-        with BgmtvClient(bgm_token) as bgmtv:
-            for i, row in enumerate(rows, 1):
-                bgm_id: int = row["bgm_id"]
-                try:
-                    # 只写 bgm_subject，碰不到任何决策列。summary/platform/tags/nsfw
-                    # 早就在 Subject 里，一并落库供后续增强 LLM prompt 用。
-                    ensure_bgm_subject(db, bgm_id, bgmtv.get_subject(bgm_id))
-                    db.commit()
-                    updated += 1
-                    time.sleep(0.3)
-                except Exception as e:
-                    logger.warning("同步 BGM 条目失败 bgm:{}: {}", bgm_id, e)
-                    errors += 1
-                with contextlib.suppress(asyncio.QueueFull):
-                    queue.put_nowait({"type": "progress", "processed": i, "total": total})
+        updated, failed = sync_subjects(db, bgm_ids, on_progress=on_progress)
         with contextlib.suppress(asyncio.QueueFull):
-            queue.put_nowait({"type": "done", "processed": total, "total": total, "updated": updated, "errors": errors})
+            queue.put_nowait(
+                {"type": "done", "processed": total, "total": total, "updated": updated, "errors": len(failed)}
+            )
     except Exception as e:
         with contextlib.suppress(asyncio.QueueFull):
             queue.put_nowait({"type": "error", "message": str(e)})
@@ -212,7 +227,7 @@ def sync_bgm_item(
         "SELECT * FROM items_flat WHERE mal_id=? AND season_id=?",
         (mal_id, season_id),
     ).fetchone()
-    return _row_to_item(updated)
+    return _row_to_item(updated, item_issues(db, season_id, mal_id))
 
 
 @router.post("/seasons/{season_id}/sync-bgm", status_code=202)

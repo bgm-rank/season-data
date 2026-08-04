@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { CandidatePanel } from '@/components/CandidatePanel'
+import { emitItemsChanged, onItemsChanged } from '@/lib/itemEvents'
 import * as api from '@/services/api'
 import type { Item, SeasonSummary } from '@/types/api'
 
@@ -32,9 +33,9 @@ export function ReviewQueue({ seasonId }: Props) {
 
   useEffect(() => {
     setState((s) => ({ ...s, loading: true, error: null }))
-    api.getItems(seasonId, { status: 'pending' })
-      .then((items) => {
-        const sorted = [...items].sort((a, b) => {
+    api.getItems(seasonId, { status: 'pending', limit: 1000 })
+      .then((res) => {
+        const sorted = [...res.items].sort((a, b) => {
           const ca = a.confidence ?? -1
           const cb = b.confidence ?? -1
           return ca - cb
@@ -51,6 +52,16 @@ export function ReviewQueue({ seasonId }: Props) {
   }, [seasonId, loadSignal])
 
   const refreshQueue = useCallback(() => setLoadSignal((n) => n + 1), [])
+
+  // ItemList 改了条目后队列可能过期。刻意只提示不自动重载——重载会把正在审核的
+  // 条目从手底下抽走。错误横幅本来就带「刷新队列」按钮。
+  useEffect(
+    () =>
+      onItemsChanged('ReviewQueue', () =>
+        setState((s) => ({ ...s, error: '列表已变更，队列可能过期' }))
+      ),
+    []
+  )
 
   const currentItem = state.items[state.currentIndex] ?? null
 
@@ -78,6 +89,7 @@ export function ReviewQueue({ seasonId }: Props) {
       advanceQueue()
       try {
         await api.patchItem(seasonId, currentItem.mal_id, { action: 'include', bgm_id })
+        emitItemsChanged('ReviewQueue')
       } catch (e) {
         const msg = e instanceof Error && e.message.includes('409')
           ? '数据已变更，请刷新队列'
@@ -93,6 +105,7 @@ export function ReviewQueue({ seasonId }: Props) {
     advanceQueue()
     try {
       await api.patchItem(seasonId, currentItem.mal_id, { action: 'exclude' })
+      emitItemsChanged('ReviewQueue')
     } catch (e) {
       const msg = e instanceof Error && e.message.includes('409')
         ? '数据已变更，请刷新队列'
@@ -138,6 +151,7 @@ export function ReviewQueue({ seasonId }: Props) {
     advanceQueue()
     try {
       await api.patchItem(seasonId, currentItem.mal_id, { action: 'include', bgm_id })
+      emitItemsChanged('ReviewQueue')
     } catch {
       setState((s) => ({ ...s, items: snapshot, error: '操作失败，已回滚' }))
     }
@@ -145,8 +159,12 @@ export function ReviewQueue({ seasonId }: Props) {
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      const tag = (e.target as HTMLElement).tagName
+      const target = e.target as HTMLElement
+      const tag = target.tagName
       if (tag === 'INPUT' || tag === 'TEXTAREA') return
+      // 这些监听绑在 window 上，而 ItemList 同页挂载且也用 x 排除。
+      // 不挡的话按一次 x 会同时改两个组件的条目。
+      if (target.closest?.('[data-keyscope]')) return
       if (/^[1-9]$/.test(e.key)) selectCandidate(parseInt(e.key) - 1)
       if (e.key === 'x' || e.key === 'X') void excludeItem()
       if (e.key === 's' || e.key === 'S') skipItem()
