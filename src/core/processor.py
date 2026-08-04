@@ -48,8 +48,23 @@ _SUFFIX_PATTERNS: list[re.Pattern[str]] = [
 ]
 
 
+# 谚文（音节区 + 字母区 + 兼容字母区）与假名，用于语言护栏
+_HANGUL_RE = re.compile(r"[가-힣ᄀ-ᇿ㄰-㆏]")
+_KANA_RE = re.compile(r"[぀-ヿｦ-ﾟ]")
+
+
 def _normalize_title(s: str) -> str:
     return unicodedata.normalize("NFKC", s).strip()
+
+
+def is_korean_title(title: str | None) -> bool:
+    """谚文标题：含谚文且不含假名。
+
+    含假名的是带韩文副标的日本动画（如「ブルーアーカイブ / 블루 아카이브」），不算。
+    """
+    if not title:
+        return False
+    return bool(_HANGUL_RE.search(title)) and not _KANA_RE.search(title)
 
 
 def alternative_keywords(title: str) -> list[str]:
@@ -288,6 +303,10 @@ class SeasonProcessor:
         except ValueError:
             pass
 
+        # 语言护栏：谚文标题只信精确匹配。BGM 以谚文原名收录韩国动画，exact 分支零错误；
+        # 而 LLM 对谚文候选一律给高分，是撞车主因（bgm:205216 曾被 10 条 MAL 条目占用）。
+        korean = is_korean_title(mal_title_ja)
+
         search_keyword = mal_title_ja or mal_title
         try:
             subjects = self._search_bgm(search_keyword, start_date, end_date)
@@ -301,8 +320,18 @@ class SeasonProcessor:
             self.conn.commit()
             return
 
-        matched = self._try_match(mal_id, mal_title, mal_title_ja, mal_media_type, subjects, now)
+        matched = self._try_match(mal_id, mal_title, mal_title_ja, mal_media_type, subjects, now, allow_llm=not korean)
         if matched:
+            return
+
+        if korean:
+            self.conn.execute(
+                "UPDATE season_items SET status='excluded', source='rule',"
+                " candidates=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+                (now, mal_id, self.season_id),
+            )
+            self.conn.commit()
+            logger.info("[lang guard] mal:{} 谚文标题无精确匹配 -> excluded", mal_id)
             return
 
         if self.openrouter:
@@ -346,6 +375,7 @@ class SeasonProcessor:
         mal_media_type: str | None,
         subjects: list[Subject],
         now: str,
+        allow_llm: bool = True,
     ) -> bool:
         if not subjects:
             return False
@@ -366,7 +396,7 @@ class SeasonProcessor:
                     return True
 
         # LLM match
-        if self.openrouter:
+        if self.openrouter and allow_llm:
             try:
                 llm_candidates = [(s.id, s.name or "", s.name_cn, s.date, s.summary) for s in subjects]
                 results = self.openrouter.match_anime(mal_title, mal_title_ja, mal_media_type, llm_candidates)

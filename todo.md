@@ -5,6 +5,7 @@
 > 章节按你的五步流程组织；文末有跨章节的优先级执行顺序。
 > 已完成的条目直接删除，不再保留划线记录（病因需要留档的写进 commit message）。条目编号保持稳定，删了不重排。
 > **2026-08-04**：P0 四项（5-3 / 5-2 / 4-3 首跑 / 5-1 质量检查）已完成并测试，见 commit `b03191e`，相应条目已删。
+> **2026-08-04（二）**：2-1 语言护栏已完成，但原文两条做法经实测否决 —— 详见 §8 的更新块，动手前务必先看。
 
 ## 现状体检（2026-08-03 基线，air_date / issue 数据为 2026-08-04 复测）
 
@@ -16,7 +17,7 @@ pending   1746  (全部 source=NULL；1638 条有候选，108 条无候选，0 �
 
 bgm_air_date 覆盖率： 11720 / 11776 included = 99.5%（4-3 全库同步已跑完，剩 2 条骨架行）
 质量检查全库命中：    dup_in_season 463 / dup_global 914 / date_mismatch 810 / no_bgm_name 0
-韩文标题条目：        774 条，其中 292 条被 included（llm 160 + exact 132），几乎全错
+韩文标题条目：        774 条，其中 288 条被 included（llm 156 全错 / exact 132 全对，见 2026-08-04(二) 更新）
 单季条目数 > 200：    51 个季度（最大 339 条）
 ```
 
@@ -48,30 +49,6 @@ EOF
 ---
 
 # 2. 运行匹配（规则 + LLM）
-
-## 2-1. 【P1·止血】管线顺序 bug：韩国动画永远不会被跳过
-
-`src/services/openrouter/client.py:31` 的 `SUGGEST_SYSTEM_PROMPT` 第一条规则就是「JA 标题含韩文(한글) → `{"skip":true}`」，但这个调用在管线里排得太靠后。
-
-`src/core/processor.py:288-314` 的实际顺序：
-
-```
-_search_bgm() → _try_match()（内含 LLM 匹配）→ 只有失败了才 → suggest_search()（含韩文 skip 规则）
-```
-
-BGM 搜索对韩文标题总能搜出点东西，LLM 又常给 ≥0.85 的置信度，于是 `_try_match` 直接 `return True`，**skip 分支永远走不到**。
-
-证据：774 条韩文条目里 292 条被 included，且高度集中在少数 bgm_id：
-
-```
-bgm:205216「변신자동차 또봇」被 11 个 MAL 条目占用（2010~2024）
-bgm:422501「최강 전사 의 미니 특공대」被 10 个占用
-bgm:549170「팡팡 다이노」被 7 个占用
-```
-
-**做法**（推荐第一个，零 API 成本）：
-- 在 `_process_single` 走搜索**之前**加本地语言护栏：`mal_title_ja` 含谚文（`'가' <= ch <= '힣'`）或纯中文 → 直接 `excluded/rule`；
-- 或把 `suggest_search` 的 skip 判定提前到 `_search_bgm` 之前。
 
 ## 2-2. 【P1·止血】后缀剥离过度 + exact 匹配不校验日期（撞车主因）
 
@@ -245,6 +222,26 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 # 6. 跨章节 / 杂项
 
+- **`season_items.confidence` 大面积为 0**（2026-08-04 做 2-1 时顺手发现）：`included/llm` 共 4113 条，
+  其中 **4081 条 `confidence=0.0`**。绝大部分是 2026-05 那次一次性导入的遗留（`updated_at` 时间戳完全相同，
+  旧 `data/` JSON 时代压根没存 confidence），不是 live bug —— 2026-06 写入的 25 条都是 ≥0.85。
+  **但 2026-07 有 46 条、2026-08 有 30 条又是 `=0`**，这批得单独查一次是不是 live bug。
+  影响面：`confidence` 现在无法用来筛可疑匹配（5-1 的 `low_confidence` 判定「实测 0 条」很可能就是被这个掩盖了，
+  而不是真的没有）。查证脚本见下。【P2】
+
+  ```bash
+  uv run python - <<'EOF'
+  import sqlite3
+  c = sqlite3.connect('season.db'); c.row_factory = sqlite3.Row
+  for r in c.execute("""SELECT substr(updated_at,1,7) ym,
+    SUM(CASE WHEN confidence>=0.85 THEN 1 ELSE 0 END) hi,
+    SUM(CASE WHEN confidence=0 THEN 1 ELSE 0 END) zero, COUNT(*) n
+    FROM season_items WHERE status='included' AND source='llm'
+    GROUP BY 1 ORDER BY 1 DESC LIMIT 12"""):
+      print(f"{r['ym']}  >=0.85:{r['hi']:5}  =0:{r['zero']:5}  总:{r['n']}")
+  EOF
+  ```
+
 - **`src/main.py:18` `END_YEAR = 2025` 硬编码** → 2026 各季不在批处理范围。改成动态取当前年份或从 DB 已有季度推。【P2】
 - **单个 sqlite Connection 跨线程共享**：`app.state.db` 同时被 FastAPI 主线程和 executor 线程（`run.py:91`、`items.py:215`）读写，长任务期间存在交错风险。做 2-4 并发时一并处理。【P2】
 - **`src/core/models.py` 的 `ConfirmStatus` 8 状态枚举是死代码**（只被 release 用的旧 dataclass 引用，不参与 DB 流程），可连同 `StateItem`/`StateData` 一起删。【P2】
@@ -257,7 +254,8 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 2-1 / 2-2 只能阻止**新增**错配，历史上已写进 `included` 的错误要单独清：
 
-1. 用 5-1 的质量检查列出全部 `dup_in_season`（463 条）+ `date_mismatch`（810 条）+ 韩文 included（292 条）+ `dup_global`（914 条，与前几项有重叠）；
+1. 用 5-1 的质量检查列出全部 `dup_in_season`（463 条）+ `date_mismatch`（810 条）+ 韩文 `included/llm`（156 条）+ `dup_global`（914 条，与前几项有重叠）；
+   ⚠️ **韩文只打回 `source='llm'` 那 156 条**，`source='exact'` 的 132 条是正确匹配（BGM 以谚文原名收录韩国动画，标题严格相等），不要碰。打回后重跑会走 2-1 的语言护栏，无精确匹配的一律 `excluded/rule`；
 2. 批量打回 `pending`（`PATCH action=pending` 会清空 bgm_id/name，见 `items.py:103-107`）；
 3. 修完 2-2 后重跑 `run --retry`，让新逻辑重新匹配；
 4. 剩下的进人工审核队列；
@@ -279,15 +277,25 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 > 4-3 首跑（air_date 3% → 99.5%）、5-1 质量检查 API + UI 筛选。P0 表已删。
 > 5-1 只剩跨季总览页、4-3 只剩并发，均已降级。
 >
-> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1~~（已完成）
-> → `2-1 / 2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理** → `2-3`（提质）。
+> **2026-08-04（二）**：2-1 语言护栏已完成，但**实现范围比原文窄，两条原方案经实测否决**：
+> - **中文护栏否决**。「无假名 + 含非 JIS 汉字（简体字）」全库命中 1618 条，1292 条已 included，
+>   抽样几乎全是**正确匹配**的国产动画（罗小黑战记、秦时明月之百步飞剑、哪吒传奇、潜艇总动员…），
+>   BGM 侧确实以中文原名收录，其中 955 条是 `source='exact'`（标题严格相等）。本地排除等于销毁正确数据。
+>   更朴素的「无假名→中文」判据更不能用：命中 3768 条，里面是犬夜叉 / 攻殻機動隊 / 十二国記 / 灰羽連盟。
+>   **别再提这条。**
+> - **韩文不一刀切**。775 条谚文条目里 `exact` 的 132 条**全对**、`llm` 的 156 条**全错**（44 组撞车）。
+>   错配 100% 来自 LLM 分支，所以护栏是「掐 LLM、保留 exact」：谚文标题不进 `match_anime` 也不进
+>   `suggest_search`，精确匹配失败直接 `excluded/rule`（日志 `[lang guard]`）。零 LLM 调用。
+>   判据 `is_korean_title()` 要求含谚文**且不含假名**，否则会误伤「ブルーアーカイブ / 블루 아카이브」这类日韩混排。
+>
+> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1 → 2-1~~（已完成）
+> → `2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理** → `2-3`（提质）。
 > 这条链上每一步都是下一步的前提，不要跳。
 
 ## P1 — 止血（不做完不值得大批量审核，否则清完又被新错配弄脏）
 
 | 顺序 | 任务 | 成本 |
 |---|---|---|
-| 5 | **2-1** 语言护栏（韩文/纯中文直接 excluded） | 1h |
 | 6 | **2-2** 收窄后缀剥离 + exact 加日期校验 + 撞车前置检查 | 半天 |
 | 7 | **3-1** 挂载 `BgmSearch`（§7 清理后审核队列会暴涨，先把无候选的路打通） | 1h |
 | 8 | **3-4** 决策原因迁移 + skip 的 `source='rule'` 修正 | 半天 |
