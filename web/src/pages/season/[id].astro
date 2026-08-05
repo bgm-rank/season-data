@@ -2,8 +2,10 @@
 import '../../styles/global.css'
 import { SeasonActions } from '../../components/SeasonActions'
 import { ReviewBoard } from '../../components/ReviewBoard'
+import { seasonIdLabel } from '../../lib/seasons'
 
 const { id } = Astro.params as { id: string }
+const label = seasonIdLabel(id)
 ---
 
 <html lang="zh-CN">
@@ -12,13 +14,13 @@ const { id } = Astro.params as { id: string }
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{id} — bgm-rank</title>
+    <title>{label} — bgm-rank</title>
   </head>
   <!-- 整页锁死视口高度，左右两列各自滚动。body 本身不产生滚动条 -->
   <body class="bg-background text-foreground h-screen overflow-hidden flex flex-col">
     <header class="flex items-center gap-3 border-b px-3 py-2 shrink-0">
       <a href="/" class="text-sm text-muted-foreground hover:underline">←</a>
-      <h1 class="text-base font-bold">{id}</h1>
+      <h1 class="text-base font-bold">{label}</h1>
       <SeasonActions client:load seasonId={id} />
     </header>
 

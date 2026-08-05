@@ -1,15 +1,9 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
+import { SEASONS, seasonOptionLabel } from '@/lib/seasons'
 import * as api from '@/services/api'
 import type { SeasonName } from '@/types/api'
-
-const SEASONS: { value: SeasonName; label: string }[] = [
-  { value: 'winter', label: '冬 (Winter)' },
-  { value: 'spring', label: '春 (Spring)' },
-  { value: 'summer', label: '夏 (Summer)' },
-  { value: 'fall', label: '秋 (Fall)' },
-]
 
 interface Props {
   onCreated?: () => void
@@ -62,7 +56,7 @@ export function SeasonForm({ onCreated }: Props) {
           className="h-9 rounded-md border border-input bg-background px-3 text-sm"
         >
           {SEASONS.map((s) => (
-            <option key={s.value} value={s.value}>{s.label}</option>
+            <option key={s.value} value={s.value}>{seasonOptionLabel(s.value)}</option>
           ))}
         </select>
       </div>

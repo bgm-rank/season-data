@@ -6,6 +6,7 @@ import { CandidatePanel } from '@/components/CandidatePanel'
 import { ReasonPicker } from '@/components/ReasonPicker'
 import { ISSUE_LABELS, SOURCE_LABELS } from '@/components/ItemRow'
 import { reasonLabel } from '@/lib/reasons'
+import { seasonIdLabel } from '@/lib/seasons'
 import type { ExcludeReason, ItemDetail as Detail, Override, SeasonSummary } from '@/types/api'
 
 const STATUS_LABELS: Record<string, string> = {
@@ -164,7 +165,7 @@ export function ItemDetail({
             )}
           </Field>
           <Field label="原因">{orphan.reason && reasonLabel(orphan.reason)}</Field>
-          <Field label="目标季">{orphan.target_season_id}</Field>
+          <Field label="目标季">{orphan.target_season_id && seasonIdLabel(orphan.target_season_id)}</Field>
           <Field label="备注">{orphan.note}</Field>
           <Field label="创建于">{orphan.created_at}</Field>
         </Section>
@@ -350,7 +351,9 @@ export function ItemDetail({
           <Field label="动作">{d.override_action}</Field>
           <Field label="bgm_id">{d.override_bgm_id}</Field>
           <Field label="原因">{d.override_reason && reasonLabel(d.override_reason)}</Field>
-          <Field label="目标季">{d.override_target_season_id}</Field>
+          <Field label="目标季">
+            {d.override_target_season_id && seasonIdLabel(d.override_target_season_id)}
+          </Field>
           <Field label="备注">{d.override_note}</Field>
           <Field label="创建于">{d.override_created_at}</Field>
           <Button
@@ -462,7 +465,7 @@ export function ItemDetail({
                       .sort((a, b) => b.id.localeCompare(a.id))
                       .map((s) => (
                         <option key={s.id} value={s.id}>
-                          {s.id}
+                          {seasonIdLabel(s.id)}
                         </option>
                       ))}
                   </select>
