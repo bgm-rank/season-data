@@ -3,6 +3,7 @@ import type {
   SeasonDetail,
   SeasonCreate,
   Item,
+  ItemDetail,
   ItemListResponse,
   ItemUpdate,
   Override,
@@ -64,6 +65,11 @@ export function getItems(
   if (params?.offset != null) qs.set('offset', String(params.offset))
   const query = qs.toString() ? `?${qs}` : ''
   return request(`/seasons/${id}/items${query}`)
+}
+
+/** Rich single-item view (MAL/BGM/override extras). Not available from the list. */
+export function getItemDetail(id: string, malId: number): Promise<ItemDetail> {
+  return request(`/seasons/${id}/items/${malId}`)
 }
 
 export function patchItem(id: string, malId: number, body: ItemUpdate): Promise<Item> {

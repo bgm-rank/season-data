@@ -65,6 +65,39 @@ class ItemRead(BaseModel):
     issues: list[IssueKind] = Field(default_factory=list)
 
 
+class ItemDetailRead(ItemRead):
+    """单条详情，比列表多出三张表的扩展字段。
+
+    这些列刻意不进 items_flat 视图——视图列与 ItemRead 一一对应是拆表时定下的边界
+    （见 003_split_tables.sql）。详情路由自己 JOIN 四张实表查单行，所以列表响应
+    体积不变：synopsis + summary + tags 乘以 300 条会让列表从几百 KB 涨到数 MB。
+    """
+
+    origin: str
+    # mal_anime 扩展（backfill_mal.py 回填的那批）
+    mal_title_en: str | None = None
+    mal_start_date: str | None = None
+    mal_end_date: str | None = None
+    mal_num_episodes: int | None = None
+    # 原作类型（manga/light_novel/...）。与 season_items.source 撞名，故加前缀
+    mal_source: str | None = None
+    mal_studios: list[dict[str, object]] | None = None
+    mal_synopsis: str | None = None
+    mal_fetched_at: str | None = None
+    # bgm_subject 扩展
+    bgm_type: int | None = None
+    bgm_platform: str | None = None
+    bgm_summary: str | None = None
+    bgm_tags: list[dict[str, object]] | None = None
+    bgm_nsfw: int | None = None
+    # NULL 表示骨架行（只有 ID，详情待拉）
+    bgm_fetched_at: str | None = None
+    # overrides 的剩余列，视图只带出了 action/reason/target_season_id
+    override_bgm_id: int | None = None
+    override_note: str | None = None
+    override_created_at: str | None = None
+
+
 class ItemListResponse(BaseModel):
     """列表信封。
 
@@ -98,6 +131,11 @@ class OverrideRead(BaseModel):
     target_season_id: str | None = None
     note: str | None = None
     created_at: str | None = None
+    # 以下两个是读时 JOIN 出来的派生字段，不落库
+    mal_title: str | None = None
+    # False = 这条 override 还没落进 season_items（等 run 才会插进来）。
+    # 前端靠它把「孤儿 override」合成伪行插进列表
+    in_season_items: bool = True
 
 
 class OverrideCreate(BaseModel):

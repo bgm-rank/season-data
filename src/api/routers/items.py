@@ -15,7 +15,7 @@ from loguru import logger
 
 from api.quality import ISSUE_KINDS, issue_counts, item_issues, season_issue_map
 from api.repo import ensure_bgm_subject
-from api.schemas import ItemListResponse, ItemRead, ItemUpdate
+from api.schemas import ItemDetailRead, ItemListResponse, ItemRead, ItemUpdate
 
 if TYPE_CHECKING:
     from services.bgmtv import Subject
@@ -71,6 +71,83 @@ def _row_to_item(row: sqlite3.Row, issues: list[str] | None = None) -> ItemRead:
     )
 
 
+def _json_list(raw: str | None) -> list[dict[str, Any]] | None:
+    """candidates / studios / tags 三个列都是 TEXT 里存 JSON array。"""
+    if not raw:
+        return None
+    parsed: list[dict[str, Any]] = json.loads(raw)
+    return parsed
+
+
+# 详情不走 items_flat：那个视图的列刻意与 ItemRead 一一对应，扩展字段往里加会打破
+# 拆表时定下的边界。这里自己 JOIN 四张实表查单行。
+_DETAIL_SQL = """
+SELECT si.*,
+       m.title AS mal_title, m.title_ja AS mal_title_ja, m.title_en AS mal_title_en,
+       m.media_type AS mal_media_type, m.rating AS mal_rating,
+       m.start_date AS mal_start_date, m.end_date AS mal_end_date,
+       m.num_episodes AS mal_num_episodes, m.source AS mal_source,
+       m.studios AS mal_studios, m.synopsis AS mal_synopsis,
+       m.fetched_at AS mal_fetched_at,
+       b.name AS bgm_name, b.name_cn AS bgm_name_cn, b.air_date AS bgm_air_date,
+       b.type AS bgm_type, b.platform AS bgm_platform, b.summary AS bgm_summary,
+       b.tags AS bgm_tags, b.nsfw AS bgm_nsfw, b.fetched_at AS bgm_fetched_at,
+       o.action AS override_action, o.bgm_id AS override_bgm_id,
+       o.reason AS override_reason, o.target_season_id AS override_target_season_id,
+       o.note AS override_note, o.created_at AS override_created_at
+FROM season_items si
+JOIN mal_anime m USING (mal_id)
+LEFT JOIN bgm_subject b ON b.bgm_id = si.bgm_id
+LEFT JOIN overrides o ON o.season_id = si.season_id AND o.mal_id = si.mal_id
+WHERE si.season_id = ? AND si.mal_id = ?
+"""
+
+
+def _row_to_detail(row: sqlite3.Row, issues: list[str]) -> ItemDetailRead:
+    return ItemDetailRead(
+        mal_id=row["mal_id"],
+        season_id=row["season_id"],
+        status=row["status"],
+        source=row["source"],
+        confidence=row["confidence"],
+        bgm_id=row["bgm_id"],
+        bgm_name=row["bgm_name"],
+        bgm_name_cn=row["bgm_name_cn"],
+        mal_title=row["mal_title"],
+        mal_title_ja=row["mal_title_ja"],
+        mal_media_type=row["mal_media_type"],
+        mal_rating=row["mal_rating"],
+        error=row["error"],
+        candidates=_json_list(row["candidates"]),
+        bgm_air_date=row["bgm_air_date"],
+        reason=row["reason"],
+        note=row["note"],
+        override_action=row["override_action"],
+        override_reason=row["override_reason"],
+        override_target_season_id=row["override_target_season_id"],
+        updated_at=row["updated_at"],
+        issues=issues,  # type: ignore[arg-type]
+        origin=row["origin"],
+        mal_title_en=row["mal_title_en"],
+        mal_start_date=row["mal_start_date"],
+        mal_end_date=row["mal_end_date"],
+        mal_num_episodes=row["mal_num_episodes"],
+        mal_source=row["mal_source"],
+        mal_studios=_json_list(row["mal_studios"]),
+        mal_synopsis=row["mal_synopsis"],
+        mal_fetched_at=row["mal_fetched_at"],
+        bgm_type=row["bgm_type"],
+        bgm_platform=row["bgm_platform"],
+        bgm_summary=row["bgm_summary"],
+        bgm_tags=_json_list(row["bgm_tags"]),
+        bgm_nsfw=row["bgm_nsfw"],
+        bgm_fetched_at=row["bgm_fetched_at"],
+        override_bgm_id=row["override_bgm_id"],
+        override_note=row["override_note"],
+        override_created_at=row["override_created_at"],
+    )
+
+
 @router.get("/seasons/{season_id}/items", response_model=ItemListResponse)
 def list_items(
     season_id: str,
@@ -105,11 +182,12 @@ def list_items(
         params.extend(matched)
 
     where = " AND ".join(clauses)
-    order = "confidence ASC NULLS LAST" if status == "pending" else "mal_id ASC"
 
     total: int = db.execute(f"SELECT COUNT(*) FROM items_flat WHERE {where}", params).fetchone()[0]
+    # 恒按 mal_id 排。pending 时按置信度升序是老审核队列（先审最可疑的）的排法，
+    # 队列已并进详情面板，左列要的是一份顺序稳定、切筛选不跳位的全季清单。
     rows = db.execute(
-        f"SELECT * FROM items_flat WHERE {where} ORDER BY {order} LIMIT ? OFFSET ?",
+        f"SELECT * FROM items_flat WHERE {where} ORDER BY mal_id ASC LIMIT ? OFFSET ?",
         (*params, limit, offset),
     ).fetchall()
     return ItemListResponse(
@@ -119,6 +197,18 @@ def list_items(
         items=[_row_to_item(r, issue_map.get(r["mal_id"])) for r in rows],
         issue_counts=issue_counts(issue_map),
     )
+
+
+@router.get("/seasons/{season_id}/items/{mal_id}", response_model=ItemDetailRead)
+def get_item(
+    season_id: str,
+    mal_id: int,
+    db: sqlite3.Connection = Depends(_get_db),
+) -> ItemDetailRead:
+    row = db.execute(_DETAIL_SQL, (season_id, mal_id)).fetchone()
+    if row is None:
+        raise HTTPException(status_code=404, detail=f"Item {mal_id} not found in season {season_id}")
+    return _row_to_detail(row, item_issues(db, season_id, mal_id))
 
 
 @router.patch("/seasons/{season_id}/items/{mal_id}", response_model=ItemRead)

@@ -1,11 +1,10 @@
 /**
  * Cross-island notification for item changes.
  *
- * ItemList and ReviewQueue are separate Astro islands on the same page, so they
- * can't share React state. When one changes an item the other's data goes stale.
- * This lets the stale side show a hint instead of silently lying — deliberately
- * not an auto-refresh, which would yank the queue out from under an in-progress
- * review.
+ * The review page is one big island (ReviewBoard) plus the header's SeasonActions.
+ * Fetching MAL, running matching or syncing BGM rewrites items under the board,
+ * so SeasonActions emits and the board shows a "refresh" hint. Deliberately not an
+ * auto-reload, which would yank the list out from under an in-progress review.
  */
 
 const EVENT = 'bgm:items-changed'

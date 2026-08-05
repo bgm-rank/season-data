@@ -95,6 +95,44 @@ export interface Item {
   issues: IssueKind[]
 }
 
+/** A studio (mal_anime.studios) or a BGM tag (bgm_subject.tags) — both stored as JSON arrays. */
+export interface NamedEntry {
+  name: string
+  [k: string]: unknown
+}
+
+/**
+ * Single-item detail. Mirrors ItemDetailRead in src/api/schemas.py.
+ *
+ * These extra columns deliberately stay out of items_flat (that view's columns map
+ * 1:1 onto ItemRead), so they only come from GET /items/{mal_id}, never the list.
+ */
+export interface ItemDetail extends Item {
+  origin: string
+  // mal_anime extras (backfilled by scripts/backfill_mal.py)
+  mal_title_en: string | null
+  mal_start_date: string | null
+  mal_end_date: string | null
+  mal_num_episodes: number | null
+  /** Adaptation source (manga/light_novel/…). Prefixed because `source` is already taken. */
+  mal_source: string | null
+  mal_studios: NamedEntry[] | null
+  mal_synopsis: string | null
+  mal_fetched_at: string | null
+  // bgm_subject extras
+  bgm_type: number | null
+  bgm_platform: string | null
+  bgm_summary: string | null
+  bgm_tags: NamedEntry[] | null
+  bgm_nsfw: number | null
+  /** null means a skeleton row — the ID is known but details were never fetched. */
+  bgm_fetched_at: string | null
+  // overrides columns the view doesn't carry
+  override_bgm_id: number | null
+  override_note: string | null
+  override_created_at: string | null
+}
+
 /** List envelope. `total` is the unpaginated count so the UI can tell it was truncated. */
 export interface ItemListResponse {
   total: number
@@ -129,6 +167,13 @@ export interface Override {
   note: string | null
   /** null for rows created before the reason migration. */
   created_at: string | null
+  /** Joined from mal_anime, read-only. */
+  mal_title: string | null
+  /**
+   * false = this override has no season_items row yet (a to-do waiting for `run`).
+   * The review board renders those as synthetic rows in the list.
+   */
+  in_season_items: boolean
 }
 
 export interface OverrideCreate {
@@ -183,8 +228,13 @@ export interface ProgressEvent {
 // POST   /api/seasons/{id}/run?retry=false      → RunStartResponse (202)
 // GET    /api/seasons/{id}/run/progress         → SSE: ProgressEvent[]
 // GET    /api/seasons/{id}/items                → ItemListResponse  (query: status?, source?, issue?, limit?, offset?)
+//        always ordered by mal_id ASC
+// GET    /api/seasons/{id}/items/{mal_id}       → ItemDetail (404 if not in season_items)
 // PATCH  /api/seasons/{id}/items/{mal_id}       body: ItemUpdate → Item
 //        422 when reason/note is sent with a non-exclude action, or reason='other' has no note
+// POST   /api/seasons/{id}/items/{mal_id}/sync-bgm → Item
+// POST   /api/seasons/{id}/sync-bgm             → SyncStartResponse (202)
+// GET    /api/seasons/{id}/sync-bgm/progress    → SSE: ProgressEvent[]
 // GET    /api/seasons/{id}/overrides            → Override[]
 // POST   /api/seasons/{id}/overrides            body: OverrideCreate → Override (201)
 // DELETE /api/seasons/{id}/overrides/{mal_id}   → 204

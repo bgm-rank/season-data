@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { RunProgress } from '@/components/RunProgress'
 import { useProgressStream } from '@/hooks/useProgressStream'
+import { emitItemsChanged } from '@/lib/itemEvents'
 import * as api from '@/services/api'
 import type { SeasonPhase } from '@/types/api'
 
@@ -18,6 +19,7 @@ interface Props {
   seasonId: string
 }
 
+/** 顶栏里的季度操作条，压成一行。ReviewBoard 是另一个 island，跑完靠 itemEvents 通知。 */
 export function SeasonActions({ seasonId }: Props) {
   const [phase, setPhase] = useState<SeasonPhase | null>(null)
   const [fetchedCount, setFetchedCount] = useState<number | null>(null)
@@ -32,7 +34,8 @@ export function SeasonActions({ seasonId }: Props) {
   const { progress: syncProgress, done: syncDone, error: syncError } = useProgressStream(syncUrl)
 
   useEffect(() => {
-    api.getSeason(seasonId)
+    api
+      .getSeason(seasonId)
       .then((s) => setPhase(s.phase))
       .catch((e: unknown) => setError(e instanceof Error ? e.message : String(e)))
   }, [seasonId])
@@ -44,6 +47,7 @@ export function SeasonActions({ seasonId }: Props) {
       const res = await api.fetchMal(seasonId)
       setFetchedCount(res.fetched_count)
       setPhase('fetched')
+      emitItemsChanged('SeasonActions')
     } catch (e) {
       setError(e instanceof Error ? e.message : '拉取失败')
     } finally {
@@ -68,6 +72,7 @@ export function SeasonActions({ seasonId }: Props) {
     if (syncDone || syncError) {
       setSyncing(false)
       if (syncError) setError(syncError)
+      else emitItemsChanged('SeasonActions')
     }
   }, [syncDone, syncError])
 
@@ -88,86 +93,61 @@ export function SeasonActions({ seasonId }: Props) {
     setRunning(false)
     setRunningSeasonId(null)
     setPhase('reviewing')
+    emitItemsChanged('SeasonActions')
   }
 
   return (
-    <div className="space-y-4">
-      <div className="flex items-center gap-3">
-        <h2 className="text-lg font-semibold">季度操作</h2>
-        {phase && <Badge variant="outline">{PHASE_LABELS[phase]}</Badge>}
-      </div>
-
-      {error && (
-        <div className="text-sm text-destructive bg-destructive/10 px-3 py-2 rounded">
-          {error}
-        </div>
+    <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2">
+      {phase && (
+        <Badge variant="outline" className="text-xs">
+          {PHASE_LABELS[phase]}
+        </Badge>
       )}
 
-      <div className="flex gap-3 flex-wrap">
-        <Button onClick={() => void handleFetch()} disabled={fetching || running}>
-          {fetching ? '拉取中...' : '拉取 MAL 数据'}
-        </Button>
-        {fetchedCount != null && (
-          <span className="text-sm text-muted-foreground self-center">
-            已获取 {fetchedCount} 条
-          </span>
-        )}
+      <Button size="xs" onClick={() => void handleFetch()} disabled={fetching || running}>
+        {fetching ? '拉取中...' : '拉取 MAL'}
+      </Button>
+      {fetchedCount != null && <span className="text-xs text-muted-foreground">已获取 {fetchedCount} 条</span>}
 
-        <Button
-          variant="secondary"
-          onClick={() => void handleRun()}
-          disabled={running || fetching || syncing}
-        >
-          {running ? '运行中...' : '运行匹配'}
-        </Button>
+      <Button size="xs" variant="secondary" onClick={() => void handleRun()} disabled={running || fetching || syncing}>
+        {running ? '运行中...' : '运行匹配'}
+      </Button>
 
-        <Button
-          variant="outline"
-          onClick={() => void handleSync()}
-          disabled={running || fetching || syncing}
-        >
-          {syncing ? '刷新中...' : '刷新 BGM 数据'}
-        </Button>
-      </div>
+      <Button size="xs" variant="outline" onClick={() => void handleSync()} disabled={running || fetching || syncing}>
+        {syncing ? '刷新中...' : '刷新 BGM'}
+      </Button>
 
-      {runningSeasonId && (
-        <RunProgress seasonId={runningSeasonId} onDone={handleRunDone} />
-      )}
+      {runningSeasonId && <RunProgress seasonId={runningSeasonId} onDone={handleRunDone} />}
 
-      {syncSeasonId && (
-        <div className="space-y-2">
-          {syncError ? (
-            <div className="text-sm text-destructive bg-destructive/10 px-3 py-2 rounded">
-              刷新出错：{syncError}
-            </div>
-          ) : syncDone ? (
-            <div className="text-sm text-green-600 bg-green-50 px-3 py-2 rounded">
+      {syncSeasonId && !syncError && (
+        <span className="flex items-center gap-2 text-xs text-muted-foreground">
+          {syncDone ? (
+            <span className="text-green-600 dark:text-green-500">
               刷新完成
               {syncProgress?.updated != null && ` — 已更新 ${syncProgress.updated} 条`}
               {syncProgress?.errors != null && syncProgress.errors > 0 && `，${syncProgress.errors} 条失败`}
-            </div>
+            </span>
           ) : (
             <>
-              <div className="flex items-center justify-between text-sm">
-                <span>刷新进度</span>
-                <span className="text-muted-foreground">
-                  {syncProgress?.processed ?? 0} / {syncProgress?.total ?? '?'}
-                </span>
-              </div>
-              <div className="w-full bg-muted rounded-full h-2">
-                <div
-                  className="bg-primary h-2 rounded-full transition-all"
+              <span className="tabular-nums">
+                刷新 {syncProgress?.processed ?? 0}/{syncProgress?.total ?? '?'}
+              </span>
+              <span className="h-1.5 w-24 overflow-hidden rounded-full bg-muted">
+                <span
+                  className="block h-full rounded-full bg-primary transition-all"
                   style={{
                     width: syncProgress?.total
                       ? `${Math.round(((syncProgress.processed ?? 0) / syncProgress.total) * 100)}%`
                       : '0%',
                   }}
                 />
-              </div>
+              </span>
             </>
           )}
-        </div>
+        </span>
       )}
+
+      {error && <span className="truncate text-xs text-destructive">{error}</span>}
     </div>
   )
 }

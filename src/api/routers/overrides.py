@@ -16,6 +16,9 @@ def _get_db(request: Request) -> sqlite3.Connection:
 
 
 def _row_to_override(row: sqlite3.Row) -> OverrideRead:
+    # mal_title / in_season_items 只有 list_overrides 的 JOIN 查询带得出来，
+    # create/delete 走的是裸 SELECT，缺列时留给 schema 的默认值
+    cols = row.keys()
     return OverrideRead(
         mal_id=row["mal_id"],
         season_id=row["season_id"],
@@ -25,12 +28,28 @@ def _row_to_override(row: sqlite3.Row) -> OverrideRead:
         target_season_id=row["target_season_id"],
         note=row["note"],
         created_at=row["created_at"],
+        mal_title=row["mal_title"] if "mal_title" in cols else None,
+        in_season_items=bool(row["in_season_items"]) if "in_season_items" in cols else True,
     )
+
+
+# 绝大多数 override 的 (season_id, mal_id) 已经在 season_items 里了（skip 全部在，
+# add 在 run 之后也会插进去），审核界面就把它们当普通条目展示。剩下的「孤儿」是
+# 建了 override 但还没 run 的待办，靠 in_season_items=0 标出来。
+_LIST_SQL = """
+SELECT o.*, m.title AS mal_title,
+       (si.mal_id IS NOT NULL) AS in_season_items
+FROM overrides o
+LEFT JOIN mal_anime m ON m.mal_id = o.mal_id
+LEFT JOIN season_items si ON si.season_id = o.season_id AND si.mal_id = o.mal_id
+WHERE o.season_id = ?
+ORDER BY o.mal_id ASC
+"""
 
 
 @router.get("/seasons/{season_id}/overrides", response_model=list[OverrideRead])
 def list_overrides(season_id: str, db: sqlite3.Connection = Depends(_get_db)) -> list[OverrideRead]:
-    rows = db.execute("SELECT * FROM overrides WHERE season_id = ?", (season_id,)).fetchall()
+    rows = db.execute(_LIST_SQL, (season_id,)).fetchall()
     return [_row_to_override(r) for r in rows]
 
 
