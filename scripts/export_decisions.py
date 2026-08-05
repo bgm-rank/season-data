@@ -31,7 +31,7 @@ def main() -> None:
     try:
         decisions = conn.execute(
             """
-            SELECT season_id, mal_id, status, source, bgm_id, confidence, origin
+            SELECT season_id, mal_id, status, source, bgm_id, confidence, origin, reason, note
             FROM season_items
             ORDER BY season_id, mal_id
             """
@@ -40,7 +40,8 @@ def main() -> None:
             "SELECT id, year, season, released_at, created_at, updated_at FROM seasons ORDER BY id"
         ).fetchall()
         overrides = conn.execute(
-            "SELECT mal_id, season_id, action, bgm_id FROM overrides ORDER BY season_id, mal_id"
+            "SELECT mal_id, season_id, action, bgm_id, reason, target_season_id, note, created_at"
+            " FROM overrides ORDER BY season_id, mal_id"
         ).fetchall()
     finally:
         conn.close()

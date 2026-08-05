@@ -4,9 +4,10 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { CandidatePanel } from '@/components/CandidatePanel'
+import { ReasonPicker } from '@/components/ReasonPicker'
 import { emitItemsChanged, onItemsChanged } from '@/lib/itemEvents'
 import * as api from '@/services/api'
-import type { Item, SeasonSummary } from '@/types/api'
+import type { ExcludeReason, Item, SeasonSummary } from '@/types/api'
 
 interface ReviewQueueState {
   items: Item[]
@@ -99,12 +100,25 @@ export function ReviewQueue({ seasonId }: Props) {
     }
   }, [currentItem, state.selectedCandidate, state.items, seasonId, advanceQueue])
 
+  // 排除原因，选了才带上。切条目时清空（见下面依赖 currentIndex 的 effect）
+  const [reason, setReason] = useState<ExcludeReason | null>(null)
+  const [reasonNote, setReasonNote] = useState('')
+
   const excludeItem = useCallback(async () => {
     if (!currentItem) return
+    // other 不带说明后端会 422，与其让队列白白前进一格再回滚，不如就地拦住
+    if (reason === 'other' && !reasonNote.trim()) {
+      setState((s) => ({ ...s, error: '选了「其他」就得写一句说明' }))
+      return
+    }
     const snapshot = state.items
     advanceQueue()
     try {
-      await api.patchItem(seasonId, currentItem.mal_id, { action: 'exclude' })
+      await api.patchItem(seasonId, currentItem.mal_id, {
+        action: 'exclude',
+        reason,
+        note: reason === 'other' ? reasonNote.trim() : null,
+      })
       emitItemsChanged('ReviewQueue')
     } catch (e) {
       const msg = e instanceof Error && e.message.includes('409')
@@ -112,7 +126,7 @@ export function ReviewQueue({ seasonId }: Props) {
         : '操作失败，已回滚'
       setState((s) => ({ ...s, items: snapshot, error: msg }))
     }
-  }, [currentItem, state.items, seasonId, advanceQueue])
+  }, [currentItem, state.items, seasonId, advanceQueue, reason, reasonNote])
 
   const skipItem = useCallback(() => {
     setState((s) => {
@@ -182,7 +196,15 @@ export function ReviewQueue({ seasonId }: Props) {
     setMoveError(null)
     const snapshot = state.items
     try {
-      await api.patchItem(seasonId, currentItem.mal_id, { action: 'exclude' })
+      // 三条记录缺一不可：源季的决策、源季的意图、目标季的意图。
+      // 只写目标季的 add 会让源季看起来像个普通的 exclude，配对关系就丢了。
+      await api.patchItem(seasonId, currentItem.mal_id, { action: 'exclude', reason: 'wrong_season' })
+      await api.createOverride(seasonId, {
+        mal_id: currentItem.mal_id,
+        action: 'skip',
+        reason: 'wrong_season',
+        target_season_id: targetSeasonId,
+      })
       await api.createOverride(targetSeasonId, { mal_id: currentItem.mal_id, action: 'add', bgm_id })
       setMoveOpen(false)
       setMoveBgmId('')
@@ -196,7 +218,10 @@ export function ReviewQueue({ seasonId }: Props) {
     }
   }, [currentItem, targetSeasonId, moveBgmId, seasonId, state.items, advanceQueue])
 
-  useEffect(() => { setManualBgmId(''); setMoveOpen(false); setMoveError(null) }, [state.currentIndex])
+  useEffect(() => {
+    setManualBgmId(''); setMoveOpen(false); setMoveError(null)
+    setReason(null); setReasonNote('')
+  }, [state.currentIndex])
 
   if (state.loading) {
     return <div className="text-sm text-muted-foreground p-4">加载中...</div>
@@ -292,7 +317,27 @@ export function ReviewQueue({ seasonId }: Props) {
               </Button>
             </div>
 
-            <div className="flex gap-2 pt-2 border-t flex-wrap">
+            <div className="pt-2 border-t space-y-2">
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="text-xs text-muted-foreground">排除原因（可不填）</span>
+                {reason && (
+                  <button
+                    type="button"
+                    onClick={() => { setReason(null); setReasonNote('') }}
+                    className="text-xs text-muted-foreground hover:underline"
+                  >
+                    清除
+                  </button>
+                )}
+              </div>
+              <ReasonPicker
+                reason={reason}
+                note={reasonNote}
+                onChange={(r, n) => { setReason(r); setReasonNote(n) }}
+              />
+            </div>
+
+            <div className="flex gap-2 flex-wrap">
               {hasCandidates && (
                 <Button
                   onClick={() => void confirmSelection()}

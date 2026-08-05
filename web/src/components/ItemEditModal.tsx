@@ -10,8 +10,9 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
+import { ReasonPicker } from '@/components/ReasonPicker'
 import * as api from '@/services/api'
-import type { Item } from '@/types/api'
+import type { ExcludeReason, Item } from '@/types/api'
 
 const SOURCE_LABELS: Record<string, string> = {
   rule: '规则排除',
@@ -37,10 +38,17 @@ interface Props {
 export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
   const [action, setAction] = useState<'include' | 'exclude' | 'pending'>('include')
   const [bgmId, setBgmId] = useState(item.bgm_id != null ? String(item.bgm_id) : '')
+  // 已排除的条目重新打开时带出上次填的原因，改判时不用重敲
+  const [reason, setReason] = useState<ExcludeReason | null>(item.reason)
+  const [reasonNote, setReasonNote] = useState(item.note ?? '')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async () => {
+    if (action === 'exclude' && reason === 'other' && !reasonNote.trim()) {
+      setError('选了「其他」就得写一句说明')
+      return
+    }
     setLoading(true)
     setError(null)
     try {
@@ -49,7 +57,11 @@ export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
           ? { action: 'include' as const, bgm_id: parseInt(bgmId) }
           : action === 'pending'
             ? { action: 'pending' as const }
-            : { action: 'exclude' as const }
+            : {
+                action: 'exclude' as const,
+                reason,
+                note: reason === 'other' ? reasonNote.trim() : null,
+              }
       onUpdated(await api.patchItem(seasonId, item.mal_id, body))
     } catch (e) {
       setError(e instanceof Error ? e.message : '操作失败')
@@ -121,6 +133,17 @@ export function ItemEditModal({ item, seasonId, onClose, onUpdated }: Props) {
                 placeholder="输入 bgm_id"
                 value={bgmId}
                 onChange={(e) => setBgmId(e.target.value)}
+              />
+            </div>
+          )}
+
+          {action === 'exclude' && (
+            <div className="space-y-1.5">
+              <Label>排除原因（可不填）</Label>
+              <ReasonPicker
+                reason={reason}
+                note={reasonNote}
+                onChange={(r, n) => { setReason(r); setReasonNote(n) }}
               />
             </div>
           )}

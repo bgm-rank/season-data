@@ -40,6 +40,19 @@ export type ItemSource = 'rule' | 'exact' | 'llm' | 'human'
 /** Quality issues derived server-side (src/api/quality.py), never persisted. */
 export type IssueKind = 'dup_in_season' | 'dup_global' | 'date_mismatch' | 'no_bgm_name'
 
+/**
+ * Why a human excluded an item. Mirrors ExcludeReason in src/api/schemas.py —
+ * there is no DB CHECK, so these two declarations are the only constraint.
+ * Labels live in @/lib/reasons.
+ */
+export type ExcludeReason =
+  | 'not_on_bgm'
+  | 'merged_into_ep'
+  | 'not_anime'
+  | 'duplicate'
+  | 'wrong_season'
+  | 'other'
+
 /** Hard-rule conflict codes, mirrors CONFLICT_* in core/processor.py. */
 export type CandidateConflict = 'date' | 'platform'
 
@@ -71,6 +84,13 @@ export interface Item {
   error: string | null
   candidates: CandidateEntry[] | null
   bgm_air_date: string | null
+  /** Human exclude reason; always null unless status === 'excluded'. */
+  reason: ExcludeReason | null
+  note: string | null
+  /** Joined from the overrides table. Read-only here — write via the overrides routes. */
+  override_action: OverrideAction | null
+  override_reason: ExcludeReason | null
+  override_target_season_id: string | null
   updated_at: string
   issues: IssueKind[]
 }
@@ -88,6 +108,10 @@ export interface ItemListResponse {
 export interface ItemUpdate {
   action: 'include' | 'exclude' | 'pending'
   bgm_id?: number | null
+  /** Only accepted with action='exclude'; sending it otherwise is a 422. Optional. */
+  reason?: ExcludeReason | null
+  /** Required when reason==='other', optional otherwise. */
+  note?: string | null
 }
 
 // ─── Overrides ────────────────────────────────────────────────────────────
@@ -99,12 +123,21 @@ export interface Override {
   season_id: string
   action: OverrideAction
   bgm_id: number | null
+  reason: ExcludeReason | null
+  /** Hint only: where a skipped entry should go. Never auto-writes to that season. */
+  target_season_id: string | null
+  note: string | null
+  /** null for rows created before the reason migration. */
+  created_at: string | null
 }
 
 export interface OverrideCreate {
   mal_id: number
   action: OverrideAction
   bgm_id?: number | null
+  reason?: ExcludeReason | null
+  target_season_id?: string | null
+  note?: string | null
 }
 
 // ─── BGM Search ───────────────────────────────────────────────────────────
@@ -151,6 +184,7 @@ export interface ProgressEvent {
 // GET    /api/seasons/{id}/run/progress         → SSE: ProgressEvent[]
 // GET    /api/seasons/{id}/items                → ItemListResponse  (query: status?, source?, issue?, limit?, offset?)
 // PATCH  /api/seasons/{id}/items/{mal_id}       body: ItemUpdate → Item
+//        422 when reason/note is sent with a non-exclude action, or reason='other' has no note
 // GET    /api/seasons/{id}/overrides            → Override[]
 // POST   /api/seasons/{id}/overrides            body: OverrideCreate → Override (201)
 // DELETE /api/seasons/{id}/overrides/{mal_id}   → 204

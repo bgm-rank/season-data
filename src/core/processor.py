@@ -212,10 +212,11 @@ class SeasonProcessor:
         total = len(rows)
         processed = 0
 
+        # 带上 reason：skip 的原因要一并落进 season_items，否则跑完就只剩一个 excluded
         overrides_skip = {
-            r["mal_id"]
+            r["mal_id"]: r["reason"]
             for r in self.conn.execute(
-                "SELECT mal_id FROM overrides WHERE season_id=? AND action='skip'",
+                "SELECT mal_id, reason FROM overrides WHERE season_id=? AND action='skip'",
                 (self.season_id,),
             ).fetchall()
         }
@@ -246,7 +247,13 @@ class SeasonProcessor:
             mal_id = ov_row["mal_id"]
             if mal_id in row_by_id:
                 continue
-            bgm_id_ov: int = ov_row["bgm_id"]
+            bgm_id_raw: int | None = ov_row["bgm_id"]
+            if bgm_id_raw is None:
+                # 「该挪到本季，bgm_id 待查」的待办记录（配对的 skip 已在源季生效）。
+                # 拿 None 去 get_subject 只会抛个看不懂的错，直接说清楚在等什么。
+                logger.warning("[override add] mal:{} 缺 bgm_id，跳过（待人工补齐后重跑）", mal_id)
+                continue
+            bgm_id_ov: int = bgm_id_raw
             now = datetime.now(UTC).isoformat()
             try:
                 subject = self.bgmtv.get_subject(bgm_id_ov)
@@ -294,7 +301,7 @@ class SeasonProcessor:
     def _process_single(
         self,
         row: sqlite3.Row,
-        overrides_skip: set[int],
+        overrides_skip: dict[int, str | None],
         start_date: str,
         end_date: str,
     ) -> None:
@@ -304,13 +311,18 @@ class SeasonProcessor:
         now = datetime.now(UTC).isoformat()
 
         # Step 1: override skip
+        # source='human' 而不是 'rule'：skip 是人工判定的位置错误（这条番属于别的季度），
+        # 记成 rule 就把它伪装成了媒体类型规则过滤，事后分不清是规则踢的还是手工挪走的。
         if mal_id in overrides_skip:
+            # skip 的语义本身就是 wrong_season，没显式填时给这个默认值
+            reason = overrides_skip[mal_id] or "wrong_season"
             self.conn.execute(
-                "UPDATE season_items SET status='excluded', source='rule', updated_at=? WHERE mal_id=? AND season_id=?",
-                (now, mal_id, self.season_id),
+                "UPDATE season_items SET status='excluded', source='human', reason=?, updated_at=?"
+                " WHERE mal_id=? AND season_id=?",
+                (reason, now, mal_id, self.season_id),
             )
             self.conn.commit()
-            logger.info("[override skip] mal:{}", mal_id)
+            logger.info("[override skip] mal:{} ({})", mal_id, reason)
             return
 
         # Step 2: already confirmed (included/excluded)

@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { ItemEditModal } from '@/components/ItemEditModal'
 import { emitItemsChanged, onItemsChanged } from '@/lib/itemEvents'
+import { reasonLabel } from '@/lib/reasons'
 import * as api from '@/services/api'
 import type { Item, ItemStatus, IssueKind } from '@/types/api'
 
@@ -81,10 +82,15 @@ export function ItemList({ seasonId }: Props) {
   const applyUpdate = (updated: Item) =>
     setItems((prev) => prev.map((it) => (it.mal_id === updated.mal_id ? updated : it)))
 
-  /** 服务端 PATCH 后条目会变成什么样（见 src/api/routers/items.py 的 update_item）。 */
+  /**
+   * 服务端 PATCH 后条目会变成什么样（见 src/api/routers/items.py 的 update_item）。
+   *
+   * 这里的行内 ✗ 和快捷键 x 刻意不带排除原因：批量清理时要的就是零成本，
+   * 所以服务端把 reason/note 写成 NULL。要记原因走审核队列或编辑弹窗。
+   */
   const optimisticOf = (item: Item, action: 'exclude' | 'pending'): Item =>
     action === 'exclude'
-      ? { ...item, status: 'excluded', source: 'human' } // 排除保留 bgm_id
+      ? { ...item, status: 'excluded', source: 'human', reason: null, note: null } // 排除保留 bgm_id
       : {
           ...item,
           status: 'pending',
@@ -96,6 +102,8 @@ export function ItemList({ seasonId }: Props) {
           confidence: null,
           candidates: null,
           error: null,
+          reason: null,
+          note: null,
           issues: [],
         }
 
@@ -427,6 +435,12 @@ export function ItemList({ seasonId }: Props) {
                     >
                       ↺
                     </button>
+                  )}
+                  {item.reason && (
+                    <Badge variant="secondary" className="text-xs" title={item.note ?? undefined}>
+                      {reasonLabel(item.reason)}
+                      {item.note && ' *'}
+                    </Badge>
                   )}
                   {item.source && (
                     <Badge variant="outline" className="text-xs">

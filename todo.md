@@ -9,6 +9,13 @@
 > **2026-08-04（三）**：2-3 已完成（high/low 双 prompt + 代码侧硬规则），顺带挖出两个 live bug
 > 和一次全库回填 —— 详见 §8 的更新块。**注意 §7 清理的目标集因此扩大**：硬规则在
 > `included/llm` 上命中 637 条（15.5%），抽样几乎全是真错配，可直接当打回名单。
+> 同日重写 2-2：原诊断（后缀剥离 + exact 不校验日期是撞车主因）经数据检验不成立，
+> 撞车主要来自 LLM 而非 exact，且剥离根本不参与判等。**后缀剥离任何时候都不要动。**
+> **2026-08-05**：**2-2（序号护栏）、3-1（挂载 BgmSearch）、5-1 剩余（跨季总览页）整条删除**，
+> 都改为交给人工，不再写代码。否决依据见 §8 的更新块——尤其别再重新提序号护栏。
+> **2026-08-05（二）**：3-4 已完成（004 迁移 + 原因选择器），**P1 止血环节到此结束，下一步直接进 §7**。
+> 两处偏离原方案，详见 §8 的更新块：`reason` 没落 CHECK；`overrides` 的
+> `CHECK(action <> 'add' OR bgm_id IS NOT NULL)` **判定为不能加**，别再提。
 
 ## 现状体检（2026-08-03 基线，air_date / issue 数据为 2026-08-04 复测）
 
@@ -21,6 +28,8 @@ pending   1746  (全部 source=NULL；1638 条有候选，108 条无候选，0 �
 bgm_air_date 覆盖率： 11720 / 11776 included = 99.5%（4-3 全库同步已跑完，剩 2 条骨架行）
 mal_anime 扩展字段： 20587 / 20607 = 99.9%（2026-08-04 backfill_mal.py 跑完，此前只有 80 行）
 硬规则命中(2-3)：    included/llm 637 / 4113 = 15.5%，included/exact 106 / 7615 = 1.4%
+撞车按 source 拆：   llm 881 行 = llm 的 21.4%；exact 430 行 = exact 的 5.6%（llm 是 exact 的 3.8 倍）
+序号护栏(原 2-2)：   25 条，其中 19 条已被 2-3 硬规则覆盖，独有 6 条里 3 条是误报 → 已否决
 质量检查全库命中：    dup_in_season 463 / dup_global 914 / date_mismatch 810 / no_bgm_name 0
 韩文标题条目：        774 条，其中 288 条被 included（llm 156 全错 / exact 132 全对，见 2026-08-04(二) 更新）
 单季条目数 > 200：    51 个季度（最大 339 条）
@@ -49,33 +58,18 @@ EOF
 
 ## 1-2. 【P2】`is_new_anime` 过滤口径
 
-`src/core/season.py:30-35` 只保留 `start_season` 完全等于本季的条目。MAL 偶尔把番标错季度，这部分只能靠 overrides 手工补（`README.md` 的 Override 补番）。暂时不动，但 5-1 的跨季问题总览做出来后可以回头看看漏了多少。
+`src/core/season.py:30-35` 只保留 `start_season` 完全等于本季的条目。MAL 偶尔把番标错季度，这部分只能靠 overrides 手工补（`README.md` 的 Override 补番）。暂时不动，等 108 季逐季 review 走完一遍后回头看看漏了多少。
 
 ---
 
 # 2. 运行匹配（规则 + LLM）
 
-## 2-2. 【P1·止血】后缀剥离过度 + exact 匹配不校验日期（撞车主因）
+## 2-6. 【P2】exact 分支的日期校验
 
-**问题 A**：`src/core/processor.py:44` 的 `re.compile(r"\d+$")` 无条件砍掉标题结尾数字，而 `alternative_keywords`（`processor.py:54-84`）是 while 循环反复剥的：
-
-```
-'PSYCHO-PASS 3'                  -> ['PSYCHO-PASS']
-'マクロス7'                       -> ['マクロス']
-'紙兎ロペ2'                       -> ['紙兎ロペ']
-'ドラゴンボールZ'                  -> []                        # 全剥没了
-'名探偵コナン 天国へのカウントダウン'  -> ['天国へのカウントダウン']    # 剥成了副标题
-```
-
-**问题 B**：`_search_bgm`（`processor.py:418-435`）的降级链会退到 `search_anime_by_keyword_no_date()`（**不带日期过滤**），拿到结果后 `_try_match`（`processor.py:349-360`）只要日文名 NFKC 归一化后相等就 `source='exact'` 直接 included，**完全不校验 air_date**。
-
-于是「紙兎ロペ2」剥成「紙兎ロペ」→ 无日期搜索 → 精确命中初代 → 收录。`bgm:337292`「紙兎ロペ」现在被 13 个 MAL 条目占用。exact 占 included 的 65%（7615 条），这条路径的错误量很大。
-
-**做法**：
-1. 干掉裸的 `\d+$`，或只在剩余长度 ≥4 且不是系列编号时才剥；
-2. `alternative_keywords` 加保护：剥完后长度 < 原标题一半就丢弃该候选；
-3. **剥离后关键词搜出的结果，exact 匹配必须过日期校验** —— air_date 落在季度范围内才允许自动 included，否则降级到 pending 带候选。单这一条就能挡掉大部分撞车；
-4. 写入 included 前先查该 bgm_id 是否已被本季/他季占用，是则强制降级 pending。
+`_search_bgm` 的降级链会退到 `search_anime_by_keyword_no_date()`，exact 命中后不校验 air_date。
+`included/exact` 7630 条里 430 条卷入撞车（5.6%），2-3 的硬规则另在其中命中 106 条日期/类型冲突。
+量级比 llm 侧小得多，但同名不同作（重制、同名剧场版）确实存在，值得补。
+做法：exact 命中后同样跑一遍 `match_conflicts()`，有冲突就降级 pending 而不是直接 included。
 
 ## 2-4. 【P2】run 在重复劳动 + 全串行
 
@@ -93,72 +87,26 @@ EOF
 
 # 3. 人工审核（pending 队列）
 
-## 3-1. 【P1】`BgmSearch.tsx` 是死代码，无候选条目只能开浏览器手搜
+## 3-5. 【P2】LLM 的 `reason` 在审查界面基本看不到
 
-`web/src/components/BgmSearch.tsx` 和后端 `GET /api/bgm/search`（`src/api/routers/bgm.py`）**都完整实现了**，但没有任何页面挂载 `BgmSearch` —— 全仓库只有 `api.ts:95` 和 `types/api.ts:91` 引用它的类型。
+2-3 让模型在 high 模式下给出判定理由，写进 `season_items.candidates` 的 `reason` 键，
+`CandidatePanel.tsx` 也渲染了。**但审查队列里绝大多数条目根本看不到它**：
 
-影响：108 条无候选的 pending，只能开 bgm.tv 网页手搜再把 ID 抄回输入框。`docs/DESIGN-2026-05-12.md` 的 US-D2 本来就规划了这个交互。
+pending 条目的候选有两个来源，只有第二种带 reason ——
+1. `_process_single` 末尾的 `[unconfirmed]` 分支（模型说「都不匹配」，只把搜索结果列出来），
+   `source=NULL`，candidates 里**没有 reason 键**。库里 1746 条 pending 全是这一种。
+2. `_try_match` 的 LLM 分支给了匹配但 confidence < 0.85，或被硬规则降级（`source='llm'`）。
+   这种才有 reason + conflicts，但数量少得多。
 
-**做法**：在 `ReviewQueue.tsx:257-275` 的手动输入 bgm_id 区域旁挂上 `<BgmSearch seasonId={seasonId} onSelect={...} />`，选中直接填 bgm_id；无候选时默认展开并用 `mal_title_ja` 预填搜索词。
+即是说，最需要解释的那一类（「模型为什么一个都不选」）恰恰是没有解释的。
 
-## 3-4. 【P1·须先于第 7 节】人工决策不记录原因，且 override skip 被伪装成 rule
-
-两个独立但同一次迁移能解决的问题。
-
-**问题 A：`overrides` 的 skip 结果写成 `source='rule'`**（`processor.py:230`）
-
-override skip 的语义是**「MAL 把季度标错了，这条番属于别的季度」**——它和审核界面里的 exclude
-不是一回事：exclude 说的是「这个东西在 BGM 侧不成立」，skip 说的是「这个东西成立，但不在这里」。
-典型用法是配对操作：A 季度 skip + B 季度 add。
-
-现在把它记成 `source='rule'`，等于把一个**位置错误**伪装成**媒体类型规则过滤**，跑完之后
-无法回答「这条是规则踢的还是我手工挪走的」。`origin='override'` 给 add 补了出处，skip 这半边漏了。
-
-**问题 B：exclude / skip 都没有原因字段**
-
-半年后看到一条 `excluded`，无从知道当时是因为 BGM 没收录、还是 BGM 把它并进本篇的额外 ep 了。
-自由填空成本太高且很多情况没法分类，所以走**预设枚举 + 可选补充文本**，且**允许不填**。
-
-两组原因几乎不重叠，正好印证 A 里说的语义区别：
-
-| `season_items` 人工 exclude | `overrides` skip |
-|---|---|
-| `not_on_bgm` BGM 根本没收录 | `wrong_season` MAL 标错季度，该去别的季 |
-| `merged_into_ep` BGM 没单列，并进本篇当额外 ep | |
-| `not_anime` 媒体类型不该收 | |
-| `duplicate` MAL 里重复条目 | |
-| `other` + note | |
-
-> 枚举取值是凭现有样例推的，**动手前先按实际跑一遍高频场景补全**，落进 CHECK 之后再加值要新迁移。
-
-**做法**：
-
-1. 新迁移（编号取当时下一个可用值；和 §8 计划的 `004_drop_items.sql` 抢 004，谁先落谁用）：
-   ```sql
-   ALTER TABLE overrides     ADD COLUMN reason           TEXT;  -- CHECK 枚举
-   ALTER TABLE overrides     ADD COLUMN target_season_id TEXT;  -- skip 时可填：它该去哪
-   ALTER TABLE overrides     ADD COLUMN note             TEXT;
-   ALTER TABLE overrides     ADD COLUMN created_at       TEXT;
-   ALTER TABLE season_items  ADD COLUMN reason           TEXT;
-   ALTER TABLE season_items  ADD COLUMN note             TEXT;
-   -- 顺手补上一直缺的：CHECK(action <> 'add' OR bgm_id IS NOT NULL)
-   -- 现在只有 router 在拦（overrides.py:38），CLI/直接 SQL 写进去会让
-   -- processor.py:170 的 `bgm_id_ov: int` 拿到 None
-   ```
-2. `processor.py:230` 的 skip 分支改 `source='human'`，并把 override 的 reason 一并落进 `season_items.reason`。
-3. **不要把 override 的 reason 冗余到 `season_items`**（除第 2 步的 skip 落地外）：override 行是 append 的意图记录、不会删，
-   `items_flat` 里 `LEFT JOIN overrides` 带出 `override_action` / `override_reason` 即可。
-   `origin` 之所以要冗余是因为 add 进来的行必须自证出处，skip 没这个问题。
-4. UI：排除按钮做成小 dropdown（4 个预设 + 「其他…」），**不填也能提交**。常见情况零成本，长尾才付文字代价。
-5. `target_season_id` 先只当**线索/备忘**用：在 A 季度 skip 时顺手记下「去 2026-summer」，
-   将来在 B 季度就能查「有哪些番标记着要挪进来但还没 add」，把隐性的配对操作变成可查询的待办。
-   **不做成 `action='move'` 自动跨季写入**——skip 时未必已知 bgm_id，且 B 季度可能还没建，
-   run B 时要反扫全库 overrides，复杂度不划算。
-
-**为什么必须排在第 7 节之前**：那次清理会产生 700~1000 条人工 exclude 决策。
-字段不存在的话，这批决策的原因**永久丢失**，且正是最需要留档的一批（全是可疑匹配的判定结果）。
-
-⚠️ 不要复用 `season_items.error`——那是「匹配流程失败原因」，只在 pending 时有值，语义完全不同。
+**做法**（任选，成本递增）：
+1. 让 high 模式的 prompt 在返回空数组时也附一句总体理由（改成
+   `{"matches": [...], "note": "..."}`，无匹配时 note 说明为什么），存进 `season_items.error`
+   或 candidates 的同级字段；
+2. 或者退一步，把「模型判过且认为都不匹配」这个事实本身显示出来
+   （现在 `source=NULL` 和「压根没跑过」无法区分——这正是 2-4 A 要修的短路问题，
+   两件事可以一起做：末尾分支改写 `source='llm'` 后，UI 就能区分「没跑」和「跑了没结果」）。
 
 ---
 
@@ -178,18 +126,18 @@ override skip 的语义是**「MAL 把季度标错了，这条番属于别的季
 
 # 5. 人工二次审核（异常数据）
 
-## 5-1. 【P1】质量检查缺跨季度总览页
+## 现状（本节已无待办，留作参考）
 
 单季的质量检查已完成：`src/api/quality.py` 提供 `dup_in_season` / `dup_global` /
 `date_mismatch` / `no_bgm_name` 四项判定，`GET /seasons/{id}/items?issue=` 支持筛选并回
 `issue_counts`，`ItemList` 有 issue tab + 卡片 badge。全库命中见文首体检块。
+**撞车的发现全靠这套事后视图**（2026-08-05 删 2-2 时定的：不在写入路径上加撞车判定）。
 
 `low_confidence`（0.85 ≤ confidence < 0.9）**故意没做**：实测这个区间 0 条——
 阈值就是 0.85，LLM 给的分基本落在 0.9 以上，这条筛选没有信息量。
 
-**剩下的**：加**跨季度全局问题总览页**（首页或 `/issues`），否则 108 个季度要一个个点进去
-才知道哪些季度有问题。§7 的一次性清理需要它来定位目标季度，也可以直接拿 SQL 跑一遍
-清单代替（见文首体检块的统计脚本），做不做取决于清理时的手感。
+**跨季度总览页已于 2026-08-05 否决**（原 5-1 的剩余部分），理由见 §8 更新块。
+需要跨季清单时直接跑文首体检块的 SQL。
 
 注意：**不要把撞车做成 UNIQUE 约束**。MAL 拆分 / BGM 合并导致 N:1 和 1:N 现实中都合法，
 硬约束会挡掉正确数据。只能是质量视图。
@@ -238,9 +186,9 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 
 # 7. 做完止血后的一次性数据清理
 
-2-1 / 2-2 只能阻止**新增**错配，历史上已写进 `included` 的错误要单独清：
+2-1 / 2-3 只能阻止**新增**错配，历史上已写进 `included` 的错误要单独清：
 
-1. 用 5-1 的质量检查列出全部 `dup_in_season`（463 条）+ `date_mismatch`（810 条）+ 韩文 `included/llm`（156 条）+ `dup_global`（914 条，与前几项有重叠）；
+1. 用 §5 的质量检查（`src/api/quality.py`）列出全部 `dup_in_season`（463 条）+ `date_mismatch`（810 条）+ 韩文 `included/llm`（156 条）+ `dup_global`（914 条，与前几项有重叠）；
    ⚠️ **韩文只打回 `source='llm'` 那 156 条**，`source='exact'` 的 132 条是正确匹配（BGM 以谚文原名收录韩国动画，标题严格相等），不要碰。打回后重跑会走 2-1 的语言护栏，无精确匹配的一律 `excluded/rule`；
    ➕ **另加 2-3 硬规则的命中集**（2026-08-04 实测，`included/llm` 637 条 / `included/exact` 106 条），
    抽样准确率远高于 `date_mismatch`。名单用 `core.processor.match_conflicts()` 现算即可：
@@ -259,8 +207,9 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
    EOF
    ```
 2. 批量打回 `pending`（`PATCH action=pending` 会清空 bgm_id/name，见 `items.py:103-107`）；
-3. 修完 2-2 后重跑 `run --retry`，让新逻辑重新匹配；
-4. 剩下的进人工审核队列；
+3. 重跑 `run --retry`，让 2-1 语言护栏 + 2-3 硬规则 + high prompt 重新匹配；
+4. 剩下的进人工审核队列——排除时顺手点一下原因 chip（3-4 已落地，审核队列和编辑弹窗都有，
+   不填也能提交）。这一步正是 3-4 存在的理由，别嫌麻烦跳过；
 5. 重跑 `export_decisions.py` 并提交。
 
 **动手前先 `VACUUM INTO 'backups/season-<日期>.db'`** —— 这是唯一会大批量改写决策列的操作。
@@ -278,7 +227,7 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 > **2026-08-04 更新**：P0 四项全部完成（commit `b03191e`）——
 > 5-3（分页 + total）、5-2（乐观更新 + 行内操作 + 键盘导航）、3-3（顺手修）、
 > 4-3 首跑（air_date 3% → 99.5%）、5-1 质量检查 API + UI 筛选。P0 表已删。
-> 5-1 只剩跨季总览页、4-3 只剩并发，均已降级。
+> 5-1 只剩跨季总览页（已于 08-05 否决）、4-3 只剩并发。
 >
 > **2026-08-04（二）**：2-1 语言护栏已完成，但**实现范围比原文窄，两条原方案经实测否决**：
 > - **中文护栏否决**。「无假名 + 含非 JIS 汉字（简体字）」全库命中 1618 条，1292 条已 included，
@@ -309,22 +258,60 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 >   注意硬规则只拦新写入，这 637 条历史数据得靠 §7 打回重跑才会被纠正
 >   （已在副本上验证：打回后重跑，错配的那几条新逻辑要么给 pending 要么直接判无匹配）。
 >
-> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1 → 2-1 → 2-3~~（已完成）
-> → `2-2`（止血，否则清完又脏）→ `3-4`（有地方记原因）→ **§7 清理**。
-> 这条链上每一步都是下一步的前提，不要跳。
+> **2026-08-05**：**2-2（序号护栏）与 3-1（挂载 BgmSearch）整条删除，都改为交给人工。**
+> - **2-2 否决**。起因是复查「high 模式多喂信息能不能替代序号护栏」，先纠正一个前提：
+>   `_build_match_input`（`client.py:316`）里 MAL 的罗马字主标题 `MalBrief.title` **low / high 都送**，
+>   high 在标题这一维度是零增量，增量全在 start_date / num_episodes / source / studios / synopsis
+>   与 BGM 侧 platform / tags / 长简介。所以「high 送了英文名所以能判季数」这个说法不成立。
+> - 更要命的是**送了也没用**：把 todo 原文的 `split_ordinal` 模式表实现出来跑全库，
+>   命中 25 条（仍是 100% `source='llm'`），其中 **23 条的 MAL 英文标题自带季数**
+>   （`Byeonsinjadongcha Tobot 18th Season` → 光杆「변신자동차 또봇」，
+>   `Kamiusagi Rope 2` → 「紙兎ロペ」）。信息一直都在 prompt 里，模型就是不用。
+>   加信息这条路对季数问题无效，加护栏才有意义——但见下。
+> - **护栏的净增量约等于零**：25 条里 **19 条已被 2-3 硬规则（日期/platform）覆盖**（续作跟初代
+>   往往差好几年，日期规则先命中）。独有的 6 条里 **3 条是误报**：
+>   `亜人 第２部「衝突」→ 亜人 -衝突-`、`亜人 第3部「衝戟」→ 亜人 -衝戟-`、
+>   `マルドゥック・スクランブル 第3部 排気 → …排気`——BGM 用副标题表达部数，主标题归一化后相同、
+>   一侧无序号，正踩判据，而这三条日期完全一致、是**正确匹配**。剩下 3 条真错配里
+>   `애슬론 또봇 2기` 是韩文，重跑时 2-1 语言护栏已经掐掉 LLM 分支，走不到这里。
+>   净收益 ≈ 2 条，代价 ≈ 3 条误伤，负的。**别再提序号护栏。**
+> - 连带否决原文的做法 2（序号当召回正向信号）和做法 4（撞车前置检查）：
+>   撞车的发现由 5-1 质量检查的 `dup_in_season` / `dup_global` 承担，**事后视图 + 人工判定**，
+>   不在写入路径上加判定逻辑。llm 撞车 21.4% 这个量级仍然存在，但它是审核工作量问题，不是代码问题。
+> - **3-1 不做**：无候选的 pending 直接开 bgm.tv 网页手搜，不在审查界面里挂 `BgmSearch`。
+>   注意 `web/src/components/BgmSearch.tsx` 与 `GET /api/bgm/search` 因此**保持死代码状态**，
+>   要么择日删掉，要么留着——但别再当成待办。
+> - **5-1 剩余（跨季度问题总览页）一并否决**：108 季本来就要逐季 review 一遍，
+>   review 完问题自然收敛，总览页省下的是「找哪个季度有问题」，而逐季走一遍根本不需要找。
+>   需要跨季清单时跑文首体检块的 SQL 即可。将来若逐季 review 完仍觉得缺，再当 P2 提。
+>   §5 保留一节「现状」记录已完成的质量检查能力和「不要做 UNIQUE 约束」的结论。
+>
+> **2026-08-05（二）**：3-4 完成（`004_decision_reason.sql` + `ReasonPicker`），实现与原文大体一致，
+> 但有两处偏离，都是动手后被数据推翻的：
+> - **`reason` 没落 CHECK**。原文自己就写了「枚举是凭样例推的」，而 §7 清理很可能冒出新原因，
+>   SQLite 改 CHECK 要重建 20616 行的 `season_items`。约束改放在 `schemas.py` 的 `ExcludeReason`
+>   和 `web/src/lib/reasons.ts`——加一个取值改这两行，不用写迁移。落库前的校验（`other` 必须带 note、
+>   `reason` 只能跟 `exclude` 一起来）在 `items.py` 的 `update_item` 里。
+> - **`CHECK(action <> 'add' OR bgm_id IS NOT NULL)` 不能加，且以后也别加**。原文把它当成顺手补的
+>   遗漏，实际上库里 11 条 `add` 有 **6 条 `bgm_id` 为空**，且每条都与一条 `skip` 严格配对
+>   （mal 60629 / 61303 / 58888 / 58954 / 62494 / 63096）——那是「该挪进本季、bgm_id 待查」的待办，
+>   正是 `target_season_id` 想表达的东西。加约束等于把这套用法判死刑，迁移当场就被这 6 行拒绝。
+>   真正的毛病在 `process()` 的 add 分支拿 None 去 `get_subject()` 报了个看不懂的错，已改成
+>   WARNING 跳过（`[override add] mal:x 缺 bgm_id`）。
+> - 另外「移至其他季度」现在写**三条**记录：源季 `exclude/wrong_season`、源季 `overrides skip`
+>   （带 `target_season_id`）、目标季 `overrides add`。原先只写后一条，源季看起来就是个普通 exclude，
+>   配对关系丢了。`created_at` 靠 `ON CONFLICT DO UPDATE` 保护（原来的 `INSERT OR REPLACE`
+>   是删+插，重复提交会把首次时间冲掉）。
+> - 迁移过程中被 `uvicorn --reload` 摆了一道：改 `src/**.py` 会触发热重载，重载即调 `init_db()`，
+>   跟手动跑的迁移撞车留下半应用状态。**下次写迁移前先停掉 dev server。**
+>
+> **主线依赖**：~~5-3 → 5-2 → 4-3 → 5-1 → 2-1 → 2-3 → 3-4~~（已完成）→ **§7 清理**。
 > 2-3 提前做掉是因为它不改决策逻辑、只改输入质量，且 §7 重跑时要靠它提质。
+> 止血环节到 2-3 为止，剩下的错配一律靠 §7 打回 + 人工审核吸收。
 
-## P1 — 止血（不做完不值得大批量审核，否则清完又被新错配弄脏）
+## P1 — 止血
 
-| 顺序 | 任务 | 成本 |
-|---|---|---|
-| 6 | **2-2** 收窄后缀剥离 + exact 加日期校验 + 撞车前置检查 | 半天 |
-| 7 | **3-1** 挂载 `BgmSearch`（§7 清理后审核队列会暴涨，先把无候选的路打通） | 1h |
-| 8 | **3-4** 决策原因迁移 + skip 的 `source='rule'` 修正 | 半天 |
-| 8.5 | **5-1 剩余** 跨季度问题总览页（也可用 SQL 清单代替，看清理时的手感） | 2h |
-
-> **8 必须在 §7 之前**：那次清理产生 700~1000 条人工 exclude，
-> 字段不存在的话这批原因永久丢失，而它们恰恰是最值得留档的一批。
+**已全部完成**（最后一项 3-4 于 2026-08-05 落地）。下一步直接进 §7。
 
 ## 一次性清理
 
@@ -338,6 +325,8 @@ bgm:337292「紙兎ロペ」被 13 个 MAL 条目占用（2009~2019，全是 CM/
 |---|---|---|
 | 11 | **2-4** run 短路修复 + 并发 | 1 天 |
 | 12 | **4-3** sync-bgm 并发 | 2h |
-| 13 | **1-2** `is_new_anime` 过滤口径复查（等 5-1 的跨季总览出来后回头看漏了多少） | 待定 |
+| 13 | **1-2** `is_new_anime` 过滤口径复查（等逐季 review 走完一遍后看漏了多少） | 待定 |
 | 14 | **2-5 / 6** unknown media_type 源头拦截、END_YEAR、连接隔离、删死代码 | 半天 |
-| 15 | **`00N_drop_items.sql`** 确认新 schema 稳定后删掉冻结的旧 `items` 表（注意和 3-4 的迁移抢编号） | 10min |
+| 14.5 | **2-6** exact 分支也跑一遍 `match_conflicts()`（量级远小于 llm 侧） | 1h |
+| 14.6 | **3-5** 让「模型判过但都不匹配」这个结论在 UI 上可见（和 2-4 A 一起做） | 2h |
+| 15 | **`005_drop_items.sql`** 确认新 schema 稳定后删掉冻结的旧 `items` 表（004 已被 3-4 占用） | 10min |

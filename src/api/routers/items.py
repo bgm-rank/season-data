@@ -61,6 +61,11 @@ def _row_to_item(row: sqlite3.Row, issues: list[str] | None = None) -> ItemRead:
         error=row["error"],
         candidates=candidates,
         bgm_air_date=row["bgm_air_date"],
+        reason=row["reason"],
+        note=row["note"],
+        override_action=row["override_action"],
+        override_reason=row["override_reason"],
+        override_target_season_id=row["override_target_season_id"],
         updated_at=row["updated_at"],
         issues=issues or [],  # type: ignore[arg-type]
     )
@@ -130,6 +135,14 @@ def update_item(
     if row is None:
         raise HTTPException(status_code=404, detail=f"Item {mal_id} not found in season {season_id}")
 
+    # 原因只对排除有意义。include/pending 带着 reason 提交多半是前端漏清状态，
+    # 静默丢掉会让人以为记下了，直接拒绝。
+    note = (body.note or "").strip() or None
+    if body.action != "exclude" and (body.reason is not None or note is not None):
+        raise HTTPException(status_code=422, detail="reason/note is only allowed for action=exclude")
+    if body.reason == "other" and note is None:
+        raise HTTPException(status_code=422, detail="note is required when reason=other")
+
     now = datetime.now(UTC).isoformat()
 
     if body.action == "include":
@@ -139,21 +152,23 @@ def update_item(
         # BGM API 不可用就退化成骨架行，不能让外键把人工输入卡死。
         subject = _try_fetch_subject(body.bgm_id)
         ensure_bgm_subject(db, body.bgm_id, subject)
+        # reason/note 是上一次排除判定的产物，收录等于推翻它，留着会误导
         db.execute(
             "UPDATE season_items SET status='included', source='human', bgm_id=?,"
-            " confidence=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+            " confidence=NULL, error=NULL, reason=NULL, note=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
             (body.bgm_id, now, mal_id, season_id),
         )
     elif body.action == "pending":
         db.execute(
-            "UPDATE season_items SET status='pending', source=NULL, bgm_id=NULL,"
-            " confidence=NULL, candidates=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+            "UPDATE season_items SET status='pending', source=NULL, bgm_id=NULL, confidence=NULL,"
+            " candidates=NULL, error=NULL, reason=NULL, note=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
             (now, mal_id, season_id),
         )
     else:
         db.execute(
-            "UPDATE season_items SET status='excluded', source='human', updated_at=? WHERE mal_id=? AND season_id=?",
-            (now, mal_id, season_id),
+            "UPDATE season_items SET status='excluded', source='human', reason=?, note=?,"
+            " updated_at=? WHERE mal_id=? AND season_id=?",
+            (body.reason, note, now, mal_id, season_id),
         )
 
     db.execute("UPDATE seasons SET updated_at=? WHERE id=?", (now, season_id))

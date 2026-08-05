@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import sqlite3
+from datetime import UTC, datetime
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import Response
@@ -20,6 +21,10 @@ def _row_to_override(row: sqlite3.Row) -> OverrideRead:
         season_id=row["season_id"],
         action=row["action"],
         bgm_id=row["bgm_id"],
+        reason=row["reason"],
+        target_season_id=row["target_season_id"],
+        note=row["note"],
+        created_at=row["created_at"],
     )
 
 
@@ -37,10 +42,30 @@ def create_override(
 ) -> OverrideRead:
     if body.action == "add" and body.bgm_id is None:
         raise HTTPException(status_code=422, detail="bgm_id is required for action=add")
+    note = (body.note or "").strip() or None
+    if body.reason == "other" and note is None:
+        raise HTTPException(status_code=422, detail="note is required when reason=other")
 
+    # 不用 INSERT OR REPLACE：那是删+插，重复提交同一 (mal_id, season_id) 会把
+    # created_at 重置成本次时间。DO UPDATE 把 created_at 排除在更新列外，保留首次记录时间。
     db.execute(
-        "INSERT OR REPLACE INTO overrides (mal_id, season_id, action, bgm_id) VALUES (?,?,?,?)",
-        (body.mal_id, season_id, body.action, body.bgm_id),
+        """
+        INSERT INTO overrides (mal_id, season_id, action, bgm_id, reason, target_season_id, note, created_at)
+        VALUES (?,?,?,?,?,?,?,?)
+        ON CONFLICT(mal_id, season_id) DO UPDATE SET
+            action=excluded.action, bgm_id=excluded.bgm_id, reason=excluded.reason,
+            target_season_id=excluded.target_season_id, note=excluded.note
+        """,
+        (
+            body.mal_id,
+            season_id,
+            body.action,
+            body.bgm_id,
+            body.reason,
+            body.target_season_id,
+            note,
+            datetime.now(UTC).isoformat(),
+        ),
     )
     db.commit()
 
