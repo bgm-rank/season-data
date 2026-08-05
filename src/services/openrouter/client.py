@@ -28,6 +28,15 @@ SYNOPSIS_MAX_CHARS_HIGH = 300
 MAX_TAGS_HIGH = 5
 REASON_MAX_CHARS = 60
 
+# 输出上限。输出按实际生成量计费，上限放宽本身不花钱；被 finish_reason=length
+# 砍断才是纯亏——token 全付了、JSON 解析失败、结果按「无匹配」丢掉，还得重跑。
+# 推理模型的 reasoning_tokens 也吃这个额度且完全不可控：gemini-3.6-flash 在
+# suggest_search 这种「想不出关键词」的输入上实测能把 512 吃满（真正的 JSON 只有
+# 二三十 token）。所以这里一律按 reasoning 的最坏情况留余量，别再往下调。
+MAX_TOKENS_MATCH = 2048
+MAX_TOKENS_MATCH_HIGH = 3072
+MAX_TOKENS_SUGGEST = 2048
+
 # 动漫匹配系统提示（固定以最大化缓存命中）
 MATCH_SYSTEM_PROMPT = (
     "匹配MAL动漫与Bangumi候选。续作必须季数一致（2nd/第2期/II等）。"
@@ -372,17 +381,13 @@ class OpenRouterClient:
         high = self.prompt_mode == PROMPT_MODE_HIGH
         user_input = self._build_match_input(mal, candidates)
 
-        # low 曾经是 128，对推理模型完全不够：gemini-3.6-flash 的 reasoning_tokens
-        # （实测 122~244）也算进 max_tokens，JSON 还没开始写就被 finish_reason=length 砍断，
-        # 解析失败后静默当成「无匹配」——每次调用都付了钱却拿不到结果。
-        # 输出按实际生成量计费，上限放宽本身不花钱，截断反而是纯亏。
         request = ChatRequest(
             messages=[
                 Message.system(MATCH_SYSTEM_PROMPT_HIGH if high else MATCH_SYSTEM_PROMPT),
                 Message.user(user_input),
             ],
             model=self.model,
-        ).with_max_tokens(1024 if high else 768)
+        ).with_max_tokens(MAX_TOKENS_MATCH_HIGH if high else MAX_TOKENS_MATCH)
 
         response = self.chat(request)
         content = response.content()
@@ -445,7 +450,7 @@ class OpenRouterClient:
                 Message.user(user_input),
             ],
             model=self.model,
-        ).with_max_tokens(512)  # 同 match_anime：64 对推理模型必然截断，见那边的注释
+        ).with_max_tokens(MAX_TOKENS_SUGGEST)
 
         response = self.chat(request)
         content = response.content()
