@@ -22,6 +22,16 @@
     },
     {
       "action": "add",
+      "bgm_id": 459380,
+      "created_at": "2026-08-06T08:34:18.718699+00:00",
+      "mal_id": 57933,
+      "note": null,
+      "reason": null,
+      "season_id": "2024-winter",
+      "target_season_id": null
+    },
+    {
+      "action": "add",
       "bgm_id": 488262,
       "created_at": null,
       "mal_id": 58648,
@@ -49,6 +59,16 @@
       "reason": null,
       "season_id": "2025-fall",
       "target_season_id": null
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "created_at": "2026-08-06T08:26:48.493702+00:00",
+      "mal_id": 63151,
+      "note": null,
+      "reason": "wrong_season",
+      "season_id": "2025-fall",
+      "target_season_id": "2026-winter"
     },
     {
       "action": "add",
@@ -81,13 +101,53 @@
       "target_season_id": null
     },
     {
-      "action": "add",
+      "action": "skip",
+      "bgm_id": null,
+      "created_at": "2026-08-06T08:44:32.367778+00:00",
+      "mal_id": 61891,
+      "note": null,
+      "reason": "wrong_season",
+      "season_id": "2025-spring",
+      "target_season_id": "2025-summer"
+    },
+    {
+      "action": "skip",
       "bgm_id": null,
       "created_at": null,
       "mal_id": 62494,
       "note": null,
-      "reason": null,
+      "reason": "wrong_season",
       "season_id": "2025-spring",
+      "target_season_id": "2025-summer"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
+      "created_at": "2026-08-06T08:34:18.695265+00:00",
+      "mal_id": 57933,
+      "note": null,
+      "reason": "wrong_season",
+      "season_id": "2025-summer",
+      "target_season_id": "2024-winter"
+    },
+    {
+      "action": "add",
+      "bgm_id": 624121,
+      "created_at": "2026-08-06T08:44:32.379035+00:00",
+      "mal_id": 61891,
+      "note": null,
+      "reason": null,
+      "season_id": "2025-summer",
+      "target_season_id": null
+    },
+    {
+      "action": "add",
+      "bgm_id": 576283,
+      "created_at": "2026-08-06T08:43:10.573238+00:00",
+      "mal_id": 62494,
+      "note": null,
+      "reason": null,
+      "season_id": "2025-summer",
       "target_season_id": null
     },
     {
@@ -133,6 +193,16 @@
     {
       "action": "skip",
       "bgm_id": null,
+      "created_at": "2026-08-06T08:56:17.092662+00:00",
+      "mal_id": 61043,
+      "note": null,
+      "reason": "wrong_season",
+      "season_id": "2025-winter",
+      "target_season_id": "2026-spring"
+    },
+    {
+      "action": "skip",
+      "bgm_id": null,
       "created_at": null,
       "mal_id": 62494,
       "note": null,
@@ -158,6 +228,16 @@
       "note": null,
       "reason": null,
       "season_id": "2026-fall",
+      "target_season_id": null
+    },
+    {
+      "action": "add",
+      "bgm_id": 444957,
+      "created_at": "2026-08-06T08:56:17.101277+00:00",
+      "mal_id": 61043,
+      "note": null,
+      "reason": null,
+      "season_id": "2026-spring",
       "target_season_id": null
     },
     {
@@ -195,6 +275,16 @@
       "bgm_id": 548189,
       "created_at": null,
       "mal_id": 63096,
+      "note": null,
+      "reason": null,
+      "season_id": "2026-winter",
+      "target_season_id": null
+    },
+    {
+      "action": "add",
+      "bgm_id": 617197,
+      "created_at": "2026-08-06T08:26:48.504382+00:00",
+      "mal_id": 63151,
       "note": null,
       "reason": null,
       "season_id": "2026-winter",
@@ -975,7 +1065,7 @@
       "id": "2024-fall",
       "released_at": null,
       "season": "fall",
-      "updated_at": "2026-08-03T01:50:55.079175+00:00",
+      "updated_at": "2026-08-06T08:30:47.301604+00:00",
       "year": 2024
     },
     {
@@ -1007,7 +1097,7 @@
       "id": "2025-fall",
       "released_at": null,
       "season": "fall",
-      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "updated_at": "2026-08-06T08:29:46.084989+00:00",
       "year": 2025
     },
     {
@@ -1015,7 +1105,7 @@
       "id": "2025-spring",
       "released_at": null,
       "season": "spring",
-      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "updated_at": "2026-08-06T08:54:27.974024+00:00",
       "year": 2025
     },
     {
@@ -1023,7 +1113,7 @@
       "id": "2025-summer",
       "released_at": null,
       "season": "summer",
-      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "updated_at": "2026-08-06T09:08:09.581712+00:00",
       "year": 2025
     },
     {
@@ -1031,7 +1121,7 @@
       "id": "2025-winter",
       "released_at": null,
       "season": "winter",
-      "updated_at": "2026-05-12T07:45:27.498631+00:00",
+      "updated_at": "2026-08-06T09:03:32.728256+00:00",
       "year": 2025
     },
     {
