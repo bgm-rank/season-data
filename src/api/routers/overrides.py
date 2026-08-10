@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import os
 import sqlite3
 from datetime import UTC, datetime
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import Response
+from loguru import logger
 
 from api.schemas import OverrideCreate, OverrideRead
 
@@ -88,11 +90,40 @@ def create_override(
     )
     db.commit()
 
+    # add 必须当场落地进 season_items，不能等目标季度下次跑 run——写 override 的时刻人在**源季度**
+    # 的界面上，目标季度通常早已审完，那个 run 永远不会来，这条番就在两个季度之间蒸发了。
+    # 详见 core/overrides.py 的模块注释。落地失败不回滚 override：意图已经记下了，
+    # scripts/apply_pending_adds.py 随时能补。
+    if body.action == "add" and body.bgm_id is not None:
+        try:
+            _apply_add(db, season_id, body.mal_id, body.bgm_id)
+        except Exception as e:
+            logger.error(
+                "[override add] 即时落地失败 {} mal:{}: {}（意图已记录，可跑 apply_pending_adds.py 补）",
+                season_id,
+                body.mal_id,
+                e,
+            )
+
     row = db.execute(
         "SELECT * FROM overrides WHERE mal_id=? AND season_id=?",
         (body.mal_id, season_id),
     ).fetchone()
     return _row_to_override(row)
+
+
+def _apply_add(db: sqlite3.Connection, season_id: str, mal_id: int, bgm_id: int) -> None:
+    from core.overrides import apply_add_override
+    from services.bgmtv import BgmtvClient
+    from services.mal.client import MalClient
+
+    mal_client_id = os.getenv("MAL_CLIENT_ID", "")
+    with BgmtvClient(os.getenv("BGM_TOKEN", "")) as bgmtv:
+        if mal_client_id:
+            with MalClient(mal_client_id) as mal:
+                apply_add_override(db, season_id, mal_id, bgm_id, bgmtv=bgmtv, mal=mal)
+        else:
+            apply_add_override(db, season_id, mal_id, bgm_id, bgmtv=bgmtv)
 
 
 @router.delete("/seasons/{season_id}/overrides/{mal_id}", status_code=204)

@@ -12,12 +12,13 @@ from typing import Any
 
 from loguru import logger
 
-from api.repo import ensure_bgm_subject, upsert_mal_anime
+from api.repo import ensure_bgm_subject
 from services.bgmtv import BgmtvClient, Subject
 from services.mal.client import MalClient
 from services.openrouter import BgmCandidate, MalBrief, OpenRouterClient
 
-from .models import MalInfo, MediaType
+from .models import MediaType
+from .overrides import apply_add_override
 from .season import season_date_range
 
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
@@ -254,37 +255,15 @@ class SeasonProcessor:
                 logger.warning("[override add] mal:{} 缺 bgm_id，跳过（待人工补齐后重跑）", mal_id)
                 continue
             bgm_id_ov: int = bgm_id_raw
-            now = datetime.now(UTC).isoformat()
             try:
-                subject = self.bgmtv.get_subject(bgm_id_ov)
-
-                # MAL 拿不到时用占位，保证 mal_anime 至少有一行供外键引用
-                mal_raw: dict[str, Any] = {
-                    "id": mal_id,
-                    "title": f"override-add-{mal_id}",
-                    "media_type": "tv",
-                }
-                mal_rating = "general"
-                if self.mal is not None:
-                    try:
-                        mal_raw = self.mal.get_anime(mal_id)
-                        mal_rating = MalInfo.from_raw(mal_raw).rating
-                    except Exception as e:
-                        logger.warning("[override add] 获取 MAL 数据失败 mal:{}: {}", mal_id, e)
-
-                upsert_mal_anime(self.conn, mal_raw, mal_rating)
-                ensure_bgm_subject(self.conn, bgm_id_ov, subject)
-                self.conn.execute(
-                    """
-                    INSERT INTO season_items
-                      (season_id, mal_id, status, source, bgm_id, origin, updated_at)
-                    VALUES (?,?,'included','human',?,'override',?)
-                    ON CONFLICT(season_id, mal_id) DO NOTHING
-                    """,
-                    (self.season_id, mal_id, bgm_id_ov, now),
+                apply_add_override(
+                    self.conn,
+                    self.season_id,
+                    mal_id,
+                    bgm_id_ov,
+                    bgmtv=self.bgmtv,
+                    mal=self.mal,
                 )
-                self.conn.commit()
-                logger.info("[override add] mal:{} -> bgm:{}", mal_id, bgm_id_ov)
             except Exception as e:
                 logger.error("[override add] mal:{} bgm:{} 失败: {}", mal_id, bgm_id_ov, e)
 
