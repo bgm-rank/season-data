@@ -17,7 +17,7 @@ from services.bgmtv import BgmtvClient, Subject
 from services.mal.client import MalClient
 from services.openrouter import BgmCandidate, MalBrief, OpenRouterClient
 
-from .models import MediaType
+from .models import MediaType, is_hopeless_ona_kids
 from .overrides import apply_add_override
 from .season import season_date_range
 
@@ -304,6 +304,22 @@ class SeasonProcessor:
             logger.info("[override skip] mal:{} ({})", mal_id, reason)
             return
 
+        # Step 1.5: 旧 low 模式的 LLM 结果不可信 —— confidence=0.0 是历史导入脚本填的假值
+        # （migrate_to_db.py: confidence = 0.0 if source == 'llm' else None），不是模型真给了 0 分。
+        # 打回 pending 起点后 fall through 到 Step 5，用现在的 high prompt 重跑。
+        # 必须连 status 一起落库：只清 confidence 而留着 included 的话，run 中途崩了下次 Step 2
+        # 就直接跳过，这行再也不会被重跑。bgm_id 刻意保留，重跑失败时人工还能对照旧匹配。
+        confidence_val: float | None = row["confidence"]
+        if source == "llm" and confidence_val == 0.0:
+            self.conn.execute(
+                "UPDATE season_items SET status='pending', source=NULL, confidence=NULL,"
+                " candidates=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+                (now, mal_id, self.season_id),
+            )
+            self.conn.commit()
+            status, source = "pending", None
+            logger.info("[stale llm] mal:{} 旧 low 模式结果，重跑", mal_id)
+
         # Step 2: already confirmed (included/excluded)
         if status in ("included", "excluded"):
             if status == "included" and source == "human":
@@ -413,6 +429,17 @@ class SeasonProcessor:
                         subjects = subjects or retry_subjects
             except Exception as e:
                 logger.error("[error] mal:{} LLM suggest 失败: {}", mal_id, e)
+
+        # 匹配全败的 ona+kids 不进人工队列：这个组合在 BGM 上基本没有对应条目
+        if is_hopeless_ona_kids(mal_media_type, row["mal_rating"]):
+            self.conn.execute(
+                "UPDATE season_items SET status='excluded', source='rule', reason='not_on_bgm',"
+                " candidates=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
+                (now, mal_id, self.season_id),
+            )
+            self.conn.commit()
+            logger.info("[kids ona] mal:{} 匹配全败 -> excluded", mal_id)
+            return
 
         candidates = [{"bgm_id": s.id, "bgm_name": s.name, "air_date": s.date, "confidence": None} for s in subjects]
         self.conn.execute(

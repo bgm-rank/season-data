@@ -81,6 +81,16 @@ class MediaType(Enum):
         return MediaType(media_type)
 
 
+def is_hopeless_ona_kids(media_type: str, rating: str) -> bool:
+    """ona + kids 且匹配全败时，BGM 上基本不存在对应条目。
+
+    只能用于收尾兜底，**不能前置过滤**：这个组合里有 399 条走 exact 精确匹配命中
+    （おんたま! / 放課後のプレアデス 等日文标题完全一致），前置会把它们全部误杀。
+    进人工队列后的历史判定是 excluded 88 : included 3，人工审的期望收益极低。
+    """
+    return media_type == MediaType.ONA.value and rating == Rating.KIDS.value
+
+
 @dataclass
 class MalInfo:
     """MAL 精简信息（用于 release 输出）。"""
