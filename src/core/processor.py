@@ -433,7 +433,7 @@ class SeasonProcessor:
         # 匹配全败的 ona+kids 不进人工队列：这个组合在 BGM 上基本没有对应条目
         if is_hopeless_ona_kids(mal_media_type, row["mal_rating"]):
             self.conn.execute(
-                "UPDATE season_items SET status='excluded', source='rule', reason='not_on_bgm',"
+                "UPDATE season_items SET status='excluded', source='rule', reason='kids',"
                 " candidates=NULL, error=NULL, updated_at=? WHERE mal_id=? AND season_id=?",
                 (now, mal_id, self.season_id),
             )

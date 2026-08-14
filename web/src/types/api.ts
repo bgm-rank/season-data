@@ -47,6 +47,8 @@ export type IssueKind = 'dup_in_season' | 'dup_global' | 'date_mismatch' | 'no_b
  */
 export type ExcludeReason =
   | 'not_on_bgm'
+  | 'kids'
+  | 'mini'
   | 'merged_into_ep'
   | 'not_anime'
   | 'duplicate'

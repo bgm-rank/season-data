@@ -12,7 +12,11 @@ OverrideAction = Literal["add", "skip"]
 IssueKind = Literal["dup_in_season", "dup_global", "date_mismatch", "no_bgm_name"]
 # 人工排除的原因。DB 侧刻意不加 CHECK（见 004 迁移），这里的 Literal 就是唯一的约束点，
 # 加值只改这一行 + web/src/lib/reasons.ts。wrong_season 同时是 override skip 的原因。
-ExcludeReason = Literal["not_on_bgm", "merged_into_ep", "not_anime", "duplicate", "wrong_season", "other"]
+# kids / mini 与 not_on_bgm 的区别是「有没有真去查过」：not_on_bgm 是确认过 BGM 上不存在，
+# 这两个是按经验直接排除、没有逐条确认，分开记是为了以后能按 reason 捞出来复查。
+ExcludeReason = Literal[
+    "not_on_bgm", "kids", "mini", "merged_into_ep", "not_anime", "duplicate", "wrong_season", "other"
+]
 
 
 class SeasonSummary(BaseModel):
